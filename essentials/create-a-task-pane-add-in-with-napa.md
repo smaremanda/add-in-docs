@@ -149,8 +149,7 @@ You can also build a task pane add-in using [Visual Studio](http://msdn.microsof
 ## Show images in the task pane add-in by using the Flickr API
 <a name="Show"> </a>
 
-
-- In the Home.js file, add the following code. This code adds a function that shows images that relate to the selected text.
+In the Home.js file, add the following code. This code adds a function that shows images that relate to the selected text.
     
   ```
   function showImages(selectedText) {
