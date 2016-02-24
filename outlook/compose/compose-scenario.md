@@ -29,12 +29,14 @@ In each of these compose scenarios, any add-in command buttons defined by the ad
 
 **Figure 1. An Outlook message compose form with add-in commands**
 
-![Shows an Outlook compose form with add-in commands.](../images/583023e6-0534-4f17-9791-b91aa8bff07e.png)Figure 2 shows the add-in selection pane consisting of 2 compose add-ins that do not implement add-in commands, activated when the user is composing an inline reply in Outlook.
+![Shows an Outlook compose form with add-in commands.](../../images/583023e6-0534-4f17-9791-b91aa8bff07e.png)
+
+Figure 2 shows the add-in selection pane consisting of 2 compose add-ins that do not implement add-in commands, activated when the user is composing an inline reply in Outlook.
 
 
 **Figure 2. The add-in selection pane showing an Outlook add-in available for the message that is being composed**
 
-![Templates mail app activated for composed item](../images/mod_off15_MailApps_TemplatesAppSelectionPane.png)
+![Templates mail app activated for composed item](../../images/mod_off15_MailApps_TemplatesAppSelectionPane.png)
 
 
 ## Types of add-ins available in compose mode
