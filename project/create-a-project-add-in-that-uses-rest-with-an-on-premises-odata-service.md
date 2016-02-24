@@ -100,6 +100,7 @@ Office Developer Tools for Visual Studio includes a template for task pane add-i
     **Choosing the host application**
 
     ![Choosing Project as the only host application](../images/b2144f2c-51f6-4e61-bc0d-972125c57031.png)
+    
     Visual Studio creates the  **HelloProjectOdata** project and the **HelloProjectODataWeb** project.
     
 The  **AddIn** folder (see the next screenshot) contains the App.css file for custom CSS styles. In the **Home** subfolder , the Home.html file contains references to the CSS files and the JavaScript files that the add-in uses, and the HTML5 content for the add-in. Also, the Home.js file is for your custom JavaScript code. The **Scripts** folder includes the jQuery library files. The **Office** subfolder includes the JavaScript libraries such as office.js and project-15.js, plus the language libraries for standard strings in the Office add-ins. In the **Content** folder, the Office.css file contains the default styles for all of the Office add-ins.
