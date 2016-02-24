@@ -30,10 +30,12 @@ Figure 2 shows the  **Define** context menu command that enables users to quickl
 
 
 ![Definitions in the Spelling and Grammar panes](../images/DictionaryAgave03.jpg)
+
 **Figure 4. Definitions in the Thesaurus pane**
 
 
 ![Definitions in the Thesaurus pane](../images/DictionaryAgave04.jpg)
+
 **Figure 5. Definitions in Reading Mode**
 
 
