@@ -5,25 +5,25 @@ Learn how to validate the Exchange 2013 identity token that links the email acco
  _**Applies to:** apps for Office | Office Add-ins | Outlook_
 
 
-![Related code snippets and sample apps](../images/mod_icon_links_samples.png)[Outlook-Add-in-JavaScript-ValidateIdentityToken](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-ValidateIdentityToken)
+![Related code snippets and sample apps](../../images/mod_icon_links_samples.png)[Outlook-Add-in-JavaScript-ValidateIdentityToken](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-ValidateIdentityToken)
 
 Your Outlook add-in can send you an identity token, but before you trust the request you must validate the token to ensure that it came from the Exchange server that you expect. The examples in this article show you how to validate the Exchange identity token using a validation object written in C#; however, you can use any programming language to do the validation. The steps required to validate the token are described in the [JSON Web Token (JWT) Internet Draft](http://self-issued.info/docs/draft-goland-json-web-token-00.mdl). 
 
 We suggest that you use a four-step process to validate the identity token and obtain the user's unique identifier. First, extract the JSON Web Token (JWT) from a base64 URL-encoded string. Second, make sure that the token is well-formed, that it is for your Outlook add-in, that it has not expired, and that you can extract a valid URL for the authentication metadata document. Next, retrieve the authentication metadata document from the Exchange server and validate the signature attached to the identity token. Finally, compute a unique identifier for the user by hashing the user's Exchange ID with the URL of the authentication metadata document. Overall the process may seem complex, but each individual step is quite simple.
-You can download the solution that contains these examples from the web at [Outlook-Add-in-JavaScript-ValidateIdentityToken](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-ValidateIdentityToken).
+You can download the solution that contains these examples from the web at  [Outlook-Add-in-JavaScript-ValidateIdentityToken](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-ValidateIdentityToken).
  **In this article**
 
-![One](../images/mod_icon_one.png)[Set up to validate your identity token](#setup)
+![One](../../images/mod_icon_one.png)[Set up to validate your identity token](#setup)
 
-![Two](../images/mod_icon_two.png)[Extract the JSON Web Token](#extractthejsonwebtoken)
+![Two](../../images/mod_icon_two.png)[Extract the JSON Web Token](#extractthejsonwebtoken)
 
-![Three](../images/mod_icon_three.png)[Parse the JWT](#parsethejwt)
+![Three](../../images/mod_icon_three.png)[Parse the JWT](#parsethejwt)
 
-![Four](../images/mod_icon_four.png)[Validate the identity token signature](#validatetheidentitytokensignature)
+![Four](../../images/mod_icon_four.png)[Validate the identity token signature](#validatetheidentitytokensignature)
 
-![five](../images/mod_icon_five.png)[Compute the unique ID for an Exchange account](#uniqueid)
+![five](../../images/mod_icon_five.png)[Compute the unique ID for an Exchange account](#uniqueid)
 
-![Related code snippets and sample apps](../images/mod_icon_links_samples.png)[Utility objects](#utilityobjects)
+![Related code snippets and sample apps](../../images/mod_icon_links_samples.png)[Utility objects](#utilityobjects)
 
 
 ## Set up to validate your identity token
@@ -71,7 +71,7 @@ The  **Decode** factory method splits the JWT from the Exchange server into the 
     }
 ```
 
-The  **Base64Decode** method implements the decoding logic that is described in the "Notes on implementing base64url encoding without padding" appendix in the[JSON Web Token (JWT) Internet Draft](http://self-issued.info/docs/draft-goland-json-web-token-00.mdl).
+The  **Base64Decode** method implements the decoding logic that is described in the "Notes on implementing base64url encoding without padding" appendix in the [JSON Web Token (JWT) Internet Draft](http://self-issued.info/docs/draft-goland-json-web-token-00.mdl).
 
 
 
@@ -169,7 +169,10 @@ Each of the utility methods is described further later in this article.
 
 The  **ValidateHeader** method checks to make sure that the required claims are in the token header, and that the claims have the correct values. The header must be set as follows; otherwise, the method will throw an application exception and end.
 
+```
 { "typ" : "JWT", "alg" : "RS256", "x5t" : "<thumbprint>" }
+```
+
 ```C#
     private void ValidateHeaderClaim(string key, string value)
     {
@@ -470,7 +473,7 @@ The authentication metadata document contains the information that you need to v
 
 By default the Exchange server uses a self-signed X.509 certificate to authenticate requests for the authentication metadata document. Unless you install a certificate that traces back to a root server, you must create a certificate validation callback method or else the request for the authentication metadata document will fail. 
 
-The  **ServicePointManager** class in the .NET Framework System.Net namespace enables you to hook up a validation callback method by setting the **ServerCertificateValidationCallback** property. You can see an example of a certificate validation callback method that is suitable for development and testing in the article[Validating X509 certificates](http://msdn.microsoft.com/en-us/library/dd633677%28EXCHG.80%29.aspx).
+The  **ServicePointManager** class in the .NET Framework System.Net namespace enables you to hook up a validation callback method by setting the **ServerCertificateValidationCallback** property. You can see an example of a certificate validation callback method that is suitable for development and testing in the article [Validating X509 certificates](http://msdn.microsoft.com/en-us/library/dd633677%28EXCHG.80%29.aspx).
 
 
  **Security Note**  If you use a certificate validation callback method, you must make sure that it meets the security requirements of your organization.
@@ -573,7 +576,7 @@ The  **AuthClaimTypes** object collects the claim identifiers that are used by t
 The  **Config** object contains the constants that are used to validate the identity token, as well as a certificate validation callback method that you can use if your server does not have an X509 certificate that traces back to a root certificate.
 
 
- **Security Note**  The security certificate callback method is only required if your server uses the default self-signed certificate. The callback method in this example returns  **false** when the certificate is self-signed, so you'll need to replace it with a callback method that meets the security requirements of your organization. For an example of a certificate validation callback method that is suitable for development and testing, see[Validating X509 certificates](http://msdn.microsoft.com/en-us/library/dd633677%28EXCHG.80%29.aspx).
+ **Security Note**  The security certificate callback method is only required if your server uses the default self-signed certificate. The callback method in this example returns  **false** when the certificate is self-signed, so you'll need to replace it with a callback method that meets the security requirements of your organization. For an example of a certificate validation callback method that is suitable for development and testing, see [Validating X509 certificates](http://msdn.microsoft.com/en-us/library/dd633677%28EXCHG.80%29.aspx).
 
 
 ```
