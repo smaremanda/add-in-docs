@@ -6,13 +6,13 @@ End users, developers, and administrators can use the tiered permission levels o
 
 This article describes the possible permissions that Outlook add-ins can request, and examines the security model from the following perspectives:
 
-- Office Store â€” add-in integrity.
+- Office Store - add-in integrity.
     
-- End-users â€” privacy and performance concerns.
+- End-users - privacy and performance concerns.
     
-- Developers â€” permissions choices and resource usage limits.
+- Developers - permissions choices and resource usage limits.
     
-- Administrators â€” privileges to set performance thresholds.
+- Administrators - privileges to set performance thresholds.
     
 
 ## Permissions model
