@@ -10,27 +10,6 @@ Use the JavaScript API to create task pane or content add-ins with the features 
 
 This section briefly describes the subset of the [JavaScript API for Office](http://msdn.microsoft.com/library/b27e70c3-d87d-4d27-85e0-103996273298%28Office.15%29.aspx) that you can call from content and task pane add-ins. See[Understanding the JavaScript API for Office](../overview/understanding-the-javascript-api-for-office.md) for an overview of the features of the API. For samples, see[Office Add-ins code samples](../samples/code-samples.md).
 
-Use the following table to explore the API by add-in type or by host application
-
-
-
-|**Explore by add-in type**|**Explore by host application**|
-|:-----|:-----|
-|
-|||
-|:-----|:-----|
-|[![Zoom into the Office object model for content apps](../images/appIcons_content.png)](http://go.microsoft.com/fwlink/?LinkId=391752)|Content add-ins[ZoomIt](http://go.microsoft.com/fwlink/?LinkId=391752)|
-|[![Zoom into the object model for task pane apps](../images/appIcons_taskpane.png)](http://go.microsoft.com/fwlink/?LinkId=391757)|Task pane add-ins[ZoomIt](http://go.microsoft.com/fwlink/?LinkId=391757)|
-||[Download the set of maps](http://www.microsoft.com/en-us/download/details.aspx?id=42032)for each add-in type and host application.|
-|
-|||
-|:-----|:-----|
-|[![Access](../images/appIcons_Access.png)](http://go.microsoft.com/fwlink/?LinkId=391750)|Access[ZoomIt](http://go.microsoft.com/fwlink/?LinkId=391750)|
-|[![Zoom into the app object model for Excel](../images/appIcons_Excel.png)](http://go.microsoft.com/fwlink/?LinkId=391753)|Excel[ZoomIt](http://go.microsoft.com/fwlink/?LinkId=391753)|
-|[![Zoom into the app object model for PowerPoint](../images/appIcons_PowerPoint.png)](http://go.microsoft.com/fwlink/?LinkId=391755)|PowerPoint[ZoomIt](http://go.microsoft.com/fwlink/?LinkId=391755)|
-|[![Zoom into the app object model for Project](../images/appIcons_Project.png)](http://go.microsoft.com/fwlink/?LinkId=391756)|Project[ZoomIt](http://go.microsoft.com/fwlink/?LinkId=391756)|
-|[![Zoom into the app object model for Word](../images/appIcons_Word.png)](http://go.microsoft.com/fwlink/?LinkId=391758)|Word[ZoomIt](http://go.microsoft.com/fwlink/?LinkId=391758)|
-|
 You can categorize the primary objects and methods supported by content and task pane add-ins as follows:
 
 
