@@ -653,7 +653,7 @@ If the add-in's requested permissions change, users will be prompted to upgrade 
 
 ## VersionOverrides
 
-The  **VersionOverrides** element is the location of information for add-in commands. For more information on this element, see[Define add-in commands in your Outlook add-in manifest](../outlook/manifests/define-add-in-commands.md).
+The  **VersionOverrides** element is the location of information for add-in commands. For more information on this element, see [Define add-in commands in your Outlook add-in manifest](../outlook/manifests/define-add-in-commands.md).
 
 
 ## Localization
@@ -701,7 +701,7 @@ Outlook add-ins specify the  **Hosts** element like the followiing.
 </OfficeApp>
 ```
 
-This is separate from the  **Hosts** element inside the **VersionOverrides** element, which is discussed in[Define add-in commands in your Outlook add-in manifest](../outlook/manifests/define-add-in-commands.md).
+This is separate from the  **Hosts** element inside the **VersionOverrides** element, which is discussed in [Define add-in commands in your Outlook add-in manifest](../outlook/manifests/define-add-in-commands.md).
 
 
 ## Requirements
@@ -761,12 +761,12 @@ App domains are also necessary to enable cookie sharing between the pop-out wind
 
 ## Permissions
 
-The  **Permissions** element contains the required permissions for the add-in. In general, you should specify the minimum necessary permission that your add-in needs, depending on the exact methods that you plan to use. For example, a mail add-in that activates in compose forms and only reads but does not write to item properties like[item.requiredAttendees](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html%28Office.15%29.md), and does not call [mailbox.makeEwsRequestAsync](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.html%28Office.15%29.md) to access any Exchange Web Services operations should specify **ReadItem** permission. For details on the available permissions, see[Understanding Outlook add-in permissions](../outlook/privacy/understanding-outlook-add-in-permissions.md).
+The  **Permissions** element contains the required permissions for the add-in. In general, you should specify the minimum necessary permission that your add-in needs, depending on the exact methods that you plan to use. For example, a mail add-in that activates in compose forms and only reads but does not write to item properties like [item.requiredAttendees](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html%28Office.15%29.md), and does not call [mailbox.makeEwsRequestAsync](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.html%28Office.15%29.md) to access any Exchange Web Services operations should specify **ReadItem** permission. For details on the available permissions, see [Understanding Outlook add-in permissions](../outlook/privacy/understanding-outlook-add-in-permissions.md).
 
 
 **Four-tier permissions model for mail add-ins**
 
-![4-tier permissions model for mail apps schema v1.1](../images/olowa15wecon_Permissions_4Tier.png)
+![4-tier permissions model for mail apps schema v1.1](../../images/olowa15wecon_Permissions_4Tier.png)
 ```XML
 <OfficeApp>
 ...
