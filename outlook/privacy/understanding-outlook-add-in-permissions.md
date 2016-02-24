@@ -16,7 +16,7 @@ You can see the permissions requested by a mail add-in before installing it from
 ## Restricted permission
 <a name="olowa15conagave_permmodelrestricted"> </a>
 
-The  **Restricted** permission is the most basic level of permission. Specify **Restricted** in the[Permissions](http://msdn.microsoft.com/en-us/library/c20cdf29-74b0-564c-e178-b75d148b36d1%28Office.15%29.aspx) element in the manifest to request this permission. Outlook assigns this permission to a mail add-in by default if the add-in does not request a specific permission in its manifest.
+The  **Restricted** permission is the most basic level of permission. Specify **Restricted** in the [Permissions](http://msdn.microsoft.com/en-us/library/c20cdf29-74b0-564c-e178-b75d148b36d1%28Office.15%29.aspx) element in the manifest to request this permission. Outlook assigns this permission to a mail add-in by default if the add-in does not request a specific permission in its manifest.
 
 
 ### Can do
@@ -24,7 +24,7 @@ The  **Restricted** permission is the most basic level of permission. Specify **
 
 - [Get only specific entities](../outlook/read/match-strings-in-an-item-as-well-known-entities.md#MailAppEntities_Retrieving) (phone number, address, URL) from the item's subject or body.
     
-- Specify an [ItemIs activation rule](../outlook/manifests/activation-rules.md#MailAppDefineRules_ItemIs) that requires the current item in a read or compose form to be a specific item type, or[ItemHasKnownEntity rule](../outlook/read/match-strings-in-an-item-as-well-known-entities.md#MailAppEntities_Activating) that matches any of a smaller subset of supported well-known entities (phone number, address, URL) in the selected item.
+- Specify an [ItemIs activation rule](../outlook/manifests/activation-rules.md#MailAppDefineRules_ItemIs) that requires the current item in a read or compose form to be a specific item type, or [ItemHasKnownEntity rule](../outlook/read/match-strings-in-an-item-as-well-known-entities.md#MailAppEntities_Activating) that matches any of a smaller subset of supported well-known entities (phone number, address, URL) in the selected item.
     
 - Access any properties and methods that do  **not** pertain to specific information about the user or item. (See the next section for the list of members that do.)
     
@@ -34,7 +34,7 @@ The  **Restricted** permission is the most basic level of permission. Specify **
 
 - Use an [ItemHasKnownEntity](http://msdn.microsoft.com/en-us/library/87e10fd2-eab4-c8aa-bec3-dff92d004d39%28Office.15%29.aspx) rule on the contact, email address, meeting suggestion, or task suggestion entitiy.
     
-- Use the [ItemHasAttachment](http://msdn.microsoft.com/en-us/library/031db7be-8a25-5185-a9c3-93987e10c6c2%28Office.15%29.aspx) or[ItemHasRegularExpressionMatch](http://msdn.microsoft.com/en-us/library/bfb726cd-81b0-a8d5-644f-2ca90a5273fc%28Office.15%29.aspx) rule.
+- Use the [ItemHasAttachment](http://msdn.microsoft.com/en-us/library/031db7be-8a25-5185-a9c3-93987e10c6c2%28Office.15%29.aspx) or [ItemHasRegularExpressionMatch](http://msdn.microsoft.com/en-us/library/bfb726cd-81b0-a8d5-644f-2ca90a5273fc%28Office.15%29.aspx) rule.
     
 - Access the members in the following list that pertain to the information of the user or item. Attempting to access members in this list will return  **null** and result in an error message which states that Outlook requires the mail add-in to have elevated permission.
     
@@ -98,7 +98,7 @@ The  **ReadItem** permission is the next level of permission in the permissions 
 ### Can do
 
 
-- [Read all the properties](../outlook/apis/item-data.md) of the current item in a read or[compose form](../outlook/compose/get-and-set-item-data-in-a-compose-form.md), for example, [item.to](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html%28Office.15%29.md) in a read form and[item.to.getAsync](http://dev.outlook.com/reference/add-ins/Recipients.html%28Office.15%29.md) in a compose form.
+- [Read all the properties](../outlook/apis/item-data.md) of the current item in a read or [compose form](../outlook/compose/get-and-set-item-data-in-a-compose-form.md), for example, [item.to](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html%28Office.15%29.md) in a read form and [item.to.getAsync](http://dev.outlook.com/reference/add-ins/Recipients.html%28Office.15%29.md) in a compose form.
     
 - [Get a callback token to get item attachments](../outlook/read/get-attachments-of-an-outlook-item.md) or the full item.
     
@@ -106,7 +106,7 @@ The  **ReadItem** permission is the next level of permission in the permissions 
     
 - [Get all existing well-known entities](../outlook/read/match-strings-in-an-item-as-well-known-entities.md#MailAppEntities_Retrieving), not just a subset, from the item's subject or body.
     
-- Use all the [well-known entities](../outlook/manifests/activation-rules.md#MailAppDefineRules_ItemHasKnownEntity) in[ItemHasKnownEntity](http://msdn.microsoft.com/en-us/library/87e10fd2-eab4-c8aa-bec3-dff92d004d39%28Office.15%29.aspx) rules, or[regular expressions](../outlook/manifests/activation-rules.md#MailAppDefineRules_ItemHasRegularExpressionMatch) in[ItemHasRegularExpressionMatch](http://msdn.microsoft.com/en-us/library/bfb726cd-81b0-a8d5-644f-2ca90a5273fc%28Office.15%29.aspx) rules. The following example follows schema v1.1. It shows a rule that activates the add-in if one or more of the well-known entities are found in the subject or body of the selected message:
+- Use all the [well-known entities](../outlook/manifests/activation-rules.md#MailAppDefineRules_ItemHasKnownEntity) in [ItemHasKnownEntity](http://msdn.microsoft.com/en-us/library/87e10fd2-eab4-c8aa-bec3-dff92d004d39%28Office.15%29.aspx) rules, or [regular expressions](../outlook/manifests/activation-rules.md#MailAppDefineRules_ItemHasRegularExpressionMatch) in [ItemHasRegularExpressionMatch](http://msdn.microsoft.com/en-us/library/bfb726cd-81b0-a8d5-644f-2ca90a5273fc%28Office.15%29.aspx) rules. The following example follows schema v1.1. It shows a rule that activates the add-in if one or more of the well-known entities are found in the subject or body of the selected message:
     
 
 ```XML
