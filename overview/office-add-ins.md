@@ -33,7 +33,7 @@ Here's what you need to do that:
 
     The code editor opens and shows the default webpage, which already contains some sample code that you can run without doing anything else.
     
-4. On the side of the page, choose the Run button(
+4. On the side of the page, choose the Run button (
 ![Run button](../images/Apps_NAPA_Run_Button.png)).
     
     The Office application associated with the kind of add-in you chose opens, and the sample add-in appears. You can now experiment with the features of the add-in.
