@@ -63,7 +63,7 @@ function getUserIdentityTokenCallback(asyncResult) {
 ## Use the web service response
 <a name="usingtheresponse"> </a>
 
-This is another simple function that processes the response from the web service. It follows the standard pattern for  **XHMHttpResponse** callback functions. It waits for the entire response to come in from the web service and then puts the contents of the response on the add-in UI. The response that this function is parsing is the response from the web service. For information about this response, see[Validate an Exchange identity token](../outlook/authentication/validate-an-identity-token.md). 
+This is another simple function that processes the response from the web service. It follows the standard pattern for  **XHMHttpResponse** callback functions. It waits for the entire response to come in from the web service and then puts the contents of the response on the add-in UI. The response that this function is parsing is the response from the web service. For information about this response, see [Validate an Exchange identity token](../outlook/authentication/validate-an-identity-token.md). 
 
 
 ```
