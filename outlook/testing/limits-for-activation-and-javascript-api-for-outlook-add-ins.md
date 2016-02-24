@@ -21,9 +21,9 @@ Follow these guidelines when designing activation rules for Outlook add-ins:
     
 - If you use an [ItemHasKnownEntity](http://msdn.microsoft.com/en-us/library/87e10fd2-eab4-c8aa-bec3-dff92d004d39%28Office.15%29.aspx) rule on the body of the selected item, expect an Outlook rich client to apply the rule against only the first 1 MB of the body and not to the rest of the body over that limit. Your add-in would not be activated if matches exist only after the first MB of the body. If you expect that to be a likely scenario, re-design your conditions for activation.
     
-- If you use regular expressions in  **ItemHasKnownEntity** or[ItemHasRegularExpressionMatch](http://msdn.microsoft.com/en-us/library/bfb726cd-81b0-a8d5-644f-2ca90a5273fc%28Office.15%29.aspx) rules, be aware of the following limits and guidelines that generally apply to any Outlook host, and those described in tables 1, 2 and 3 that differ depending on the host:
+- If you use regular expressions in  **ItemHasKnownEntity** or [ItemHasRegularExpressionMatch](http://msdn.microsoft.com/en-us/library/bfb726cd-81b0-a8d5-644f-2ca90a5273fc%28Office.15%29.aspx) rules, be aware of the following limits and guidelines that generally apply to any Outlook host, and those described in tables 1, 2 and 3 that differ depending on the host:
     
-      - Specify up to only 5 regular expressions in activation rules in a add-in. You cannot install a add-in if you exceed that limit.
+      - Specify up to only five regular expressions in activation rules in a add-in. You cannot install a add-in if you exceed that limit.
     
   - Specify regular expressions such that the results you anticipate are returned by the  **getRegExMatches** method call within the first 50 matches.
     
