@@ -10,7 +10,7 @@ Microsoft Office Mix is a platform for creating Office Add-ins that you embed in
 
 Let's start by talking about the end point - Office Mix. Office Mix is a Microsoft technology that allows users to embed instructional components like videos, voice, music, ink, and on-slide actions in Microsoft PowerPoint presentations and then publish them online. Users can use these dynamic instructional presentations, called Mixes, to turn their PowerPoint presentations into dynamic lessons.
 
-To see examples of Mixes in action, take a look at the [Office Mix Getting Started](https://mix.office.com/Home/GettingStarted) page, and then browse the many stunning Office Mix lesson demos in the[Office Mix Gallery](https://mix.office.com/Gallery). Notice the effective use of Mixes in each of these lessons.
+To see examples of Mixes in action, take a look at the [Office Mix Getting Started](https://mix.office.com/Home/GettingStarted) page, and then browse the many stunning Office Mix lesson demos in the [Office Mix Gallery](https://mix.office.com/Gallery). Notice the effective use of Mixes in each of these lessons.
 
 
 ## How does LabsJS fit in with Office Mix?
@@ -20,7 +20,7 @@ LabsJS extends the concept of Office Mix. Whereas an Office Mix turns a PowerPoi
 These labs are in fact add-ins that are written in JavaScript using the labs.js API ([LabsJS JavaScript API reference](../powerpoint/office-mix/reference/labsjs-javascript-api-reference.md)). Labs.js serves as an abstraction layer on top of the office.js library. In a nutshell, labs.js enables creating these labs and inserting them into Office Mix instances; the Mixes, then, are rendered in PowerPoint.
 
 
-## So let's have a look â€¦
+## So let's have a look
 
 You've already been introduced to the [Office Mix Gallery](https://mix.office.com/Gallery), but pay particular attention to three of the Office Mix examples that contain and run LabsJS labs. You should review these examples to get a sense of the potential of labs. Note where PowerPoint ends and Office Mix technology begins, and then where LabsJS functionality starts up and allows you to interact with the Mix, in the following:
 
@@ -32,20 +32,3 @@ You've already been introduced to the [Office Mix Gallery](https://mix.office.co
 - [Code Hunt](https://mix.office.com/watch/q4tnp5au9mbo)
     
 
-## In this section
-
-
-- [Get started with LabsJS for Office Mix](../powerpoint/office-mix/get-started-with-labsjs-for-office-mix.md)
-    
-- [Guidelines for creating labs for Mix using LabsJS](../powerpoint/office-mix/guidelines-for-creating-labs-for-mix-using-labsjs.md)
-    
-- [LabsJS lab components](../powerpoint/office-mix/labsjs-lab-components.md)
-    
-- [Configuring and editing LabsJS labs for Office Mix](../powerpoint/office-mix/configuring-and-editing-labsjs-labs-for-office-mix.md)
-    
-- [Walkthrough: Creating your first lab for Office Mix](../powerpoint/office-mix/walkthrough:-creating-your-first-lab-for-office-mix.md)
-    
-- [LabsJS labs for Office Mix examples](../powerpoint/office-mix/labsjs-labs-for-office-mix-examples.md)
-    
-- [LabsJS JavaScript API reference](../powerpoint/office-mix/reference/labsjs-javascript-api-reference.md)
-    
