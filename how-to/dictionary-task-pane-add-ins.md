@@ -15,7 +15,9 @@ Figure 1 shows the selection and display experience for a Bing-branded dictionar
 **Figure 1. Dictionary add-in displaying definitions for the selected word**
 
 
-![A dictionary app displaying a definition](../images/DictionaryAgave01.jpg)It is up to you to determine whether clicking the  **See More** link in the dictionary add-in's HTML UI displays more information within the task pane or opens a separate browser window to the full webpage for the selected word or phrase.
+![A dictionary app displaying a definition](../images/DictionaryAgave01.jpg)
+
+It is up to you to determine whether clicking the  **See More** link in the dictionary add-in's HTML UI displays more information within the task pane or opens a separate browser window to the full webpage for the selected word or phrase.
 Figure 2 shows the  **Define** context menu command that enables users to quickly launch installed dictionaries. Figures 3 through 5 show the places in the Office UI where the dictionary XML services are used to provide definitions in Word 2013.
 
 **Figure 2. Define command in the context menu**
@@ -33,7 +35,9 @@ Figure 2 shows the  **Define** context menu command that enables users to quickl
 **Figure 5. Definitions in Reading Mode**
 
 
-![Definitions in Reading Mode](../images/DictionaryAgave05.jpg)To create a task pane add-in that provides a dictionary lookup, you create two main components: 
+![Definitions in Reading Mode](../images/DictionaryAgave05.jpg)
+
+To create a task pane add-in that provides a dictionary lookup, you create two main components: 
 
 
 - An XML web service that looks up definitions from a dictionary service, and then returns those values in an XML format that can be consumed and displayed by the dictionary add-in.
@@ -250,7 +254,7 @@ The following is an example manifest file for a dictionary add-in.
 </OfficeApp>
 ```
 
-The  **Dictionary** element and its child elements that are specific to creating a dictionary add-in's manifest file are described in the following sections. For information about the other elements in the manifest file, see[Office Add-ins XML manifest](../overview/add-in-manifests.md).
+The  **Dictionary** element and its child elements that are specific to creating a dictionary add-in's manifest file are described in the following sections. For information about the other elements in the manifest file, see [Office Add-ins XML manifest](../overview/add-in-manifests.md).
 
 
 ### Dictionary element
@@ -376,7 +380,7 @@ Specifies the text to use in citations. Required (for dictionary add-ins).
 
 This element specifies the beginning of the citation text that will be displayed on a line below the content that is returned from the web service (for example, "Results by: " or "Powered by: ").
 
-For this element, you can specify values for additional locales by using the  **Override** element. For example, if a user is running the Spanish SKU of Office, but using an English dictionary, this allows the citation line to read "Resultados por: Bing" rather than "Results by: Bing". For more information about how to specify values for additional locales, see the section "Providing settings for different locales" in[Office Add-ins XML manifest](../overview/add-in-manifests.md).
+For this element, you can specify values for additional locales by using the  **Override** element. For example, if a user is running the Spanish SKU of Office, but using an English dictionary, this allows the citation line to read "Resultados por: Bing" rather than "Results by: Bing". For more information about how to specify values for additional locales, see the section "Providing settings for different locales" in [Office Add-ins XML manifest](../overview/add-in-manifests.md).
 
  **Example**
 
@@ -541,13 +545,13 @@ The following example shows the JavaScript implementation in the Dictionary.js f
 The primary members of the JavaScript API for Office (Office.js) that are called from this implementation are as follows:
 
 
-- The [initialize](http://msdn.microsoft.com/en-us/library/727adf79-a0b5-48d2-99c7-6642c2c334fc%28Office.15%29.aspx) event of the **Office** object, which is raised when the add-in context is initialized, and provides access to a[Document](http://msdn.microsoft.com/en-us/library/f8859516-cc1f-4b20-a8f3-cee37a983e70%28Office.15%29.aspx) object instance that represents the document the add-in is interacting with.
+- The [initialize](http://msdn.microsoft.com/en-us/library/727adf79-a0b5-48d2-99c7-6642c2c334fc%28Office.15%29.aspx) event of the **Office** object, which is raised when the add-in context is initialized, and provides access to a [Document](http://msdn.microsoft.com/en-us/library/f8859516-cc1f-4b20-a8f3-cee37a983e70%28Office.15%29.aspx) object instance that represents the document the add-in is interacting with.
     
-- The [addHandlerAsync](http://msdn.microsoft.com/en-us/library/8b2ec6c4-0983-4f5e-abd9-16f15b4fc87b%28Office.15%29.aspx) method of the **Document** object, which is called in the **initialize** function to add an event handler for the[SelectionChanged](http://msdn.microsoft.com/en-us/library/4cbc527c-a1d5-4fb0-b6db-28cc40c5d5e2%28Office.15%29.aspx) event of the document to listen for user selection changes.
+- The [addHandlerAsync](http://msdn.microsoft.com/en-us/library/8b2ec6c4-0983-4f5e-abd9-16f15b4fc87b%28Office.15%29.aspx) method of the **Document** object, which is called in the **initialize** function to add an event handler for the [SelectionChanged](http://msdn.microsoft.com/en-us/library/4cbc527c-a1d5-4fb0-b6db-28cc40c5d5e2%28Office.15%29.aspx) event of the document to listen for user selection changes.
     
 - The [getSelectedDataAsync](http://msdn.microsoft.com/en-us/library/f85ad02c-64f0-4b73-87f6-7f521b3afd69%28Office.15%29.aspx) method of the **Document** object, which is called in the `tryUpdatingSelectedWord()` function when the **SelectionChanged** event handler is raised to get the word or phrase the user selected, coerce it to plain text, and then execute the `selectedTextCallback` asynchronous callback function.
     
-- When the  `selectTextCallback` asynchronous callback function that is passed as the _callback_ argument of the **getSelectedDataAsync** method executes, it gets the value of the selected text when the callback returns. It gets that value from the callback's _selectedText_ argument (which is of type[AsyncResult](http://msdn.microsoft.com/en-us/library/540c114f-0398-425c-baf3-7363f2f6bc47%28Office.15%29.aspx)) by using the [value](http://msdn.microsoft.com/en-us/library/453a4b43-0fdc-4ea9-967a-c033fab31507%28Office.15%29.aspx) property of the returned **AsyncResult** object.
+- When the  `selectTextCallback` asynchronous callback function that is passed as the _callback_ argument of the **getSelectedDataAsync** method executes, it gets the value of the selected text when the callback returns. It gets that value from the callback's _selectedText_ argument (which is of type [AsyncResult](http://msdn.microsoft.com/en-us/library/540c114f-0398-425c-baf3-7363f2f6bc47%28Office.15%29.aspx)) by using the [value](http://msdn.microsoft.com/en-us/library/453a4b43-0fdc-4ea9-967a-c033fab31507%28Office.15%29.aspx) property of the returned **AsyncResult** object.
     
 - The rest of the code in the  `selectedTextCallback` function queries the XML web service for definitions. It also calls into the Microsoft Translator APIs to provide the URL of a .wav file that has the selected word's pronunciation.
     
