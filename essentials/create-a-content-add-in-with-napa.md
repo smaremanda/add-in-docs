@@ -338,6 +338,7 @@ $('#yield').text(quotes.DividendYield);
     **Data appearing in a table of the add-in**
 
     ![MSFT appears in the app when you press the button](../images/Apps_NAPA_Excel_Get.png)
+    <br>
     This example shows how to get data from a cell. In your add-in, you might use that technique to look up information in a database, get information from another service, or perform a calculation. You could add code to perform those sorts of operations to the anonymous function that you pass as a parameter to the  `getSelectedDataAsync` method.
     
 4. Close Excel Online.
@@ -400,6 +401,7 @@ $('#add-text').click(addTextToDocument);
     **The text MSFT appearing in the selected cell**
 
     ![MSFT appears in a cell when you press the button](../images/Apps_Napa_Put.png)
+    <br>
     This example is simple, but it shows how to put data into a cell. Your Office Add-in might use a stock service to get the closing price of a stock, and then add that price to a cell, which might perform other calculations.
     
 4. Close Excel Online. 
