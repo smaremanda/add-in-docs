@@ -84,7 +84,7 @@ Now you can take advantage of all the available Office Mix functionality to publ
 
 ### Submit your lab to the Office Store
 
-To submit your lab to the Office Store, see [Publish your Office Add-in](../publish/publish.md)
+To submit your lab to the Office Store, see [Publish your Office Add-in](../../publish/publish.md)
 
 
 ## Additional resources
