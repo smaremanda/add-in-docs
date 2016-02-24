@@ -267,9 +267,9 @@ When the user clicks the  **Get Contact Information** button, the `myGetContacts
     
 - The string representing the company name associated with the contact from the [Contact.businessName](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) property.
     
-- The array of telephone numbers associated with the contact from the [Contact.phoneNumbers](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) property. Each telephone number is represented by a[PhoneNumber](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) object.
+- The array of telephone numbers associated with the contact from the [Contact.phoneNumbers](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) property. Each telephone number is represented by a [PhoneNumber](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) object.
     
-- For each  **PhoneNumber** member in the telephone numbers array, the string representing the telephone number from the[PhoneNumber.phoneString](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) property.
+- For each  **PhoneNumber** member in the telephone numbers array, the string representing the telephone number from the [PhoneNumber.phoneString](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) property.
     
 - The array of URLs associated with the contact from the [Contact.urls](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) property. Each URL is represented as a string in an array member.
     
@@ -385,7 +385,7 @@ Each extracted meeting suggestion is stored as a [MeetingSuggestion](http://dev.
 
 - The string that was identified as a meeting suggestion from the [MeetingSuggestion.meetingString](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) property.
     
-- The array of meeting attendees from the [MeetingSuggestion.attendees](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) property. Each attendee is represented by an[EmailUser](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) object.
+- The array of meeting attendees from the [MeetingSuggestion.attendees](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) property. Each attendee is represented by an [EmailUser](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) object.
     
 - For each attendee, the name from the [EmailUser.displayName](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) property.
     
