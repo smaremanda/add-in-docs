@@ -40,7 +40,7 @@ In this example, the first  _coercionType_ parameter is specified as **Office.Co
 
  **Tip**   **When should you use the matrix versus table coercionType for data access?** If you need your selected tabular data to grow dynamically when rows and columns are added, and you must work with table headers, you should use the table data type (by specifying the _coercionType_ parameter of the **getSelectedDataAsync** method as `"table"` or **Office.CoercionType.Table**). Adding rows and columns within the data structure is supported in both table and matrix data, but appending rows and columns is supported only for table data. If you are you aren't planning on adding rows and columns, and your data doesn't require header functionality, then you should use the matrix data type (by specifying the  _coercionType_ parameter of **getSelecteDataAsync** method as `"matrix"` or **Office.CoercionType.Matrix**), which provides a simpler model of interacting with the data.
 
-The anonymous function that is passed into the function as the second  _callback_ parameter is executed when the **getSelectedDataAsync** operation is completed. The function is called with a single parameter, _asyncResult_, which contains the result and the status of the call. If the call fails, the [error](http://msdn.microsoft.com/en-us/library/51c46d36-972d-4d82-91aa-da99cbeb8d4f%28Office.15%29.aspx) property of the **AsyncResult** object provides access to the [Error](http://msdn.microsoft.com/en-us/library/36d1d048-b888-4bb5-9321-d340bcbc86f4%28Office.15%29.aspx) object. You can check the value of the[Error.name](http://msdn.microsoft.com/en-us/library/b76aaafd-bb34-4853-b29d-67adb1111b37%28Office.15%29.aspx) and [Error.message](http://msdn.microsoft.com/en-us/library/594e168e-4fdf-4e80-ba7e-4856a4a8ea5f%28Office.15%29.aspx) properties to determine why the set operation failed. Otherwise, the selected text in the document is displayed.
+The anonymous function that is passed into the function as the second  _callback_ parameter is executed when the **getSelectedDataAsync** operation is completed. The function is called with a single parameter, _asyncResult_, which contains the result and the status of the call. If the call fails, the [error](http://msdn.microsoft.com/en-us/library/51c46d36-972d-4d82-91aa-da99cbeb8d4f%28Office.15%29.aspx) property of the **AsyncResult** object provides access to the [Error](http://msdn.microsoft.com/en-us/library/36d1d048-b888-4bb5-9321-d340bcbc86f4%28Office.15%29.aspx) object. You can check the value of the [Error.name](http://msdn.microsoft.com/en-us/library/b76aaafd-bb34-4853-b29d-67adb1111b37%28Office.15%29.aspx) and [Error.message](http://msdn.microsoft.com/en-us/library/594e168e-4fdf-4e80-ba7e-4856a4a8ea5f%28Office.15%29.aspx) properties to determine why the set operation failed. Otherwise, the selected text in the document is displayed.
 
 The [AsyncResult.status](http://msdn.microsoft.com/en-us/library/eec9c712-79eb-4365-88a1-6d77649727c1%28Office.15%29.aspx) property is used in the **if** statement to test whether the call succeeded.[Office.AsyncResultStatus](http://msdn.microsoft.com/en-us/library/e2652105-03e8-4771-a985-e66c661fe3ea%28Office.15%29.aspx) is an enumeration of available **AsyncResult.status** property values. **Office.AsyncResultStatus.Failed** evaluates to the string "failed" (and, again, can also be specified as that literal string).
 
@@ -74,7 +74,7 @@ The anonymous function passed into the [setSelectedDataAsync](http://msdn.micros
 ### Detect changes in the selection
 <a name="ReadWriteDocumentData_DetectChanges"> </a>
 
-The following example shows how to detect changes in the selection by using the [Document.addHandlerAsync](http://msdn.microsoft.com/en-us/library/8b2ec6c4-0983-4f5e-abd9-16f15b4fc87b%28Office.15%29.aspx) method to add an event handler for the[SelectionChanged](http://msdn.microsoft.com/en-us/library/4cbc527c-a1d5-4fb0-b6db-28cc40c5d5e2%28Office.15%29.aspx) event on the document.
+The following example shows how to detect changes in the selection by using the [Document.addHandlerAsync](http://msdn.microsoft.com/en-us/library/8b2ec6c4-0983-4f5e-abd9-16f15b4fc87b%28Office.15%29.aspx) method to add an event handler for the [SelectionChanged](http://msdn.microsoft.com/en-us/library/4cbc527c-a1d5-4fb0-b6db-28cc40c5d5e2%28Office.15%29.aspx) event on the document.
 
 
 ```
@@ -103,7 +103,7 @@ The  `myHander()` function that is passed into the function as the second _handl
 ### Stop detecting changes in the selection
 <a name="ReadWriteDocumentData_StopDetectingChanges"> </a>
 
-The following example shows how to stop listening to the [Document.SelectionChanged](http://msdn.microsoft.com/en-us/library/4cbc527c-a1d5-4fb0-b6db-28cc40c5d5e2%28Office.15%29.aspx) event by calling the[document.removeHandlerAsync](http://msdn.microsoft.com/en-us/library/47e0b00f-e301-4f21-836d-aeac783c42e0%28Office.15%29.aspx) method.
+The following example shows how to stop listening to the [Document.SelectionChanged](http://msdn.microsoft.com/en-us/library/4cbc527c-a1d5-4fb0-b6db-28cc40c5d5e2%28Office.15%29.aspx) event by calling the [document.removeHandlerAsync](http://msdn.microsoft.com/en-us/library/47e0b00f-e301-4f21-836d-aeac783c42e0%28Office.15%29.aspx) method.
 
 
 ```
