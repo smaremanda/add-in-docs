@@ -56,25 +56,6 @@ You can also use Visual Studio or a text editor to create Office Add-ins. To lea
 - [Create a task pane or content add-in for Word or Excel by using a text editor](../essentials/create-a-task-pane-or-content-add-in-for-word-or-excel-by-using-a-text-editor.md)
     
 
-## In this section
-<a name="O15BuildAddlresources"> </a>
-
-
-- [Office Add-ins platform overview](../overview/platform-overview.md)
-    
-- [Requirements for running Office Add-ins](../overview/requirements-for-running-office-add-ins.md)
-    
-- [Design guidelines for Office Add-ins](../design/add-in-design.md)
-    
-- [Office Add-ins development lifecycle](../design/add-in-development-lifecycle.md)
-    
-- [Publish your Office Add-in](../publish/publish.md)
-    
-- [Office Add-ins code samples](../samples/code-samples.md)
-    
-- [Office Add-ins API and schema references](../reference/reference.md)
-    
-
 ## Additional resources
 <a name="O15BuildAddlresources"> </a>
 
