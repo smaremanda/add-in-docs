@@ -19,7 +19,7 @@ To use an identity token for SSO, your service application needs to have a valid
     
 - [Call a service from an Outlook add-in by using an identity token in Exchange](../outlook/authentication/call-a-service-by-using-an-identity-token.md)
     
-- [Use the Exchange token validation library](../outlook/authentication/use-the-token-validation-library.md) if you are using managed code, or[Validate an Exchange identity token](../outlook/authentication/validate-an-identity-token.md) if you are writing your own token validation method.
+- [Use the Exchange token validation library](../outlook/authentication/use-the-token-validation-library.md) if you are using managed code, or [Validate an Exchange identity token](../outlook/authentication/validate-an-identity-token.md) if you are writing your own token validation method.
     
 
 ## Authenticate a user
