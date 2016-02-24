@@ -61,7 +61,7 @@ The following are the properties and methods in the JavaScript API for Office th
 |**API member**|**Time zone representation**|**Example in an Outlook rich client**|**Example in Outlook Web App or OWA for Devices**|
 |:-----|:-----|:-----|:-----|
 |[Office.context.mailbox.userProfile.timeZone](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.userProfile.html%28Office.15%29.md)|In an Outlook rich client, this property returns the client computer time zone. In Outlook Web App and OWA for Devices, this property returns the EAC time zone. |EST|PST|
-|[Office.context.mailbox.item.dateTimeCreated](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html%28Office.15%29.md) and[Office.context.mailbox.item.dateTimeModified](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html%28Office.15%29.md)|Each of these properties returns a JavaScript  **Date** object. This **Date** value is UTC-correct, as shown in the following example - `myUTCDate` has the same value in an Outlook rich client, Outlook Web App and OWA for Devices.
+|[Office.context.mailbox.item.dateTimeCreated](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html%28Office.15%29.md) and [Office.context.mailbox.item.dateTimeModified](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html%28Office.15%29.md)|Each of these properties returns a JavaScript  **Date** object. This **Date** value is UTC-correct, as shown in the following example - `myUTCDate` has the same value in an Outlook rich client, Outlook Web App and OWA for Devices.
 ```
 var myDate = Office.mailbox.item.dateTimeCreated;
 var myUTCDate = myDate.getUTCDate;
@@ -75,7 +75,7 @@ However, calling  `myDate.getDate` returns a date value in the client computer t
 ## Helper methods for date-related scenarios
 <a name="off15appsdk_UsingDateValues_HelpMethods"> </a>
 
-As described in the preceding sections, because the "local time" for a user in Outlook Web App or OWA for Devices can be different on an Outlook rich client, but the JavaScript  **Date** object supports converting to only the client computer time zone or UTC, the JavaScript API for Office provides 2 helper methods:[Office.context.mailbox.convertToLocalClientTime](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.html%28Office.15%29.md) and[Office.context.mailbox.convertToUtcClientTime](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.html%28Office.15%29.md). 
+As described in the preceding sections, because the "local time" for a user in Outlook Web App or OWA for Devices can be different on an Outlook rich client, but the JavaScript  **Date** object supports converting to only the client computer time zone or UTC, the JavaScript API for Office provides two helper methods: [Office.context.mailbox.convertToLocalClientTime](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.html%28Office.15%29.md) and [Office.context.mailbox.convertToUtcClientTime](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.html%28Office.15%29.md). 
 
 These helper methods take care of any need to handle date or time differently for the following two date-related scenarios, in an Outlook rich client, Outlook Web App and OWA for Devices, thus reinforcing "write-once" for different clients of your add-in.
 
