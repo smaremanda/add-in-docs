@@ -25,8 +25,8 @@ Figure 2 shows the  **Define** context menu command that enables users to quickl
 
 
 ![Define context menu](../images/DictionaryAgave02.jpg)
-**Figure 3. Definitions in the Spelling and Grammar panes**
 
+**Figure 3. Definitions in the Spelling and Grammar panes**
 
 
 ![Definitions in the Spelling and Grammar panes](../images/DictionaryAgave03.jpg)
