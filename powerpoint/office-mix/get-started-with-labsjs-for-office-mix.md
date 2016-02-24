@@ -46,7 +46,7 @@ For Office Mix, you use an add-in catalog so you can insert pre-production add-i
 
 ## Create your lab
 
-To create your first lab, follow the steps in the [walkthrough](../powerpoint/office-mix/walkthrough:-creating-your-first-lab-for-office-mix.md), which explains how to create a simple true/false quiz. See [Walkthrough: Creating your first lab for Office Mix](../powerpoint/office-mix/walkthrough:-creating-your-first-lab-for-office-mix.md).
+To create your first lab, follow the steps in the [walkthrough](../powerpoint/office-mix/creating-your-first-lab-for-office-mix.md), which explains how to create a simple true/false quiz. See [Walkthrough: Creating your first lab for Office Mix](../powerpoint/office-mix/creating-your-first-lab-for-office-mix.md).
 
 
 ## Publish your lab
@@ -95,5 +95,5 @@ To submit your lab to the Office Store, see [Publish your Office Add-in](../publ
     
 - [Office Add-ins](../overview/office-add-ins.md)
     
-- [Walkthrough: Creating your first lab for Office Mix](../powerpoint/office-mix/walkthrough:-creating-your-first-lab-for-office-mix.md)
+- [Creating your first lab for Office Mix](../powerpoint/office-mix/creating-your-first-lab-for-office-mix.md)
     
