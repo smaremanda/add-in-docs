@@ -40,7 +40,7 @@ You can categorize the primary objects and methods supported by content and task
 
  **Important**  Some of the API members aren't supported across all Office applications that can host content and task pane add-ins. To determine which members are supported, see any of the following:
 
-For a summary of the JavaScript API for Office support available across Office host applications, see the [API support matrix](../overview/understanding-the-javascript-api-for-office.md#APIOverview_APISupportMatrix) in[Understanding the JavaScript API for Office](../overview/understanding-the-javascript-api-for-office.md).
+For a summary of the JavaScript API for Office support available across Office host applications, see the [API support matrix](../overview/understanding-the-javascript-api-for-office.md#APIOverview_APISupportMatrix) in [Understanding the JavaScript API for Office](../overview/understanding-the-javascript-api-for-office.md).
 
 
 ## Reading and writing to an active selection
@@ -115,7 +115,7 @@ For more details, see how to [get the whole document from an add-in for PowerPoi
 ## Reading and writing custom XML parts of a Word document
 <a name="FundamentalsTaskContentApp_ReadingWritingCustomXMLParts"> </a>
 
-Using the Open Office XML file format and content controls, you can add custom XML parts to a Word document and bind elements in the XML parts to content controls in that document. When you open the document, Word reads and automatically populates bound content controls with data from the custom XML parts. Users can also write data into the content controls, and when the user saves the document, the data in the controls will be saved to the bound XML parts. Task pane add-ins for Word, can use the [Document.customXmlParts](http://msdn.microsoft.com/en-us/library/b72c08bc-b49c-497c-9521-26ccce148bda%28Office.15%29.aspx) property,[CustomXmlParts](http://msdn.microsoft.com/en-us/library/ba40cd4c-29bb-4f31-875d-6f1382fd1ee8%28Office.15%29.aspx), [CustomXmlPart](http://msdn.microsoft.com/en-us/library/83f0e668-8236-4f2f-a20f-b173a9e3f65f%28Office.15%29.aspx), and [CustomXmlNode](http://msdn.microsoft.com/en-us/library/dc1518de-47fa-4108-aab7-04a022724b04%28Office.15%29.aspx) objects to read and write data dynamically to the document.
+Using the Open Office XML file format and content controls, you can add custom XML parts to a Word document and bind elements in the XML parts to content controls in that document. When you open the document, Word reads and automatically populates bound content controls with data from the custom XML parts. Users can also write data into the content controls, and when the user saves the document, the data in the controls will be saved to the bound XML parts. Task pane add-ins for Word, can use the [Document.customXmlParts](http://msdn.microsoft.com/en-us/library/b72c08bc-b49c-497c-9521-26ccce148bda%28Office.15%29.aspx) property, [CustomXmlParts](http://msdn.microsoft.com/en-us/library/ba40cd4c-29bb-4f31-875d-6f1382fd1ee8%28Office.15%29.aspx), [CustomXmlPart](http://msdn.microsoft.com/en-us/library/83f0e668-8236-4f2f-a20f-b173a9e3f65f%28Office.15%29.aspx), and [CustomXmlNode](http://msdn.microsoft.com/en-us/library/dc1518de-47fa-4108-aab7-04a022724b04%28Office.15%29.aspx) objects to read and write data dynamically to the document.
 
 Custom XML parts may be associated with namespaces. To get data from custom XML parts in a namespace, use the [CustomXmlParts.getByNamespaceAsync](http://msdn.microsoft.com/en-us/library/9902f555-5c20-45d6-9a8c-ae6bf013dfaf%28Office.15%29.aspx) method.
 
