@@ -11,7 +11,7 @@ To do that, you can:
 
 - Use members of the JavaScript API for Office that store data as name/value pairs in a property bag stored in a location that depends on add-in type.
     
-- Use techniques provided by the underlying browser control: browser cookies, or HTML5 web storage ([localStorage](http://msdn.microsoft.com/en-us/library/cc848902%28v=vs.85%29.aspx) or[sessionStorage](http://msdn.microsoft.com/en-us/library/cc197020%28v=vs.85%29.aspx)).
+- Use techniques provided by the underlying browser control: browser cookies, or HTML5 web storage ([localStorage](http://msdn.microsoft.com/en-us/library/cc848902%28v=vs.85%29.aspx) or [sessionStorage](http://msdn.microsoft.com/en-us/library/cc197020%28v=vs.85%29.aspx)).
     
 This article focuses on how to use the JavaScript API for Office to persist add-in state. For examples of using browser cookies and web storage, see the [Excel-Add-in-JavaScript-PersistCustomSettings](https://github.com/OfficeDev/Excel-Add-in-JavaScript-PersistCustomSettings).
 
