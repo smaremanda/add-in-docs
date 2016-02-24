@@ -30,6 +30,7 @@ Here's what you need to do that:
 3. Choose the kind of add-in you want to create, name the project, and then choose the  **Create** button.
     
     ![Excel app tile](../images/Apps_NAPA_Excel_Tile.png)
+
     The code editor opens and shows the default webpage, which already contains some sample code that you can run without doing anything else.
     
 4. On the side of the page, choose the Run button(
