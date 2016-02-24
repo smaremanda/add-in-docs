@@ -6,14 +6,14 @@ Use add-in commands to integrate Outlook add-ins with the Outlook UI.
 
 Outlook add-in commands provide ways to initiate specific add-in actions from the ribbon by adding buttons or drop-down menus. This lets users access add-ins in a simple, intuitive, and unobtrusive way. Because they offer increased functionality in a seamless manner, you can use add-in commands to create more engaging solutions.
 
-Add-in commands are only available for add-ins that do not use [ItemHasAttachment](https://msdn.microsoft.com/en-us/library/fp123567.aspx%28Office.15%29.aspx), [ItemHasKnownEntity](https://msdn.microsoft.com/en-us/library/fp161166.aspx%28Office.15%29.aspx), or [ItemHasRegularExpressionMatch](https://msdn.microsoft.com/en-us/library/fp142215.aspx%28Office.15%29.aspx) rules to limit the types of items they activate on. However, add-ins can present different commands depending on whether the currently selected item is a message or appointment, and can choose to appear in read or compose scenarios. Using add-in commands if possible is a[best practice](../design/add-in-development-best-practices.md).
+Add-in commands are only available for add-ins that do not use [ItemHasAttachment](https://msdn.microsoft.com/en-us/library/fp123567.aspx%28Office.15%29.aspx), [ItemHasKnownEntity](https://msdn.microsoft.com/en-us/library/fp161166.aspx%28Office.15%29.aspx), or [ItemHasRegularExpressionMatch](https://msdn.microsoft.com/en-us/library/fp142215.aspx%28Office.15%29.aspx) rules to limit the types of items they activate on. However, add-ins can present different commands depending on whether the currently selected item is a message or appointment, and can choose to appear in read or compose scenarios. Using add-in commands if possible is a [best practice](../design/add-in-development-best-practices.md).
 
 
 ## Creating the add-in command
 
 Add-in commands are declared in the add-in manifest in the  **VersionOverrides** element. This element is an addition to the manifest schema v1.1 that ensures backward compatibility. In a client that doesn't support **VersionOverrides**, existing add-ins will continue to function as they did without add-in commands.
 
-The  **VersionOverrides** manifest entries specify many things for the add-in such as the host, types of controls to add to the ribbon, the text, the icons, and any associated functions. For more information, see[Define add-in commands in your Outlook add-in manifest](../outlook/manifests/define-add-in-commands.md). 
+The  **VersionOverrides** manifest entries specify many things for the add-in such as the host, types of controls to add to the ribbon, the text, the icons, and any associated functions. For more information, see [Define add-in commands in your Outlook add-in manifest](../outlook/manifests/define-add-in-commands.md). 
 
 When an add-in needs to provide status updates, such as progress indicators or error messages, it must do so through the [notification APIs](http://dev.outlook.com/reference/add-ins/NotificationMessages.html%28Office.15%29.md). The processing for the notifications must also be defined in a separate HTML file that is specified in the  **FunctionFile** node of the manifest.
 
@@ -27,7 +27,9 @@ An add-in command appears on the ribbon as a button. When a user installs an add
 As the ribbon gets more crowded, the add-in commands will adjust (collapse) in an orderly way. In all cases, the add-in commands for an add-in will be grouped together.
 
 
-![Screenshots showing add-in command buttons in a normal and a collapsed state.](../images/6fcb64d8-9598-41d1-8944-f6d1f6d2edb6.png)Once an add-in command is added to an add-in, the add-in name is removed from the app bar unless the add-in also includes a [Custom pane Outlook add-ins](../outlook/custom-pane-outlook-add-ins.md). Only the add-in command button on the ribbon remains.
+![Screenshots showing add-in command buttons in a normal and a collapsed state.](../images/6fcb64d8-9598-41d1-8944-f6d1f6d2edb6.png)
+
+Once an add-in command is added to an add-in, the add-in name is removed from the app bar unless the add-in also includes a [Custom pane Outlook add-ins](../outlook/custom-pane-outlook-add-ins.md). Only the add-in command button on the ribbon remains.
 
 
 ## What UX shapes exist for add-in commands?
