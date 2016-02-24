@@ -26,7 +26,7 @@ In this interaction pattern, the add-in doesn't become active until you select a
 |:-----|:-----|
 |
 **Content add-in for Excel that generates a chart from data in a spreadsheet**
-![Content app for Excel that generates a chart from data in a spreadsheet](../images/off15appUXFig01.png)|
+![Content app for Excel that generates a chart from data in a spreadsheet](../../images/off15appUXFig01.png)|
 <ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>To reinforce that you must perform an action before choosing the button, display instructions along with a disabled button (A).</p></li><li><p>After you select a range of cells, the <span class="ui">Create Chart</span> button becomes active (B - C).</p></li><li><p>The visualization fills out the container and replaces the previous view (D).</p></li><li><p>Display any additional UI at the bottom edge of the add-in along with a settings button (gear) to take you to a view where you can reset or manage the add-in.</p></li></ul>Best suited for:
 <ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>Add-ins that require you to select data prior to activation.</p></li></ul>|
 
