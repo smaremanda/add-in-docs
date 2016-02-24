@@ -84,7 +84,9 @@ The generator will prompt you for the following:
 
 **Yeoman generator input for an add-in**
 
-![Screenshot of yeoman generator prompting for project input](../images/338cf34b-fe8d-4a2f-9e38-e4bbca996139.PNG)This creates the structure and basic files for your add-in.
+![Screenshot of yeoman generator prompting for project input](../images/338cf34b-fe8d-4a2f-9e38-e4bbca996139.PNG)
+
+This creates the structure and basic files for your add-in.
 
 
 ## Hosting Your Office add-in
