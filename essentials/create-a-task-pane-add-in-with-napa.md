@@ -6,7 +6,7 @@ Use Napa Office 365 Development Tools to create a task pane Office Add-in that s
 
 
 
-You can also build a task pane add-in using [Visual Studio](http://msdn.microsoft.com/en-us/library/a23c5ce8-6de3-40f6-a86a-85d3592bef3e%28Office.15%29.aspx) or a[text editor](http://msdn.microsoft.com/en-us/library/d5411d35-9ef6-4e21-ba2b-4d2b1ee81359%28Office.15%29.aspx). If you're not sure which tool to use, see [Development basics](../overview/platform-overview.md#StartBuildingApps_DevelopmentBasics).
+You can also build a task pane add-in using [Visual Studio](http://msdn.microsoft.com/en-us/library/a23c5ce8-6de3-40f6-a86a-85d3592bef3e%28Office.15%29.aspx) or a [text editor](http://msdn.microsoft.com/en-us/library/d5411d35-9ef6-4e21-ba2b-4d2b1ee81359%28Office.15%29.aspx). If you're not sure which tool to use, see [Development basics](../overview/platform-overview.md#StartBuildingApps_DevelopmentBasics).
 
 
 ## Prerequisites
@@ -61,7 +61,7 @@ You can also build a task pane add-in using [Visual Studio](http://msdn.microsof
     
 2. Set the  **Name** property toMy First Task Pane Add-in and the **Description** property toThis app shows images that relate to text that's selected in the document.
     
-    The  **Name** and **Description** properties help users understand the purpose of the add-in when it appears in a list of available add-ins for an Office application. The **Start Page** property points to the page that appears in the Office Add-in when you start the project. For this walkthrough, we'll use the default page that comes with your project, but you can add new pages to your project and set the **Start Page** property to any of those pages. For an example, see[Create a content add-in for Excel with Napa Office 365 Development Tools](../essentials/create-a-content-add-in-with-napa.md).
+    The  **Name** and **Description** properties help users understand the purpose of the add-in when it appears in a list of available add-ins for an Office application. The **Start Page** property points to the page that appears in the Office Add-in when you start the project. For this walkthrough, we'll use the default page that comes with your project, but you can add new pages to your project and set the **Start Page** property to any of those pages. For an example, see [Create a content add-in for Excel with Napa Office 365 Development Tools](../essentials/create-a-content-add-in-with-napa.md).
     
 3. Choose the  **Apply** button at the bottom of the **Properties** page to save the property values.
     
