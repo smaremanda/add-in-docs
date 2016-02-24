@@ -172,66 +172,19 @@ This table shows the Office host applications (including desktop, tablet, mobile
 
 |**Office application**|**Content add-ins**|**Outlook add-ins**|**Task pane add-ins**|
 |:-----|:-----|:-----|:-----|
-|Access web apps|
-![Check symbol](../images/mod_off15_checkmark.png)
+|Access web apps|Y||Y|
+|Excel 2013 or later|Y||Y|
+|Excel Online|Y||Y|
+|Outlook 2013 or later||Y||
+|Outlook for Mac||Y||
+|Outlook Web App||Y||
+|OWA for Devices||Y||
+|PowerPoint 2013 or later|Y||Y|
+|PowerPoint Online|Y||Y|
+|Project 2013 or later|||Y|
+|Word 2013 or later|||Y|
+|Word Online|||Y|
 
-|||
-|Excel 2013 or later|
-![Check symbol](../images/mod_off15_checkmark.png)
-
-||
-![Check symbol](../images/mod_off15_checkmark.png)
-
-|
-|Excel Online|
-![Check symbol](../images/mod_off15_checkmark.png)
-
-||
-![Check symbol](../images/mod_off15_checkmark.png)
-
-|
-|Outlook 2013 or later||
-![Check symbol](../images/mod_off15_checkmark.png)
-
-||
-|Outlook for Mac||
-![Check symbol](../images/mod_off15_checkmark.png)
-
-||
-|Outlook Web App||
-![Check symbol](../images/mod_off15_checkmark.png)
-
-||
-|OWA for Devices||
-![Check symbol](../images/mod_off15_checkmark.png)
-
-||
-|PowerPoint 2013 or later|
-![Check symbol](../images/mod_off15_checkmark.png)
-
-||
-![Check symbol](../images/mod_off15_checkmark.png)
-
-|
-|PowerPoint Online|
-![Check symbol](../images/mod_off15_checkmark.png)
-
-||
-![Check symbol](../images/mod_off15_checkmark.png)
-
-|
-|Project 2013 or later|||
-![Check symbol](../images/mod_off15_checkmark.png)
-
-|
-|Word 2013 or later|||
-![Check symbol](../images/mod_off15_checkmark.png)
-
-|
-|Word Online|||
-![Check symbol](../images/mod_off15_checkmark.png)
-
-|
 For more details, see [Requirements for running Office Add-ins](../overview/requirements-for-running-office-add-ins.md).
 
 
