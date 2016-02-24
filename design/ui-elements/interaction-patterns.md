@@ -8,16 +8,11 @@ Office Add-ins can enhance authoring and productivity experiences as well as con
 
  **Common add-in scenarios**
 
-
-
-|**Type of add-in**|**Common scenarios**|
-|:-----|:-----|
-|Content|
-<ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>Visualizing data</p></li><li><p>Widgets and tools</p></li></ul>|
-|Task pane|
-<ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>Transforming and processing data</p></li><li><p>Authoring more effectively and efficiently</p></li><li><p>Locating content and inserting media</p></li><li><p>Publishing or uploading content to a web service</p></li></ul>|
-|Outlook|
-<ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>Bridging between mail content and an external application</p></li><li><p>Giving more information about the content in a mail message or appointment</p></li><li><p>Providing information that helps you be more productive</p></li></ul>|
+| Add-in type | Common scenarios |
+| ------ | ------ |
+|  Content  |  Visualizing data <br> Widgets and tools  |
+|  Task pane  |  Transforming and processing data <br> Authoring effectively and efficiently <br> Locating content and inserting data <br> Publishing or uploading content to a web service  |
+|  Outlook  |  Bridging between mail content and an external application <br> Giving more information about the content in a mail message or appointment <br> Providing information that helps you be more productive  |
 
 ## Visualize data with a content add-in
 <a name="AppPatterns_VisualizeData"> </a>
