@@ -1,5 +1,4 @@
-
-# Office Mix add-ins
+ add-ins
 
 
  _**Applies to:** apps for Office | Office Add-ins | Office Mix | PowerPoint_
@@ -10,7 +9,7 @@ Microsoft Office Mix is a platform for creating Office Add-ins that you embed in
 
 Let's start by talking about the end point - Office Mix. Office Mix is a Microsoft technology that allows users to embed instructional components like videos, voice, music, ink, and on-slide actions in Microsoft PowerPoint presentations and then publish them online. Users can use these dynamic instructional presentations, called Mixes, to turn their PowerPoint presentations into dynamic lessons.
 
-To see examples of Mixes in action, take a look at the [Office Mix Getting Started](https://mix.office.com/Home/GettingStarted) page, and then browse the many stunning Office Mix lesson demos in the [Office Mix Gallery](https://mix.office.com/Gallery). Notice the effective use of Mixes in each of these lessons.
+To see examples of Mixes in action, browse the many stunning Office Mix lesson demos in the [Office Mix Gallery](https://mix.office.com/Gallery). Notice the effective use of Mixes in each of these lessons.
 
 
 ## How does LabsJS fit in with Office Mix?
