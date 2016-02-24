@@ -4,10 +4,10 @@ Use the  **VersionOverrides** element in your Outlook add-in manifest to define 
 
  _**Applies to:** apps for Office | Office Add-ins | Outlook_
 
-To support add-in commands, some additional elements have been added to the add-in manifest v1.1 within the  **VersionOverrides** element.. When a manifest contains the **VersionOverrides** element, versions of Outlook that support add-in commands will use the information within that element to load the add-in. Older versions of Outlook that do not support add-in commands will ignore the element and continue to use the old elements as described in[Outlook add-in manifests](../outlook/manifests/manifests.md).
+To support add-in commands, some additional elements have been added to the add-in manifest v1.1 within the  **VersionOverrides** element.. When a manifest contains the **VersionOverrides** element, versions of Outlook that support add-in commands will use the information within that element to load the add-in. Older versions of Outlook that do not support add-in commands will ignore the element and continue to use the old elements as described in [Outlook add-in manifests](../outlook/manifests/manifests.md).
 
 When the client application recognizes the  **VersionOverrides** node, the add-in name appears in the ribbon, not in the read/compose pane. The add-in won't appear in both places.
-
+ 
 
 ## VersionOverrides element
 
@@ -62,7 +62,7 @@ Here an example of  **VersionOverrides**, showing its child elements.
 
 The  **FormFactor** element specifies the settings for an add-in for a given form factor. It is a child node under **Hosts** / **Host**. Currently, it can only specify the desktop ( **DesktopFormFactor**). It contains all the add-in information for that form factor except for the  **Resources** node.
 
-The form factor contains the  **FunctionFile** element and one or more **ExtensionPoint** elements. For more information see the following[FunctionFile element](#VersionOverrides10_FunctionFile) and[ExtensionPoint element](#VersionOverrides10_ExtensionPoint) sections. The following is an example of **FormFactor**, showing its child nodes.
+The form factor contains the  **FunctionFile** element and one or more **ExtensionPoint** elements. For more information see the following [FunctionFile element](#VersionOverrides10_FunctionFile) and [ExtensionPoint element](#VersionOverrides10_ExtensionPoint) sections. The following is an example of **FormFactor**, showing its child nodes.
 
 
 
@@ -95,9 +95,9 @@ The form factor contains the  **FunctionFile** element and one or more **Extensi
 ## FunctionFile element
 <a name="VersionOverrides10_FunctionFile"> </a>
 
-The  **FunctionFile** element is a child element under **FormFactor**. It specifies the source code file for operations that an add-in exposes through add-in commands that execute a JavaScript function instead of displaying UI. The **resid** attribute of the **FunctionFile** element is set to the value of the **id** attribute of a **Url** element in the **Resources** element that contains the URL to an HTML file that contains or loads all of the JavaScript functions used by UI-less add-in command buttons. For more information, see the[Button controls](#VersionOverrides10_Buttons) section of this article.
+The  **FunctionFile** element is a child element under **FormFactor**. It specifies the source code file for operations that an add-in exposes through add-in commands that execute a JavaScript function instead of displaying UI. The **resid** attribute of the **FunctionFile** element is set to the value of the **id** attribute of a **Url** element in the **Resources** element that contains the URL to an HTML file that contains or loads all of the JavaScript functions used by UI-less add-in command buttons. For more information, see the [Button controls](#VersionOverrides10_Buttons) section of this article.
 
-The JavaScript in the HTML file indicated by the  **FunctionFile** element must call `Office.initialize` and define named functions that take a single parameter: `event`. The functions should use the [item.notificationMessages](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html%28Office.15%29.md) API to indicate progress, success, or failure to the user. It should also call[event.completed (JavaScript API for Office)](http://msdn.microsoft.com/library/89db707a-a522-4a71-a830-801d0106527b%28Office.15%29.aspx) when it has finished execution. The name of the functions are used in the **FunctionName** element for UI-less buttons.
+The JavaScript in the HTML file indicated by the  **FunctionFile** element must call `Office.initialize` and define named functions that take a single parameter: `event`. The functions should use the [item.notificationMessages](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html%28Office.15%29.md) API to indicate progress, success, or failure to the user. It should also call [event.completed (JavaScript API for Office)](http://msdn.microsoft.com/library/89db707a-a522-4a71-a830-801d0106527b%28Office.15%29.aspx) when it has finished execution. The name of the functions are used in the **FunctionName** element for UI-less buttons.
 
 The following is an example of an HTML file defining a trackMessage function.
 
@@ -202,7 +202,7 @@ Where:
 |**OfficeTab**|Required. The pre-existing tab to use. Currently, the  **id** attribute can only be "TabDefault".|
 |**Group**|A group of user interface extension points in a tab. A group can have up to six controls.The  **id** attribute is required. It is a string with a maximum of 125 characters.|
 |**Label**|Required. The label of the group. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element in the **ShortStrings** element in the **Resources** element.|
-|**Control**|A group requires at least one control. Currently, only buttons and menus are supported. See the following [Button controls](#VersionOverrides10_Buttons) and[Menu (dropdown button) controls](#VersionOverrides10_Menus) sections for more information.|
+|**Control**|A group requires at least one control. Currently, only buttons and menus are supported. See the following [Button controls](#VersionOverrides10_Buttons) and [Menu (dropdown button) controls](#VersionOverrides10_Menus) sections for more information.|
 Developers can also create a custom tab on the ribbon by using the  **CustomTab** element, as shown in the following example.
 
 
@@ -363,7 +363,7 @@ Where the  **id** attribute is a string with a maximum of 125 characters and the
 |:-----|:-----|
 |**Image**|An image for the menu. The  **resid** attribute must be set to the value of the **id** attribute of an **Image** element in the **Images** element in the **Resources** element. The **size** attribute indicates the size in pixels of the image. Three image sizes are required (16, 32, and 80 pixels) while five other sizes are supported (20, 24, 40, 48, and 64 pixels).|
 |
-|**Items**|Required. Contains the  **Item** elements for the menu. Each **Item** element contains the same child elements as a[Button controls](#VersionOverrides10_Buttons).|
+|**Items**|Required. Contains the  **Item** elements for the menu. Each **Item** element contains the same child elements as a [Button controls](#VersionOverrides10_Buttons).|
 
 
 The following is an example of a menu.
