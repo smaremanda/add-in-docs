@@ -264,7 +264,7 @@ The following markup shows the required .rels part before editing. Since we're d
 ```
 
 
- **Important**  Remove the relationships (that is, the  ** **&lt;Relationshipâ€¦&gt;**** tag) for any parts that you completely remove from the package. Including a part without a corresponding relationship, or excluding a part and leaving its relationship in the package, will result in an error.
+ **Important**  Remove the relationships (that is, the  ** **&lt;Relationship&gt;**** tag) for any parts that you completely remove from the package. Including a part without a corresponding relationship, or excluding a part and leaving its relationship in the package, will result in an error.
 
 The following markup shows the document.xml part, which includes our sample formatted text content before editing.
 
@@ -311,7 +311,7 @@ Since document.xml is the primary document part where you place your content, le
 
 - The opening  ** **w:document**** tag includes several namespace ( ** **xmlns**** ) listings. Many of those namespaces refer to specific types of content and you only need them if they're relevant to your content.
     
-    Notice that the prefix for the tags throughout a document part refers back to the namespaces. In this example, the only prefix used in the tags throughout the document.xml part is  ** **w:****, so the only namespace that we need to leave in the opening ** **w:document**** tag is ** **xmlns:w****.
+    Notice that the prefix for the tags throughout a document part refers back to the namespaces. In this example, the only prefix used in the tags throughout the document.xml part is  **w:**, so the only namespace that we need to leave in the opening **w:document** tag is **xmlns:w**.
     
 
  **Tip**  If you're editing your markup in Visual Studio 2015, after you delete namespaces in any part, look through all tags of that part. If you've removed a namespace that's required for your markup, you'll see a red squiggly underline on the relevant prefix for affected tags. If you remove the  ** **xmlns:mc**** namespace, you must also remove the **mc:Ignorable** attribute that precedes the namespace listings.
