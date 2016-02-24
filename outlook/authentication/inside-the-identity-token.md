@@ -18,7 +18,11 @@ Exchange 2013 uses a JSON Web Token (JWT) for the identity token. For informatio
 
 The header identifies the token and lets your web service know what kind of token is being presented. The following example shows what he header of the token looks like.
 
-{ "typ" : "JWT", "alg" : "RS256", "x5t" : "Un6V7lYN-rMgaCoFSTO5z707X-4" }The following table describes the parts of the identity token header.
+```
+{ "typ" : "JWT", "alg" : "RS256", "x5t" : "Un6V7lYN-rMgaCoFSTO5z707X-4" }
+```
+
+The following table describes the parts of the identity token header.
 
 
 **Parts of the identity token header**
@@ -33,8 +37,21 @@ The header identifies the token and lets your web service know what kind of toke
 ### Identity token payload
 
 The payload contains the authentication claims that identify the email account and identify the Exchange server that sent the token. The following example shows what the payload section looks like.
+```
 
-{ "aud" : "https://mailhost.contoso.com/IdentityTest.html", "iss" : "00000002-0000-0ff1-ce00-000000000000@mailhost.contoso.com", "nbf" : "1331579055", "exp" : "1331607855", "appctxsender":"00000002-0000-0ff1-ce00-000000000000@mailhost.context.com", "isbrowserhostedapp":"true", "appctx" : { "msexchuid" : "53e925fa-76ba-45e1-be0f-4ef08b59d389@mailhost.contoso.com" "version" : "ExIdTok.V1" "amurl" : "https://mailhost.contoso.com:443/autodiscover/metadata/json/1" } }The following table lists the parts of the identity token payload.
+{ 
+   "aud" : "https://mailhost.contoso.com/IdentityTest.html", 
+   "iss" : "00000002-0000-0ff1-ce00-000000000000@mailhost.contoso.com", 
+   "nbf" : "1331579055", 
+   "exp" : "1331607855", 
+   "appctxsender":"00000002-0000-0ff1-ce00-000000000000@mailhost.context.com",
+   "isbrowserhostedapp":"true",
+"appctx" : { 
+     "msexchuid" : "53e925fa-76ba-45e1-be0f-4ef08b59d389@mailhost.contoso.com" "version" : "ExIdTok.V1" "amurl" :         "https://mailhost.contoso.com:443/autodiscover/metadata/json/1" 
+     } 
+}
+```
+The following table lists the parts of the identity token payload.
 
 
 **Parts of the identity token payload**
