@@ -1,4 +1,4 @@
- #Office Mix add-ins
+# Office Mix add-ins
 
 
  _**Applies to:** apps for Office | Office Add-ins | Office Mix | PowerPoint_
