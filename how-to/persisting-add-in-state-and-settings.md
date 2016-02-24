@@ -158,7 +158,7 @@ Office.initialize = function (reason) {
 ### Creating or assigning a roaming setting
 <a name="PersistMailboxData_CreateSetting"> </a>
 
-Continuing with the preceding example, the following  `setAppSetting` function shows how to use the[RoamingSettings.set](https://dev.outlook.com/reference/add-ins/RoamingSettings.html%28Office.15%29.md) method to set or update a setting named `cookie` with today's date. Then, it saves all the roaming settings back to the Exchange Server with the[RoamingSettings.saveAsync](https://dev.outlook.com/reference/add-ins/RoamingSettings.html%28Office.15%29.md) method.
+Continuing with the preceding example, the following  `setAppSetting` function shows how to use the [RoamingSettings.set](https://dev.outlook.com/reference/add-ins/RoamingSettings.html%28Office.15%29.md) method to set or update a setting named `cookie` with today's date. Then, it saves all the roaming settings back to the Exchange Server with the [RoamingSettings.saveAsync](https://dev.outlook.com/reference/add-ins/RoamingSettings.html%28Office.15%29.md) method.
 
 
 ```
@@ -176,13 +176,13 @@ function saveMyAppSettingsCallback(asyncResult) {
 }
 ```
 
-The  **saveAsync** method saves roaming settings asynchronously and takes an optional callback function. This code sample passes a callback function named `saveMyAppSettingsCallback` to the **saveAsync** method. When the asynchronous call returns, the _asyncResult_ parameter of the `saveMyAppSettingsCallback` function provides access to an[AsyncResult](https://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) object that you can use to determine the success or failure of the operation with the **AsyncResult.status** property.
+The  **saveAsync** method saves roaming settings asynchronously and takes an optional callback function. This code sample passes a callback function named `saveMyAppSettingsCallback` to the **saveAsync** method. When the asynchronous call returns, the _asyncResult_ parameter of the `saveMyAppSettingsCallback` function provides access to an [AsyncResult](https://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) object that you can use to determine the success or failure of the operation with the **AsyncResult.status** property.
 
 
 ### Removing a roaming setting
 <a name="PersistMailboxData_RemoveSetting"> </a>
 
-Also extending the preceding examples, the following  `removeAppSetting` function, shows how to use the[RoamingSettings.remove](https://dev.outlook.com/reference/add-ins/RoamingSettings.html%28Office.15%29.md) method to remove the `cookie` setting and save all the roaming settings back to the Exchange Server.
+Also extending the preceding examples, the following  `removeAppSetting` function, shows how to use the [RoamingSettings.remove](https://dev.outlook.com/reference/add-ins/RoamingSettings.html%28Office.15%29.md) method to remove the `cookie` setting and save all the roaming settings back to the Exchange Server.
 
 
 ```
