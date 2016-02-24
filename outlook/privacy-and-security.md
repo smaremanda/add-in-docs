@@ -179,12 +179,6 @@ The security model provides the following rights and responsibilities to adminis
 - Applicable to only Outlook for Windows: Can override performance threshold settings by GPO registry settings.
     
 
-## In this section
-<a name="olowa15conagave_privacy_InThisSection"> </a>
-
-
-- [Understanding Outlook add-in permissions](../outlook/privacy/understanding-outlook-add-in-permissions.md)
-    
 
 ## Additional resources
 <a name="olowa15conagave_privacyadditionalrsc"> </a>
