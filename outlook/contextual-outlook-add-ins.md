@@ -50,9 +50,9 @@ A user launches a contextual add-in through text, either a known entity or a dev
 
 **Example of text with highlighted entity (an address)**
 
-![Shows the highlighted entity within a paragraph](../images/828175bb-4579-4454-abbd-1987fffe5052.jpg)While highlighting is the best indication of contextual add-ins, there are some cases where a contextual add-in will appear in the add-in bar:
+![Shows the highlighted entity within a paragraph](../images/828175bb-4579-4454-abbd-1987fffe5052.jpg)
 
-
+While highlighting is the best indication of contextual add-ins, there are some cases where a contextual add-in will appear in the add-in bar:
 
 - When the entity is a URL or an email address
     
@@ -87,9 +87,9 @@ The card will normally appear below the entity and centered with respect to the 
 
 **Example of an add-in displayed in a card**
 
-![Shows a contextual app in a card](../images/59bcabc2-7cb0-4b9b-bb9f-06089dca9c31.png)Note the following:
+![Shows a contextual app in a card](../images/59bcabc2-7cb0-4b9b-bb9f-06089dca9c31.png)
 
-
+Note the following:
 
 - The "Bing Maps" tab appears as white text with a blue background. If a new add-in is selected, the tab will change to blue text with a white background.
     
@@ -106,9 +106,9 @@ The following screenshot shows how the same add-in (in this case Bing Maps) woul
 
 **Example of an add-in bar and an add-in in an iframe**
 
-![Shows the app bar above the iframe displaying the app](../images/4adce8d2-6957-4d80-b365-7a36dc3cef11.jpg)Note the following:
+![Shows the app bar above the iframe displaying the app](../images/4adce8d2-6957-4d80-b365-7a36dc3cef11.jpg)
 
-
+Note the following:
 
 - In this screenshot, the add-in bar shows the name of the launched add-in and the "+ Get more add-ins" above the iframe. If there are any other add-ins (contextual or not) that launch from the add-in bar, they would also appear.
     
