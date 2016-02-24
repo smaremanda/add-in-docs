@@ -23,7 +23,7 @@ To try out some add-ins, you can install the following add-ins from the Office S
 |Outlook|[Package Tracker](https://store.office.com/package-tracker-WA104162083.aspx?assetid=WA104162083)|
 |PowerPoint|[Khan Content from Microsoft](https://store.office.com/khan-content-from-microsoft-WA104320031.aspx?assetid=WA104320031)|
 |Word|[Translator](https://store.office.com/translator-WA104124372.aspx?assetid=WA104124372)|
-To check out some code, download the [Office Add-ins sample pack](http://code.msdn.microsoft.com/Apps-for-Office-code-d04762b7) for Visual Studio.
+
 
 ## Anatomy of an Office Add-in
 <a name="StartBuildingApps_AnatomyofApp"> </a>
