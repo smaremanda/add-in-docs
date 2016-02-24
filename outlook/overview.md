@@ -29,8 +29,7 @@ As we evolve Outlook clients and the add-in platform and add new ways for add-in
 Outlook add-ins offer many rich features that can be used to support various scenarios.
 
 
-|
-|
+
 |**Feature**|**Description**|
 |:-----|:-----|
 |Contextual activation|Outlook add-ins are contextually based. They can activate based on the following criteria: 
