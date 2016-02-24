@@ -97,7 +97,7 @@ Note the following:
     
 - Clicking the "+ Get more add-ins" button opens the Office Store.
     
-- If the add-in name is too large for the available space, it is replaced with "â€¦" that is to the left of the "+ Get more add-ins". The user can then click that to see a dropdown list of the add-ins that wouldn't fit into the bar.
+- If the add-in name is too large for the available space, it is replaced with "..." that is to the left of the "+ Get more add-ins". The user can then click that to see a dropdown list of the add-ins that wouldn't fit into the bar.
     
 - To close the card and end the add-in, a user clicks anywhere outside of the card.
     
@@ -117,7 +117,7 @@ Note the following:
 
 ## How contextual add-ins appear on different devices
 
-On a desktop computer, a contextual add-in typically displays in a card; if there are multiple add-ins, they appear on separate tabs. On tablets, the same add-in displays in an overleaf and, if there are multiple add-ins, they appear in tabs. On phones, the add-in displays as an immersive experience. In the case where there are multiple add-ins that have activated on the entity, a "â€¦" is visible in the top right to let users navigate between the different add-ins on the specific entity.
+On a desktop computer, a contextual add-in typically displays in a card; if there are multiple add-ins, they appear on separate tabs. On tablets, the same add-in displays in an overleaf and, if there are multiple add-ins, they appear in tabs. On phones, the add-in displays as an immersive experience. In the case where there are multiple add-ins that have activated on the entity, a "..." is visible in the top right to let users navigate between the different add-ins on the specific entity.
 
 
 ## Current contextual add-ins
