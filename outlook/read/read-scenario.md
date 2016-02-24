@@ -25,7 +25,7 @@ In each of these read scenarios, Outlook activates add-ins when their activation
 
 **Figure 1. The add-in pane showing the Bing Maps add-in in action for the selected Outlook message that contains an address**
 
-![Bing Map mail app in Outlook](../images/off15appsdk_BingMapMailAppScreenshot.jpg)
+![Bing Map mail app in Outlook](../../images/off15appsdk_BingMapMailAppScreenshot.jpg)
 
 
 ## Types of add-ins available in read mode
@@ -51,19 +51,6 @@ See also:
 
 - For activating add-ins in read forms: see Table 1 in [Specify activation rules in a manifest](../outlook/manifests/activation-rules.md#MailAppDefineRules_Manifest).
     
-- [Use regular expression activation rules to show an Outlook add-in](../outlook/read/use-regular-expressions-to-show-an-outlook-add-in.md)
-    
-- [Match strings in an Outlook item as well-known entities](../outlook/read/match-strings-in-an-item-as-well-known-entities.md)
-    
-- [Extract entity strings from an Outlook item](../outlook/read/extract-entity-strings-from-an-item.md)
-    
-- [Get attachments of an Outlook item from the server](../outlook/read/get-attachments-of-an-outlook-item.md)
-    
-
-## In this section
-<a name="mod_off15_CreatingForRead_InThisSection"> </a>
-
-
 - [Use regular expression activation rules to show an Outlook add-in](../outlook/read/use-regular-expressions-to-show-an-outlook-add-in.md)
     
 - [Match strings in an Outlook item as well-known entities](../outlook/read/match-strings-in-an-item-as-well-known-entities.md)
