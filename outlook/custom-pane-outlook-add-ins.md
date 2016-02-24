@@ -9,7 +9,9 @@ A custom pane can only appear in a message read or appointment attendee views. I
 
 **An add-in with a custom pane in read mode**
 
-![Shows a custom pane in a message read form.](../images/c585ab0a-6c33-42d0-a20f-5deb8b54f480.png)The following example defines a custom pane for items that are messages or have an attachment or include an address. 
+![Shows a custom pane in a message read form.](../images/c585ab0a-6c33-42d0-a20f-5deb8b54f480.png)
+
+The following example defines a custom pane for items that are messages or have an attachment or include an address. 
 
 
 
