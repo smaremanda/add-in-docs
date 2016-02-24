@@ -8,7 +8,7 @@ Specifies the state of the active view of the document, for example, whether the
 
 |||
 |:-----|:-----|
-|**Hosts:**|PowerPoint, |
+|**Hosts:**|PowerPoint|
 |**[Added](#bk_history) in**|1.1|
 
 [See all support details](#bk_support)
