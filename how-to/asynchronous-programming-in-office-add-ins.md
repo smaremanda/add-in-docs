@@ -66,7 +66,7 @@ function write(message){
 
 You can also use the parameter of your callback function to access other properties of the  **AsyncResult** object. Use the [AsyncResult.status](http://msdn.microsoft.com/en-us/library/eec9c712-79eb-4365-88a1-6d77649727c1%28Office.15%29.aspx) property to determine if the call succeeded or failed. If your call fails you can use the [AsyncResult.error](http://msdn.microsoft.com/en-us/library/51c46d36-972d-4d82-91aa-da99cbeb8d4f%28Office.15%29.aspx) property to access an [Error](http://msdn.microsoft.com/en-us/library/36d1d048-b888-4bb5-9321-d340bcbc86f4%28Office.15%29.aspx) object for error information.
 
-For more information about using the  **getSelectedDataAsync** method, see[Read and write data to the active selection in a document or spreadsheet](../how-to/read-and-write-data-to-the-active-selection-in-a-document-or-spreadsheet.md). 
+For more information about using the  **getSelectedDataAsync** method, see [Read and write data to the active selection in a document or spreadsheet](../how-to/read-and-write-data-to-the-active-selection-in-a-document-or-spreadsheet.md). 
 
 
 ### Writing a named callback function
