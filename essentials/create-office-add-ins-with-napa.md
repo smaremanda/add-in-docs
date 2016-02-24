@@ -55,7 +55,7 @@ After you've completed your add-in project and want to distribute it, you can pu
 ## Get Started
 <a name="GetStarted"> </a>
 
-To get started, open the [Napa Office 365 Development Tools](https://www.napacloudapp.com) web app in your browser. Here are some topics to help you get started.
+To get started, open the [Napa Office 365 Development Tools](https://www.napacloudapp.com) web app in your browser. Here are some topics to help you get started:
 
 
 - [Create a content add-in for Excel with Napa Office 365 Development Tools](../essentials/create-a-content-add-in-with-napa.md)
