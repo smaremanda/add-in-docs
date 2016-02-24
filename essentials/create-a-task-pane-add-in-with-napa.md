@@ -38,6 +38,7 @@ You can also build a task pane add-in using [Visual Studio](http://msdn.microsof
     **Task pane add-in tile**
 
     ![The New Project dialog box in Napa](../images/Apps_NAPA_Excelapptile.png)
+    <br>
     The code editor opens and shows the default webpage, which already contains some sample code that you can run without doing anything else.
     
 
