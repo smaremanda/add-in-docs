@@ -23,17 +23,23 @@ Download the code sample [Word-Add-in-Load-and-write-Open-XML](https://github.co
 **Figure 1. Text with direct formatting.**
 
 
-![Text with direct formatting applied.](../images/off15app_CreateWdAppUsingOOXML_fig01.png)You can use direct formatting to specify exactly what the text will look like regardless of existing formatting in the user's document.
+![Text with direct formatting applied.](../images/off15app_CreateWdAppUsingOOXML_fig01.png)
+
+You can use direct formatting to specify exactly what the text will look like regardless of existing formatting in the user's document.
 
 **Figure 2. Text formatted using a style.**
 
 
-![Text formatted with paragraph style.](../images/off15app_CreateWdAppUsingOOXML_fig02.png)You can use a style to automatically coordinate the look of text you insert with the user's document.
+![Text formatted with paragraph style.](../images/off15app_CreateWdAppUsingOOXML_fig02.png)
+
+You can use a style to automatically coordinate the look of text you insert with the user's document.
 
 **Figure 3. A simple image.**
 
 
-![Image of a logo.](../images/off15app_CreateWdAppUsingOOXML_fig03.png)You can use the same method for inserting any Office-supported image format.
+![Image of a logo.](../images/off15app_CreateWdAppUsingOOXML_fig03.png)
+
+You can use the same method for inserting any Office-supported image format.
 
 **Figure 4. An image formatted using picture styles and effects.**
 
@@ -43,42 +49,56 @@ Download the code sample [Word-Add-in-Load-and-write-Open-XML](https://github.co
 **Figure 5. A content control.**
 
 
-![Text within a bound content control.](../images/off15app_CreateWdAppUsingOOXML_fig05.png)You can use content controls with your add-in to add content at a specified (bound) location rather than at the selection.
+![Text within a bound content control.](../images/off15app_CreateWdAppUsingOOXML_fig05.png)
+
+You can use content controls with your add-in to add content at a specified (bound) location rather than at the selection.
 
 **Figure 6. A text box with WordArt formatting.**
 
 
-![Text formatted with WordArt text effects.](../images/off15app_CreateWdAppUsingOOXML_fig06.png)Text effects are available in Word for text inside a text box (as shown here) or for regular body text.
+![Text formatted with WordArt text effects.](../images/off15app_CreateWdAppUsingOOXML_fig06.png)
+
+Text effects are available in Word for text inside a text box (as shown here) or for regular body text.
 
 **Figure 7. A shape.**
 
 
-![An Office 2013 drawing shape in Word 2013.](../images/off15app_CreateWdAppUsingOOXML_fig07.png)You can insert built-in or custom drawing shapes, with or without text and formatting effects.
+![An Office 2013 drawing shape in Word 2013.](../images/off15app_CreateWdAppUsingOOXML_fig07.png)
+
+You can insert built-in or custom drawing shapes, with or without text and formatting effects.
 
 **Figure 8. A table with direct formatting.**
 
 
-![A formatted table in Word 2013.](../images/off15app_CreateWdAppUsingOOXML_fig08.png)You can include text formatting, borders, shading, cell sizing, or any table formatting you need.
+![A formatted table in Word 2013.](../images/off15app_CreateWdAppUsingOOXML_fig08.png)
+
+You can include text formatting, borders, shading, cell sizing, or any table formatting you need.
 
 **Figure 9. A table formatted using a table style.**
 
 
-![A formatted table in Word 2013.](../images/off15app_CreateWdAppUsingOOXML_fig09.png)You can use built-in or custom table styles just as easily as using a paragraph style for text.
+![A formatted table in Word 2013.](../images/off15app_CreateWdAppUsingOOXML_fig09.png)
+
+You can use built-in or custom table styles just as easily as using a paragraph style for text.
 
 **Figure 10. A SmartArt diagram.**
 
 
-![A dynamic SmartArt diagram in Word 2013.](../images/off15app_CreateWdAppUsingOOXML_fig10.png)Office 2013 offers a wide array of SmartArt diagram layouts (and you can use Office Open XML to create your own).
+![A dynamic SmartArt diagram in Word 2013.](../images/off15app_CreateWdAppUsingOOXML_fig10.png)
+
+Office 2013 offers a wide array of SmartArt diagram layouts (and you can use Office Open XML to create your own).
 
 **Figure 11. A chart.**
 
 
-![A chart in Word 2013.](../images/off15app_CreateWdAppUsingOOXML_fig11.png)You can insert Excel charts as live charts in Word documents, which also means you can use them in your add-in for Word.
+![A chart in Word 2013.](../images/off15app_CreateWdAppUsingOOXML_fig11.png)
+
+You can insert Excel charts as live charts in Word documents, which also means you can use them in your add-in for Word.
 As you can see by the preceding examples, you can use Office Open XML coercion to insert essentially any type of content that a user can insert into their own document.
 There are two simple ways to get theOffice Open XML markup you need. Either add your rich content to an otherwise blank Word 2013 document and then save the file in Word XML Document format or use a test add-in with the [getSelectedDataAsync](http://msdn.microsoft.com/en-us/library/fp142294.aspx) method to grab the markup. Both approaches provide essentially the same result.
 
     
- **Note**  AnOffice Open XML document is actually a compressed package of files that represent the document contents. Saving the file in the Word XML Document format gives you the entireOffice Open XML package flattened into one XML file, which is also what you get when using  **getSelectedDataAsync** to retrieve the Office Open XML markup.
+ **Note**  An Office Open XML document is actually a compressed package of files that represent the document contents. Saving the file in the Word XML Document format gives you the entireOffice Open XML package flattened into one XML file, which is also what you get when using  **getSelectedDataAsync** to retrieve the Office Open XML markup.
 
 If you save the file to an XML format from Word, note that there are two options under the Save as Type list in the Save As dialog box for .xml format files. Be sure to choose  **Word XML Document** and not the Word 2003 option.
 Download the code sample named [Word-Add-in-Get-Set-EditOpen-XML](https://github.com/OfficeDev/Word-Add-in-Get-Set-EditOpen-XML), which you can use as a tool to retrieve and test your markup.
@@ -91,7 +111,7 @@ In this topic, we'll use some common scenarios we've been hearing from the Offic
 
 When you use [getSelectedDataAsync](http://msdn.microsoft.com/en-us/library/fp142294.aspx) to retrieve the Office Open XML for a selection of content (or when you save the document in Word XML Document format), what you're getting is not just the markup that describes your selected content; it's an entire document with many options and settings that you almost certainly don't need. In fact, if you use that method from a document that contains a task pane add-in, the markup you get even includes your task pane.
 
-Even a simple Word document package includes parts for document properties, styles, theme (formatting settings), web settings, fonts, and then someâ€”in addition to parts for the actual content.
+Even a simple Word document package includes parts for document properties, styles, theme (formatting settings), web settings, fonts, and then some, in addition to parts for the actual content.
 
 For example, say that you want to insert just a paragraph of text with direct formatting, as shown earlier in Figure 1. When you grab the Office Open XML for the formatted text using  **getSelectedDataAsync**, you see a large amount of markup. That markup includes a package element that represents an entire document, which contains several parts (commonly referred to as document parts or, in the Office Open XML, as package parts), as you see listed in Figure 13. Each part represents a separate file within the package.
 
@@ -190,7 +210,7 @@ Once you save the preceding Office Open XML as an XML file that's accessible fro
 In this function, notice that all but the last line are used to get your saved markup for use in the [setSelectedDataAsync](http://msdn.microsoft.com/en-us/library/fp142145.aspx) method call at the end of the function. **setSelectedDataASync** requires only that you specify the content to be inserted and the coercion type.
 
 
- **Note**  Replace  _yourXMLfilename_ with the name and path of the XML file as you've saved it in your solution. If you're not sure where to include XML files in your solution or how to reference them in your code, see the[Word-Add-in-Load-and-write-Open-XML](https://github.com/OfficeDev/Word-Add-in-Load-and-write-Open-XML) code sample for examples of that and a working example of the markup and JavaScript shown here.
+ **Note**  Replace  _yourXMLfilename_ with the name and path of the XML file as you've saved it in your solution. If you're not sure where to include XML files in your solution or how to reference them in your code, see the [Word-Add-in-Load-and-write-Open-XML](https://github.com/OfficeDev/Word-Add-in-Load-and-write-Open-XML) code sample for examples of that and a working example of the markup and JavaScript shown here.
 
 
 
@@ -240,7 +260,7 @@ The following markup shows the required .rels part before editing. Since we're d
 
  **Important**  Remove the relationships (that is, the  ** **&lt;Relationshipâ€¦&gt;**** tag) for any parts that you completely remove from the package. Including a part without a corresponding relationship, or excluding a part and leaving its relationship in the package, will result in an error.
 
-The following markup shows the document.xml partâ€”which includes our sample formatted text contentâ€”before editing.
+The following markup shows the document.xml part, which includes our sample formatted text content before editing.
 
 
 
@@ -296,7 +316,7 @@ Since document.xml is the primary document part where you place your content, le
 - The  ** **w:pPr**** tag includes properties for directly-applied paragraph formatting, such as space before or after the paragraph, paragraph alignment, or indents. (Direct formatting refers to attributes that you apply individually to content rather than as part of a style.) This tag also includes direct font formatting that's applied to the entire paragraph, in a nested ** **w:rPr**** (run properties) tag, which contains the font color and size set in our sample.
     
 
- **Note**  You might notice that font sizes and some other formatting settings in Word Office Open XML markup look like they're double the actual size. That's because paragraph and line spacing, as well some section formatting properties shown in the preceding markup, are specified in twips (one-twentieth of a point).Depending on the types of content you work with in Office Open XML, you may see several additional units of measure, including English Metric Units (914,400 EMUs to an inch), which are used for some Office Art (drawingML) values and 100,000 times actual value, which is used in both drawingML and PowerPoint markup. PowerPoint also expresses some values as 100 times actual and Excel commonly uses actual values.
+ **Note**  You might notice that font sizes and some other formatting settings in Word Office Open XML markup look like they're double the actual size. That's because paragraph and line spacing, as well some section formatting properties shown in the preceding markup, are specified in twips (one-twentieth of a point). Depending on the types of content you work with in Office Open XML, you may see several additional units of measure, including English Metric Units (914,400 EMUs to an inch), which are used for some Office Art (drawingML) values and 100,000 times actual value, which is used in both drawingML and PowerPoint markup. PowerPoint also expresses some values as 100 times actual and Excel commonly uses actual values.
 
 
 - Within a paragraph, any content with like properties is included in a run ( ** **w:r**** ), such as is the case with the sample text. Each time there's a change in formatting or content type, a new run starts. (That is, if just one word in the sample text was bold, it would be separated into its own run.) In this example, the content includes just the one text run.
@@ -329,7 +349,7 @@ Before we move on, let's take a look at differences to note for a couple of thes
 
 ### Understanding drawingML markup (Office graphics) in Word: What are fallbacks?
 
-If the markup for your shape or text box looks far more complex than you would expect, there is a reason for it. With the release of Office 2007, we saw the introduction of the Office Open XML Formats as well as the introduction of a new Office graphics engine that PowerPoint and Excel fully adopted. In the 2007 release, Word only incorporated part of that graphics engineâ€”adopting the updated Excel charting engine, SmartArt graphics, and advanced picture tools. For shapes and text boxes, Word 2007 continued to use legacy drawing objects (VML). It was in the 2010 release that Word took the additional steps with the graphics engine to incorporate updated shapes and drawing tools.
+If the markup for your shape or text box looks far more complex than you would expect, there is a reason for it. With the release of Office 2007, we saw the introduction of the Office Open XML Formats as well as the introduction of a new Office graphics engine that PowerPoint and Excel fully adopted. In the 2007 release, Word only incorporated part of that graphics engine, adopting the updated Excel charting engine, SmartArt graphics, and advanced picture tools. For shapes and text boxes, Word 2007 continued to use legacy drawing objects (VML). It was in the 2010 release that Word took the additional steps with the graphics engine to incorporate updated shapes and drawing tools.
 
 So, to support shapes and text boxes in Office Open XML Format Word documents when opened in Word 2007, shapes (including text boxes) require fallback VML markup.
 
@@ -343,7 +363,7 @@ If you have grouped drawing objects included in your content, you'll see additio
 
 #### About graphic positioning
 
-In the code samples [Word-Add-in-Load-and-write-Open-XML](https://github.com/OfficeDev/Word-Add-in-Load-and-write-Open-XML)and [Word-Add-in-Get-Set-EditOpen-XML](https://github.com/OfficeDev/Word-Add-in-Get-Set-EditOpen-XML), the text box and shape are setup using different types of text wrapping and positioning settings. (Also be aware that the image examples in those code samples are setup using in line with text formatting, which positions a graphic object on the text baseline.)
+In the code samples [Word-Add-in-Load-and-write-Open-XML](https://github.com/OfficeDev/Word-Add-in-Load-and-write-Open-XML) and [Word-Add-in-Get-Set-EditOpen-XML](https://github.com/OfficeDev/Word-Add-in-Get-Set-EditOpen-XML), the text box and shape are setup using different types of text wrapping and positioning settings. (Also be aware that the image examples in those code samples are setup using in line with text formatting, which positions a graphic object on the text baseline.)
 
 The shape in those code samples is positioned relative to the right and bottom page margins. Relative positioning lets you more easily coordinate with a user's unknown document setup because it will adjust to the user's margins and run less risk of looking awkward because of paper size, orientation, or margin settings. To retain relative positioning settings when you insert a graphic object, you must retain the paragraph mark (w:p) in which the positioning (known in Word as an anchor) is stored. If you insert the content into an existing paragraph mark rather than including your own, you may be able to retain the same initial visual, but many types of relative references that enable the positioning to automatically adjust to the user's layout may be lost.
 
@@ -357,7 +377,9 @@ In Word, find content controls on the Developer tab of the ribbon, as shown here
 
 **Figure 15. The Controls group on the Developer tab in Word.**
 
-![Content Controls group on the Word 2013 ribbon.](../images/off15app_CreateWdAppUsingOOXML_fig15.png)Types of content controls in Word include rich text, plain text, picture, building block gallery, check box, dropdown list, combo box, date picker, and repeating section. 
+![Content Controls group on the Word 2013 ribbon.](../images/off15app_CreateWdAppUsingOOXML_fig15.png)
+
+Types of content controls in Word include rich text, plain text, picture, building block gallery, check box, dropdown list, combo box, date picker, and repeating section. 
 
 
 
@@ -373,7 +395,7 @@ When you use content controls with your add-in, you can also greatly expand the 
     
  **Note**  Don't confuse XML data binding in Word with the ability to bind to a control via your add-in. These are completely separate features. However, you can include named content controls in the content you insert via your add-in using OOXML coercion and then use code in the add-in to bind to those controls.
 
-Also be aware that both XML data binding and Office.js can interact with custom XML parts in your appâ€”so it is possible to integrate these powerful tools. To learn about working with custom XML parts in the Office JavaScript API, see the [Additional resources](../how-to/create-better-add-ins-for-word-with-office-open-xml.md#bk_AdditionalResources) section of this topic.
+Also be aware that both XML data binding and Office.js can interact with custom XML parts in your app, so it is possible to integrate these powerful tools. To learn about working with custom XML parts in the Office JavaScript API, see the [Additional resources](../how-to/create-better-add-ins-for-word-with-office-open-xml.md#bk_AdditionalResources) section of this topic.
 
 Working with bindings in your Word add-in is covered in the next section of the topic. First, let's take a look at an example of the Office Open XML required for inserting a rich text content control that you can bind to using your add-in.
 
@@ -420,7 +442,7 @@ Working with bindings in your Word add-in is covered in the next section of the 
  </pkg:package>
 ```
 
-As already mentioned, content controlsâ€”like formatted textâ€”don't require additional document parts, so only edited versions of the .rels and document.xml parts are included here. 
+As already mentioned, content controls, like formatted text, don't require additional document parts, so only edited versions of the .rels and document.xml parts are included here. 
 
 The  ** **w:sdt**** tag that you see within the document.xml body represents the content control. If you generate the Office Open XML markup for a content control, you'll see that several attributes have been removed from this example, including the tag and document part properties. Only essential (and a couple of best practice) elements have been retained, including the following:
 
@@ -509,7 +531,7 @@ The code shown here takes the following steps:
 
 After code execution, if you examine the markup of the document in which your add-in created bindings, you'll see two parts to each binding. In the markup for the content control where a binding was added (in document.xml), you'll see the attribute  ** **&lt;w15:webExtensionLinked/&gt;****.
 
-In the document part named webExtensions1.xml, you'll see a list of the bindings you've created. Each is identified using the binding ID and the ID attribute of the applicable control, such as the followingâ€”where the  ** **appref**** attribute is the content control ID: ** **&lt;we:binding id="myBinding" type="text" appref="1382295294"/&gt;****.
+In the document part named webExtensions1.xml, you'll see a list of the bindings you've created. Each is identified using the binding ID and the ID attribute of the applicable control, such as the following, where the  ** **appref**** attribute is the content control ID: ** **&lt;we:binding id="myBinding" type="text" appref="1382295294"/&gt;****.
 
 
  **Important**  You must add the binding at the time you intend to act upon it. Don't include the markup for the binding in the Office Open XML for inserting the content control because the process of inserting that markup will strip the binding.
@@ -652,7 +674,7 @@ So, for example, the only content we needed to retain from the styles.xml part f
 #### Editing the markup for content using table styles
 <a name="bk_EditingMarkupForTableStyles"> </a>
 
-When your content uses a table style, you need the same relative part of styles.xml as described for working with paragraph styles. That is, you only need to retain the information for the style you're using in your contentâ€”and you must include the name, ID, and at least one formatting attributeâ€”but are better off including a complete style definition to address all potential user scenarios.
+When your content uses a table style, you need the same relative part of styles.xml as described for working with paragraph styles. That is, you only need to retain the information for the style you're using in your content, and you must include the name, ID, and at least one formatting attribute, but are better off including a complete style definition to address all potential user scenarios.
 
 However, when you look at the markup both for your table in document.xml and for your table style definition in styles.xml, you see enormously more markup than when working with paragraph styles.
 
@@ -679,13 +701,13 @@ If you check out the example markup for the simple image shown earlier in Figure
 Be aware that, because a relationship reference is explicitly used ( **r:embed="rID4"** ) and that related part is required in order to render the image, if you don't include the binary data in your Office Open XML package, you will get an error. This is different from styles.xml, explained previously, which won't throw an error if omitted since the relationship is not explicitly referenced and the relationship is to a part that provides attributes to the content (formatting) rather than being part of the content itself.
 
 
- **Note**  When you review the markup, notice the additional namespaces used in the a:blip tag. You'll see in document.xml that the  **xlmns:a** namespace (the main drawingML namespace) is dynamically placed at the beginning of the use of drawingML references rather than at the top of the document.xml part. However, the relationships namespace (r) must be retained where it appears at the start of document.xml. Check your picture markup for additional namespace requirements. Remember that you don't have to memorize which types of content require what namespacesâ€”you can easily tell by reviewing the prefixes of the tags throughout document.xml.
+ **Note**  When you review the markup, notice the additional namespaces used in the a:blip tag. You'll see in document.xml that the  **xlmns:a** namespace (the main drawingML namespace) is dynamically placed at the beginning of the use of drawingML references rather than at the top of the document.xml part. However, the relationships namespace (r) must be retained where it appears at the start of document.xml. Check your picture markup for additional namespace requirements. Remember that you don't have to memorize which types of content require what namespaces, you can easily tell by reviewing the prefixes of the tags throughout document.xml.
 
 
 ### Understanding additional image parts and formatting
 <a name="bk_WorkingWithImages"> </a>
 
-When you use some Office picture formatting effects on your imageâ€”such as for the image shown in Figure 4, which uses adjusted brightness and contrast settings (in addition to picture styling)â€”a second binary data part for an HD format copy of the image data may be required. This additional HD format is required for formatting considered a layering effect, and the reference to it appears in document.xml similar to the following:
+When you use some Office picture formatting effects on your image, such as for the image shown in Figure 4, which uses adjusted brightness and contrast settings (in addition to picture styling), a second binary data part for an HD format copy of the image data may be required. This additional HD format is required for formatting considered a layering effect, and the reference to it appears in document.xml similar to the following:
 
 
 ```XML
@@ -708,7 +730,7 @@ A SmartArt diagram has four associated parts, but only two are always required. 
     
 - data1.xml: This part is required. It includes the data in use in your instance of the diagram.
     
-- drawing1.xml: This part is not always required but if you apply custom formatting to elements in your instance of a diagramâ€”such as directly formatting individual shapesâ€”you might need to retain it.
+- drawing1.xml: This part is not always required but if you apply custom formatting to elements in your instance of a diagram, such as directly formatting individual shapes, you might need to retain it.
     
 - colors1.xml: This part is not required. It includes color style information, but the colors of your diagram will coordinate by default with the colors of the active formatting theme in the destination document, based on the SmartArt color style you apply from the SmartArt Tools design tab in Word before saving out your Office Open XML markup.
     
@@ -782,7 +804,7 @@ So, what else do you need to know if you're creating your add-in both for stand-
 
 The markup for a given content type and methods for inserting it are the same whether your add-in is designed to stand-alone or work with a template. If you are using templates designed to work with your add-in, just be sure that your JavaScript includes callbacks that account for scenarios where referenced content might already exist in the document (such as demonstrated in the binding example shown in the section [Add and bind to a named content control](../how-to/create-better-add-ins-for-word-with-office-open-xml.md#bk_AddAndBind)).
 
-When using templates with your appâ€”whether the add-in will be resident in the template at the time that the user created the document or the add-in will be inserting a templateâ€”you might also want to incorporate other elements of the API to help you create a more robust, interactive experience. For example, you may want to include identifying data in a customXML part that you can use to determine the template type in order to provide template-specific options to the user. To learn more about how to work with customXML in your add-ins, see the additional resources that follow.
+When using templates with your app, whether the add-in will be resident in the template at the time that the user created the document or the add-in will be inserting a template, you might also want to incorporate other elements of the API to help you create a more robust, interactive experience. For example, you may want to include identifying data in a customXML part that you can use to determine the template type in order to provide template-specific options to the user. To learn more about how to work with custom XML in your add-ins, see the additional resources that follow.
 
 
 ## Additional resources
