@@ -267,7 +267,7 @@ When you are ready to package your add-in for publishing, open the  **Publish Of
 
 - In  **Solution Explorer**, open the shortcut menu for the SharePoint Add-in project, and then choose  **Publish**.
     
-    The  **Publish Office and SharePoint Add-ins** wizard appears. For more information, see[Publish SharePoint Add-ins by using Visual Studio](http://msdn.microsoft.com/library/8137d0fa-52e2-4771-8639-60af80f693bb%28Office.15%29.aspx).
+    The  **Publish Office and SharePoint Add-ins** wizard appears. For more information, see [Publish SharePoint Add-ins by using Visual Studio](http://msdn.microsoft.com/library/8137d0fa-52e2-4771-8639-60af80f693bb%28Office.15%29.aspx).
     
 
 ## Additional resources
