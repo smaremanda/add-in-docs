@@ -44,7 +44,10 @@ You can use the same method for inserting any Office-supported image format.
 **Figure 4. An image formatted using picture styles and effects.**
 
 
-![Formatted image in Word 2013.](../images/off15app_CreateWdAppUsingOOXML_fig04.png)Adding high quality formatting and effects to your images requires much less markup than you might expect.
+![Formatted image in Word 2013.](../images/off15app_CreateWdAppUsingOOXML_fig04.png)
+
+
+Adding high quality formatting and effects to your images requires much less markup than you might expect.
 
 **Figure 5. A content control.**
 
@@ -122,9 +125,12 @@ For example, say that you want to insert just a paragraph of text with direct fo
 **Figure 12. Collapse and expand package parts for easier editing in Visual Studio 2015**
 
 ![Office Open XML code snippet for a package part.](../images/off15app_CreateWdAppUsingOOXML_fig12.png)
+
 **Figure 13. The parts included in a basic Word Office Open XML document package**
 
-![Office Open XML code snippet for a package part.](../images/off15app_CreateWdAppUsingOOXML_fig13.png)With all that markup, you might be surprised to discover that the only elements you actually need to insert the formatted text example are pieces of the .rels part and the document.xml part.
+![Office Open XML code snippet for a package part.](../images/off15app_CreateWdAppUsingOOXML_fig13.png)
+
+With all that markup, you might be surprised to discover that the only elements you actually need to insert the formatted text example are pieces of the .rels part and the document.xml part.
 
 
     
