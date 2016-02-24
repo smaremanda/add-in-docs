@@ -33,9 +33,9 @@ The basic components of an Office Add-in are an XML manifest file and the defaul
 
 **Manifest + webpage = an Office Add-in**
 
-![Manifest plus webpage equals Office Add-in](../images/DK2_AgaveOverview01.png)The manifest specifies settings and capabilities of the add-in, such as the following:
+![Manifest plus webpage equals Office Add-in](../images/DK2_AgaveOverview01.png)
 
-
+The manifest specifies settings and capabilities of the add-in, such as the following:
 
 - The URL of the webpage that implements the add-in's UI and programming logic.
     
@@ -99,20 +99,16 @@ If want to use your favorite text editor to create an Office Add-in, see these t
 
 - [Create a task pane or content add-in for Word or Excel by using a text editor](../essentials/create-a-task-pane-or-content-add-in-for-word-or-excel-by-using-a-text-editor.md)
     
-- [Get Started with Mail add-ins for Outlook.com (Preview)](https://dev.outlook.com/MailAppsGettingStarted/GetStarted/outlook-dot-com.aspx)
+- [Get Started with Outlook add-ins for Outlook.com (Preview)](https://dev.outlook.com/MailAppsGettingStarted/GetStarted/outlook-dot-com.aspx)
     
 
 ### JavaScript API for Office
 
 The JavaScript API for Office contains objects and members for building add-ins and interacting with Office content and web services.
 
-For more information about the JavaScript API for Office:
-
-
-- See [Understanding the JavaScript API for Office](../overview/understanding-the-javascript-api-for-office.md) and the[JavaScript API for Office](http://msdn.microsoft.com/library/b27e70c3-d87d-4d27-85e0-103996273298%28Office.15%29.aspx) reference.
+For more information about the JavaScript API for Office, see [Understanding the JavaScript API for Office](../overview/understanding-the-javascript-api-for-office.md) and the [JavaScript API for Office](http://msdn.microsoft.com/library/b27e70c3-d87d-4d27-85e0-103996273298%28Office.15%29.aspx) reference.
     
-- Run and edit some JavaScript API for Office code in Excel Online with the [Interactive Office Add-ins API tutorial](http://msdn.microsoft.com/en-us/office/dn449240.aspx)
-    
+
 The Word and Excel JavaScript APIs provide host-specific object models that you can use in an Office add-in. You get access to well known objects such as paragraphs and workbooks which makes creating an Office add-in for Word and Excel easier to do. Learn more about these APIs by taking a look at the [Word add-ins](../word/word-add-ins.md) and[Excel add-ins](https://msdn.microsoft.com/EN-US/library/office/mt616485.aspx) overview topics.
 
 
@@ -129,7 +125,9 @@ Task pane add-ins work side-by-side with an Office document, and let you supply 
 
 **Task pane add-in**
 
-![Task Pane add-in](../images/DK2_AgaveOverview04.png)To try out a task pane add-in in Excel 2013, Excel Online, or Word 2013, install the [Wikipedia](https://store.office.com/wikipedia-WA104099688.aspx?assetid=WA104099688) add-in.
+![Task Pane add-in](../images/DK2_AgaveOverview04.png)
+
+To try out a task pane add-in in Excel 2013, Excel Online, or Word 2013, install the [Wikipedia](https://store.office.com/wikipedia-WA104099688.aspx?assetid=WA104099688) add-in.
 
 
 ### Content add-ins
@@ -139,7 +137,9 @@ Content add-ins integrate web-based features as content that shown in line with 
 
 **Content add-in**
 
-![In content add-in](../images/DK2_AgaveOverview05.png)To try out a content add-in in Excel 2013 or Excel Online, install the [Bing Maps](https://store.office.com/bing-maps-WA102957661.aspx?assetid=WA102957661) add-in.
+![In content add-in](../images/DK2_AgaveOverview05.png)
+
+To try out a content add-in in Excel 2013 or Excel Online, install the [Bing Maps](https://store.office.com/bing-maps-WA102957661.aspx?assetid=WA102957661) add-in.
 
 
 ### Outlook add-ins
@@ -152,7 +152,9 @@ Outlook add-ins display next to an Outlook item when you're viewing or composing
 
 **Outlook add-in in a read scenario**
 
-![Contextual add-in](../images/DK2_AgaveOverview06.png)To try out an Outlook add-in in Outlook, Outlook for Mac, or Outlook Web App, install the [Package Tracker](https://store.office.com/package-tracker-WA104162083.aspx?assetid=WA104162083) add-in.
+![Contextual add-in](../images/DK2_AgaveOverview06.png)
+
+To try out an Outlook add-in in Outlook, Outlook for Mac, or Outlook Web App, install the [Package Tracker](https://store.office.com/package-tracker-WA104162083.aspx?assetid=WA104162083) add-in.
 
 
 ## Office applications that support Office Add-ins
@@ -289,17 +291,17 @@ For more information about the Office Add-ins privacy and security model, see [P
 You can publish Office Add-ins to four distribution end-points:
 
 
--  **Office Store**????????This is a public marketplace that Microsoft hosts and regulates on Office.com. In the Office Store, developers around the world can publish and sell their custom Office solutions, and then end users and IT professionals can download them for personal or corporate use. 
+-  **Office Store** - This is a public marketplace that Microsoft hosts and regulates on Office.com. In the Office Store, developers around the world can publish and sell their custom Office solutions, and then end users and IT professionals can download them for personal or corporate use. 
     
     When a developer uploads an add-in to the Office Store, Microsoft validates the code. For example, it verifies that the add-in manifest markup is valid and complete. If the code is valid, Microsoft digitally signs the add-in package. The Office Store then takes care of the consumer download experience from discovery to purchase, upgrades, and updates.
     
--  **Office Add-ins catalog on SharePoint**????????For task pane and content add-ins, IT departments can deploy private add-in catalogs to provide the same add-in acquisition experience that the Office Store provides. This new catalog and development platform enables IT departments to use a streamlined method to distribute Office and SharePoint Add-ins to managed users from a central location. 
+-  **Office Add-ins catalog on SharePoint** - For task pane and content add-ins, IT departments can deploy private add-in catalogs to provide the same add-in acquisition experience that the Office Store provides. This new catalog and development platform enables IT departments to use a streamlined method to distribute Office and SharePoint Add-ins to managed users from a central location. 
     
     Add-in catalogs are available to all SharePoint 2013 customers (including Office 365 and SharePoint on-premise). An add-in catalog enables publishing and management of both internally created add-ins as well as add-ins that are available in the Office Store and licensed for corporate use. 
     
--  **Exchange catalog**????????This is a private catalog for Outlook add-ins that is available to users of the Exchange server on which it resides. It enables publishing and management of corporate Outlook add-ins, including internally created add-ins as well as add-ins that are available in the Office Store and licensed for corporate use.
+-  **Exchange catalog** - This is a private catalog for Outlook add-ins that is available to users of the Exchange server on which it resides. It enables publishing and management of corporate Outlook add-ins, including internally created add-ins as well as add-ins that are available in the Office Store and licensed for corporate use.
     
--  **Network shared folder add-in catalog**????????IT departments and developers can also deploy task pane and content add-ins to a central network shared folder, where the manifest files will be stored and managed. Users can then acquire add-ins by specifying this shared folder as a trusted catalog, or IT departments can configure this shared folder as a trusted catalog by using a registry setting.
+-  **Network shared folder add-in catalog** - IT departments and developers can also deploy task pane and content add-ins to a central network shared folder, where the manifest files will be stored and managed. Users can then acquire add-ins by specifying this shared folder as a trusted catalog, or IT departments can configure this shared folder as a trusted catalog by using a registry setting.
     
 For more information, see [Publish your Office Add-in](../publish/publish.md).
 
@@ -314,19 +316,19 @@ These scenarios suggest ways in which you can, for example, surface line-of-busi
 Scenarios include:
 
 
--  **Translation wizard**????????A Word task pane add-in that automatically translates selected text from the document language to another language selected from a drop-down list.
+-  **Translation wizard** - A Word task pane add-in that automatically translates selected text from the document language to another language selected from a drop-down list.
     
--  **Chart creation**????????An Excel content add-in that builds a chart automatically from selected data.
+-  **Chart creation** - An Excel content add-in that builds a chart automatically from selected data.
     
--  **Third-party service integration**????????A Word or Excel task pane add-in that automatically displays the Wikipedia page that corresponds to selected text.
+-  **Third-party service integration** - A Word or Excel task pane add-in that automatically displays the Wikipedia page that corresponds to selected text.
     
--  **Rich mash-ups**????????A Bing map content add-in in Excel that plots the offshore equipment and resource locations for a petroleum company, including getting this information in real time from the company resource-management system.
+-  **Rich mash-ups** - A Bing map content add-in in Excel that plots the offshore equipment and resource locations for a petroleum company, including getting this information in real time from the company resource-management system.
     
--  **Spec validation**????????A section or paragraph of a design specification for an aircraft component is flagged as outdated, because a Word task pane add-in that communicates with a business system to validate the contents against the latest spec.
+-  **Spec validation** - A section or paragraph of a design specification for an aircraft component is flagged as outdated, because a Word task pane add-in that communicates with a business system to validate the contents against the latest spec.
     
--  **Kicking off workflows**????????An Outlook add-in can assist creating a message or meeting request based on templates, inserting meeting location details or user's choice of a signature, and attaching related documents.
+-  **Kicking off workflows** - An Outlook add-in can assist creating a message or meeting request based on templates, inserting meeting location details or user's choice of a signature, and attaching related documents.
     
--  **Order details surfaced in context**????????An Outlook add-in that detects a purchase order number or customer number embedded in an email message can present details of the order or customer in the message. This could include an action to take, such as approval.
+-  **Order details surfaced in context** - An Outlook add-in that detects a purchase order number or customer number embedded in an email message can present details of the order or customer in the message. This could include an action to take, such as approval.
     
 
 ## Additional resources
@@ -336,12 +338,6 @@ Scenarios include:
 - [Office Add-ins](../overview/office-add-ins.md)
     
 - [Design guidelines for Office Add-ins](../design/add-in-design.md)
-    
-- [Task pane and content add-ins for Office 2013](../essentials/task-pane-and-content-add-ins.md)
-    
-- [Outlook add-ins](../outlook/outlook-add-ins.md)
-    
-- [Overview of Outlook add-ins architecture and features](../outlook/overview.md)
     
 - [Publish your Office Add-in](../publish/publish.md)
     
