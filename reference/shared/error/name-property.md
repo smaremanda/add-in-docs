@@ -5,7 +5,7 @@ Gets the name of the error.
 |||
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Outlook, PowerPoint, Project, Word|
-|**[Last changed](#bk_history) in Selection**|1.1|
+|**Last changed in Selection**|1.1|
 
 ```
 var errName = asyncResult.error.name;

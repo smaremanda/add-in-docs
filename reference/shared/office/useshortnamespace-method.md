@@ -5,7 +5,7 @@ Toggles on and off the  `Office` alias for the full `Microsoft.Office.WebExtensi
 |||
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Outlook, PowerPoint, Project, Word|
-|**[Last changed](#bk_history) in**|1.1|
+|**Last changed in**|1.1|
 
 ```
 Office.useShortNamespace(useShortcut);

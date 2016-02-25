@@ -5,7 +5,7 @@ Represents an instance of an add-in, which provides access to the top-level obje
 |||
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Outlook, PowerPoint, Project, Word|
-|**[Last changed](#bk_history) in**|1.1|
+|**Last changed in**|1.1|
 
 ```
 Office

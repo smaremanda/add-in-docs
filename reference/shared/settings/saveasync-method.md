@@ -6,7 +6,7 @@ Persists the in-memory copy of the settings property bag in the document.
 |:-----|:-----|
 |**Hosts:**|Access, Excel, PowerPoint, Word|
 |**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|Settings|
-|**[Last changed](#bk_history) in**|1.1|
+|**Last changed in**|1.1|
 
 ```
 Office.context.document.settings.saveAsync(callback);

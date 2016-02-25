@@ -5,7 +5,7 @@ Gets the mode the document is in.
 |||
 |:-----|:-----|
 |**Hosts:**|Access, PowerPoint, Excel, Word|
-|**[Last changed](#bk_history) in**|1.1|
+|**Last changed in**|1.1|
 
 ```
 var docMode = Office.context.document.mode;

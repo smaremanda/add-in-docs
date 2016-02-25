@@ -5,7 +5,7 @@ Occurs when the runtime environment is loaded and the add-in is ready to start i
 |||
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Outlook, PowerPoint, Project, Word|
-|**[Last changed](#bk_history) in**|1.1|
+|**Last changed in**|1.1|
 
 ```
 Office.initialize = function (reason) {/* initialization code */}

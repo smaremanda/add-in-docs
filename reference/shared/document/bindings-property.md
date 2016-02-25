@@ -5,7 +5,7 @@ Gets an object that provides access to the bindings defined in the document.
 |||
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Word|
-|**[Last changed](#bk_history) in**|1.1|
+|**Last changed in**|1.1|
 
 ```
 var docBindings = Office.context.document.bindings;

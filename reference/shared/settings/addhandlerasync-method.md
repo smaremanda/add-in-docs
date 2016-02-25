@@ -6,7 +6,7 @@ Adds an event handler for the  **settingsChanged** event.
 |:-----|:-----|
 |**Hosts:**|Excel|
 |**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|Settings|
-|**[Last changed](#bk_history) in**|1.0|
+|**Last changed in**|1.0|
 
 ```
 Office.context.document.settings.addHandlerAsync(eventType, handler [, options], callback);
