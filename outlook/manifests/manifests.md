@@ -706,7 +706,7 @@ This is separate from the  **Hosts** element inside the **VersionOverrides** ele
 
 ## Requirements
 
-The  **Requirements** element specifies the set of APIs available to the add-in. For an Outlook add-in, the requirement set must be Mailbox and a value of 1.1 or above. Please refer to the API reference for the latest requirement set version. Refer to the[Outlook add-in APIs](../outlook/apis/apis.md) for more information on requirement sets.
+The  **Requirements** element specifies the set of APIs available to the add-in. For an Outlook add-in, the requirement set must be Mailbox and a value of 1.1 or above. Please refer to the API reference for the latest requirement set version. Refer to the [Outlook add-in APIs](../outlook/apis/apis.md) for more information on requirement sets.
 
 The  **Requirements** element can also appear in the **VersionOverrides** element, allowing the add-in to specify a different requirement when loaded in clients that support **VersionOverrides**.
 

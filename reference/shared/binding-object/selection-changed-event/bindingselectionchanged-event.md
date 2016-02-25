@@ -17,7 +17,7 @@ Office.EventType.BindingSelectionChanged
 
 ## Remarks
 
-To add an event handler for the  **BindingSelectionChanged** event of a binding, use the[addHandlerAsync](../reference/shared/binding-object/addhandlerasync-method.md) method of the **Binding** object. The event handler receives an argument of type[BindingSelectionChangedEventArgs](../reference/shared/binding-object/selection-changed-event-args/bindingselectionchangedeventargs-object.md).
+To add an event handler for the  **BindingSelectionChanged** event of a binding, use the [addHandlerAsync](../reference/shared/binding-object/addhandlerasync-method.md) method of the **Binding** object. The event handler receives an argument of type [BindingSelectionChangedEventArgs](../reference/shared/binding-object/selection-changed-event-args/bindingselectionchangedeventargs-object.md).
 
 
 ## Example

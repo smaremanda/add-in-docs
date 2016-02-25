@@ -427,7 +427,7 @@ The  **ProjectResourceFields** enumeration contains the following members.
 ## Remarks
 <a name="Members"> </a>
 
-A  **ProjectResourceFields** constant can be used as a parameter of the[getResourceFieldAsync method](../reference/shared/projectdocument/getresourcefieldasync-method.md).
+A  **ProjectResourceFields** constant can be used as a parameter of the [getResourceFieldAsync method](../reference/shared/projectdocument/getresourcefieldasync-method.md).
 
 For more information about working with fields in Project, see [Available fields reference](http://office.microsoft.com/en-us/project-help/available-fields-reference-HA102749299.aspx?CTT=1). In Project Help, search for  _Available fields_.
 
@@ -435,7 +435,7 @@ For more information about working with fields in Project, see [Available fields
 ## Support details
 <a name="bk_support"> </a>
 
-A checkmark (√) in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+A checkmark (???) in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
 
 For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
 
@@ -445,7 +445,7 @@ For more information about Office host application and server requirements, see 
 
 ||**Office for Windows desktop**|**Office Online(in browser)**|
 |:-----|:-----|:-----|
-|**Project**|√||
+|**Project**|???||
 
 |||
 |:-----|:-----|

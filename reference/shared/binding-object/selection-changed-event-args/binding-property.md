@@ -15,7 +15,7 @@ var myBinding = eventArgsObj.binding;
 
 ## Return Value
 
-A [Binding](../reference/shared/binding-object/binding-object.md) object that represents the binding that raised the[SelectionChanged](../reference/shared/binding-object/selection-changed-event/bindingselectionchanged-event.md) event.
+A [Binding](../reference/shared/binding-object/binding-object.md) object that represents the binding that raised the [SelectionChanged](../reference/shared/binding-object/selection-changed-event/bindingselectionchanged-event.md) event.
 
 
 ## Support details

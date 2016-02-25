@@ -26,7 +26,7 @@ Office.context.document.settings.saveAsync(callback);
 
 ## Callback Value
 
-When the function you passed to the  _callback_ parameter executes, it receives an[AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the callback function's only parameter.
+When the function you passed to the  _callback_ parameter executes, it receives an [AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the callback function's only parameter.
 
 In the callback function passed to the  **saveAsync** method, you can use the properties of the **AsyncResult** object to return the following information.
 
@@ -41,7 +41,7 @@ In the callback function passed to the  **saveAsync** method, you can use the pr
 
 ## Remarks
 
-Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the session you can just use the [set](../reference/shared/settings/set-method.md) and[get](../reference/shared/settings/get-method.md) methods to work with the in-memory copy of the settings property bag. When you want to persist the settings so that they are available the next time the add-in is used, use the **saveAsync** method.
+Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the session you can just use the [set](../reference/shared/settings/set-method.md) and [get](../reference/shared/settings/get-method.md) methods to work with the in-memory copy of the settings property bag. When you want to persist the settings so that they are available the next time the add-in is used, use the **saveAsync** method.
 
 
  >**Note**  The  **saveAsync** method persists the in-memory settings property bag into the document file; however, the changes to the document file itself are saved only when the user (or **AutoRecover** setting) saves the document to the file system.

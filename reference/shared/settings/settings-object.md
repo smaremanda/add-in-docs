@@ -43,7 +43,7 @@ The settings created by using the methods of the  **Settings** object are saved 
 
 The name of a setting is a  **string**, while the value can be a  **string**,  **number**,  **boolean**,  **null**,  **object**, or  **array**.
 
-The  **Settings** object is automatically loaded as part of the[Document](../reference/shared/document/document-object.md) object, and is available by calling the[settings](../reference/shared/document/settings-property.md) property of that object when the add-in is activated. The developer is responsible for calling the[saveAsync](../reference/shared/settings/saveasync-method.md) method after adding or deleting settings to save the settings in the document.
+The  **Settings** object is automatically loaded as part of the [Document](../reference/shared/document/document-object.md) object, and is available by calling the [settings](../reference/shared/document/settings-property.md) property of that object when the add-in is activated. The developer is responsible for calling the [saveAsync](../reference/shared/settings/saveasync-method.md) method after adding or deleting settings to save the settings in the document.
 
 
 ## Support details

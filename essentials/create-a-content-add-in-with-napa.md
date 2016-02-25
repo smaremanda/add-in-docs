@@ -4,7 +4,7 @@ Create a content add-in for Excel using Napa Office 365 Development Tools that g
 
  _**Applies to:** apps for Office | Excel | Office Add-ins_
 
-You can also build task pane and content add-ins using [Visual Studio](http://msdn.microsoft.com/en-us/library/a23c5ce8-6de3-40f6-a86a-85d3592bef3e%28Office.15%29.aspx) or a[text editor](http://msdn.microsoft.com/en-us/library/d5411d35-9ef6-4e21-ba2b-4d2b1ee81359%28Office.15%29.aspx). If you're not sure which tool to use, see [Development basics](../overview/platform-overview.md#StartBuildingApps_DevelopmentBasics).
+You can also build task pane and content add-ins using [Visual Studio](http://msdn.microsoft.com/en-us/library/a23c5ce8-6de3-40f6-a86a-85d3592bef3e%28Office.15%29.aspx) or a [text editor](http://msdn.microsoft.com/en-us/library/d5411d35-9ef6-4e21-ba2b-4d2b1ee81359%28Office.15%29.aspx). If you're not sure which tool to use, see [Development basics](../overview/platform-overview.md#StartBuildingApps_DevelopmentBasics).
 
 For more information about Napa, see [Create Office Add-ins with Napa Office 365 Development Tools](../essentials/create-office-add-ins-with-napa.md).
 

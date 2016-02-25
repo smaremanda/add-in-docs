@@ -28,9 +28,9 @@ Office.context.document.getTaskFieldAsync(taskId, fieldId[, options][, callback]
 
 ## Callback Value
 
-When the  _callback_ function executes, it receives an[AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the parameter in the callback function.
+When the  _callback_ function executes, it receives an [AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the parameter in the callback function.
 
-For the  **getTaskFieldAsync** method, the returned[AsyncResult](../reference/shared/asyncresult-object.md) object contains following properties.
+For the  **getTaskFieldAsync** method, the returned [AsyncResult](../reference/shared/asyncresult-object.md) object contains following properties.
 
 
 ****
@@ -45,7 +45,7 @@ For the  **getTaskFieldAsync** method, the returned[AsyncResult](../reference/sh
 
 ## Remarks
 
-First call the [getSelectedTaskAsync](../reference/shared/projectdocument/getselectedtaskasync-method.md) method to get the task GUID, and then pass it as the _taskId_ argument to **getTaskFieldAsync**. If the active view is not a task view (for example a Gantt Chart or Task Usage view), or if no task is selected in a task view, [getSelectedTaskAsync](../reference/shared/projectdocument/getselectedtaskasync-method.md) returns a 5001 error (Internal Error). See[addHandlerAsync method](../reference/shared/projectdocument/addhandlerasync-method.md) for an example that uses the[ViewSelectionChanged](../reference/shared/projectdocument/viewselectionchanged-event.md) event and the[getSelectedViewAsync](../reference/shared/projectdocument/getselectedviewasync-method.md) method to activate a button based on the active view type.
+First call the [getSelectedTaskAsync](../reference/shared/projectdocument/getselectedtaskasync-method.md) method to get the task GUID, and then pass it as the _taskId_ argument to **getTaskFieldAsync**. If the active view is not a task view (for example a Gantt Chart or Task Usage view), or if no task is selected in a task view, [getSelectedTaskAsync](../reference/shared/projectdocument/getselectedtaskasync-method.md) returns a 5001 error (Internal Error). See [addHandlerAsync method](../reference/shared/projectdocument/addhandlerasync-method.md) for an example that uses the [ViewSelectionChanged](../reference/shared/projectdocument/viewselectionchanged-event.md) event and the [getSelectedViewAsync](../reference/shared/projectdocument/getselectedviewasync-method.md) method to activate a button based on the active view type.
 
 
 ## Example

@@ -26,9 +26,9 @@ Office.context.document.getSelectedResourceAsync([options,] [callback]);
 
 ## Callback Value
 
-When the  _callback_ function executes, it receives an[AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the parameter in the callback function.
+When the  _callback_ function executes, it receives an [AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the parameter in the callback function.
 
-For the  **getSelectedResourceAsync** method, the returned[AsyncResult](../reference/shared/asyncresult-object.md) object contains the following properties.
+For the  **getSelectedResourceAsync** method, the returned [AsyncResult](../reference/shared/asyncresult-object.md) object contains the following properties.
 
 
 ****
@@ -45,12 +45,12 @@ For the  **getSelectedResourceAsync** method, the returned[AsyncResult](../refer
 
 The GUID of a resource is more useful in Project add-ins than the resource name. The resource GUID can be used to access resource information, such as data about resources in Project Online that is available through the client object model (CSOM). You can also save the resource GUID in a local variable and use it for the [getResourceFieldAsync](../reference/shared/projectdocument/gettaskasync-method.md) method.
 
-If the active view is not a resource view (for example a Resource Usage or Resource Sheet view), or if no resource is selected in a resource view,  **getSelectedResourceAsync** returns a 5001 error (Internal Error). See[addHandlerAsync method](../reference/shared/projectdocument/addhandlerasync-method.md) for an example that uses the[ViewSelectionChanged](../reference/shared/projectdocument/viewselectionchanged-event.md) event and the[getSelectedViewAsync](../reference/shared/projectdocument/getselectedviewasync-method.md) method to activate a button based on the active view type.
+If the active view is not a resource view (for example a Resource Usage or Resource Sheet view), or if no resource is selected in a resource view,  **getSelectedResourceAsync** returns a 5001 error (Internal Error). See [addHandlerAsync method](../reference/shared/projectdocument/addhandlerasync-method.md) for an example that uses the [ViewSelectionChanged](../reference/shared/projectdocument/viewselectionchanged-event.md) event and the [getSelectedViewAsync](../reference/shared/projectdocument/getselectedviewasync-method.md) method to activate a button based on the active view type.
 
 
 ## Example
 
-The following code example calls  **getSelectedResourceAsync** to get the GUID of the resource that's currently selected in a resource view. Then it gets three resource field values by calling[getResourceFieldAsync](../reference/shared/projectdocument/gettaskasync-method.md) recursively.
+The following code example calls  **getSelectedResourceAsync** to get the GUID of the resource that's currently selected in a resource view. Then it gets three resource field values by calling [getResourceFieldAsync](../reference/shared/projectdocument/gettaskasync-method.md) recursively.
 
 The example assumes your add-in has a reference to the jQuery library and that the following page controls are defined in the content div in the page body.
 

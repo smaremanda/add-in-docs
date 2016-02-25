@@ -31,7 +31,7 @@ A capital Y in the following table indicates that this property is supported in 
 
 For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
 
- **Important:** Add-in commands and the APIs associated with them currently work only in Outlook in[Office 2016 Preview](https://products.office.com/en-us/office-2016-preview) on Windows desktop.
+ **Important:** Add-in commands and the APIs associated with them currently work only in Outlook in [Office 2016 Preview](https://products.office.com/en-us/office-2016-preview) on Windows desktop.
 
 
 **Supported hosts, by platform**

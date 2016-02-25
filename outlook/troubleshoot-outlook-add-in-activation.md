@@ -26,7 +26,7 @@ You can verify the version of Exchange 2013 by using one of the following approa
     
   2. On the  **Developer** tab of the ribbon, choose **Visual Basic**.
     
-     >**Note**  Not seeing the  **Developer** tab? See[How to: Show the Developer Tab on the Ribbon](http://msdn.microsoft.com/en-us/library/ce7cb641-44f2-4a40-867e-a7d88f8e98a9%28Office.15%29.aspx) to turn it on.
+     >**Note**  Not seeing the  **Developer** tab? See [How to: Show the Developer Tab on the Ribbon](http://msdn.microsoft.com/en-us/library/ce7cb641-44f2-4a40-867e-a7d88f8e98a9%28Office.15%29.aspx) to turn it on.
   3. In the Visual Basic Editor, choose  **View**,  **Immediate Window**.
     
   4. Type the following in the Immediate window to display the version of the Exchange Server. The major version of the returned value must be equal to or greater than 15.
@@ -126,7 +126,7 @@ Figure 1 shows a summary of the steps to verify whether Outlook has a valid vers
     
     You can find the manifest in the following subfolder:
     
-    [GUID]\[BASE 64 Hash]]\Manifests\[ManifestID]_[ManifestVersion]
+    [GUID]\ [BASE 64 Hash]]\Manifests\[ManifestID]_[ManifestVersion]
     
      >**Note**  
 
@@ -165,7 +165,7 @@ Figure 1 shows a summary of the steps to verify whether Outlook has a valid vers
 ## Are you using the appropriate activation rules?
 <a name="TroubleshootingMailApps_AppropriateRules"> </a>
 
-Starting in version 1.1 of the Office Add-ins manifests schema, you can create add-ins that are activated when the user is in a compose form (compose add-ins) or in a read form (read add-ins). Make sure you specify the appropriate activation rules for each type of form that your add-in is supposed to activate in. For example, you can activate compose add-ins using only [ItemIs](http://msdn.microsoft.com/en-us/library/f7dac4a3-1574-9671-1eda-47f092390669%28Office.15%29.aspx) rules with the **FormType** attribute set to **Edit** or **ReadOrEdit**, and you cannot use any of the other types of rules, such as [ItemHasKnownEntity](http://msdn.microsoft.com/en-us/library/87e10fd2-eab4-c8aa-bec3-dff92d004d39%28Office.15%29.aspx) and[ItemHasRegularExpressionMatch](http://msdn.microsoft.com/en-us/library/bfb726cd-81b0-a8d5-644f-2ca90a5273fc%28Office.15%29.aspx) rules for compose add-ins. For more information, see[Activation rules for Outlook add-ins](../outlook/manifests/activation-rules.md).
+Starting in version 1.1 of the Office Add-ins manifests schema, you can create add-ins that are activated when the user is in a compose form (compose add-ins) or in a read form (read add-ins). Make sure you specify the appropriate activation rules for each type of form that your add-in is supposed to activate in. For example, you can activate compose add-ins using only [ItemIs](http://msdn.microsoft.com/en-us/library/f7dac4a3-1574-9671-1eda-47f092390669%28Office.15%29.aspx) rules with the **FormType** attribute set to **Edit** or **ReadOrEdit**, and you cannot use any of the other types of rules, such as [ItemHasKnownEntity](http://msdn.microsoft.com/en-us/library/87e10fd2-eab4-c8aa-bec3-dff92d004d39%28Office.15%29.aspx) and [ItemHasRegularExpressionMatch](http://msdn.microsoft.com/en-us/library/bfb726cd-81b0-a8d5-644f-2ca90a5273fc%28Office.15%29.aspx) rules for compose add-ins. For more information, see [Activation rules for Outlook add-ins](../outlook/manifests/activation-rules.md).
 
 
 ## If you use a regular expression, is it properly specified?
@@ -205,7 +205,7 @@ If you use an  **ItemHasRegularExpressionMatch** activation rule, verify whether
     
 - If the selected item is an appointment, or if the activation rule specifies  **BodyAsPlaintext** in the **PropertyName**, you can use the Outlook object model and the Visual Basic Editor in Outlook for Windows:
     
-      1. Ensure that macros are enabled and the  **Developer** tab is displayed in the ribbon for Outlook. If you're not sure how to do this, see Steps 1 and 2 under[Is the user mailbox on a version of Exchange Server that is at least Exchange 2013?](#TroubleshootingMailApps_MailboxE15)
+      1. Ensure that macros are enabled and the  **Developer** tab is displayed in the ribbon for Outlook. If you're not sure how to do this, see Steps 1 and 2 under [Is the user mailbox on a version of Exchange Server that is at least Exchange 2013?](#TroubleshootingMailApps_MailboxE15)
     
   2. In the Visual Basic Editor, choose  **View**,  **Immediate Window**.
     
@@ -236,7 +236,7 @@ If you use an  **ItemHasRegularExpressionMatch** activation rule, verify whether
   ?ActiveInspector.CurrentItem.Body
   ```
 
-If the  **ItemHasRegularExpressionMatch** activation rule specifies **Subject** or **SenderSMTPAddress**, or if you use an  **ItemIs** or **ItemHasAttachment** rule, and you are familiar with or would like to use MAPI, you can use[MFCMAPI](http://mfcmapi.codeplex.com/) to verify the value in Table 2 that your rule relies on.
+If the  **ItemHasRegularExpressionMatch** activation rule specifies **Subject** or **SenderSMTPAddress**, or if you use an  **ItemIs** or **ItemHasAttachment** rule, and you are familiar with or would like to use MAPI, you can use [MFCMAPI](http://mfcmapi.codeplex.com/) to verify the value in Table 2 that your rule relies on.
 
 
 **Table 2. Activation rules and corresponding MAPI properties**
@@ -245,7 +245,7 @@ If the  **ItemHasRegularExpressionMatch** activation rule specifies **Subject** 
 |**Type of rule**|**Verify this MAPI property**|
 |:-----|:-----|
 |**ItemHasRegularExpressionMatch** rule with **Subject**|[PidTagSubject](http://msdn.microsoft.com/en-us/library/aa7ba4d9-c5e0-4ce7-a34e-65f675223bc9%28Office.15%29.aspx)|
-|**ItemHasRegularExpressionMatch** rule with **SenderSMTPAddress**|[PidTagSenderSmtpAddress](http://msdn.microsoft.com/en-us/library/321cde5a-05db-498b-a9b8-cb54c8a14e34%28Office.15%29.aspx) and[PidTagSentRepresentingSmtpAddress](http://msdn.microsoft.com/en-us/library/5ed122a2-0967-4de3-a2ee-69f81ae77b16%28Office.15%29.aspx)|
+|**ItemHasRegularExpressionMatch** rule with **SenderSMTPAddress**|[PidTagSenderSmtpAddress](http://msdn.microsoft.com/en-us/library/321cde5a-05db-498b-a9b8-cb54c8a14e34%28Office.15%29.aspx) and [PidTagSentRepresentingSmtpAddress](http://msdn.microsoft.com/en-us/library/5ed122a2-0967-4de3-a2ee-69f81ae77b16%28Office.15%29.aspx)|
 |**ItemIs**|[PidTagMessageClass](http://msdn.microsoft.com/en-us/library/1e704023-1992-4b43-857e-0a7da7bc8e87%28Office.15%29.aspx)|
 |**ItemHasAttachment**|[PidTagHasAttachments](http://msdn.microsoft.com/en-us/library/fd236d74-2868-46a8-bb3d-17f8365931b6%28Office.15%29.aspx)|
 After verifying the property value, you can then use a regular expression evaluation tool to test whether the regular expression finds a match in that value.

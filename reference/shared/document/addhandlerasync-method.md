@@ -32,7 +32,7 @@ Office.context.document.addHandlerAsync(eventType, handler  [, options], callbac
 
 ## Callback Value
 
-When the function you passed to the  _callback_ parameter executes, it receives an[AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the callback function's only parameter.
+When the function you passed to the  _callback_ parameter executes, it receives an [AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the callback function's only parameter.
 
 In the callback function passed to the  **addHandlerAsync** method, you can use the properties of the **AsyncResult** object to return the following information.
 

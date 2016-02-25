@@ -26,9 +26,9 @@ Office.context.document.getSelectedTaskAsync([options,] [callback]);
 
 ## Callback Value
 
-When the  _callback_ function executes, it receives an[AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the parameter in the callback function.
+When the  _callback_ function executes, it receives an [AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the parameter in the callback function.
 
-For the  **getSelectedTaskAsync** method, the returned[AsyncResult](../reference/shared/asyncresult-object.md) object contains the following properties.
+For the  **getSelectedTaskAsync** method, the returned [AsyncResult](../reference/shared/asyncresult-object.md) object contains the following properties.
 
 
 ****
@@ -43,14 +43,14 @@ For the  **getSelectedTaskAsync** method, the returned[AsyncResult](../reference
 
 ## Remarks
 
-The GUID of a task is more useful in Project add-ins than the task ID number (for example, the ID of the first task in the Gantt Chart is  **1**). The task GUID can be used to access Project task information, such as tasks in a SharePoint project that is synchronized with Project Server in Visibility mode. You can also save the task GUID in a local variable and use it for the [getTaskAsync](../reference/shared/projectdocument/gettaskasync-method.md) and[getTaskFieldAsync](../reference/shared/projectdocument/gettaskfieldasync-method.md) methods.
+The GUID of a task is more useful in Project add-ins than the task ID number (for example, the ID of the first task in the Gantt Chart is  **1**). The task GUID can be used to access Project task information, such as tasks in a SharePoint project that is synchronized with Project Server in Visibility mode. You can also save the task GUID in a local variable and use it for the [getTaskAsync](../reference/shared/projectdocument/gettaskasync-method.md) and [getTaskFieldAsync](../reference/shared/projectdocument/gettaskfieldasync-method.md) methods.
 
-If the active view is not a task view (for example a Gantt Chart or Task Usage view), or if no task is selected in a task view,  **getSelectedTaskAsync** returns a 5001 error (Internal Error). See[addHandlerAsync method](../reference/shared/projectdocument/addhandlerasync-method.md) for an example that uses the[ViewSelectionChanged](../reference/shared/projectdocument/viewselectionchanged-event.md) event and the[getSelectedViewAsync](../reference/shared/projectdocument/getselectedviewasync-method.md) method to activate a button based on the active view type.
+If the active view is not a task view (for example a Gantt Chart or Task Usage view), or if no task is selected in a task view,  **getSelectedTaskAsync** returns a 5001 error (Internal Error). See [addHandlerAsync method](../reference/shared/projectdocument/addhandlerasync-method.md) for an example that uses the [ViewSelectionChanged](../reference/shared/projectdocument/viewselectionchanged-event.md) event and the [getSelectedViewAsync](../reference/shared/projectdocument/getselectedviewasync-method.md) method to activate a button based on the active view type.
 
 
 ## Example
 
-The following code example calls  **getSelectedTaskAsync** to get the GUID of the task that's currently selected in a task view. Then it gets task properties by calling[getTaskAsync](../reference/shared/projectdocument/gettaskasync-method.md).
+The following code example calls  **getSelectedTaskAsync** to get the GUID of the task that's currently selected in a task view. Then it gets task properties by calling [getTaskAsync](../reference/shared/projectdocument/gettaskasync-method.md).
 
 The example assumes your add-in has a reference to the jQuery library and that the following page controls are defined in the content div in the page body.
 

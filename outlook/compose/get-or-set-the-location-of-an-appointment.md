@@ -8,7 +8,7 @@ Learn how to get or set the location from an Outlook add-in when the user is com
 ## Prerequisites for getting or setting the location in a compose form
 <a name="mod_off15_HowToGetSetLocation_Prerequisites"> </a>
 
-The JavaScript API for Office provides asynchronous methods ([getAsync](http://dev.outlook.com/reference/add-ins/Location.html%28Office.15%29.md) and[setAsync](http://dev.outlook.com/reference/add-ins/Location.html%28Office.15%29.md)) to get and set the location of an appointment that the user is composing. These asynchronous methods are available to only compose add-ins. To use these methods, make sure you have set up the add-in manifest appropriately for Outlook to activate the add-in in compose forms, as described in the section [Setting up Outlook add-ins for compose forms](../outlook/compose/compose-scenario.md#mod_off15_CreatingForCompose_SettingUp) of[Create Outlook add-ins for compose forms](../outlook/compose/compose-scenario.md).
+The JavaScript API for Office provides asynchronous methods ([getAsync](http://dev.outlook.com/reference/add-ins/Location.html%28Office.15%29.md) and [setAsync](http://dev.outlook.com/reference/add-ins/Location.html%28Office.15%29.md)) to get and set the location of an appointment that the user is composing. These asynchronous methods are available to only compose add-ins. To use these methods, make sure you have set up the add-in manifest appropriately for Outlook to activate the add-in in compose forms, as described in the section [Setting up Outlook add-ins for compose forms](../outlook/compose/compose-scenario.md#mod_off15_CreatingForCompose_SettingUp) of [Create Outlook add-ins for compose forms](../outlook/compose/compose-scenario.md).
 
 The [location](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html%28Office.15%29.md) property is available for read access in both compose and read forms of appointments. In a read form, you can access the property directly from the parent object, as in:
 
@@ -30,7 +30,7 @@ item.location.getAsync
 
 The  **location** property is available for write access in only compose forms of appointments, but not in read forms.
 
-As with most asynchronous methods in the JavaScript API for Office,  **getAsync** and **setAsync** take optional input parameters. For more information about specifying these optional input parameters, see[passing optional parameters to asynchronous methods](http://msdn.microsoft.com/en-us/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters) in[Asynchronous programming in Office Add-ins](../how-to/asynchronous-programming-in-office-add-ins.md).
+As with most asynchronous methods in the JavaScript API for Office,  **getAsync** and **setAsync** take optional input parameters. For more information about specifying these optional input parameters, see [passing optional parameters to asynchronous methods](http://msdn.microsoft.com/en-us/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters) in [Asynchronous programming in Office Add-ins](../how-to/asynchronous-programming-in-office-add-ins.md).
 
 
 ## To get the location
@@ -44,7 +44,7 @@ This section shows a code sample that gets the location of the appointment that 
 
 ```
 
-To use  **item.location.getAsync**, provide a callback method that checks for the status and result of the asynchronous call. You can provide any necessary arguments to the callback method through the  _asyncContext_ optional parameter. You can obtain status, results and any error using the output parameter _asyncResult_ of the callback. If the asynchronous call is successful, you can get the location as a string using the[AsyncResult.value](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) property.
+To use  **item.location.getAsync**, provide a callback method that checks for the status and result of the asynchronous call. You can provide any necessary arguments to the callback method through the  _asyncContext_ optional parameter. You can obtain status, results and any error using the output parameter _asyncResult_ of the callback. If the asynchronous call is successful, you can get the location as a string using the [AsyncResult.value](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) property.
 
 
 

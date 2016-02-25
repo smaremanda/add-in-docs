@@ -27,7 +27,7 @@ The following summarizes the events involved in starting and initializing a cont
     
 4. The browser control loads the DOM and HTML body, and calls the event handler for the  **window.onload** event.
     
-5. The Office host application loads the runtime environment, which downloads and caches the JavaScript API for JavaScript library files from the content distribution network (CDN) server, and then calls the add-in's event handler for the [initialize](http://msdn.microsoft.com/library/727adf79-a0b5-48d2-99c7-6642c2c334fc%28Office.15%29.aspx) event of the[Office](http://msdn.microsoft.com/library/c490b13d-ee52-4291-af5d-f4a5a11d3af0%28Office.15%29.aspx) object.
+5. The Office host application loads the runtime environment, which downloads and caches the JavaScript API for JavaScript library files from the content distribution network (CDN) server, and then calls the add-in's event handler for the [initialize](http://msdn.microsoft.com/library/727adf79-a0b5-48d2-99c7-6642c2c334fc%28Office.15%29.aspx) event of the [Office](http://msdn.microsoft.com/library/c490b13d-ee52-4291-af5d-f4a5a11d3af0%28Office.15%29.aspx) object.
     
 6. When the DOM and HTML body finish loading and the add-in finishes initializing, the main function of the add-in can proceed.
     
@@ -54,7 +54,7 @@ The following summarizes the events involved in starting an Outlook add-in:
     
 5. The browser control loads the DOM and HTML body, and calls the event handler for the  **onload** event.
     
-6. Outlook calls the event handler for the [initialize](http://msdn.microsoft.com/library/727adf79-a0b5-48d2-99c7-6642c2c334fc%28Office.15%29.aspx) event of the[Office](http://msdn.microsoft.com/library/c490b13d-ee52-4291-af5d-f4a5a11d3af0%28Office.15%29.aspx) object of the add-in.
+6. Outlook calls the event handler for the [initialize](http://msdn.microsoft.com/library/727adf79-a0b5-48d2-99c7-6642c2c334fc%28Office.15%29.aspx) event of the [Office](http://msdn.microsoft.com/library/c490b13d-ee52-4291-af5d-f4a5a11d3af0%28Office.15%29.aspx) object of the add-in.
     
 7. When the DOM and HTML body finish loading and the add-in finishes initializing, the main function of the add-in can proceed.
     
@@ -62,7 +62,7 @@ The following summarizes the events involved in starting an Outlook add-in:
 ## Checking the load status
 <a name="MailAppDOMRuntime_LoadStatus"> </a>
 
-One way to check that both the DOM and the runtime environment have finished loading is to use the jQuery [.ready()](http://api.jquery.com/ready/) function: `$(document).ready()`. For example, the following  **initialize** event handler function makes sure the DOM is first loaded before the code specific to initializing the add-in runs. Subsequently, the **initialize** event handler proceeds to use the[mailbox.item](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html%28Office.15%29.md) property to obtain the currently selected item in Outlook, and calls the main function of the add-in, `initDialer`.
+One way to check that both the DOM and the runtime environment have finished loading is to use the jQuery [.ready()](http://api.jquery.com/ready/) function: `$(document).ready()`. For example, the following  **initialize** event handler function makes sure the DOM is first loaded before the code specific to initializing the add-in runs. Subsequently, the **initialize** event handler proceeds to use the [mailbox.item](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html%28Office.15%29.md) property to obtain the currently selected item in Outlook, and calls the main function of the add-in, `initDialer`.
 
 
 ```

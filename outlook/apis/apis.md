@@ -40,7 +40,7 @@ if (item.somePropertyOrFunction) {
 
 No such checks are necessary for any APIs that are in the requirement set version specified in the manifest.
 
-Developers should specify the minimum requirement set that supports the critical set of APIs for their scenario, without which the critical features of the add-in won't work. You specify the requirement set in the manifest in the  **Requirements**, **Sets**, and **Set** elements. For more information, see[Outlook add-in manifests](../outlook/manifests/manifests.md).
+Developers should specify the minimum requirement set that supports the critical set of APIs for their scenario, without which the critical features of the add-in won't work. You specify the requirement set in the manifest in the  **Requirements**, **Sets**, and **Set** elements. For more information, see [Outlook add-in manifests](../outlook/manifests/manifests.md).
 
 The  **Methods** element doesn't apply to mail add-ins, so you can't declare support for specific methods.
 
@@ -61,7 +61,7 @@ Your add-in requires the appropriate permissions to use the APIs that it needs. 
 <ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>full Outlook add-in API access except <span class="keyword">makeEwsRequestAsync</span></p></li><li><p> setting the item properties</p></li></ul>|
 |Read/write mailbox|In addition to what is allowed in  _Read/write_, it allows:
 <ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>creating, reading, writing items and folders</p></li><li><p>sending items</p></li><li><p>calling <a href="http://dev.outlook.com/reference/add-ins/Office.context.mailbox.html.aspx#makeEwsRequestAsync" target="_blank">makeEwsRequestAsync</a>,</p></li></ul>|
-In general, you should specify the minimum permission needed for your add-in. Permissions are declared in the  **Permissions** element in the manifest. For more information, see[Outlook add-in manifests](../outlook/manifests/manifests.md). For information on security issues, see [Privacy, permissions, and security for Outlook add-ins](../outlook/../essentials/privacy-and-security/privacy-and-security.md)
+In general, you should specify the minimum permission needed for your add-in. Permissions are declared in the  **Permissions** element in the manifest. For more information, see [Outlook add-in manifests](../outlook/manifests/manifests.md). For information on security issues, see [Privacy, permissions, and security for Outlook add-ins](../outlook/../essentials/privacy-and-security/privacy-and-security.md)
 
 
 ## Additional resources

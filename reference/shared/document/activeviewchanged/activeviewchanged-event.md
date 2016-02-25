@@ -15,7 +15,7 @@ Office.EventType.ActiveViewChanged
 
 ## Remarks
 
-To add an event handler for the  **ActiveViewChanged** event of a document, use the[addHandlerAsync](../reference/shared/document/addhandlerasync-method.md) method of the **Document** object. The event handler receives an argument of type[ActiveViewChangedEventArgs](../reference/shared/document/activeviewchangedeventargs-object/documentactiveviewchangedeventargs-object.md).
+To add an event handler for the  **ActiveViewChanged** event of a document, use the [addHandlerAsync](../reference/shared/document/addhandlerasync-method.md) method of the **Document** object. The event handler receives an argument of type [ActiveViewChangedEventArgs](../reference/shared/document/activeviewchangedeventargs-object/documentactiveviewchangedeventargs-object.md).
 
 
 ## Support details

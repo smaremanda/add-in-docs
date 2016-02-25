@@ -95,7 +95,7 @@ mailbox.makeEwsRequestAsync(mailbox.item.itemId), function(result) {
 ## Example
 <a name="mod_off15_appscope_CallingWebServices_Example"> </a>
 
-The following example calls  **makeEwsRequestAsync** to use the[GetItem](http://msdn.microsoft.com/en-us/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) operation to get the subject of an item. This example includes the following three functions:
+The following example calls  **makeEwsRequestAsync** to use the [GetItem](http://msdn.microsoft.com/en-us/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) operation to get the subject of an item. This example includes the following three functions:
 
 
 -  `getSubjectRequest` â€” Takes an item ID as input, and returns the XML for the SOAP request to call **GetItem** for the specified item.
@@ -200,9 +200,9 @@ The following table lists the EWS operations that add-ins support. To see exampl
 When you use the  **makeEwsRequestAsync** method, the request is authenticated by using the email account credentials of the current user. The **makeEwsRequestAsync** method manages the credentials for you so that you do not have to provide authentication credentials with your request.
 
 
- >**Note**  The server administrator must use the [New-WebServicesVirtualDirctory](http://technet.microsoft.com/en-us/library/bb125176.aspx) or the[Set-WebServicesVirtualDirecory](http://technet.microsoft.com/en-us/library/aa997233.aspx) cmldet to set the _OAuthAuthentication_ parameter to **true** on the Client Access server EWS directory in order to enable the **makeEwsRequestAsync** method to make EWS requests.
+ >**Note**  The server administrator must use the [New-WebServicesVirtualDirctory](http://technet.microsoft.com/en-us/library/bb125176.aspx) or the [Set-WebServicesVirtualDirecory](http://technet.microsoft.com/en-us/library/aa997233.aspx) cmldet to set the _OAuthAuthentication_ parameter to **true** on the Client Access server EWS directory in order to enable the **makeEwsRequestAsync** method to make EWS requests.
 
-Your add-in must specify the  **ReadWriteMailbox** permission in its add-in manifest to use the **makeEwsRequestAsync** method. For information about using the **ReadWriteMailbox** permission, see the section[ReadWriteMailbox permission](../outlook/privacy/understanding-outlook-add-in-permissions.md#olowa15conagave_permmodelreadwrite) in[Understanding Outlook add-in permissions](../outlook/privacy/understanding-outlook-add-in-permissions.md).
+Your add-in must specify the  **ReadWriteMailbox** permission in its add-in manifest to use the **makeEwsRequestAsync** method. For information about using the **ReadWriteMailbox** permission, see the section [ReadWriteMailbox permission](../outlook/privacy/understanding-outlook-add-in-permissions.md#olowa15conagave_permmodelreadwrite) in [Understanding Outlook add-in permissions](../outlook/privacy/understanding-outlook-add-in-permissions.md).
 
 
 ## Additional resources

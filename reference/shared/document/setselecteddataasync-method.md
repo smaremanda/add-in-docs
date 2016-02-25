@@ -54,9 +54,9 @@ if (Office.context.requirements.isSetSupported('ImageCoercion', '1.1')) {)) {
 
 ## Callback Value
 
-When the function you passed to the  _callback_ parameter executes, it receives an[AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the callback function's only parameter.
+When the function you passed to the  _callback_ parameter executes, it receives an [AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the callback function's only parameter.
 
-In the callback function passed to the  **setSelectedDataAsync** method, the[AsyncResult.value](../reference/shared/asyncresult/value-property.md) property always returns **undefined** because there is no object or data to retrieve.
+In the callback function passed to the  **setSelectedDataAsync** method, the [AsyncResult.value](../reference/shared/asyncresult/value-property.md) property always returns **undefined** because there is no object or data to retrieve.
 
 
 ## Remarks
@@ -68,7 +68,7 @@ The value passed for  _data_ contains the data to write to the current selection
     
     
     
-    In Excel, you can also specify  _data_ as a valid formula to add that formula to the selected cell. For example, setting _data_ to `"=SUM(A1:A5)"` will total the values in the specified range. However, when you set a formula on the bound cell, after doing so, you can't read the added formula (or any pre-existing formula) from the bound cell. If you call the[Document.getSelectedDataAsync](../reference/shared/document/getselecteddataasync-method.md) method on the selected cell to read its data, the method can return only the data displayed in the cell (the formula's result).
+    In Excel, you can also specify  _data_ as a valid formula to add that formula to the selected cell. For example, setting _data_ to `"=SUM(A1:A5)"` will total the values in the specified range. However, when you set a formula on the bound cell, after doing so, you can't read the added formula (or any pre-existing formula) from the bound cell. If you call the [Document.getSelectedDataAsync](../reference/shared/document/getselecteddataasync-method.md) method on the selected cell to read its data, the method can return only the data displayed in the cell (the formula's result).
     
 -  **An array of arrays ("matrix"):** Tabular data without headers will be inserted. For example, to write data to three rows in two columns, you can pass an array like this: `[["R1C1", "R1C2"], ["R2C1", "R2C2"], ["R3C1", "R3C2"]]`. To write a single column of three rows, pass an array like this:  `[["R1C1"], ["R2C1"], ["R3C1"]]`
     
@@ -170,7 +170,7 @@ function write(message){
 
 
 
-Specifying the optional  _coercionType_ parameter lets you specify the kind of data you want to write to a selection. The following example writes data as an array of three rows of two columns, specifying the _coercionType_ as `"matrix"` for that data structure, and if that fails, displays the value of the[error.message](../reference/shared/error/message-property.md) property.
+Specifying the optional  _coercionType_ parameter lets you specify the kind of data you want to write to a selection. The following example writes data as an array of three rows of two columns, specifying the _coercionType_ as `"matrix"` for that data structure, and if that fails, displays the value of the [error.message](../reference/shared/error/message-property.md) property.
 
 
 
@@ -194,7 +194,7 @@ function write(message){
 
 
 
-The following example writes data as a one column table with a header and four rows, specifying the  _coercionType_ as `"table"` for that data structure, and if that fails, displays the value of the[error.message](../reference/shared/error/message-property.md) property.
+The following example writes data as a one column table with a header and four rows, specifying the  _coercionType_ as `"table"` for that data structure, and if that fails, displays the value of the [error.message](../reference/shared/error/message-property.md) property.
 
 
 

@@ -14,7 +14,7 @@ For all types of add-ins (content, Outlook, and task pane), you need to deploy y
 
  >**Note**   When you develop and debug an add-in in Visual Studio, Visual Studio deploys and runs your add-in's webpage files locally with IIS Express, and doesn't require an additional web server. Similarly, when you develop and debug with Napa in the browser, it deploys and runs your add-in's webpage files from storage associated with the account you used to sign into Napa.
 
-For content and task pane add-ins, in the supported Office host applications - Access web apps, Word, Excel, PowerPoint, or Project - you also need a[ network file share](../publish/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins.md) or an[add-in catalog](../publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog.md) on SharePoint to upload the add-in's XML manifest file.
+For content and task pane add-ins, in the supported Office host applications - Access web apps, Word, Excel, PowerPoint, or Project - you also need a [ network file share](../publish/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins.md) or an [add-in catalog](../publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog.md) on SharePoint to upload the add-in's XML manifest file.
 
 To test and run an Outlook add-in, the user's Outlook email account must reside on Exchange 2013 or later, which is available through Office 365, Exchange Online, or through an on-premises installation. The user or administrator installs manifest files for Outlook add-ins on that server.
 
@@ -191,7 +191,7 @@ When a supported Office application starts, it reads the XML manifests for the a
     
 3. The correspondng browser control,  **iframe**, or WebKit runtime host process loads the HTML body, and calls the event handler for the  **onload** event.
     
-4. The Office Add-ins framework calls the event handler for the [initialize](http://msdn.microsoft.com/library/727adf79-a0b5-48d2-99c7-6642c2c334fc%28Office.15%29.aspx) event of the[Office](http://msdn.microsoft.com/library/c490b13d-ee52-4291-af5d-f4a5a11d3af0%28Office.15%29.aspx) object.
+4. The Office Add-ins framework calls the event handler for the [initialize](http://msdn.microsoft.com/library/727adf79-a0b5-48d2-99c7-6642c2c334fc%28Office.15%29.aspx) event of the [Office](http://msdn.microsoft.com/library/c490b13d-ee52-4291-af5d-f4a5a11d3af0%28Office.15%29.aspx) object.
     
 5. When the HTML body finishes loading and the add-in finishes initializing, the main function of the add-in can proceed.
     

@@ -20,7 +20,7 @@ Office.context.document.removeHandlerAsync(eventType[, options][, callback]);
 
 |**Name**|**Type**|**Description**|**Support notes**|
 |:-----|:-----|:-----|:-----|
-| _eventType_|[EventType](../reference/enumerations/eventtype-enumeration.md)|The type of event to remove, as an [EventType](../reference/enumerations/eventtype-enumeration.md) constant or its corresponding text value. Required.The following table shows valid  _eventType_ arguments for a[ProjectDocument](../reference/shared/projectdocument/projectdocument-object.md) object.
+| _eventType_|[EventType](../reference/enumerations/eventtype-enumeration.md)|The type of event to remove, as an [EventType](../reference/enumerations/eventtype-enumeration.md) constant or its corresponding text value. Required.The following table shows valid  _eventType_ arguments for a [ProjectDocument](../reference/shared/projectdocument/projectdocument-object.md) object.
 
 |**Enumeration**|**Text value**|
 |:-----|:-----|
@@ -34,9 +34,9 @@ Office.context.document.removeHandlerAsync(eventType[, options][, callback]);
 
 ## Callback Value
 
-When the  _callback_ function executes, it receives an[AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the parameter in the callback function.
+When the  _callback_ function executes, it receives an [AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the parameter in the callback function.
 
-For the  **removeHandlerAsync** method, the returned[AsyncResult](../reference/shared/asyncresult-object.md) object contains the following properties.
+For the  **removeHandlerAsync** method, the returned [AsyncResult](../reference/shared/asyncresult-object.md) object contains the following properties.
 
 
 ****
@@ -51,7 +51,7 @@ For the  **removeHandlerAsync** method, the returned[AsyncResult](../reference/s
 
 ## Example
 
-The following code example uses [addHandlerAsync](../reference/shared/projectdocument/addhandlerasync-method.md) to add an event handler for the[ResourceSelectionChanged](../reference/shared/projectdocument/resourceselectionchanged-event.md) event and **removeHandlerAsync** to remove the handler.
+The following code example uses [addHandlerAsync](../reference/shared/projectdocument/addhandlerasync-method.md) to add an event handler for the [ResourceSelectionChanged](../reference/shared/projectdocument/resourceselectionchanged-event.md) event and **removeHandlerAsync** to remove the handler.
 
 When a resource is selected in a resource view, the handler displays the resource GUID. When the handler is removed, the GUID is not displayed.
 

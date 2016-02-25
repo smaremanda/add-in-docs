@@ -20,7 +20,7 @@ Office.context.document.addHandlerAsync(eventType, handler[, options][, callback
 
 |**Name**|**Type**|**Description**|**Support notes**|
 |:-----|:-----|:-----|:-----|
-| _eventType_|[EventType](../reference/enumerations/eventtype-enumeration.md)|The type of event to add, as an [EventType](../reference/enumerations/eventtype-enumeration.md) constant or its corresponding text value. Required.The following table shows valid  _eventType_ arguments for a[ProjectDocument](../reference/shared/projectdocument/projectdocument-object.md) object.
+| _eventType_|[EventType](../reference/enumerations/eventtype-enumeration.md)|The type of event to add, as an [EventType](../reference/enumerations/eventtype-enumeration.md) constant or its corresponding text value. Required.The following table shows valid  _eventType_ arguments for a [ProjectDocument](../reference/shared/projectdocument/projectdocument-object.md) object.
 ****
 
 
@@ -37,9 +37,9 @@ Office.context.document.addHandlerAsync(eventType, handler[, options][, callback
 
 ## Callback Value
 
-When the  _callback_ function executes, it receives an[AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the parameter in the callback function.
+When the  _callback_ function executes, it receives an [AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the parameter in the callback function.
 
-For the  **addHandlerAsync** method, the returned[AsyncResult](../reference/shared/asyncresult-object.md) object contains the following properties:
+For the  **addHandlerAsync** method, the returned [AsyncResult](../reference/shared/asyncresult-object.md) object contains the following properties:
 
 
 ****
@@ -54,7 +54,7 @@ For the  **addHandlerAsync** method, the returned[AsyncResult](../reference/shar
 
 ## Example
 
-The following code example uses  **addHandlerAsync** to add an event handler for the[ViewSelectionChanged](../reference/shared/projectdocument/viewselectionchanged-event.md) event.
+The following code example uses  **addHandlerAsync** to add an event handler for the [ViewSelectionChanged](../reference/shared/projectdocument/viewselectionchanged-event.md) event.
 
 When the active view changes, the handler checks the view type. It enables a button if the view is a resource view and disables the button if it isn't a resource view. Choosing the button gets the GUID of the selected resource and displays it in the add-in.
 
@@ -140,7 +140,7 @@ The example assumes your add-in has a reference to the jQuery library and that t
 })();
 ```
 
-For a complete code sample that shows how to use a [TaskSelectionChanged](../reference/shared/projectdocument/taskselectionchanged-event.md) event handler in a Project add-in, see[Create your first task pane add-in for Project by using a text editor](http://msdn.microsoft.com/library/f6ab544a-a841-4f1b-b0c4-5001b33bba01%28Office.15%29.aspx).
+For a complete code sample that shows how to use a [TaskSelectionChanged](../reference/shared/projectdocument/taskselectionchanged-event.md) event handler in a Project add-in, see [Create your first task pane add-in for Project by using a text editor](http://msdn.microsoft.com/library/f6ab544a-a841-4f1b-b0c4-5001b33bba01%28Office.15%29.aspx).
 
 
 ## Support details

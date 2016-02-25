@@ -12,7 +12,7 @@ This article explains the different features of the formatting API and outlines 
     
 - If the workbook already contains bound tables (or your add-in uses one of the "addFrom" methods of the [Bindings](http://msdn.microsoft.com/en-us/library/09979e31-3bfb-45be-adda-0f7cc2db1fe1%28Office.15%29.aspx) object to create bound tables when it is initialized), your add-in can call the **Binding.setDataAsync** method on those bound tables to set formatting.
     
- **Important:** To use these new and updated methods to format tables in Excel add-ins, your add-in project must[use or be updated to use Office.js v1.1 or later](../overview/update-your-javascript-api-for-office-and-manifest-schema-version.md).
+ **Important:** To use these new and updated methods to format tables in Excel add-ins, your add-in project must [use or be updated to use Office.js v1.1 or later](../overview/update-your-javascript-api-for-office-and-manifest-schema-version.md).
 
 ## Specifying formatting
 
@@ -28,7 +28,7 @@ To apply the formatting, pass the JavaScript object to one the methods that supp
 You can work with formatting in two ways:
 
 
-- The first time your add-in writes data to a selection or binding, by specifying the optional  _cellFormat_ or _tableOptions_ parameters in the _options_ object passed to the[Document.setSelectedDataAysnc](http://msdn.microsoft.com/en-us/library/998f38dc-83bd-4659-a759-4758c632a6ef%28Office.15%29.aspx) or[Binding.setDataAsync](http://msdn.microsoft.com/en-us/library/6a59bb6d-40b6-4a95-9b98-d70d4616de09%28Office.15%29.aspx) methods.
+- The first time your add-in writes data to a selection or binding, by specifying the optional  _cellFormat_ or _tableOptions_ parameters in the _options_ object passed to the [Document.setSelectedDataAysnc](http://msdn.microsoft.com/en-us/library/998f38dc-83bd-4659-a759-4758c632a6ef%28Office.15%29.aspx) or [Binding.setDataAsync](http://msdn.microsoft.com/en-us/library/6a59bb6d-40b6-4a95-9b98-d70d4616de09%28Office.15%29.aspx) methods.
     
 - After you initially set formatting, you can [clear or update formatting](#FormatTablesInApps_UpdatingClearing) using one of the new methods dedicated to that purpose.
     
@@ -82,7 +82,7 @@ Use  `cells:` to specify the range of columns, rows, and cells you want to apply
 
 #### format
 
-Use  `format:` to specify the formatting you want to apply to the range defined with `cells:` as list of JavaScript key-value pairs. For a list of supported values, see[Supported formatting keys and values](../how-to/format-tables-in-add-ins-for-excel.md#FormatTablesInApps_SupportedFormatting).
+Use  `format:` to specify the formatting you want to apply to the range defined with `cells:` as list of JavaScript key-value pairs. For a list of supported values, see [Supported formatting keys and values](../how-to/format-tables-in-add-ins-for-excel.md#FormatTablesInApps_SupportedFormatting).
 
  **Limits specifying formatting for Excel Online**
 
@@ -101,7 +101,7 @@ Office.context.document.setSelectedDataAsync(
 
 #### Applying optional parameters
 
-In this release, only the  **Document.setSelectedDataAsync** and **TableBinding.setDataAsync** methods support writing data and setting formatting for tables in the same call using the _tableOptions_ and _cellFormat_ optional parameters. In the following examples, the `tableData` value passed to the first parameter of each method (the _data_ parameter) must be a[TableData](http://msdn.microsoft.com/en-us/library/2183ea52-5a40-4048-b9a4-7cd66bb0ad5d%28Office.15%29.aspx) object that contains the definition of the table and data to be written.
+In this release, only the  **Document.setSelectedDataAsync** and **TableBinding.setDataAsync** methods support writing data and setting formatting for tables in the same call using the _tableOptions_ and _cellFormat_ optional parameters. In the following examples, the `tableData` value passed to the first parameter of each method (the _data_ parameter) must be a [TableData](http://msdn.microsoft.com/en-us/library/2183ea52-5a40-4048-b9a4-7cd66bb0ad5d%28Office.15%29.aspx) object that contains the definition of the table and data to be written.
 
  **Document.setSelectedDataAsync example**
 

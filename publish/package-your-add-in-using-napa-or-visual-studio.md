@@ -47,7 +47,7 @@ You can now upload your XML manifest to the appropriate location to [publish you
     
 3. In the  **Publish your add-in** page, choose the **Deploy your web project** link.
     
-    The  **Publish Web** dialog box appears. For more information about using this wizard, see[How to: Deploy a Web Project using On-Click Publishing in Visual Studio](http://msdn.microsoft.com/en-us/library/dd465337.aspx).
+    The  **Publish Web** dialog box appears. For more information about using this wizard, see [How to: Deploy a Web Project using On-Click Publishing in Visual Studio](http://msdn.microsoft.com/en-us/library/dd465337.aspx).
     
 
 ### To package your add-in

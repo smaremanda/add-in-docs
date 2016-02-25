@@ -12,7 +12,7 @@ The root element in the manifest of an Office Add-in.
 <OfficeApp 
   xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" 
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-  xsi:type=["ContentApp" |"MailApp"| "TaskPaneApp"]>
+  xsi:type= ["ContentApp" |"MailApp"| "TaskPaneApp"]>
   ...
 </OfficeApp>
 ```

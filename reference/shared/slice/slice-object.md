@@ -28,7 +28,7 @@ slice
 
 ## Remarks
 
-The  **Slice** object is accessed with the[File.getSliceAsync](../reference/shared/file/getsliceasync-method.md) method.
+The  **Slice** object is accessed with the [File.getSliceAsync](../reference/shared/file/getsliceasync-method.md) method.
 
 
 ## Support details

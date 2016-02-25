@@ -23,14 +23,14 @@ bindingObj.addColumnsAsync(data [, options], callback);
 
 |**Name**|**Type**|**Description**|**Support notes**|
 |:-----|:-----|:-----|:-----|
-| _data_|**array** or[TableData](../reference/shared/tabledata/tabledata-object.md)|An array of arrays ("matrix") or a  **TableData** object that contains one or more rows of data to add to the table. Required.||
+| _data_|**array** or [TableData](../reference/shared/tabledata/tabledata-object.md)|An array of arrays ("matrix") or a  **TableData** object that contains one or more rows of data to add to the table. Required.||
 | _options_|**object**|Specifies any of the following [optional parameters](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters)||
 | _asyncContext_|**array**,  **boolean**,  **null**,  **number**,  **object**, **string**, or  **undefined**|A user-defined item of any type that is returned in the  **AsyncResult** object without being altered.||
 | _callback_|**object**|A function that is invoked when the callback returns, whose only parameter is of type  **AsyncResult**.||
 
 ## Callback Value
 
-When the function you passed to the  _callback_ parameter executes, it receives an[AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the callback function's only parameter.
+When the function you passed to the  _callback_ parameter executes, it receives an [AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the callback function's only parameter.
 
 In the callback function passed to the  **addColumnsAsync** method, you can use the properties of the **AsyncResult** object to return the following information.
 

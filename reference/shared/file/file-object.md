@@ -35,7 +35,7 @@ file
 
 ## Remarks
 
-Access the  **File** object with the[AsyncResult.value](../reference/shared/asyncresult/value-property.md) property in the callback function passed to the[Document.getFileAsync](../reference/shared/document/getfileasync-method.md) method.
+Access the  **File** object with the [AsyncResult.value](../reference/shared/asyncresult/value-property.md) property in the callback function passed to the [Document.getFileAsync](../reference/shared/document/getfileasync-method.md) method.
 
 
 ## Support details

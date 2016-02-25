@@ -25,7 +25,7 @@ Labs.editLab((err, labEditor) => {
 });
 ```
 
-Use the  **getConfiguration** and **setConfiguration** methods on[Labs.LabEditor](../powerpoint/office-mix/reference/labs.labeditor.md) to store the configuration for a given lab. The configuration ([Labs.Core.IConfiguration](../powerpoint/office-mix/reference/labs.core.iconfiguration.md)) indicates to Office Mix what data will be collected and processed by the lab. A configuration contains general information about a lab, including the name, version, and other configuration options. The most important part of the configuration is the definition of the lab components.
+Use the  **getConfiguration** and **setConfiguration** methods on [Labs.LabEditor](../powerpoint/office-mix/reference/labs.labeditor.md) to store the configuration for a given lab. The configuration ([Labs.Core.IConfiguration](../powerpoint/office-mix/reference/labs.core.iconfiguration.md)) indicates to Office Mix what data will be collected and processed by the lab. A configuration contains general information about a lab, including the name, version, and other configuration options. The most important part of the configuration is the definition of the lab components.
 
 The following code shows how to set and get a configuration. To set a configuration, simply create the configuration object, and then call the  **setConfiguration** method. To then retrieve the configuration, you call the **getConfiguration** method on the lab editor object.
 
@@ -80,7 +80,7 @@ After you have set the lab configuration, you are ready to begin interacting wit
 
 ### Getting the lab instance
 
-You interact with the lab using the [Labs.LabInstance](../powerpoint/office-mix/reference/labs.labinstance.md) object, which is an instance of the configured lab for the current user. To run (or "take") the lab, call the[Labs.takeLab](../powerpoint/office-mix/reference/labs.takelab.md) function.
+You interact with the lab using the [Labs.LabInstance](../powerpoint/office-mix/reference/labs.labinstance.md) object, which is an instance of the configured lab for the current user. To run (or "take") the lab, call the [Labs.takeLab](../powerpoint/office-mix/reference/labs.takelab.md) function.
 
 
 ```

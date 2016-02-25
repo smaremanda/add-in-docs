@@ -26,9 +26,9 @@ Office.context.document.getWSSUrlAsync([options,] [callback]);
 
 ## Callback Value
 
-When the  _callback_ function executes, it receives an[AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the parameter in the callback function.
+When the  _callback_ function executes, it receives an [AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the parameter in the callback function.
 
-For the  **getWSSUrlAsync** method, the returned[AsyncResult](../reference/shared/asyncresult-object.md) object contains following properties.
+For the  **getWSSUrlAsync** method, the returned [AsyncResult](../reference/shared/asyncresult-object.md) object contains following properties.
 
 
 ****

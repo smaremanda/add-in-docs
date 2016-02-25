@@ -30,9 +30,9 @@ Office.context.document.getMaxResourceIndexAsync([options][, callback]);
 
 ## Callback Value
 
-When the  _callback_ function executes, it receives an[AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the parameter in the callback function.
+When the  _callback_ function executes, it receives an [AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the parameter in the callback function.
 
-For the  **getMaxResourceIndexAsync** method, the returned[AsyncResult](../reference/shared/asyncresult-object.md) object contains following properties.
+For the  **getMaxResourceIndexAsync** method, the returned [AsyncResult](../reference/shared/asyncresult-object.md) object contains following properties.
 
 
 ****
@@ -52,7 +52,7 @@ You can use the returned value with the [getResourceByIndexAsync](../reference/s
 
 ## Example
 
-The following code example calls  **getResourceTaskIndexAsync** to get the maximum index of the collection of resources in the current project. Then it uses the returned value and the[getResourceByIndexAsync](../reference/shared/projectdocument/getresourcebyindexasync-method.md) method to get each resource GUID.
+The following code example calls  **getResourceTaskIndexAsync** to get the maximum index of the collection of resources in the current project. Then it uses the returned value and the [getResourceByIndexAsync](../reference/shared/projectdocument/getresourcebyindexasync-method.md) method to get each resource GUID.
 
 The example assumes that your add-in has a reference to the jQuery library and that the following page controls are defined in the content div in the page body.
 

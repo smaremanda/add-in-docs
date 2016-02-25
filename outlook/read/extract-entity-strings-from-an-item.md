@@ -527,7 +527,7 @@ When the user clicks the  **Get Task Suggestions** button, the `myGetTaskSuggest
 
 - The string that was originally identified a task suggestion from the [TaskSuggestion.taskString](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) property.
     
-- The array of task assignees from the [TaskSuggestion.assignees](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) property. Each assignee is represented by an[EmailUser](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) object.
+- The array of task assignees from the [TaskSuggestion.assignees](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) property. Each assignee is represented by an [EmailUser](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) object.
     
 - For each assignee, the name from the [EmailUser.displayName](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) property.
     

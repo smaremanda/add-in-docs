@@ -15,7 +15,7 @@ For an introduction to using JavaScript in Office Add-ins, see [Understanding th
 <a name="FirstProjectApp_Procedure1"> </a>
 
 
-- Create an XML file in a local directory. The XML file includes the  **OfficeApp** element and child elements, which are described in the[Office Add-ins XML manifest](../overview/add-in-manifests.md). For example, create a file named JSOM_SimpleOMCalls.xml that contains the following XML (change the GUID value of the **Id** element).
+- Create an XML file in a local directory. The XML file includes the  **OfficeApp** element and child elements, which are described in the [Office Add-ins XML manifest](../overview/add-in-manifests.md). For example, create a file named JSOM_SimpleOMCalls.xml that contains the following XML (change the GUID value of the **Id** element).
     
   ```XML
   <?xml version="1.0" encoding="utf-8"?>
@@ -51,7 +51,7 @@ For an introduction to using JavaScript in Office Add-ins, see [Understanding th
   ```
 
 
-    For Project, the  **OfficeApp** element must include the `xsi:type="TaskPaneApp"` attribute value. The **Id** element is a GUID. The **SourceLocation** value must be a file share path or a SharePoint URL for the add-in HTML source file or the web application that runs in the task pane. For an explanation of the other elements in manifest file, see[Task pane add-ins for Project](../project/project-add-ins.md).
+    For Project, the  **OfficeApp** element must include the `xsi:type="TaskPaneApp"` attribute value. The **Id** element is a GUID. The **SourceLocation** value must be a file share path or a SharePoint URL for the add-in HTML source file or the web application that runs in the task pane. For an explanation of the other elements in manifest file, see [Task pane add-ins for Project](../project/project-add-ins.md).
     
 Procedure 2 shows how to create the HTML file that the JSOM_SimpleOMCalls.xml manifest specifies for the Project test add-in. Buttons that are specified in the HTML file call related JavaScript functions. You can add the JavaScript functions within the HTML file, or put them in a separate .js file.
 
@@ -59,7 +59,7 @@ Procedure 2 shows how to create the HTML file that the JSOM_SimpleOMCalls.xml ma
 <a name="FirstProjectApp_Procedure2"> </a>
 
 
-1. Create an HTML file with a name that is specified by the  **SourceLocation** element in the JSOM_SimpleOMCalls.xml manifest. For example, create theJSOMCall.html file in the `C:\Project\AppSource` directory. Although you can use a simple text editor to create the source files, it is easier to use a tool such as Visual Studio 2015, which works with specific document types (such as HTML and JavaScript) and has other editing aids. If you have not already done the Bing Search example that is described in[Task pane add-ins for Project](../project/project-add-ins.md), Procedure 3 shows how to create the  `\\ServerName\AppSource` file share that the manifest specifies.
+1. Create an HTML file with a name that is specified by the  **SourceLocation** element in the JSOM_SimpleOMCalls.xml manifest. For example, create theJSOMCall.html file in the `C:\Project\AppSource` directory. Although you can use a simple text editor to create the source files, it is easier to use a tool such as Visual Studio 2015, which works with specific document types (such as HTML and JavaScript) and has other editing aids. If you have not already done the Bing Search example that is described in [Task pane add-ins for Project](../project/project-add-ins.md), Procedure 3 shows how to create the  `\\ServerName\AppSource` file share that the manifest specifies.
     
     The JSOMCall.html file uses the common MicrosoftAjax.js file for AJAX functionality and the Office.js file for the add-in functionality in Microsoft Office 2013 applications.
     
@@ -97,7 +97,7 @@ Procedure 2 shows how to create the HTML file that the JSOM_SimpleOMCalls.xml ma
     
 2. Create a JavaScript file named JSOM_Sample.js in the same directory as the JSOMCall.html file. The following code gets the application context and document information by using functions in the Office.js file. The **text** object is the ID of the **textarea** control in the HTML file.
     
-    The  **_projDoc** variable is initialized with a **ProjectDocument** object. The code includes some simple error handling functions, and the **getContextValues** function that gets application context and project document context properties. For more information about the JavaScript object model for Project, see[JavaScript API for Office](http://msdn.microsoft.com/library/b27e70c3-d87d-4d27-85e0-103996273298%28Office.15%29.aspx).
+    The  **_projDoc** variable is initialized with a **ProjectDocument** object. The code includes some simple error handling functions, and the **getContextValues** function that gets application context and project document context properties. For more information about the JavaScript object model for Project, see [JavaScript API for Office](http://msdn.microsoft.com/library/b27e70c3-d87d-4d27-85e0-103996273298%28Office.15%29.aspx).
     
 
 
@@ -166,7 +166,7 @@ function getApplicationDisplayLanguage() {
     
 3. Add JavaScript functions that call asynchronous functions in Office.js and Project-15.js to get selected data:
     
-      - For example,  **getSelectedDataAsync** is a general function in Office.js that gets unformatted text for the selected data. For more information, see[AsyncResult object](http://msdn.microsoft.com/en-us/library/540c114f-0398-425c-baf3-7363f2f6bc47%28Office.15%29.aspx).
+      - For example,  **getSelectedDataAsync** is a general function in Office.js that gets unformatted text for the selected data. For more information, see [AsyncResult object](http://msdn.microsoft.com/en-us/library/540c114f-0398-425c-baf3-7363f2f6bc47%28Office.15%29.aspx).
     
   - The  **getSelectedTaskAsync** function in Project-15.js gets the GUID of the selected task. Similarly, the **getSelectedResourceAsync** function gets the GUID of the selected resource. If you call those functions when a task or a resource is not selected, the functions show an undefined error.
     
@@ -179,7 +179,7 @@ function getApplicationDisplayLanguage() {
     
   - If the project is synchronized with a SharePoint tasks list, the  **getWSSUrlAsync** function gets the URL and the name of the tasks list. If the project is not synchronized with a SharePoint tasks list, the **getWSSUrlAsync** function errors off.
     
-     >**Note**  To get the SharePoint URL and name of the tasks list, we recommend that you use the  **getProjectFieldAsync** function with the **WSSUrl** and **WSSList** constants in the[ProjectProjectFields](http://msdn.microsoft.com/en-us/library/d0808b99-9940-478d-88b7-f68061cc77c5%28Office.15%29.aspx) enumeration.
+     >**Note**  To get the SharePoint URL and name of the tasks list, we recommend that you use the  **getProjectFieldAsync** function with the **WSSUrl** and **WSSList** constants in the [ProjectProjectFields](http://msdn.microsoft.com/en-us/library/d0808b99-9940-478d-88b7-f68061cc77c5%28Office.15%29.aspx) enumeration.
 
     Each of the functions in the following code includes an anonymous function that is specified by  `function (asyncResult)`, which is a callback that gets the asynchronous result. Instead of anonymous functions, you could use named functions, which can help with maintainability of complex add-ins.
     

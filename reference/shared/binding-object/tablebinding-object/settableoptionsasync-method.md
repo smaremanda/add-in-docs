@@ -27,7 +27,7 @@ bindingObj.setTableOptionsAsync(tableOptions [,options] , callback);
 
 ## Callback Value
 
-When the function you passed to the  _callback_ parameter executes, it receives an[AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the callback function's only parameter.
+When the function you passed to the  _callback_ parameter executes, it receives an [AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the callback function's only parameter.
 
 In the callback function passed to the  **goToByIdAsync** method, you can use the properties of the **AsyncResult** object to return the following information.
 
@@ -45,7 +45,7 @@ In the callback function passed to the  **goToByIdAsync** method, you can use th
 The following example shows how to:
 
 
--  **Create an object literal** that specifies the[table formatting options](http://msdn.microsoft.com/library/46b05707-b350-41be-b6b8-311799c71a33%28Office.15%29.aspx) to update on the bound table.
+-  **Create an object literal** that specifies the [table formatting options](http://msdn.microsoft.com/library/46b05707-b350-41be-b6b8-311799c71a33%28Office.15%29.aspx) to update on the bound table.
     
 -  **Call setTableOptions** on a previously bound table (with an **id** of `myBinding`) passing the object with formatting settin as the  _tableOptions_ parameter.
     

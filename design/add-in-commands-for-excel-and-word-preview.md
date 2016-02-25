@@ -100,7 +100,7 @@ To get the latest version of Office that includes developer features in Preview,
 
 1. Download and run the [Office 2016 Deployment Tool](http://www.microsoft.com/en-us/download/details.aspx?id=49117).
     
-2. Replace  **configuration.xml** with the[First Release Configuration File](https://raw.githubusercontent.com/OfficeDev/Office-Add-in-Commands-Samples/master/Tools/FirstReleaseConfig/configuration.xml).
+2. Replace  **configuration.xml** with the [First Release Configuration File](https://raw.githubusercontent.com/OfficeDev/Office-Add-in-Commands-Samples/master/Tools/FirstReleaseConfig/configuration.xml).
     
 3. Open a command prompt with elevated privileges (Run as administrator), and run the following command.
     

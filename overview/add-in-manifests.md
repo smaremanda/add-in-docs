@@ -30,7 +30,7 @@ For examples of manifest v1.1 XML files, see [Manifest v1.1 XML file examples](#
 The following table specifies the elements that are required for the three types of Office Add-ins and the Dictionary task pane add-in.
 
 
- >**Important**  For add-ins submitted to the Office Store, all add-in locations, such as the source file locations specified in the  **SourceLocation** element, must be SSL-secured (HTTPS). For more information see,[What are some common submission errors to avoid?](http://msdn.microsoft.com/library/0ceb385c-a608-40cc-8314-78e39d6c75d0%28Office.15%29.aspx#bk_q2)
+ >**Important**  For add-ins submitted to the Office Store, all add-in locations, such as the source file locations specified in the  **SourceLocation** element, must be SSL-secured (HTTPS). For more information see, [What are some common submission errors to avoid?](http://msdn.microsoft.com/library/0ceb385c-a608-40cc-8314-78e39d6c75d0%28Office.15%29.aspx#bk_q2)
 
 
 **Required elements by Office Add-in type**
@@ -329,7 +329,7 @@ By default, if your add-in tries to go to a URL in a domain other than the domai
 
 To override this behavior, specify each domain you want to open in the add-in window in the list of domains specified in the [AppDomains](http://msdn.microsoft.com/en-us/library/13cf867d-9b24-786f-0687-6bcdc954628e%28Office.15%29.aspx) element of the manifest file. If the add-in tries to go to a URL in a domain that isn't in the list, that URL will open in a new browser window (outside of the add-in pane).
 
-The following XML manifest example hosts its main add-in page in the  `https://www.contoso.com` domain as specified in the **SourceLocation** element. It also specifies the `https://www.northwindtraders.com` domain in an[AppDomain](http://msdn.microsoft.com/en-us/library/2a0353ec-5e09-6fbf-1636-4bb5dcebb9bf%28Office.15%29.aspx) element within the **AppDomains** element list. If the add-in navigates to a page in the www.northwindtraders.com domain, that page will open in the add-in pane.
+The following XML manifest example hosts its main add-in page in the  `https://www.contoso.com` domain as specified in the **SourceLocation** element. It also specifies the `https://www.northwindtraders.com` domain in an [AppDomain](http://msdn.microsoft.com/en-us/library/2a0353ec-5e09-6fbf-1636-4bb5dcebb9bf%28Office.15%29.aspx) element within the **AppDomains** element list. If the add-in navigates to a page in the www.northwindtraders.com domain, that page will open in the add-in pane.
 
 
 

@@ -36,9 +36,9 @@ Office.context.document.setTaskFieldAsync(taskId, fieldId, fieldValue[, options]
 
 ## Callback Value
 
-When the  _callback_ function executes, it receives an[AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the parameter in the callback function.
+When the  _callback_ function executes, it receives an [AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the parameter in the callback function.
 
-For the  **setTaskFieldAsync** method, the returned[AsyncResult](../reference/shared/asyncresult-object.md) object contains following properties.
+For the  **setTaskFieldAsync** method, the returned [AsyncResult](../reference/shared/asyncresult-object.md) object contains following properties.
 
 
 ****
@@ -53,14 +53,14 @@ For the  **setTaskFieldAsync** method, the returned[AsyncResult](../reference/sh
 
 ## Remarks
 
-First call the [getSelectedTaskAsync](../reference/shared/projectdocument/getselectedtaskasync-method.md) or[getTaskByIndexAsync](../reference/shared/projectdocument/settaskfieldasync-method.md) method to get the task GUID, and then pass the GUID as the _taskId_ argument to **setTaskFieldAsync**. Only a single field for a single task can be updated in each asynchronous call.
+First call the [getSelectedTaskAsync](../reference/shared/projectdocument/getselectedtaskasync-method.md) or [getTaskByIndexAsync](../reference/shared/projectdocument/settaskfieldasync-method.md) method to get the task GUID, and then pass the GUID as the _taskId_ argument to **setTaskFieldAsync**. Only a single field for a single task can be updated in each asynchronous call.
 
 
 ## Example
 
 The following code example calls [getSelectedTaskAsync](../reference/shared/projectdocument/getselectedtaskasync-method.md) to get the GUID of the task that's currently selected in a task view. Then it sets two task field values by calling **setTaskFieldAsync** recursively.
 
-The [getSelectedTaskAsync](../reference/shared/projectdocument/getselectedtaskasync-method.md) method used in the example requires that a task view (for example, Task Usage) is the active view and that a task is selected. See the[addHandlerAsync](../reference/shared/projectdocument/addhandlerasync-method.md) method for an example that activates a button based on the active view type.
+The [getSelectedTaskAsync](../reference/shared/projectdocument/getselectedtaskasync-method.md) method used in the example requires that a task view (for example, Task Usage) is the active view and that a task is selected. See the [addHandlerAsync](../reference/shared/projectdocument/addhandlerasync-method.md) method for an example that activates a button based on the active view type.
 
 The example assumes your add-in has a reference to the jQuery library and that the following page controls are defined in the content div in the page body.
 

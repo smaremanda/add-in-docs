@@ -45,7 +45,7 @@ bindingObj.setDataAsync(data [, options] ,callback);
 
 ## Callback Value
 
-When the function you passed to the  _callback_ parameter executes, it receives an[AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the callback function's only parameter.
+When the function you passed to the  _callback_ parameter executes, it receives an [AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the callback function's only parameter.
 
 In the callback function passed to the  **setDataAsync** method, you can use the properties of the **AsyncResult** object to return the following information.
 
@@ -67,7 +67,7 @@ The value passed for  _data_ contains the data to be written in the binding. The
 |**_data_ value**|**Data written**|
 |:-----|:-----|
 |A  **string**|Plain text or anything that can be coerced to a  **string** will be written.|
-|An array of arrays ("matrix")|Tabular data without headers will be written. For example, to write data to three rows in two columns, you can pass an array like this:  `[["R1C1", "R1C2"], ["R2C1", "R2C2"], ["R3C1", "R3C2"]]`To write a single column of three rows, pass an array like this:  `[["R1C1"], ["R2C1"], ["R3C1"]]`|
+|An array of arrays ("matrix")|Tabular data without headers will be written. For example, to write data to three rows in two columns, you can pass an array like this:  ` [["R1C1", "R1C2"], ["R2C1", "R2C2"], ["R3C1", "R3C2"]]`To write a single column of three rows, pass an array like this:  `[["R1C1"], ["R2C1"], ["R3C1"]]`|
 |A [TableData](../reference/shared/tabledata/tabledata-object.md) object|A table with headers will be written.|
 Additionally, these application-specific actions apply when writing data to a binding.
 
@@ -90,7 +90,7 @@ Additionally, these application-specific actions apply when writing data to a bi
 
 |**_data_ value**|**Data written**|
 |:-----|:-----|
-|A  **string**|The specified text is inserted as the value of the first bound cell.You can also specify a valid formula to add that formula to the bound cell. For example, setting  _data_ to `"=SUM(A1:A5)"` will total the values in the specified range. However, when you set a formula on the bound cell, after doing so, you can't read the added formula (or any pre-existing formula) from the bound cell. If you call the[Binding.getDataAsync](../reference/shared/binding-object/getdataasync-method.md) method on the bound cell to read its data, the method can return only the data displayed in the cell (the formula's result).|
+|A  **string**|The specified text is inserted as the value of the first bound cell.You can also specify a valid formula to add that formula to the bound cell. For example, setting  _data_ to `"=SUM(A1:A5)"` will total the values in the specified range. However, when you set a formula on the bound cell, after doing so, you can't read the added formula (or any pre-existing formula) from the bound cell. If you call the [Binding.getDataAsync](../reference/shared/binding-object/getdataasync-method.md) method on the bound cell to read its data, the method can return only the data displayed in the cell (the formula's result).|
 |An array of arrays ("matrix"), and the shape exactly matches the shape of the binding specified|The set of rows and columns are written.You can also specify an array of arrays that contain valid formulas to add them to the bound cells. For example, setting  _data_ to `[["=SUM(A1:A5)","=AVERAGE(A1:A5)"]]` will add those two formulas to a binding that contains two cells. Just as when setting a formula on a single bound cell, you can't read the added formulas (or any pre-existing formulas) from the binding with the **Binding.getDataAsync** method - it returns only the data displayed in the bound cells.|
 |A  **TableData** object, and the shape of the table matches the bound table.|The specified set of rows and/or headers are written, if no other data in surrounding cells will be overwritten. **Note:** If you specify formulas in the **TableData** object you pass for the _data_ parameter, you might not get the results you expect due to the "calculated columns" feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to write _data_ that contains formulas to a bound table, try specifying the data as an array of arrays (instead of a **TableData** object), and specify the _coercionType_ as **Microsoft.Office.Matrix** or "matrix".|
  **Additional remarks for Excel Online**

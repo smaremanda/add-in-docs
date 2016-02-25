@@ -9,7 +9,7 @@ Specifies whether entity highlighting should be turned off for your mail add-in.
 
 
 ```XML
-<DisableEntityHighlighting>[true | false]</DisableEntityHighlighting>
+<DisableEntityHighlighting> [true | false]</DisableEntityHighlighting>
 ```
 
 

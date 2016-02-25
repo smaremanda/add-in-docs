@@ -52,7 +52,7 @@ function write(message){
 ## Control localization from the manifest
 <a name="off15wecon_LocalesManifest"> </a>
 
-Every Office Add-in specifies a [DefaultLocale](http://msdn.microsoft.com/library/04796a3a-3afa-dc85-db66-4677560c185c%28Office.15%29.aspx) element and a locale in its manifest. By default, the Office Add-in platform and Office host applications apply the values of the[Description](http://msdn.microsoft.com/library/bcce6bad-23d0-7631-7d8c-1064b8453b5a%28Office.15%29.aspx), [DisplayName](http://msdn.microsoft.com/library/529159ca-53bf-efcf-c245-e572dab0ef57%28Office.15%29.aspx), [IconUrl](http://msdn.microsoft.com/library/c7dac2d4-4fda-6fc7-3774-49f02b2d3e1e%28Office.15%29.aspx) (if present),[HighResolutionIconUrl](http://msdn.microsoft.com/library/cd5493c5-a019-0059-3009-236234a034f1%28Office.15%29.aspx) (if present), and **SourceLocation** elements to all locales. You can optionally support specific values for specific locales, by specifying an **Override** child element for each additional locale, for any of these five elements. The value for the **DefaultLocale** element and for the **Locale** attribute of the **Overrride** element is specified according to[RFC 3066](http://www.ietf.org/rfc/rfc3066.txt), "Tags for the Identification of Languages." Table 1 describes the localizing support for these elements.
+Every Office Add-in specifies a [DefaultLocale](http://msdn.microsoft.com/library/04796a3a-3afa-dc85-db66-4677560c185c%28Office.15%29.aspx) element and a locale in its manifest. By default, the Office Add-in platform and Office host applications apply the values of the [Description](http://msdn.microsoft.com/library/bcce6bad-23d0-7631-7d8c-1064b8453b5a%28Office.15%29.aspx), [DisplayName](http://msdn.microsoft.com/library/529159ca-53bf-efcf-c245-e572dab0ef57%28Office.15%29.aspx), [IconUrl](http://msdn.microsoft.com/library/c7dac2d4-4fda-6fc7-3774-49f02b2d3e1e%28Office.15%29.aspx) (if present), [HighResolutionIconUrl](http://msdn.microsoft.com/library/cd5493c5-a019-0059-3009-236234a034f1%28Office.15%29.aspx) (if present), and **SourceLocation** elements to all locales. You can optionally support specific values for specific locales, by specifying an **Override** child element for each additional locale, for any of these five elements. The value for the **DefaultLocale** element and for the **Locale** attribute of the **Overrride** element is specified according to [RFC 3066](http://www.ietf.org/rfc/rfc3066.txt), "Tags for the Identification of Languages." Table 1 describes the localizing support for these elements.
 
 
 **Table 1. Localization support**
@@ -69,7 +69,7 @@ Every Office Add-in specifies a [DefaultLocale](http://msdn.microsoft.com/librar
 |The high resolution icon image is optional but if it is specified, it must occur after the  **IconUrl** element. When **HighResolutionIconUrl** is specified, and the add-in is installed on a device that supports high dpi resolution, the **HighResolutionIconUrl** value is used instead of the value for **IconUrl**. You can use the same override technique to specify a certain image for a specific culture. If you use and localize an icon, users in each locale you specify can see a localized icon image for the add-in.For Outlook add-ins, users can see the icon in the EAC after installing the add-in.For content and task pane add-ins, users can see the icon in the ribbon after installing the add-in.|
 |**SourceLocation**|Users in each locale you specify can see a webpage that you specifically design for the add-in for that locale. |
 
- >**Note**  * You can localize the description and display name for only the locales that Office supports. See[Language identifiers and OptionState Id values in Office 2013](http://technet.microsoft.com/en-us/library/cc179219%28Office.15%29.aspx) for a list of languages and locales for the current release of Office.
+ >**Note**  * You can localize the description and display name for only the locales that Office supports. See [Language identifiers and OptionState Id values in Office 2013](http://technet.microsoft.com/en-us/library/cc179219%28Office.15%29.aspx) for a list of languages and locales for the current release of Office.
 
 
 ### Examples
@@ -87,7 +87,7 @@ For example, an Office Add-in can specify the  **DefaultLocale** as `en-us`. For
 
 This means that the add-in assumes the  `en-us` locale by default. Users see the English display name of "Video player" for all locales unless the client computer's locale is `fr-fr`, in which case users would see the French display name "Lecteur vidÃ©o".
 
-The following example applies a locale override for the  **Description** element. It first specifies a default locale of `en-us` and an English description, and then specifies an[Override](http://msdn.microsoft.com/library/d6a0e4f3-1cc9-c544-89bf-8923c7434316%28Office.15%29.aspx) statement with a French description for the `fr-fr` locale:
+The following example applies a locale override for the  **Description** element. It first specifies a default locale of `en-us` and an English description, and then specifies an [Override](http://msdn.microsoft.com/library/d6a0e4f3-1cc9-c544-89bf-8923c7434316%28Office.15%29.aspx) statement with a French description for the `fr-fr` locale:
 
 
 
@@ -160,7 +160,7 @@ You can get the locale of the data of the hosting application by using the  **co
 
 If you use Visual Studio to create Office Add-ins, the .NET Framework and Ajax provide ways to globalize and localize client script files.
 
-You can globalize and use the [Date](http://msdn.microsoft.com/library/caf98d32-2de2-4704-8198-692350343681.aspx) and[Number](http://msdn.microsoft.com/library/c216d3a1-12ae-47d1-bca1-c3666d04572f.aspx) JavaScript type extensions and the JavaScript[Date](http://msdn.microsoft.com/library/ce2202bb-7ec9-4f5a-bf48-3a04feff283e.aspx) object in the JavaScript code for an Office Add-in to display values based on the locale settings on the current browser. For more information, see[Walkthrough: Globalizing a Date by Using Client Script](http://msdn.microsoft.com/library/69b34e6d-d590-4d03-a763-b7ae54b47d74.aspx).
+You can globalize and use the [Date](http://msdn.microsoft.com/library/caf98d32-2de2-4704-8198-692350343681.aspx) and [Number](http://msdn.microsoft.com/library/c216d3a1-12ae-47d1-bca1-c3666d04572f.aspx) JavaScript type extensions and the JavaScript [Date](http://msdn.microsoft.com/library/ce2202bb-7ec9-4f5a-bf48-3a04feff283e.aspx) object in the JavaScript code for an Office Add-in to display values based on the locale settings on the current browser. For more information, see [Walkthrough: Globalizing a Date by Using Client Script](http://msdn.microsoft.com/library/69b34e6d-d590-4d03-a763-b7ae54b47d74.aspx).
 
 You can include localized resource strings directly in standalone JavaScript files to provide client script files for different locales, which are set on the browser or provided by the user. Create a separate script file for each supported locale. In each script file, include an object in JSON format that contains the resource strings for that locale. The localized values are applied when the script runs in the browser. 
 

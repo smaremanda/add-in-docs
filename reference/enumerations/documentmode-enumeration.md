@@ -26,7 +26,7 @@ Office.DocumentMode
 
 ## Remarks
 
-Returned by the  **mode** property of the[Document](../reference/shared/document/document-object.md) object.
+Returned by the  **mode** property of the [Document](../reference/shared/document/document-object.md) object.
 
 
 ## Support details

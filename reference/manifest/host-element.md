@@ -9,7 +9,7 @@ Specifies the type of Office host application your Office Add-in supports.
 
 
 ```XML
-<Host Name=["Document" | "Database" | "Mailbox" | "Presentation" | "Project" | "Workbook"] />
+<Host Name= ["Document" | "Database" | "Mailbox" | "Presentation" | "Project" | "Workbook"] />
 ```
 
 

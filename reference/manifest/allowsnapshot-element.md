@@ -9,7 +9,7 @@ Specifies whether a snapshot image of your content add-in is saved with the host
 
 
 ```XML
-<AllowSnapshot>[true | false]</AllowSnapshot>
+<AllowSnapshot> [true | false]</AllowSnapshot>
 ```
 
 

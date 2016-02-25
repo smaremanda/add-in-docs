@@ -16,7 +16,7 @@ var mySettings = eventArgsObj.settings;
 
 ## Return Value
 
-A [Settings](../reference/shared/settings/settings-object.md) object that represents the settings that raised the[settingsChanged](../reference/shared/settings/settingschanged-event/settingschanged-event.md) event.
+A [Settings](../reference/shared/settings/settings-object.md) object that represents the settings that raised the [settingsChanged](../reference/shared/settings/settingschanged-event/settingschanged-event.md) event.
 
 
 ## Support details

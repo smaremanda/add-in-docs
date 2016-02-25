@@ -24,7 +24,7 @@ MatrixBinding
 
 ## Remarks
 
-The  **MatrixBinding** object inherits the[id](../reference/shared/binding-object/id-property.md) property,[type](../reference/shared/binding-object/type-property.md) property,[getDataAsync](../reference/shared/binding-object/getdataasync-method.md) method, and[setDataAsync](../reference/shared/binding-object/setdataasync-method.md) method from the[Binding](../reference/shared/binding-object/binding-object.md) object.
+The  **MatrixBinding** object inherits the [id](../reference/shared/binding-object/id-property.md) property, [type](../reference/shared/binding-object/type-property.md) property, [getDataAsync](../reference/shared/binding-object/getdataasync-method.md) method, and [setDataAsync](../reference/shared/binding-object/setdataasync-method.md) method from the [Binding](../reference/shared/binding-object/binding-object.md) object.
 
 
 ## Support details

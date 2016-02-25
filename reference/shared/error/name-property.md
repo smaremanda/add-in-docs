@@ -20,7 +20,7 @@ The name of the error as a  **string**.
 
 ## Remarks
 
-The  **Error** object and its properties are accessed from the[AsyncResult](../reference/shared/asyncresult-object.md) object that is returned in the function passed as the _callback_ argument of an asynchronous data operation.
+The  **Error** object and its properties are accessed from the [AsyncResult](../reference/shared/asyncresult-object.md) object that is returned in the function passed as the _callback_ argument of an asynchronous data operation.
 
 
 ## Example

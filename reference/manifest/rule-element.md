@@ -12,7 +12,7 @@ Specifies the activation rule(s) that should be evaluated for this mail add-in.
 
 ```XML
 <Rule xsi:type="ItemIs" 
-   ItemType=["Appointment" | "Message"]
+   ItemType= ["Appointment" | "Message"]
    FormType=["Read" | "Edit" | "ReadOrEdit"] 
    ItemClass = "string " 
    IncludeSubClasses=["true" | "false"] />
@@ -152,7 +152,7 @@ None.
 <a name="MailAppDefineRules_AdditionalResources"> </a>
 
 
-- [Activate a mail add-in in Outlook for a specific message class](http://msdn.microsoft.com/library/f464a152-2dff-4fb3-bf98-c1a3639c3e80%28Office.15%29.aspx) and[Activation rules for Outlook add-ins](http://msdn.microsoft.com/library/b3fd6d69-b968-461d-a40e-6063f4febfe6%28Office.15%29.aspx#MailAppDefineRules_ItemIs)
+- [Activate a mail add-in in Outlook for a specific message class](http://msdn.microsoft.com/library/f464a152-2dff-4fb3-bf98-c1a3639c3e80%28Office.15%29.aspx) and [Activation rules for Outlook add-ins](http://msdn.microsoft.com/library/b3fd6d69-b968-461d-a40e-6063f4febfe6%28Office.15%29.aspx#MailAppDefineRules_ItemIs)
     
 - [Match strings in an Outlook item as well-known entities](http://msdn.microsoft.com/library/a6b0904b-afe9-4882-9136-3d8cfd57fcf8%28Office.15%29.aspx)
     

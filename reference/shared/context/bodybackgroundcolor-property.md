@@ -2,7 +2,7 @@
 # officeTheme.bodyBackgroundColor property
 Gets the Office theme body background color.
 
- **Important:** This API currently works only in Excel, Outlook, PowerPoint, and Word in[Office 2016 Preview](https://products.office.com/en-us/office-2016-preview) on Windows desktop.
+ **Important:** This API currently works only in Excel, Outlook, PowerPoint, and Word in [Office 2016 Preview](https://products.office.com/en-us/office-2016-preview) on Windows desktop.
 
 
 |||

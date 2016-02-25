@@ -348,7 +348,7 @@ After removing the majority of the markup from this package, we're left with the
 
 Several types of rich content require only the .rels and document.xml components shown in the preceding example, including content controls, Office drawing shapes and text boxes, and tables (unless a style is applied to the table). In fact, you can reuse the same edited package parts and swap out just the **body** content in document.xml for the markup of your content.
 
-To check out the Office Open XML markup for the examples of each of these content types shown earlier in Figures 5 through 8, explore the [Word-Add-in-Load-and-write-Open-XML](https://github.com/OfficeDev/Word-Add-in-Load-and-write-Open-XML) code sample referenced in the[Overview](../how-to/create-better-add-ins-for-word-with-office-open-xml.md#bk_Overview) section.
+To check out the Office Open XML markup for the examples of each of these content types shown earlier in Figures 5 through 8, explore the [Word-Add-in-Load-and-write-Open-XML](https://github.com/OfficeDev/Word-Add-in-Load-and-write-Open-XML) code sample referenced in the [Overview](../how-to/create-better-add-ins-for-word-with-office-open-xml.md#bk_Overview) section.
 
 Before we move on, let's take a look at differences to note for a couple of these content types and how to swap out the pieces you need.
 

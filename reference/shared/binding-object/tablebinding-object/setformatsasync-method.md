@@ -27,7 +27,7 @@ bindingObj.setFormatsAsync(cellFormat [,options] , callback);
 
 ## Callback Value
 
-When the function you passed to the  _callback_ parameter executes, it receives an[AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the callback function's only parameter.
+When the function you passed to the  _callback_ parameter executes, it receives an [AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the callback function's only parameter.
 
 In the callback function passed to the  **goToByIdAsync** method, you can use the properties of the **AsyncResult** object to return the following information.
 
@@ -134,7 +134,7 @@ Office.select("bindings#myBinding).setFormatsAsync(
     function (asyncResult){});
 ```
 
-To set formatting on tables when writing data, use the  _tableOptions_ and _cellFormat_ optional parameters of the[Document.setSelectedDataAsync](http://msdn.microsoft.com/library/4c1e13e9-b61a-47df-836c-3ca9aba4ca1c%28Office.15%29.aspx) or[TableBinding.setDataAsync](http://msdn.microsoft.com/library/5b6ecf6f-c57f-4c0d-9605-59daee8fde13%28Office.15%29.aspx) methods.
+To set formatting on tables when writing data, use the  _tableOptions_ and _cellFormat_ optional parameters of the [Document.setSelectedDataAsync](http://msdn.microsoft.com/library/4c1e13e9-b61a-47df-836c-3ca9aba4ca1c%28Office.15%29.aspx) or [TableBinding.setDataAsync](http://msdn.microsoft.com/library/5b6ecf6f-c57f-4c0d-9605-59daee8fde13%28Office.15%29.aspx) methods.
 
 Setting formatting with the optional parameters of the  **Document.setSelectedDataAsync** and **TableBinding.setDataAsync** methods only works to set formatting when writing data the first time. To make formatting changes after writing data, use the following methods:
 

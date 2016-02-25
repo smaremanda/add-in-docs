@@ -72,7 +72,7 @@ Office.context.document.getSelectedDataAsync("text", {valueFormat:"unformatted",
 |[ResponseType](http://msdn.microsoft.com/library/b3e723ca-4be0-4846-ad97-0eecab4355eb%28Office.15%29.aspx)|Specifies the response to a meeting invitation.|
 |[SelectionMode](../../reference/enumerations/selectionmode-enumeration.md)|Specifies whether to select (highlight) the location to navigate to (when using the [Document.goToByIdAsync](../../reference/shared/document/gotobyidasync-method.md) method).|
 |[SourceProperty](http://msdn.microsoft.com/library/6a209a7f-57cd-4dc3-869e-07b0f5928b28%28Office.15%29.aspx)|Specifies the source of the data returned by the invoked method.|
-|[Table](../../reference/enumerations/table-enumeration.md)|Specifies enumerated values for the  `cells:` property in the _cellFormat_ parameter of[table formatting methods](http://msdn.microsoft.com/library/46b05707-b350-41be-b6b8-311799c71a33%28Office.15%29.aspx).|
+|[Table](../../reference/enumerations/table-enumeration.md)|Specifies enumerated values for the  `cells:` property in the _cellFormat_ parameter of [table formatting methods](http://msdn.microsoft.com/library/46b05707-b350-41be-b6b8-311799c71a33%28Office.15%29.aspx).|
 |[ValueFormat](../../reference/enumerations/valueformat-enumeration.md)|Specifies whether values, such as numbers and dates, returned by the invoked method are returned with their formatting applied.|
 
 ## Support details

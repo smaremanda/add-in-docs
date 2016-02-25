@@ -30,9 +30,9 @@ Office.context.document.getMaxTaskIndexAsync([options][, callback]);
 
 ## Callback Value
 
-When the  _callback_ function executes, it receives an[AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the parameter in the callback function.
+When the  _callback_ function executes, it receives an [AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the parameter in the callback function.
 
-For the  **getMaxTaskIndexAsync** method, the returned[AsyncResult](../reference/shared/asyncresult-object.md) object contains following properties:
+For the  **getMaxTaskIndexAsync** method, the returned [AsyncResult](../reference/shared/asyncresult-object.md) object contains following properties:
 
 
 ****
@@ -52,7 +52,7 @@ You can use the returned value with the [getTaskByIndexAsync](../reference/share
 
 ## Example
 
-The following code example calls  **getMaxTaskIndexAsync** to get the maximum index of the collection of tasks in the current project. Then it uses the returned value with the[getTaskByIndexAsync](../reference/shared/projectdocument/getselectedtaskasync-method.md) method to get each task GUID.
+The following code example calls  **getMaxTaskIndexAsync** to get the maximum index of the collection of tasks in the current project. Then it uses the returned value with the [getTaskByIndexAsync](../reference/shared/projectdocument/getselectedtaskasync-method.md) method to get each task GUID.
 
 The example assumes your add-in has a reference to the jQuery library and that the following page controls are defined in the content div in the page body.
 

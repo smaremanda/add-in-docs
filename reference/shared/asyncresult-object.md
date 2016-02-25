@@ -28,7 +28,7 @@ AsyncResult
 
 ## Remarks
 
-When the function you pass to the  _callback_ parameter of an "Async" method executes, it receives an[AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the callback function's only parameter.
+When the function you pass to the  _callback_ parameter of an "Async" method executes, it receives an [AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the callback function's only parameter.
 
 The following is an example applicable to content and task pane add-ins. The example shows a call to the [getSelectedDataAsync](../reference/shared/document/getselecteddataasync-method.md) method of the **Document** object.
 

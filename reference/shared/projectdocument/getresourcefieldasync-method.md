@@ -28,9 +28,9 @@ Office.context.document.getResourceFieldAsync(resourceId, fieldId[, options][, c
 
 ## Callback Value
 
-When the  _callback_ function executes, it receives an[AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the parameter in the callback function.
+When the  _callback_ function executes, it receives an [AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the parameter in the callback function.
 
-For the  **getResourceFieldAsync** method, the returned[AsyncResult](../reference/shared/asyncresult-object.md) object contains the following properties.
+For the  **getResourceFieldAsync** method, the returned [AsyncResult](../reference/shared/asyncresult-object.md) object contains the following properties.
 
 
 ****
@@ -45,7 +45,7 @@ For the  **getResourceFieldAsync** method, the returned[AsyncResult](../referenc
 
 ## Remarks
 
-First call the [getSelectedResourceAsync](../reference/shared/projectdocument/getselectedtaskasync-method.md) method to get the resource GUID, and then pass it as the _resourceId_ argument to **getResourceFieldAsync**. If the active view is not a resource view (for example a Resource Usage or Resource Sheet view), or if no resource is selected in a resource view, [getSelectedResourceAsync](../reference/shared/projectdocument/getselectedtaskasync-method.md) returns a 5001 error (Internal Error). See[addHandlerAsync method](../reference/shared/projectdocument/addhandlerasync-method.md) for an example that uses the[ViewSelectionChanged](../reference/shared/projectdocument/viewselectionchanged-event.md) event and the[getSelectedViewAsync](../reference/shared/projectdocument/getselectedviewasync-method.md) method to activate a button based on the active view type.
+First call the [getSelectedResourceAsync](../reference/shared/projectdocument/getselectedtaskasync-method.md) method to get the resource GUID, and then pass it as the _resourceId_ argument to **getResourceFieldAsync**. If the active view is not a resource view (for example a Resource Usage or Resource Sheet view), or if no resource is selected in a resource view, [getSelectedResourceAsync](../reference/shared/projectdocument/getselectedtaskasync-method.md) returns a 5001 error (Internal Error). See [addHandlerAsync method](../reference/shared/projectdocument/addhandlerasync-method.md) for an example that uses the [ViewSelectionChanged](../reference/shared/projectdocument/viewselectionchanged-event.md) event and the [getSelectedViewAsync](../reference/shared/projectdocument/getselectedviewasync-method.md) method to activate a button based on the active view type.
 
 
 ## Example

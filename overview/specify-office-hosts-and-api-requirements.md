@@ -59,9 +59,9 @@ When specifying Office hosts or API requirements, there are several decisions to
 
 
 
-- If your add-in runs in one Office host, set the  **Hosts** element in the manifest. For more information, see[Set the Hosts element](../overview/specify-office-hosts-and-api-requirements.md#SetHosts).
+- If your add-in runs in one Office host, set the  **Hosts** element in the manifest. For more information, see [Set the Hosts element](../overview/specify-office-hosts-and-api-requirements.md#SetHosts).
     
-- To set the minimum requirement set or API members that an Office host must support to run your add-in, set the  **Requirements** element in the manifest. For more information, see[Set the Requirements element in the manifest](../overview/specify-office-hosts-and-api-requirements.md#RequirementsElement).
+- To set the minimum requirement set or API members that an Office host must support to run your add-in, set the  **Requirements** element in the manifest. For more information, see [Set the Requirements element in the manifest](../overview/specify-office-hosts-and-api-requirements.md#RequirementsElement).
     
 - If you would like to provide additional functionality if specific requirement sets or API members are available in the Office host, perform a runtime check in your add-in's JavaScript code. For example, if your add-in runs in Excel 2016, you may want to use API members from the new JavaScript API for Excel to provide additional functionality. For more information, see [Use runtime checks in your JavaScript code](../overview/specify-office-hosts-and-api-requirements.md#Runtimecheck).
     
@@ -161,14 +161,14 @@ if (Office.context.requirements.isSetSupported(RequirementSetName , VersionNumbe
 In the code above:
 
 
--  _RequirementSetName_ (required) is a string that represents the name of the requirement set. For more information about available requirement sets, see[Office add-in requirement sets](http://msdn.microsoft.com/library/68e346bc-b63a-4e73-ae2f-b03d1b27b98f%28Office.15%29.aspx).
+-  _RequirementSetName_ (required) is a string that represents the name of the requirement set. For more information about available requirement sets, see [Office add-in requirement sets](http://msdn.microsoft.com/library/68e346bc-b63a-4e73-ae2f-b03d1b27b98f%28Office.15%29.aspx).
     
 -  _VersionNumber_ (optional) is the version of the requirement set.
     
-In Excel 2016 or Word 2016, use  **isSetSupported** with the **ExcelAPI** or **WordAPI** requirement sets. The **isSetSupported** method, and the **ExcelAPI** and **WordAPI** requirement sets, are available in the latest Office.js file available from the CDN. If you don't use Office.js from the CDN, your add-in might generate exceptions because **isSetSupported** will be undefined. For more information, see[Specify the latest JavaScript API for Office library](../overview/specify-office-hosts-and-api-requirements.md#ReferenceOfficeJS). 
+In Excel 2016 or Word 2016, use  **isSetSupported** with the **ExcelAPI** or **WordAPI** requirement sets. The **isSetSupported** method, and the **ExcelAPI** and **WordAPI** requirement sets, are available in the latest Office.js file available from the CDN. If you don't use Office.js from the CDN, your add-in might generate exceptions because **isSetSupported** will be undefined. For more information, see [Specify the latest JavaScript API for Office library](../overview/specify-office-hosts-and-api-requirements.md#ReferenceOfficeJS). 
 
 
- >**Note**   **isSetSupported** does not work in Outlook or Outlook Web App. To use a runtime check in Outlook or Outlook Web App, use the technique described in[Runtime checks using methods not in a requirement set](../overview/specify-office-hosts-and-api-requirements.md#RTCmthdnotinReqSet).
+ >**Note**   **isSetSupported** does not work in Outlook or Outlook Web App. To use a runtime check in Outlook or Outlook Web App, use the technique described in [Runtime checks using methods not in a requirement set](../overview/specify-office-hosts-and-api-requirements.md#RTCmthdnotinReqSet).
 
 The following code example shows how an add-in can provide different functionality for different Office hosts that might support different requirement sets or API members.
 
@@ -195,7 +195,7 @@ else
 ## Runtime checks using methods not in a requirement set
 <a name="RTCmthdnotinReqSet"> </a>
 
-Some API members don't belong to requirement sets. This only applies to API members that are part of the [JavaScript API for Office](http://msdn.microsoft.com/library/b27e70c3-d87d-4d27-85e0-103996273298%28Office.15%29.aspx) namespace (anything under Office.*), not API members that belong to the[Word add-ins JavaScript reference](https://msdn.microsoft.com/library/office/mt616493.aspx) (anything in Word.*) or[Excel add-ins JavaScript API reference](https://msdn.microsoft.com/library/office/mt616490.aspx) (anything in Excel.*) namespaces. When your add-in depends on a method that is not part of a requirement set, you can use the runtime check to determine whether the method is supported by the Office host, as shown in the following code example. For a complete list of methods that don't belong to a requirement set, see[Office add-in requirement sets](http://msdn.microsoft.com/library/68e346bc-b63a-4e73-ae2f-b03d1b27b98f%28Office.15%29.aspx).
+Some API members don't belong to requirement sets. This only applies to API members that are part of the [JavaScript API for Office](http://msdn.microsoft.com/library/b27e70c3-d87d-4d27-85e0-103996273298%28Office.15%29.aspx) namespace (anything under Office.*), not API members that belong to the [Word add-ins JavaScript reference](https://msdn.microsoft.com/library/office/mt616493.aspx) (anything in Word.*) or [Excel add-ins JavaScript API reference](https://msdn.microsoft.com/library/office/mt616490.aspx) (anything in Excel.*) namespaces. When your add-in depends on a method that is not part of a requirement set, you can use the runtime check to determine whether the method is supported by the Office host, as shown in the following code example. For a complete list of methods that don't belong to a requirement set, see [Office add-in requirement sets](http://msdn.microsoft.com/library/68e346bc-b63a-4e73-ae2f-b03d1b27b98f%28Office.15%29.aspx).
 
 
  >**Note**  We recommend that you limit the use of this type of runtime check in your add-in's code.

@@ -27,9 +27,9 @@ Office.context.document.getTaskAsync(taskId [,options][, callback]);
 
 ## Callback Value
 
-When the  _callback_ function executes, it receives an[AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the parameter in the callback function.
+When the  _callback_ function executes, it receives an [AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the parameter in the callback function.
 
-For the  **getTaskAsync** method, the returned[AsyncResult](../reference/shared/asyncresult-object.md) object contains following properties.
+For the  **getTaskAsync** method, the returned [AsyncResult](../reference/shared/asyncresult-object.md) object contains following properties.
 
 
 ****
@@ -45,7 +45,7 @@ For the  **getTaskAsync** method, the returned[AsyncResult](../reference/shared/
 
 ## Remarks
 
-Before you call the  **getTaskAsync** method, call the[getSelectedTaskAsync](../reference/shared/projectdocument/getselectedtaskasync-method.md) method to get the GUID of the task.
+Before you call the  **getTaskAsync** method, call the [getSelectedTaskAsync](../reference/shared/projectdocument/getselectedtaskasync-method.md) method to get the GUID of the task.
 
 
 ## Example

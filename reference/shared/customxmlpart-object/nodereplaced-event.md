@@ -16,7 +16,7 @@ Office.EventType.NodeReplaced
 
 ## Remarks
 
-To add an event handler for the  **nodeInserted** event, use the[addHandlerAsync](../reference/shared/customxmlpart-object/addhandlerasync-method.md) method of the **CustomXmlPart** object.
+To add an event handler for the  **nodeInserted** event, use the [addHandlerAsync](../reference/shared/customxmlpart-object/addhandlerasync-method.md) method of the **CustomXmlPart** object.
 
 
 ## Example

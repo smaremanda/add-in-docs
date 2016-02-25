@@ -26,7 +26,7 @@ Office.context.document.settings.refreshAsync(callback);
 
 ## Callback Value
 
-When the function you passed to the  _callback_ parameter executes, it receives an[AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the callback function's only parameter.
+When the function you passed to the  _callback_ parameter executes, it receives an [AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the callback function's only parameter.
 
 In the callback function passed to the  **refreshAsync** method, you can use the properties of the **AsyncResult** object to return the following information.
 
@@ -41,7 +41,7 @@ In the callback function passed to the  **refreshAsync** method, you can use the
 
 ## Remarks
 
-This method is useful in Word and PowerPoint coauthoring scenarios when multiple instances of the same add-in are working against the same document. Because each add-in is working against an in-memory copy of the settings loaded from the document at the time the user opened it, the settings values used by each user can get out of sync. This can happen whenever an instance of the add-in calls the [Settings.saveAsync](../reference/shared/settings/saveasync-method.md) method to persist all of that user's settings to the document. Calling the **refreshAsync** method from the event handler for the[settingsChanged](../reference/shared/settings/settingschanged-event/settingschanged-event.md) event of the add-in will refresh the settings values for all users.
+This method is useful in Word and PowerPoint coauthoring scenarios when multiple instances of the same add-in are working against the same document. Because each add-in is working against an in-memory copy of the settings loaded from the document at the time the user opened it, the settings values used by each user can get out of sync. This can happen whenever an instance of the add-in calls the [Settings.saveAsync](../reference/shared/settings/saveasync-method.md) method to persist all of that user's settings to the document. Calling the **refreshAsync** method from the event handler for the [settingsChanged](../reference/shared/settings/settingschanged-event/settingschanged-event.md) event of the add-in will refresh the settings values for all users.
 
 The  **refreshAsync** method can be called from add-ins created for Excel, but since it doesn't support coauthoring there is no reason to do so.
 

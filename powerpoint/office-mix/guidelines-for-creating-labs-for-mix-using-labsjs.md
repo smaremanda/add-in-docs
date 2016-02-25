@@ -88,12 +88,12 @@ Initialization establishes the communication pathway between the lab and its hos
 Labs.connect((err, connectionResponse) => {});
 ```
 
-After you initialize, you can call other methods of the labs.js API. The  _connectionResponse_ parameter contains information about the host, user, and other connection-related information. For more information about the values returned, see the[Labs.Core.IConnectionResponse](../powerpoint/office-mix/reference/labs.core.iconnectionresponse.md).
+After you initialize, you can call other methods of the labs.js API. The  _connectionResponse_ parameter contains information about the host, user, and other connection-related information. For more information about the values returned, see the [Labs.Core.IConnectionResponse](../powerpoint/office-mix/reference/labs.core.iconnectionresponse.md).
 
 
 ### Time format
 
-Labs.js stores numbers as milliseconds elapsed since January 1st 1970 UTC. This matches date format of the JavaScript[Date object](http://msdn.microsoft.com/en-us/library/ie/cd9w2te4%28v=vs.94%29.aspx),
+Labs.js stores numbers as milliseconds elapsed since January 1st 1970 UTC. This matches date format of the JavaScript [Date object](http://msdn.microsoft.com/en-us/library/ie/cd9w2te4%28v=vs.94%29.aspx),
 
 
 ### Timeline

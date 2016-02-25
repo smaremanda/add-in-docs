@@ -32,7 +32,7 @@ Office.context.document.goToByIdAsync(id, goToType, [,options], callback);
 
 ## Callback Value
 
-When the function you passed to the  _callback_ parameter executes, it receives an[AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the callback function's only parameter.
+When the function you passed to the  _callback_ parameter executes, it receives an [AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the callback function's only parameter.
 
 In the callback function passed to the  **goToByIdAsync** method, you can use the properties of the **AsyncResult** object to return the following information.
 
@@ -57,7 +57,7 @@ PowerPoint doesn't support the  **goToByIdAsync** method in **Master Views**.
 The following example shows how to:
 
 
--  **Create a table binding** using the[addFromSelectionAsync](../reference/shared/bindings-object/addfromselectionasync-method.md) method as a sample binding to work with.
+-  **Create a table binding** using the [addFromSelectionAsync](../reference/shared/bindings-object/addfromselectionasync-method.md) method as a sample binding to work with.
     
 -  **Specify that binding** as the binding to go to.
     
@@ -128,7 +128,7 @@ function goToTable() {
 The following example shows how to:
 
 
--  **Get the id** of the currently selected slides using the[getSelectedDataAsync](../reference/shared/document/getselecteddataasync-method.md) method.
+-  **Get the id** of the currently selected slides using the [getSelectedDataAsync](../reference/shared/document/getselecteddataasync-method.md) method.
     
 -  **Specify the returned id** as the slide to go to.
     

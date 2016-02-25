@@ -28,7 +28,7 @@ bindingObj.addHandlerAsync(eventType, handler [, options], callback);
 
 ## Callback Value
 
-When the function you passed to the  _callback_ parameter executes, it receives an[AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the callback function's only parameter.
+When the function you passed to the  _callback_ parameter executes, it receives an [AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the callback function's only parameter.
 
 In the callback function passed to the  **addHandlerAsync** method, you can use the properties of the **AsyncResult** object to return the following information.
 
@@ -48,7 +48,7 @@ You can add multiple event handlers for the specified  _eventType_ as long as th
 
 ## Example
 
-The following code sample calls the [select](../reference/shared/office/select-method.md) method of the **Office** object to access the binding with ID "MyBinding", and then calls the **addHandlerAsync** method to add a handler function for the[bindingDataChanged](../reference/shared/binding-object/data-changed-event/bindingdatachanged-event.md) event of that binding.
+The following code sample calls the [select](../reference/shared/office/select-method.md) method of the **Office** object to access the binding with ID "MyBinding", and then calls the **addHandlerAsync** method to add a handler function for the [bindingDataChanged](../reference/shared/binding-object/data-changed-event/bindingdatachanged-event.md) event of that binding.
 
 
 ```

@@ -186,7 +186,7 @@ h1,h3,h4,p,a,li
     
 3. Go back to the parent project folder and make sure the XML file named manifest-myHelloWorldaddin.xml contains the following XML code.
     
-     >**Important**  The value in the  `<id>` tag is a GUID that the yeoman generator creates when it generates the project. Do not change the GUID that the yeoman generator created for your add-in.If the host is Azure, the the  `SourceLocation` value will be a URL that is similar to _https://[name-of-your-web-app].azurewebsites.net/[path-to-add-in]_. If you are using the self-hosted option, as in this example, it will be _https://localhost:8443/[path-to-add-in]_.
+     >**Important**  The value in the  `<id>` tag is a GUID that the yeoman generator creates when it generates the project. Do not change the GUID that the yeoman generator created for your add-in.If the host is Azure, the the  `SourceLocation` value will be a URL that is similar to _https:// [name-of-your-web-app].azurewebsites.net/[path-to-add-in]_. If you are using the self-hosted option, as in this example, it will be _https://localhost:8443/[path-to-add-in]_.
 
   ```XML
   <?xml version="1.0" encoding="utf-8"?> 
@@ -235,7 +235,7 @@ You can use sideloading to install your add-in for testing:
     
 - [Sideload Outlook add-ins for testing](f5a3a519-7f5d-409c-a437-b203fcaa8d2d.md)
     
-Alternatively, you can publish the add-in to a catalog or network share and install it the way end-users do. For details, see [Publish task pane and content add-ins to an add-in catalog on SharePoint](https://msdn.microsoft.com/EN-US/library/office/fp123517.aspx.aspx) and[Create a network shared folder catalog for task pane and content add-ins](https://msdn.microsoft.com/EN-US/library/office/fp123503.aspx.aspx).
+Alternatively, you can publish the add-in to a catalog or network share and install it the way end-users do. For details, see [Publish task pane and content add-ins to an add-in catalog on SharePoint](https://msdn.microsoft.com/EN-US/library/office/fp123517.aspx.aspx) and [Create a network shared folder catalog for task pane and content add-ins](https://msdn.microsoft.com/EN-US/library/office/fp123503.aspx.aspx).
 
 
 ## Debugging your Office add-in

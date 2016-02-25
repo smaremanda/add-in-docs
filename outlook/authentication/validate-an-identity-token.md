@@ -629,7 +629,7 @@ namespace IdentityTest
     public string realm { get; set; }
     public string serviceName { get; set; }
     public string issuer { get; set; }
-    public string[] allowedAudiences { get; set; }
+    public string [] allowedAudiences { get; set; }
     public JsonKey[] keys;
     public JsonEndpoint[] endpoints;
   }

@@ -16,7 +16,7 @@ Office.EventType.ViewSelectionChanged
 
 ## Remarks
 
- **ViewSelectionChanged** is an[EventType](../reference/enumerations/eventtype-enumeration.md) enumeration constant that can be used in the[ProjectDocument.addHandlerAsync](../reference/shared/projectdocument/addhandlerasync-method.md) and[ProjectDocument.removeHandlerAsync](../reference/shared/projectdocument/removehandlerasync-method.md) methods to add or remove a handler for the event.
+ **ViewSelectionChanged** is an [EventType](../reference/enumerations/eventtype-enumeration.md) enumeration constant that can be used in the [ProjectDocument.addHandlerAsync](../reference/shared/projectdocument/addhandlerasync-method.md) and [ProjectDocument.removeHandlerAsync](../reference/shared/projectdocument/removehandlerasync-method.md) methods to add or remove a handler for the event.
 
 
 ## Example
@@ -75,7 +75,7 @@ The example assumes your add-in has a reference to the jQuery library and that t
 
 ```
 
-For an example that shows how to use a  **ViewSelectionChanged** event handler in a Project add-in, see[Create your first task pane add-in for Project 2013 by using a text editor](http://msdn.microsoft.com/library/f6ab544a-a841-4f1b-b0c4-5001b33bba01%28Office.15%29.aspx).
+For an example that shows how to use a  **ViewSelectionChanged** event handler in a Project add-in, see [Create your first task pane add-in for Project 2013 by using a text editor](http://msdn.microsoft.com/library/f6ab544a-a841-4f1b-b0c4-5001b33bba01%28Office.15%29.aspx).
 
 
 ## Support details

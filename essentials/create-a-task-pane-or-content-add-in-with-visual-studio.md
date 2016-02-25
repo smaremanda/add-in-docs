@@ -180,7 +180,7 @@ function writeToPage(text) {
 
      >**Note**  Do not to delete or overwrite the  `Office.initialize` event handler function (although you can replace the code within it). The `Office.initialize` event handler must be in place for your add-in to initialize correctly at runtime.
 
-    The code in the  `writeData()` function calls the[Document.setSelectedDataAsync](http://msdn.microsoft.com/EN-US/library/fp142145.aspx) method to write "Hello World!" to the current cell when you choose the **Write Data** button. Most of the methods used in this walkthrough are asynchronous, which is why their names end with "Async", and callback functions like the anonymous function passed as the argument following "Hello World!" are used. For more information about using "Async" methods, see[Asynchronous programming in Office Add-ins](../how-to/asynchronous-programming-in-office-add-ins.md).
+    The code in the  `writeData()` function calls the [Document.setSelectedDataAsync](http://msdn.microsoft.com/EN-US/library/fp142145.aspx) method to write "Hello World!" to the current cell when you choose the **Write Data** button. Most of the methods used in this walkthrough are asynchronous, which is why their names end with "Async", and callback functions like the anonymous function passed as the argument following "Hello World!" are used. For more information about using "Async" methods, see [Asynchronous programming in Office Add-ins](../how-to/asynchronous-programming-in-office-add-ins.md).
     
     The  `writeToPage(text)` function is a helper function for writing text back to the results `div` on the add-in HTML page. The `writeToPage(text)` function is also used to display data and messages in the code examples in the following procedures.
     
@@ -207,7 +207,7 @@ function writeToPage(text) {
 
     Writing an array of arrays like  `[["red"],["green"],["blue"]]` creates what's called amatrix data structure, which in this case creates a single column of three cells (rows). You can create a matrix of two columns of three rows like this:
     
-     `[["red", "rojo"],["green", "verde"],["blue", "azul"]]`
+     ` [["red", "rojo"],["green", "verde"],["blue", "azul"]]`
     
     You can create a single row of three cells like this: 
     
@@ -271,7 +271,7 @@ function readData() {
   ```
 
 
-    The  `readData()` function calls the[Document.getSelectedDataAsync](http://msdn.microsoft.com/en-us/library/f85ad02c-64f0-4b73-87f6-7f521b3afd69%28Office.1501401%29) method to read the data that's currently selected by the user as a "matrix" _coercionType_, which is a 2-D array. For Excel, this will read a contiguous range of one or more cells.
+    The  `readData()` function calls the [Document.getSelectedDataAsync](http://msdn.microsoft.com/en-us/library/f85ad02c-64f0-4b73-87f6-7f521b3afd69%28Office.1501401%29) method to read the data that's currently selected by the user as a "matrix" _coercionType_, which is a 2-D array. For Excel, this will read a contiguous range of one or more cells.
     
 4. On the  **Debug** menu, choose **Start Debugging** or press the F5 key.
     
@@ -332,7 +332,7 @@ Office.initialize = function (reason) {
   ```
 
 
-    The  `bindData()` function calls the[Bindings.addFromSelectionAsync](http://msdn.microsoft.com/en-us/library/edc99214-e63e-43f2-9392-97ead42fc155%28Office.1501401%29) method to create a matrix binding with an[id](http://msdn.microsoft.com/en-us/library/94a0814d-70a0-4258-a837-2be04f68f068%28Office.1501401%29)of  `myBinding` that is associated with the cells that the user selected. You can specify the _bindingType_ as `"text"` to create a binding to a single cell in Excel, or to run of characters (a string) in a Word document. For more information about bindings, see[Bind to regions in a document or spreadsheet](../how-to/bind-to-regions-in-a-document-or-spreadsheet.md).
+    The  `bindData()` function calls the [Bindings.addFromSelectionAsync](http://msdn.microsoft.com/en-us/library/edc99214-e63e-43f2-9392-97ead42fc155%28Office.1501401%29) method to create a matrix binding with an [id](http://msdn.microsoft.com/en-us/library/94a0814d-70a0-4258-a837-2be04f68f068%28Office.1501401%29)of  `myBinding` that is associated with the cells that the user selected. You can specify the _bindingType_ as `"text"` to create a binding to a single cell in Excel, or to run of characters (a string) in a Word document. For more information about bindings, see [Bind to regions in a document or spreadsheet](../how-to/bind-to-regions-in-a-document-or-spreadsheet.md).
     
 4. Add the following code to the Home.js file below the  `bindData ()` function.
     
@@ -350,7 +350,7 @@ Office.initialize = function (reason) {
   ```
 
 
-    The  `readBoundData()` function calls the[Office.select](http://msdn.microsoft.com/en-us/library/23aeb136-da1f-4127-a798-99dc27bc4dae%28Office.1501401%29) method to get the binding created by the `bindData()` function, which has an **id** of `myBinding`. (Alternatively, you can use the [Bindings.getByIdAsync](http://msdn.microsoft.com/en-us/library/2727c891-bc05-465c-9324-113fbfeb3fbb%28Office.1501401%29) method to access a binding by its **id**.) The function then calls the [Binding.getDataAsync](http://msdn.microsoft.com/en-us/library/5372ffd8-579d-4fcb-9e5b-e9a2128f3201%28Office.1501401%29) method to read the data from the binding. Because the binding is a matrix binding, you must specify the _coersionType_ as `"matrix"` for the call to succeed.
+    The  `readBoundData()` function calls the [Office.select](http://msdn.microsoft.com/en-us/library/23aeb136-da1f-4127-a798-99dc27bc4dae%28Office.1501401%29) method to get the binding created by the `bindData()` function, which has an **id** of `myBinding`. (Alternatively, you can use the [Bindings.getByIdAsync](http://msdn.microsoft.com/en-us/library/2727c891-bc05-465c-9324-113fbfeb3fbb%28Office.1501401%29) method to access a binding by its **id**.) The function then calls the [Binding.getDataAsync](http://msdn.microsoft.com/en-us/library/5372ffd8-579d-4fcb-9e5b-e9a2128f3201%28Office.1501401%29) method to read the data from the binding. Because the binding is a matrix binding, you must specify the _coersionType_ as `"matrix"` for the call to succeed.
     
 5. On the  **Debug** menu, choose **Start Debugging** or press the F5 key.
     
@@ -439,7 +439,7 @@ function myHandler(eventArgs) {
   ```
 
 
-    The  `addEvent()` function calls the **Office.select** method to get the `myBinding` binding object, and then calls the[Binding.addHandlerAsync](http://msdn.microsoft.com/en-us/library/b9c2f4ea-726c-4b48-a3fb-89beda337a17%28Office.1501401%29) method to add an event handler for the[Binding.bindingDataChanged](http://msdn.microsoft.com/en-us/library/7b9ed4bf-3ce5-44eb-8548-2b081afd868d%28Office.1501401%29) event. The `myHandler` function uses the[binding](http://msdn.microsoft.com/en-us/library/3f5adb74-0da6-46c6-a95e-0890bd935379%28Office.15%29.aspx) property of the[BindingDataChangedEventArgs](http://msdn.microsoft.com/en-us/library/d08e5556-20a6-469a-9c51-b0b95c8213ac%28Office.1501401%29) object to access the binding that raised the event, and then calls the **Binding.getDataAsync** method to read and display the data when the event occurs.
+    The  `addEvent()` function calls the **Office.select** method to get the `myBinding` binding object, and then calls the [Binding.addHandlerAsync](http://msdn.microsoft.com/en-us/library/b9c2f4ea-726c-4b48-a3fb-89beda337a17%28Office.1501401%29) method to add an event handler for the [Binding.bindingDataChanged](http://msdn.microsoft.com/en-us/library/7b9ed4bf-3ce5-44eb-8548-2b081afd868d%28Office.1501401%29) event. The `myHandler` function uses the [binding](http://msdn.microsoft.com/en-us/library/3f5adb74-0da6-46c6-a95e-0890bd935379%28Office.15%29.aspx) property of the [BindingDataChangedEventArgs](http://msdn.microsoft.com/en-us/library/d08e5556-20a6-469a-9c51-b0b95c8213ac%28Office.1501401%29) object to access the binding that raised the event, and then calls the **Binding.getDataAsync** method to read and display the data when the event occurs.
     
 3. On the  **Debug** menu, choose **Start Debugging** or press the F5 key.
     
@@ -513,9 +513,9 @@ You can perform the following steps to modify this add-in project so that it wil
 You can perform the following steps to modify this add-in project so that it will run as a content add-in in Excel:
 
 
-- Modify the manifest file to set the  **xsi:type** attribute to `"ContentApp"` in the[OfficeApp](http://msdn.microsoft.com/en-us/library/68f1cada-66f8-4341-45f5-14e0634c24fb%28Office.1501401%29) element.
+- Modify the manifest file to set the  **xsi:type** attribute to `"ContentApp"` in the [OfficeApp](http://msdn.microsoft.com/en-us/library/68f1cada-66f8-4341-45f5-14e0634c24fb%28Office.1501401%29) element.
     
-- Modify the manifest file to set values for the [RequestedWidth](http://msdn.microsoft.com/en-us/library/29032529-6661-fb99-1ff3-c02cc474017f) and[RequestedHeight](http://msdn.microsoft.com/en-us/library/f573269b-7615-af82-2e0d-7e5661b66a20) elements.
+- Modify the manifest file to set values for the [RequestedWidth](http://msdn.microsoft.com/en-us/library/29032529-6661-fb99-1ff3-c02cc474017f) and [RequestedHeight](http://msdn.microsoft.com/en-us/library/f573269b-7615-af82-2e0d-7e5661b66a20) elements.
     
 - Modify the manifest file to remove the  `"Presentation"`,  `"Project"`, and  `"Document"` **Host** elements from the **Hosts** element.
     
@@ -599,7 +599,7 @@ To learn more about developing Office Add-ins, see the following:
 - [Package your add-in using Napa or Visual Studio to prepare for publishing](../publish/package-your-add-in-using-napa-or-visual-studio.md)
     
 
- >**Tip**  To deploy and publish an add-in from Visual Studio, see [Package your add-in using Napa or Visual Studio to prepare for publishing](../publish/package-your-add-in-using-napa-or-visual-studio.md). To publish an add-in without using Visual Studio, you can deploy the HTML page for your add-in and .js files on a web server, and then upload your add-in manifest file to a [network share catalog](../publish/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins.md) or[Add-in Catalog on SharePoint](../publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog.md). Before uploading the manifest file, replace the  `~remoteAppUrl` token in the `DefaultValue` attribute of `SourceLocation` tag to specify the full URL of the default HTML page for your add-in on the web server where it is hosted.
+ >**Tip**  To deploy and publish an add-in from Visual Studio, see [Package your add-in using Napa or Visual Studio to prepare for publishing](../publish/package-your-add-in-using-napa-or-visual-studio.md). To publish an add-in without using Visual Studio, you can deploy the HTML page for your add-in and .js files on a web server, and then upload your add-in manifest file to a [network share catalog](../publish/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins.md) or [Add-in Catalog on SharePoint](../publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog.md). Before uploading the manifest file, replace the  `~remoteAppUrl` token in the `DefaultValue` attribute of `SourceLocation` tag to specify the full URL of the default HTML page for your add-in on the web server where it is hosted.
 
 
 ## Additional resources

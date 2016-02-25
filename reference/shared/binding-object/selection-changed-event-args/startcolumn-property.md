@@ -27,7 +27,7 @@ For Word, this property will work only for bindings of [BindingType](../referenc
 
 ## Example
 
-The following example adds an event handler for the [SelectionChanged](../reference/shared/binding-object/selection-changed-event/bindingselectionchanged-event.md) event to the binding with an[id](../reference/shared/binding-object/id-property.md) of `myTable`. When the user changes the selection, the handler displays the coordinates of the first cell in the selection, and the number of row and columns selected.
+The following example adds an event handler for the [SelectionChanged](../reference/shared/binding-object/selection-changed-event/bindingselectionchanged-event.md) event to the binding with an [id](../reference/shared/binding-object/id-property.md) of `myTable`. When the user changes the selection, the handler displays the coordinates of the first cell in the selection, and the number of row and columns selected.
 
 
 ```

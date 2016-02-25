@@ -27,7 +27,7 @@ asyncResult.error
 
 ## Remarks
 
-The  **Error** object is accessed from the[AsyncResult](../reference/shared/asyncresult-object.md) object that is returned in the function passed as the _callback_ argument of an asynchronous data operation, such as the[setSelectedDataAsync](../reference/shared/document/setselecteddataasync-method.md) method of the **Document** object.
+The  **Error** object is accessed from the [AsyncResult](../reference/shared/asyncresult-object.md) object that is returned in the function passed as the _callback_ argument of an asynchronous data operation, such as the [setSelectedDataAsync](../reference/shared/document/setselecteddataasync-method.md) method of the **Document** object.
 
 
 ## Example

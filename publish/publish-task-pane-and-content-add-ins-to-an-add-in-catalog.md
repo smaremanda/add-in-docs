@@ -11,7 +11,7 @@ Use the following steps to upload the manifest for your task pane or content add
 
 ## Create or find the add-in catalog
 
-To set up an add-in catalog, see [Set up an add-in catalog on SharePoint](../publish/set-up-an-add-in-catalog-on-sharepoint.md) or[Set up an add-in catalog on Office 365](../publish/set-up-an-add-in-catalog-on-office-365.md).
+To set up an add-in catalog, see [Set up an add-in catalog on SharePoint](../publish/set-up-an-add-in-catalog-on-sharepoint.md) or [Set up an add-in catalog on Office 365](../publish/set-up-an-add-in-catalog-on-office-365.md).
 
 If an add-in catalog is already set up for a SharePoint web application, to find it:
 

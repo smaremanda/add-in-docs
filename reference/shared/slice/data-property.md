@@ -16,7 +16,7 @@ var sliceData = slice.data;
 
 ## Return value
 
-The raw data of the file slice in  **Office.FileType.Text** ("text") or **Office.FileType.Compressed** ("compressed") format as specified by the _fileType_ parameter of the call to the[Document.getFileAsync](../reference/shared/document/getfileasync-method.md) method.
+The raw data of the file slice in  **Office.FileType.Text** ("text") or **Office.FileType.Compressed** ("compressed") format as specified by the _fileType_ parameter of the call to the [Document.getFileAsync](../reference/shared/document/getfileasync-method.md) method.
 
 
 ## Remarks

@@ -27,5 +27,5 @@ Specifies the list of JavaScript API for Office methods that your Office Add-in 
 
 ## Remarks
 
-The  **Methods** and **Method** elements aren't supported in mail add-ins. For more information about requirement sets, see[Specify Office hosts and API requirements](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx#SpecifyRequirementSets_intro).
+The  **Methods** and **Method** elements aren't supported in mail add-ins. For more information about requirement sets, see [Specify Office hosts and API requirements](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx#SpecifyRequirementSets_intro).
 

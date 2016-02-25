@@ -26,7 +26,7 @@ Office.CoercionType
  >**Note**  Only applies to data in add-ins for Word and Outlook add-ins for Outlook (compose mode).
 
 |
-|Office.CoercionType.Matrix|"matrix"|Return or set data as tabular data with no headers. Data is returned or set as an array of arrays containing one-dimensional runs of characters. For example, three rows of  **string** values in two columns would be: `[["R1C1", "R1C2"], ["R2C1", "R2C2"], ["R3C1", "R3C2"]]`.
+|Office.CoercionType.Matrix|"matrix"|Return or set data as tabular data with no headers. Data is returned or set as an array of arrays containing one-dimensional runs of characters. For example, three rows of  **string** values in two columns would be: ` [["R1C1", "R1C2"], ["R2C1", "R2C2"], ["R3C1", "R3C2"]]`.
  >**Note**  Only applies to data in Excel and Word.
 
 |

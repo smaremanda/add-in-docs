@@ -34,7 +34,7 @@ bindingObj.getDataAsync([, options] , callback );
 
 ## Callback Value
 
-When the function you passed to the  _callback_ parameter executes, it receives an[AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the callback function's only parameter.
+When the function you passed to the  _callback_ parameter executes, it receives an [AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the callback function's only parameter.
 
 In the callback function passed to the  **Binding.getDataAsync** method, you can use the properties of the **AsyncResult** object to return the following information.
 
@@ -42,7 +42,7 @@ In the callback function passed to the  **Binding.getDataAsync** method, you can
 
 |**Property**|**Use to...**|
 |:-----|:-----|
-|[AsyncResult.value](../reference/shared/asyncresult/value-property.md)|Access the values in the specified binding.If the  _coercionType_ parameter is specified (and the call is successful), the data is returned in the format described in the[CoercionType](../reference/enumerations/coerciontype-enumeration.md) enumeration topic.|
+|[AsyncResult.value](../reference/shared/asyncresult/value-property.md)|Access the values in the specified binding.If the  _coercionType_ parameter is specified (and the call is successful), the data is returned in the format described in the [CoercionType](../reference/enumerations/coerciontype-enumeration.md) enumeration topic.|
 |[AsyncResult.status](../reference/shared/asyncresult/status-property.md)|Determine the success or failure of the operation.|
 |[AsyncResult.error](../reference/shared/asyncresult/error-property.md)|Access an [Error](../reference/shared/error/error-object.md) object that provides error information if the operation failed.|
 |[AsyncResult.asyncContext](../reference/shared/asyncresult/asynccontext-property.md)|Access your user-defined  **object** or value, if you passed one as the _asyncContext_ parameter.|
@@ -62,7 +62,7 @@ If an optional parameter is omitted, the following default value is used (when a
 | _startColumn_|The first column.|
 | _rowCount_|All rows.|
 | _columnCount_|All columns.|
-When called from a [MatrixBinding](../reference/shared/binding-object/matrixbinding-object/matrixbinding-object.md) or[TableBinding](../reference/shared/binding-object/tablebinding-object/tablebinding-object.md), the  **getDataAsync** method will return a subset of the bound values if the optional _startRow_,  _startColumn_,  _rowCount_, and  _columnCount_ parameters are specified (and they specify a contiguous and valid range).
+When called from a [MatrixBinding](../reference/shared/binding-object/matrixbinding-object/matrixbinding-object.md) or [TableBinding](../reference/shared/binding-object/tablebinding-object/tablebinding-object.md), the  **getDataAsync** method will return a subset of the bound values if the optional _startRow_,  _startColumn_,  _rowCount_, and  _columnCount_ parameters are specified (and they specify a contiguous and valid range).
 
 
 ## Example
@@ -85,7 +85,7 @@ function write(message){
 
 
 
-There is an important difference in behavior between using the  `"table"` and `"matrix"` _coercionType_ with the **Binding.getDataAsync** method, with respect to data formatted with header rows, as shown in the following two examples. These code examples show event handler functions for the[Binding.SelectionChanged](../reference/shared/binding-object/selection-changed-event/bindingselectionchanged-event.md) event.
+There is an important difference in behavior between using the  `"table"` and `"matrix"` _coercionType_ with the **Binding.getDataAsync** method, with respect to data formatted with header rows, as shown in the following two examples. These code examples show event handler functions for the [Binding.SelectionChanged](../reference/shared/binding-object/selection-changed-event/bindingselectionchanged-event.md) event.
 
 If you specify the  `"table"` _coercionType_, the [TableData.rows](../reference/shared/tabledata/rows-property.md) property ( `result.value.rows` in the following code example) returns an array that contains only the body rows of the table. So, its 0th row will be the first non-header row in the table.
 

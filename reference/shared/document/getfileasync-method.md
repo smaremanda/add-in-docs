@@ -28,7 +28,7 @@ Office.context.document.getFileAsync(fileType [, options], callback);
 |PowerPoint on Windows desktop |Office.FileType.CompressedOffice.FileType.Pdf|
 |Word on Windows desktop and iPad|Office.FileType.CompressedOffice.FileType.PdfOffice.FileType.Text|
 |Word Online|Office.FileType.CompressedOffice.FileType.PdfOffice.FileType.Text|
-|**Changed in** 1.1, see[Support history](#bk_history)|
+|**Changed in** 1.1, see [Support history](#bk_history)|
 | _options_|**object**|Specifies any of the following [optional parameters](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters)||
 | _sliceSize_|**number**|Specifies the desired slice size (in bytes) up to 4194304 bytes (4MB). If not specified, a default slice size of 4194304 bytes (4MB) will be used. ||
 | _asyncContext_|**array**,  **boolean**,  **null**,  **number**,  **object**, **string**, or  **undefined**|A user-defined item of any type that is returned in the  **AsyncResult** object without being altered.||
@@ -36,7 +36,7 @@ Office.context.document.getFileAsync(fileType [, options], callback);
 
 ## Callback Value
 
-When the function you passed to the  _callback_ parameter executes, it receives an[AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the callback function's only parameter.
+When the function you passed to the  _callback_ parameter executes, it receives an [AsyncResult](../reference/shared/asyncresult-object.md) object that you can access from the callback function's only parameter.
 
 In the callback function passed to the  **getFileAsync** method, you can use the properties of the **AsyncResult** object to return the following information.
 
@@ -64,7 +64,7 @@ The  _fileType_ parameter can be specified using the following enumerations or t
 |Office.FileType.Compressed|"compressed"|Returns the entire document (.docx, .pptx , or .xslx) in Office Open XML (OOXML) format as a byte array.|
 |Office.FileType.Pdf|"pdf"|Returns the entire document in PDF format as a byte array.|
 |Office.FileType.Text|"text"|Returns only the text of the document as a  **string**. |
-No more than two documents are allowed to be in memory; otherwise the  **getFileAsync** operation will fail. Use the[File.closeAsync](../reference/shared/file/closeasync-method.md) method to close the file when you are finished working with it.
+No more than two documents are allowed to be in memory; otherwise the  **getFileAsync** operation will fail. Use the [File.closeAsync](../reference/shared/file/closeasync-method.md) method to close the file when you are finished working with it.
 
 
 ## Example - Get a document in Office Open XML ("compressed") format

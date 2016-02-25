@@ -17,5 +17,5 @@ Specifies the initial height of a content add-in in pixels, which can be between
 
 [DefaultSettings](../reference/manifest/defaultsettings-element.md) (Content add-ins)
 
-[DesktopSettings](../reference/manifest/desktopsettings-element.md) and[TabletSettings](../reference/manifest/tabletsettings-element.md) (Mail add-ins)
+[DesktopSettings](../reference/manifest/desktopsettings-element.md) and [TabletSettings](../reference/manifest/tabletsettings-element.md) (Mail add-ins)
 

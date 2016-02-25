@@ -1,6 +1,6 @@
 
 # CustomXmlPart object (JavaScript API for Office)
-Represents a single  **CustomXMLPart** in a[CustomXMLParts](../reference/shared/customxmlparts-object/customxmlparts-object.md) collection.
+Represents a single  **CustomXMLPart** in a [CustomXMLParts](../reference/shared/customxmlparts-object/customxmlparts-object.md) collection.
 
 |||
 |:-----|:-----|

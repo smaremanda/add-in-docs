@@ -20,7 +20,7 @@ class ComponentAttempt
 | `public var _labs: Labs.LabsInternal`|The lab ([Labs.LabsInternal](http://msdn.microsoft.com/library/599fb2c4-bb16-4422-84ad-10ed85a14018.aspx)) object that is used to interact with the underlying [Labs.Core.ILabHost](../powerpoint/office-mix/reference/labs.core.ilabhost.md).|
 | `public var _resumed: boolean`|**True** if the lab has resumed progress on a given attempt.|
 | `public var _state: Labs.ProblemState`|Current state of the attempt as provided by the enum [Labs.ProblemState](../powerpoint/office-mix/reference/labs.problemstate.md).|
-| `public var _values: {[type:string]: Labs.ValueHolder<any>[]}`|Values associated with the attempt, if any, as contained in the [Labs.ValueHolder](../powerpoint/office-mix/reference/labs.valueholder.md)object.|
+| `public var _values: { [type:string]: Labs.ValueHolder<any>[]}`|Values associated with the attempt, if any, as contained in the [Labs.ValueHolder](../powerpoint/office-mix/reference/labs.valueholder.md)object.|
 
 ## Methods
 
