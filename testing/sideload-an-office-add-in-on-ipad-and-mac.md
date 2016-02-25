@@ -35,6 +35,7 @@ To see how your add-in will run in Office for iOS, you can sideload your add-in'
 
 
 1. Use a sync cable to connect your iPad to your computer. If you're connecting the iPad to your computer for the first time, you'll be prompted with  **Trust This Computer?** Choose **Trust** to continue.
+2. Step 2
     
 2. In iTunes, choose the  **iPad** icon below the menu bar.
     
