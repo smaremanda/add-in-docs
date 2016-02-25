@@ -13,7 +13,7 @@ class ComponentAttempt
 ## Properties
 
 
-|||
+|**Name**|**Description**|
 |:-----|:-----|
 | `public var _componentId: string`|ID of the specified component.|
 | `public var _id: string`|ID of the associated lab.|
@@ -36,7 +36,7 @@ Creates a new instance of the ComponentAttempt class and provides input paramete
  **Parameters**
 
 
-|||
+|**Name**|**Description**|
 |:-----|:-----|
 | _labs_|The [Labs.LabsInternal](http://msdn.microsoft.com/library/599fb2c4-bb16-4422-84ad-10ed85a14018.aspx) instance to use with the attempt.|
 | _attemptId_|The ID associated with the attempt.|
@@ -62,7 +62,7 @@ Indicates whether the lab has resumed progress on the given attempt and loads ex
  **Parameters**
 
 
-|||
+|**Name**|**Description**|
 |:-----|:-----|
 | _callback_|Callback function that is fired once the attempt has resumed.|
 
@@ -97,6 +97,6 @@ Retrieves values associated with the attempt
  **Parameters**
 
 
-|||
+|**Name**|**Description**|
 |:-----|:-----|
 | _key_|The key associated with the value in the value map.|
