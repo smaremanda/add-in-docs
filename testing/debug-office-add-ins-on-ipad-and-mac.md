@@ -33,7 +33,7 @@ Weinre is a debugger for web pages, similar to the F12 tools, that is designed t
 
    Navigate to  `http://<ipaddr>:8080` to access the Weinre server home page.
  
-![Weinre server home page at http://<ipaddr>:8080](../images/8db5216c-35b4-4b1b-98ae-6aed9b54f287.jpg)
+  ![Weinre server home page at http://<ipaddr>:8080](../images/8db5216c-35b4-4b1b-98ae-6aed9b54f287.jpg)
 
  Navigate to  `http://<ipaddr>:8080/client` to get the list of clients connected to this server.
     
