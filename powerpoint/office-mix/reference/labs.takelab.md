@@ -13,6 +13,6 @@ function takeLab(callback: Core.ILabCallback<LabInstance>): void
 ## Parameters
 
 
-|||
+|**Name**|**Description**|
 |:-----|:-----|
 | _callback_|The callback method fired once the [Labs.LabInstance](../powerpoint/office-mix/reference/labs.labinstance.md) object is created.|
