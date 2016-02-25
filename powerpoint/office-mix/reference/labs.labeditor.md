@@ -22,7 +22,7 @@ Retrieves the current lab configuration.
  **Parameters**
 
 
-|||
+|**Name**|**Description**|
 |:-----|:-----|
 | _callback_|Callback function that is fired once the configuration has been retrieved.|
 
@@ -35,7 +35,7 @@ Sets a new lab configuration.
  **Parameters**
 
 
-|||
+|**Name**|**Description**|
 |:-----|:-----|
 | _configuration_|The configuration to set.|
 | _callback_|Callback function that is fired once the configuration has been set.|
@@ -49,6 +49,6 @@ Indicates that the user has finished editing the lab.
  **Parameters**
 
 
-|||
+|**Name**|**Description**|
 |:-----|:-----|
 | _callback_|Callback function that is fired once the lab editor has finished.|
