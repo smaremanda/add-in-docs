@@ -318,7 +318,7 @@ var UIStrings = (function ()
     UIStrings.ES =
     {        
         "Greeting": "Bienvenido",
-        "Introduction": "Esta es mi aplicaciÃ³n localizada."
+        "Introduction": "Esta es mi aplicación localizada."
     };
 
     UIStrings.getLocaleStrings = function (locale)
