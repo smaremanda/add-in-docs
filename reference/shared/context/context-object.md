@@ -5,7 +5,7 @@ Represents the runtime environment of the add-in and provides access to key obje
 |||
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Outlook, PowerPoint, Project, Word|
-|**[Last changed](#bk_history) in**|1.1|
+|**Last changed in**|1.1|
 
 ```
 Office.context

@@ -5,7 +5,7 @@ Specifies how to coerce data returned or set by the invoked method.
 |||
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Outlook, PowerPoint, Project, Word|
-|**[Last changed](#bk_history) in Mailbox**|1.1|
+|**Last changed in Mailbox**|1.1|
 
 ```
 Office.CoercionType

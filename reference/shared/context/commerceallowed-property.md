@@ -5,7 +5,7 @@ Gets whether the add-in is running on a platform that allows links to external p
 |||
 |:-----|:-----|
 |**Hosts:**|Excel, Word|
-|**[Last changed](#bk_history) in**|1.1|
+|**Last changed in**|1.1|
 
 ```
 var allowCommerce = Office.context.commerceAllowed;

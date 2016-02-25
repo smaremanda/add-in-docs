@@ -5,7 +5,7 @@ Gets an  **Error** object that provides a description of the error, if any error
 |||
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Outlook, PowerPoint, Project, Word|
-|**[Last changed](#bk_history) in**|1.1|
+|**Last changed in**|1.1|
 
 ```
 var errorObj = asyncResult.error;

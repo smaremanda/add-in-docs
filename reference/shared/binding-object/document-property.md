@@ -5,7 +5,7 @@ Get the  **Document** object associated with the binding.
 |||
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Word|
-|**[Last changed](#bk_history) in**|1.1|
+|**Last changed in**|1.1|
 
 ```
 var bindingDoc = bindingObj.document;

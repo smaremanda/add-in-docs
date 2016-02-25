@@ -5,7 +5,7 @@
 |||
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Word|
-|**[Last changed](#bk_history)**|1.1|
+|**Last changed**|1.1|
 
 ```
 Office.BindingType

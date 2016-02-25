@@ -5,7 +5,7 @@ Gets a  **Binding** object that represents the binding that raised the **Selecti
 |||
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Word|
-|**[Last changed](#bk_history) in**|1.1|
+|**Last changed in**|1.1|
 
 ```
 var myBinding = eventArgsObj.binding;

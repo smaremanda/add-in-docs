@@ -5,7 +5,7 @@ Gets the index of the first row of the selection (zero-based).
 |||
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Word|
-|**[Last changed](#bk_history) in**|1.1|
+|**Last changed in**|1.1|
 
 ```
 var startRw = eventArgsObj.startRow;

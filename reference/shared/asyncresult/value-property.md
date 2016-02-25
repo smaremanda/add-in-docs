@@ -5,7 +5,7 @@ Gets the payload or content of this asynchronous operation, if any.
 |||
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Outlook, PowerPoint, Project, Word|
-|**[Last changed](#bk_history) in**|1.1|
+|**Last changed in**|1.1|
 
 ```
 var dataValue = asyncResult.value;

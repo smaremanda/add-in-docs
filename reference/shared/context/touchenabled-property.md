@@ -5,7 +5,7 @@ Gets whether the add-in is running in an Office host application that is touch e
 |||
 |:-----|:-----|
 |**Hosts:**|Excel, Word|
-|**[Last changed](#bk_history) in**|1.1|
+|**Last changed in**|1.1|
 
 ```
 var isTouchEnabled = Office.context.touchEnabled;

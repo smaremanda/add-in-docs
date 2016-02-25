@@ -5,7 +5,7 @@ Gets an object that represents the document the add-in in interacting with.
 |||
 |:-----|:-----|
 |**Hosts:**|Access, Excel, PowerPoint, Project, Word|
-|**[Last changed](#bk_history) in**|1.1|
+|**Last changed in**|1.1|
 
 ```
 var _document = Office.context.document;

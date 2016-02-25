@@ -5,7 +5,7 @@ Gets the number of rows selected.
 |||
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Word|
-|**[Last changed](#bk_history) in**|1.1|
+|**Last changed in**|1.1|
 
 ```
 var rwCount = eventArgsObj.rowCount;

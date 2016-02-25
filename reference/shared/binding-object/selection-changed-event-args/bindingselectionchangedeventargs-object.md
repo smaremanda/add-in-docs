@@ -5,7 +5,7 @@ Provides information about the binding that raised the [SelectionChanged](../ref
 |||
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Word|
-|**[Last changed](#bk_history) in TableBinding**|1.1|
+|**Last changed in TableBinding**|1.1|
 
 ```
 Office.EventType.BindingSelectionChanged

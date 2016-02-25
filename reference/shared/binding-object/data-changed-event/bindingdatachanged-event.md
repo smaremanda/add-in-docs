@@ -5,7 +5,7 @@ Occurs when data within the binding is changed.
 |||
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Word|
-|**[Last changed](#bk_history) in BindingEvents**|1.1|
+|**Last changed in BindingEvents**|1.1|
 
 ```
 Office.EventType.BindingDataChanged

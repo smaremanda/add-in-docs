@@ -5,7 +5,7 @@ Gets a  **Binding** object that represents the binding that raised the [DataChan
 |||
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Word|
-|**[Last changed](#bk_history) in BindingEvents**|1.1|
+|**Last changed in BindingEvents**|1.1|
 
 ```
 var myBinding = eventArgsObj.binding;

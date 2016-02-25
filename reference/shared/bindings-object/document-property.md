@@ -5,7 +5,7 @@ Gets a  **Document** object that represents the document associated with this se
 |||
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Word|
-|**[Last changed](#bk_history) in**|1.1|
+|**Last changed in**|1.1|
 
 ```
 var docObj = bindingsObj.document;

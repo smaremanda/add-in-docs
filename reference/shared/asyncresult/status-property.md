@@ -5,7 +5,7 @@ Gets the status of the asynchronous operation.
 |||
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Outlook, PowerPoint, Project, Word|
-|**[Last changed](#bk_history) in**|1.1|
+|**Last changed in**|1.1|
 
 ```
 var myStatus = asyncResult.status;

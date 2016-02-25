@@ -5,7 +5,7 @@ Represents the bindings the add-in has within the document.
 |||
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Word|
-|**[Last changed](#bk_history)** in|1.1|
+|**Last changed** in|1.1|
 
 ```
 Office.context.document.bindings

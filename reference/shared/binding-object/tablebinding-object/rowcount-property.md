@@ -6,7 +6,7 @@ Gets the number of rows in the table, as an integer value.
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Word|
 |**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|TableBindings|
-|**[Last changed](#bk_history) in Selection**|1.1|
+|**Last changed in Selection**|1.1|
 
 ```
 var rowCount = bindingObj.rowCount;

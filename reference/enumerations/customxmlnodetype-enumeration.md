@@ -7,7 +7,7 @@ Specifies the node type.
 |||
 |:-----|:-----|
 |**Hosts:**|Word|
-|**[Last changed](#bk_history) in**|1.1|
+|**Last changed in**|1.1|
 
 
 
