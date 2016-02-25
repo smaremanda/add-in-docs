@@ -13,7 +13,7 @@ function registerDeserializer(type: string, deserialize: (json: Core.ILabObject)
 ## Parameters
 
 
-|||
+|**Name**|**Description**|
 |:-----|:-----|
 |json|The [Labs.Core.ILabObject](../powerpoint/office-mix/reference/labs.core.ilabobject.md) to deserialize.|
 
