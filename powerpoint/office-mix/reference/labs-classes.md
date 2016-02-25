@@ -9,7 +9,7 @@ JavaScript classes that are in the Labs module.
 ## 
 
 
-|||
+|**Object**|**Description**|
 |:-----|:-----|
 |[Labs.ComponentInstanceBase](../powerpoint/office-mix/reference/labs.componentinstancebase.md)|Base class for the initialization of component instances.|
 |[Labs.ComponentInstance](../powerpoint/office-mix/reference/labs.componentinstance.md)|Represents an instance of a component, which is an instantiation of a given component for a user at runtime. The object contains a translated view of the component for a specific run of a lab.|
