@@ -13,6 +13,6 @@ interface ICreateAttemptOptions extends Core.IActionOptions
 ## Properties
 
 
-|||
+|**Name**|**Description**|
 |:-----|:-----|
 | `componentId: string`|The component associated with the attempt.|
