@@ -14,29 +14,29 @@ The following table lists the names of requirement sets, the methods in each set
 
 |**Set name**|**Version**|**Methods in set**|**Office host**|
 |:-----|:-----|:-----|:-----|
-|ExcelApi|1.1|Excel 2016Excel Online|All elements in the Excel namespace|
+|ExcelApi|1.1|Excel 2016<br>Excel Online|All elements in the Excel namespace|
 |WordApi|1.2|Word 2016|All elements in the Word namespace. The following methods were added to this version of WordApi:Body.select(selectionMode)Body.insertInlinePictureFromBase64(base64EncodedImage, insertLocation)contentControl.select(selectionMode)contentControl.insertInlinePictureFromBase64(base64EncodedImage, insertLocation)inlinePicture.paragraphinlinePicture.deleteinlinePicture.insertBreak(breakType, insertLocation)inlinePicture.insertFileFromBase64(base64file, insertLocation)inlinePicture.insertHtml(html, insertLocation)inlinePicture.insertInlinePictureFromBase64(base64file, insertLocation)inlinePicture.insertOoxml(ooxml, insertLocation)inlinePicture.insertParagraph(paragraphText, insertLocation)inlinePicture.insertText(text, insertLocation)inlinePicture.select(selectionMode)paragraph.select(selectionMode)range.inlinePicturesrange.select(selectionMode)range.insertInlinePictureFomBase64(base64EcodedImage, insertLocation)|
 |WordApi|1.1|Word 2016|All elements in the Word namespace except API members that were added to WordApi 1.2 and later, which are listed above.|
-|ActiveView|1.1|PowerPointPowerPoint Online|Document.getActiveViewAsync|
-|BindingEvents|1.1|Access web appsExcelExcel OnlineWord|Binding.addHanderAsyncBinding.removeHanderAsync|
-|CompressedFile|1.1|PowerPointWord|Supports output to Office Open XML (OOXML) format as a byte array (Office.FileType.Compressed) when using the Document.getFileAsync method.|
+|ActiveView|1.1|PowerPoint<br>PowerPoint Online|Document.getActiveViewAsync|
+|BindingEvents|1.1|Access web apps<br>Excel<br>Excel Online<br>Word|Binding.addHanderAsyncBinding.removeHanderAsync|
+|CompressedFile|1.1|PowerPoint<br>Word|Supports output to Office Open XML (OOXML) format as a byte array (Office.FileType.Compressed) when using the Document.getFileAsync method.|
 |CustomXmlParts|1.1|Word|CustomXmlNode.getNodesAsyncCustomXmlNode.getNodeValueAsyncCustomXmlNode.getXmlAsyncCustomXmlNode.setNodeValueAsyncCustomXmlNode.setXmlAsyncCustomXmlPart.addHandlerAsyncCustomXmlPart.deleteAsyncCustomXmlPart.getNodesAsyncCustomXmlPart.getXmlAsyncCustomXmlPart.removeHandlerAsyncCustomXmlParts.addAsyncCustomXmlParts.getByIdAsyncCustomXmlParts.getByNamespaceAsyncCustomXmlPrefixMappings.addNamespaceAsyncCustomXmlPrefixMappings.getNamespaceAsyncCustomXmlPrefixMappings.getPrefixAsync|
-|DocumentEvents|1.1|ExcelExcel OnlinePowerPointWordWord Online|Document.addHandlerAsyncDocument.removeHandlerAsync|
-|File|1.1|PowerPointWordWord Online|Document.getFileAsyncFile.closeAsyncFile.getSliceAsync|
+|DocumentEvents|1.1|Excel<br>Excel Online<br>PowerPoint<br>Word<br>Word Online|Document.addHandlerAsyncDocument.removeHandlerAsync|
+|File|1.1|PowerPoint<br>Word<br>Word Online|Document.getFileAsyncFile.closeAsyncFile.getSliceAsync|
 |HtmlCoercion|1.1|Word|Supports coercion to HTML (Office.CoercionType.Html) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods.|
-|ImageCoercion|1.1|WordWord Online|Supports conversion to an image (Office.CoercionType.Image) when writing data using the Document.setSelectedDataAsync method.|
-|Mailbox|1.1|OutlookOutlook Web AppOWA for Devices|All API members supported by Outlook add-ins (those members accessed from  `Office.context` and `Office.context.mailbox` in your add-in's code).|
-|MatrixBindings|1.1|ExcelExcel OnlineWord|Bindings.addFromNamedItemAsyncBindings.addFromSelectionAsyncBindings.getAllAsyncBindings.getByIdAsyncBindings.releaseByIdAsyncMatrixBinding.getDataAsyncMatrixBinding.setDataAsync|
-|MatrixCoercion|1.1|ExcelExcel OnlineWord|Supports coercion to the "matrix" (array of arrays) data structure (Office.CoercionType.Matrix) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods.|
+|ImageCoercion|1.1|Word<br>Word Online|Supports conversion to an image (Office.CoercionType.Image) when writing data using the Document.setSelectedDataAsync method.|
+|Mailbox|1.1|Outlook<br>Outlook Web App<br>OWA for Devices|All API members supported by Outlook add-ins (those members accessed from  `Office.context` and `Office.context.mailbox` in your add-in's code).|
+|MatrixBindings|1.1|Excel<br>Excel OnlineWord|Bindings.addFromNamedItemAsyncBindings.addFromSelectionAsyncBindings.getAllAsyncBindings.getByIdAsyncBindings.releaseByIdAsyncMatrixBinding.getDataAsyncMatrixBinding.setDataAsync|
+|MatrixCoercion|1.1|Excel<br>Excel OnlineWord|Supports coercion to the "matrix" (array of arrays) data structure (Office.CoercionType.Matrix) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods.|
 |OoxmlCoercion|1.1|Word|Supports coercion to Open Office XML (OOXML) format (Office.CoercionType.Ooxml) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods.|
 |PartialTableBindings|1.1|Access web apps||
-|PdfFile|1.1|Supports output to PDF format (Office.FileType.Pdf) when using the Document.getFileAsync method.|PowerPointWord|
-|Selection|1.1|Document.getSelectedDataAsyncDocument.setSelectedDataAsync|ExcelExcel OnlinePowerPointProjectWord|
-|Settings|1.1|Access web appsExcelExcel OnlinePowerPointPowerPoint OnlineWordWord Online|Settings.getSettings.removeSettings.saveAsyncSettings.set|
-|TableBindings|1.1|Access web appsExcelExcel OnlineWord|Bindings.addFromNamedItemAsyncBindings.addFromSelectionAsyncBindings.getAllAsyncBindings.getByIdAsyncBindings.releaseByIdAsyncTableBinding.addColumnsAsyncTableBinding.addRowsAsyncTableBinding.deleteAllDataValuesAsyncTableBinding.getDataAsyncTableBinding.setDataAsync|
-|TableCoercion|1.1|Access web appsExcelExcel OnlineWord|Supports coercion to the "table" data structure (Office.CoercionType.Table) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods.|
-|TextBindings|1.1|ExcelExcel OnlineWord|Bindings.addFromNamedItemAsyncBindings.addFromSelectionAsyncBindings.getAllAsyncBindings.getByIdAsyncBindings.releaseByIdAsyncTextBinding.getDataAsyncTextBinding.setDataAsync|
-|TextCoercion|1.1|ExcelExcel OnlinePowerPointProjectWordWord Online|Supports coercion to text format (Office.CoercionType.Text) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods.|
+|PdfFile|1.1|PowerPoint<br>Word|Supports output to PDF format (Office.FileType.Pdf) when using the Document.getFileAsync method.|
+|Selection|1.1|Excel<br>Excel Online<br>PowerPoint<br>Project<br>Word|Document.getSelectedDataAsyncDocument.setSelectedDataAsync|
+|Settings|1.1|Access web apps<br>Excel<br>Excel Online<br>PowerPoint<br>PowerPoint Online<br>Word<br>Word Online|Settings.getSettings.removeSettings.saveAsyncSettings.set|
+|TableBindings|1.1|Access web apps<br>Excel<br>Excel Online<br>Word|Bindings.addFromNamedItemAsyncBindings.addFromSelectionAsyncBindings.getAllAsyncBindings.getByIdAsyncBindings.releaseByIdAsyncTableBinding.addColumnsAsyncTableBinding.addRowsAsyncTableBinding.deleteAllDataValuesAsyncTableBinding.getDataAsyncTableBinding.setDataAsync|
+|TableCoercion|1.1|Access web apps<br>Excel<br>Excel Online<br>Word|Supports coercion to the "table" data structure (Office.CoercionType.Table) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods.|
+|TextBindings|1.1|Excel<br>Excel Online<br>Word|Bindings.addFromNamedItemAsyncBindings.addFromSelectionAsyncBindings.getAllAsyncBindings.getByIdAsyncBindings.releaseByIdAsyncTextBinding.getDataAsyncTextBinding.setDataAsync|
+|TextCoercion|1.1|Excel<br>Excel Online<br>PowerPoint<br>Project<br>Word<br>Word Online|Supports coercion to text format (Office.CoercionType.Text) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods.|
 |TextFile|1.1|Word|Supports output to text format (Office.FileType.Text) when using the Document.getFileAsync method.|
 
 ## Methods that aren't part of a requirement set
