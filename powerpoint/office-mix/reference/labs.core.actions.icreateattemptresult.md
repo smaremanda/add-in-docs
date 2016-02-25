@@ -13,6 +13,6 @@ ICreateAttemptResult extends Core.IActionResult
 ## Properties
 
 
-|||
+|**Name**|**Description**|
 |:-----|:-----|
 | `attemptId: string`|The ID of the created attempt|
