@@ -103,7 +103,7 @@ For more information about Napa, see [Create Office Add-ins with Napa Office 365
 3. Choose the  **Apply** button at the bottom of the **Properties** page, and then choose the **Explore** button
 ![Explore button](../images/Apps_Napa_Explore_Button.png) on the left toolbar. This saves the property values and opens the Explore page.
     
-     **Note**  The  **Properties** editor shows the most common settings of an Office Add-in. It doesn't show all of the possible settings of an Office Add-in. If your scenario requires you to modify settings that don't appear in the **Properties** editor, you can create your add-in by using [Visual Studio](http://msdn.microsoft.com/en-us/library/a23c5ce8-6de3-40f6-a86a-85d3592bef3e%28Office.15%29.aspx) or a [text editor](http://msdn.microsoft.com/en-us/library/7aac2fdc-1a04-45ec-a1dc-da26e646a364%28Office.15%29.aspx). 
+     > **Note**  The  **Properties** editor shows the most common settings of an Office Add-in. It doesn't show all of the possible settings of an Office Add-in. If your scenario requires you to modify settings that don't appear in the **Properties** editor, you can create your add-in by using [Visual Studio](http://msdn.microsoft.com/en-us/library/a23c5ce8-6de3-40f6-a86a-85d3592bef3e%28Office.15%29.aspx) or a [text editor](http://msdn.microsoft.com/en-us/library/7aac2fdc-1a04-45ec-a1dc-da26e646a364%28Office.15%29.aspx). 
 
 ## Get data from a worksheet
 <a name="Get"> </a>
@@ -316,7 +316,7 @@ $('#yield').text(quotes.DividendYield);
 
     The call to  `getSelectedDataAsync` passes an anonymous function with a parameter, named `asyncResult`, as the callback argument. When the callback function runs, it uses the  `asyncResult` parameter to access the value property of the `AsyncResult` object to display the data in the cell that the user chose.
     
-     **Note**  Like other methods in the JavaScript API for Office, this method is asynchronous in that it doesn't prevent the add-in from performing other operations while this method runs.
+     > **Note**  Like other methods in the JavaScript API for Office, this method is asynchronous in that it doesn't prevent the add-in from performing other operations while this method runs.
 
 ### Run it!
 

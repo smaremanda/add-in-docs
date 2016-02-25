@@ -123,7 +123,7 @@ For more information about MAPI properties, Outlook  **UserProperties**, EWS ext
 Before you can use custom properties, you must load them by calling the [loadCustomPropertiesAsync](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html%28Office.15%29.md) method. If any custom properties are already set for the current item, they are loaded from the Exchanger server at this point. After you have created the property bag, you can use the[set](https://dev.outlook.com/reference/add-ins/CustomProperties.html%28Office.15%29.md) and[get](https://dev.outlook.com/reference/add-ins/CustomProperties.html%28Office.15%29.md) methods to add and retrieve custom properties. To save any changes that you make to the property bag, you must use the[saveAsync](https://dev.outlook.com/reference/add-ins/CustomProperties.html%28Office.15%29.md) method to persist the changes on the Exchange server.
 
 
- **Note**  Because Outlook for Mac doesn't cache custom properties, if the user's network goes down, mail add-ins in Outlook for Mac would not be able to access their custom properties.
+ > **Note**  Because Outlook for Mac doesn't cache custom properties, if the user's network goes down, mail add-ins in Outlook for Mac would not be able to access their custom properties.
 
 
 ### Custom properties example

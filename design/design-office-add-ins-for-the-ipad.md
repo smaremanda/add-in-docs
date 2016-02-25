@@ -31,7 +31,7 @@ Office Add-ins provide users with additional functionality within the context of
   - Include UI elements or store links in your Privacy Policy or Terms of Use pages.
     
 
-     **Note**  Any violations to this policy will result in Microsoft immediately disabling your add-in on the iPad.
+     > **Note**  Any violations to this policy will result in Microsoft immediately disabling your add-in on the iPad.
 
     You can share more information about the add-in or services within the add-in. You can also charge for and include commerce in your add-ins that run on other platforms. To do this, display different UIs â€” depending on which browser or device runs your add-in â€” by using the following properties:
     

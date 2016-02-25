@@ -172,7 +172,7 @@ The following is an example of the  **FunctionFile** element.
 ```
 
 
- **Important**  Make sure your JavaScript code calls  `Office.initialize`.
+ > **Important**  Make sure your JavaScript code calls  `Office.initialize`.
 
 The JavaScript in the HTML file referenced by the  **FunctionFile** element must call `Office.initialize`. The  **FunctionName** element (see [Button controls](../design/create-add-in-commands-in-your-manifest-preview.md#VersionOverrides10_Buttons) for a description) uses the functions in **FunctionFile**.
 
@@ -214,7 +214,7 @@ The following code shows how to implement the function used by  **FunctionName**
 ```
 
 
- **Important**  The call to  **event.completed** signals that you have successfully handled the event. When a function is called multiple times, such as multiple clicks on the same add-in command, all events are automatically queued. The first event runs automatically, while the other events remain on the queue. When your function calls **event.completed**, the next queued call to that function runs. You must implement  **event.completed**, otherwise your function will not run.
+ > **Important**  The call to  **event.completed** signals that you have successfully handled the event. When a function is called multiple times, such as multiple clicks on the same add-in command, all events are automatically queued. The first event runs automatically, while the other events remain on the queue. When your function calls **event.completed**, the next queued call to that function runs. You must implement  **event.completed**, otherwise your function will not run.
 
 
 ## Step 6: Add ExtensionPoint elements
@@ -230,7 +230,7 @@ The  **ExtensionPoint** element defines where add-in commands should appear in t
 The following examples show how to use the  **ExtensionPoint** element with **PrimaryCommandSurface** and **ContextMenu** attribute values, and the child elements that should be used with each.
 
 
- **Important**  For elements that contain an ID attribute, make sure you provide a unique ID. We recommend that you use your company's name along with your ID. For example, use the following format.<CustomTab id="mycompanyname.mygroupname">
+ > **Important**  For elements that contain an ID attribute, make sure you provide a unique ID. We recommend that you use your company's name along with your ID. For example, use the following format.<CustomTab id="mycompanyname.mygroupname">
 
 
 
@@ -278,7 +278,7 @@ The following examples show how to use the  **ExtensionPoint** element with **Pr
 |**Icon**|Required. Specifies the group's icon to be used on small form factor devices, or when too many buttons are displayed. The  **resid** attribute must be set to the value of the **id** attribute of an **Image** element. The **Image** element is a child element of the **Images** element, which is a child element of the **Resources** element. The **size** attribute gives the size, in pixels, of the image. Three image sizes are required: 16, 32, and 80. Five optional sizes are also supported: 20, 24, 40, 48, and 64.|
 |**Tooltip**|Optional. The tooltip of the group. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element. The **String** element is a child element of the **LongStrings** element, which is a child element of the **Resources** element.|
 |**Control**|Each group requires at least one control. A  **Control** element can be either a **Button** or a **Menu**. Use  **Menu** to specify a drop-down list of button controls. Currently, only buttons and menus are supported.See the [Button controls](../design/create-add-in-commands-in-your-manifest-preview.md#VersionOverrides10_Buttons) and [Menu controls](../design/create-add-in-commands-in-your-manifest-preview.md#VersionOverrides10_Menus) sections for more information.
- **Note**  To make troubleshooting easier, we recommend that a  **Control** element and the related **Resources** child elements be added one at a time.
+ > **Note**  To make troubleshooting easier, we recommend that a  **Control** element and the related **Resources** child elements be added one at a time.
 
 |
 
@@ -468,7 +468,7 @@ The following shows an example of how to use the  **Resources** element. Each re
 |**ShortStrings**/ **String**|The text for  **Label** and **Title** elements. Each **String** contains a maximum of 125 characters.|
 |**LongStrings**/ **String**|The text for  **Tooltip** and **Description** elements. Each **String** contains a maximum of 250 characters.|
 
- **Note**  You must use Secure Sockets Layer (SSL) for all URLs in the  **Image** and **Url** elements.
+ > **Note**  You must use Secure Sockets Layer (SSL) for all URLs in the  **Image** and **Url** elements.
 
 
 ## Tab values for default Office ribbon tabs

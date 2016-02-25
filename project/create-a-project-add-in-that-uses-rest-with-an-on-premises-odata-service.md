@@ -16,10 +16,10 @@ Following are the prerequisites for creating a Project task pane add-in that rea
     
 - Project Professional 2013 is required to connect with Project Web App. The development computer must have Project Professional 2013 installed to enable  **F5** debugging with Visual Studio.
     
-     **Note**  Project Standard 2013 can also host task pane add-ins, but cannot log on to Project Web App.
+     > **Note**  Project Standard 2013 can also host task pane add-ins, but cannot log on to Project Web App.
 - Visual Studio 2015 with Office Developer Tools for Visual Studio includes templates for creating Office and SharePoint Add-ins. Ensure that you have installed the most recent version of Office Developer Tools; see the  _Tools_ section of the [Office Add-ins and SharePoint downloads](http://msdn.microsoft.com/en-us/office/apps/fp123627.aspx).
     
-     **Note**  Napa cannot be used to create Project 2013 task pane add-ins.
+     > **Note**  Napa cannot be used to create Project 2013 task pane add-ins.
 - The procedures and code examples in this article access the  **ProjectData** service of Project Server 2013 in a local domain. The jQuery methods in this article do not work with Project Online.
     
     Verify that the  **ProjectData** service is accessible from your development computer.
@@ -183,7 +183,7 @@ The task pane shows the add-in display name at the top, which is the value of th
     
     The  **retrieveOData** function calls the **parseODataResult** function, which calculates and displays values for the table.
     
-     **Note**  In this example, cost and work data for the active project are derived from the published values. If you change values in Project, the  **ProjectData** service does not have the changes until the project is published.
+     > **Note**  In this example, cost and work data for the active project are derived from the published values. If you change values in Project, the  **ProjectData** service does not have the changes until the project is published.
 
 ### Procedure 4. To create the HTML content
 
@@ -192,7 +192,7 @@ The task pane shows the add-in display name at the top, which is the value of th
     
 2. Add any additional  **script** elements for JavaScript libraries that your add-in uses. The project template includes links for the jQuery- _[version]_.js, office.js, and MicrosoftAjax.js files in the  **Scripts** folder.
     
-     **Note**  Before you deploy the add-in, change the office.js reference and the jQuery reference to the content delivery network (CDN) reference. The CDN reference provides the most recent version and better performance.
+     > **Note**  Before you deploy the add-in, change the office.js reference and the jQuery reference to the content delivery network (CDN) reference. The CDN reference provides the most recent version and better performance.
 
     The  **HelloProjectOData** add-in also uses the SurfaceErrors.js file, which displays errors in a pop-up message. You can copy the code from the _Robust Programming_ section of[Create your first task pane add-in for Project 2013 by using a text editor](../project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor.md), and then add a SurfaceErrors.js file in the  **Scripts\Office** folder of the **HelloProjectODataWeb** project.
     
@@ -334,7 +334,7 @@ Office.initialize = function (reason) {
 
 2. Add  **setOdataUrl** and related functions. The **setOdataUrl** function calls **getProjectGuid** and **getDocumentUrl** to initialize the global variables. In the [getProjectFieldAsync method](http://msdn.microsoft.com/en-us/library/d35b19ff-c403-4db1-8239-7dd67ee29d72%28Office.15%29.aspx), the anonymous function for the  _callback_ parameter enables the **Compare All Projects** button by using the **removeAttr** method in the jQuery library, and then displays the URL of the **ProjectData** service. If Project is not connected with Project Web App, the function throws an error, which displays a pop-up error message. The SurfaceErrors.js file includes the **throwError** method.
     
-     **Note**  If you run Visual Studio on the Project Server computer, to use  **F5** debugging, uncomment the code after the line that initializes the **_pwa** global variable. To enable using the jQuery **ajax** method when debugging on the Project Server computer, you must set the **localhost** value for the PWA URL.If you run Visual Studio on a remote computer, the  **localhost** URL is not required. Before you deploy the add-in, comment out that code.
+     > **Note**  If you run Visual Studio on the Project Server computer, to use  **F5** debugging, uncomment the code after the line that initializes the **_pwa** global variable. To enable using the jQuery **ajax** method when debugging on the Project Server computer, you must set the **localhost** value for the PWA URL.If you run Visual Studio on a remote computer, the  **localhost** URL is not required. Before you deploy the add-in, comment out that code.
 
   ```
   function setOdataUrl() {
@@ -394,7 +394,7 @@ function getDocumentUrl() {
 
 3. Add the  **retrieveOData** function, which concatenates values for the REST query and then calls the **ajax** function in jQuery to get the requested data from the **ProjectData** service. The **support.cors** variable enables cross-origin resource sharing (CORS) with the **ajax** function. If the **support.cors** statement is missing or is set to **false**, the  **ajax** function returns a **No transport** error.
     
-     **Note**  The following code works with an on-premises installation of Project Server 2013. For Project Online, you can use OAuth for token-based authentication. For more information, see [Addressing same-origin policy limitations in Office Add-ins](../essentials/privacy-and-security/addressing-same-origin-policy-limitations.md).
+     > **Note**  The following code works with an on-premises installation of Project Server 2013. For Project Online, you can use OAuth for token-based authentication. For more information, see [Addressing same-origin policy limitations in Office Add-ins](../essentials/privacy-and-security/addressing-same-origin-policy-limitations.md).
 
     In the  **ajax** call, you can use either the _headers_ parameter or the _beforeSend_ parameter. The _complete_ parameter is an anonymous function so that it is in the same scope as the variables in **retrieveOData**. The function for the  _complete_ parameter displays results in the **odataText** control and also calls the **parseODataResult** method to parse and display the JSON response. The _error_ parameter specifies the named **getProjectDataErrorHandler** function, which writes an error message to the **odataText** control and also uses the **throwError** method to display a pop-up message.
     
@@ -694,7 +694,7 @@ Even if your add-in is working correctly in the previous tests, there are other 
 - If you modify the add-in and publish it, you should run similar tests again with the published add-in. For other considerations, see [Next steps](#pj15_HelloProjectData_NextSteps).
     
 
- **Note**  There are limits to the amount of data that can be returned in one query of the  **ProjectData** service; the amount of data varies by entity. For example, the **Projects** entity set has a default limit of 100 projects per query, but the **Risks** entity set has a default limit of 200. For a production installation, the code in the **HelloProjectOData** example should be modified to enable queries of more than 100 projects. For more information, see [Next steps](#pj15_HelloProjectData_NextSteps) and[Querying OData feeds for Project reporting data](http://msdn.microsoft.com/library/3eafda3b-f006-48be-baa6-961b2ed9fe01%28Office.15%29.aspx).
+ > **Note**  There are limits to the amount of data that can be returned in one query of the  **ProjectData** service; the amount of data varies by entity. For example, the **Projects** entity set has a default limit of 100 projects per query, but the **Risks** entity set has a default limit of 200. For a production installation, the code in the **HelloProjectOData** example should be modified to enable queries of more than 100 projects. For more information, see [Next steps](#pj15_HelloProjectData_NextSteps) and[Querying OData feeds for Project reporting data](http://msdn.microsoft.com/library/3eafda3b-f006-48be-baa6-961b2ed9fe01%28Office.15%29.aspx).
 
 
 ## Example code for the HelloProjectOData add-in

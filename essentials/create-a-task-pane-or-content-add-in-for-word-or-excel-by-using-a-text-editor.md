@@ -74,7 +74,7 @@ h1,h3,h4,p,a,li
     
 4. Create an XML file named HelloWorld.xml that contains the following XML code.
     
-     **Important**  Replace the value in the  `<id>` tag with a GUID that you have generated yourself.
+     > **Important**  Replace the value in the  `<id>` tag with a GUID that you have generated yourself.
 
   ```XML
   <?xml version="1.0" encoding="utf-8"?>
@@ -114,7 +114,7 @@ The next two procedures describe how to copy your files to a network share, and 
 
 1. Create a folder on a network share (for example, \\MyShare\MyManifests). Be sure that the  `<SourceLocation>` element of the HelloWorld.xml manifest file points to this location for the .html page of the add-in. Save all of the files you created into this folder.
     
-     **Note**  Alternatively, you can save only the HelloWorld.xml manifest file to this share, and then put the .html file on a web server. If you do that, be sure that the  `<SourceLocation>` element of the HelloWorld.xml manifest file points to the URL of the HelloWorld.html file on that server.
+     > **Note**  Alternatively, you can save only the HelloWorld.xml manifest file to this share, and then put the .html file on a web server. If you do that, be sure that the  `<SourceLocation>` element of the HelloWorld.xml manifest file points to the URL of the HelloWorld.html file on that server.
 2. Open a new document in Excel or Word.
     
 3. Choose the  **File** tab, and then choose **Options**.
@@ -175,7 +175,7 @@ The next set of steps will show you how to add some basic programming logic to t
 
     This adds a reference to the Office.js library file that implements the JavaScript API for Office. It also adds a reference to Program.js, which is a file we'll create to contain the programming logic for the add-in.
     
-     **Note**  The  `src` attribute of the `<script>` tag references the JavaScript API for Office (office.js) that will be externally available.
+     > **Note**  The  `src` attribute of the `<script>` tag references the JavaScript API for Office (office.js) that will be externally available.
 2. Replace  `<p>Hello World!</p>` with the lines inside the `<body>` tags of the file.
     
   ```HTML
@@ -202,7 +202,7 @@ The next set of steps will show you how to add some basic programming logic to t
     
 3. Create a file named Program.js that contains the following JavaScript code.
     
-     **Note**  [Office.initialize](http://msdn.microsoft.com/en-us/library/727adf79-a0b5-48d2-99c7-6642c2c334fc%28Office.15%29.aspx) must be initialized as a function at the beginning of the code file so that the[Office.context](http://msdn.microsoft.com/en-us/library/6c4b2c16-d4fb-4ecf-b72c-1e33b205daaf%28Office.15%29.aspx) property will be available when called from the functions that follow.
+     > **Note**  [Office.initialize](http://msdn.microsoft.com/en-us/library/727adf79-a0b5-48d2-99c7-6642c2c334fc%28Office.15%29.aspx) must be initialized as a function at the beginning of the code file so that the[Office.context](http://msdn.microsoft.com/en-us/library/6c4b2c16-d4fb-4ecf-b72c-1e33b205daaf%28Office.15%29.aspx) property will be available when called from the functions that follow.
 
   ```
   // The initialize function is required for all add-ins.

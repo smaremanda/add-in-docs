@@ -74,14 +74,14 @@ Use the  _coercionType_ parameter of the **getSelectedDataAsync** method to spec
 |**Specified  _coercionType_**|**Data returned**|**Office host application support**|
 |:-----|:-----|:-----|
 |**Office.CoercionType.Text** or `"text"`|A string.|Word, Excel, PowerPoint, and Project.
- **Note**  In Excel, even when a subset of a cell is selected, the entire cell contents are returned.
+ > **Note**  In Excel, even when a subset of a cell is selected, the entire cell contents are returned.
 
 |
 |**Office.CoercionType.Matrix** or `"matrix"`|An array of arrays. For example,  `[['a','b'], ['c','d']]` for a selection of two rows in two columns.|Word and Excel.|
 |**Office.CoercionType.Table** or `"table"`|A [TableData](../reference/shared/tabledata/tabledata-object.md) object for reading a table with headers.|Word and Excel.|
 |**Office.CoercionType.Html** or `"html"`|In HTML format.|Word only.|
 |**Office.CoercionType.Ooxml** or `"ooxml"`|In Open Office XML (OpenXML) format.|Word only.
- **Tip**  When developing your add-in's code, you can use the  `"ooxml"` _coercionType_ of the **getSelectedDataAsync** method to see how the content you select in a Word document is defined as OpenXML tags. Then, use those tags in the data parameter of the[Document.setSelectedDataAsync](../reference/shared/document/setselecteddataasync-method.md) method to write content with that formatting or structure to a document. For example, you can[insert an image into a document](http://blogs.msdn.com/b/officeapps/archive/2012/10/26/inserting-images-with-apps-for-office.aspx) as OpenXML.
+ > **Tip**  When developing your add-in's code, you can use the  `"ooxml"` _coercionType_ of the **getSelectedDataAsync** method to see how the content you select in a Word document is defined as OpenXML tags. Then, use those tags in the data parameter of the[Document.setSelectedDataAsync](../reference/shared/document/setselecteddataasync-method.md) method to write content with that formatting or structure to a document. For example, you can[insert an image into a document](http://blogs.msdn.com/b/officeapps/archive/2012/10/26/inserting-images-with-apps-for-office.aspx) as OpenXML.
 
 |
 |**Office.CoercionType.SlideRange** or "slideRange"|A JSON object that contains an array named "slides" that contains the ids, titles, and indexes of the selected slides.  **Note:** To select more than one slide, the user must be editing the presentation in **Normal**,  **Outline View**, or  **Slide Sorter** view. Also, this method isn't supported in **Master Views**.For example,  `{"slides":[{"id":257,"title":"Slide 2","index":2},{"id":256,"title":"Slide 1","index":1}]}` for a selection of two slides.|PowerPoint only.|

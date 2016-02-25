@@ -178,7 +178,7 @@ The following tables list the supported key-value pairs you can pass to the  _ce
 For  `format:` values, available settings correspond to a subset of those in the **Format Cells** dialog box (right-click > **Format Cells** or **Format** > **Format Cells** on the **Home** tab of the ribbon). For `tableOptions:` values, settings correspond to those in the **Table Style Options** and **Table Styles** groups on the **Table Tools** |**Design** tab of the ribbon.
 
 
- **Important**  The methods of the formatting API support only the options and values summarized below. If you specify formatting options or values other than these, the handling behavior is undefined. These undefined handling behaviors aren't necessarily consistent across supported platforms; you shouldn't develop your add-ins based on any of the side effects of these undefined behaviors for any specific platform. However, the undefined handling behaviors shouldn't harm the state and UI of your add-in or the documents they interact with.
+ > **Important**  The methods of the formatting API support only the options and values summarized below. If you specify formatting options or values other than these, the handling behavior is undefined. These undefined handling behaviors aren't necessarily consistent across supported platforms; you shouldn't develop your add-ins based on any of the side effects of these undefined behaviors for any specific platform. However, the undefined handling behaviors shouldn't harm the state and UI of your add-in or the documents they interact with.
 
 
 **Alignment**
@@ -258,7 +258,7 @@ For  `format:` values, available settings correspond to a subset of those in the
 |:-----|:-----|:-----|
 | `fontFamily:`|<All available font names>|When you set a font in Excel Online, if the font isn't available in the browser, the API will attempt to fall back to the following fonts in this order: Segoe UI, Thonburi, Arial, Verdana, and Microsoft Sans Serif fonts. If none of these fonts are available, the browser's default font is used.|
 | `fontStyle:`|"regular" | "italic" | "bold" | "bold italic"|
- **Note**  At the time of this publication, setting  `fontStyle:` to "italic" and then subsequently setting "bold" (or vice versa) behaves as a union of these two settings. That is, if, for example, you first set "italic" and then later set "bold", the result will be "bold italic". To set either italic or bold _only_ on a range that was previously set to bold or italic, you must first set `fontStyle:"regular"` to clear the previous formatting.
+ > **Note**  At the time of this publication, setting  `fontStyle:` to "italic" and then subsequently setting "bold" (or vice versa) behaves as a union of these two settings. That is, if, for example, you first set "italic" and then later set "bold", the result will be "bold italic". To set either italic or bold _only_ on a range that was previously set to bold or italic, you must first set `fontStyle:"regular"` to clear the previous formatting.
 
 |
 | `fontSize:`|**Number**||

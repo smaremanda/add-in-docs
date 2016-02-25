@@ -253,7 +253,7 @@ function addBindingDataChangedEventHandler() {
 ```
 
 
- **Important**  The  **Binding** object promise returned by the **Office.select** method provides access to only the four methods of the **Binding** object. If you need to access any of the other members of the **Binding** object, instead you must use the **Document.bindings** property and **Bindings.getByIdAsync** or **Bindings.getAllAsync** methods to retrieve the **Binding** object. For example, if you need to access any of the **Binding** object's properties (the **document**,  **id**, or  **type** properties), or need to access the properties of the [MatrixBinding](http://msdn.microsoft.com/en-us/library/35e8568e-9129-4c00-b30f-d8c3b2555f1e%28Office.15%29.aspx) or [TableBinding](http://msdn.microsoft.com/en-us/library/1508795b-1c70-456c-b3bf-666d40cf8f50%28Office.15%29.aspx) objects, you must use the **getByIdAsync** or **getAllAsync** methods to retrieve a **Binding** object.
+ > **Important**  The  **Binding** object promise returned by the **Office.select** method provides access to only the four methods of the **Binding** object. If you need to access any of the other members of the **Binding** object, instead you must use the **Document.bindings** property and **Bindings.getByIdAsync** or **Bindings.getAllAsync** methods to retrieve the **Binding** object. For example, if you need to access any of the **Binding** object's properties (the **document**,  **id**, or  **type** properties), or need to access the properties of the [MatrixBinding](http://msdn.microsoft.com/en-us/library/35e8568e-9129-4c00-b30f-d8c3b2555f1e%28Office.15%29.aspx) or [TableBinding](http://msdn.microsoft.com/en-us/library/1508795b-1c70-456c-b3bf-666d40cf8f50%28Office.15%29.aspx) objects, you must use the **getByIdAsync** or **getAllAsync** methods to retrieve a **Binding** object.
 
 
 ## Passing optional parameters to asynchronous methods
@@ -297,7 +297,7 @@ function write(message){
 ```
 
 
- **Note**  You can specify optional parameters in any order in the JSON object as long as their names are specified correctly.
+ > **Note**  You can specify optional parameters in any order in the JSON object as long as their names are specified correctly.
 
 
 ### Passing optional parameters in an options object
@@ -356,7 +356,7 @@ options["FilterType"] = "all";
 ```
 
 
- **Note**  When using either method of creating the  `options` object, you can specify optional parameters in any order as long as their names are specified correctly.
+ > **Note**  When using either method of creating the  `options` object, you can specify optional parameters in any order as long as their names are specified correctly.
 
 The following example shows how to call to the  **Document.setSelectedDataAsync** method by specifying optional parameters in an `options` object.
 
@@ -384,7 +384,7 @@ function write(message){
 ```
 
 
- **Note**  
+ > **Note**  
  
 In both optional parameter examples, the  _callback_ parameter is specified as the last parameter (following the inline optional parameters, or following the _options_ argument object). Alternatively, you can specify the _callback_ parameter inside either the inline JSON object, or in the `options` object. However, you can pass the _callback_ parameter in only one location: either in the _options_ object (inline or created externally), or as the last parameter, but not both.
 

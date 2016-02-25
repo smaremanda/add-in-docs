@@ -378,7 +378,7 @@ function myGetEmailAddresses()
 When the user clicks the  **Get Meeting Suggestions** button, the `myGetMeetingSuggestions` event handler obtains an array of meeting suggestions from the [meetingSuggestions](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) property of the `_MyEntities` object, if any was extracted.
 
 
- **Note**  Only messages but not appointments support the  **MeetingSuggestion** entity type.
+ > **Note**  Only messages but not appointments support the  **MeetingSuggestion** entity type.
 
 Each extracted meeting suggestion is stored as a [MeetingSuggestion](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) object in the array. `myGetMeetingSuggestions` obtains further data about each meeting suggestion:
 

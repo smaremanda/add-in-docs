@@ -6,7 +6,7 @@ See a code example showing how an authentication object matches the unique ident
 
 You can implement a single sign-on (SSO) authentication scheme for an information service that enables customers who are using Outlook add-ins to connect to your service by using their Exchange server credentials. This article shows how to match credentials by using a simple  **Dictionary** object-based user data store.
 
- **Note**  This is just a simple example of SSO and should not be used in your production code. As always, when you're dealing with identity and authentication, you have to make sure that your code meets the security requirements of your organization.
+ > **Note**  This is just a simple example of SSO and should not be used in your production code. As always, when you're dealing with identity and authentication, you have to make sure that your code meets the security requirements of your organization.
 
 
 ## Prerequisites for using SSO authentication
@@ -38,7 +38,7 @@ The following code example shows a simple authentication object that matches the
 |**GetCredentialsResponse** method|Returns a  **JsonReponse** object that your mail Office Add-in will recognize as a request for credentials for the service.|
 |**LocalCredentialsAreValid** method|Returns  **true** if the credentials supplied to the service are valid; otherwise, it returns **false**.|
 
- **Note**  This is just one suggestion for how to use the identity token. As always, when you're dealing with identity and authentication, you have to make sure that your code meets the security requirements of your organization.
+ > **Note**  This is just one suggestion for how to use the identity token. As always, when you're dealing with identity and authentication, you have to make sure that your code meets the security requirements of your organization.
 
 
 ```

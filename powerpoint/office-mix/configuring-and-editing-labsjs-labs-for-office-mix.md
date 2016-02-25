@@ -132,7 +132,7 @@ First, however, you need to familiarize yourself with two core concepts when wor
 An attempt is a try by a user to complete a component instance. For example, in the case of a multiple choice question, an attempt starts when the user begins to work the problem and it ends when a final score is assigned. The Office Mix analytics then aggregate user results for the problem.
 
 
- **Note**  Attempts can be used for all component types except for the  **DynamicComponent** type.
+ > **Note**  Attempts can be used for all component types except for the  **DynamicComponent** type.
 
 You can retrieve the results for all the attempts associated with a given component instance by using the  **getAttempts** method. After retrieving the results, the user can either re-try one of the existing attempts by using the **resume** method, or create a new attempt by using the **createAttempt** method. The following example shows the process.
 

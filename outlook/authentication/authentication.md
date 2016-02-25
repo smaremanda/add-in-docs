@@ -36,7 +36,7 @@ On the server side, things are somewhat more complex. When your server receives 
 - If the credentials match a known identity on the server, you can map that identity to the unique identifier in the token so that the next time a request comes in, your server can respond without requiring an additional logon step.
     
 
- **Note**  This is just one suggestion for how to use the identity token. As always, when you're dealing with identity and authentication, you have to make sure that your code meets the security requirements of your organization.
+ > **Note**  This is just one suggestion for how to use the identity token. As always, when you're dealing with identity and authentication, you have to make sure that your code meets the security requirements of your organization.
 
 Let's get into the specifics. As an example, we'll use a simple Outlook add-in that sends the identity token and a list of phone numbers found in the message to a web service. 
 

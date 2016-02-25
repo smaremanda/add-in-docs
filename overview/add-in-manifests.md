@@ -6,7 +6,7 @@ Create or edit the manifest XML file for an Office Add-in.
 
 The XML manifest file of an Office Add-in enables you to declaratively describe how your add-in should be activated when an end user installs and uses it with Office documents and applications. The [offappmanifest.xsd](http://msdn.microsoft.com/en-us/library/d5f72bff-3446-c64f-02ca-ab10b5648789%28Office.15%29.aspx) defines an XML schema that is common to all supported Office applications (both rich client applications and their corresponding web app web clients).
 
- **Note**  Your Office Add-in must use manifest schema version 1.1. For information about how to update your add-in to use manifest 1.1, see [Update the version of your JavaScript API for Office and manifest schema files](../overview/update-your-javascript-api-for-office-and-manifest-schema-version.md).
+ > **Note**  Your Office Add-in must use manifest schema version 1.1. For information about how to update your add-in to use manifest 1.1, see [Update the version of your JavaScript API for Office and manifest schema files](../overview/update-your-javascript-api-for-office-and-manifest-schema-version.md).
 
 An XML manifest file based on this schema enables an Office Add-in to do the following:
 
@@ -30,7 +30,7 @@ For examples of manifest v1.1 XML files, see [Manifest v1.1 XML file examples](#
 The following table specifies the elements that are required for the three types of Office Add-ins and the Dictionary task pane add-in.
 
 
- **Important**  For add-ins submitted to the Office Store, all add-in locations, such as the source file locations specified in the  **SourceLocation** element, must be SSL-secured (HTTPS). For more information see,[What are some common submission errors to avoid?](http://msdn.microsoft.com/library/0ceb385c-a608-40cc-8314-78e39d6c75d0%28Office.15%29.aspx#bk_q2)
+ > **Important**  For add-ins submitted to the Office Store, all add-in locations, such as the source file locations specified in the  **SourceLocation** element, must be SSL-secured (HTTPS). For more information see,[What are some common submission errors to avoid?](http://msdn.microsoft.com/library/0ceb385c-a608-40cc-8314-78e39d6c75d0%28Office.15%29.aspx#bk_q2)
 
 
 **Required elements by Office Add-in type**
@@ -172,8 +172,8 @@ If you're using Visual Studio to develop your Office Add-in, you can use the Vis
   <Description DefaultValue=
     "Watch YouTube videos referenced in the e-mails you  
     receive without leaving your email client.">
-    <Override Locale="fr-fr" Value="Visualisez les vidÃ©os
-      YouTube rÃ©fÃ©rencÃ©es dans vos courriers Ã©lectronique
+    <Override Locale="fr-fr" Value="Visualisez les vid????os
+      YouTube r????f????renc????es dans vos courriers ????lectronique
       directement depuis Outlook et Outlook Web App."/>
   </Description>
   <!-- Change the following line to specify    -->
@@ -319,7 +319,7 @@ To make sure that the manifest file that describes your Office Add-in is correct
 For information about validating a manifest against a schema, see [XML Schema (XSD) validation tool](http://stackoverflow.com/questions/124865/xml-schema-xsd-validation-tool).
 
 
- **Note**  Validating your manifest against the offappmanifest.xsd file is obsolete. For information about updating your manifest to schema version 1.1, see [Update the version of your JavaScript API for Office and manifest schema files](../overview/update-your-javascript-api-for-office-and-manifest-schema-version.md).
+ > **Note**  Validating your manifest against the offappmanifest.xsd file is obsolete. For information about updating your manifest to schema version 1.1, see [Update the version of your JavaScript API for Office and manifest schema files](../overview/update-your-javascript-api-for-office-and-manifest-schema-version.md).
 
 
 ## Specify domains you want to open in the add-in window

@@ -43,7 +43,7 @@ In the callback function passed to the  **getByIdAsync** method, you can use the
 ## Remarks
 
 
- **Important**  When you specify the  _id_ parameter, you must include opening and closing braces around the GUID of the custom XML part. Failure to do so will raise a JavaScript error.
+ > **Important**  When you specify the  _id_ parameter, you must include opening and closing braces around the GUID of the custom XML part. Failure to do so will raise a JavaScript error.
 
 
 

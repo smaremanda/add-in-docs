@@ -6,7 +6,7 @@ Learn about the limits for using activation rules and the JavaScript API for Off
 
 To provide a satisfactory experience for users of Outlook add-ins, you should be aware of certain activation and API usage guidelines, and implement your add-ins to stay within these limits. These guidelines exist so that an individual add-in cannot require Exchange Server or Outlook to spend an unusually long period of time to process its activation rules or calls to the JavaScript API for Office, affecting the overall user experience for Outlook and other add-ins. These limits apply to designing activation rules in the add-in manifest, and using custom properties, roaming settings, recipients, Exchange Web Services (EWS) requests and responses, and asynchronous calls. 
 
- **Note**  If your add-in runs on an Outlook rich client, you must also verify that the add-in performs within certain run-time resource usage limits. 
+ > **Note**  If your add-in runs on an Outlook rich client, you must also verify that the add-in performs within certain run-time resource usage limits. 
 
 
 ## Limits for activation rules
@@ -64,11 +64,11 @@ Follow these guidelines when designing activation rules for Outlook add-ins:
 |:-----|:-----|:-----|
 |Order of returned matches|Assume  **getRegExMatches** returns matches for the same regular expression applied on the same item is different in an Outlook rich client than in Outlook Web App or OWA for Devices.|Assume  **getRegExMatches** returns matches in different order in an Outlook rich client than in Outlook Web App or OWA for Devices.|
 |Plain text item body|**getRegExMatches** returns any matches that are up to 1,536 (1.5 KB) characters, for a maximum of 50 matches.
- **Note**   **getRegExMatches** does not return matches in any specific order in the returned array. In general, assume the order of matches in an Outlook rich client for the same regular expression applied on the same item is different from that in Outlook Web App and OWA for Devices.
+ > **Note**   **getRegExMatches** does not return matches in any specific order in the returned array. In general, assume the order of matches in an Outlook rich client for the same regular expression applied on the same item is different from that in Outlook Web App and OWA for Devices.
 
 |**getRegExMatches** returns any matches that are up to 3,072 (3 KB) characters, for a maximum of 50 matches.|
 |HTML item body|**getRegExMatches** returns any matches that are up to 3,072 (3 KB) characters, for a maximum of 50 matches.
- **Note**   **getRegExMatches** does not return matches in any specific order in the returned array. In general, assume the order of matches in an Outlook rich client for the same regular expression applied on the same item is different from that in Outlook Web App and OWA for Devices.
+ > **Note**   **getRegExMatches** does not return matches in any specific order in the returned array. In general, assume the order of matches in an Outlook rich client for the same regular expression applied on the same item is different from that in Outlook Web App and OWA for Devices.
 
 |**getRegExMatches** returns any matches that are up to 3,072 (3 KB) characters, for a maximum of 50 matches.|
 

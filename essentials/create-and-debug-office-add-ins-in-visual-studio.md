@@ -5,7 +5,7 @@ Use Visual Studio project templates to create an Office Add-ins project, modify 
  _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | Outlook | PowerPoint | Project | Word_
 
 
- **Note**  These instructions are based on Visual Studio 2015. Other versions of Visual Studio will have minor variations on these instructions.
+ > **Note**  These instructions are based on Visual Studio 2015. Other versions of Visual Studio will have minor variations on these instructions.
 
 
 
@@ -35,7 +35,7 @@ In Visual Studio 2015, some of the add-in project templates have been updated to
 - Outlook add-ins include options not just for including your add-in in email messages or appointments, but also for specifying whether the add-in is available when an email message or appointment is being composed as well as read.
     
 
- **Note**  In Visual Studio most options are understandable from their descriptions except for the  **Email Message** checkbox. Use that checkbox if you want to create an Outlook add-in that appears not just with mail items, but also with meeting requests, responses, and cancellations.
+ > **Note**  In Visual Studio most options are understandable from their descriptions except for the  **Email Message** checkbox. Use that checkbox if you want to create an Outlook add-in that appears not just with mail items, but also with meeting requests, responses, and cancellations.
 
 When you've completed the wizard, Visual Studio creates a solution for you that contains two projects.
 
@@ -89,7 +89,7 @@ The following table describes the fields that appear in the  **Activation** tab 
 |**Property**|**Description**|
 |:-----|:-----|
 |**Required API Sets**|Enables you to specify the API set names and the minimum versions required by your add-in to activate properly. To add an API set, choose it in the drop-down list. To delete an API set, choose it in the list and then choose the  **Delete** key. As you specify API sets, the page displays the Office clients that support that combination of API sets.
- **Note**  Because some API sets support only certain Office clients, specifying more API sets decreases the number of Office clients on which your add-in can activate.
+ > **Note**  Because some API sets support only certain Office clients, specifying more API sets decreases the number of Office clients on which your add-in can activate.
 
 |
 |**Applications**|Enables you to choose the Office applications that you want your add-in to target. You can target any Office application that's available in Office 365 and Office 2013 SP1, or you can target specific Office applications.|
@@ -154,7 +154,7 @@ As your add-in becomes more sophisticated, you can add more HTML and JavaScript 
 |**Home.js**|Located in the  **Home** folder of the project, this is the JavaScript file associated with the Home.js page. You can place any code that is specific to the behavior of the Home.html page in the Home.js file. The Home.js file contains some example code to get you started.|
 |**App.js**|Located in the  **Add-in** folder of the project, this is the default JavaScript file of the entire add-in. You can place code that is common to the behavior of multiple pages of your add-in in the App.js file. The App.js file contains some example code to get you started.|
 
- **Note**  You don't have to use these files. Feel free to add other files to the project and use those instead. If you want another HTML file to appear as the initial page of the add-in, open the manifest editor, and then point the  **SourceLocation** property to the name of the file.
+ > **Note**  You don't have to use these files. Feel free to add other files to the project and use those instead. If you want another HTML file to appear as the initial page of the add-in, open the manifest editor, and then point the  **SourceLocation** property to the name of the file.
 
 
 ## Debug your add-in
@@ -202,7 +202,7 @@ You can add documents to the add-in project. If you have a document that contain
 
 1. In  **Solution Explorer**, choose the add-in project folder.
     
-     **Note**  Choose the add-in project and not the web application project.
+     > **Note**  Choose the add-in project and not the web application project.
 2. On the  **Project** menu, choose **Add Existing Item**.
     
 3. In the  **Add Existing Item** dialog box, locate and select the document that you want to add.
@@ -222,7 +222,7 @@ You can add documents to the add-in project. If you have a document that contain
 Visual Studio will automatically build the solution when you start it. You can start the solution from the  **Menu** bar by choosing **Debug**,  **Start**. 
 
 
- **Note**  If script debugging isn't enabled in Internet Explorer, you won't be able to start the debugger in Visual Studio. You can enable script debugging by opening the  **Internet Options** dialog box, choosing the **Advanced** tab, and then clearing the **Disable Script Debugging (Internet Explorer)** and **Disable Script Debugging (Other)** check boxes.
+ > **Note**  If script debugging isn't enabled in Internet Explorer, you won't be able to start the debugger in Visual Studio. You can enable script debugging by opening the  **Internet Options** dialog box, choosing the **Advanced** tab, and then clearing the **Disable Script Debugging (Internet Explorer)** and **Disable Script Debugging (Other)** check boxes.
 
 Visual Studio builds the project and does the following:
 

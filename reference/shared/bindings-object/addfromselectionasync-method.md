@@ -49,7 +49,7 @@ In the callback function passed to the  **addFromSelectionAsync** method, you ca
 Adds the specified type of binding object to the  **Bindings** collection, which will be identified with the supplied _id_.
 
 
- **Note**  In Excel, if you call the  **addFromSelectionAsync** method passing in the **Binding.id** of an existing binding, the[Binding.type](../reference/shared/binding-object/type-property.md) of that binding is used, and its type cannot be changed by specifying a different value for the _bindingType_ parameter.If you need to use an existing  _id_ and change the _bindingType_, call the [Bindings.releaseByIdAsync](../reference/shared/bindings-object/releasebyidasync-method.md) method first to release the binding, and then call the **addFromSelectionAsync** method to reestablish the binding with a new type.
+ > **Note**  In Excel, if you call the  **addFromSelectionAsync** method passing in the **Binding.id** of an existing binding, the[Binding.type](../reference/shared/binding-object/type-property.md) of that binding is used, and its type cannot be changed by specifying a different value for the _bindingType_ parameter.If you need to use an existing  _id_ and change the _bindingType_, call the [Bindings.releaseByIdAsync](../reference/shared/bindings-object/releasebyidasync-method.md) method first to release the binding, and then call the **addFromSelectionAsync** method to reestablish the binding with a new type.
 
 
 ## Example

@@ -46,7 +46,7 @@ In the callback function passed to the  **addHandlerAsync** method, you can use 
 You can add multiple event handlers for the specified  _eventType_ as long as the name of each event handler function is unique.
 
 
- **Important**  Your add-in's code can register a handler for the  **settingsChanged** event when the add-in is running with any Excel client, but the event will fire only when the add-in is loaded with a spreadsheet that is opened in Excel Online, _and_ more than one user is editing the spreadsheet (co-authoring). Therefore, effectively the **settingsChanged** event is supported only in Excel Online in co-authoring scenarios.
+ > **Important**  Your add-in's code can register a handler for the  **settingsChanged** event when the add-in is running with any Excel client, but the event will fire only when the add-in is loaded with a spreadsheet that is opened in Excel Online, _and_ more than one user is editing the spreadsheet (co-authoring). Therefore, effectively the **settingsChanged** event is supported only in Excel Online in co-authoring scenarios.
 
 
 ## Example

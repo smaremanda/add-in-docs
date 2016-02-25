@@ -40,10 +40,10 @@ You'll learn:
     
 2. Install Office 2013 if you haven't already. 
     
-     **Note**  You can get a [trial version for one month](http://office.microsoft.com/en-us/try/?WT%2Eintid1=ODC%5FENUS%5FFX101785584%5FXT104056786).
+     > **Note**  You can get a [trial version for one month](http://office.microsoft.com/en-us/try/?WT%2Eintid1=ODC%5FENUS%5FFX101785584%5FXT104056786).
 3. Get your Azure account.
     
-     **Note**  If you're a Microsoft Developer Network (MSDN) subscriber, [you get an Azure subscription as part of your MSDN subscription](http://www.windowsazure.com/en-us/pricing/member-offers/msdn-benefits/).If you're not an MSDN subscriber, you can still [get a free trial of Azure at the Windows Azure website](https://azure.microsoft.com/en-us/pricing/free-trial/). 
+     > **Note**  If you're a Microsoft Developer Network (MSDN) subscriber, [you get an Azure subscription as part of your MSDN subscription](http://www.windowsazure.com/en-us/pricing/member-offers/msdn-benefits/).If you're not an MSDN subscriber, you can still [get a free trial of Azure at the Windows Azure website](https://azure.microsoft.com/en-us/pricing/free-trial/). 
 To keep the walkthrough simple and focused on using Azure with an Office Add-in, you'll use a local file share as a trusted catalog where you'll store the add-in's XML manifest file. For an add-in that you intend to be used in a business or more than one business, you might keep the add-in manifest file in SharePoint, or publish the add-in to the Office Store. See Publishing basics in [Office Add-ins platform overview](../overview/platform-overview.md).
 
 

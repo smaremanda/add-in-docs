@@ -29,7 +29,7 @@ Office.context.document.settings.remove(name);
  **null** is a valid value for a setting. Therefore, assigning **null** to the setting will not remove it from the settings property bag.
 
 
- **Important**  Be aware that the  **Settings.remove** method affects only the in-memory copy of the settings property bag. To persist the removal of the specified setting in the document, at some point after calling the **Settings.remove** method and before the add-in is closed, you must call the[Settings.saveAsync](../reference/shared/settings/saveasync-method.md) method.
+ > **Important**  Be aware that the  **Settings.remove** method affects only the in-memory copy of the settings property bag. To persist the removal of the specified setting in the document, at some point after calling the **Settings.remove** method and before the add-in is closed, you must call the[Settings.saveAsync](../reference/shared/settings/saveasync-method.md) method.
 
 
 ## Example

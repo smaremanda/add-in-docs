@@ -39,7 +39,7 @@ You can now upload your XML manifest to the appropriate location to [publish you
     
 2. In the  **Current profile** drop-down list, select a profile or choose **&lt;New â€¦&gt;** to create a new profile.
     
-     **Note**  A publish profile specifies the server you are deploying to, the credentials needed to log on to the server, the databases to deploy, and other deployment options.
+     > **Note**  A publish profile specifies the server you are deploying to, the credentials needed to log on to the server, the databases to deploy, and other deployment options.
 
     If you choose  **&lt;New â€¦&gt;**, the  **Create publishing profile** wizard appears. You can use this wizard to import a publishing profile from a web site hosting provider such as Microsoft Azure or create a new profile and add your server, credentials, and other settings in the next procedure.
     
@@ -61,7 +61,7 @@ You can now upload your XML manifest to the appropriate location to [publish you
     
     You have to specify an address that begins with the HTTPS prefix to complete this wizard. In general, using an HTTPS endpoint for your website is the best approach, but it is not required if you don't plan to publish your add-in to the Office Store. After the package is created, you can open the manifest in Notepad and replace the HTTPS prefix of your website with an HTTP prefix. For more information, see [Why do my add-ins have to be SSL-secured?](http://msdn.microsoft.com/en-us/library/jj591603#bk_q7). 
     
-     **Note**  Azure websites automatically provide an HTTPS endpoint.
+     > **Note**  Azure websites automatically provide an HTTPS endpoint.
 
     Visual Studio generates the files that you need to publish your add-in and then opens the publish output folder. 
     

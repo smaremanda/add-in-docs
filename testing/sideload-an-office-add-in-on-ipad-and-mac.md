@@ -79,7 +79,7 @@ To see how your add-in will run in Office for iOS, you can sideload your add-in'
     
     ![My Add-ins in Office for Mac](../images/4593430c-b33e-4895-b2be-63fe3c4d08bc.png)
     
-     **Note**  The  **Store** and **See All** options will remain unavailable in the Office for Mac (Preview).
+     > **Note**  The  **Store** and **See All** options will remain unavailable in the Office for Mac (Preview).
 5. Verify that your add-in is displayed in Word.
     
     ![Office Add-in displayed in Office for Mac](../images/a5cb2efc-1180-45b4-85a6-13df817b9d2c.png)
