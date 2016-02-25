@@ -14,7 +14,7 @@ The following table lists the names of requirement sets, the methods in each set
 
 |**Set name**|**Version**|**Methods in set**|**Office host**|
 |:-----|:-----|:-----|:-----|
-|ExcelApi|1.1|All elements in the Excel namespace.|Excel 2016Excel Online|
+|ExcelApi|1.1|All elements in the Excel namespace|Excel 2016Excel Online|
 |WordApi|1.2|All elements in the Word namespace. The following methods were added to this version of WordApi:Body.select(selectionMode)Body.insertInlinePictureFromBase64(base64EncodedImage, insertLocation)contentControl.select(selectionMode)contentControl.insertInlinePictureFromBase64(base64EncodedImage, insertLocation)inlinePicture.paragraphinlinePicture.deleteinlinePicture.insertBreak(breakType, insertLocation)inlinePicture.insertFileFromBase64(base64file, insertLocation)inlinePicture.insertHtml(html, insertLocation)inlinePicture.insertInlinePictureFromBase64(base64file, insertLocation)inlinePicture.insertOoxml(ooxml, insertLocation)inlinePicture.insertParagraph(paragraphText, insertLocation)inlinePicture.insertText(text, insertLocation)inlinePicture.select(selectionMode)paragraph.select(selectionMode)range.inlinePicturesrange.select(selectionMode)range.insertInlinePictureFomBase64(base64EcodedImage, insertLocation)|Word 2016|
 |WordApi|1.1|All elements in the Word namespace except API members that were added to WordApi 1.2 and later, which are listed above.|Word 2016|
 |ActiveView|1.1|Document.getActiveViewAsync|PowerPointPowerPoint Online|
