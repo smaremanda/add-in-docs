@@ -8,7 +8,7 @@ An identity token provides a unique identifier for each of your customers that y
 
 The web service that supports your add-in must run on the same server that hosts the add-in HTML and JavaScript source files. This prevents cross-site scripting errors. Your server can proxy the request on to other web services if your application requires it.
 
-Adding an identity token to the service request that your add-in sends is easy â€” you request the token, use the token, and then use the web service response. Here's how it looks with a simple XML document that you send to your server by using the  **XmlHttpRequest** method.
+Adding an identity token to the service request that your add-in sends is easy. You request the token, use the token, and then use the web service response. Here's how it looks with a simple XML document that you send to your server by using the  **XmlHttpRequest** method.
 
 ## Request a token from your Exchange server
 <a name="requestingatoken"> </a>
@@ -99,9 +99,9 @@ Identity tokens provide identity information about the client that is calling yo
     
 - A web service running on the server that provides the UI for your add-in that validates the identity token. You'll find the information that you need to create the web service in one of the following topics:
     
-      - [Use the Exchange token validation library](../outlook/authentication/use-the-token-validation-library.md) â€” If you're using the validation library that we provide.
+      - [Use the Exchange token validation library](../outlook/authentication/use-the-token-validation-library.md) -- If you're using the validation library that we provide.
     
-  - [Validate an Exchange identity token](../outlook/authentication/validate-an-identity-token.md) â€” If you're writing your own validation code.
+  - [Validate an Exchange identity token](../outlook/authentication/validate-an-identity-token.md) -- If you're writing your own validation code.
     
 
 ### Code for the sample add-in
