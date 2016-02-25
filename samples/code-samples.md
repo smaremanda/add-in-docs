@@ -15,7 +15,7 @@ You can find a list of samples on [dev.office.com](http://dev.office.com/code-sa
 
 |**Task pane and content add-in samples**|**Outlook add-in samples**|
 |:-----|:-----|
-|<ul>xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+|<ul><li><p><axmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"></a></p></li>
 
 <li><p><a href="http://code.msdn.microsoft.com/officeapps/Apps-for-Office-Enable-46024745" target="_blank">Enable communication between add-ins</a></p></li>
 
