@@ -36,7 +36,7 @@ Creates a new attempt in the context of a component.
  **Parameters**
 
 
-|||
+|**Name**|**Description**|
 |:-----|:-----|
 | _callback_|Callback fired when the attempt has been created.|
 
@@ -49,7 +49,7 @@ Retrieves all attempts associated with the given component.
  **Parameters**
 
 
-|||
+|**Name**|**Description**|
 |:-----|:-----|
 | _callback_|Callback fired when the attempts have been retrieved.|
 
@@ -69,6 +69,6 @@ Builds an attempt from the given action. Should be implemented by derived classe
  **Parameters**
 
 
-|||
+|**Name**|**Description**|
 |:-----|:-----|
 | _createAttemptResult_|The create attempt action for the specified attempt.|
