@@ -7,8 +7,6 @@ Debug Office Add-ins running on an iPad or Mac by using the Weinre remote web in
 You can use Visual Studio to develop and debug add-ins on Windows, but you can't use it to debug add-ins on the iPad or Mac. Because add-ins are developed using HTML and Javascript, they are designed to work across platforms, but there might be subtle differences in how different browsers render the HTML. This article describes how to debug add-ins running on an iPad or Mac. 
 
  >**Note**  We recommend that you continue using Visual Studio to debug add-ins on Windows.
-</br>More text
-
 
 ## Debugging with Weinre
 
@@ -32,6 +30,7 @@ Weinre is a debugger for web pages, similar to the F12 tools, that is designed t
 3. To ensure that IIS, Apache, or the web server of your choice is running on your computer, verify that  `http://localhost` returns a valid page.
     
 4. Start Weinre:  `weinre --httpPort 8080 --boundHost <ipaddr>`, where  _ _&lt;ipaddr&gt;__ is your PC's or Mac's IP address.
+5. step 5
     
    Navigate to  `http://<ipaddr>:8080` to access the Weinre server home page.
  
