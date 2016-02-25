@@ -46,7 +46,7 @@ For the  **getSelectedDataAsync** method, the returned [AsyncResult](../referenc
 
 ## Remarks
 
-The  **ProjectDocument.getSelectedDataAsync** method overrides the [Document.getSelectedDataAsync](../reference/shared/document/getselecteddataasync-method.md) method and returns the text value of data that is selected in one or more cells in the Gantt Chart view. **ProjectDocument.getSelectedDataAsync** supports only a text format as the [CoercionType](../reference/enumerations/coerciontype-enumeration.md)—it does not support  `matrix`,  `table`, or other formats.
+The  **ProjectDocument.getSelectedDataAsync** method overrides the [Document.getSelectedDataAsync](../reference/shared/document/getselecteddataasync-method.md) method and returns the text value of data that is selected in one or more cells in the Gantt Chart view. **ProjectDocument.getSelectedDataAsync** supports only a text format as the [CoercionType](../reference/enumerations/coerciontype-enumeration.md) - it does not support  `matrix`,  `table`, or other formats.
 
 
 ## Example
