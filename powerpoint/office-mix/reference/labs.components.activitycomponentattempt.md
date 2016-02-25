@@ -24,7 +24,7 @@ Creates a new instance of the  **ActivityComponentAttempt** class.
  **Parameters**
 
 
-|||
+|**Name**|**Description**|
 |:-----|:-----|
 | _labs_|Lab instances ([Labs.LabsInternal](http://msdn.microsoft.com/library/599fb2c4-bb16-4422-84ad-10ed85a14018.aspx)) associated with the component.|
 | _componentId_|ID of the component associated with the attempt.|
@@ -40,7 +40,7 @@ Indicator that the activity has been completed.
  **Parameters**
 
 
-|||
+|**Name**|**Description**|
 |:-----|:-----|
 | _callback_|Callback function that is invoked once the activity has completed.|
 
@@ -53,6 +53,6 @@ Function that runs over the actions that are retrieved for a given attempt, then
  **Parameters**
 
 
-|||
+|**Name**|**Description**|
 |:-----|:-----|
 | _action_|The action instance ([Labs.Core.IAction](../powerpoint/office-mix/reference/labs.core.iaction.md)).|
