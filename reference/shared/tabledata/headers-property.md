@@ -62,10 +62,6 @@ For more information about Office host application and server requirements, see 
 |**Excel**|Y|Y|Y|
 |**Word**|Y|Y|Y|
 
-||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
-|**Excel**|Y|Y|Y|
-|**Word**|Y|Y|Y|
-
 |||
 |:-----|:-----|
 |**Available in requirement sets**|TableBindings|
