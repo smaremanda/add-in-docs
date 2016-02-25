@@ -98,11 +98,11 @@ mailbox.makeEwsRequestAsync(mailbox.item.itemId), function(result) {
 The following example calls  **makeEwsRequestAsync** to use the [GetItem](http://msdn.microsoft.com/en-us/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) operation to get the subject of an item. This example includes the following three functions:
 
 
--  `getSubjectRequest` â€” Takes an item ID as input, and returns the XML for the SOAP request to call **GetItem** for the specified item.
+-  `getSubjectRequest` -- Takes an item ID as input, and returns the XML for the SOAP request to call **GetItem** for the specified item.
     
--  `sendRequest`â€” Calls  `getSubjectRequest` to get the SOAP request for the selected item, then passes the SOAP request and the callback method, `callback`, to  **makeEwsRequestAsync** to get the subject of the specified item.
+-  `sendRequest` -- Calls  `getSubjectRequest` to get the SOAP request for the selected item, then passes the SOAP request and the callback method, `callback`, to  **makeEwsRequestAsync** to get the subject of the specified item.
     
--  `callback` â€” Processes the SOAP response which includes any subject and other information about the specified item.
+-  `callback` -- Processes the SOAP response which includes any subject and other information about the specified item.
     
 
 ```
