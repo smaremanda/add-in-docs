@@ -13,7 +13,7 @@ class Command
 ## Properties
 
 
-|||
+|**Name**|**Description**|
 |:-----|:-----|
 | `public var type: string`|The type of the command.|
 | `public var commandData: any`|Optional data associated with the command.|
