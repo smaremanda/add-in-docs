@@ -36,11 +36,11 @@ To create an Office Add-in that targets Access web apps, you need:
 
 7. When done, choose  **Finish**. Visual Studio will create a starter project for you to base your work on.
 
-8. In the  **Solution Explorer**, choose the project's Web project ( **&lt;project_name>Web**). In the properties pane find the entry for  **SSL URL**. This should look something like:  `https://localhost:44314/`. Select this URL, and copy it to your clipboard. You will need it shortly.
+8. In the  **Solution Explorer**, choose the project's Web project ( **project_name>Web**). In the properties pane find the entry for  **SSL URL**. This should look something like:  `https://localhost:44314/`. Select this URL, and copy it to your clipboard. You will need it shortly.
 
 9. Right click on the name of your project in  **Solution Explorer**. In the context menu, choose  **Publish**. This will open the  **Publish your add-in** wizard.
 
-10. In the  **Publish your add-in** wizard, select the drop-down list next to **Current profile**. In this drop-down list, choose  **&lt;new&gt;**. This opens the  **Publish Office and SharePoint Add-ins** dialog box.
+10. In the  **Publish your add-in** wizard, select the drop-down list next to **Current profile**. In this drop-down list, choose  **new**. This opens the  **Publish Office and SharePoint Add-ins** dialog box.
 
 11. In this dialog box choose  **Create new profile**, enter a recognizable name for the profile, and then choose  **Finish**. The  **Publish Office and SharePoint Add-ins** dialog box will close, returning you to the **Publish your add-in** wizard.
 

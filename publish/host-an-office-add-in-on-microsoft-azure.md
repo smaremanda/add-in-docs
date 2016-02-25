@@ -175,7 +175,7 @@ Because we're focusing on how to publish to Azure, you won't make any changes to
     
 5. In  **Publish Web**, on the  **Connection** tab, accept the defaults and choose **Next**. 
     
-    Choose  **Next &gt;** again to accept the default settings.
+    Choose  **Next ** again to accept the default settings.
     
 6. On the  **Preview** tab, choose **Start Preview**. The preview shows you all the files in the web project that will be published to the Azure website.
     

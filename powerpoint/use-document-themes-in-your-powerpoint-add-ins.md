@@ -60,7 +60,7 @@ Use the following steps to add and reference the OfficeThemes.css file to your a
 ### To add OfficeThemes.css to your Visual Studio project
 
 
-1. In the  **Solution Explorer**, right-click the  **Content** folder in the _**&lt;project_name&gt;**_**Web** project, point to **Add**, and then click  **Style Sheet**.
+1. In the  **Solution Explorer**, right-click the  **Content** folder in the _**project_name**_**Web** project, point to **Add**, and then click  **Style Sheet**.
     
 2. Name the new style sheet OfficeThemes.
     

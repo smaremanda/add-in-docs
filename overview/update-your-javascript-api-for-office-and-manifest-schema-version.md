@@ -49,7 +49,7 @@ Note that the update process is applied on a  _per-project basis_ - you'll need 
     
 4. In the left pane, click  **Update** and complete the package update process.
     
-5. In the  **&lt;head&gt;** tag of your add-in's HTML pages, comment out or delete any existing office.js script references (for example: `<script src="https://appsforoffice.microsoft.com/lib/1.0/hosted/office.js" type="text/javascript"></script>)`, and now reference the updated JavaScript API for Office library like this (changing the version value to  `1`).
+5. In the  **head** tag of your add-in's HTML pages, comment out or delete any existing office.js script references (for example: `<script src="https://appsforoffice.microsoft.com/lib/1.0/hosted/office.js" type="text/javascript"></script>)`, and now reference the updated JavaScript API for Office library like this (changing the version value to  `1`).
     
   ```
   <script src="https://appsforoffice.microsoft.com/lib/1/hosted/Office.js" type="text/javascript"></script>
@@ -87,7 +87,7 @@ Note that the update process is applied on a  _per-project basis_ - you'll need 
 
 1. Open the HTML pages for your add-in in your text editor or IDE.
     
-2. In the  **&lt;head&gt;** tag of your add-in's HTML pages, comment out or delete any existing office.js script references (for example: `<script src="https://appsforoffice.microsoft.com/lib/1.0/hosted/office.js" type="text/javascript"></script>)`, and now reference the updated JavaScript API for Office library like this (changing the version value to  `1` ).
+2. In the  **head** tag of your add-in's HTML pages, comment out or delete any existing office.js script references (for example: `<script src="https://appsforoffice.microsoft.com/lib/1.0/hosted/office.js" type="text/javascript"></script>)`, and now reference the updated JavaScript API for Office library like this (changing the version value to  `1` ).
     
   ```
   <script src="https://appsforoffice.microsoft.com/lib/1/hosted/Office.js" type="text/javascript"></script>

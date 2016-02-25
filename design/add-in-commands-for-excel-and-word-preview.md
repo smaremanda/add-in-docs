@@ -152,7 +152,7 @@ Before performing the following steps, make sure that your add-in runs without g
     
     or
     
-  - Change the icon's file name in the  **&lt;Resources&gt;** element in the manifest, and republish your add-in.
+  - Change the icon's file name in the  **Resources** element in the manifest, and republish your add-in.
     
 - Add-in commands are always available in the Office UI, even when no document is displayed.
     

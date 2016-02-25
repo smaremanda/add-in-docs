@@ -37,11 +37,11 @@ You can now upload your XML manifest to the appropriate location to [publish you
     
     The  **Publish your add-in** page appears.
     
-2. In the  **Current profile** drop-down list, select a profile or choose **&lt;New â€¦&gt;** to create a new profile.
+2. In the  **Current profile** drop-down list, select a profile or choose **New â€¦** to create a new profile.
     
      >**Note**  A publish profile specifies the server you are deploying to, the credentials needed to log on to the server, the databases to deploy, and other deployment options.
 
-    If you choose  **&lt;New â€¦&gt;**, the  **Create publishing profile** wizard appears. You can use this wizard to import a publishing profile from a web site hosting provider such as Microsoft Azure or create a new profile and add your server, credentials, and other settings in the next procedure.
+    If you choose  **New â€¦**, the  **Create publishing profile** wizard appears. You can use this wizard to import a publishing profile from a web site hosting provider such as Microsoft Azure or create a new profile and add your server, credentials, and other settings in the next procedure.
     
     For more information about importing publishing profiles or creating new publishing profiles, see [Creating a Publish Profile](http://msdn.microsoft.com/en-us/library/dd465337.aspx#creating_a_profile).
     
