@@ -33,7 +33,7 @@ Office Add-ins provide users with additional functionality within the context of
 
      >**Note**  Any violations to this policy will result in Microsoft immediately disabling your add-in on the iPad.
 
-    You can share more information about the add-in or services within the add-in. You can also charge for and include commerce in your add-ins that run on other platforms. To do this, display different UIs â€” depending on which browser or device runs your add-in â€” by using the following properties:
+    You can share more information about the add-in or services within the add-in. You can also charge for and include commerce in your add-ins that run on other platforms. To do this, display different UIs -- depending on which browser or device runs your add-in -- by using the following properties:
     
       - [Context.touchEnabled property (JavaScript API for Office)](http://msdn.microsoft.com/library/fd73f94b-7e4a-422c-afdb-fef6fba43766%28Office.15%29.aspx) - Detects whether the host application your add-in runs on is touch enabled.
     
