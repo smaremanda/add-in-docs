@@ -2,7 +2,6 @@
 # TableData.rows property (JavaScript API for Office)
 Gets or sets the rows in the table.
 
-|||
 |:-----|:-----|
 |**Hosts:**|Excel, Word|
 |**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|TableBindings|
@@ -62,7 +61,7 @@ For more information about Office host application and server requirements, see 
 |**Excel**|Y|Y|Y|
 |**Word**|Y|Y|Y|
 
-|||
+
 |:-----|:-----|
 |**Available in requirement sets**|TableBindings|
 |**Minimum permission level**|[Restricted](http://msdn.microsoft.com/library/da2efadc-4ebf-45fe-be39-397ac1eb1dbd%28Office.15%29.aspx)|
