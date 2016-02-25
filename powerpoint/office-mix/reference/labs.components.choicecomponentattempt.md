@@ -24,7 +24,7 @@ Creates a new instance of the  **ChoiceComponentAttempt** class.
  **Parameters**
 
 
-|||
+|**Name**|**Description**|
 |:-----|:-----|
 | _labs_|The [Labs.LabsInternal](http://msdn.microsoft.com/library/599fb2c4-bb16-4422-84ad-10ed85a14018.aspx) instance to use with the attempt.|
 | _attemptId_|The ID associated with the attempt.|
@@ -39,7 +39,7 @@ Indicates that the lab has timed out.
  **Parameters**
 
 
-|||
+|**Name**|**Description**|
 |:-----|:-----|
 | _callback_|Callback functions that fires once the server has received the timeout message.|
 
@@ -59,7 +59,7 @@ Submits a new answer that was graded by the lab and will not use the host to com
  **Parameters**
 
 
-|||
+|**Name**|**Description**|
 |:-----|:-----|
 | _answer_|The answer for the attempt.|
 | _result_|The result of the submission.|
