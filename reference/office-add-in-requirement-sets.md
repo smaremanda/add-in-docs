@@ -28,7 +28,7 @@ The following table lists the names of requirement sets, the methods in each set
 |Mailbox|1.1|Outlook<br>Outlook&nbsp;Web&nbsp;App<br>OWA&nbsp;for&nbsp;Devices|All API members supported by Outlook add-ins (those members accessed from `Office.context` and `Office.context.mailbox` in your add-in's code).|
 |MatrixBindings|1.1|Excel<br>Excel&nbsp;Online<br>Word|Bindings.addFromNamedItemAsync<br>Bindings.addFromSelectionAsync<br>Bindings.getAllAsync<br>Bindings.getByIdAsync<br>Bindings.releaseByIdAsyncMatrix<br>Binding.getDataAsyncMatrix<br>Binding.setDataAsync|
 |MatrixCoercion|1.1|Excel<br>Excel&nbsp;Online<br>Word|Supports coercion to the "matrix" (array of arrays) data structure (Office.CoercionType.Matrix) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods.|
-|OoxmlCoercion|1.1|Word|Supports coercion to Open Office XML (OOXML) format (Office.CoercionType.Ooxml)<br>when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods.|
+|OoxmlCoercion|1.1|Word|Supports coercion to Open Office XML (OOXML) format (Office.CoercionType.Ooxml) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods.|
 |PartialTableBindings|1.1|Access&nbsp;Web&nbsp;Apps||
 |PdfFile|1.1|PowerPoint<br>Word|Supports output to PDF format (Office.FileType.Pdf)<br>when using the Document.getFileAsync method.|
 |Selection|1.1|Excel<br>Excel&nbsp;Online<br>PowerPoint<br>Project<br>Word|Document.getSelectedDataAsync<br>Document.setSelectedDataAsync|
