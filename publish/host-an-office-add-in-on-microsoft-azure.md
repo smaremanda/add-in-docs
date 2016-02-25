@@ -66,7 +66,7 @@ To keep the walkthrough simple and focused on using Azure with an Office Add-in,
 <a name="bk_addToTrustedAppCatalog"> </a>
 
 
-1.  Start Word 2013 and create a document. (Although we're using Word 2013 in this example, you could use any Office application that supports Office Add-insâ€”like Excel, Outlook, PowerPoint, or Project 2013.)
+1.  Start Word 2013 and create a document. (Although we're using Word 2013 in this example, you could use any Office application that supports Office Add-ins like Excel, Outlook, PowerPoint, or Project 2013.)
     
 2.  Choose **File** > **Options**.
     
