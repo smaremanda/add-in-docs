@@ -33,7 +33,7 @@ To use the attachments API to get attachments from an Exchange mailbox, perform 
 Each of these steps is covered in detail in the following sections using code from the [Outlook-Add-in-JavaScript-GetAttachments](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-GetAttachments) sample.
 
 
- > **Note**  The code in these examples has been shortened to emphasize the attachment information. The sample contains additional code for authenticating the add-in with the remote server and managing the state of the request.
+ >**Note**  The code in these examples has been shortened to emphasize the attachment information. The sample contains additional code for authenticating the add-in with the remote server and managing the state of the request.
 
 
 ### Activate the add-in

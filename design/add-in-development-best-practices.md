@@ -53,7 +53,7 @@ Effective add-ins offer unique and compelling functionality that extends Office 
 - Provide multiple UI entry points to your add-in by using [add-in commands](../outlook/add-in-commands-for-outlook.md).
 
 
- > **Note**  Add-in commands are currently supported in Outlook 2016. Other hosts and platforms will support add-in commands in the future.
+ >**Note**  Add-in commands are currently supported in Outlook 2016. Other hosts and platforms will support add-in commands in the future.
 
 
 ### Add-in command design best practices
@@ -91,7 +91,7 @@ Effective add-ins offer unique and compelling functionality that extends Office 
   - Name your group to match the name of your add-in, or the specific functionality that your add-in will provide.
   - Create a custom tab when no existing tab matches functionality your add-in provides. If you need to display more than six commands, use a custom tab for some or all of the commands.
 
-     > **Note**  In Outlook, you can only add groups to the default tab or a custom tab.
+     >**Note**  In Outlook, you can only add groups to the default tab or a custom tab.
   - Support Office hosts that do and do not support add-in commands. A single add-in with a single manifest file can work in both command-aware and non-command-aware hosts.
 
     ![A screenshot that shows a task pane add-in in Office 2013 and the same add-in using add-in commands in Office 2016](../images/4f90a3cc-8cc4-4879-9a03-0bb2b6079026.png)
@@ -104,7 +104,7 @@ Effective add-ins offer unique and compelling functionality that extends Office 
 
 
 
-> **Note**  Although a single manifest can target both command-aware and non-command-aware hosts, when you target both types of hosts, you essentially create two different versions of your add-in. You can have the same code (HTML/CSS/JS) for both versions.
+>**Note**  Although a single manifest can target both command-aware and non-command-aware hosts, when you target both types of hosts, you essentially create two different versions of your add-in. You can have the same code (HTML/CSS/JS) for both versions.
 
 To ensure that your add-in works well in both types of hosts:
 - Modularize your navigation and command components so that you can replace them based to the version of your add-in that is being loaded.
@@ -112,7 +112,7 @@ To ensure that your add-in works well in both types of hosts:
 - Ensure that navigation and command elements can transition across Office host and task pane UI.
 - Do not add superfluous buttons to increase the real estate of your add-in.
 
-     > **Note**  Add-ins that take up too much space might not pass [Office Store validation](http://msdn.microsoft.com/library/cd90836a-523e-42f5-ab02-5123cdf9fefe%28Office.15%29.aspx).
+     >**Note**  Add-ins that take up too much space might not pass [Office Store validation](http://msdn.microsoft.com/library/cd90836a-523e-42f5-ab02-5123cdf9fefe%28Office.15%29.aspx).
 
 ## Apply UX design principles
 <a name="bk_ux"> </a>
@@ -143,7 +143,7 @@ To ensure that your add-in works well in both types of hosts:
 
 - Use the [Context.touchEnabled](http://msdn.microsoft.com/library/fd73f94b-7e4a-422c-afdb-fef6fba43766%28Office.15%29.aspx) property to detect whether the host application your add-in runs on is touch enabled.
 
-     > **Note**  This property is not supported in Outlook.
+     >**Note**  This property is not supported in Outlook.
 - Ensure that all controls are appropriately sized for touch interaction. For example, buttons have adequate touch targets, and input boxes are large enough for users to enter input.
 
 - Do not rely on non-touch input methods like hover or right-click.
@@ -153,7 +153,7 @@ To ensure that your add-in works well in both types of hosts:
 - Test your add-in on a real device by using [sideloading](../testing/sideload-an-office-add-in-on-ipad-and-mac.md).
 
 
- > **Note**  If you're using [Office UI Fabric](https://github.com/OfficeDev/Office-UI-Fabric) for your design elements, many of these elements are taken care of.
+ >**Note**  If you're using [Office UI Fabric](https://github.com/OfficeDev/Office-UI-Fabric) for your design elements, many of these elements are taken care of.
 
 
 ## Optimize and monitor add-in performance

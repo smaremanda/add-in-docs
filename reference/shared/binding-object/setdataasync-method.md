@@ -80,7 +80,7 @@ Additionally, these application-specific actions apply when writing data to a bi
 |A  **string**|The specified text is written.|
 |An array of arrays ("matrix") or a  **TableData** object|A Word table is written.|
 |HTML|The specified HTML is written.
- > **Important**  If any of the HTML you write is invalid, Word will not raise an error. Word will write as much of the HTML as it can and will omit any invalid data.
+ >**Important**  If any of the HTML you write is invalid, Word will not raise an error. Word will write as much of the HTML as it can and will omit any invalid data.
 
 |
 |Office Open XML ("Open XML")|The specified the XML is written.|

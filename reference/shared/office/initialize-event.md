@@ -23,7 +23,7 @@ The  _reason_ parameter of the **initialize** event listener function returns an
 - The user opened a document that already contains the add-in.
     
 
- > **Note**  The reason parameter of the  **initialize** event listener function only returns an **InitializationReason** enumeration value for task pane and content add-ins. It does not return a value for Outlook add-ins.
+ >**Note**  The reason parameter of the  **initialize** event listener function only returns an **InitializationReason** enumeration value for task pane and content add-ins. It does not return a value for Outlook add-ins.
 
 
 ## Example

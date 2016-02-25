@@ -6,7 +6,7 @@ After you upload your add-in manifest to a catalog, users can configure their Of
 
 Use the following steps to upload the manifest for your task pane or content add-in to an Office Add-ins catalog on SharePoint. 
 
- > **Note**  The name "apps for Office" is changing to "Office Add-ins". During the transition, the documentation and the UI of some Office applications and Visual Studio tools might still use the term "app/apps". For details, see [New name for apps for Office and SharePoint: Office and SharePoint Add-ins](https://msdn.microsoft.com/en-us/library/fp161507.aspx#Anchor_2).
+ >**Note**  The name "apps for Office" is changing to "Office Add-ins". During the transition, the documentation and the UI of some Office applications and Visual Studio tools might still use the term "app/apps". For details, see [New name for apps for Office and SharePoint: Office and SharePoint Add-ins](https://msdn.microsoft.com/en-us/library/fp161507.aspx#Anchor_2).
 
 
 ## Create or find the add-in catalog

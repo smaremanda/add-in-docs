@@ -118,7 +118,7 @@ Use the following procedure to create a simple user interface for the add-in tha
 2. Save the file as GetDoc_App.html using UTF-8 encoding to a network location or to a web server.
     
 
- > **Note**  Be sure that the <head> tags of the add-in contains a <script> tag with a valid link to the office.js file. 
+ >**Note**  Be sure that the <head> tags of the add-in contains a <script> tag with a valid link to the office.js file. 
 
 We'll use some CSS to give the add-in a simple, yet modern and professional appearance. Use the following CSS to define the style of the add-in.
 
@@ -264,7 +264,7 @@ Once you have converted the data to Base64, you can then transmit it to a web se
 Add the following code to send a slice to a web service.
 
 
- > **Note**  This code sends a PowerPoint or Word file to the web server in multiple slices. The web server or service must compile each individual slice into a single .pptx file before you can perform any manipulations on it.
+ >**Note**  This code sends a PowerPoint or Word file to the web server in multiple slices. The web server or service must compile each individual slice into a single .pptx file before you can perform any manipulations on it.
 
 
 

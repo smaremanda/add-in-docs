@@ -32,7 +32,7 @@ Run-time resource usage limits apply to all types of Office Add-ins. These limit
     
     If any Outlook add-in exceeds the preceding thresholds for CPU core or memory usage, or tolerance limit for crashes, Outlook disables the add-in. The Exchange Admin Center displays the disabled status of the app.
     
-     > **Note**  Even though only the Outlook rich clients and not Outlook Web App or OWA for Devices monitor resource usage, if a rich client disables an Outlook add-in, that add-in is also disabled for use in Outlook Web App and OWA for Devices.
+     >**Note**  Even though only the Outlook rich clients and not Outlook Web App or OWA for Devices monitor resource usage, if a rich client disables an Outlook add-in, that add-in is also disabled for use in Outlook Web App and OWA for Devices.
 
     In addition to the CPU core, memory, and reliability rules, Outlook add-ins should observe the following rules on activation:
     

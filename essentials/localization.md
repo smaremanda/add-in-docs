@@ -64,12 +64,12 @@ Every Office Add-in specifies a [DefaultLocale](http://msdn.microsoft.com/librar
 |**DisplayName***|Users in each locale you specify can see a localized description for the add-in in the Office Store (or private catalog). For Outlook add-ins, users can see the display name as a label for the Outlook add-in button and in the EAC after installation.For content and task pane add-ins, users can see the display name in the ribbon after installing the add-in.|
 |**IconUrl**|The icon image is optional. You can use the same override technique to specify a certain image for a specific culture. If you use and localize an icon, users in each locale you specify can see a localized icon image for the add-in. For Outlook add-ins, users can see the icon in the EAC after installing the add-in.For content and task pane add-ins, users can see the icon in the ribbon after installing the add-in.|
 |**HighResolutionIconUrl**
- > **Important**  This element is available only when using add-in manifest version 1.1.
+ >**Important**  This element is available only when using add-in manifest version 1.1.
 
 |The high resolution icon image is optional but if it is specified, it must occur after the  **IconUrl** element. When **HighResolutionIconUrl** is specified, and the add-in is installed on a device that supports high dpi resolution, the **HighResolutionIconUrl** value is used instead of the value for **IconUrl**. You can use the same override technique to specify a certain image for a specific culture. If you use and localize an icon, users in each locale you specify can see a localized icon image for the add-in.For Outlook add-ins, users can see the icon in the EAC after installing the add-in.For content and task pane add-ins, users can see the icon in the ribbon after installing the add-in.|
 |**SourceLocation**|Users in each locale you specify can see a webpage that you specifically design for the add-in for that locale. |
 
- > **Note**  * You can localize the description and display name for only the locales that Office supports. See[Language identifiers and OptionState Id values in Office 2013](http://technet.microsoft.com/en-us/library/cc179219%28Office.15%29.aspx) for a list of languages and locales for the current release of Office.
+ >**Note**  * You can localize the description and display name for only the locales that Office supports. See[Language identifiers and OptionState Id values in Office 2013](http://technet.microsoft.com/en-us/library/cc179219%28Office.15%29.aspx) for a list of languages and locales for the current release of Office.
 
 
 ### Examples
@@ -175,7 +175,7 @@ To run the sample code provided, configure Microsoft Office 2013 on your compute
 Also, you'll need to create a Visual Studio 2015 Office Add-in project.
 
 
- > **Note**  To download Visual Studio 2015, see the [Office Developer Tools page](https://www.visualstudio.com/features/office-tools-vs). This page also has a link for the Office Developer Tools.
+ >**Note**  To download Visual Studio 2015, see the [Office Developer Tools page](https://www.visualstudio.com/features/office-tools-vs). This page also has a link for the Office Developer Tools.
 
 
 ### Configure Office 2013 to use additional languages for display or editing
@@ -183,7 +183,7 @@ Also, you'll need to create a Visual Studio 2015 Office Add-in project.
 You can use an Office 2013 Language pack to install an additional language. For more information about Language Packs and where to get them, see [Office 2013 Language Options](http://office.microsoft.com/en-us/language-packs/).
 
 
- > **Note**  If you are an MSDN Subscriber, you might already have the Office 2013 Language Packs available to you. To determine whether your subscription offers Office 2013 Language Packs for download, go to [MSDN Subscriptions Home](https://msdn.microsoft.com/subscriptions/manage/), enter Office 2013 Language Pack in **Software downloads**, choose  **Search**, and then select  **Products available with my subscription**. Under  **Language**, select the check box for the Language Pack you want to download, and then choose  **Go**. 
+ >**Note**  If you are an MSDN Subscriber, you might already have the Office 2013 Language Packs available to you. To determine whether your subscription offers Office 2013 Language Packs for download, go to [MSDN Subscriptions Home](https://msdn.microsoft.com/subscriptions/manage/), enter Office 2013 Language Pack in **Software downloads**, choose  **Search**, and then select  **Products available with my subscription**. Under  **Language**, select the check box for the Language Pack you want to download, and then choose  **Go**. 
 
 After you install the Language Pack, you can configure Office 2013 to use the installed language for display in the UI, for editing document content, or both. The example in this article uses an installation of Office 2013 that has the Spanish Language Pack applied.
 
@@ -217,7 +217,7 @@ To localize the add-in display name and description:
     
 2. In WorldReadyAddInManifest.xml, replace the  **DisplayName** and **Description** elements with the following block of code:.
     
-     > **Note**  You can replace the Spanish language localized strings used in this example for the  **DisplayName** and **Description** elements with the localized strings for any other language.
+     >**Note**  You can replace the Spanish language localized strings used in this example for the  **DisplayName** and **Description** elements with the localized strings for any other language.
 
   ```XML
   <DisplayName DefaultValue="World Ready add-in">
@@ -373,7 +373,7 @@ After you know the language the host application is using, you can use  **UIStri
 Replace the code in the Home.js file with the following code. The code shows how you can change the strings used in the UI elements on Home.html based on either the display language of the host application or the editing language of the host application.
 
 
- > **Note**  To switch between changing the localization of the add-in based on the language used for editing, uncomment the line of code  `var myLanguage = Office.context.contentLanguage;` and comment out the line of code `var myLanguage = Office.context.displayLanguage;`
+ >**Note**  To switch between changing the localization of the add-in based on the language used for editing, uncomment the line of code  `var myLanguage = Office.context.contentLanguage;` and comment out the line of code `var myLanguage = Office.context.displayLanguage;`
 
 
 

@@ -121,7 +121,7 @@ The following  **ItemHasRegularExpressionMatch** rule activates the add-in whene
 An  **ItemHasKnownEntity** rule activates a add-in based on the existence of an entity in the subject or body of the selected item. The [KnownEntityType](http://msdn.microsoft.com/en-us/library/432d413b-9fcc-eb50-cfea-0ed10a43bd52%28Office.15%29.aspx) type defines the supported entities. Applying a regular expression on an **ItemHasKnownEntity** rule provides the convenience where activation is based on a subset of values for an entity (for example, a specific set of URLs, or telephone numbers with a certain area code).
 
 
- > **Note**  Outlook can extract entity strings in only English regardless of the default locale specified in the manifest. Only messages but not appointments support the  **MeetingSuggestion** entity type.You cannot extract entities from items in the Sent Items folder, nor can you use an [ItemHasKnownEntity](http://msdn.microsoft.com/en-us/library/87e10fd2-eab4-c8aa-bec3-dff92d004d39%28Office.15%29.aspx) rule to activate an add-in for items in the Sent Items folder.
+ >**Note**  Outlook can extract entity strings in only English regardless of the default locale specified in the manifest. Only messages but not appointments support the  **MeetingSuggestion** entity type.You cannot extract entities from items in the Sent Items folder, nor can you use an [ItemHasKnownEntity](http://msdn.microsoft.com/en-us/library/87e10fd2-eab4-c8aa-bec3-dff92d004d39%28Office.15%29.aspx) rule to activate an add-in for items in the Sent Items folder.
 
 The  **ItemHasKnownEntity** rule supports the attributes in the following table. Note that while specifying a regular expression is optional in an **ItemHasKnownEntity** rule, if you choose to use a regular expression as an entity filter, you must specify both the **RegExFilter** and **FilterName** attributes.
 
@@ -163,7 +163,7 @@ You can obtain matches to a regular expression by using the following methods on
 When the regular expressions are evaluated, the matches are returned to your add-in in an array object. For  **getRegExMatches**, that object has the identifier of the name of the regular expression. 
 
 
- > **Note**  An Outlook rich client does not return matches in any particular order in the array. Also, you should not assume the Outlook rich client to return matches in the same order in this array as Outlook Web App or OWA for Devices, even when you run the same add-in on each of these clients on the same item in the same mailbox. For other differences in processing regular expressions between an Outlook rich client and Outlook Web App or OWA for Devices, see [Limits for activation and JavaScript API for Outlook add-ins](../outlook/testing/limits-for-activation-and-javascript-api-for-outlook-add-ins.md).
+ >**Note**  An Outlook rich client does not return matches in any particular order in the array. Also, you should not assume the Outlook rich client to return matches in the same order in this array as Outlook Web App or OWA for Devices, even when you run the same add-in on each of these clients on the same item in the same mailbox. For other differences in processing regular expressions between an Outlook rich client and Outlook Web App or OWA for Devices, see [Limits for activation and JavaScript API for Outlook add-ins](../outlook/testing/limits-for-activation-and-javascript-api-for-outlook-add-ins.md).
 
 
 ### Examples

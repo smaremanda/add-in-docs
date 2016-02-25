@@ -6,7 +6,7 @@ Create an Office add-in using any text editor and a Yeoman generator.
 
 An Office add-in is a web app that you host within an Office application. In this topic, the Yeoman generator provides project scaffolding and build management, while the  `manifest.xml` file tells the Office application where your add-in is located and how you want it to appear. The Office application takes care of hosting it within Office.
 
- > **Note**  The instructions include steps that use the Windows command prompt but are equally applicable for other shell environments. 
+ >**Note**  The instructions include steps that use the Windows command prompt but are equally applicable for other shell environments. 
 
 
 ## Prerequisites for Yeoman generator
@@ -186,7 +186,7 @@ h1,h3,h4,p,a,li
     
 3. Go back to the parent project folder and make sure the XML file named manifest-myHelloWorldaddin.xml contains the following XML code.
     
-     > **Important**  The value in the  `<id>` tag is a GUID that the yeoman generator creates when it generates the project. Do not change the GUID that the yeoman generator created for your add-in.If the host is Azure, the the  `SourceLocation` value will be a URL that is similar to _https://[name-of-your-web-app].azurewebsites.net/[path-to-add-in]_. If you are using the self-hosted option, as in this example, it will be _https://localhost:8443/[path-to-add-in]_.
+     >**Important**  The value in the  `<id>` tag is a GUID that the yeoman generator creates when it generates the project. Do not change the GUID that the yeoman generator created for your add-in.If the host is Azure, the the  `SourceLocation` value will be a URL that is similar to _https://[name-of-your-web-app].azurewebsites.net/[path-to-add-in]_. If you are using the self-hosted option, as in this example, it will be _https://localhost:8443/[path-to-add-in]_.
 
   ```XML
   <?xml version="1.0" encoding="utf-8"?> 
@@ -223,7 +223,7 @@ To test your add-in locally, open your browser and enter the URL for your home.h
 You will see an error saying "There is a problem with this website's security certificate." Select "Continue to this website..." and then you'll see the text, "Hello World!"
 
 
- > **Note**  The generated add-in comes with a self-signed certificate and key; add these to your trusted authority list of certificates so your browser does not issue certificate warnings. Refer to the [gulp-webserver](https://www.npmjs.com/package/gulp-webserver) documentation if you want to use your own self-signed certificates.Refer to [this KB article #PH18677](https://support.apple.com/kb/PH18677?locale=en_US) for instructions on how to trust a certificate in OS X Yosemite.
+ >**Note**  The generated add-in comes with a self-signed certificate and key; add these to your trusted authority list of certificates so your browser does not issue certificate warnings. Refer to the [gulp-webserver](https://www.npmjs.com/package/gulp-webserver) documentation if you want to use your own self-signed certificates.Refer to [this KB article #PH18677](https://support.apple.com/kb/PH18677?locale=en_US) for instructions on how to trust a certificate in OS X Yosemite.
 
 
 ## Install the add-in for testing

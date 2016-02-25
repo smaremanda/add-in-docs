@@ -106,10 +106,10 @@ To design the appearance of the add-in, you add HTML to the default page of the 
     
   3. Make sure that the  **Start Document** property is set to **[New Excel Workbook]**.
     
-     > **Note**  If you were to choose  **Internet Explorer** or **Google Chrome** as the **Start Action** property, and then set **[New Excel Workbook]** as the **Start Document** property, Excel Online will start in the browser when you run the add-in.
+     >**Note**  If you were to choose  **Internet Explorer** or **Google Chrome** as the **Start Action** property, and then set **[New Excel Workbook]** as the **Start Document** property, Excel Online will start in the browser when you run the add-in.
 3. On the  **Debug** menu, choose **Start Debugging** or press the F5 key.
     
-     > **Note**  If this is the first time you've launched debugging in IIS Express (which is installed by Visual Studio), you'll prompted to trust and install the self-signed Localhost certificate used by IIS Express. Answer  **Yes** to both prompts to continue.
+     >**Note**  If this is the first time you've launched debugging in IIS Express (which is installed by Visual Studio), you'll prompted to trust and install the self-signed Localhost certificate used by IIS Express. Answer  **Yes** to both prompts to continue.
 
     Excel opens a blank workbook and add-in appears in the task pane.
     
@@ -178,7 +178,7 @@ function writeToPage(text) {
   ```
 
 
-     > **Note**  Do not to delete or overwrite the  `Office.initialize` event handler function (although you can replace the code within it). The `Office.initialize` event handler must be in place for your add-in to initialize correctly at runtime.
+     >**Note**  Do not to delete or overwrite the  `Office.initialize` event handler function (although you can replace the code within it). The `Office.initialize` event handler must be in place for your add-in to initialize correctly at runtime.
 
     The code in the  `writeData()` function calls the[Document.setSelectedDataAsync](http://msdn.microsoft.com/EN-US/library/fp142145.aspx) method to write "Hello World!" to the current cell when you choose the **Write Data** button. Most of the methods used in this walkthrough are asynchronous, which is why their names end with "Async", and callback functions like the anonymous function passed as the argument following "Hello World!" are used. For more information about using "Async" methods, see[Asynchronous programming in Office Add-ins](../how-to/asynchronous-programming-in-office-add-ins.md).
     
@@ -500,7 +500,7 @@ You can perform the following steps to modify this add-in project so that it wil
     
 2. Choose the  **Write Data**,  **Read Selected Data**,  **Bind Selected Data**,  **Read Bound Data**, and  **Add Event** buttons to perform the same actions as when working in Excel.
     
-     > **Note**  In Word, the event handler won't run to display the bound data until you move the cursor outside of the table inserted by the  **Write Data** button.
+     >**Note**  In Word, the event handler won't run to display the bound data until you move the cursor outside of the table inserted by the  **Write Data** button.
 
     **Figure 9. Debugging in Word**
 
@@ -538,7 +538,7 @@ You can perform the following steps to modify this add-in project so that it wil
 
     The  **xsi:type** attribute specifies the type of Office Add-in, which determines how the add-in runs when the user inserts it into a document or workbook. The previous value, `"TaskPaneApp"`, specifies that the add-in runs in a task pane. Changing  **xsi:type** to `"ContentApp"` specifies that the add-in runs in line with the workbook content as a content add-in.
     
-     > **Note**  In this release of Office, content add-ins can run only in the [client applications that support content add-ins](../overview/platform-overview.md#StartBuildingApps_SupportedApplications). After you change  **xsi:type** to `"ContentApp"` in the manifest, this add-in will run only in Access web apps, Excel, or PowerPoint.
+     >**Note**  In this release of Office, content add-ins can run only in the [client applications that support content add-ins](../overview/platform-overview.md#StartBuildingApps_SupportedApplications). After you change  **xsi:type** to `"ContentApp"` in the manifest, this add-in will run only in Access web apps, Excel, or PowerPoint.
 3. Add the following  **RequestedWidth** and **RequestedHeight** elements in the manifest within the `<DefaultSettings>` tags.
     
   ```XML
@@ -599,7 +599,7 @@ To learn more about developing Office Add-ins, see the following:
 - [Package your add-in using Napa or Visual Studio to prepare for publishing](../publish/package-your-add-in-using-napa-or-visual-studio.md)
     
 
- > **Tip**  To deploy and publish an add-in from Visual Studio, see [Package your add-in using Napa or Visual Studio to prepare for publishing](../publish/package-your-add-in-using-napa-or-visual-studio.md). To publish an add-in without using Visual Studio, you can deploy the HTML page for your add-in and .js files on a web server, and then upload your add-in manifest file to a [network share catalog](../publish/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins.md) or[Add-in Catalog on SharePoint](../publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog.md). Before uploading the manifest file, replace the  `~remoteAppUrl` token in the `DefaultValue` attribute of `SourceLocation` tag to specify the full URL of the default HTML page for your add-in on the web server where it is hosted.
+ >**Tip**  To deploy and publish an add-in from Visual Studio, see [Package your add-in using Napa or Visual Studio to prepare for publishing](../publish/package-your-add-in-using-napa-or-visual-studio.md). To publish an add-in without using Visual Studio, you can deploy the HTML page for your add-in and .js files on a web server, and then upload your add-in manifest file to a [network share catalog](../publish/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins.md) or[Add-in Catalog on SharePoint](../publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog.md). Before uploading the manifest file, replace the  `~remoteAppUrl` token in the `DefaultValue` attribute of `SourceLocation` tag to specify the full URL of the default HTML page for your add-in on the web server where it is hosted.
 
 
 ## Additional resources

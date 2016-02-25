@@ -11,7 +11,7 @@ To get started:
 
 - Get an Office 365 developer account, if you don't already have one, or have access to a SharePoint site.
     
-     > **Note**  To sign up for a free Office 365 developer account, join our [Office 365 developer program](https://dev.office.com/devprogram).
+     >**Note**  To sign up for a free Office 365 developer account, join our [Office 365 developer program](https://dev.office.com/devprogram).
 - Set up an add-in catalog on Office 365 (SharePoint Online). An add-in catalog is a dedicated site collection in SharePoint Online that hosts document libraries for Office Add-ins. If you have your own SharePoint site, you can set up an add-in catalog document library. For information, see:
     
       - [Set up an add-in catalog on Office 365](https://msdn.microsoft.com/EN-US/library/office/dn574752.aspx)
@@ -26,7 +26,7 @@ To debug your add-in by using Office Online:
 
 1. Deploy your add-in to a server that supports SSL.
     
-     > **Note**  We recommend that you use the [Yeoman generator](https://github.com/OfficeDev/generator-office) to create and host your add-in.
+     >**Note**  We recommend that you use the [Yeoman generator](https://github.com/OfficeDev/generator-office) to create and host your add-in.
 2. In your [add-in manifest file](../overview/add-in-manifests.md), update the  **SourceLocation** element value to include an absolute, rather than a relative, URI. For example:
     
      ` <SourceLocation DefaultValue="https://localhost:44300/App/Home/Home.html" />`

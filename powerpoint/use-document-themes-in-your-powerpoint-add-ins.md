@@ -64,7 +64,7 @@ Use the following steps to add and reference the OfficeThemes.css file to your a
     
 2. Name the new style sheet OfficeThemes.
     
-     > **Important**  The style sheet must be named OfficeThemes or the feature that dynamically updates add-in fonts and colors when a user changes the theme won't work.
+     >**Important**  The style sheet must be named OfficeThemes or the feature that dynamically updates add-in fonts and colors when a user changes the theme won't work.
 3. Delete the default  **body** class ( `body {}`) in the file, and copy and paste the following CSS code into the file.
     
   ```

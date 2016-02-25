@@ -38,7 +38,7 @@ You can categorize the primary objects and methods supported by content and task
   - Use the [Settings](http://msdn.microsoft.com/library/ad733387-a58c-4514-8fc2-53e64fad468d%28Office.15%29.aspx) object to save custom data, such as user preferences, and add-in state.
     
 
- > **Important**  Some of the API members aren't supported across all Office applications that can host content and task pane add-ins. To determine which members are supported, see any of the following:
+ >**Important**  Some of the API members aren't supported across all Office applications that can host content and task pane add-ins. To determine which members are supported, see any of the following:
 
 For a summary of the JavaScript API for Office support available across Office host applications, see the [API support matrix](../overview/understanding-the-javascript-api-for-office.md#APIOverview_APISupportMatrix) in [Understanding the JavaScript API for Office](../overview/understanding-the-javascript-api-for-office.md).
 

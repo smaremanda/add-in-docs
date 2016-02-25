@@ -8,7 +8,7 @@ The F12 developer tools help you debug, test, and speed up your webpages. They c
 The F12 developer tools can help develop and debug your Office add-in if you are not using an IDE like Visual Studio or if you need to investigate a problem while running your add-in outside the IDE. The F12 developer tools can be started after your add-in is running.
 This article shows how you can use the Debugger tool from the F12 developer tools in Windows 10 to test your Office add-in. You can test add-ins from the Store and also any add-ins in your account. The F12 tools display in their own window and do not use Visual Studio.
 
- > **Note**  The Debugger is part of the F12 developer tools on Windows 10 and Internet Explorer. It is not in earlier versions of Windows. 
+ >**Note**  The Debugger is part of the F12 developer tools on Windows 10 and Internet Explorer. It is not in earlier versions of Windows. 
 
 
 ### Prerequisites

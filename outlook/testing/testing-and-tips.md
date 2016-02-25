@@ -63,7 +63,7 @@ To use Outlook Web App (OWA) to install an Outlook add-in, follow these steps:
 6. Select the user name in the upper-right corner of the window and select **My Mail** to switch to your email to test the add-in.
     
 
-> **Note**  If you are not using any of the following to develop your add-in: 
+>**Note**  If you are not using any of the following to develop your add-in: 
 - Office 365 developer tenant
 - Napa Office 365 Development Tools
 - Visual Studio

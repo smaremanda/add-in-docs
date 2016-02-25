@@ -117,7 +117,7 @@ You can also build a task pane add-in using [Visual Studio](http://msdn.microsof
     
     The Home.js file appears in the code editor.
     
-     > **Note**  You can use the  `Office.initialize` method to define other actions that run when the add-in starts. If you want your code to access the Office object model, this function is the best place to put that code. If you add that code to the `Onload` event of the default HTML file, that event might be raised before the Office object model is initialized, and an error might occur.
+     >**Note**  You can use the  `Office.initialize` method to define other actions that run when the add-in starts. If you want your code to access the Office object model, this function is the best place to put that code. If you add that code to the `Onload` event of the default HTML file, that event might be raised before the Office object model is initialized, and an error might occur.
 4. In the Home.js file, change the  `getDataFromSelection` function by adding this line of code: `showImages(result.value);`
     
     Here's what your function looks like after you've added the code.
@@ -141,7 +141,7 @@ You can also build a task pane add-in using [Visual Studio](http://msdn.microsof
 
     This code gets the value of text that the user selects and calls a method to display images for the selected text. You'll define that method in the next procedure.
     
-     > **Note**  Like other methods in the JavaScript API for Office, this method is asynchronous in that it doesn't prevent the add-in from performing other operations while this method runs.
+     >**Note**  Like other methods in the JavaScript API for Office, this method is asynchronous in that it doesn't prevent the add-in from performing other operations while this method runs.
 
     The call to  `getSelectedDataAsync` passes an anonymous function with a parameter, named `result`, as the callback argument. When the callback function runs, it uses the  `result` parameter to access the value property of the `AsyncResult` object to display the data in the cell that the user chose.
     

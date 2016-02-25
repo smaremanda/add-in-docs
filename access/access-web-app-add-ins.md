@@ -16,7 +16,7 @@ To create an Office Add-in that targets Access web apps, you need:
 - A SharePoint Online site (included in many Office 365 subscriptions). This site must have an add-in catalog. For more information, see [Set up an add-in catalog on SharePoint](http://msdn.microsoft.com/en-us/library/office/fp123530.aspx).
 
 
- > **Note**  Office Add-ins will work with Access web apps hosted on SharePoint Online or Office 365. The Access 2013 desktop application doesn't support Office Add-ins. Office Add-ins targeting Access web apps are supported by version 1.1 and later of Office.js.
+ >**Note**  Office Add-ins will work with Access web apps hosted on SharePoint Online or Office 365. The Access 2013 desktop application doesn't support Office Add-ins. Office Add-ins targeting Access web apps are supported by version 1.1 and later of Office.js.
 
 
 ## Create a project in Visual Studio
@@ -51,7 +51,7 @@ To create an Office Add-in that targets Access web apps, you need:
 14. In  **Solution Explorer**, right-click the project's Manifest node (directly under the project name) and select  **Open Folder in File Explorer**. Make a note of the path to this file. You will need this value later.
 
 
- > **Note**  You can't debug the add-in without deploying it with an Access web app.
+ >**Note**  You can't debug the add-in without deploying it with an Access web app.
 
 
 ## Review the Manifest and the Home.Html file
@@ -62,7 +62,7 @@ To create an Office Add-in that targets Access web apps, you need:
   ```
   <script src="https://appsforoffice.microsoft.com/lib/1/hosted/Office.js" type="text/javascript"></script>
   ```
- > **Note** that script tag references version 1.1 (and above) of Office.js. Access uses API elements introduced in version 1.1.
+ >**Note** that script tag references version 1.1 (and above) of Office.js. Access uses API elements introduced in version 1.1.
 
 2. Open the manifest file associated with your project. This file will be named after the name of your project, and have the extension ".xml".
 
@@ -71,13 +71,13 @@ To create an Office Add-in that targets Access web apps, you need:
   ```
   <Hosts> <Host Name="Database" /> </Hosts>
   ```
- > **Note** This is where the applications that can use the add-in are listed. Because you selected  **Access** in the **Create Office Add-in** dialog box, **Database** is listed. If you included Excel, there is an entry for **Workbook** as well.
+ >**Note** This is where the applications that can use the add-in are listed. Because you selected  **Access** in the **Create Office Add-in** dialog box, **Database** is listed. If you included Excel, there is an entry for **Workbook** as well.
 
 Office and SharePoint Add-ins are web based. The code for the add-in must be hosted on a web server. For this example, the web server is your development computer. The server must be running to serve the add-in for testing, which means that Visual Studio must be running the add-in at the time that you view and debug it in SharePoint.
 
 For a user to find and use the add-in, it needs to be registered with an Add-in Catalog in SharePoint. The information that the Add-in Catalog needs is contained in the manifest file.
 
- > **Note**  You will need to create an Access web app to host your Office Add-in.
+ >**Note**  You will need to create an Access web app to host your Office Add-in.
 
 
 ## Publish your add-in to a SharePoint Online catalog
@@ -98,7 +98,7 @@ For a user to find and use the add-in, it needs to be registered with an Add-in 
 7. Choose the manifest file in your project, and choose  **OK**. SharePoint will now add your add-in to the local SharePoint library.
 
 
- > **Note**  This procedure assumes that you have created a test site on SharePoint. If you haven't, you can do so from the  **Sites** tab at the top of the SharePoint window. You can use an existing Access web apps if you have one available.
+ >**Note**  This procedure assumes that you have created a test site on SharePoint. If you haven't, you can do so from the  **Sites** tab at the top of the SharePoint window. You can use an existing Access web apps if you have one available.
 
 
 ## Create an Access web app to host your add-in
@@ -112,7 +112,7 @@ For a user to find and use the add-in, it needs to be registered with an Add-in 
 
 4. You should now see a tile for  **Access App**.
 
-     > **Note**  Remember that this is not your Office Add-in, it is a new Access web apps. This Access web apps will host your Office Add-in.
+     >**Note**  Remember that this is not your Office Add-in, it is a new Access web apps. This Access web apps will host your Office Add-in.
 5. Choosing this tile brings up the  **Adding an Access app** dialog box. Enter a unique name for your Accessapp and choose **Create**. It might take a while for SharePoint to create your app. When it is finished, you will see your Accessapp listed in the  **Site Contents** page with a **new** label by it.
 
 6. The Accessapp now requires you to open it in the desktop version of Microsoft Access 2013 and add data to it before it can be opened and viewed in SharePoint.

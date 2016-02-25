@@ -6,7 +6,7 @@ Outlook add-in support in Outlook for Mac differs from that for other supported 
 
 You can create and run an Outlook add-in the same way in Outlook for Mac as in the other hosts including Outlook for Windows, OWA for Devices, and Outlook Web App, without customizing the JavaScript for each host. The same calls from the add-in to the JavaScript API for Office generally work the same way, except for the areas described in the following table.
 
- > **Note**  Outlook for Mac supports JavaScript API for Office in Outlook read mode only.
+ >**Note**  Outlook for Mac supports JavaScript API for Office in Outlook read mode only.
 
 
 

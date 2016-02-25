@@ -26,7 +26,7 @@ You can verify the version of Exchange 2013 by using one of the following approa
     
   2. On the  **Developer** tab of the ribbon, choose **Visual Basic**.
     
-     > **Note**  Not seeing the  **Developer** tab? See[How to: Show the Developer Tab on the Ribbon](http://msdn.microsoft.com/en-us/library/ce7cb641-44f2-4a40-867e-a7d88f8e98a9%28Office.15%29.aspx) to turn it on.
+     >**Note**  Not seeing the  **Developer** tab? See[How to: Show the Developer Tab on the Ribbon](http://msdn.microsoft.com/en-us/library/ce7cb641-44f2-4a40-867e-a7d88f8e98a9%28Office.15%29.aspx) to turn it on.
   3. In the Visual Basic Editor, choose  **View**,  **Immediate Window**.
     
   4. Type the following in the Immediate window to display the version of the Exchange Server. The major version of the returned value must be equal to or greater than 15.
@@ -59,7 +59,7 @@ You can verify the version of Exchange 2013 by using one of the following approa
 Any one of the Outlook rich clients can disable an add-in for performance reasons, including exceeding usage thresholds for CPU core or memory, tolerance for crashes, and length of time to process all the regular expressions for an add-in. When this happens, the Outlook rich client displays a notification that it is disabling the add-in. 
 
 
- > **Note**  Only Outlook rich clients monitor resource usage, but disabling an add-in in an Outlook rich client also disables the add-in in Outlook Web App and OWA for Devices.
+ >**Note**  Only Outlook rich clients monitor resource usage, but disabling an add-in in an Outlook rich client also disables the add-in in Outlook Web App and OWA for Devices.
 
 Use one of the following approaches to verify whether an add-in is disabled: 
 
@@ -128,7 +128,7 @@ Figure 1 shows a summary of the steps to verify whether Outlook has a valid vers
     
     [GUID]\[BASE 64 Hash]]\Manifests\[ManifestID]_[ManifestVersion]
     
-     > **Note**  
+     >**Note**  
 
     The following is an example of a path to a manifest installed for a mailbox for the user John:
     
@@ -272,7 +272,7 @@ This section applies to all activation rules that use regular expressionsâ€�
 |Item body is HTML|3 KB|3 KB|
 - Time spent on evaluating all regular expressions of a read add-in for an Outlook rich client: By default, for each read add-in, Outlook must finish evaluating all the regular expressions in its activation rules within 1 second. Otherwise Outlook retries up to three times and disables the add-in if Outlook cannot complete the evaluation. Outlook displays a message in the notification bar that the add-in has been disabled. The amount of time available for your regular expression can be modified by setting a group policy or a registry key. 
     
-     > **Note**  Note that if the Outlook rich client disables a read add-in, the read add-in is not available for use for the same mailbox on the Outlook rich client, Outlook Web App and OWA for Devices.
+     >**Note**  Note that if the Outlook rich client disables a read add-in, the read add-in is not available for use for the same mailbox on the Outlook rich client, Outlook Web App and OWA for Devices.
 
 ## Additional resources
 <a name="TroubleshootingMailApps_addresources"> </a>
