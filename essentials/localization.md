@@ -76,7 +76,7 @@ For example, an Office Add-in can specify the  **DefaultLocale** as `en-us`. For
 
 ```XML
 <DefaultLocale>en-us</DefaultLocale>
-â€¦
+...
 <DisplayName DefaultValue="Video player">
     <Override Locale="fr-fr" Value="Lecteur vidéo" />
 </DisplayName>
@@ -91,7 +91,7 @@ The following example applies a locale override for the  **Description** element
 
 ```XML
     <DefaultLocale>en-us</DefaultLocale>
-â€¦
+...
     <Description DefaultValue=
       "Watch YouTube videos referenced in the emails you receive 
       without leaving your email client.">
@@ -284,7 +284,7 @@ Figure 3 shows the heading (h1) element and the paragraph (p) element that will 
 #### Add the resource file that contains the localized strings
 <a name="bk_CreateResourceFile"> </a>
 
-The JavaScript resource file contains the strings used for the add-in UI. The sample add-in UI has an <h1> element that displays a greeting, and a <p> element that introduces the add-in to the user. 
+The JavaScript resource file contains the strings used for the add-in UI. The sample add-in UI has an h1 element that displays a greeting, and a p element that introduces the add-in to the user. 
 
 To enable localized strings for the heading and paragraph, you place the strings in a separate resource file. The resource file creates a JavaScript object that contains a separate JavaScript Object Notation (JSON) object for each set of localized strings. The resource file also provides a method for getting back the appropriate JSON object for a given locale. 
 
