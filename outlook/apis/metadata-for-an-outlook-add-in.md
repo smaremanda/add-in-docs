@@ -134,13 +134,13 @@ The following example shows a simplified set of methods for an Outlook add-in th
 This example includes the following methods:
 
 
-- [Office.initialize](http://msdn.microsoft.com/en-us/library/727adf79-a0b5-48d2-99c7-6642c2c334fc%28Office.15%29.aspx) â€” Initializes the add-in and loads the custom property bag from the Exchange server.
+- [Office.initialize](http://msdn.microsoft.com/en-us/library/727adf79-a0b5-48d2-99c7-6642c2c334fc%28Office.15%29.aspx) -- Initializes the add-in and loads the custom property bag from the Exchange server.
     
--  **customPropsCallback** â€” Gets the custom property bag that is returned from the server and saves it for later use.
+-  **customPropsCallback** -- Gets the custom property bag that is returned from the server and saves it for later use.
     
--  **updateProperty** â€” Sets or updates a specific property, and then saves the change to the server.
+-  **updateProperty** -- Sets or updates a specific property, and then saves the change to the server.
     
--  **removeProperty** â€” Removes a specific property from the property bag, and then saves the removal to the server.
+-  **removeProperty** -- Removes a specific property from the property bag, and then saves the removal to the server.
     
 
 
