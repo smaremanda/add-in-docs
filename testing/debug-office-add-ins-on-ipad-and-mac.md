@@ -30,8 +30,7 @@ Weinre is a debugger for web pages, similar to the F12 tools, that is designed t
 3. To ensure that IIS, Apache, or the web server of your choice is running on your computer, verify that  `http://localhost` returns a valid page.
     
 4. Start Weinre:  `weinre --httpPort 8080 --boundHost <ipaddr>`, where  _ _&lt;ipaddr&gt;__ is your PC's or Mac's IP address.
-5. step 5
-    
+
    Navigate to  `http://<ipaddr>:8080` to access the Weinre server home page.
  
 ![Weinre server home page at http://<ipaddr>:8080](../images/8db5216c-35b4-4b1b-98ae-6aed9b54f287.jpg)
