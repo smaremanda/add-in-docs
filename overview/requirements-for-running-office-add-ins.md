@@ -93,7 +93,7 @@ Specifically for OWA for Devices, and Outlook Web App running in a browser on sm
 A typical Office Add-in solution involves the following components:
 
 
-- A client device running the supported Office clientâ€”which can be a desktop, laptop, tablet, or smartphone (for Outlook add-ins on OWA for Devices). 
+- A client device running the supported Office client - which can be a desktop, laptop, tablet, or smartphone (for Outlook add-ins on OWA for Devices). 
     
 - For Access web apps, Word, Excel, PowerPoint, or Project:
     
