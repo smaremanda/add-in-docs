@@ -41,7 +41,7 @@ To debug your add-in by using Office Online:
     
     The following are some issues that you might encounter as you debug:
     
-      - Some JavaScript errors that you see might originate from Office Online.
+  - Some JavaScript errors that you see might originate from Office Online.
     
   - The browser might show an invalid certificate error that you will need to bypass.
     
