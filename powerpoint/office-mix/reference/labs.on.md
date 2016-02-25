@@ -13,7 +13,7 @@ function on(event: string, handler: Core.IEventCallback): void
 ## Parameters
 
 
-|||
+|**Name**|**Description**|
 |:-----|:-----|
 |event|The event you wish to add.|
 |handler|The event handler you wish to add, using [Labs.Core.IEventCallback](../powerpoint/office-mix/reference/labs.core.ieventcallback.md) interface.|
