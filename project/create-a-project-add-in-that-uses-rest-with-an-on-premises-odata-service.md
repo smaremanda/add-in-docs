@@ -127,7 +127,7 @@ For more information about the manifest, see [Office Add-ins XML manifest](../ov
     
 1. In  **Solution Explorer**, go to the folder named Images.
     
-2. To be displayed in the  **Office Add-ins** drop-down list, the icon must be 32 x 32 pixels. For example, install the Project 2013 SDK, and then choose the **Images** folder and add the following file from the SDK: `â€¦\Samples\Apps\HelloProjectOData\HelloProjectODataWeb\Images\NewIcon.png`
+2. To be displayed in the  **Office Add-ins** drop-down list, the icon must be 32 x 32 pixels. For example, install the Project 2013 SDK, and then choose the **Images** folder and add the following file from the SDK: `\Samples\Apps\HelloProjectOData\HelloProjectODataWeb\Images\NewIcon.png`
     
     Alternately, use your own 32 x 32 icon; or, copy the following image to a file named NewIcon.png, and then add that file to the  `HelloProjectODataWeb\Images` folder:
 ![Icon for the HelloProjectOData app](../images/pj15_HelloProjectData_NewIcon.jpg)
