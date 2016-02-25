@@ -13,7 +13,7 @@ class ActivityComponentInstance extends Labs.ComponentInstance<Components.Activi
 ## Properties
 
 
-|||
+|**Name**|**Description**|
 |:-----|:-----|
 | `public var component: Components.IActivityComponentInstance`|The underlying [Labs.Components.IActivityComponentInstance](../powerpoint/office-mix/reference/labs.components.iactivitycomponentinstance.md) this class represents|
 
@@ -31,7 +31,7 @@ Creates a new instance of the [Labs.Components.IActivityComponentInstance](../po
  **Parameters**
 
 
-|||
+|**Name**|**Description**|
 |:-----|:-----|
 | _component_|The  **IActivityComponentInstance** to create this class from this class.|
 
@@ -44,6 +44,6 @@ Builds a new  **ActivityComponentAttempt** instance and implements the abstract 
  **Parameters**
 
 
-|||
+|**Name**|**Description**|
 |:-----|:-----|
 | _createAttemptResult_|The result of a create attempt action.|
