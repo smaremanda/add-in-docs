@@ -11,7 +11,6 @@ Gets the id of the control that triggered calling this function.
 |**[Last changed](#bk_history) in Mailbox**|1.3|
 |**Applicable Outlook modes**|Read and Compose|
 
-[See all support details](#bk_support)
 
 
 ```

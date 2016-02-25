@@ -6,7 +6,6 @@ Gets the URL of the document that the host application currently has open.
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Project, Word|
 |**[Last changed](#bk_history) in**|1.1|
-[See all support details](#bk_support)
 
 ```
 var docUrl = Office.context.document.url;

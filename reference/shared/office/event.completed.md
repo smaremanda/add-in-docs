@@ -11,7 +11,6 @@ The callback that the add-in invokes to let Outlook know that the operation is d
 |**[Last changed](#bk_history) in Mailbox**|1.3|
 |**Applicable Outlook modes**|Read and Compose|
 
-[See all support details](#bk_support)
 
 
 ```

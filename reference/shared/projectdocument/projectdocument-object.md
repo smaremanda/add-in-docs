@@ -5,8 +5,7 @@ An abstract class that represents the project document (the active project) with
 |||
 |:-----|:-----|
 |**Hosts:**|Project|
-|**[Added](#bk_history) in**|1.0|
-[See all support details](#bk_support)
+|**Added in**|1.0|
 
 ```
 Office.context.document

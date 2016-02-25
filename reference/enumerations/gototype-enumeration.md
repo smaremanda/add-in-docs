@@ -5,8 +5,7 @@ Specifies the type of place or object to navigate to.
 |||
 |:-----|:-----|
 |**Hosts:**|Excel, PowerPoint, Word|
-|**[Added](#bk_history) in**|1.1|
-[See all support details](#bk_support)
+|**Added in**|1.1|
 
 ```
 Office.GoToType

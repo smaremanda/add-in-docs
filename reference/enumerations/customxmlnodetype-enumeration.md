@@ -2,7 +2,6 @@
 # CustomXMLNodeType enumeration (JavaScript API for Office)
 Specifies the node type.
 
-[See all support details](#bk_support)
 
 
 |||
@@ -10,7 +9,6 @@ Specifies the node type.
 |**Hosts:**|Word|
 |**[Last changed](#bk_history) in**|1.1|
 
-[See all support details](#bk_support)
 
 
 ```

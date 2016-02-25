@@ -5,8 +5,7 @@ Gets the document file size in bytes.
 |||
 |:-----|:-----|
 |**Hosts:**|PowerPoint,Word|
-|**[Added](#bk_history) in**|1.1|
-[See all support details](#bk_support)
+|**Added in**|1.1|
 
 ```
 var fileSize = file.size;

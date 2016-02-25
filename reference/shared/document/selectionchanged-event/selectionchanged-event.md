@@ -6,7 +6,6 @@ Occurs when the selection in the document is changed.
 |:-----|:-----|
 |**Hosts:**|Excel, PowerPoint, Word|
 |**Introduced in**|1.1|
-[See all support details](#bk_support)
 
 ```
 Office.EventType.DocumentSelectionChanged

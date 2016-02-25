@@ -6,7 +6,6 @@
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Word|
 |**[Last changed](#bk_history)**|1.1|
-[See all support details](#bk_support)
 
 ```
 Office.BindingType

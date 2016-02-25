@@ -6,7 +6,6 @@ Provides information about the binding that raised the [DataChanged](../referenc
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Word|
 |**[Last changed](#bk_history) in BindingEvents**|1.1|
-[See all support details](#bk_support)
 
 ```
 Office.EventType.BindingDataChanged

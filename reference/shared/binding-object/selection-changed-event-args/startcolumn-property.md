@@ -6,7 +6,6 @@ Gets the index of the first column of the selection (zero-based).
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Word|
 |**[Last changed](#bk_history) in**|1.1|
-[See all support details](#bk_support)
 
 ```
 var startCol = eventArgsObj.startColumn;

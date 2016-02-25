@@ -6,7 +6,6 @@ Gets a  **Document** object that represents the document that raised the **Selec
 |:-----|:-----|
 |**Hosts:**|Excel, Word|
 |**Added in**|1.1|
-[See all support details](#bk_support)
 
 
 

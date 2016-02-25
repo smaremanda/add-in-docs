@@ -5,8 +5,7 @@ Gets an  **ActiveView** enumeration value that identifies the state of the activ
 |||
 |:-----|:-----|
 |**Hosts:**|PowerPoint|
-|**[Added](#bk_history) in**|1.1|
-[See all support details](#bk_support)
+|**Added in**|1.1|
 
 ```
 var myView = eventArgsObj.activeView;

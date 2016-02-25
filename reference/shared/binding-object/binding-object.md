@@ -7,7 +7,6 @@ An abstract class that represents a binding to a section of the document.
 |**Hosts:**|Access, Excel, Word|
 |**Available in [Requirement sets](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|MatrixBinding, TableBinding, TextBinding|
 |**Last changed in TableBinding**|1.1|
-[See all support details](#bk_support)
 
 ```
 Office.context.document.bindings.getByIdAsync(id);

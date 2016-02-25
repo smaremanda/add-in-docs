@@ -6,7 +6,6 @@ Specifies the result of an asynchronous call.
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Outlook, PowerPoint, Project, Word|
 |**[Last changed](#bk_history) in**|1.1|
-[See all support details](#bk_support)
 
 ```
 Office.AsyncResultStatus

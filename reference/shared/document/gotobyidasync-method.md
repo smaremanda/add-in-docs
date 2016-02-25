@@ -7,7 +7,6 @@ Goes to the specified object or location in the document.
 |**Hosts:**|Excel, PowerPoint, Word|
 |**Available in requirement sets**|Not in a set|
 |**Added in**|1.1|
-[See all support details](#bk_support)
 
 [![Try out this call in the interactive API Tutorial for Excel](../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](http://officeapitutorial.azurewebsites.net/Redirect.mdl?scenario=Navigate+to+Binding)
 

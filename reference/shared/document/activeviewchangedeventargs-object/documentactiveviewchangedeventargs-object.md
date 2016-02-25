@@ -6,7 +6,6 @@ Provides information about the view that raised the [ActiveViewChanged](../refer
 |:-----|:-----|
 |**Hosts:**|PowerPoint|
 |**Introduced in**|1.1|
-[See all support details](#bk_support)
 
 ```
 

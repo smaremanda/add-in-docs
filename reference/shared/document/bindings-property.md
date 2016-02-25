@@ -6,7 +6,6 @@ Gets an object that provides access to the bindings defined in the document.
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Word|
 |**[Last changed](#bk_history) in**|1.1|
-[See all support details](#bk_support)
 
 ```
 var docBindings = Office.context.document.bindings;

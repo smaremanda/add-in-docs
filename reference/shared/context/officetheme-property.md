@@ -9,9 +9,8 @@ Provides access to the properties for Office theme colors.
 |:-----|:-----|
 |**Hosts:**|Excel, Outlook, PowerPoint, Word|
 |**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|Not in a set|
-|**[Added](#bk_history) in**|1.3|
+|**Added in**|1.3|
 
-[See all support details](#bk_support)
 
 
 ```

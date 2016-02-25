@@ -6,7 +6,6 @@ Gets the number of columns selected.
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Word|
 |**[Last changed](#bk_history) in**|1.1|
-[See all support details](#bk_support)
 
 ```
 var colCount = eventArgsObj.columnCount;

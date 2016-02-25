@@ -5,8 +5,7 @@ Specifies enumerated values for the  `cells:` property in the _cellFormat_ param
 |||
 |:-----|:-----|
 |**Hosts:**|Excel|
-|**[Added](#bk_history)**|1.1|
-[See all support details](#bk_support)
+|**Added**|1.1|
 
 ```
 Office.Table

@@ -7,7 +7,6 @@ An abstract class that represents the document the add-in is interacting with.
 |**Hosts:**|Access, Excel, PowerPoint, Project, Word|
 |**Added in**|1.0|
 |**Last changed in**|1.1|
-[See all support details](#bk_support)
 
 ```
 Office.context.document

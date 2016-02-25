@@ -6,7 +6,6 @@ Provides specific information about an error that occurred during an asynchronou
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Outlook, PowerPoint, Project, Word|
 |**[Last changed](#bk_history) in**|1.1|
-[See all support details](#bk_support)
 
 ```
 asyncResult.error

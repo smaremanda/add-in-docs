@@ -6,7 +6,6 @@ Gets an  **EventType** enumeration value that identifies the kind of event that 
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Word|
 |**[Last changed](#bk_history) in BindingEvents**|1.1|
-[See all support details](#bk_support)
 
 ```
 var myEvent = eventArgsObj.type;

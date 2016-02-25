@@ -6,7 +6,6 @@ Gets the user-defined item passed to the optional  _asyncContext_ parameter of t
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Outlook, PowerPoint, Project, Word|
 |**[Last changed](#bk_history) in**|1.1|
-[See all support details](#bk_support)
 
 ```
 var myContext = asynchResult.asyncContext;

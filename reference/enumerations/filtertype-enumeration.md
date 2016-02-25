@@ -6,7 +6,6 @@ Specifies whether filtering from the host application is applied when the data i
 |:-----|:-----|
 |**Hosts:**|Excel, Project, Word|
 |**[Last changed](#bk_history) in**|1.1|
-[See all support details](#bk_support)
 
 ```
 Office.FilterType

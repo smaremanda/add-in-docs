@@ -6,7 +6,6 @@ Occurs when the user changes the current view of the document.
 |:-----|:-----|
 |**Hosts:**|PowerPoint|
 |**Introduced in**|1.1|
-[See all support details](#bk_support)
 
 ```
 Office.EventType.ActiveViewChanged

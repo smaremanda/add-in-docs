@@ -9,9 +9,8 @@ Specifies whether to select (highlight) the location to navigate to (when using 
 |||
 |:-----|:-----|
 |**Hosts:**|Excel, PowerPoint, Word|
-|**[Added](#bk_history) in**|1.1|
+|**Added in**|1.1|
 
-[See all support details](#bk_support)
 
 
 ```

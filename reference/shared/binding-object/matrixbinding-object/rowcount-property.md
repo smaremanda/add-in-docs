@@ -7,7 +7,6 @@ Gets the number of rows in the matrix data structure, as an integer value.
 |**Hosts:**|Access, Excel, PowerPoint, Project, Word|
 |**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|MatrixBindings|
 |**[Last changed](#bk_history) in Selection**|1.1|
-[See all support details](#bk_support)
 
 ```
 var rowCount = bindingObj.rowCount;

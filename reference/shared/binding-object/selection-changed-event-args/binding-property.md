@@ -6,7 +6,6 @@ Gets a  **Binding** object that represents the binding that raised the **Selecti
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Word|
 |**[Last changed](#bk_history) in**|1.1|
-[See all support details](#bk_support)
 
 ```
 var myBinding = eventArgsObj.binding;

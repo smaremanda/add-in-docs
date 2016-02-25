@@ -5,8 +5,7 @@ Specifies whether the add-in was just inserted or was already contained in the d
 |||
 |:-----|:-----|
 |**Hosts:**|Excel, Project, Word|
-|**[Added](#bk_history) in**|1.0|
-[See all support details](#bk_support)
+|**Added in**|1.0|
 
 ```
 Office.InitializationReason

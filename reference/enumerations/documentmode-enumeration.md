@@ -5,8 +5,7 @@ Specifies whether the document in the associated application is read-only or rea
 |||
 |:-----|:-----|
 |**Hosts:**|Excel, PowerPoint, Project, Word|
-|**[Added](#bk_history) in**|1.1|
-[See all support details](#bk_support)
+|**Added in**|1.1|
 
 ```
 Office.DocumentMode

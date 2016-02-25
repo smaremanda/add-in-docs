@@ -6,7 +6,6 @@ Specifies the kind of event that was raised. Returned by the  **type** property 
 |:-----|:-----|
 |**Hosts:**|Access, Excel, PowerPoint, Project, Word|
 |**[Last changed](#bk_history) in Selection**|1.1|
-[See all support details](#bk_support)
 
 ```
 Office.EventType

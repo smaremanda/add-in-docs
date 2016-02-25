@@ -5,8 +5,7 @@ Gets an object that represents the custom XML parts in the document.
 |||
 |:-----|:-----|
 |**Hosts:**|Word|
-|**[Added](#bk_history) in**|1.1|
-[See all support details](#bk_support)
+|**Added in**|1.1|
 
 ```
 var xmlParts = Office.context.document.customXmlParts;

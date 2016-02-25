@@ -5,8 +5,7 @@ Provides information about the document that raised the [SelectionChanged](../re
 |||
 |:-----|:-----|
 |**Hosts:**|Excel, PowerPoint, Word|
-|**[Added](#bk_history) in**|1.1|
-[See all support details](#bk_support)
+|**Added in**|1.1|
 
 ```
 

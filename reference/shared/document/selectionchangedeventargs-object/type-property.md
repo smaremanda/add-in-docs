@@ -5,8 +5,7 @@ Get an  **EventType** enumeration value that identifies the kind of event that w
 |||
 |:-----|:-----|
 |**Hosts:**|Excel, Word|
-|**[Added](#bk_history) in**|1.1|
-[See all support details](#bk_support)
+|**Added in**|1.1|
 
 ```
 var myEvent = eventArgsObj.type;

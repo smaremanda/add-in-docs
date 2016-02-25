@@ -6,7 +6,6 @@ Occurs when data within the binding is changed.
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Word|
 |**[Last changed](#bk_history) in BindingEvents**|1.1|
-[See all support details](#bk_support)
 
 ```
 Office.EventType.BindingDataChanged

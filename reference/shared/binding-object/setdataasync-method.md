@@ -7,7 +7,6 @@ Writes data to the bound section of the document represented by the specified bi
 |**Hosts:**|Access, Excel, Word|
 |**Available in [Requirement sets](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|MatrixBindings, TableBindings, TextBindings|
 |**[Last changed](#bk_history) in TableBindings**|1.1|
-[See all support details](#bk_support)
 
 [![Try out this call in the interactive API Tutorial for Excel](../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](http://officeapitutorial.azurewebsites.net/Redirect.mdl?scenario=Update+a+Row+in+a+Table)
 

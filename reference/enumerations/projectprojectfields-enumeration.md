@@ -5,8 +5,7 @@ Specifies the project fields that are available as a parameter for the  **[getPr
 |||
 |:-----|:-----|
 |**Hosts:**|Project|
-|**[Added](#bk_history) in**|1.0|
-[See all support details](#bk_support)
+|**Added in**|1.0|
 
 ```
 ProjectProjectFields={

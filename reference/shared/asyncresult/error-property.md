@@ -6,7 +6,6 @@ Gets an  **Error** object that provides a description of the error, if any error
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Outlook, PowerPoint, Project, Word|
 |**[Last changed](#bk_history) in**|1.1|
-[See all support details](#bk_support)
 
 ```
 var errorObj = asyncResult.error;

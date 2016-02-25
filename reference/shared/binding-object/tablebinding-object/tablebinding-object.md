@@ -7,7 +7,6 @@ Represents a binding in two dimensions of rows and columns, optionally with head
 |**Hosts:**|Access, Excel, PowerPoint, Project, Word|
 |**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|TableBindings|
 |**[Last changed](#bk_history) in Selection**|1.1|
-[See all support details](#bk_support)
 
 ```
 TableBinding

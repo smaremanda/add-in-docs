@@ -6,7 +6,6 @@ Gets the [Context](../reference/shared/context/context-object.md) object that re
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Outlook, PowerPoint, Project, Word|
 |**[Last changed](#bk_history) in**|1.1|
-[See all support details](#bk_support)
 
 ```
 var myDocument = Office.context.document;

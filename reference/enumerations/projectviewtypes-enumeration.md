@@ -5,8 +5,7 @@ Specifies the types of views that the  **[getSelectedViewAsync](../reference/sha
 |||
 |:-----|:-----|
 |**Hosts:**|Project|
-|**[Added](#bk_history) in**|1.0|
-[See all support details](#bk_support)
+|**Added in**|1.0|
 
 ```
 ProjectViewTypes={

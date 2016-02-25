@@ -7,7 +7,6 @@ Reads all settings persisted in the document and refreshes the content or task p
 |**Hosts:**|Access, Excel, PowerPoint, Word|
 |**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|Settings|
 |**[Last changed](#bk_history) in**|1.1|
-[See all support details](#bk_support)
 
 ```
 Office.context.document.settings.refreshAsync(callback);

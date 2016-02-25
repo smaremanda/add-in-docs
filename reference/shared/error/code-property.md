@@ -6,7 +6,6 @@ Gets the numeric code of the error.
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Outlook, PowerPoint, Project, Word|
 |**[Last changed](#bk_history) in Selection**|1.1|
-[See all support details](#bk_support)
 
 ```
 var errCode = asyncResult.error.code;

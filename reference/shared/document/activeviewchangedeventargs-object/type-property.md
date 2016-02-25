@@ -6,7 +6,6 @@ Gets an  **EventType** enumeration value that identifies the kind of event that 
 |:-----|:-----|
 |**Hosts:**|PowerPoint|
 |**Added in**|1.1|
-[See all support details](#bk_support)
 
 ```
 var myEventType = eventArgsObj.type;
