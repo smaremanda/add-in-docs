@@ -12,19 +12,19 @@ To create the best experience for your users, ensure that your Office Add-in per
 Run-time resource usage limits apply to all types of Office Add-ins. These limits help ensure performance for your users and mitigate denial-of-service attacks. Be sure to test your Office Add-in on your target host application using range of possible data and measure its performance against the following run-time usage limits:
 
 
--  **CPU core usage**â€”A single CPU core usage threshold of 90%, observed three times in default 5-second intervals.
+-  **CPU core usage** - A single CPU core usage threshold of 90%, observed three times in default 5-second intervals.
     
     The default interval for a host rich client to check CPU core usage is every 5 seconds. If the host client detects the CPU core usage of an add-in is above the threshold value, it displays a message asking if the user wants to continue running the add-in. If the user chooses to continue, the host client does not ask the user again during that edit session. Administrators might want to use the  **AlertInterval** registry key to raise the threshold to reduce the display of this warning message if users run CPU-intensive add-ins.
     
--  **Memory usage**â€”A default memory usage threshold that is dynamically determined based on the available physical memory of the device.
+-  **Memory usage** - A default memory usage threshold that is dynamically determined based on the available physical memory of the device.
     
     By default, when a host rich client detects that physical memory usage on a device exceeds 80% of the available memory, the client starts monitoring the add-in's memory usage, at a document level for content and task pane add-ins, and at a mailbox level for Outlook add-ins. At a default interval of 5 seconds, the client warns the user if physical memory usage for a set of add-ins at the document or mailbox level exceeds 50%. This memory usage limit uses physical rather than virtual memory to ensure performance on devices with limited RAM, such as tablets. Administrators can override this dynamic setting with an explicit limit by using the  **MemoryAlertThreshold** Windows registry key as a global setting, ir adjust the alert interval by using the **AlertInterval** key as a global setting.
     
--  **Crash tolerance**â€”A default limit of four crashes for an add-in.
+-  **Crash tolerance** - A default limit of four crashes for an add-in.
     
     Administrators can adjust the threshold for crashes by using the **RestartManagerRetryLimit** registry key.
     
--  **Application blocking**â€”Prolonged unresponsiveness threshold of 5 seconds for an add-in.
+-  **Application blocking** - Prolonged unresponsiveness threshold of 5 seconds for an add-in.
     
     This affects the user's experiences of the add-in and the host application. When this occurs, the host application automatically restarts all the active add-ins for a document or mailbox (where applicable), and warns the user as to which add-in became unresponsive. Add-ins can reach this threshold when they do not regularly yield processing while performing long-running tasks. There are techniques to ensure that blocking does not occur. Administrators cannot override this threshold.
     
@@ -36,11 +36,11 @@ Run-time resource usage limits apply to all types of Office Add-ins. These limit
 
     In addition to the CPU core, memory, and reliability rules, Outlook add-ins should observe the following rules on activation:
     
-      -  **Regular expressions response time**â€”A default threshold of 1,000 milliseconds for Outlook to evaluate all regular expressions in the manifest of an Outlook add-in. Exceeding the threshold causes Outlook to retry evaluation at a later time.
+      -  **Regular expressions response time** - A default threshold of 1,000 milliseconds for Outlook to evaluate all regular expressions in the manifest of an Outlook add-in. Exceeding the threshold causes Outlook to retry evaluation at a later time.
     
     Using a group policy or application-specific setting in the Windows registry, administrators can adjust this default threshold value of 1,000 milliseconds in the  **OutlookActivationAlertThreshold** setting. For more information, see [Overriding resource usage settings for performance of Office Add-ins](http://msdn.microsoft.com/library/da14ec8c-5075-4035-a951-fc3c2b15c04b%28Office.15%29.aspx).
     
-  -  **Regular expressions re-evaluation**â€”A default limit of three times for Outlook to reevaluate all the regular expressions in a manifest. If evaluation fails all three times by exceeding the applicable threshold (which is either the default of 1,000 milliseconds or a value specified by  **OutlookActivationAlertThreshold**, if that setting exists in the Windows registry), Outlook disables the Outlook add-in. The Exchange Admin Center displays the disabled status, and the add-in is disabled for use in the Outlook rich clients, Outlook Web App and OWA for Devices.
+  -  **Regular expressions re-evaluation** - A default limit of three times for Outlook to reevaluate all the regular expressions in a manifest. If evaluation fails all three times by exceeding the applicable threshold (which is either the default of 1,000 milliseconds or a value specified by  **OutlookActivationAlertThreshold**, if that setting exists in the Windows registry), Outlook disables the Outlook add-in. The Exchange Admin Center displays the disabled status, and the add-in is disabled for use in the Outlook rich clients, Outlook Web App and OWA for Devices.
     
     Using a group policy or application-specific setting in the Windows registry, administrators can adjust this number of times to retry evaluation in the  **OutlookActivationManagerRetryLimit** setting. For more information, see [Overriding resource usage settings for performance of Office Add-ins](http://msdn.microsoft.com/library/da14ec8c-5075-4035-a951-fc3c2b15c04b%28Office.15%29.aspx).
     
