@@ -33,7 +33,7 @@ To check availability of any APIs from a requirement set greater than the one sp
 
 ```
 if (item.somePropertyOrFunction) {
-   item.somePropertyOrFunctionâ€¦  
+   item.somePropertyOrFunction...  
 }
 
 ```
