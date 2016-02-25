@@ -13,6 +13,6 @@ function editLab(callback: Core.ILabCallback<LabEditor>): void
 ## Parameters
 
 
-|||
+|**Name**|**Description**|
 |:-----|:-----|
 | _callback_|The callback method that is fired once the [Labs.LabInstance](../powerpoint/office-mix/reference/labs.labinstance.md) object is created.|
