@@ -38,13 +38,6 @@ For more information about Office host application and server requirements, see 
 |**Word**|Y|Y|Y|
 
 
-|
-|
-||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
-|:-----|:-----|:-----|:-----|
-|**PowerPoint**|Y|Y|Y|
-|**Word**|Y|Y|Y|
-
 |||
 |:-----|:-----|
 |**Available in requirement sets**||
