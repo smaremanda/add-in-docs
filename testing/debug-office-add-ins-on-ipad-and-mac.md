@@ -38,7 +38,7 @@ Weinre is a debugger for web pages, similar to the F12 tools, that is designed t
  Navigate to  `http://<ipaddr>:8080/client` to get the list of clients connected to this server.
     
     
-![Shows list of clients connected to Weinre server](../images/bada7fc7-2186-497c-86a2-8f4379006103.jpg)
+  ![Shows list of clients connected to Weinre server](../images/bada7fc7-2186-497c-86a2-8f4379006103.jpg)
 
 
     
@@ -52,14 +52,14 @@ Weinre is a debugger for web pages, similar to the F12 tools, that is designed t
     Launch your add-in on the iPad or Mac.
     
     
-![iPad screenshot showing targets, clients, and server properties](../images/1eacaba2-04cc-488c-8d34-a05cc700d7eb.jpg)
+  ![iPad screenshot showing targets, clients, and server properties](../images/1eacaba2-04cc-488c-8d34-a05cc700d7eb.jpg)
 
 
     
 6. Debug your add-in using your favorite browser's F12 developer tools.
     
     
-![iPad screenshot showing an add-in in F12 development tools](../images/0ab0cb26-6272-425f-98f3-fab08daf443d.jpg)
+  ![iPad screenshot showing an add-in in F12 development tools](../images/0ab0cb26-6272-425f-98f3-fab08daf443d.jpg)
 
 
     
