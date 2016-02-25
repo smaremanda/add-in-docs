@@ -13,7 +13,7 @@ class ChoiceComponentAnswer
 ## Properties
 
 
-|||
+|**Name**|**Description**|
 |:-----|:-----|
 | `public var answer: any`|The answer value.|
 
