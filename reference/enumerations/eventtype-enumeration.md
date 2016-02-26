@@ -18,7 +18,7 @@ Office.EventType
 **Values**
 
 
-|**Enumeration**|**Value**|**Description**|
+|Enumeration|Value|Description|
 |:-----|:-----|:-----|
 |Office.EventType.ActiveViewChanged|"documentActiveViewChanged"|A [Document.ActiveViewChanged](../reference/shared/document/activeviewchanged/activeviewchanged-event.md) event was raised.|
 |Office.EventType.DocumentSelectionChanged|"documentSelectionChanged"|A [Document.SelectionChanged](../reference/shared/document/selectionchanged-event/selectionchanged-event.md) event was raised.|
