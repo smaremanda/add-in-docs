@@ -9,7 +9,7 @@ Members of the  **Labs.CommandType** module comprise only string variables decla
 ## CommandType Variables
 
 
-|Variable||
+|Variable|Description|
 |:-----|:-----|
 | `var Connect: string`||
 | `var Disconnect: string`||
