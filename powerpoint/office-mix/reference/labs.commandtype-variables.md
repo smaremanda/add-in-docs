@@ -8,7 +8,7 @@ Variables in the  **Labs.CommandType** module are simply strings representing th
 ## Variables
 
 
-|||
+|**Name**|**Description**|
 |:-----|:-----|
 | `var Connect: string`||
 | `var Disconnect: string`||
