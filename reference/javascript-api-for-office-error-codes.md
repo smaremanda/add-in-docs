@@ -50,9 +50,7 @@ The following table lists the error codes, names, and messages displayed, and th
 |4002|Settings Stale Error|Settings could not be saved because they are stale.|Settings are stale and developer indicated not to override settings.|
 |5000|Settings Stale Error|The operation is not supported.|The operation is not supported in the current host. For example,  **document.getSelectionAsync** is called from Outlook.|
 |5001|Internal Error|An internal error has occurred.|Refers to an internal error condition, which can occur for any of the following reasons.
-||
-|:-----|
-|An add-in being used by another user sharing the workbook created a binding at approximately the same time, and your add-in needs to retry binding.|
+|||An add-in being used by another user sharing the workbook created a binding at approximately the same time, and your add-in needs to retry binding.|
 |An unknown error occurred.|
 |The operation failed.|
 |Access was denied because the user is not a member of an authorized role.|
