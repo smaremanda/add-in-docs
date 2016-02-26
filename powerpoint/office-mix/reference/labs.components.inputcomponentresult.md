@@ -13,7 +13,7 @@ class InputComponentResult
 ## Properties
 
 
-|||
+|Property|Description|
 |:-----|:-----|
 | `public var score: any`|The score associated with the submission.|
 | `public var complete: boolean`|Indicates whether the result submitted resulted in the completion of the attempt.  **True** if the attempt is completed.|
@@ -32,7 +32,7 @@ Creates a new instance of the  **InputComponentResult** class.
  **Parameters**
 
 
-|||
+|Parameter|Description|
 |:-----|:-----|
 | _score_|The score associated with the result.|
 | _complete_|Boolean  **true** if the result completed the attempt.|
