@@ -13,6 +13,6 @@ interface IHint extends Labs.Core.IValue
 ## Properties
 
 
-|||
+|Name|Description|
 |:-----|:-----|
 | `name: string`|Display value for the hint.|
