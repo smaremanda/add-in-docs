@@ -9,7 +9,7 @@ The  **LabsJS.Labs.Components** module contains the following interfaces.
 ## 
 
 
-|||
+|Interface|Description|
 |:-----|:-----|
 |[Labs.Components.IActivityComponent](../powerpoint/office-mix/reference/labs.components.iactivitycomponent.md)|Represents an activity component. Extends [Labs.Core.IComponent](../powerpoint/office-mix/reference/labs.core.icomponent.md).|
 |[Labs.Components.IActivityComponentInstance](../powerpoint/office-mix/reference/labs.components.iactivitycomponentinstance.md)|Represents a specific instance of an activity component. Extends [Labs.Core.IComponentInstance](../powerpoint/office-mix/reference/labs.core.icomponentinstance.md).|
