@@ -13,7 +13,7 @@ class DynamicComponentInstance extends Labs.ComponentInstanceBase
 ## Properties
 
 
-|||
+|Property|Description|
 |:-----|:-----|
 | `public var component: Components.IDynamicComponentInstance`|The component instance definition.|
 
@@ -38,7 +38,7 @@ Retrieves all of the components created by this dynamic component.
  **Parameters**
 
 
-|||
+|Parameter|Description|
 |:-----|:-----|
 | _callback_|Callback function that fires once all of the components have been retrieved.|
 
@@ -51,7 +51,7 @@ Creates a new component using the dynamic component as component base.
  **Parameters**
 
 
-|||
+|Parameter|Description|
 |:-----|:-----|
 | _component_|The component ([Labs.Core.IComponent](../powerpoint/office-mix/reference/labs.core.icomponent.md)) from which to create the instance.|
 | _callback_|Callback function that fires once the component is created.|
@@ -65,7 +65,7 @@ Indicates there will be no additional submissions associated with this component
  **Parameters**
 
 
-|||
+|Parameter|Description|
 |:-----|:-----|
 | _callback_|Callback function that fires once the instance is closed.|
 
