@@ -13,7 +13,7 @@ class InputComponentAnswer
 ## Properties
 
 
-|||
+|Property|Description|
 |:-----|:-----|
 | `public var answer: any`|The answer value.|
 
@@ -31,6 +31,6 @@ Creates a new instance of the  **InputComponentAnswer** class.
  **Parameters**
 
 
-|||
+|Parameter|Description|
 |:-----|:-----|
 | _answer_|The answer value.|
