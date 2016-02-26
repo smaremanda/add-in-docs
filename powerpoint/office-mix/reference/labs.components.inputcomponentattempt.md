@@ -24,7 +24,7 @@ Creates a new instance of the  **InputComponentAttempt** class.
  **Parameters**
 
 
-|||
+|Parameter|Description|
 |:-----|:-----|
 | _labs_|The labs ([Labs.LabsInternal](http://msdn.microsoft.com/library/599fb2c4-bb16-4422-84ad-10ed85a14018.aspx)) associated with the attempt.|
 | _componentID_|ID of the component associated with the attempt.|
@@ -40,7 +40,7 @@ Iterates over the retrieved actions for the specified attempt and populates the 
  **Parameters**
 
 
-|||
+|Parameter|Description|
 |:-----|:-----|
 | _action_|Action associated with the lab state.|
 
@@ -60,7 +60,7 @@ Submits a new answer that was graded by the lab and will not use the host to com
  **Parameters**
 
 
-|||
+|Parameter|Description|
 |:-----|:-----|
 | _answer_|The answer associated with the attempt.|
 | _result_|The result associated with the submission.|
