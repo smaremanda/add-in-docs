@@ -13,7 +13,7 @@ class ChoiceComponentSubmission
 ## Properties
 
 
-|||
+|Property|Description|
 |:-----|:-----|
 | `public var answer: Components.ChoiceComponentAnswer`|The answer ([Labs.Components.ChoiceComponentAnswer](../powerpoint/office-mix/reference/labs.components.choicecomponentanswer.md)) associated with the submission.|
 | `public var result: Components.ChoiceComponentResult`|The result ([Labs.Components.ChoiceComponentResult](../powerpoint/office-mix/reference/labs.components.choicecomponentresult.md)) of the submission.|
@@ -33,7 +33,7 @@ Represents the submission associated with a choice component.
  **Parameters**
 
 
-|||
+|Parameter|Description|
 |:-----|:-----|
 | _answer_|The answer ([Labs.Components.ChoiceComponentAnswer](../powerpoint/office-mix/reference/labs.components.choicecomponentanswer.md)) associated with the submission.|
 | _result_|The result ([Labs.Components.ChoiceComponentResult](../powerpoint/office-mix/reference/labs.components.choicecomponentresult.md)) of the submission.|
