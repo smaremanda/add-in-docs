@@ -13,7 +13,7 @@ class ChoiceComponentInstance extends Labs.ComponentInstance<Components.ChoiceCo
 ## Properties
 
 
-|||
+|Property|Description|
 |:-----|:-----|
 | `public var component: Components.IChoiceComponentInstance`|The underlying [Labs.Components.IChoiceComponentInstance](../powerpoint/office-mix/reference/labs.components.ichoicecomponentinstance.md) which this class represents.|
 
@@ -31,7 +31,7 @@ Creates a new instance of the  **ChoiceComponentInstance** class.
  **Parameters**
 
 
-|||
+|Parameter|Description|
 |:-----|:-----|
 | _component_|The [Labs.Components.IChoiceComponentInstance](../powerpoint/office-mix/reference/labs.components.ichoicecomponentinstance.md) object from which to create this class.|
 
@@ -44,6 +44,6 @@ Builds a new  **ChoiceComponentAttempt** instance and implements the abstract me
  **Parameters**
 
 
-|||
+|Parameter|Description|
 |:-----|:-----|
 | _createAttemptResult_|The result from the create attempt action.|
