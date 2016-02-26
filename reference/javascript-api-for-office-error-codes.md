@@ -52,34 +52,33 @@ The following table lists the error codes, names, and messages displayed, and th
 |5001|Internal Error|An internal error has occurred.|Refers to an internal error condition, which can occur for any of the following reasons:
 ||||An add-in being used by another user sharing the workbook created a binding at approximately the same time, and your add-in needs to retry binding.|
 ||||An unknown error occurred.|
-|The operation failed.|
-|Access was denied because the user is not a member of an authorized role.|
-|Access was denied because secure, encrypted communication is required.|
-|Data is stale and the user needs to confirm enabling the queries to refresh it.|
-|The site collection CPU quota has been exceeded.|
-|The site collection memory quota has been exceeded.|
-|The session memory quota has been exceeded.|
-|The workbook is in an invalid state and the operation can't be performed.|
-|The session has timed out due to inactivity and the user needs to reload the workbook.|
-|The maximum number of allowed sessions per user has been exceeded.|
-|The operation was canceled by the user.|
-|The operation can't be completed because it is taking too long.|
-|The request can't be completed and needs to be retried.|
-|The trial period of the product has expired.|
-|The session has timed out due to inactivity.|
-|The user doesn't have permission to perform the operation on the specified range.|
-|The user's regional settings don't match the current collaboration session.|
-|The user is no longer connected and must refresh or re-open the workbook.|
-|The requested range doesn't exist in the sheet.|
-|The user doesn't have permission to edit the workbook.|
-|The workbook can't be edited because it is locked.|
-|The session can't auto save the workbook.|
-|The session can't refresh its lock on the workbook file.|
-|The request can't be processed and needs to be retried.|
-|The user's sign-in information couldn't be verified and needs to be re-entered.|
-|The user has been denied access.|
-|The shared workbook needs to be updated.|
-|
+||||The operation failed.|
+||||Access was denied because the user is not a member of an authorized role.|
+||||Access was denied because secure, encrypted communication is required.|
+||||Data is stale and the user needs to confirm enabling the queries to refresh it.|
+||||The site collection CPU quota has been exceeded.|
+||||The site collection memory quota has been exceeded.|
+||||The session memory quota has been exceeded.|
+||||The workbook is in an invalid state and the operation can't be performed.|
+||||The session has timed out due to inactivity and the user needs to reload the workbook.|
+||||The maximum number of allowed sessions per user has been exceeded.|
+||||The operation was canceled by the user.|
+||||The operation can't be completed because it is taking too long.|
+||||The request can't be completed and needs to be retried.|
+||||The trial period of the product has expired.|
+||||The session has timed out due to inactivity.|
+||||The user doesn't have permission to perform the operation on the specified range.|
+||||The user's regional settings don't match the current collaboration session.|
+||||The user is no longer connected and must refresh or re-open the workbook.|
+||||The requested range doesn't exist in the sheet.|
+||||The user doesn't have permission to edit the workbook.|
+||||The workbook can't be edited because it is locked.|
+||||The session can't auto save the workbook.|
+||||The session can't refresh its lock on the workbook file.|
+||||The request can't be processed and needs to be retried.|
+||||The user's sign-in information couldn't be verified and needs to be re-entered.|
+||||The user has been denied access.|
+||||The shared workbook needs to be updated.|
 |5002|Permission Denied|The requested operation is not allowed on the current document mode.|The solution developer submits a set operation, but the document is in a mode that does not allow modifications, such as 'Restrict Editing'.|
 |5003|Event Registration Error|The specified event type is not supported by the current object.|The solution developer tries to register or unregister a handler to an event that does not exist.|
 |5004|Invalid API call|Invalid API call in the current context.|An invalid call is made for the context, for example, trying to use a  **CustomXMLPart** object in Excel.|
