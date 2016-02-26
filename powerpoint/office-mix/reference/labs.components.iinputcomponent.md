@@ -13,7 +13,7 @@ interface IInputComponent extends Labs.Core.IComponent
 ## Properties
 
 
-|||
+|Name|Description|
 |:-----|:-----|
 | `maxScore: number`|The maximum allowable score for the input component.|
 | `timeLimit: number`|Time limit for the input problem.|
