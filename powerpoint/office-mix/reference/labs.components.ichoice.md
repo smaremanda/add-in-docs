@@ -13,8 +13,8 @@ interface IChoice
 ## Properties
 
 
-|||
-|:-----|:-----|
+|Name|Description|
+
 | `id: string`|Unique ID for the choice.|
 | `name: string`|Represents the value to place in the value type.|
 | `value: any`|Value of the choice.|
