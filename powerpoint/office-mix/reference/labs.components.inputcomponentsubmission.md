@@ -13,7 +13,7 @@ class InputComponentSubmission
 ## Properties
 
 
-|||
+|Property|Description|
 |:-----|:-----|
 | `public var answer: Components.InputComponentAnswer`|The answer ([Labs.Components.InputComponentAnswer](../powerpoint/office-mix/reference/labs.components.inputcomponentanswer.md)) associated with the submission.|
 | `public var result: Components.InputComponentResult`|The result ([Labs.Components.InputComponentResult](../powerpoint/office-mix/reference/labs.components.inputcomponentresult.md)) of the submission.|
@@ -33,7 +33,7 @@ Creates a new instance of the  **InputComponentSubmission** class.
  **Parameters**
 
 
-|||
+|Parameter|Description|
 |:-----|:-----|
 | _answer_|The answer associated with the submission.|
 | _result_|The result of the submission.|
