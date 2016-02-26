@@ -8,7 +8,7 @@ Specifies the format in which to return the document.
 |**Last changed in**|1.1|
 
 
-||||
+|Col 1|Col 2|Col 3|
 |:-----|:-----|:-----|
 |**Hosts:**|PowerPoint, Word|Column 3
 |**Last changed in**|1.1|Text|
