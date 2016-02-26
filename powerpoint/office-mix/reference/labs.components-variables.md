@@ -9,7 +9,7 @@ We provide the declarations and descriptions for variables in the Lab.Components
 ## Variables
 
 
-|||
+|**Name**|**Description**|
 |:-----|:-----|
 | `var ActivityComponentInstanceType: string`|The name of the activity component instance. An activity component presents an activity that the user must complete.|
 | `var ChoiceComponentInstanceType: string`|The name of the choice component instance. A choice component has multiple choice options and supports zero or more responses. Optionally there is a correct list of choices.|
