@@ -13,7 +13,7 @@ class InputComponentInstance extends Labs.ComponentInstance<Components.InputComp
 ## Properties
 
 
-|||
+|Property|Description|
 |:-----|:-----|
 | `public var component: Components.IInputComponentInstance`|The underlying [Labs.Components.IInputComponentInstance](../powerpoint/office-mix/reference/labs.components.iinputcomponentinstance.md) object represented by this class.|
 
@@ -31,7 +31,7 @@ Creates a new [Labs.Components.IInputComponentInstance](../powerpoint/office-mix
  **Parameters**
 
 
-|||
+|Parameter|Description|
 |:-----|:-----|
 | _component_|The [Labs.Components.IInputComponentInstance](../powerpoint/office-mix/reference/labs.components.iinputcomponentinstance.md) from which to create this class.|
 
@@ -44,6 +44,6 @@ Builds a new [Labs.Components.InputComponentAttempt](../powerpoint/office-mix/re
  **Parameters**
 
 
-|||
+|Parameter|Description|
 |:-----|:-----|
 | _createAttemptResult_|The result of a create attempt action.|
