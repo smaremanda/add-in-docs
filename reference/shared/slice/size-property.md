@@ -48,3 +48,8 @@ For more information about Office host application and server requirements, see 
 |:-----|:-----|
 |1.1|Added support for PowerPoint and Word in Office for iPad.|
 |1.0|Introduced|
+
+#### Concepts
+
+
+[Slice object](articles/011b5647-639b-4b06-8625-ba9de01bed4b.md)
