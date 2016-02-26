@@ -64,7 +64,7 @@ The  **FormType** attribute is used to specify the mode (read or compose) in whi
 
  >**Note**  The [ItemIs](http://msdn.microsoft.com/en-us/library/f7dac4a3-1574-9671-1eda-47f092390669%28Office.15%29.aspx) **FormType** attribute is defined in schema v1.1 and later but not in **VersionOverrides** v1.0. Do not include the **FormType** attribute when defining rules for a custom pane.
 
-After an add-in is activated, you can use the [mailbox.item](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html%28Office.15%29.md) property to obtain the currently selected item in Outlook, and the [item.itemType](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html%28Office.15%29.md) property to obtain the type of the current item.
+After an add-in is activated, you can use the [mailbox.item](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html) property to obtain the currently selected item in Outlook, and the [item.itemType](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html) property to obtain the type of the current item.
 
 You can optionally use the  **ItemClass** attribute to specify the message class of the item, and the **IncludeSubClasses** attribute to specify whether the rule should be **true** when the item is a subclass of the specified class.
 

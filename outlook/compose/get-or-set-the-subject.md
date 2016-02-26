@@ -8,7 +8,7 @@ Learn how to get or set the subject from an Outlook add-in when the user is comp
 ## Prerequisites for getting or setting the subject in a compose form
 
 
-The JavaScript API for Office provides asynchronous methods ([subject.getAsync](https://dev.outlook.com/reference/add-ins/Subject.html%28Office.15%29.md) and [subject.setAsync](https://dev.outlook.com/reference/add-ins/Subject.html%28Office.15%29.md)) to get and set the subject of an appointment or message that the user is composing. These asynchronous methods are available to only compose add-ins. To use these methods, make sure you have set up the add-in manifest appropriately for Outlook to activate the add-in in compose forms, as described in the section [Setting up Outlook add-ins for compose forms](../outlook/compose/compose-scenario.md#mod_off15_CreatingForCompose_SettingUp) of [Create Outlook add-ins for compose forms](../outlook/compose/compose-scenario.md).
+The JavaScript API for Office provides asynchronous methods ([subject.getAsync](https://dev.outlook.com/reference/add-ins/Subject.html) and [subject.setAsync](https://dev.outlook.com/reference/add-ins/Subject.html)) to get and set the subject of an appointment or message that the user is composing. These asynchronous methods are available to only compose add-ins. To use these methods, make sure you have set up the add-in manifest appropriately for Outlook to activate the add-in in compose forms, as described in the section [Setting up Outlook add-ins for compose forms](../outlook/compose/compose-scenario.md#mod_off15_CreatingForCompose_SettingUp) of [Create Outlook add-ins for compose forms](../outlook/compose/compose-scenario.md).
 
 The  **subject** property is available for read access in both compose and read forms of appointments and messages. In a read form, you can access the property directly from the parent object, as in:
 
@@ -47,7 +47,7 @@ This section shows a code sample that gets the subject of the appointment or mes
 
 ```
 
-To use  **item.subject.getAsync**, provide a callback method that checks for the status and result of the asynchronous call. You can provide any necessary arguments to the callback method through the  _asyncContext_ optional parameter. You can obtain status, results and any error using the output parameter _asyncResult_ of the callback. If the asynchronous call is successful, you can get the subject as a plain text string using the [AsyncResult.value](https://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) property.
+To use  **item.subject.getAsync**, provide a callback method that checks for the status and result of the asynchronous call. You can provide any necessary arguments to the callback method through the  _asyncContext_ optional parameter. You can obtain status, results and any error using the output parameter _asyncResult_ of the callback. If the asynchronous call is successful, you can get the subject as a plain text string using the [AsyncResult.value](https://dev.outlook.com/reference/add-ins/simple-types.html) property.
 
 
 

@@ -8,9 +8,9 @@ Learn how to get or set the location from an Outlook add-in when the user is com
 ## Prerequisites for getting or setting the location in a compose form
 
 
-The JavaScript API for Office provides asynchronous methods ([getAsync](http://dev.outlook.com/reference/add-ins/Location.html%28Office.15%29.md) and [setAsync](http://dev.outlook.com/reference/add-ins/Location.html%28Office.15%29.md)) to get and set the location of an appointment that the user is composing. These asynchronous methods are available to only compose add-ins. To use these methods, make sure you have set up the add-in manifest appropriately for Outlook to activate the add-in in compose forms, as described in the section [Setting up Outlook add-ins for compose forms](../outlook/compose/compose-scenario.md#mod_off15_CreatingForCompose_SettingUp) of [Create Outlook add-ins for compose forms](../outlook/compose/compose-scenario.md).
+The JavaScript API for Office provides asynchronous methods ([getAsync](http://dev.outlook.com/reference/add-ins/Location.html) and [setAsync](http://dev.outlook.com/reference/add-ins/Location.html)) to get and set the location of an appointment that the user is composing. These asynchronous methods are available to only compose add-ins. To use these methods, make sure you have set up the add-in manifest appropriately for Outlook to activate the add-in in compose forms, as described in the section [Setting up Outlook add-ins for compose forms](../outlook/compose/compose-scenario.md#mod_off15_CreatingForCompose_SettingUp) of [Create Outlook add-ins for compose forms](../outlook/compose/compose-scenario.md).
 
-The [location](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html%28Office.15%29.md) property is available for read access in both compose and read forms of appointments. In a read form, you can access the property directly from the parent object, as in:
+The [location](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html) property is available for read access in both compose and read forms of appointments. In a read form, you can access the property directly from the parent object, as in:
 
 
 
@@ -44,7 +44,7 @@ This section shows a code sample that gets the location of the appointment that 
 
 ```
 
-To use  **item.location.getAsync**, provide a callback method that checks for the status and result of the asynchronous call. You can provide any necessary arguments to the callback method through the  _asyncContext_ optional parameter. You can obtain status, results and any error using the output parameter _asyncResult_ of the callback. If the asynchronous call is successful, you can get the location as a string using the [AsyncResult.value](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) property.
+To use  **item.location.getAsync**, provide a callback method that checks for the status and result of the asynchronous call. You can provide any necessary arguments to the callback method through the  _asyncContext_ optional parameter. You can obtain status, results and any error using the output parameter _asyncResult_ of the callback. If the asynchronous call is successful, you can get the location as a string using the [AsyncResult.value](http://dev.outlook.com/reference/add-ins/simple-types.html) property.
 
 
 
