@@ -6,7 +6,7 @@ Explore tips on how Outlook add-ins should handle input and output date values f
 
 
 ## General JavaScript date-time support
-<a name="off15appsdk_UsingDateValues_GeneralJS"> </a>
+
 
 The JavaScript API for Office uses the JavaScript [Date](http://www.w3schools.com/jsref/jsref_obj_date.asp) object for most of the storage and retrieval of dates and times. That **Date** object provides methods such as [getUTCDate](http://www.w3schools.com/jsref/jsref_getutcdate.asp), [getUTCHour](http://www.w3schools.com/jsref/jsref_getutchours.asp), [getUTCMinutes](http://www.w3schools.com/jsref/jsref_getutcminutes.asp), and [toUTCString](http://www.w3schools.com/jsref/jsref_toutcstring.asp), which return the requested date or time value according to Universal Coordinated Time (UTC) time.
 
@@ -34,7 +34,7 @@ While you can use the JavaScript  **Date** object to get a date or time value ba
 
 
 ## Date-related features for Outlook add-ins
-<a name="off15appsdk_UsingDateValues_DateFeatures"> </a>
+
 
 The afore-mentioned JavaScript limitation has an implication for you, when you use the JavaScript API for Office to handle date or time values in Outlook add-ins that run in an Outlook rich client, and in Outlook Web App or OWA for Devices.
 
@@ -73,7 +73,7 @@ However, calling  `myDate.getDate` returns a date value in the client computer t
 <ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p><span class="code">start.getUTCHours</span> returns 9am UTC</p></li><li><p><span class="code">end.getUTCHours</span> returns 11am UTC</p></li></ul>|
 
 ## Helper methods for date-related scenarios
-<a name="off15appsdk_UsingDateValues_HelpMethods"> </a>
+
 
 As described in the preceding sections, because the "local time" for a user in Outlook Web App or OWA for Devices can be different on an Outlook rich client, but the JavaScript  **Date** object supports converting to only the client computer time zone or UTC, the JavaScript API for Office provides two helper methods: [Office.context.mailbox.convertToLocalClientTime](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.html%28Office.15%29.md) and [Office.context.mailbox.convertToUtcClientTime](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.html%28Office.15%29.md). 
 
@@ -136,7 +136,7 @@ Note that  **convertToUtcClientTime** takes care of the difference between an Ou
     
 
 ## Additional resources
-<a name="off15appsdk_UsingDateValues_AddRsc"> </a>
+
 
 
 - [Deploy and install Outlook add-ins for testing](../outlook/testing/testing-and-tips.md)

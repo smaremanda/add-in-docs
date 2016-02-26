@@ -6,7 +6,7 @@ Take advantage of the capabilities of Exchange Server to recognize specific stri
 
 
 ## What are well-known entities
-<a name="MailAppEntities_What"> </a>
+
 
 Before sending a message or meeting request item, Exchange Server parses the contents of the item, identifies and stamps certain strings in the subject and body that resemble entities well-known to Exchange, for example, email addresses, phone numbers, and URLs. Messages and meeting requests are delivered by Exchange Server in an Outlook Inbox with well-known entities stamped. Using the JavaScript API for Office, you can get these strings that match specific well-known entities for further processing. You can also specify a well-known entity in a rule in the add-in manifest so that Outlook can activate your add-in when the user is viewing an item that contains matches for that entity. You can then extract and take action on matches for the entity. 
 
@@ -16,7 +16,7 @@ This topic introduces these well-known entities, shows examples of activation ru
 
 
 ## Support for well-known entities
-<a name="MailAppEntities_Supported"> </a>
+
 
 Exchange Server stamps well-known entities in a message or meeting request item after the sender sends the item and before Exchange delivers the item to the recipient. Therefore, only items that have gone through transport in Exchange are stamped, and Outlook can activate add-ins based on these stamps when the user is viewing such items. On the contrary, when the user is composing an item or viewing an item that is in the Sent Items folder, because the item has not gone through transport, Outlook cannot activate add-ins based on well-known entities. Similarly, you cannot extract well-known entities in items that are being composed or in the Sent Items folder, as these items have not gone through transport and are not stamped. For additional information about the kinds of items that support activation, see [Activation rules for Outlook add-ins](../outlook/manifests/activation-rules.md#MailAppDefineRules_Activation).
 
@@ -44,7 +44,7 @@ Figure 1 describes how Exchange Server and Outlook support well-known entities f
 
 
 ## Permissions to extract entities
-<a name="MailAppEntities_Permissions"> </a>
+
 
 To extract entities in your JavaScript code or to have your add-in activated based on the existence of certain well-known entities, make sure you have requested the appropriate permissions in the add-in manifest.
 
@@ -59,7 +59,7 @@ Specifying the default restricted permission allows your add-in to extract the  
 
 
 ## Retrieving entities in your add-in
-<a name="MailAppEntities_Retrieving"> </a>
+
 
 As long as the subject or body of the item that is being viewed by the user contains strings that Exchange and Outlook can recognize as well-known entities, these instances are available to add-ins. They are available even if an add-in is not activated based on well-known entities. With the appropriate permission, you can use the  **getEntities** or **getEntitiesByType** method to retrieve well-known entities that are present in the current message or appointment. The **getEntities** method returns an array of [Entities](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) objects that contains all the well-known entities in the item. If you're interested in a particular type of entities, use the **getEntitiesByType** method which returns an array of only the entities you want. The [EntityType](http://dev.outlook.com/reference/add-ins/Office.MailboxEnums.html%28Office.15%29.md) enumeration represents all the types of well-known entities you can extract.
 
@@ -82,7 +82,7 @@ if (null != entities &amp;&amp; null != entities.addresses &amp;&amp; undefined 
 
 
 ## Activating an add-in based on the existence of an entity
-<a name="MailAppEntities_Activating"> </a>
+
 
 Another way to use well-known entities is to have Outlook activate your add-in based on the existence of one or more types of entities in the subject or body of the currently viewed item. You can do so by specifying an  **ItemHasKnownEntity** rule in the add-in manifest. The [KnownEntityType](http://msdn.microsoft.com/en-us/library/432d413b-9fcc-eb50-cfea-0ed10a43bd52%28Office.15%29.aspx) simple type represents the different types of well-known entities supported by **ItemHasKnownEntity** rules. After your add-in is activated, you can also retrieve the instances of such entities for your purposes, as described in the previous section [Retrieving entities in your add-in](#MailAppEntities_Retrieving). 
 
@@ -133,7 +133,7 @@ var videos = Office.context.mailbox.item.getFilteredEntitiesByName(youtube);
 
 
 ## Tips for using well-known entities
-<a name="MailAppEntities_Tips"> </a>
+
 
 There are a few facts and limits you should be aware of if you use well-known entities in your add-in. The following applies as long as your add-in is activated when the user is reading an item which contains matches of well-known entities, regardless of whether you use an  **ItemHasKnownEntity** rule:
 
@@ -161,7 +161,7 @@ In addition, the following applies if you use an [ItemHasKnownEntity](http://msd
     
 
 ## Additional resources
-<a name="MailAppEntities_AdditionalResources"> </a>
+
 
 
 - [Create Outlook add-ins for read forms](../outlook/read/read-scenario.md)

@@ -12,7 +12,7 @@ Project OM Test sample add-in can get the GUID of a task and properties of the a
 For an introduction to using JavaScript in Office Add-ins, see [Understanding the JavaScript API for Office](../overview/understanding-the-javascript-api-for-office.md).
 
 ## Procedure 1. To create the add-in manifest file
-<a name="FirstProjectApp_Procedure1"> </a>
+
 
 
 - Create an XML file in a local directory. The XML file includes the  **OfficeApp** element and child elements, which are described in the [Office Add-ins XML manifest](../overview/add-in-manifests.md). For example, create a file named JSOM_SimpleOMCalls.xml that contains the following XML (change the GUID value of the **Id** element).
@@ -56,7 +56,7 @@ For an introduction to using JavaScript in Office Add-ins, see [Understanding th
 Procedure 2 shows how to create the HTML file that the JSOM_SimpleOMCalls.xml manifest specifies for the Project test add-in. Buttons that are specified in the HTML file call related JavaScript functions. You can add the JavaScript functions within the HTML file, or put them in a separate .js file.
 
 ## Procedure 2. To create the source files for the Project OM Test add-in
-<a name="FirstProjectApp_Procedure2"> </a>
+
 
 
 1. Create an HTML file with a name that is specified by the  **SourceLocation** element in the JSOM_SimpleOMCalls.xml manifest. For example, create theJSOMCall.html file in the `C:\Project\AppSource` directory. Although you can use a simple text editor to create the source files, it is easier to use a tool such as Visual Studio 2015, which works with specific document types (such as HTML and JavaScript) and has other editing aids. If you have not already done the Bing Search example that is described in [Task pane add-ins for Project](../project/project-add-ins.md), Procedure 3 shows how to create the  `\\ServerName\AppSource` file share that the manifest specifies.
@@ -702,7 +702,7 @@ function manageViewEventHandler(docMethod) {
 Procedure 3 shows how to install and use the Project OM Test add-in features.
 
 ## Procedure 3. To install and use the Project OM Test add-in
-<a name="FirstProjectApp_Procedure3"> </a>
+
 
 
 1. Create a file share for the directory that contains the JSOM_SimpleOMCalls.xml manifest. You can create the file share on the local computer or on a remote computer that is accessible on the network. For example, if the manifest is in the  `C:\Project\AppManifests` directory on the local computer, run the following command:
@@ -845,7 +845,7 @@ Display language: en-US
     
 
 ## Example
-<a name="FirstProjectApp_Example"> </a>
+
 
 The Project 2013 SDK download contains the complete code in the JSOMCall.html file, the JSOM_Sample.js file, and the related Office.js, Office.debug.js, Project-15.js, and Project-15.debug.js files. Following is the code in the JSOMCall.html file.
 
@@ -934,7 +934,7 @@ The Project 2013 SDK download contains the complete code in the JSOMCall.html fi
 
 
 ## Robust programming
-<a name="FirstProjectApp_RobustProgramming"> </a>
+
 
 The  **Project OM Test** add-in is an example that shows the use of some JavaScript functions for Project 2013 in the Project-15.js and Office.js files. The example is for testing only and does not include robust error checks. For example, if you do not select a resource and run the **getSelectedResourceAsync** function, the **resourceGuid** variable is not initialized, and calls to **getResourceFieldAsync** return an error. For a production add-in, you should check for specific errors and ignore the results, hide functionality that does not apply, or notify the user to choose a view and make a valid selection before using a function.
 
@@ -1134,7 +1134,7 @@ function logMethodError(methodName, errorName, errorMessage, actionMessage) {
 
 
 ## Additional resources
-<a name="FirstProjectApp_AdditionalResources"> </a>
+
 
 
 - [Task pane add-ins for Project](../project/project-add-ins.md)

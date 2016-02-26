@@ -296,7 +296,7 @@ Microsoft.Office.WebExtension.ProjectTaskFields={
 
 
 ## Members
-<a name="Members"> </a>
+
 
 The  **ProjectTaskFields** enumeration contains the following members.
 
@@ -588,7 +588,7 @@ The  **ProjectTaskFields** enumeration contains the following members.
 |WSSID|281|The ID of the task in a SharePoint list, for a project that is synchronized with a SharePoint tasks list.|
 
 ## Remarks
-<a name="Members"> </a>
+
 
 A  **ProjectTaskFields** constant can be used as a parameter of the **[getTaskFieldAsync](../reference/shared/projectdocument/gettaskfieldasync-method.md)** method.
 
@@ -596,7 +596,7 @@ For more information about working with fields in Project, see the [Available fi
 
 
 ## Support details
-<a name="bk_support"> </a>
+
 
 A checkmark (???) in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
 
@@ -617,7 +617,7 @@ For more information about Office host application and server requirements, see 
 |**Namespace**|Office|
 
 ## Support history
-<a name="bk_history"> </a>
+
 
 
 ****
@@ -628,7 +628,7 @@ For more information about Office host application and server requirements, see 
 |1.0|Introduced|
 
 ## See also
-<a name="bk_history"> </a>
+
 
 
 #### Other resources

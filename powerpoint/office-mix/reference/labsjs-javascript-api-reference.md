@@ -38,7 +38,7 @@ Each module contains a set of members comprised of one or more of the following 
 
 
 ## Additional resources
-<a name="bk_addresources"> </a>
+
 
 
 - [TypeScript](http://www.typescriptlang.org/)

@@ -15,7 +15,7 @@ Office Add-ins can enhance authoring and productivity experiences as well as con
 |  Outlook  |  Bridging between mail content and an external application <br> Giving more information about the content in a mail message or appointment <br> Providing information that helps you be more productive  |
 
 ## Visualize data with a content add-in
-<a name="AppPatterns_VisualizeData"> </a>
+
 
 This example shows a content add-in for Excel that generates a chart from data in a spreadsheet.
 
@@ -29,7 +29,7 @@ In this interaction pattern, the add-in doesn't become active until you select a
 <ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>Add-ins that require you to select data prior to activation.</p></li></ul>
 
 ## Transform content with a task pane add-in
-<a name="AppPatterns_TransformContent"> </a>
+
 
 This example shows a task pane add-in that translates text in your document into another language.
 
@@ -43,7 +43,7 @@ In this interaction pattern, you must first select the text you want to translat
 <ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>Add-ins that require you to select data prior to activation.</p></li><li><p>UI that unfolds or is revealed as you progress through a scenario.</p></li></ul>
 
 ## Process data with a task pane add-in
-<a name="AppPatterns_ProcessData"> </a>
+
 
 This example shows a task pane add-in that checks data in Excel.
 
@@ -57,7 +57,7 @@ In this interaction pattern, you must select a range of cells in the spreadsheet
 <ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>Processes that take an indeterminate length of time.</p></li></ul>
 
 ## Analyze content with a task pane add-in
-<a name="AppPatterns_AnalyzeContent"> </a>
+
 
 This example shows a task pane add-in that displays word definitions as you type.
 
@@ -71,7 +71,7 @@ In this interaction pattern, you must first select text in the document to see r
 <ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>Add-ins that automatically return content as you author.</p></li><li><p>Add-ins that require you to select content prior to activation.</p></li></ul>
 
 ## Locate content with a task pane add-in
-<a name="AppPatterns_LocateContent"> </a>
+
 
 This example shows a task pane add-in for searching content.
 
@@ -85,7 +85,7 @@ In this interaction pattern, you enter a string in the search box, or select fro
 <ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>Add-ins that automatically return content as you author.</p></li><li><p>Add-ins that require you to select content prior to activation.</p></li></ul>
 
 ## Insert media with a task pane add-in
-<a name="AppPatterns_InsertMedia"> </a>
+
 
 In this interaction pattern, you can select an image from search results to insert into your document.
 
@@ -97,7 +97,7 @@ In this interaction pattern, you can select an image from search results to inse
 <ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>Add-ins for inserting content.</p></li></ul>
 
 ## Insert selected text with a task pane add-in
-<a name="AppPatterns_InsertText"> </a>
+
 
 In this interaction pattern, you select text from search results to insert into the document.
 
@@ -109,7 +109,7 @@ In this interaction pattern, you select text from search results to insert into 
 <ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>Add-ins for conducting research and inserting content.</p></li></ul>
 
 ## Publish to a web service with a task pane add-in
-<a name="AppPatterns_Publish"> </a>
+
 
 This example shows a task pane add-in for publishing a document as a blog post.
 
@@ -123,7 +123,7 @@ In this interaction pattern, you have finished writing content in a document and
 <ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>Add-ins that output, publish, or share content to social networks, blogging sites, and web services.</p></li><li><p>Add-ins that require you to sign into a service.</p></li></ul>
 
 ## Get more information about people with an Outlook add-in
-<a name="AppPatterns_FindPeopleInfo"> </a>
+
 
  **Example 1**
 
@@ -143,7 +143,7 @@ Best suited for:
 <ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>Displaying, by default, the first result of a dataset.</p></li><li><p>Navigation structures that work like tabs (single-level linear navigation).</p></li><li><p>Reducing selection actions by keeping navigation available at all times.</p></li><li><p>Providing room to display navigation at all times.</p></li></ul>
 
 ## Get more information about content with an Outlook add-in
-<a name="AppPatterns_FindContentInfo"> </a>
+
 
  **Example 1**
 
@@ -163,7 +163,7 @@ Best suited for:
 <ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>Cases where you want to feature one piece of content.</p></li><li><p>Exposing your content without user interaction.</p></li><li><p>Persistent navigation (can be added to this model for a mix of simplicity and ease of navigation).</p></li></ul>
 
 ## Connect to an online service and present data
-<a name="AppPatterns_ConnectToService"> </a>
+
 
 These examples show interaction patterns for getting data and content from an online service. They can be used in all three add-in types: content add-ins, task pane add-ins, and Outlook add-ins.
 
@@ -193,7 +193,7 @@ Best suited for:
 <ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>Add-ins that require data entry.</p></li><li><p>An entry-point to a results and details pattern.</p></li></ul>
 
 ## Additional resources
-<a name="AppPatterns_ConnectToService"> </a>
+
 
 
 - [Design guidelines for Office Add-ins](../design/add-in-design.md)

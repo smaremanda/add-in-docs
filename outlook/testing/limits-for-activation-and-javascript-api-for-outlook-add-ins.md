@@ -10,7 +10,7 @@ To provide a satisfactory experience for users of Outlook add-ins, you should be
 
 
 ## Limits for activation rules
-<a name="olowa15agave_followingimplrules"> </a>
+
 
 Follow these guidelines when designing activation rules for Outlook add-ins:
 
@@ -73,7 +73,7 @@ Follow these guidelines when designing activation rules for Outlook add-ins:
 |**getRegExMatches** returns any matches that are up to 3,072 (3 KB) characters, for a maximum of 50 matches.|
 
 ## Limits for JavaScript API
-<a name="olowa15agave_followingimplrules_JSAPI"> </a>
+
 
 Aside from the preceding guidelines for activation rules, each of the Outlook hosts enforces certain limits in the JavaScript object model, as described in Table 4.
 
@@ -102,7 +102,7 @@ Aside from the preceding guidelines for activation rules, each of the Outlook ho
 |Asynchronous calls|3 calls|**item.addFileAttachmentAsync** method<br/>**item.addItemAttachmentAsync** method<br/>**item.removeAttachmentAsync** method<br/> [Body.getTypeAsync](http://dev.outlook.com/reference/add-ins/Body.html%28Office.15%29.md) method<br/>**Body.prependAsync** method<br/>**Body.setSelectedDataAsync** method<br/> [CustomProperties.saveAsync](http://dev.outlook.com/reference/add-ins/CustomProperties.html%28Office.15%29.md) method<br/> [item.LoadCustomPropertiesAysnc](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html%28Office.15%29.md) method<br/> [Location.getAsync](http://dev.outlook.com/reference/add-ins/Location.html%28Office.15%29.md) method<br/>**Location.setAsync** method<br/> [mailbox.getCallbackTokenAsync](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.html%28Office.15%29.md) method<br/> [mailbox.getUserIdentityTokenAsync](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.html%28Office.15%29.md) method<br/> [mailbox.makeEwsRequestAsync](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.html%28Office.15%29.md) method<br/>**Recipients.addAsync** method<br/> [Recipients.getAsync](http://dev.outlook.com/reference/add-ins/Recipients.html%28Office.15%29.md) method<br/>**Recipients.setAsync** method<br/> [RoamingSettings.saveAsync](http://dev.outlook.com/reference/add-ins/RoamingSettings.html%28Office.15%29.md) method<br/> [Subject.getAsync](http://dev.outlook.com/reference/add-ins/Subject.html%28Office.15%29.md) method<br/>**Subject.setAsync** method<br/> [Time.getAsync](http://dev.outlook.com/reference/add-ins/Time.html%28Office.15%29.md) method<br/> [Time.setAsync](http://dev.outlook.com/reference/add-ins/Time.html%28Office.15%29.md) method|For Outlook Web App or OWA for Devices: limit of the number of simultaneous asynchronous calls at any one time, as browsers allow only a limited number of asynchronous calls to servers. |
 
 ## Additional resources
-<a name="olowa15agave_followingadditionalrsc"> </a>
+
 
 
 - [Deploy and install Outlook add-ins for testing](../outlook/testing/testing-and-tips.md)

@@ -6,7 +6,7 @@ Learn how to get or set various properties of an item in an Outlook add-in in a 
 
 
 ## Getting and setting item properties for a compose add-in
-<a name="mod_off15_GettingSettingItemDataCompose_GettingSettingItemProps"> </a>
+
 
 In a compose form, you can get most of the properties that are exposed on the same kind of item as in a read form (such as attendees, recipients, subject, and body), and you can get a few extra properties that are relevant in only a compose form but not a read form (body, bcc). 
 
@@ -34,7 +34,7 @@ Other than accessing item properties in the JavaScript API for Office, you can a
 
 
 ## Additional resources
-<a name="mod_off15_GettingSettingItemDataCompose_AdditionalRsc"> </a>
+
 
 
 - [Create Outlook add-ins for compose forms](../outlook/compose/compose-scenario.md)

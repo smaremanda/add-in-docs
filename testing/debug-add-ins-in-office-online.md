@@ -49,7 +49,7 @@ To debug your add-in by using Office Online:
     
 
 ## Additional resources
-<a name="bk_addresources"> </a>
+
 
 
 - [Best practices for developing Office Add-ins](http://msdn.microsoft.com/library/d455b76b-4d76-493d-a681-6b02ba1f38a8%28Office.15%29.aspx)

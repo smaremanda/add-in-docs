@@ -24,7 +24,7 @@ Finally, you'll make changes to some project settings and the manifest to do the
     
 
 ## Prerequisites
-<a name="FirstAppWordExcelVS_Prerequisites"> </a>
+
 
 Install the following components before you get started:
 
@@ -37,7 +37,7 @@ Install the following components before you get started:
     
 
 ## Create a project for the add-in
-<a name="FirstAppWordExcelVS_Create"> </a>
+
 
 To get started, create an Office Add-ins project in Visual Studio. 
 
@@ -59,7 +59,7 @@ To get started, create an Office Add-ins project in Visual Studio.
     
 
 ## Develop the add-in
-<a name="FirstAppWordExcelVS_Develop"> </a>
+
 
 To design the appearance of the add-in, you add HTML to the default page of the project. To design the functionality and programming logic for your add-in, you can add JavaScript code directly in the HTML page, but in this example, you'll add the code to the default JavaScript file (Home.js).
 
@@ -464,7 +464,7 @@ In the next section we'll modify the add-in project so that you can run and test
 
 
 ## Modify the add-in to run in Word
-<a name="FirstAppWordExcelVS_Modify"> </a>
+
 
 You can perform the following steps to modify this add-in project so that it will run and debug in Word 2013:
 
@@ -508,7 +508,7 @@ You can perform the following steps to modify this add-in project so that it wil
 
 
 ## Modify the add-in to run as a content add-in
-<a name="FirstAppWordExcelVS_ModifyContentApp"> </a>
+
 
 You can perform the following steps to modify this add-in project so that it will run as a content add-in in Excel:
 
@@ -585,7 +585,7 @@ You can perform the following steps to modify this add-in project so that it wil
 
 
 ## Next steps
-<a name="FirstAppWordExcelVS_Next"> </a>
+
 
 To learn more about developing Office Add-ins, see the following:
 
@@ -603,7 +603,7 @@ To learn more about developing Office Add-ins, see the following:
 
 
 ## Additional resources
-<a name="FirstAppWordExcelVS_Resources"> </a>
+
 
 
 - [Task pane and content add-ins for Office 2013](../essentials/task-pane-and-content-add-ins.md)

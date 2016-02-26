@@ -19,7 +19,7 @@ The way that you call a web service varies based on where the web service is loc
 |All other locations|Create a proxy for the web service on the web server that provides the source location for the UI. If you do not provide a proxy, cross-site scripting errors will prevent your add-in from running. One way to provide a proxy is by using JSON/P. For more information, see [Privacy and security for Office Add-ins](87c59a88-10e2-4c88-b6a8-736bd356e5f8.md).|
 
 ## Using the makeEwsRequestAsync method to access EWS operations
-<a name="mod_off15_appscope_CallingWebServices_UsingEWS"> </a>
+
 
 You can use the [mailbox.makeEwsRequestAsync](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.html%28Office.15%29.md) method to make a EWS request to the Exchange server that hosts the user's mailbox.
 
@@ -38,7 +38,7 @@ When the EWS SOAP request is complete, Outlook calls the callback method with on
 
 
 ## Tips for parsing EWS responses
-<a name="mod_off15_appscope_CallingWebServices_Tips"> </a>
+
 
 When parsing a SOAP response from a EWS operation, note the following browser-dependent issues:
 
@@ -93,7 +93,7 @@ mailbox.makeEwsRequestAsync(mailbox.item.itemId), function(result) {
     
 
 ## Example
-<a name="mod_off15_appscope_CallingWebServices_Example"> </a>
+
 
 The following example calls  **makeEwsRequestAsync** to use the [GetItem](http://msdn.microsoft.com/en-us/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) operation to get the subject of an item. This example includes the following three functions:
 
@@ -156,7 +156,7 @@ function callback(asyncResult)  {
 
 
 ## EWS operations that add-ins support
-<a name="mod_off15_appscope_CallingWebServices_SupportedEWS"> </a>
+
 
 Outlook add-ins can access a subset of operations that are available in EWS via the  **makeEwsRequestAsync** method. If you are unfamiliar with EWS operations and how to use the **makeEwsRequestAsync** method to access an operation, start with a SOAP request example to customize your _data_ argument. The following describes how you can use the **makeEwsRequestAsync** method:
 
@@ -195,7 +195,7 @@ The following table lists the EWS operations that add-ins support. To see exampl
 |[UpdateItem operation](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx)|Modifies the properties of existing items in the Exchange store.|
 
 ## Authentication and permission considerations for the makeEwsRequestAsync method
-<a name="mod_off15_appscope_CallingWebServices_AuthAndPerms"> </a>
+
 
 When you use the  **makeEwsRequestAsync** method, the request is authenticated by using the email account credentials of the current user. The **makeEwsRequestAsync** method manages the credentials for you so that you do not have to provide authentication credentials with your request.
 
@@ -206,7 +206,7 @@ Your add-in must specify the  **ReadWriteMailbox** permission in its add-in mani
 
 
 ## Additional resources
-<a name="mod_off15_appscope_CallingWebServices_AdditionalRsc"> </a>
+
 
 
 - [Outlook add-ins](../outlook/outlook-add-ins.md)

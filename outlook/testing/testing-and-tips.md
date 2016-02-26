@@ -6,7 +6,7 @@ Learn how to deploy and install an Outlook add-in for testing, as part of the Ou
 
 
 ## Deploying an Outlook add-in for testing
-<a name="DeployingMailApps_Testing"> </a>
+
 
 As part of the process of developing an Outlook add-in, you will probably find yourself iteratively deploying and installing the add-in for testing, which involves the following steps:
 
@@ -33,7 +33,7 @@ After initially deploying the UI files for the add-in, you can update the add-in
 
 
 ## Installing the add-in
-<a name="DeployingMailApps_Installing"> </a>
+
 
 After preparing the add-in manifest file and deploying the add-in UI to a web server that can be accessed, you can install the add-in for a mailbox on an Exchange server by using an Outlook rich client, Outlook Web App, or OWA for Devices, or by running remote Windows PowerShell cmdlets.
 
@@ -105,7 +105,7 @@ You can use the following additional PowerShell cmdlets to manage the add-ins fo
     
 
 ## Additional resources
-<a name="DeployingMailApps_AdditionalResources"> </a>
+
 
 
 - [Outlook add-ins](../outlook/outlook-add-ins.md)

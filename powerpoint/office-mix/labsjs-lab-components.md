@@ -21,7 +21,7 @@ Office Mix supports the following four lab component types:
     
 
 ## Additional resources
-<a name="bk_addresources"> </a>
+
 
 
 - [Office Mix add-ins](../powerpoint/office-mix/office-mix-add-ins.md)

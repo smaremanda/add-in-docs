@@ -83,7 +83,7 @@ function write(message){
 
 
 ## Support details
-<a name="bk_support"> </a>
+
 
 Support for each API member of the  **Document** object differs across Office host applications. See the "Support details" section of each member's topic for host support information.
 

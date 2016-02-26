@@ -76,7 +76,7 @@ Office.context.document.getSelectedDataAsync("text", {valueFormat:"unformatted",
 |[ValueFormat](../../reference/enumerations/valueformat-enumeration.md)|Specifies whether values, such as numbers and dates, returned by the invoked method are returned with their formatting applied.|
 
 ## Support details
-<a name="bk_support"> </a>
+
 
 Support for each enumeration differs across Office host applications. See the "Support details" section of each enumerations's topic for host support information.
 

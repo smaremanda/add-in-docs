@@ -50,7 +50,7 @@ function createTableData() {
 [![Try out this call in the interactive API Tutorial for Excel](../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](http://officeapitutorial.azurewebsites.net/Redirect.mdl?scenario=Write+and+Read+a+Table)
 
 ## Support details
-<a name="bk_support"> </a>
+
 
 A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this property.
 
@@ -70,7 +70,7 @@ For more information about Office host application and server requirements, see 
 |**Namespace**|Office|
 
 ## Support history
-<a name="bk_history"> </a>
+
 
 
 

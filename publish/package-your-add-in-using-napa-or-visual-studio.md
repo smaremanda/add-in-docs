@@ -7,7 +7,7 @@ Package your Office Add-in to prepare it for publishing.
 Your Office Add-in package contains an XML file that you'll use to publish the add-in. You'll have to publish the web application files of your project separately.
 
 ## Package an Office Add-in that you create by using Napa
-<a name="Napa"> </a>
+
 
 
 1. In Napa, on the side of the page, choose the  **Publish** button (
@@ -27,7 +27,7 @@ You can now upload your XML manifest to the appropriate location to [publish you
 
 
 ## Deploy your web project and package your add-in by using Visual Studio 2015
-<a name="VS2013"> </a>
+
 
 
 ### To deploy your web project
@@ -73,7 +73,7 @@ You can now upload your XML manifest to the appropriate location to [publish you
 
 
 ## Additional resources
-<a name="Additional"> </a>
+
 
 
 - [Publish your Office Add-in](../publish/publish.md)

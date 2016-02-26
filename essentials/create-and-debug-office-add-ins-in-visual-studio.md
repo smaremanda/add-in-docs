@@ -10,7 +10,7 @@ Use Visual Studio project templates to create an Office Add-ins project, modify 
 
 
 ## Create an Office Add-in project in Visual Studio
-<a name="Create"> </a>
+
 
 To get started, use the  **Office Add-ins** project template in Visual Studio. The **Create Office Add-in** wizard asks you to choose the type of add-in that you want to create, and then provides selections for the default configuration of your add-in.
 
@@ -47,7 +47,7 @@ When you've completed the wizard, Visual Studio creates a solution for you that 
 |Web application project|Contains the content pages of your add-in, including all the files and file references that you need to develop Office-aware HTML and JavaScript pages. While you develop your add-in, Visual Studio hosts the web application on your local IIS server. When you're ready to publish, you'll have to find a server to host this project.To learn more about ASP.NET web application projects, see [ASP.NET Web Projects](http://msdn.microsoft.com/en-us/library/cdcd712f-96b0-4165-8b5d-9d0566650a28%28Office.15%29.aspx).|
 
 ## Modify your add-in settings
-<a name="Review"> </a>
+
 
 To modify the settings of your add-in, open the  **Manifest Designer**. The Manifest Designer is a property page-like editor that enables you to modify the most common settings of your add-in in a more visual way. To open the  **Manifest Designer** from **Solution Explorer**, expand the "Office" add-in project node, choose the folder that contains the XML manifest, and then press the ENTER key. 
 
@@ -138,7 +138,7 @@ Compose Form settings are only available for Outlook add-ins. These settings spe
 |Enable the add-in to appear in items that are opened on a phone|Check this box if the add-in will appear on a phone. If selected, you must also provide the source location for the phone code.|
 
 ## Develop the contents of your add-in
-<a name="Develop"> </a>
+
 
 While the add-in project lets you modify the settings that describe your add-in, the web application provides the content that appears in the add-in. 
 
@@ -158,7 +158,7 @@ As your add-in becomes more sophisticated, you can add more HTML and JavaScript 
 
 
 ## Debug your add-in
-<a name="Test"> </a>
+
 
 When you are ready to start your add-in, review build and debug related properties, and then start the solution.
 
@@ -192,7 +192,7 @@ The following table describes the properties of the project.
 |**Project Folder**|The location of the project file.|
 
 ### Use an existing document to debug the add-in (Content and task pane add-ins only)
-<a name="SpecificDoc"> </a>
+
 
 You can add documents to the add-in project. If you have a document that contains test data that you want to use with your add-in, Visual Studio opens that document for you when you start the project.
 
@@ -217,7 +217,7 @@ You can add documents to the add-in project. If you have a document that contain
     
 
 ### Start the solution
-<a name="SpecificDoc"> </a>
+
 
 Visual Studio will automatically build the solution when you start it. You can start the solution from the  **Menu** bar by choosing **Debug**,  **Start**. 
 
@@ -255,7 +255,7 @@ To review the validation rules of the XML manifest file in your project, see [Of
 
 
 ### Show an add-in in Excel, Word, or Project and step through your code
-<a name="SpecificDoc"> </a>
+
 
 If you set the  **Start Document** property of the add-in project to Excel or Word, Visual Studio creates a new document and the add-in appears. If you set the **Start Document** property of the add-in project to use an existing document, Visual Studio opens the document, but you have to insert the add-in manually. If you set the **Start Document** to **Microsoft Project**, you also have to insert the add-in manually.
 
@@ -279,7 +279,7 @@ In Visual Studio, you can then set break-points. Then, as you interact with your
 
 
 ### Show the Outlook add-in in Outlook and step through your code
-<a name="SpecificDoc"> </a>
+
 
 To view the add-in in Outlook, open an email message or appointment item.
 
@@ -293,7 +293,7 @@ You can also change your code and review the effects of those changes in your Ou
 
 
 ### Modify code and continue to debug the add-in without having to start the project again
-<a name="SpecificDoc"> </a>
+
 
 You can change your code and review the effects of those changes in your add-in without having to close the host application and start the project again. After you change your code, open the shortcut menu for the add-in, and then choose  **Reload**. When you reload the add-in it becomes disconnected with the Visual Studio debugger. Therefore, you can view the effects of your change, but you cannot step through your code again until you attach the Visual Studio debugger to all of the available Iexplore.exe processes.
 
@@ -307,7 +307,7 @@ You can change your code and review the effects of those changes in your add-in 
     
 
 ## Next steps
-<a name="Test"> </a>
+
 
 
 - [Create a task pane or content add-in with Visual Studio](../essentials/create-a-task-pane-or-content-add-in-with-visual-studio.md)

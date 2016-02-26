@@ -10,7 +10,7 @@ You can also build a task pane add-in using [Visual Studio](http://msdn.microsof
 
 
 ## Prerequisites
-<a name="FirstAppWordExcelVS_Prerequisites"> </a>
+
 
 
 - A [Microsoft account](http://www.microsoft.com/en-us/account/default.aspx)
@@ -19,7 +19,7 @@ You can also build a task pane add-in using [Visual Studio](http://msdn.microsof
     
 
 ## Create a basic Office Add-in
-<a name="Create"> </a>
+
 
 
 1. Open the [Napa Office 365 Development Tools](https://www.napacloudapp.com/ ) web app in your browser and sign in using your Microsoft account credentials.
@@ -54,7 +54,7 @@ You can also build a task pane add-in using [Visual Studio](http://msdn.microsof
     
 
 ## Change the properties of the add-in
-<a name="Change"> </a>
+
 
 
 1. At the side of the page, choose the  **Properties** button (
@@ -73,7 +73,7 @@ You can also build a task pane add-in using [Visual Studio](http://msdn.microsof
     
 
 ## Capture the text that users select in a document
-<a name="Get"> </a>
+
 
 
 1. In Napa, choose  **Home.html**.
@@ -147,7 +147,7 @@ You can also build a task pane add-in using [Visual Studio](http://msdn.microsof
     
 
 ## Show images in the task pane add-in by using the Flickr API
-<a name="Show"> </a>
+
 
 In the Home.js file, add the following code. This code adds a function that shows images that relate to the selected text.
     
@@ -192,7 +192,7 @@ In the Home.js file, add the following code. This code adds a function that show
     
 
 ## Debug your add-in in Internet Explorer
-<a name="Debugging"> </a>
+
 
 If you start your task pane add-in in Excel Online, and you use Internet Explorer (IE), you can use F12 developer tools to debug the JavaScript, HTML, and Cascading Style Sheets (CSS) of your add-in. 
 
@@ -228,7 +228,7 @@ Here's how to open F12 tools, start the debugger, and force execution to stop on
     
 
 ## Next steps
-<a name="Debugging"> </a>
+
 
 Now that you've created a basic task pane add-in, you can:
 
@@ -252,7 +252,7 @@ Now that you've created a basic task pane add-in, you can:
     
 
 ## Additional resources
-<a name="FirstAppWordExcelVS_Resources"> </a>
+
 
 
 - [Understanding the JavaScript API for Office](../overview/understanding-the-javascript-api-for-office.md)

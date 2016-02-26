@@ -10,7 +10,7 @@ This walkthrough shows you how to create a SharePoint Add-in that includes an Ex
 
 
 ## Prerequisites
-<a name="Prerequisites"> </a>
+
 
 Install the following components before you get started:
 
@@ -29,7 +29,7 @@ Install the following components before you get started:
     
 
 ## Create a SharePoint Add-in project in Visual Studio
-<a name="Create"> </a>
+
 
 
 1. Start Visual Studio.
@@ -53,7 +53,7 @@ Install the following components before you get started:
     
 
 ## Add a task pane add-in item
-<a name="Add"> </a>
+
 
 Next, add an Office Add-in to the project. You can add any type of add-in that you want. For this walkthrough, we will add a task pane add-in.
 
@@ -76,7 +76,7 @@ Next, add an Office Add-in to the project. You can add any type of add-in that y
     
 
 ## Add a document library
-<a name="Library"> </a>
+
 
 In this procedure, you will add a document library and make the workbook the default template of the document library.
 
@@ -110,7 +110,7 @@ In this procedure, you will add a document library and make the workbook the def
     
 
 ## Consume SharePoint data in the task pane
-<a name="Consume"> </a>
+
 
 In this procedure, you'll show a list of site users by using the REST interface provided by SharePoint 2013.
 
@@ -179,7 +179,7 @@ In this example, the SharePoint list data is only displayed, but you might use t
     
 
 ## Debug the task pane add-in
-<a name="debug"> </a>
+
 
 You can debug your task pane add-in by starting the document or by starting the SharePoint Add-in, and then opening a document from the document library.
 
@@ -260,7 +260,7 @@ You can debug your task pane add-in by starting the document or by starting the 
      >**Note**  If the workbook doesn't contain any data, you can add some by choosing  **EDIT WORBOOK**,  **Edit in Excel Online** on the toolbar in the workbook.
 
 ## Package and publish the add-in
-<a name="Package"> </a>
+
 
 When you are ready to package your add-in for publishing, open the  **Publish Office and SharePoint Add-ins** wizard.
 
@@ -271,7 +271,7 @@ When you are ready to package your add-in for publishing, open the  **Publish Of
     
 
 ## Additional resources
-<a name="AdditionalResources"> </a>
+
 
 
 - [Task pane and content add-ins for Office 2013](../essentials/task-pane-and-content-add-ins.md)

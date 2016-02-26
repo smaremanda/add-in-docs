@@ -6,7 +6,7 @@ See JavaScript examples of using asynchronous methods and an Exchange Web Servic
 
 
 ## Adding a file or Outlook item as an attachment
-<a name="mod_off15_AddingRemovingAttachment_AddingFileOrItem"> </a>
+
 
 You can use the [addFileAttachmentAsync](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html%28Office.15%29.md) and [addItemAttachmentAsync](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html%28Office.15%29.md) methods to attach a file and an Outlook item respectively to the item that the user is composing. Both are asynchronous methods, which means execution can go on without waiting for the add-attachment action to complete. Depending on the original location and size of the attachment being added, the add-attachment asynchronous call may take a while to complete. If there are tasks that depend on the action to complete, you should carry out those tasks in a callback method. This callback method is optional and is invoked when the uploading of the attachment is complete. The callback method takes an [AsyncResult](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) object as an output parameter that provides any status, error, and returned value from the add-attachment action. If the callback requires any extra parameters, you can specify them in the optional _options.aysncContext_ parameter. _options.asyncContext_ can be of any type that your callback method expects.
 
@@ -116,7 +116,7 @@ function addItemAttachment(ID) {
 
 
 ## Removing an attachment
-<a name="mod_off15_AddingRemovingAttachment_Removing"> </a>
+
 
 You can remove a file or item attachment from a message or appointment item in a compose form by specifying the corresponding attachment ID and using the [removeAttachmentAsync](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html%28Office.15%29.md) method. You should remove only attachments that the same add-in has added in the same session. You should make sure the attachment ID corresponds to a valid attachment, or the method will return an error. Similar to the **addFileAttachmentAsync** and **addItemAttachmentAsync** methods, **removeAttachmentAsync** is an asynchronous method. You should provide a callback method to check for the status and any error by using the **AsyncResult** output parameter object. You can also pass any additional parameters to the callback method by using the optional **asyncContext** parameter, which is a JSON object of key-value pairs.
 
@@ -154,7 +154,7 @@ function removeAttachment(ID) {
 
 
 ## Tips for adding and removing attachments
-<a name="mod_off15_AddingRemovingAttachment_Tips"> </a>
+
 
 If your compose add-in adds and removes attachments, structure your code such that you pass a valid attachment ID to the remove-attachment call, and handle the case when  **AsyncResult.error** returns **InvalidAttachmentId**. Depending on the location and size of an attachment, attaching a file or item can take some time to complete. The following example contains a call to  **addFileAttachmentAsync**,  `write`, and  **removeAttachmentAsync**. You might think that the calls would execute sequentially one after another.
 
@@ -296,7 +296,7 @@ Notice that the callback for  **removeAttachmentAsync** is nested inside the cal
 
 
 ## Additional resources
-<a name="mod_off15_AddingRemovingAttachment_AdditionalResources"> </a>
+
 
 
 - [Create Outlook add-ins for compose forms](../outlook/compose/compose-scenario.md)

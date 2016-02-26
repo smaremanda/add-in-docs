@@ -13,7 +13,7 @@ There are two ways to manage custom data in your Outlook add-in:
 Both of these give access to custom data that is only accessible by your Outlook add-in, but each method stores the data separately from the other. That is, the data stored through roaming settings is not accessible by custom properties, and vice versa. The data is stored on the server for that mailbox, and is accessible in subsequent Outlook sessions on all the form factors that the add-in supports. 
 
 ## Custom data per mailbox: roaming settings
-<a name="GettingSettingCustomData_RoamingSettings"> </a>
+
 
 You can specify data specific to a user's Exchange mailbox using the [RoamingSettings](https://dev.outlook.com/reference/add-ins/RoamingSettings.html%28Office.15%29.md) object. Examples of such data include the user's personal data and preferences. Your mail add-in can access roaming settings when it roams on any device it's designed to run on (desktop, tablet, or smartphone).
 
@@ -21,7 +21,7 @@ You can specify data specific to a user's Exchange mailbox using the [RoamingSet
 
 
 ### Roaming settings format
-<a name="PersistMailboxData_SettingsFormat"> </a>
+
 
 The data in a  **RoamingSettings** object is stored as a serialized JavaScript Object Notation (JSON) string. The following is an example of the structure, assuming there are three defined roaming settings named `add-in_setting_name_0`,  `add-in_setting_name_1`, and  `add-in_setting_name_2`.
 
@@ -36,7 +36,7 @@ The data in a  **RoamingSettings** object is stored as a serialized JavaScript O
 
 
 ### Loading roaming settings
-<a name="PersistMailboxData_LoadSettings"> </a>
+
 
 A mail add-in typically loads roaming settings in the [Office.initialize](http://msdn.microsoft.com/en-us/library/727adf79-a0b5-48d2-99c7-6642c2c334fc%28Office.15%29.aspx) event handler. The following JavaScript code example shows how to load existing roaming settings and get the values of 2 settings, "customerName" and "customerBalance":
 
@@ -60,7 +60,7 @@ Office.initialize = function () {
 
 
 ### Creating or assigning a roaming setting
-<a name="PersistMailboxData_CreateSetting"> </a>
+
 
 Continuing with the preceding example, the following JavaScript function,  `setAddInSetting`, shows how to use the [RoamingSettings.set](https://dev.outlook.com/reference/add-ins/RoamingSettings.html%28Office.15%29.md) method to set a setting named `cookie` with today's date, and persist the data by using the [RoamingSettings.saveAsync](https://dev.outlook.com/reference/add-ins/RoamingSettings.html%28Office.15%29.md) method to save all the roaming settings back to the server. The **set** method creates the setting if the setting does not already exist, and assigns the setting to the specified value. The **saveAsync** method saves roaming settings asynchronously. This code sample passes a callback method, `saveMyAddInSettingsCallback`, to  **saveAsync**. When the asynchronous call finishes,  `saveMyAddInSettingsCallback` is called by using one parameter, _asyncResult_. This parameter is an [AsyncResult](https://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) object that contains the result of and any details about the asynchronous call. You can use the optional _userContext_ parameter to pass any state information from the asynchronous call to the callback function.
 
@@ -85,7 +85,7 @@ function saveMyAddInSettingsCallback(asyncResult) {
 
 
 ### Removing a roaming setting
-<a name="PersistMailboxData_RemoveSetting"> </a>
+
 
 Also extending the preceding examples, the following JavaScript function,  `removeAddInSetting`, shows how to use the [RoamingSettings.remove](https://dev.outlook.com/reference/add-ins/RoamingSettings.html%28Office.15%29.md) method to remove the `cookie` setting and save all the roaming settings back to the Exchange Server.
 
@@ -104,7 +104,7 @@ function removeAddInSetting()
 
 
 ## Custom data per item in a mailbox: custom properties
-<a name="GettingSettingCustomData_CustomProps"> </a>
+
 
 You can specify data specific to an item in the user's mailbox using the [CustomProperties](https://dev.outlook.com/reference/add-ins/CustomProperties.html%28Office.15%29.md) object. For example, your mail add-in could categorize certain messages and note the category using a custom property `messageCategory`. Or, if your mail add-in creates appointments from meeting suggestions in a message, you can use a custom property to track each of these appointments. This ensures that if the user opens the message again, your mail add-in does not offer to create the appointment a second time.
 
@@ -118,7 +118,7 @@ For more information about MAPI properties, Outlook  **UserProperties**, EWS ext
 
 
 ### Using custom properties
-<a name="MailAppCustomProperties_Using"> </a>
+
 
 Before you can use custom properties, you must load them by calling the [loadCustomPropertiesAsync](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html%28Office.15%29.md) method. If any custom properties are already set for the current item, they are loaded from the Exchanger server at this point. After you have created the property bag, you can use the [set](https://dev.outlook.com/reference/add-ins/CustomProperties.html%28Office.15%29.md) and [get](https://dev.outlook.com/reference/add-ins/CustomProperties.html%28Office.15%29.md) methods to add and retrieve custom properties. To save any changes that you make to the property bag, you must use the [saveAsync](https://dev.outlook.com/reference/add-ins/CustomProperties.html%28Office.15%29.md) method to persist the changes on the Exchange server.
 
@@ -127,7 +127,7 @@ Before you can use custom properties, you must load them by calling the [loadCus
 
 
 ### Custom properties example
-<a name="MailAppCustomProperties_Example"> </a>
+
 
 The following example shows a simplified set of methods for an Outlook add-in that uses custom properties. You can use this example as a starting point for your add-in that uses custom properties. 
 
@@ -196,7 +196,7 @@ function saveCallback() {
 
 
 ## Additional resources
-<a name="GettingSettingCustomData_AdditionalResources"> </a>
+
 
 
 - [Outlook add-ins](../outlook/outlook-add-ins.md)

@@ -38,7 +38,7 @@ Any additional manifest files you put in this file share will be available to us
 
 
 ## Additional resources
-<a name="olowa15conagave_InstallingSamplesadditionalrsc"> </a>
+
 
 
 - [Publish your Office Add-in](../publish/publish.md)

@@ -11,7 +11,7 @@ The web service that supports your add-in must run on the same server that hosts
 Adding an identity token to the service request that your add-in sends is easy. You request the token, use the token, and then use the web service response. Here's how it looks with a simple XML document that you send to your server by using the  **XmlHttpRequest** method.
 
 ## Request a token from your Exchange server
-<a name="requestingatoken"> </a>
+
 
 This simple initialization method for an add-in uses the  **getUserIdentityTokenAsync** method to request an identity token from the Exchange server. The _getUserIdentityToken_ parameter is the function that is called when the asynchronous request to the server returns. See the next step for the callback method.
 
@@ -33,7 +33,7 @@ Office.initialize = function () {
 
 
 ## Use the identity token
-<a name="usingthetoken"> </a>
+
 
 The callback function for the  **getUserIdentityTokenAsync** method has one parameter that contains the user identity token in its **value** property.
 
@@ -61,7 +61,7 @@ function getUserIdentityTokenCallback(asyncResult) {
 
 
 ## Use the web service response
-<a name="usingtheresponse"> </a>
+
 
 This is another simple function that processes the response from the web service. It follows the standard pattern for  **XHMHttpResponse** callback functions. It waits for the entire response to come in from the web service and then puts the contents of the response on the add-in UI. The response that this function is parsing is the response from the web service. For information about this response, see [Validate an Exchange identity token](../outlook/authentication/validate-an-identity-token.md). 
 
@@ -90,7 +90,7 @@ function readyStateChange() {
 
 
 ## Example: Calling a web service with identity tokens
-<a name="bk_Example"> </a>
+
 
 Identity tokens provide identity information about the client that is calling your service to a web service that is running on your server. To use identity tokens, you'll need the following:
 
@@ -105,7 +105,7 @@ Identity tokens provide identity information about the client that is calling yo
     
 
 ### Code for the sample add-in
-<a name="completecode"> </a>
+
 
 The following files are required for the add-in described in this article:
 
@@ -276,7 +276,7 @@ The following example shows the IdentityTest.html file.
 
 
 ## Next steps
-<a name="bk_next"> </a>
+
 
 Now that you know how to request an identity token, you need to use the token on the server side of the request. The following articles will help you get started:
 
@@ -289,7 +289,7 @@ Now that you know how to request an identity token, you need to use the token on
     
 
 ## Additional resources
-<a name="bk_more"> </a>
+
 
 
 - [Authenticate an Outlook add-in by using Exchange identity tokens](../outlook/authentication/authentication.md)

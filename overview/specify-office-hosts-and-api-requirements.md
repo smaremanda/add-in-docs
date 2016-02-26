@@ -39,7 +39,7 @@ Your add-in's manifest must use version 1.1 of the add-in manifest schema. To do
 
 
 ### Specify the latest JavaScript API for Office library
-<a name="ReferenceOfficeJS"> </a>
+
 
 If you use runtime checks, reference the most current version of the JavaScript API for Office library from the content delivery network (CDN). To do this, add the following  `script` tag to your HTML. Using `/1/` in the CDN URL ensures that you reference the most recent version of Office.js.
 
@@ -66,7 +66,7 @@ When specifying Office hosts or API requirements, there are several decisions to
     
 
 ## Set the Hosts element
-<a name="SetHosts"> </a>
+
 
 To make your add-in run in one Office host application, use the  **Hosts** and **Host** elements in the manifest. If the **Hosts** element isn't specified in the manifest, your add-in will run in all hosts.
 
@@ -98,7 +98,7 @@ The  **Hosts** element can contain one or more **Host** elements. The **Host** e
 
 
 ## Set the Requirements element in the manifest
-<a name="RequirementsElement"> </a>
+
 
 The  **Requirements** element specifies the minimum requirement sets or API members that must be supported by the Office host to run your add-in. The **Requirements** element can specify both requirement sets and individual methods used in your add-in. In version 1.1 of the add-in manifest schema, the **Requirements** element is optional for all add-ins, except for Outlookadd-ins.
 
@@ -144,7 +144,7 @@ From the above example:
     
 
 ## Use runtime checks in your JavaScript code
-<a name="Runtimecheck"> </a>
+
 
 You might want to provide additional functionality in your add-in if certain requirement sets are supported by the Office host. For example, you might want to use the new JavaScript API for Word in your existing add-in if your add-in runs in Word 2016. To do this, you use the  **isSetSupported** method with the name of the requirement set. **isSetSupported** determines, at runtime, whether the Office host running the add-in supports the requirement set. If the requirement set is supported, **isSetSupported** returns **true** and runs the additional code that uses the API members from that requirement set. If the Office host doesn't support the requirement set, **isSetSupported** returns **false** and the additional code won't run. The following code shows the syntax to use with **isSetSupported**.
 
@@ -192,7 +192,7 @@ else
 
 
 ## Runtime checks using methods not in a requirement set
-<a name="RTCmthdnotinReqSet"> </a>
+
 
 Some API members don't belong to requirement sets. This only applies to API members that are part of the [JavaScript API for Office](http://msdn.microsoft.com/library/b27e70c3-d87d-4d27-85e0-103996273298%28Office.15%29.aspx) namespace (anything under Office.*), not API members that belong to the [Word add-ins JavaScript reference](https://msdn.microsoft.com/library/office/mt616493.aspx) (anything in Word.*) or [Excel add-ins JavaScript API reference](https://msdn.microsoft.com/library/office/mt616490.aspx) (anything in Excel.*) namespaces. When your add-in depends on a method that is not part of a requirement set, you can use the runtime check to determine whether the method is supported by the Office host, as shown in the following code example. For a complete list of methods that don't belong to a requirement set, see [Office add-in requirement sets](http://msdn.microsoft.com/library/68e346bc-b63a-4e73-ae2f-b03d1b27b98f%28Office.15%29.aspx).
 
@@ -213,7 +213,7 @@ if (Office.context.document.setSelectedDataAsync)
 
 
 ## Additional resources
-<a name="SpecifyRequirementSets_resources"> </a>
+
 
 
 - [Office Add-ins XML manifest](../overview/add-in-manifests.md)

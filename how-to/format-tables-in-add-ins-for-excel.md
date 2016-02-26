@@ -129,7 +129,7 @@ Office.select("bindings#myBinding").setDataAsync(tableData,
 
 
 ## Updating and clearing formatting
-<a name="FormatTablesInApps_UpdatingClearing"> </a>
+
 
 When you set formatting with the  _cellFormat_ and _tableOptions_ optional parameters of the **Document.setSelectedDataAsync** or **TableBinding.setDataAsync** methods, they will set formatting only the first time you call them. To update or clear formatting, you must use three new methods of the **TableBinding** object: **setFormatsAsync**,  **setTableOptionsAsync**, and  **clearFormatsAsync**.
 
@@ -169,7 +169,7 @@ Office.select("bindings#myBinding").clearFormatsAsync();
 
 
 ## Supported formatting keys and values
-<a name="FormatTablesInApps_SupportedFormatting"> </a>
+
 
 The following tables list the supported key-value pairs you can pass to the  _cellFormat_ or _tableOptions_ parameters.
 

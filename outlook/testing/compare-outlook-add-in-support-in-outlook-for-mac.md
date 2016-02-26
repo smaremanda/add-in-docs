@@ -34,7 +34,7 @@ JSON.stringify(Office.context.mailbox.item, null, 4);
 |The accuracy is up to only a second.|
 
 ## Additional resources
-<a name="mod_off15_CompareMac_AdditionalRsc"> </a>
+
 
 
 - [Deploy and install Outlook add-ins for testing](../outlook/testing/testing-and-tips.md)

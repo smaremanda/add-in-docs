@@ -100,7 +100,7 @@ The  **AsyncResult** object is available from the function passed as the argumen
 |**RoamingSettings** (Outlook only)|[saveAsync](http://msdn.microsoft.com/library/a616f71c-a447-423f-a0d2-e9d6f1ac32f8%28Office.15%29.aspx)|
 
 ## Support details
-<a name="bk_support"> </a>
+
 
 A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
 
@@ -125,7 +125,7 @@ For more information about Office host application and server requirements, see 
 |**Namespace**|Office|
 
 ## Support history
-<a name="bk_history"> </a>
+
 
 
 ****

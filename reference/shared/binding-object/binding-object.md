@@ -62,7 +62,7 @@ The  **Binding** object is never called directly. It is the abstract parent clas
 
 
 ## Support details
-<a name="bk_support"> </a>
+
 
 Support for each API member of the  **Binding** object differs across Office host applications. See the "Support details" section of each member's topic for host support information.
 

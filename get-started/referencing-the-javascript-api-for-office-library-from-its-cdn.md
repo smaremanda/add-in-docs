@@ -17,7 +17,7 @@ The first time your add-in loads, the JavaScript API for Office library files wi
 The default Home.html file in your project will contain the appropriate  `script` tag if you develop your add-in with the **Add-in for Office** project template files provided with the latest Visual Studio with the [latest Microsoft Office Developer Tools update](https://www.visualstudio.com/features/office-tools-vs).
 
 ## Additional resources
-<a name="bk_addresources"> </a>
+
 
 
 - [Understanding the JavaScript API for Office](../overview/understanding-the-javascript-api-for-office.md)

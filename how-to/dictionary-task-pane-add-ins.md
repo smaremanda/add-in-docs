@@ -51,7 +51,7 @@ To create a task pane add-in that provides a dictionary lookup, you create two m
 The following sections provide examples of how to create these components.
 
 ## Creating a dictionary XML web service
-<a name="O15DictionaryAgave_WebService"> </a>
+
 
 The XML web service must return queries to the web service as XML that conforms to the OfficeDefinitions XML schema. The following two sections describe the OfficeDefinitions XML schema, and provide an example of how to code an XML web service that returns queries in that XML format.
 
@@ -184,7 +184,7 @@ public class WebService : System.Web.Services.WebService {
 
 
 ## Creating the components of a dictionary add-in
-<a name="O15DictionaryAgave_CreatingAgave"> </a>
+
 
 A dictionary add-in consists of three main component files.
 
@@ -262,7 +262,7 @@ The  **Dictionary** element and its child elements that are specific to creating
 
 
 ### Dictionary element
-<a name="O15AgaveManifestOverview_Dictionary"> </a>
+
 
 Specifies settings for dictionary add-ins.
 
@@ -280,7 +280,7 @@ The  **Dictionary** element and its child elements are added to the manifest of 
 
 
 #### TargetDialects element
-<a name="O15AgaveManifestOverview_TargetLanguages"> </a>
+
 
 Specifies the dialects that this dictionary supports. Required (for dictionary add-ins).
 
@@ -326,7 +326,7 @@ The  **TargetDialects** element and its child elements specify the set of dialec
 
 
 #### TargetDialect element
-<a name="O15AgaveManifestOverview_TargetLanguage"> </a>
+
 
 Specifies a dialect that this dictionary supports. Required (for dictionary add-ins).
 
@@ -349,7 +349,7 @@ Specify the value for a dialect in the RFC1766  `language` tag format, such as E
 
 
 #### QueryUri element
-<a name="O15AgaveManifestOverview_QueryUri"> </a>
+
 
 Specifies the endpoint for the dictionary query service. Required (for dictionary add-ins).
 
@@ -372,7 +372,7 @@ This is the URI of the XML web service for the dictionary provider. The properly
 
 
 #### CitationText element
-<a name="O15AgaveManifestOverview_CitationText"> </a>
+
 
 Specifies the text to use in citations. Required (for dictionary add-ins).
 
@@ -397,7 +397,7 @@ For this element, you can specify values for additional locales by using the  **
 
 
 #### DictionaryName element
-<a name="O15AgaveManifestOverview_DictionaryName"> </a>
+
 
 Specifies the name of this dictionary. Required (for dictionary add-ins).
 
@@ -422,7 +422,7 @@ For this element, you can specify values for additional locales.
 
 
 #### DictionaryHomePage element
-<a name="O15AgaveManifestOverview_DictionaryHomePage"> </a>
+
 
 Specifies the URL of the home page for the dictionary. Required (for dictionary add-ins).
 
@@ -447,7 +447,7 @@ For this element, you can specify values for additional locales.
 
 
 ### Creating a dictionary add-in's HTML user interface
-<a name="O15AgaveManifestOverview_Dictionary"> </a>
+
 
 The following two examples show the HTML and CSS files for the UI of the Demo Dictionary add-in. To view how the UI is displayed in the add-in's task pane, see Figure 6 following the code. To see how the implementation of the JavaScript in the Dictionary.js file provides programming logic for this HTML UI, see "Writing the JavaScript implementation" immediately following this section.
 
@@ -542,7 +542,7 @@ a:hover, a:active
 
 
 ### Writing the JavaScript implementation
-<a name="O15AgaveManifestOverview_Dictionary"> </a>
+
 
 The following example shows the JavaScript implementation in the Dictionary.js file that is called from the add-in's HTML page to provide the programming logic for the Demo Dictionary add-in. This script reuses the XML web service described previously. When placed in the same directory as the example web service, the script will get definitions from that service. It can be used with a public OfficeDefinitions-conforming XML web service by modifying the  `xmlServiceURL` variable at the top of the file, and then replacing the Bing API key for pronunciations with a properly registered one.
 

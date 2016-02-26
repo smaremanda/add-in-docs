@@ -133,7 +133,7 @@ Also, the [Package Tracker](https://store.office.com/package-tracker-WA104162083
 
 
 ## Additional Resources
-<a name="bk_addresources"> </a>
+
 
 
 - [Get Started with Outlook add-ins for Office 365](https://dev.outlook.com/MailAppsGettingStarted/GetStarted.aspx)

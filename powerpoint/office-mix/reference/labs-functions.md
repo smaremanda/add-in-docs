@@ -23,7 +23,7 @@ JavaScript functions that are in the Labs module.
 |[Labs.registerDeserializer](../powerpoint/office-mix/reference/labs.registerdeserializer.md)|Deserializes a specified JSON object into an object.|
 
 ## Additional resources
-<a name="bk_addresources"> </a>
+
 
 
 - [LabsJS.Labs](../powerpoint/office-mix/reference/labsjs.labs.md)

@@ -70,7 +70,7 @@ The following example shows an Office 2013 add-in's manifest. There are no add-i
 
 
 ## Step 3: Add VersionOverrides element
-<a name="versionoverrides"> </a>
+
 
 The  **VersionOverrides** element is the root element that contains the definition of your add-in command. **VersionOverrides** is a child element of the **OfficeApp** element in the manifest. The following table lists the attributes of the **VersionOverrides** element.
 
@@ -117,7 +117,7 @@ The following example shows how to use the  **VersionOverrides** element and its
 
 
 ## Step 4: Add Hosts, Host, and DesktopFormFactor elements
-<a name="versionoverrides"> </a>
+
 
 The  **Hosts** element contains one or more **Host** elements. A **Host** element specifies a particular Office host. The **Host** element contains child elements that specify the add-in commands to display after your add-in is installed in that Office host. To show the same add-in commands in two or more different Office hosts, you must duplicate the child elements in each **Host**.
 
@@ -150,7 +150,7 @@ The following is an example of  **Hosts**, **Host**, and **DesktopFormFactor** e
 
 
 ## Step 5: Add the FunctionFile element
-<a name="versionoverrides"> </a>
+
 
  The **FunctionFile** element specifies a file that contains JavaScript code to run when an add-in command uses the **ExecuteFunction** action (see [Button controls](../design/create-add-in-commands-in-your-manifest-preview.md#VersionOverrides10_Buttons) for a description). The **FunctionFile** element's **resid** attribute is set to a HTML file that includes all the JavaScript files your add-in commands require. You can't link directly to a JavaScript file. You can only link to an HTML file. The file name is specified as a **Url** element in the **Resources** element.
 
@@ -218,7 +218,7 @@ The following code shows how to implement the function used by  **FunctionName**
 
 
 ## Step 6: Add ExtensionPoint elements
-<a name="versionoverrides"> </a>
+
 
 The  **ExtensionPoint** element defines where add-in commands should appear in the Office UI. You can define **ExtensionPoint** elements with these **xsi:type** values:
 
@@ -283,7 +283,7 @@ The following examples show how to use the  **ExtensionPoint** element with **Pr
 |
 
 ### Button controls
-<a name="VersionOverrides10_Buttons"> </a>
+
 
 A button performs a single action when the user selects it. It can either execute a JavaScript function or show a task pane. The following example shows how to define two buttons. The first button runs a JavaScript function without showing a UI, and the second button shows a task pane. In the  **Control** element:
 
@@ -340,7 +340,7 @@ A button performs a single action when the user selects it. It can either execut
 |**Action**|Required. Specifies the action to perform when the user selects the button. You can specify one of the following values for the  **xsi:type** attribute: <br/><br/> - **ExecuteFunction**, which runs a JavaScript function located in the file referenced by **FunctionFile**. ExecuteFunction does not display a UI. The FunctionName child element specifies the name of the function to execute. <br/> - **ShowTaskPane**, which shows a task pane add-in. The **SourceLocation** child element specifies the source file location of the task pane add-in to display. The **resid**  attribute must be set to the value of the **id** attribute of a **Url** element in the **Urls** element in the **Resources** element.
 
 ### Menu controls
-<a name="VersionOverrides10_Menus"> </a>
+
 
 A  **Menu** control can be used with either **PrimaryCommandSurface** or **ContextMenu**, and defines:
 
@@ -421,7 +421,7 @@ A  **Menu** control can be used with either **PrimaryCommandSurface** or **Conte
 |**Items**|Required. Contains the  **Item** elements for each submenu item. Each **Item** element contains the same child elements as [Button controls](../design/create-add-in-commands-in-your-manifest-preview.md#VersionOverrides10_Buttons).|
 
 ## Step 7: Add the Resources element
-<a name="VersionOverrides10_Resources"> </a>
+
 
 The  **Resources** element contains resources used by the different child elements of the **VersionOverrides** element. Resources include icons, strings, and URLs. An element in the manifest can use a resource by referencing the **id** of the resource. Using the **id** helps organize the manifest, especially when there are different versions of the resource for different locales. An **id** has a maximum of 32 characters.
 
@@ -472,7 +472,7 @@ The following shows an example of how to use the  **Resources** element. Each re
 
 
 ## Tab values for default Office ribbon tabs
-<a name="OfficeTabs"> </a>
+
 
 In Excel and Word, you can add your add-in commands on the ribbon by using the default Office UI tabs. The following table lists the values that you can use for the  **id** attribute of the **OfficeTab** element. The tab values are case sensitive.
 
@@ -483,7 +483,7 @@ In Excel and Word, you can add your add-in commands on the ribbon by using the d
 |PowerPoint|**TabHome**<br/>**TabInsert**<br/>**TabDesign**<br/>**TabTransitions**<br/>**TabAnimations**<br/>**TabSlideShow**<br/>**TabReview**<br/>**TabView**<br/>**TabDeveloper**<br/>**TabAddIns**<br/>**TabPrintPreview**<br/>**TabMerge**<br/>**TabGrayscale**<br/>**TabBlackAndWhite**<br/>**TabBroadcastPresentation**<br/>**TabSlideMaster**<br/>**TabHandoutMaster**<br/>**TabNotesMaster**<br/>**TabBackgroundRemoval**<br/>**TabSlideMasterHome**|
 
 ## Additional resources
-<a name="bk_addresources"> </a>
+
 
 
 - [Add-in commands for Excel, Word and PowerPoint (Preview)](../design/add-in-commands-for-excel-and-word-preview.md)

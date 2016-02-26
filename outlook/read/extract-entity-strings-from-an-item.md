@@ -24,7 +24,7 @@ Most of these entities rely on natural language recognition, which is based on m
 Outlook activates the entities add-in whenever the user selects an appointment, email message, or meeting request, response, or cancellation for viewing. During initialization, the sample entities add-in reads all instances of the supported entities from the current item. The add-in provides buttons for the user to choose a type of entity. When the user selects an entity, the add-in displays instances of the selected entity in the add-in pane. The following sections list the XML manifest, and HTML and JavaScript files of the entities add-in, and highlight the code that supports the respective entity extraction.
 
 ## XML manifest
-<a name="olowa15conagave_entitiesXMLManifest"> </a>
+
 
 The entities add-in has two activation rules joined by a logical OR operation. 
 
@@ -88,7 +88,7 @@ xsi:type="MailApp">
 
 
 ## HTML implementation
-<a name="olowa15conagave_entitiesHTMLImplementation"> </a>
+
 
 The HTML file of the entities add-in specifies buttons for the user to select each type of entity, and another button to clear displayed instances of an entity. It includes a JavaScript file, default_entities.js, which is described in the next section under [JavaScript implementation](#olowa15conagave_entitiesJSImplementation). The JavaScript file includes the event handlers for each of the buttons.
 
@@ -141,7 +141,7 @@ Note that all Outlook add-ins must include office.js. The HTML file that follows
 
 
 ## Style sheet
-<a name="olowa15conagave_entitiesStyleSheet"> </a>
+
 
 The entities add-in uses an optional CSS file, default_entities.css, to specify the layout of the output. The following is a listing of the CSS file.
 
@@ -199,13 +199,13 @@ div#meeting_suggestions
 
 
 ## JavaScript implementation
-<a name="olowa15conagave_entitiesJSImplementation"> </a>
+
 
 The remaining sections describe how this sample (default_entities.js file) extracts well-known entities from the subject and body of the message or appointment that the user is viewing. 
 
 
 ## Extracting entities upon initialization
-<a name="olowa15conagave_entitiesExtractingEntUponIni"> </a>
+
 
 Upon the [Office.initialize](http://msdn.microsoft.com/en-us/library/727adf79-a0b5-48d2-99c7-6642c2c334fc%28Office.15%29.aspx) event, the entities add-in calls the [getEntities](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html%28Office.15%29.md) method of the current item. The **getEntities** method returns the global variable `_MyEntities` an array of instances of supported entities. The following is the related JavaScript code.
 
@@ -234,7 +234,7 @@ Office.initialize = function () {
 
 
 ## Extracting addresses
-<a name="olowa15conagave_entitiesExtractingAddresses"> </a>
+
 
 When the user clicks the  **Get Addresses** button, the `myGetAddresses` event handler obtains an array of addresses from the [addresses](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) property of the `_MyEntities` object, if any address was extracted. Each extracted address is stored as a string in the array. `myGetAddresses` forms a local HTML string in `htmlText` to display the list of extracted addresses. The following is the related JavaScript code.
 
@@ -258,7 +258,7 @@ function myGetAddresses()
 
 
 ## Extracting contact information
-<a name="olowa15conagave_entitiesExtractingContactInfo"> </a>
+
 
 When the user clicks the  **Get Contact Information** button, the `myGetContacts` event handler obtains an array of contacts together with their information from the [contacts](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) property of the `_MyEntities` object, if any was extracted. Each extracted contact is stored as a [Contact](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) object in the array. `myGetContacts` obtains further data about each contact. Note that the context determines whether Outlook can extract a contact from an item - a signature at the end of an email message, or at least some of the following information would have to exist in the vicinity of the contact:
 
@@ -346,7 +346,7 @@ function myGetContacts()
 
 
 ## Extracting email addresses
-<a name="olowa15conagave_entitiesExtractingEmailAddresses"> </a>
+
 
 When the user clicks the  **Get Email Addresses** button, the `myGetEmailAddresses` event handler obtains an array of SMTP email addresses from the [emailAddresses](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) property of the `_MyEntities` object, if any was extracted. Each extracted email address is stored as a string in the array. `myGetEmailAddresses` forms a local HTML string in `htmlText` to display the list of extracted email addresses. The following is the related JavaScript code.
 
@@ -373,7 +373,7 @@ function myGetEmailAddresses()
 
 
 ## Extracting meeting suggestions
-<a name="olowa15conagave_entitiesExtractingMeetingSuggestions"> </a>
+
 
 When the user clicks the  **Get Meeting Suggestions** button, the `myGetMeetingSuggestions` event handler obtains an array of meeting suggestions from the [meetingSuggestions](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) property of the `_MyEntities` object, if any was extracted.
 
@@ -469,7 +469,7 @@ function myGetMeetingSuggestions()
 
 
 ## Extracting phone numbers
-<a name="olowa15conagave_entitiesExtractingPhoneNumbers"> </a>
+
 
 When the user clicks the  **Get Phone Numbers** button, the `myGetPhoneNumbers` event handler obtains an array of phone numbers from the [phoneNumbers](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) property of the `_MyEntities` object, if any was extracted. Each extracted phone number is stored as a [PhoneNumber](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) object in the array. `myGetPhoneNumbers` obtains further data about each phone number:
 
@@ -520,7 +520,7 @@ function myGetPhoneNumbers()
 
 
 ## Extracting task suggestions
-<a name="olowa15conagave_entitiesExtractingTaskSuggestions"> </a>
+
 
 When the user clicks the  **Get Task Suggestions** button, the `myGetTaskSuggestions` event handler obtains an array of task suggestions from the [taskSuggestions](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) property of the `_MyEntities` object, if any was extracted. Each extracted task suggestion is stored as a [TaskSuggestion](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) object in the array. `myGetTaskSuggestions` obtains further data about each task suggestion:
 
@@ -585,7 +585,7 @@ function myGetTaskSuggestions()
 
 
 ## Extracting URLs
-<a name="olowa15conagave_entitiesExtractingURLs"> </a>
+
 
 When the user clicks the  **Get URLs** button, the `myGetUrls` event handler obtains an array of URLs from the [urls](http://dev.outlook.com/reference/add-ins/simple-types.html%28Office.15%29.md) property of the `_MyEntities` object, if any was extracted. Each extracted URL is stored as a string in the array. `myGetUrls` forms a local HTML string in `htmlText` to display the list of extracted URLs.
 
@@ -610,7 +610,7 @@ function myGetUrls()
 
 
 ## Clearing displayed entity strings
-<a name="olowa15conagave_entitiesExtractingClearing"> </a>
+
 
 Lastly, the entities add-in specifies a  `myClearEntitiesBox` event handler which clears any displayed strings. The following is the related code.
 
@@ -625,7 +625,7 @@ function myClearEntitiesBox()
 
 
 ## JavaScript listing
-<a name="olowa15conagave_entitiesJSListing"> </a>
+
 
 The following is the complete listing of the JavaScript implementation.
 
@@ -843,7 +843,7 @@ function myGetUrls()
 
 
 ## Additional resources
-<a name="olowa15conagave_entitiesResources"> </a>
+
 
 
 - [Create Outlook add-ins for read forms](../outlook/read/read-scenario.md)

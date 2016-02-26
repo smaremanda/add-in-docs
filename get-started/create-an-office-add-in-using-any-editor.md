@@ -133,7 +133,7 @@ tsd install
 
 
 ### Create a Hello World Office Add-in
-<a name="FirstAppTextEditor_HelloWorld"> </a>
+
 
 For our example, we'll create a Hello World add-in. The UI of the add-in is provided by an HTML file that can optionally provide JavaScript programming logic. 
 
@@ -216,7 +216,7 @@ h1,h3,h4,p,a,li
 
 
 ### Running the add-in locally
-<a name="FirstAppTextEditor_HelloWorld"> </a>
+
 
 To test your add-in locally, open your browser and enter the URL for your home.html file. This can be either on the web server or the self-hosted HTTPS site. If you hosted it locally, just type that URL into your browser. In our example, it is  `https://localhost:8443/app/home/home.html`. 
 
@@ -251,7 +251,7 @@ There are different ways to debug your add-in:
 
 
 ## Additional resources
-<a name="bk_addresources"> </a>
+
 
 
 - [Create and debug Office Add-ins in Visual Studio](../essentials/create-and-debug-office-add-ins-in-visual-studio.md)

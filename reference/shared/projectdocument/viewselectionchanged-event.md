@@ -78,7 +78,7 @@ For an example that shows how to use a  **ViewSelectionChanged** event handler i
 
 
 ## Support details
-<a name="bk_support"> </a>
+
 
 A capital Y in the following matrix indicates that this event is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this event.
 
@@ -100,7 +100,7 @@ For more information about Office host application and server requirements, see 
 |**Namespace**|Office|
 
 ## Support history
-<a name="bk_history"> </a>
+
 
 
 ****
@@ -111,7 +111,7 @@ For more information about Office host application and server requirements, see 
 |1.0|Introduced|
 
 ## See also
-<a name="bk_history"> </a>
+
 
 
 #### Other resources

@@ -34,7 +34,7 @@ To add add-in to the Add-in Catalog Site, browse to the site you have just creat
 
 
 ## Additional resources
-<a name="olowa15conagave_InstallingSamplesadditionalrsc"> </a>
+
 
 
 - [Publish your Office Add-in](../publish/publish.md)

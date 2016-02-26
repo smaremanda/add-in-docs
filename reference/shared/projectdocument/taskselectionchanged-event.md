@@ -74,7 +74,7 @@ For an example that shows how to use a  **TaskSelectionChanged** event handler i
 
 
 ## Support details
-<a name="bk_support"> </a>
+
 
 A capital Y in the following matrix indicates that this event is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this event.
 
@@ -95,7 +95,7 @@ For more information about Office host application and server requirements, see 
 |**Namespace**|Office|
 
 ## Support history
-<a name="bk_history"> </a>
+
 
 
 ****
@@ -107,7 +107,7 @@ For more information about Office host application and server requirements, see 
 <ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>Introduced</p></li></ul>|
 
 ## See also
-<a name="bk_history"> </a>
+
 
 
 #### Other resources

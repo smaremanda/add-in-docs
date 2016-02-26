@@ -6,7 +6,7 @@ Learn how to get or set the location from an Outlook add-in when the user is com
 
 
 ## Prerequisites for getting or setting the location in a compose form
-<a name="mod_off15_HowToGetSetLocation_Prerequisites"> </a>
+
 
 The JavaScript API for Office provides asynchronous methods ([getAsync](http://dev.outlook.com/reference/add-ins/Location.html%28Office.15%29.md) and [setAsync](http://dev.outlook.com/reference/add-ins/Location.html%28Office.15%29.md)) to get and set the location of an appointment that the user is composing. These asynchronous methods are available to only compose add-ins. To use these methods, make sure you have set up the add-in manifest appropriately for Outlook to activate the add-in in compose forms, as described in the section [Setting up Outlook add-ins for compose forms](../outlook/compose/compose-scenario.md#mod_off15_CreatingForCompose_SettingUp) of [Create Outlook add-ins for compose forms](../outlook/compose/compose-scenario.md).
 
@@ -34,7 +34,7 @@ As with most asynchronous methods in the JavaScript API for Office,  **getAsync*
 
 
 ## To get the location
-<a name="mod_off15_HowToGetSetLocation_Get"> </a>
+
 
 This section shows a code sample that gets the location of the appointment that the user is composing, and displays the location. This code sample assumes a rule in the add-in manifest that activates the add-in in a compose form for an appointment, as shown below.
 
@@ -84,7 +84,7 @@ function write(message){
 
 
 ## To set the location
-<a name="mod_off15_HowToGetSetLocation_Set"> </a>
+
 
 This section shows a code sample that sets the location of the appointment that the user is composing. Similar to the previous example, this code sample assumes a rule in the add-in manifest that activates the add-in in a compose form for an appointment.
 
@@ -131,7 +131,7 @@ function write(message){
 
 
 ## Additional resources
-<a name="mod_off15_HowToGetSetLocation_AdditionalRsc"> </a>
+
 
 
 - [Get and set item data in a compose form in Outlook](../outlook/compose/get-and-set-item-data-in-a-compose-form.md)

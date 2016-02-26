@@ -26,7 +26,7 @@ To try out some add-ins, you can install the following add-ins from the Office S
 
 
 ## Anatomy of an Office Add-in
-<a name="StartBuildingApps_AnatomyofApp"> </a>
+
 
 The basic components of an Office Add-in are an XML manifest file and the default webpage of your add-in. The manifest defines various settings including the URL of the webpage that implements the add-in's UI and custom logic. When your add-in is ready for your customers, you upload your add-in's manifest to an on-premises add-in catalog or submit it to the Office Store. The webpage (and any .js or other files required by its implementation) needs to be hosted on a web server, or web hosting service, such as [Microsoft Azure](../publish/host-an-office-add-in-on-microsoft-azure.md).
 
@@ -53,7 +53,7 @@ For more information, see [Office Add-ins XML manifest](../overview/add-in-manif
 
 
 ## Development basics
-<a name="StartBuildingApps_DevelopmentBasics"> </a>
+
 
 To create Office Add-ins, you can use any application that can save a file as text. But, you can create an Office Add-in more easily with the Napa Office 365 Development Tools web-based development environment, or in Visual Studio 2015 with its project templates, development environment, and debugging tools. 
 
@@ -113,7 +113,7 @@ The Word and Excel JavaScript APIs provide host-specific object models that you 
 
 
 ## Types of Office Add-ins
-<a name="StartBuildingApps_TypesofApps"> </a>
+
 
 This section provides a quick look at the three types of Office Add-ins: task pane, content, and Outlook. 
 
@@ -158,7 +158,7 @@ To try out an Outlook add-in in Outlook, Outlook for Mac, or Outlook Web App, in
 
 
 ## Office applications that support Office Add-ins
-<a name="StartBuildingApps_SupportedApplications"> </a>
+
 
 Office Add-ins are supported on a growing number of Office host applications running on the desktop, tablets, mobile devices, and in Office Online in the browser. In many cases, this means you can develop a single add-in that runs on different operating systems and Office host applications. And, your customers will have a consistent experience using your add-in across the desktop, their devices, or web browsers.
 
@@ -189,7 +189,7 @@ For more details, see [Requirements for running Office Add-ins](../overview/requ
 
 
 ## What can an Office Add-in do?
-<a name="StartBuildingApps_Capabilities"> </a>
+
 
 An Office Add-in can do pretty much anything a webpage can do inside the browser, such as the following:
 
@@ -213,7 +213,7 @@ In addition to the regular capabilities of a webpage, Office Add-ins can interac
     
 
 ## Understanding the runtime
-<a name="StartBuildingApps_Runtime"> </a>
+
 
 Office Add-ins are secured by an add-in runtime environment, a multiple-tier permissions model, and performance governors. This framework protects the user's experience in the following ways:
 
@@ -239,7 +239,7 @@ For more information about the Office Add-ins privacy and security model, see [P
 
 
 ## Publishing basics
-<a name="StartBuildingApps_PublishingBasics"> </a>
+
 
 You can publish Office Add-ins to four distribution end-points:
 
@@ -260,7 +260,7 @@ For more information, see [Publish your Office Add-in](../publish/publish.md).
 
 
 ## Scenarios
-<a name="StartBuildingApps_Scenarios"> </a>
+
 
 The following scenarios show that Office Add-ins are targeted, quick-hit add-ins that can be used to solve complex, time-consuming problems.
 
@@ -285,7 +285,7 @@ Scenarios include:
     
 
 ## Additional resources
-<a name="StartBuildingApps_AdditionalResources"> </a>
+
 
 
 - [Office Add-ins](../overview/office-add-ins.md)

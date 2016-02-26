@@ -6,7 +6,7 @@ Use the Outlook add-in permissions model to request the appropriate mailbox acce
 
 
 ## Outlook add-in permissions model
-<a name="olowa15conagave_permmodel_model"> </a>
+
 
 Outlook add-ins specify the required permission level in their manifest. The available levels are  **Restricted**,  **ReadItem**,  **ReadWriteItem**, or  **ReadWriteMailbox**. These levels of permissions are cumulative:  **Restricted** is the lowest level, and each higher level includes the permissions of all the lower levels. **ReadWriteMailbox** includes all the supported permissions.
 
@@ -14,7 +14,7 @@ You can see the permissions requested by a mail add-in before installing it from
 
 
 ## Restricted permission
-<a name="olowa15conagave_permmodelrestricted"> </a>
+
 
 The  **Restricted** permission is the most basic level of permission. Specify **Restricted** in the [Permissions](http://msdn.microsoft.com/en-us/library/c20cdf29-74b0-564c-e178-b75d148b36d1%28Office.15%29.aspx) element in the manifest to request this permission. Outlook assigns this permission to a mail add-in by default if the add-in does not request a specific permission in its manifest.
 
@@ -90,7 +90,7 @@ The  **Restricted** permission is the most basic level of permission. Specify **
     
 
 ## ReadItem permission
-<a name="olowa15conagave_permmodelreaditem"> </a>
+
 
 The  **ReadItem** permission is the next level of permission in the permissions model. Specify **ReadItem** in the **Permissions** element in the manifest to request this permission.
 
@@ -176,7 +176,7 @@ Access  **mailbox.makeEWSRequestAsync** or the following write methods:
     
 
 ## ReadWriteItem permission
-<a name="olowa15conagave_permmodelreadwriteitem"> </a>
+
 
 Specify  **ReadWriteItem** in the **Permissions** element in the manifest to request this permission. Mail add-ins activated in compose forms that use write methods ( **Message.to.addAsync** or **Message.to.setAsync**) must use at least this level of permission.
 
@@ -197,7 +197,7 @@ Use  **Mailbox.makeEWSRequestAsync**.
 
 
 ## ReadWriteMailbox permission
-<a name="olowa15conagave_permmodelreadwrite"> </a>
+
 
 The  **ReadWriteMailbox** permission is the highest level of permission. Specify **ReadWriteMailbox** in the **Permissions** element in the manifest to request this permission.
 
@@ -245,7 +245,7 @@ Attempting to use an unsupported operation will result in an error response.
 
 
 ## Additional resources
-<a name="olowa15conagave_permmodeladditionalrsc"> </a>
+
 
 
 - [Privacy, permissions, and security for Outlook add-ins](../outlook/../essentials/privacy-and-security/privacy-and-security.md)

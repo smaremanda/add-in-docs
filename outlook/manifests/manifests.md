@@ -796,13 +796,13 @@ For details and samples of activation rules, see [Activation rules for Outlook a
 
 
 ## Next steps: Add-in commands
-<a name="mod_off15_MailAppManifests_InThisSection"> </a>
+
 
 After defining a basic manifest, [define add-in commands for your add-in](../outlook/manifests/define-add-in-commands.md). Add-in commands present a button in the ribbon so users can activate your add-in in a simple, intuitive way. For more information, see [Add-in commands for Outlook](../outlook/add-in-commands-for-outlook.md).
 
 
 ## Additional resources
-<a name="mod_off15_MailAppManifests_AdditionalRsc"> </a>
+
 
 
 - [Outlook add-ins](../outlook/outlook-add-ins.md)

@@ -25,7 +25,7 @@ You'll learn:
 
 
 ## Set up your development computer with Azure SDK for .NET, an Azure subscription, and Office 2013
-<a name="bk_setupDevComputer"> </a>
+
 
 
 1. Install the Azure SDK for .NET from the [Azure downloads page](http://azure.microsoft.com/en-us/downloads/). If you don't have Visual Studio installed, Visual Studio Express for Web is installed with the SDK.
@@ -48,7 +48,7 @@ To keep the walkthrough simple and focused on using Azure with an Office Add-in,
 
 
 ## Step 1: Create a network file share to host your add-in manifest file
-<a name="bk_createFileShare"> </a>
+
 
 
 1. Open File Explorer (or Windows Explorer if you're using Windows 7 or an earlier version of Windows) on your development computer.
@@ -63,7 +63,7 @@ To keep the walkthrough simple and focused on using Azure with an Office Add-in,
     
 
 ## Step 2: Add the file share to the Trusted Add-ins catalog so that Office client applications will trust the location where you install Office Add-ins
-<a name="bk_addToTrustedAppCatalog"> </a>
+
 
 
 1.  Start Word 2013 and create a document. (Although we're using Word 2013 in this example, you could use any Office application that supports Office Add-ins like Excel, Outlook, PowerPoint, or Project 2013.)
@@ -78,13 +78,13 @@ To keep the walkthrough simple and focused on using Azure with an Office Add-in,
     
 
 ## Step 3: Create a website in Azure
-<a name="bk_createAzureWebsite"> </a>
+
 
 There are a couple of ways you can create an empty Azure website. If you're using Visual Studio 2015, follow the steps in [Using Visual Studio 2015 ](../publish/host-an-office-add-in-on-microsoft-azure.md#bk_usingVS2013) to create a Azure website from within the Visual Studio IDE. You can also follow the steps in [Using the Azure management portal](../publish/host-an-office-add-in-on-microsoft-azure.md#bk_createwebsiteusingAzureportal) to create the Azure website.
 
 
 ### Using Visual Studio 2015
-<a name="bk_usingVS2013"> </a>
+
 
 
 1. In Visual Studio, in the  **View** menu choose **Server Explorer**. Right click  **Azure** and choose **Connect to Microsoft Azure subscription**. Follow the instructions for connecting to your Azure subscription.
@@ -114,7 +114,7 @@ There are a couple of ways you can create an empty Azure website. If you're usin
     
 
 ### Using the Azure management portal
-<a name="bk_createwebsiteusingAzureportal"> </a>
+
 
 
 1. Log in to the [Azure management portal](https://manage.windowsazure.com/) using your Azure account.
@@ -139,7 +139,7 @@ There are a couple of ways you can create an empty Azure website. If you're usin
     
 
 ## Step 4: Create an Office Add-in in Visual Studio
-<a name="bk_createA4OinVS"> </a>
+
 
 
 1. Start Visual Studio as an administrator.
@@ -160,7 +160,7 @@ Your basic Office Add-in is created and ready to publish to Azure.
 Because we're focusing on how to publish to Azure, you won't make any changes to the sample add-in that you created by using the standard Office Add-in template in Visual Studio.
 
 ## Step 5: Publish your Office Add-in to the Azure website
-<a name="bk_publishA4OtoAzure"> </a>
+
 
 
 1. With your sample add-in open in Visual Studio, expand the solution node in  **Solution Explorer** so that you see both projects for the solution.
@@ -187,7 +187,7 @@ Because we're focusing on how to publish to Azure, you won't make any changes to
     
 
 ## Step 6: Edit the add-in manifest file to point to the Office Add-in on Azure
-<a name="bk_editManifest"> </a>
+
 
 
 1. In Visual Studio with the sample Office Add-in open in  **Solution Explorer**, expand the solution so that both projects show.
@@ -206,7 +206,7 @@ Because we're focusing on how to publish to Azure, you won't make any changes to
     
 
 ## Step 7: Insert and run the add-in in the Office client application
-<a name="bk_insertAndRun"> </a>
+
 
 
 1. Start Word and open a new document.
@@ -221,7 +221,7 @@ Because we're focusing on how to publish to Azure, you won't make any changes to
     
 
 ## Additional resources
-<a name="bk_additionalRes"> </a>
+
 
 
 - [Publish your Office Add-in](../publish/publish.md)

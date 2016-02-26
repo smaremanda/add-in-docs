@@ -20,7 +20,7 @@ To overcome same-origin policy enforcement when you develop add-ins, you can:
     
 
 ## Using JSON/P for anonymous access
-<a name="SameOriginPolicy_UsingJSON"> </a>
+
 
 One way to overcome this limitation is to use JSON/P to provide a proxy for the web service. You do this by including a  **script** tag with a **src** attribute that points to some script hosted on any domain. You can programmatically create the **script** tags, dynamically create the URL to point the **src** attribute to, and then pass parameters to the URL via URI query parameters. Web service providers create and host JavaScript code at specific URLs, and return different scripts depending on the URI query parameters. These scripts then execute where they are inserted and work as expected.
 
@@ -46,7 +46,7 @@ function loadVideoDetails(videoIndex) {
 
 
 ## Implementing server-side script using a token-based authentication scheme
-<a name="SameOriginPolicy_ServerSideScript"> </a>
+
 
 Another way to address same-origin policy limitations is to implement the add-in's webpage as an ASP page that uses OAuth or caches credentials in cookies.
 
@@ -56,19 +56,19 @@ For an example of server-side code that shows how to use the  **Cookie** object 
 
 
 ## Using cross-origin resource sharing (CORS)
-<a name="SameOriginPolicy_CORS"> </a>
+
 
 For an example of using the cross-origin resource sharing feature of [XmlHttpRequest2](http://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.mdl), see the "Cross Origin Resource Sharing (CORS)" section of [New Tricks in XMLHttpRequest2](http://www.mdl5rocks.com/en/tutorials/file/xhr2/).
 
 
 ## Building your own proxy using IFRAME and POST MESSAGE
-<a name="SameOriginPolicy_BuildingProxy"> </a>
+
 
 For an example of how to build your own proxy using IFRAME and POST MESSAGE, see [Cross-Window Messaging](http://ejohn.org/blog/cross-window-messaging/).
 
 
 ## Additional resources
-<a name="SameOriginPolicy_BuildingProxy"> </a>
+
 
 
 - [Privacy and security for Office Add-ins](87c59a88-10e2-4c88-b6a8-736bd356e5f8.md)

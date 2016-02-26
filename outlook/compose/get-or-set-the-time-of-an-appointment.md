@@ -6,7 +6,7 @@ Learn how to get or set the time of an appointment from an Outlook add-in.
 
 
 ## Prerequisites for getting or setting the start or end time in a compose form
-<a name="mod_off15_HowToGetSetTime_Prerequisites"> </a>
+
 
 The JavaScript API for Office provides asynchronous methods ([Time.getAsync](http://dev.outlook.com/reference/add-ins/Time.html%28Office.15%29.md) and [Time.setAsync](http://dev.outlook.com/reference/add-ins/Time.html%28Office.15%29.md)) to get and set the start or end time of an appointment that the user is composing. These asynchronous methods are available to only compose add-ins. To use these methods, make sure you have set up the add-in manifest appropriately for Outlook to activate the add-in in compose forms, as described in the section [Setting up Outlook add-ins for compose forms](../outlook/compose/compose-scenario.md#mod_off15_CreatingForCompose_SettingUp) of [Create Outlook add-ins for compose forms](../outlook/compose/compose-scenario.md).
 
@@ -50,7 +50,7 @@ As with most asynchronous methods in the JavaScript API for Office,  **getAsync*
 
 
 ## To get the start or end time
-<a name="mod_off15_HowToGetSetTime_Get"> </a>
+
 
 This section shows a code sample that gets the start time of the appointment that the user is composing and displays the time. You can use the same code and replace the  **start** property by the **end** property to get the end time. This code sample assumes a rule in the add-in manifest that activates the add-in in a compose form for an appointment, as shown below.
 
@@ -102,7 +102,7 @@ function write(message){
 
 
 ## To set the start or end time
-<a name="mod_off15_HowToGetSetTime_Set"> </a>
+
 
 This section shows a code sample that sets the start time of the appointment or message that the user is composing. You can use the same code and replace the  **start** property by the **end** property to set the end time. Note that if the appointment compose form already has an existing start time, setting the start time subsequently will adjust the end time to maintain any previous duration for the appointment. If the appointment compose form already has an existing end time, setting the end time subsequently will adjust both the duration and end time. If the appointment has been set as an all-day event, setting the start time will adjust the end time to 24 hours later, and uncheck the UI for the all-day event in the compose form.
 
@@ -153,7 +153,7 @@ function write(message){
 
 
 ## Additional resources
-<a name="mod_off15_HowToGetSetTime_AdditionalRsc"> </a>
+
 
 
 - [Get and set item data in a compose form in Outlook](../outlook/compose/get-and-set-item-data-in-a-compose-form.md)

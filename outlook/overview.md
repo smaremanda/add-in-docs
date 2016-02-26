@@ -47,7 +47,7 @@ To get started building Outlook add-ins, see [Get Started with Outlook add-ins f
 
 
 ## Additional resources
-<a name="off15con_AgaveFundOutlookAdditionalRsc"> </a>
+
 
 For concepts that are applicable to developing Office Add-ins in general, see the following:
 

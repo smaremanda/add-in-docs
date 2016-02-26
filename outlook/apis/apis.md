@@ -65,7 +65,7 @@ In general, you should specify the minimum permission needed for your add-in. Pe
 
 
 ## Additional resources
-<a name="bk_addresources"> </a>
+
 
 
 - [Get Started with Outlook add-ins for Office 365](https://dev.outlook.com/MailAppsGettingStarted/GetStarted.aspx)

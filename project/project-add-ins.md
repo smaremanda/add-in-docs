@@ -11,7 +11,7 @@ Project Standard 2013 and Project Professional 2013 both include support for tas
 For an introduction to Office Add-ins, see [Office Add-ins platform overview](../overview/platform-overview.md).
 
 ## Add-in scenarios for Project
-<a name="pj15_AgaveForProject_Scenarios"> </a>
+
 
 Project managers can use Project task pane add-ins to help with project management activities. Instead of leaving Project and opening another application to search for frequently used information, project managers can directly access the information within Project. The content in a task pane add-in can be context-sensitive, based on the selected task, resource, view, or other data in a cell in a Gantt chart, task usage view, or resource usage view.
 
@@ -41,7 +41,7 @@ Add-in scenarios for Project include the following:
     
 
 ## Developing Project add-ins
-<a name="pj15_AgaveForProject_Developing"> </a>
+
 
 The JavaScript library for Project add-ins includes extensions of the  **Office** namespace alias that enable developers to access properties of the Project application and tasks, resources, and views in a project. The JavaScript library extensions in the Project-15.js file are used in a Project add-in created with Visual Studio 2015. The Office.js, Office.debug.js, Project-15.js, Project-15.debug.js, and related files are also provided in the Project 2013 SDK download.
 
@@ -65,7 +65,7 @@ When you install the Project 2013 SDK download, the  `\Samples\Apps\` subdirecto
     
 
 ### Creating an add-in manifest file
-<a name="pj15_AgaveForProject_CreatingManifest"> </a>
+
 
 The manifest file specifies the URL of the add-in webpage or web application, the kind of add-in (task pane for Project), optional URLs of content for other languages and locales, and other properties.
 
@@ -155,7 +155,7 @@ The manifest file specifies the URL of the add-in webpage or web application, th
 
 
 ## Installing Project add-ins
-<a name="pj15_AgaveForProject_Installing"> </a>
+
 
 In Project 2013, you can install add-ins as stand-alone solutions on a file share, or in a private add-in catalog. You can also review and purchase add-ins in the public Office Store.
 
@@ -204,13 +204,13 @@ The Bing Search add-in shows in a task pane, as in Figure 3. You can manually re
 
 
 ## Distributing Project add-ins
-<a name="pj15_AgaveForProject_Distributing"> </a>
+
 
 You can distribute add-ins through a file share, an add-in catalog in a SharePoint library, or an Project Add-in in the Office Store. For more information, see [Publish your Office Add-in](../publish/publish.md).
 
 
 ## Additional resources
-<a name="pj15_AgaveForProject_Distributing"> </a>
+
 
 
 - [Office Add-ins platform overview](../overview/platform-overview.md)

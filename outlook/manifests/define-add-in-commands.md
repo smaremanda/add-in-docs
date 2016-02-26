@@ -93,7 +93,7 @@ The form factor contains the  **FunctionFile** element and one or more **Extensi
 
 
 ## FunctionFile element
-<a name="VersionOverrides10_FunctionFile"> </a>
+
 
 The  **FunctionFile** element is a child element under **FormFactor**. It specifies the source code file for operations that an add-in exposes through add-in commands that execute a JavaScript function instead of displaying UI. The **resid** attribute of the **FunctionFile** element is set to the value of the **id** attribute of a **Url** element in the **Resources** element that contains the URL to an HTML file that contains or loads all of the JavaScript functions used by UI-less add-in command buttons. For more information, see the [Button controls](#VersionOverrides10_Buttons) section of this article.
 
@@ -119,7 +119,7 @@ function trackMessage (event) {
 
 
 ## ExtensionPoint element
-<a name="VersionOverrides10_ExtensionPoint"> </a>
+
 
 The  **ExtensionPoint** element defines where an add-in exposes functionality. It is a child element under **FormFactor**. For each form factor, developers can define **ExtensionPoint** elements with the following **xsi:type** values:
 
@@ -237,7 +237,7 @@ Where:
 |**Label**|Required. The label of the custom tab. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element in the **ShortStrings** element in the **Resources** element.|
 
 #### Button controls
-<a name="VersionOverrides10_Buttons"> </a>
+
 
 A button performs a single action when the user selects it. It can either execute a function or show a task pane.
 
@@ -329,7 +329,7 @@ A  _task pane button_ control is a button that launches a task pane. Task pane b
 
 
 #### Menu (dropdown button) controls
-<a name="VersionOverrides10_Menus"> </a>
+
 
 A menu defines a static list of options. Each menu item either executes a function or shows a task pane. Submenus are not supported. 
 
@@ -421,7 +421,7 @@ This puts buttons on the ribbon for the form that's displayed to the attendee of
 
 
 ## Resources element
-<a name="VersionOverrides10_Resources"> </a>
+
 
 The  **Resources** element contains icons, strings, and URLs for the **VersionOverrides** node. A manifest element specifies a resource by using the **Id** of the resource. This helps to keep the size of the manifest manageable, especially when resources have versions for different locales. An **Id** has a maximum of 32 characters.
 
@@ -476,7 +476,7 @@ The following is an example of the  **Resources** element.
 
 
 ## Rule changes
-<a name="VersionOverrides10_Resources"> </a>
+
 
 The following changes affect the rules in the manifest.
 
@@ -489,13 +489,13 @@ The following changes affect the rules in the manifest.
     
 
 ## Sample Manifest
-<a name="VersionOverrides10_Resources"> </a>
+
 
 For a full sample manifest, see the [command-demo](https://github.com/jasonjoh/command-demo/blob/master/command-demo-manifest.xml%28Office.15%29.aspx) sample on GitHub.
 
 
 ## Additional resources
-<a name="bk_addresources"> </a>
+
 
 
 - [Add-in commands for Outlook](../outlook/add-in-commands-for-outlook.md)

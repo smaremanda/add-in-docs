@@ -67,7 +67,7 @@ This example uses Word and a free add-in from the Office Store.
 
 
 ## Additional resources
-<a name="bk_addresources"> </a>
+
 
 
 - [Inspect running JavaScript with the Debugger](https://msdn.microsoft.com/library/dn255007%28v=vs.85%29.aspx)

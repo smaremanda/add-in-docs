@@ -502,7 +502,7 @@ class token_validator
 
 
 ## Additional resources
-<a name="bk_addresources"> </a>
+
 
 
 - [Authenticate an Outlook add-in by using Exchange identity tokens](../outlook/authentication/authentication.md)

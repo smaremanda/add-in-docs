@@ -25,7 +25,7 @@ An XML manifest file based on this schema enables an Office Add-in to do the fol
 For examples of manifest v1.1 XML files, see [Manifest v1.1 XML file examples](#O15AgaveManifestOverview_Samplev1_1).
 
 ## Required elements
-<a name="O15AgaveManifestOverview_Common"> </a>
+
 
 The following table specifies the elements that are required for the three types of Office Add-ins and the Dictionary task pane add-in.
 
@@ -63,7 +63,7 @@ The following table specifies the elements that are required for the three types
 
 
 ## Manifest v1.1 XML file examples
-<a name="O15AgaveManifestOverview_Samplev1_1"> </a>
+
 
 The following sections show examples of manifest v1.1 XML files for content, task pane, Outlook, and dictionary Office Add-ins.
 
@@ -71,7 +71,7 @@ If you're using Visual Studio to develop your Office Add-in, you can use the Vis
 
 
 ### Content Office Add-in manifest v1.1 example
-<a name="O15AgaveManifestOverview_ContentSamplev1_1"> </a>
+
 
 
 ```XML
@@ -109,7 +109,7 @@ If you're using Visual Studio to develop your Office Add-in, you can use the Vis
 
 
 ### Task pane Office Add-in manifest v1.1 example
-<a name="O15AgaveManifestOverview_TaskPaneSamplev1_1"> </a>
+
 
 
 ```XML
@@ -154,7 +154,7 @@ If you're using Visual Studio to develop your Office Add-in, you can use the Vis
 
 
 ### Outlook Office Add-in manifest v1.1 example
-<a name="O15AgaveManifestOverview_ContextualSamplev1_1"> </a>
+
 
 
 ```XML
@@ -247,7 +247,7 @@ If you're using Visual Studio to develop your Office Add-in, you can use the Vis
 
 
 ### Dictionary Office Add-in manifest v1.1 example
-<a name="O15AgaveManifestOverview_DictionarySamplev1_1"> </a>
+
 
 
 ```XML
@@ -312,7 +312,7 @@ If you're using Visual Studio to develop your Office Add-in, you can use the Vis
 
 
 ## Validate the Office Add-ins manifest
-<a name="O15AgaveManifestOverview_Samplev1_1"> </a>
+
 
 To make sure that the manifest file that describes your Office Add-in is correct and complete, validate it against the XML Schema Definition (XSD) file. You can use an XML schema validation tool or Visual Studio to validate the manifest. You can also download the [Office App Compatibility Kit](https://www.microsoft.com/en-us/download/details.aspx?id=46831) and run it on your add-in.
 
@@ -323,7 +323,7 @@ For information about validating a manifest against a schema, see [XML Schema (X
 
 
 ## Specify domains you want to open in the add-in window
-<a name="bk_Preventing_Navigation"> </a>
+
 
 By default, if your add-in tries to go to a URL in a domain other than the domain that hosts the start page (as specified in the [SourceLocation](http://msdn.microsoft.com/en-us/library/00d95bb0-e8f5-647f-790a-0aa3aabc8141%28Office.15%29.aspx) element of the manifest file), that URL will open in a new browser window outside add-in pane of the Office host application. This default behavior protects the user against unexpected page navigation within the add-in pane from embedded **iframe** elements.
 
@@ -355,7 +355,7 @@ The following XML manifest example hosts its main add-in page in the  `https://w
 
 
 ## Additional resources
-<a name="O15AgaveManifestAdditionalResources"> </a>
+
 
 
 - [Specify Office hosts and API requirements](../overview/specify-office-hosts-and-api-requirements.md)

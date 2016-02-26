@@ -16,7 +16,7 @@ This article describes the possible permissions that Outlook add-ins can request
     
 
 ## Permissions model
-<a name="olowa15conAgave_PermissionModel"> </a>
+
 
 Because customers' perception of add-in security can affect add-in adoption, Outlook add-in security relies on a tiered permissions model. An Outlook add-in would disclose the level of permissions it needs, identifying the possible access and actions that the add-in can make on the customer's mailbox data. 
 
@@ -41,7 +41,7 @@ The four levels of permissions are cumulative: the  **read/write mailbox** permi
 
 
 ## Office Store: add-in integrity
-<a name="olowa15conAgave_AgaveIntegrity"> </a>
+
 
 The Office Store hosts add-ins that can be installed by end users and administrators. The Office Store enforces the following measures to maintain the integrity of these Outlook add-ins:
 
@@ -56,7 +56,7 @@ The Office Store hosts add-ins that can be installed by end users and administra
     
 
 ## End users: privacy and performance concerns
-<a name="olowa15conagave_privacy"> </a>
+
 
 The security model addresses security, privacy, and performance concerns of end users in the following ways:
 
@@ -92,7 +92,7 @@ The security model addresses security, privacy, and performance concerns of end 
     
 
 ## Developers: permission choices and resource usage limits
-<a name="olowa15conagave_choices"> </a>
+
 
 The security model provides developers granular levels of permissions to choose from, and strict performance guidelines to observe.
 
@@ -167,7 +167,7 @@ Developers should be aware of and plan for the following as well:
     
 
 ## Administrators: privileges
-<a name="olowa15conagave_privileges"> </a>
+
 
 The security model provides the following rights and responsibilities to administrators:
 
@@ -181,7 +181,7 @@ The security model provides the following rights and responsibilities to adminis
 
 
 ## Additional resources
-<a name="olowa15conagave_privacyadditionalrsc"> </a>
+
 
 
 - [Outlook add-ins](../outlook/outlook-add-ins.md)

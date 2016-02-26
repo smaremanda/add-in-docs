@@ -100,7 +100,7 @@ When viewing a meeting as an attendee, add-in commands added to the default tab 
 
 
 ## Additional resources
-<a name="bk_addresources"> </a>
+
 
 
 - [Get Started with Outlook add-ins for Office 365](https://dev.outlook.com/MailAppsGettingStarted/GetStarted.aspx)

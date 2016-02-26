@@ -18,7 +18,7 @@ The following diagram shows the flow of execution for a call to an "Async" metho
 Support for this asynchronous design in both rich and web clients is part of the "write once-run cross-platform" design goals of the Office Add-ins development model. For example, you can create a content or task pane add-in with a single code base that will run in both Excel 2013 and Excel Online.
 
 ## Writing the callback function for an "Async" method
-<a name="AsyncProgramming_InAppsForOffice"> </a>
+
 
 The callback function you pass as the  _callback_ argument to an "Async" method must declare a single parameter that the add-in runtime will use to provide access to an [AsyncResult](http://msdn.microsoft.com/en-us/library/540c114f-0398-425c-baf3-7363f2f6bc47%28Office.15%29.aspx) object when the callback function executes. You can write:
 
@@ -91,7 +91,7 @@ function write(message){
 
 
 ## Differences in what's returned to the AsyncResult.value property
-<a name="AsyncProgramming_DiffsInWhatsReturned"> </a>
+
 
 The  **asyncContext**,  **status**, and  **error** properties of the **AsyncResult** object return the same kinds of information to the callback function passed to all "Async" methods. However, what's returned to the **AsyncResult.value** property varies depending on the functionality of the "Async" method.
 
@@ -103,7 +103,7 @@ For a description of what's returned to the  **AsyncResult.value** property for 
 
 
 ## Asynchronous programming patterns
-<a name="AsyncProgramming_AsyncProgrammingPatterns"> </a>
+
 
 The JavaScript API for Office supports two kinds of asynchronous programming patterns:
 
@@ -118,7 +118,7 @@ Using nested callbacks is a programming pattern familiar to most JavaScript deve
 
 
 ### Asynchronous programming using nested callback functions
-<a name="AsyncProgramming_NestedCallbacks"> </a>
+
 
 Frequently, you need to perform two or more asynchronous operations to complete a task. To accomplish that, you can nest one "Async" call inside another. 
 
@@ -205,7 +205,7 @@ function write(message){
 
 
 ### Asynchronous programming using the promises pattern to access data in bindings
-<a name="AsyncProgramming_PromisesPattern"> </a>
+
 
 Instead of passing a callback function and waiting for the function to return before execution continues, the promises programming pattern immediately returns apromise object that represents its intended result. However, unlike true synchronous programming, under the covers the fulfillment of the promised result is actually deferred until the Office Add-ins runtime environment can complete the request. An _onError_ handler is provided to cover situations when the request can't be fulfilled.
 
@@ -257,7 +257,7 @@ function addBindingDataChangedEventHandler() {
 
 
 ## Passing optional parameters to asynchronous methods
-<a name="AsyncProgramming_OptionalParameters"> </a>
+
 
 The common syntax for all "Async" methods follows this pattern:
 
@@ -390,7 +390,7 @@ In both optional parameter examples, the  _callback_ parameter is specified as t
 
 
 ## Additional resources
-<a name="bk_addresources"> </a>
+
 
 
 - [Understanding the JavaScript API for Office](../overview/understanding-the-javascript-api-for-office.md)

@@ -7,7 +7,7 @@ Find out what's inside an Exchange 2013 identity token.
 The authentication identity token that the Exchange server sends to your Outlook add-in is opaque to your add-in; you don't have to look inside the token to send it on to your server. But when you're writing the web service code that interacts with your Outlook add-in, you'll need to know what's inside the identity token.
 
 ## What is an identity token?
-<a name="ExchangeIdentityToken_WhatIs"> </a>
+
 
 An identity token is a base-64 URL encoded string that is self-signed by the Exchange server that sent it. The token is not encrypted, and the public key that you use to validate the signature is stored on the Exchange server that issued the token. The token has three parts: a header, a payload, and a signature. In the token string, the parts are separated by a "." character to make it easy for you to split the token.
 
@@ -82,7 +82,7 @@ The signature is created by hashing the header and payload sections with the alg
 
 
 ## Additional resources
-<a name="ExchangeIdentityToken_AdditionalResources"> </a>
+
 
 
 - [Authenticate an Outlook add-in by using Exchange identity tokens](../outlook/authentication/authentication.md)

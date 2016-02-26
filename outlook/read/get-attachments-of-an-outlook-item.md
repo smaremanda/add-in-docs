@@ -17,7 +17,7 @@ To send attachment information to the remote service, you use the following prop
     
 
 ## Using the attachments API
-<a name="bk_Using"> </a>
+
 
 To use the attachments API to get attachments from an Exchange mailbox, perform the following steps: 
 
@@ -37,7 +37,7 @@ Each of these steps is covered in detail in the following sections using code fr
 
 
 ### Activate the add-in
-<a name="bk_Show"> </a>
+
 
 You can use an [ItemHasAttachment](http://msdn.microsoft.com/en-us/library/031db7be-8a25-5185-a9c3-93987e10c6c2%28Office.15%29.aspx) rule in the add-in manifest file to show your add-in when the selected item has attachments, as shown in the following example.
 
@@ -48,7 +48,7 @@ You can use an [ItemHasAttachment](http://msdn.microsoft.com/en-us/library/031db
 
 
 ### Get a callback token
-<a name="bk_GetToken"> </a>
+
 
 The [Office.context.mailbox](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.html%28Office.15%29.md) object provides the **getCallbackTokenAsync** function to get a token that the remote server can use to authenticate with the Exchange server. The following code shows a function in an add-in that starts the asynchronous request to get the callback token, and the callback function that gets the response. The callback token is stored in the service request object that is defined in the next section.
 
@@ -73,7 +73,7 @@ function attachmentTokenCallback(asyncResult, userContext) {
 
 
 ### Send attachment information to the remote service
-<a name="bk_Send"> </a>
+
 
 The remote service that your add-in calls defines the specifics of how you should send the attachment information to the service. In this example, the remote service is Web API application created by using Visual Studio 2013. The remote service expects the attachment information in a JSON object. The following code initializes an object that contains the attachment information.
 
@@ -130,7 +130,7 @@ The  `Office.context.mailbox.item.attachments` property contains a collection of
 
 
 ### Get the attachments from the Exchange server
-<a name="bk_GetAttachments"> </a>
+
 
 Your remote service can use either the [GetAttachments](http://msdn.microsoft.com/en-us/library/office/dn600509%28v=exchg.80%29.aspx) EWS Managed API method or the [GetAttachment](http://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) EWS operation to retrieve attachments from the server. The service application needs two objects to deserialize the JSON string into .NET Framework objects that can be used on the server. The following code shows the definitions of the deserialization objects.
 
@@ -438,7 +438,7 @@ Each response from the  **GetAttachment** operation is sent to the **ProcessXmlR
 
 
 ## Additional resources
-<a name="bk_addresources"> </a>
+
 
 
 - [Create Outlook add-ins for read forms](../outlook/read/read-scenario.md)

@@ -7,7 +7,7 @@ Learn how to use Exchange 2013 identity tokens to authenticate your Outlook add-
 Your Outlook add-in can provide your customers with information from anywhere on the Internet, whether from the server that hosts the add-in, from your internal network, or from somewhere else in the cloud. If that information is protected, however, your add-in needs a way to associate the Exchange email account with your information service. Exchange 2013 can enable single sign-on (SSO) for your add-in by providing a token that identifies the email account that is making the request. You can associate this token with a registered user for your application so that the user is recognized whenever the add-in connects to your service.
 
 ## Identity tokens
-<a name="bk_identitytokens"> </a>
+
 
 Two of our sample add-ins use publically available information - one shows a Bing map for addresses in a message, and one shows a preview for YouTube video links in a message. But your add-in can also access nonpublic information. You can use the server that hosts your add-in to link your add-in to the information in your internal network, or anywhere in the cloud.
 
@@ -42,7 +42,7 @@ Let's get into the specifics. As an example, we'll use a simple Outlook add-in t
 
 
 ## In this section
-<a name="bk_inthissection"> </a>
+
 
 
 
@@ -55,7 +55,7 @@ Let's get into the specifics. As an example, we'll use a simple Outlook add-in t
 |[Authenticate a user with an identity token for Exchange](../outlook/authentication/authenticate-a-user-with-an-identity-token.md)|Provides code examples for implementing a simple single sign-on system for a service.|
 
 ## Additional resources
-<a name="bk_additionalresources"> </a>
+
 
 
 - [Outlook add-ins](../outlook/outlook-add-ins.md)

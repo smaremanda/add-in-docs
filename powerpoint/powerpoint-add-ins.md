@@ -155,7 +155,7 @@ See the following articles for more code examples:
     
 
 ## 
-<a name="bk_addresources"> </a>
+
 
 
 - [Read and write data to the active selection in a document or spreadsheet](../how-to/read-and-write-data-to-the-active-selection-in-a-document-or-spreadsheet.md)

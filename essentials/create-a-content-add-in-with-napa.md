@@ -10,7 +10,7 @@ For more information about Napa, see [Create Office Add-ins with Napa Office 365
 
 
 ## Prerequisites
-<a name="FirstAppWordExcelVS_Prerequisites"> </a>
+
 
 
 - A [Microsoft account](http://www.microsoft.com/en-us/account/default.aspx)
@@ -19,7 +19,7 @@ For more information about Napa, see [Create Office Add-ins with Napa Office 365
     
 
 ## Create a basic Office Add-in
-<a name="create"> </a>
+
 
 
 1. Open the [Napa Office 365 Development Tools](https://www.napacloudapp.com/ ) web app in your browser and sign in using your Microsoft account credentials.
@@ -54,7 +54,7 @@ For more information about Napa, see [Create Office Add-ins with Napa Office 365
     
 
 ## Add HTML and JavaScript files to the project
-<a name="Add"> </a>
+
 
 
 1. In Napa, choose the  **New folder** button.
@@ -77,7 +77,7 @@ For more information about Napa, see [Create Office Add-ins with Napa Office 365
     
 
 ## Change the add-in properties
-<a name="Change"> </a>
+
 
 
 1. On the side of the page, choose the  **Properties** button
@@ -106,7 +106,7 @@ For more information about Napa, see [Create Office Add-ins with Napa Office 365
      >**Note**  The  **Properties** editor shows the most common settings of an Office Add-in. It doesn't show all of the possible settings of an Office Add-in. If your scenario requires you to modify settings that don't appear in the **Properties** editor, you can create your add-in by using [Visual Studio](http://msdn.microsoft.com/en-us/library/a23c5ce8-6de3-40f6-a86a-85d3592bef3e%28Office.15%29.aspx) or a [text editor](http://msdn.microsoft.com/en-us/library/7aac2fdc-1a04-45ec-a1dc-da26e646a364%28Office.15%29.aspx). 
 
 ## Get data from a worksheet
-<a name="Get"> </a>
+
 
 Your Office Add-in can get the value of a single cell or the values of a collection of cells. The most basic task here is to get the value of a single cell that a user chooses in a worksheet. After completing these steps, you choose a cell in Excel and then choose a button in the add-in - the data from the cell that you chose appears in a control in the add-in.
 
@@ -347,7 +347,7 @@ $('#yield').text(quotes.DividendYield);
     
 
 ## Put data into selected cells in a worksheet
-<a name="Put"> </a>
+
 
 Your Office Add-in can put data into any cell or collection of cells. The most basic task here is to put the data into a cell that a user chooses in a worksheet. After you complete these steps, a user can add text to a cell in the worksheet by choosing a button in the add-in.
 
@@ -408,7 +408,7 @@ $('#add-text').click(addTextToDocument);
     
 
 ## Handle an event in a worksheet
-<a name="Handle"> </a>
+
 
 So far, your Office Add-in requires the user to choose a button to get and set data. By doing a couple of more steps, you can also get and set data automatically when a user chooses a cell.
 
@@ -463,7 +463,7 @@ $('#add-text').click(addTextToDocument);
     
 
 ## Bind to cells in a worksheet
-<a name="Bind"> </a>
+
 
 The most advanced way to get and set data is to establish a binding with a cell or a collection of cells in a worksheet. You can prompt users to choose the cells that they want the add-in to use. Then, you can get data from those cells or put data into those cells at any time.
 
@@ -536,7 +536,7 @@ $('#bind-text').click(addBindingFromSelection);
     
 
 ## Debug your content add-in in Internet Explorer
-<a name="Debugging"> </a>
+
 
 If you start your add-in in Excel Online, and you use Internet Explorer (IE), you can use F12 developer tools to debug the JavaScript, HTML, and Cascading Style Sheets (CSS) of your content add-in. 
 
@@ -572,7 +572,7 @@ Here's how to open F12 tools, start the debugger, and force execution to stop on
     
 
 ## Next Steps
-<a name="Debugging"> </a>
+
 
 Now that you've created a basic content add-in for Excel, you can:
 
@@ -594,7 +594,7 @@ Now that you've created a basic content add-in for Excel, you can:
     
 
 ## Additional resources
-<a name="FirstAppWordExcelVS_Resources"> </a>
+
 
 
 - [Understanding the JavaScript API for Office](../overview/understanding-the-javascript-api-for-office.md)

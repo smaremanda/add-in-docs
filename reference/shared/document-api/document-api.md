@@ -55,7 +55,7 @@ The Document API subset of the JavaScript API for Office includes objects, metho
 |**Namespace**|Office|
 
 ## Additional resources
-<a name="bk_addresources"> </a>
+
 
 
 - [JavaScript API for Office](../reference/javascript-api-for-office.md)

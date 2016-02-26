@@ -7,7 +7,7 @@ Provide locale-specific content for an Office Add-in, including UI strings, add-
 You can implement any localization scheme that's appropriate for your Office Add-in. The JavaScript API and manifest schema of the Office Add-ins platform provide some choices. You can use the JavaScript API for Office to determine a locale and display strings based on the locale of the host application, or to interpret or display data based on the locale of the data. You can use the manifest to specify locale-specific add-in file location and descriptive information. Alternatively, you can use Microsoft Ajax script to support globalization and localization.
 
 ## Use the JavaScript API to determine locale-specific strings
-<a name="off15wecon_LocalesJSAPI"> </a>
+
 
 The JavaScript API for Office provides two properties that support displaying or interpreting values consistent with the locale of the host application and data:
 
@@ -50,7 +50,7 @@ function write(message){
 
 
 ## Control localization from the manifest
-<a name="off15wecon_LocalesManifest"> </a>
+
 
 Every Office Add-in specifies a [DefaultLocale](http://msdn.microsoft.com/library/04796a3a-3afa-dc85-db66-4677560c185c%28Office.15%29.aspx) element and a locale in its manifest. By default, the Office Add-in platform and Office host applications apply the values of the [Description](http://msdn.microsoft.com/library/bcce6bad-23d0-7631-7d8c-1064b8453b5a%28Office.15%29.aspx), [DisplayName](http://msdn.microsoft.com/library/529159ca-53bf-efcf-c245-e572dab0ef57%28Office.15%29.aspx), [IconUrl](http://msdn.microsoft.com/library/c7dac2d4-4fda-6fc7-3774-49f02b2d3e1e%28Office.15%29.aspx) (if present), [HighResolutionIconUrl](http://msdn.microsoft.com/library/cd5493c5-a019-0059-3009-236234a034f1%28Office.15%29.aspx) (if present), and **SourceLocation** elements to all locales. You can optionally support specific values for specific locales, by specifying an **Override** child element for each additional locale, for any of these five elements. The value for the **DefaultLocale** element and for the **Locale** attribute of the **Overrride** element is specified according to [RFC 3066](http://www.ietf.org/rfc/rfc3066.txt), "Tags for the Identification of Languages." Table 1 describes the localizing support for these elements.
 
@@ -145,7 +145,7 @@ For Outlook add-ins, the  **SourceLocation** element also aligns to the form fac
 
 
 ## Match date/time format with client locale
-<a name="off15wecon_LocalesDatetime"> </a>
+
 
 You can get the locale of the user interface of the hosting application by using the  **displayLanguage** property. You can then display date and time values in a format consistent with the current locale of the host application. One way to do that is to prepare a resource file that specifies the date/time display format to use for each locale that your Office Add-in supports. At run time, your add-in can use the resource file and match the appropriate date/time format with the locale obtained from the **displayLanguage** property.
 
@@ -153,7 +153,7 @@ You can get the locale of the data of the hosting application by using the  **co
 
 
 ## Use Ajax for globalization and localization
-<a name="off15wecon_LocalesAjax"> </a>
+
 
 If you use Visual Studio to create Office Add-ins, the .NET Framework and Ajax provide ways to globalize and localize client script files.
 
@@ -163,7 +163,7 @@ You can include localized resource strings directly in standalone JavaScript fil
 
 
 ## Example: Build a localized Office Add-in
-<a name="bk_BeforeYouBegin"> </a>
+
 
 This section provides examples that show you how to localize an Office Add-in description, display name, and UI.
 
@@ -198,7 +198,7 @@ After you install the Language Pack, you can configure Office 2013 to use the in
     
 
 ### Localize the text used in your add-in
-<a name="bk_LocalizingApp"> </a>
+
 
 The text that you want to localize for another language appears in two areas:
 
@@ -282,7 +282,7 @@ Figure 3 shows the heading (h1) element and the paragraph (p) element that will 
 
 
 #### Add the resource file that contains the localized strings
-<a name="bk_CreateResourceFile"> </a>
+
 
 The JavaScript resource file contains the strings used for the add-in UI. The sample add-in UI has an h1 element that displays a greeting, and a p element that introduces the add-in to the user. 
 
@@ -349,7 +349,7 @@ var UIStrings = (function ()
 The UIStrings.js resource file creates an object,  **UIStrings**, which contains the localized strings for your add-in UI. 
 
 #### Localize the text used for the add-in UI
-<a name="bk_Using_Res_File"> </a>
+
 
 To use the resource file in your add-in, you'll need to add a script tag for it on Home.html. When Home.html is loaded, UIStrings.js executes and the  **UIStrings** object that you use to get the strings is available to your code. Add the following HTML in the head tag for Home.html to make **UIStrings** available to your code.
 
@@ -414,7 +414,7 @@ Replace the code in the Home.js file with the following code. The code shows how
 
 
 ### Test your localized add-in
-<a name="bk_Testing_Res_File"> </a>
+
 
 To test your localized add-in, change the language used for display or editing in the host application and then run your add-in. 
 
@@ -440,7 +440,7 @@ Run the sample add-in. The taskpane add-in loads in Word 2013, and the strings i
 
 
 ## Additional resources
-<a name="off15wecon_LocalesAdditionalRsc"> </a>
+
 
 
 - [Design guidelines for Office Add-ins](../design/add-in-design.md)

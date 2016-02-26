@@ -7,7 +7,7 @@ Build a task pane add-in for Project Professional 2013 that compares cost and wo
 The code in this article is based on a sample developed by Saurabh Sanghvi and Arvind Iyer, Microsoft Corporation.
 
 ## Prerequisites for creating a task pane add-in that reads Project Server reporting data
-<a name="pj15_HelloProjectData_Prerequisites"> </a>
+
 
 Following are the prerequisites for creating a Project task pane add-in that reads the  **ProjectData** service of a Project Web App instance in an on-premises installation of Project Server 2013:
 
@@ -64,7 +64,7 @@ Following are the prerequisites for creating a Project task pane add-in that rea
     
 
 ## Using Visual Studio to create a task pane add-in for Project
-<a name="pj15_HelloProjectData_UsingVisualStudio"> </a>
+
 
 Office Developer Tools for Visual Studio includes a template for task pane add-ins for Project 2013. If you create a solution named  **HelloProjectOData**, the solution contains the following two Visual Studio projects:
 
@@ -166,7 +166,7 @@ The HelloProjectOData.xml manifest file now contains the following (your  **Id**
 
 
 ## Creating the HTML content for the HelloProjectOData add-in
-<a name="pj15_HelloProjectData_HTMLcontent"> </a>
+
 
 The  **HelloProjectOData** add-in is a sample that includes debugging and error output; it is not intended for production use. Before you start coding the HTML content, design the UI and user experience for the add-in, and outline the JavaScript functions that interact with the HTML code. For more information, see[Design guidelines for Office Add-ins](../design/add-in-design.md). 
 
@@ -296,7 +296,7 @@ The task pane shows the add-in display name at the top, which is the value of th
 
 
 ## Creating the JavaScript code for the add-in
-<a name="pj15_HelloProjectData_JScontent"> </a>
+
 
 The template for a Project task pane add-in includes default initialization code that is designed to demonstrate basic get and set actions for data in a document for a typical Office 2013 add-in. Because Project 2013 does not support actions that write to the active project, and the  **HelloProjectOData** add-in does not use the **getSelectedDataAsync** method, you can delete the script within the **Office.initialize** function, and delete the **setData** function and **getData** function in the default HelloProjectOData.js file.
 
@@ -576,7 +576,7 @@ function parseODataResult(oDataResult, currentProjectGuid) {
 
 
 ## Testing the HelloProjectOData add-in
-<a name="pj15_HelloProjectData_Testing"> </a>
+
 
 To test and debug the  **HelloProjectOData** add-in with Visual Studio 2015, Project Professional 2013 must be installed on the development computer. To enable different test scenarios, ensure that you can choose whether Project opens for files on the local computer or connects with Project Web App. For example, do the following steps:
 
@@ -698,7 +698,7 @@ Even if your add-in is working correctly in the previous tests, there are other 
 
 
 ## Example code for the HelloProjectOData add-in
-<a name="pj15_HelloProjectData_ExampleCode"> </a>
+
 
  **HelloProjectOData.html file** The following code is in the `Pages\HelloProjectOData.html` file of the **HelloProjectODataWeb** project:
 
@@ -1138,7 +1138,7 @@ Table styles
 
 
 ## Next steps
-<a name="pj15_HelloProjectData_NextSteps"> </a>
+
 
 If  **HelloProjectOData** were a production add-in to be sold in the Office Store or distributed in a SharePoint add-in catalog, it would be designed differently. For example, there would be no debug output in a text box, and probably no button to get the **ProjectData** endpoint. You would also have to rewrite the **retireveOData** function to handle Project Web App instances that have more than 100 projects.
 
@@ -1155,7 +1155,7 @@ If you modify the  **HelloProjectOData** add-in for production use, do the follo
   <script src="https://appsforoffice.microsoft.com/lib/1.0/hosted/office.js"></script>
   ```
 
-- Rewrite the  **retrieveOData** function to enable queries of more than 100 projects. For example, you could get the number of projects with a `~/ProjectData/Projects()/$count` query, and use the _$skip_ operator and _$top_ operator in the REST query for project data. Run multiple queries in a loop, and then average the data from each query. Each query for project data would be of the form, `~/ProjectData/Projects()?skip= [numSkipped]&amp;$top=100&amp;$filter=[filter]&amp;$select=[field1,field2, â€¦]`.
+- Rewrite the  **retrieveOData** function to enable queries of more than 100 projects. For example, you could get the number of projects with a `~/ProjectData/Projects()/$count` query, and use the _$skip_ operator and _$top_ operator in the REST query for project data. Run multiple queries in a loop, and then average the data from each query. Each query for project data would be of the form, `~/ProjectData/Projects()?skip= [numSkipped]&amp;$top=100&amp;$filter=[filter]&amp;$select=[field1,field2, ???????]`.
     
     For more information, see [OData System Query Options Using the REST Endpoint](http://msdn.microsoft.com/library/8a938b9b-7fdb-45a3-a04c-4d2d5cf2e353.aspx). You can also use the [Set-SPProjectOdataConfiguration](http://technet.microsoft.com/library/jj219516%28v=office.15%29.aspx) command in Windows PowerShell to override the default page size for a query of the **Projects** entity set (or any of the 33 entity sets). See [ProjectData - Project OData service reference](http://msdn.microsoft.com/library/1ed14ee9-1a1a-4960-9b66-c24ef92cdf6b%28Office.15%29.aspx).
     
@@ -1163,7 +1163,7 @@ If you modify the  **HelloProjectOData** add-in for production use, do the follo
     
 
 ## Additional resources
-<a name="bk_addresources"> </a>
+
 
 
 - [Task pane add-ins for Project](../project/project-add-ins.md)

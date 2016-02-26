@@ -7,7 +7,7 @@ Create a task pane add-in for PowerPoint or Word that gets a reference to all of
 You can create an Office Add-in to provide one-click sending or publishing of a Word 2013 or PowerPoint 2013 document to a remote location. This article demonstrates how to build a simple task pane add-in for PowerPoint 2013 that gets all of the presentation as a data object and sends that data to a web server via an HTTP request.
 
 ## Prerequisites for creating an add-in for PowerPoint or Word
-<a name="offapp_GetDoc_Prereqs"> </a>
+
 
 This article assumes that you are using a text editor to create the task pane add-in for PowerPoint or Word. To create the task pane add-in, you must create the following files:
 
@@ -44,7 +44,7 @@ Before you begin creating this add-in for PowerPoint or Word, you should be fami
 |[HttpRequest.InputStream Property](http://msdn.microsoft.com/library/system.web.httprequest.inputstream.aspx)|Describes how to use the  **HttpRequest.InputStream** property to read the body of an HTTP request on an ASP.NET web page. It also includes a short code example.|
 
 ## Create the manifest for the add-in
-<a name="offapp_GetDoc_CreateManifest"> </a>
+
 
 The XML manifest file for the add-in for PowerPoint provides important information about the add-in: what applications can host it, the location of the HTML file, the add-in title and description, and many other characteristics.
 
@@ -79,7 +79,7 @@ The XML manifest file for the add-in for PowerPoint provides important informati
     
 
 ## Create the user interface for the add-in
-<a name="offapp_GetDoc_CreateUI"> </a>
+
 
 For the user interface of the add-in, you can use HTML, written directly into the GetDoc_App.html file. The programming logic and functionality of the add-in must be contained in a JavaScript file (for example, GetDoc_App.js).
 
@@ -151,7 +151,7 @@ input [type="submit"], input[type="button"]
     
 
 ## Add the JavaScript to get the document
-<a name="offapp_GetDoc_CreateJS"> </a>
+
 
 In the code for the add-in, a handler to the [Office.initialize](http://msdn.microsoft.com/en-us/library/727adf79-a0b5-48d2-99c7-6642c2c334fc%28Office.15%29.aspx) event adds a handler to the click event of the **Submit** button on the form and informs the user that the add-in is ready.
 
@@ -342,7 +342,7 @@ function closeFile(state) {
 
 
 ## Additional resources
-<a name="bk_addresources"> </a>
+
 
 
 - [Task pane and content add-ins for Office 2013](../essentials/task-pane-and-content-add-ins.md)

@@ -10,7 +10,7 @@ You can implement a single sign-on (SSO) authentication scheme for an informatio
 
 
 ## Prerequisites for using SSO authentication
-<a name="Prerequisites"> </a>
+
 
 To use an identity token for SSO, your service application needs to have a valid identity token. You can learn about identity tokens, and how to request and validate an identity token, in the following articles:
 
@@ -23,7 +23,7 @@ To use an identity token for SSO, your service application needs to have a valid
     
 
 ## Authenticate a user
-<a name="SSOauthentication"> </a>
+
 
 The following code example shows a simple authentication object that matches the unique identity represented by an identity token with a set of credentials for a service. The  **TokenAuthentication** class provides a method, **GetResponseFromService**, that will return a response for previously authenticated tokens, or ask the user to provide credentials that can be authenticated and associated with the identity token. The code is not complete; it assumes that you will provide the following objects and methods.
 
@@ -159,7 +159,7 @@ The following code example shows a simple authentication object that matches the
 
 
 ## Authenticating a user with the managed validation library
-<a name="authentication"> </a>
+
 
 If you are using the managed library to validate identity tokens, you do not need to compute the unique key. The  **UniqueUserIdentification** property on the **AppIdentityToken** class can be used directly as the unique key for the user. The following code example shows the modifications to the **GetResponseFromService** method in the previous example that you need to make to use the **AppIdentityToken** class.
 
@@ -237,7 +237,7 @@ If you are using the managed library to validate identity tokens, you do not nee
 
 
 ## Additional resources
-<a name="bk_addresources"> </a>
+
 
 
 - [Authenticate an Outlook add-in by using Exchange identity tokens](../outlook/authentication/authentication.md)

@@ -21,7 +21,7 @@ Defines the dialect(s) supported by this dictionary.
 
 
 ## Additional resources
-<a name="MailAppDefineRules_AdditionalResources"> </a>
+
 
 
 - [Create a dictionary task pane add-in](http://msdn.microsoft.com/library/80b91b8e-23c2-4077-8629-dd0a20c4defa%28Office.15%29.aspx)

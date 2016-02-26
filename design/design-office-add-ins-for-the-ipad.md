@@ -42,7 +42,7 @@ Office Add-ins provide users with additional functionality within the context of
 When you've verified that your add-in meets these requirements, republish it to the Office Store. For more information, see [Submit Office and SharePoint Add-ins and Office 365 web apps to the Office Store](http://msdn.microsoft.com/library/ff075782-1303-4517-91cc-b3d730e9b9ae%28Office.15%29.aspx) and [Update your app or add-in](http://msdn.microsoft.com/library/7313d32b-5345-4039-ac5d-a1ba0aef890b%28Office.15%29.aspx). In the Seller Dashboard, select the option to make your add-in available on the iPad, agree to the updated store policy, and provide your Apple Developer ID. Also, read and understand the [Office Store Application Provider Agreement](https://sellerdashboard.microsoft.com/Assets/Content/Agreements/en-US/Office_Store_Seller_Agreement_20120927.md). 
 
 ## Additional resources
-<a name="bk_addresources"> </a>
+
 
 
 - [Debug Office Add-ins on iPad and Mac](../testing/debug-office-add-ins-on-ipad-and-mac.md)

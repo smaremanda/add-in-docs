@@ -50,7 +50,7 @@ Verify that the latest Office updates are installed, or download the [update for
 
 
 ## Additional resources
-<a name="bk_addresources"> </a>
+
 
 
 - [Debug add-ins in Office Online](../testing/debug-add-ins-in-office-online.md)

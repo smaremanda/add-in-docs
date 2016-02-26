@@ -7,7 +7,7 @@ Outlook add-in activation is contextual and based on rules in an add-in manifest
 Outlook add-in activation is contextual and is based on the activation rules in the add-in manifest. When conditions for the currently selected item satisfy the activation rules for the add-in, the host application activates and displays the add-in button in the Outlook user interface (add-in selection pane for compose add-ins, add-in bar for read add-ins). However, if your add-in doesn't activate as you expect, you should look into the following areas for possible reasons.
 
 ## Is the user mailbox on a version of Exchange Server that is at least Exchange 2013?
-<a name="TroubleshootingMailApps_MailboxE15"> </a>
+
 
 First, ensure that the user's email account you're testing with is on a version of Exchange Server that is at least Exchange 2013. If you are using specific features that are released after Exchange 2013, for example, activating compose add-ins which debuts in Exchange 2013 Service Pack 1, then make sure the user's account is on the appropriate version of Exchange.
 
@@ -54,7 +54,7 @@ You can verify the version of Exchange 2013 by using one of the following approa
 
 
 ## Is the add-in disabled?
-<a name="TroubleshootingMailApps_AppDisabled"> </a>
+
 
 Any one of the Outlook rich clients can disable an add-in for performance reasons, including exceeding usage thresholds for CPU core or memory, tolerance for crashes, and length of time to process all the regular expressions for an add-in. When this happens, the Outlook rich client displays a notification that it is disabling the add-in. 
 
@@ -72,7 +72,7 @@ Use one of the following approaches to verify whether an add-in is disabled:
     
 
 ## Does the tested item support Outlook add-ins? Is the selected item delivered by a version of Exchange Server that is at least Exchange 2013?
-<a name="TroubleshootingMailApps_ExVersion"> </a>
+
 
 If your Outlook add-in is a read add-in and is supposed to be activated when the user is viewing a message (including email messages, meeting requests, responses, and cancellations) or appointment, even though these items generally support add-ins, there are exceptions if the selected item is one of the following:
 
@@ -97,7 +97,7 @@ If your add-in is a compose add-in and is supposed to be activated when the user
 
 
 ## Is the add-in manifest installed properly, and does Outlook have a cached copy?
-<a name="TroubleshootingMailApps_InstallManifest"> </a>
+
 
 This scenario applies to only Outlook for Windows. Normally, when you install an Outlook add-in for a mailbox, the Exchange Server copies the add-in manifest from the location you indicate to the mailbox on that Exchange Server. Every time the Outlook starts, it reads all the manifests installed for that mailbox into a temporary cache at the following location: 
 
@@ -163,13 +163,13 @@ Figure 1 shows a summary of the steps to verify whether Outlook has a valid vers
     
 
 ## Are you using the appropriate activation rules?
-<a name="TroubleshootingMailApps_AppropriateRules"> </a>
+
 
 Starting in version 1.1 of the Office Add-ins manifests schema, you can create add-ins that are activated when the user is in a compose form (compose add-ins) or in a read form (read add-ins). Make sure you specify the appropriate activation rules for each type of form that your add-in is supposed to activate in. For example, you can activate compose add-ins using only [ItemIs](http://msdn.microsoft.com/en-us/library/f7dac4a3-1574-9671-1eda-47f092390669%28Office.15%29.aspx) rules with the **FormType** attribute set to **Edit** or **ReadOrEdit**, and you cannot use any of the other types of rules, such as [ItemHasKnownEntity](http://msdn.microsoft.com/en-us/library/87e10fd2-eab4-c8aa-bec3-dff92d004d39%28Office.15%29.aspx) and [ItemHasRegularExpressionMatch](http://msdn.microsoft.com/en-us/library/bfb726cd-81b0-a8d5-644f-2ca90a5273fc%28Office.15%29.aspx) rules for compose add-ins. For more information, see [Activation rules for Outlook add-ins](../outlook/manifests/activation-rules.md).
 
 
 ## If you use a regular expression, is it properly specified?
-<a name="TroubleshootingMailApps_RegexProperlySpecd"> </a>
+
 
 Because regular expressions in activation rules are part of the XML manifest file for a read add-in, if a regular expression uses certain characters, be sure to follow the corresponding escape sequence that XML processors support. Table 1 lists these special characters. 
 
@@ -186,7 +186,7 @@ Because regular expressions in activation rules are part of the XML manifest fil
 |>|Greater-than sign|&amp;gt;|
 
 ## If you use a regular expression, is the read add-in activating in Outlook Web App or OWA for Devices, but not in any of the Outlook rich clients?
-<a name="TroubleshootingMailApps_ActivateClients"> </a>
+
 
 Outlook rich clients use a regular expression engine that's different from the one used by Outlook Web App and OWA for Devices. Outlook rich clients use the C++ regular expression engine provided as part of the Visual Studio standard template library. This engine complies with ECMAScript 5 standards. Outlook Web App and OWA for Devices use regular expression evaluation that is part of JavaScript, is provided by the browser, and supports a superset of ECMAScript 5. 
 
@@ -196,7 +196,7 @@ Test your regular expression thoroughly. If it returns different results, rewrit
 
 
 ## If you use an ItemIs, ItemHasAttachment, or ItemHasRegularExpressionMatch rule, have you verified the related item property?
-<a name="TroubleshootingMailApps_ItemProperty"> </a>
+
 
 If you use an  **ItemHasRegularExpressionMatch** activation rule, verify whether the value of the **PropertyName** attribute is what you expect for the selected item. The following are some tips to debug the corresponding properties:
 
@@ -252,7 +252,7 @@ After verifying the property value, you can then use a regular expression evalua
 
 
 ## Does the host application apply all the regular expressions to the portion of the item body as you expect?
-<a name="TroubleshootingMailApps_ItemBodyPortion"> </a>
+
 
 This section applies to all activation rules that use regular expressions -- particularly those that are applied to the item body, which may be large in size and take longer to evaluate for matches. You should be aware that even if the item property that an activation rule depends on has the value you expect, the host application may not be able to evaluate all the regular expressions on the entire value of the item property. To provide reasonable performance and to control excessive resource usage by a read add-in, Outlook, Outlook Web App and OWA for Devices observe the following limits on processing regular expressions in activation rules at run time:
 
@@ -275,7 +275,7 @@ This section applies to all activation rules that use regular expressions -- par
      >**Note**  Note that if the Outlook rich client disables a read add-in, the read add-in is not available for use for the same mailbox on the Outlook rich client, Outlook Web App and OWA for Devices.
 
 ## Additional resources
-<a name="TroubleshootingMailApps_addresources"> </a>
+
 
 
 - [Deploy and install Outlook add-ins for testing](../outlook/testing/testing-and-tips.md)

@@ -35,7 +35,7 @@ The  **Context** object provides access to key objects in the JavaScript API for
 
 
 ## Support details
-<a name="bk_support"> </a>
+
 
 
 |||
@@ -46,7 +46,7 @@ The  **Context** object provides access to key objects in the JavaScript API for
 |**Namespace**|Office|
 
 ## Support history
-<a name="bk_history"> </a>
+
 
 
 ****

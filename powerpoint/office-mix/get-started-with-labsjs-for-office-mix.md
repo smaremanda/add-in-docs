@@ -88,7 +88,7 @@ To submit your lab to the Office Store, see [Publish your Office Add-in](../../p
 
 
 ## Additional resources
-<a name="bk_addresources"> </a>
+
 
 
 - [Office Mix add-ins](../powerpoint/office-mix/office-mix-add-ins.md)

@@ -36,7 +36,7 @@ After a binding is created by using one of the three "addFrom" methods of the  *
 
 
 ### Add a binding to the user's current selection
-<a name="BindRegions_Add"> </a>
+
 
 The following example shows how to add a text binding called  `myBinding` to the current selection in a document by using the [Bindings.addFromSelectionAsync](http://msdn.microsoft.com/en-us/library/edc99214-e63e-43f2-9392-97ead42fc155%28Office.15%29.aspx) method.
 
@@ -64,7 +64,7 @@ The anonymous function that is passed into the function as the final  _callback_
 
 
 ### Add a binding from a prompt
-<a name="BindRegions_Prompt"> </a>
+
 
 The following example shows how to add a text binding called  `myBinding` by using the [Bindings.addFromPromptAsync](http://msdn.microsoft.com/en-us/library/9dc03608-b08b-4700-8be1-3c86ae236799%28Office.15%29.aspx) method, which is only supported in Excel 2013 and Excel Online. This method lets the user specify the range for the binding by using the application's built-in range selection prompt.
 
@@ -101,7 +101,7 @@ Figure 1 shows the built-in range selection prompt in Excel.
 
 
 ### Add a binding to a named item
-<a name="BindRegions_NamedItem"> </a>
+
 
 The following example shows how to add a binding to the existing  `myRange` named item as a "matrix" binding by using the [Bindings.addFromNamedItemAsync](http://msdn.microsoft.com/en-us/library/afbadac7-60c7-47cb-9477-6e9466ded44c%28Office.15%29.aspx) method, and assigns the binding's **id** as "myMatrix".
 
@@ -188,7 +188,7 @@ function write(message){
 
 
 ### Get all bindings
-<a name="BindRegions_GetAll"> </a>
+
 
 The following example shows how to get all bindings in a document by using the [Bindings.getAllAsync](http://msdn.microsoft.com/en-us/library/ef902b73-cc4c-4551-95de-d8a51eeba82f%28Office.15%29.aspx) method.
 
@@ -212,7 +212,7 @@ The anonymous function that is passed into the function as the  _callback_ param
 
 
 ### Get a binding by ID using the getByIdAsync method of the Bindings object
-<a name="BindRegions_GetByID"> </a>
+
 
 The following example shows how to use the [Bindings.getByIdAsync](http://msdn.microsoft.com/en-us/library/2727c891-bc05-465c-9324-113fbfeb3fbb%28Office.15%29.aspx) method to get a binding in a document by specifying its ID. This example assumes that a binding named `'myBinding'` was added to the document using one of the methods described earlier in this topic.
 
@@ -239,7 +239,7 @@ The anonymous function that is passed into the function as the second  _callback
 
 
 ### Get a binding by ID using the select method of the Office object
-<a name="BindRegions_Select"> </a>
+
 
 The following example shows how to use the [Office.select](http://msdn.microsoft.com/en-us/library/23aeb136-da1f-4127-a798-99dc27bc4dae%28Office.15%29.aspx) method to get a **Binding** object promise in a document by specifying its ID in a selector string. It then calls the [Binding.getDataAsync](http://msdn.microsoft.com/en-us/library/5372ffd8-579d-4fcb-9e5b-e9a2128f3201%28Office.15%29.aspx) method to get data from the specified binding. This example assumes that a binding named `'myBinding'` was added to the document using one of the methods described earlier in this topic.
 
@@ -264,7 +264,7 @@ function write(message){
 
 
 ### Release a binding by ID
-<a name="BindRegions_Release"> </a>
+
 
 The following example shows how use the [Bindings.releaseByIdAsync](http://msdn.microsoft.com/en-us/library/ad285984-8b44-435d-9b84-f0ade570c896%28Office.15%29.aspx) method to release a binding in a document by specifying its ID.
 
@@ -286,7 +286,7 @@ The anonymous function that is passed into the function as the second parameter 
 
 
 ### Read data from a binding
-<a name="BindRegions_Read"> </a>
+
 
 The following example shows how to use the [Binding.getDataAsync](http://msdn.microsoft.com/en-us/library/5372ffd8-579d-4fcb-9e5b-e9a2128f3201%28Office.15%29.aspx) method to get data from an existing binding.
 
@@ -312,7 +312,7 @@ The anonymous function that is passed into the function is a callback that is ex
 
 
 ### Write data to a binding
-<a name="BindRegions_Write"> </a>
+
 
 The following example shows how to use the [Binding.setDataAsync](http://msdn.microsoft.com/en-us/library/6a59bb6d-40b6-4a95-9b98-d70d4616de09%28Office.15%29.aspx) method to set data in an existing binding.
 
@@ -331,7 +331,7 @@ The anonymous function that is passed into the function is a callback that is ex
 
 
 ### Detect changes to data or the selection in a binding
-<a name="BindRegions_DetectChanges"> </a>
+
 
 The following example shows how to attach an event handler to the [DataChanged](http://msdn.microsoft.com/en-us/library/7b9ed4bf-3ce5-44eb-8548-2b081afd868d%28Office.15%29.aspx) event of a binding with an id of "MyBinding".
 
@@ -362,7 +362,7 @@ You can add multiple event handlers for a given event by calling the  **addHandl
 
 
 ### Remove an event handler
-<a name="BindRegions_RemoveHandler"> </a>
+
 
 To remove an event handler for an event, call the [Binding.removeHandlerAsync](http://msdn.microsoft.com/en-us/library/5ae3a860-1fc4-46ce-858e-98545c3e2d77%28Office.15%29.aspx) method passing in the event type as the first _eventType_ parameter, and the name of the event handler function to remove as the second _handler_ parameter. For example, the following function will remove the `dataChanged` event handler function added in the previous section's example.
 
@@ -379,7 +379,7 @@ function removeEventHandlerFromBinding() {
 
 
 ## Additional resources
-<a name="BindRegions_AdditionalResources"> </a>
+
 
 
 - [Task pane and content add-ins for Office 2013](../essentials/task-pane-and-content-add-ins.md)

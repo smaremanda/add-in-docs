@@ -19,7 +19,7 @@ To implement this add-in, you need to create the following:
     
 
 ## Create a Hello World Office Add-in
-<a name="FirstAppTextEditor_HelloWorld"> </a>
+
 
 The UI of the add-in is provided by an HTML file that can optionally provide JavaScript programming logic. This first set of steps will show you how to create a Hello World add-in without programming logic. After you complete a Hello World add-in, we'll show you how to add some programming logic that interacts with the document or worksheet content.
 
@@ -145,7 +145,7 @@ The next two procedures describe how to copy your files to a network share, and 
     
 
 ## Add programming logic to the Hello World add-in
-<a name="FirstAppTextEditor_ProgrammingLogic"> </a>
+
 
 The next set of steps will show you how to add some basic programming logic to the Hello World add-in so that it can interact with the document or worksheet content.
 
@@ -252,7 +252,7 @@ function ReadData() {
     
 
 ## Additional resources
-<a name="FirstAppTextEditor_AdditionalResources"> </a>
+
 
 
 - [Task pane and content add-ins for Office 2013](../essentials/task-pane-and-content-add-ins.md)

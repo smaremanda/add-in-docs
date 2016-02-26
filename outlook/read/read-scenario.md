@@ -6,7 +6,7 @@ Build Outlook add-ins for the read scenario and find information for available A
 
 
 ## Setting up Outlook add-ins for read forms
-<a name="mod_off15_CreatingForRead_SettingUp"> </a>
+
 
 Read add-ins are Outlook add-ins that are activated in the Reading Pane or read inspector in Outlook. Unlike compose add-ins (Outlook add-ins that are activated when a user is creating a message or appointment), read add-ins are available when users:
 
@@ -29,7 +29,7 @@ In each of these read scenarios, Outlook activates add-ins when their activation
 
 
 ## Types of add-ins available in read mode
-<a name="mod_off15_CreatingForRead_SettingUp"> </a>
+
 
 Read add-ins can be any combination of the following types.
 
@@ -42,7 +42,7 @@ Read add-ins can be any combination of the following types.
     
 
 ## API features available to read add-ins
-<a name="mod_off15_CreatingForRead_APIFeatures"> </a>
+
 
 For a list of features that the JavaScript API for Office provides to Outlook add-ins in read forms, see Tables 1 and 2 in [Mail app features per version](http://msdn.microsoft.com/library/f34e2f44-8c9d-4e90-b1d7-3f29506adb92%28Office.15%29.aspx). 
 
@@ -61,7 +61,7 @@ See also:
     
 
 ## Additional resources
-<a name="mod_off15_CreatingForRead_AdditionalResources"> </a>
+
 
 
 - [Get Started with Outlook add-ins for Office 365](https://dev.outlook.com/MailAppsGettingStarted/GetStarted.aspx)

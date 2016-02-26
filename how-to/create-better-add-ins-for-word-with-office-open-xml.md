@@ -110,7 +110,7 @@ If you're one of the many add-in developers seeing Office Open XML markup for th
 In this topic, we'll use some common scenarios we've been hearing from the Office Add-ins developer community to show you techniques for simplifying Office Open XML for use in your add-in. We'll explore the markup for some types of content shown earlier along with the information you need for minimizing the Office Open XML payload. We'll also look at the code you need for inserting rich content into a document at the active selection and how to use Office Open XML with the bindings object to add or replace content at specified locations.
 
 ## Exploring the Office Open XML document package
-<a name="bk_ExploringOOXMLDocPkg"> </a>
+
 
 When you use [getSelectedDataAsync](http://msdn.microsoft.com/en-us/library/fp142294.aspx) to retrieve the Office Open XML for a selection of content (or when you save the document in Word XML Document format), what you're getting is not just the markup that describes your selected content; it's an entire document with many options and settings that you almost certainly don't need. In fact, if you use that method from a document that contains a task pane add-in, the markup you get even includes your task pane.
 
@@ -158,7 +158,7 @@ Several of the other types of content shown at the start of this topic require a
     
 
 ## Inserting document content at the selection
-<a name="bk_InsertingContentAtSelection"> </a>
+
 
 Let's take a look at the minimal Office Open XML markup required for the formatted text example shown in Figure 1 and the JavaScript required for inserting it at the active selection in the document.
 
@@ -209,7 +209,7 @@ We've edited the Office Open XML example shown here, as described in the precedi
 
 
 ### JavaScript for using setSelectedDataAsync
-<a name="bk_JSForSetSelectedData"> </a>
+
 
 Once you save the preceding Office Open XML as an XML file that's accessible from your solution, you can use the following function to set the formatted text content in the document using Office Open XML coercion. 
 
@@ -236,7 +236,7 @@ function writeContent() {
 
 
 ## Creating your own markup: best practices
-<a name="bk_CreatingOwnMarkup"> </a>
+
 
 Let's take a closer look at the markup you need to insert the preceding formatted text example.
 
@@ -344,7 +344,7 @@ After removing the majority of the markup from this package, we're left with the
 
 
 ## Using the same Office Open XML structure for different content types
-<a name="bk_UsingOOXMLForDifferentContent"> </a>
+
 
 Several types of rich content require only the .rels and document.xml components shown in the preceding example, including content controls, Office drawing shapes and text boxes, and tables (unless a style is applied to the table). In fact, you can reuse the same edited package parts and swap out just the **body** content in document.xml for the markup of your content.
 
@@ -474,7 +474,7 @@ The next section will discuss how to create and use bindings in your Word add-in
 
 
 ## Inserting content at a designated location
-<a name="bk_InsertContentAtLocation"> </a>
+
 
 We've already looked at how to insert content at the active selection in a Word document. If you bind to a named content control that's in the document, you can insert any of the same content types into that control. 
 
@@ -491,7 +491,7 @@ Download the code sample [Word-Add-in-JavaScript-AddPopulateBindings](https://gi
 
 
 ### Add and bind to a named content control
-<a name="bk_AddAndBind"> </a>
+
 
 As you examine the JavaScript that follows, consider these requirements:
 
@@ -544,7 +544,7 @@ In the document part named webExtensions1.xml, you'll see a list of the bindings
 
 
 ### Populate a binding
-<a name="bk_AddAndBind"> </a>
+
 
 The code for writing content to a binding is similar to that for writing content to a selection.
 
@@ -569,7 +569,7 @@ As with  **setSelectedDataAsync**, you specify the content to be inserted and th
 
 
 ## Adding objects that use additional Office Open XML parts
-<a name="bk_AddingObjectsThatUseOOXMLParts"> </a>
+
 
 Many types of content require additional document parts in the Office Open XML package, meaning that they either reference information in another part or the content itself is stored in one or more additional parts and referenced in document.xml.
 
@@ -678,7 +678,7 @@ So, for example, the only content we needed to retain from the styles.xml part f
 
 
 #### Editing the markup for content using table styles
-<a name="bk_EditingMarkupForTableStyles"> </a>
+
 
 When your content uses a table style, you need the same relative part of styles.xml as described for working with paragraph styles. That is, you only need to retain the information for the style you're using in your content, and you must include the name, ID, and at least one formatting attribute, but are better off including a complete style definition to address all potential user scenarios.
 
@@ -691,7 +691,7 @@ However, when you look at the markup both for your table in document.xml and for
     
 
 ### Working with images
-<a name="bk_WorkingWithImages"> </a>
+
 
 The markup for an image includes a reference to at least one part that includes the binary data to describe your image. For a complex image, this can be hundreds of pages of markup and you can't edit it. Since you don't ever have to touch the binary part(s), you can simply collapse it if you're using a structured editor such as Visual Studio, so that you can still easily review and edit the rest of the package.
 
@@ -711,7 +711,7 @@ Be aware that, because a relationship reference is explicitly used ( **r:embed="
 
 
 ### Understanding additional image parts and formatting
-<a name="bk_WorkingWithImages"> </a>
+
 
 When you use some Office picture formatting effects on your image, such as for the image shown in Figure 4, which uses adjusted brightness and contrast settings (in addition to picture styling), a second binary data part for an HD format copy of the image data may be required. This additional HD format is required for formatting considered a layering effect, and the reference to it appears in document.xml similar to the following:
 
@@ -724,7 +724,7 @@ See the required markup for the formatted image shown in Figure 4 (which uses la
 
 
 ### Working with SmartArt diagrams
-<a name="bk_WorkingWithImages"> </a>
+
 
 A SmartArt diagram has four associated parts, but only two are always required. You can examine an example of SmartArt markup in the [Word-Add-in-Load-and-write-Open-XML](https://github.com/OfficeDev/Word-Add-in-Load-and-write-Open-XML) code sample. First, take a look at a brief description of each of the parts and why they are or are not required:
 
@@ -749,7 +749,7 @@ Be aware that the markup for a SmartArt diagram in document.xml contains relatio
 
 
 ### Working with charts
-<a name="bk_WorkingWithImages"> </a>
+
 
 Similar to SmartArt diagrams, charts contain several additional parts. However, the setup for charts is a bit different from SmartArt, in that a chart has its own relationship file. Following is a description of required and removable document parts for a chart:
 
@@ -771,7 +771,7 @@ See the edited markup for the example chart shown in Figure 11 in the [Word-Add-
 
 
 ## Editing the Office Open XML for use in your task pane add-in
-<a name="bk_EditingOOXMLForTaskPaneApp"> </a>
+
 
 You've already seen how to identify and edit the content in your markup. If the task still seems difficult when you take a look at the massive Office Open XML package generated for your document, following is a quick summary of recommended steps to help you edit that package down quickly:
 
@@ -802,7 +802,7 @@ Regardless of whether you leave it here or choose to delve further into your con
 
 
 ## Creating an add-in for both template and stand-alone use
-<a name="bk_CreatingAppForTemplateStandalone"> </a>
+
 
 In this topic, you've seen several examples of what you can do with Office Open XML in your add-ins for . We've looked at a wide range of rich content type examples that you can insert into documents by using the Office Open XML coercion type, together with the JavaScript methods for inserting that content at the selection or to a specified (bound) location.
 
@@ -814,7 +814,7 @@ When using templates with your app, whether the add-in will be resident in the t
 
 
 ## Additional resources
-<a name="bk_AdditionalResources"> </a>
+
 
 
 - [JavaScript API for Office ](http://msdn.microsoft.com/en-us/library/fp142185.aspx)

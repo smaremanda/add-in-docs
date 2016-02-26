@@ -21,7 +21,7 @@ Before you publish your add-in, you'll need to [package it](../publish/package-y
 
 
 ## Publishing task pane and content add-ins to an add-in catalog
-<a name="PublishApp_CorpCatalog"> </a>
+
 
 For task pane and content add-ins, IT departments can deploy and configure private corporate add-in catalogs to provide the same Office-solution catalog experience that the Office Store provides. This new catalog and development platform lets IT use a streamlined method to provision Office and SharePoint Add-ins to managed users from a central location without the need to deploy solutions to each client. You can then use the telemetry tool to monitor add-in usage, verify compatibility, and troubleshoot end user issues. To learn more, see: 
 
@@ -34,19 +34,19 @@ For task pane and content add-ins, IT departments can deploy and configure priva
     
 
 ## Publishing task pane and content add-ins to a shared network folder
-<a name="PublishApp_FileShareCatalog"> </a>
+
 
 Alternatively, in a corporate setting, IT can deploy task pane and content add-ins created either by in-house or third-party developers to a shared network folder, where the manifest files will be stored and managed. In either case, when developers update their add-ins, they don't have to push updates to end users or IT does not have to redeploy them to corporate users. For information about setting up a shared network folder add-in catalog, see [Create a network shared folder catalog for task pane and content add-ins](../publish/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins.md).
 
 
 ## Publishing Outlook add-ins to an Exchange server
-<a name="PublishApp_ExchangeServer"> </a>
+
 
 Outlook add-ins are published to an Exchange catalog that is available to users of the Exchange server on which it resides. It enables publishing and management of Outlook add-ins, including internally created ones as well as solutions that are acquired from the Office Store and licensed for corporate use. Outlook add-ins are installed into an Exchange catalog by using either the Exchange Admin Center (EAC) or by running remote Windows PowerShell commands (cmdlets). For information about publishing an Outlook add-in, see [Deploy and install Outlook add-ins for testing](../outlook/testing/testing-and-tips.md).
 
 
 ## Add-in experience for end users
-<a name="PublishApp_EndUsers"> </a>
+
 
 Add-ins are easy for end users to acquire, insert, and run. Users have the same experience regardless of whether they access add-ins from any of the following:
 
@@ -69,7 +69,7 @@ When they sign in to their account, they have access to their add-ins from any c
 
 
 ## Broaden the reach for your add-in
-<a name="PublishApp_EndUsers"> </a>
+
 
 To ensure that your add-in reaches more end users, make sure that it works across platforms. The Office.js version 1.1 includes support for Office Online, and the Office Store validation process verifies add-in support for Office Online. Before you publish, test your add-in to make sure that it works in Office Online.
 
@@ -83,7 +83,7 @@ To address user issues with your add-ins, see [Troubleshoot user errors with Off
 
 
 ## Additional resources
-<a name="PublishApp_AdditionalResources"> </a>
+
 
 
 - [Office Add-ins](../overview/office-add-ins.md)

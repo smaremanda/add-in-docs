@@ -16,7 +16,7 @@ To do that, you can:
 This article focuses on how to use the JavaScript API for Office to persist add-in state. For examples of using browser cookies and web storage, see the [Excel-Add-in-JavaScript-PersistCustomSettings](https://github.com/OfficeDev/Excel-Add-in-JavaScript-PersistCustomSettings).
 
 ## Persisting add-in state and settings with the JavaScript API for Office
-<a name="PersistSettingsOverview"> </a>
+
 
 The JavaScript API for Office provides the [Settings](http://msdn.microsoft.com/en-us/library/ad733387-a58c-4514-8fc2-53e64fad468d%28Office.15%29.aspx), [RoamingSettings](https://dev.outlook.com/reference/add-ins/RoamingSettings.html%28Office.15%29.md), and [CustomProperties](https://dev.outlook.com/reference/add-ins/CustomProperties.html%28Office.15%29.md) objects for saving add-in state across sessions as described in the following table. In all cases, the saved settings values are associated with the [Id](http://msdn.microsoft.com/en-us/library/67c4344a-935c-09d6-1282-55ee61a2838b%28Office.15%29.aspx) of the add-in that created them.
 
@@ -29,7 +29,7 @@ The JavaScript API for Office provides the [Settings](http://msdn.microsoft.com/
 |[CustomProperties](https://dev.outlook.com/reference/add-ins/CustomProperties.html%28Office.15%29.md)|Outlook|The message, appointment, or meeting request item the add-in is working with. Outlook add-in item custom properties are available only to the add-in that created them, and only from the item where they are saved.|Outlook|
 
 ## Settings data is managed in memory at runtime
-<a name="SettingsDataManagedInMemory"> </a>
+
 
 Internally, the data in the property bag accessed with the  **Settings**,  **CustomProperties**, or  **RoamingSettings** objects is stored as a serialized JavaScript Object Notation (JSON) object that contains name/value pairs. The name (key) for each value must be a **string**, and the stored value can be a JavaScript  **string**,  **number**,  **date**, or  **object**, but not a  **function**.
 
@@ -53,7 +53,7 @@ After the settings property bag is saved during the previous add-in session, it 
 
 
 ## How to save add-in state and settings per document for content and task pane add-ins
-<a name="PersistSettingsContentTaskPaneApp"> </a>
+
 
 To persist state or custom settings of a content or task pane add-in for Word, Excel, or PowerPoint, you use the [Settings](http://msdn.microsoft.com/en-us/library/ad733387-a58c-4514-8fc2-53e64fad468d%28Office.15%29.aspx) object and its methods. The property bag created with the methods of the **Settings** object are available only to the instance of the content or task pane add-in that created it, and only from the document in which it is saved.
 
@@ -126,13 +126,13 @@ The anonymous function passed into the  **saveAsync** method as the _callback_ p
 
 
 ## How to save settings in the user's mailbox for Outlook add-ins as roaming settings
-<a name="PersistRoamingSettingsMailApp"> </a>
+
 
 An Outlook add-in can use the [RoamingSettings](https://dev.outlook.com/reference/add-ins/RoamingSettings.html%28Office.15%29.md) object to save add-in state and settings data that is specific to the user's mailbox. This data is accessible only by that Outlook add-in on behalf of the user running the add-in. The data is stored on the user's Exchange Server mailbox, and is accessible when that user logs into his or her account and runs the Outlook add-in.
 
 
 ### Loading roaming settings
-<a name="PersistMailboxData_LoadSettings"> </a>
+
 
 An Outlook add-in typically loads roaming settings in the [Office.initialize](http://msdn.microsoft.com/en-us/library/727adf79-a0b5-48d2-99c7-6642c2c334fc%28Office.15%29.aspx) event handler. The following JavaScript code example shows how to load existing roaming settings.
 
@@ -156,7 +156,7 @@ Office.initialize = function (reason) {
 
 
 ### Creating or assigning a roaming setting
-<a name="PersistMailboxData_CreateSetting"> </a>
+
 
 Continuing with the preceding example, the following  `setAppSetting` function shows how to use the [RoamingSettings.set](https://dev.outlook.com/reference/add-ins/RoamingSettings.html%28Office.15%29.md) method to set or update a setting named `cookie` with today's date. Then, it saves all the roaming settings back to the Exchange Server with the [RoamingSettings.saveAsync](https://dev.outlook.com/reference/add-ins/RoamingSettings.html%28Office.15%29.md) method.
 
@@ -180,7 +180,7 @@ The  **saveAsync** method saves roaming settings asynchronously and takes an opt
 
 
 ### Removing a roaming setting
-<a name="PersistMailboxData_RemoveSetting"> </a>
+
 
 Also extending the preceding examples, the following  `removeAppSetting` function, shows how to use the [RoamingSettings.remove](https://dev.outlook.com/reference/add-ins/RoamingSettings.html%28Office.15%29.md) method to remove the `cookie` setting and save all the roaming settings back to the Exchange Server.
 
@@ -196,7 +196,7 @@ function removeAppSetting()
 
 
 ## How to save settings per item for Outlook add-ins as custom properties
-<a name="PersistCustomPropertiesMailApp"> </a>
+
 
 Custom properties let your Outlook add-in store information about an item it is working with. For example, if your Outlook add-in creates an appointment from a meeting suggestion in a message, you can use custom properties to store the fact that the meeting was created. This makes sure that if the message is opened again, your Outlook add-in doesn't offer to create the appointment again.
 
@@ -273,7 +273,7 @@ function saveCallback(asyncResult) {
 
 
 ## Additional resources
-<a name="PersistSettings_AdditionalResources"> </a>
+
 
 
 - [Understanding the JavaScript API for Office](../overview/understanding-the-javascript-api-for-office.md)

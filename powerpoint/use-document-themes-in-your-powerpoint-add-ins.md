@@ -141,13 +141,13 @@ When running in PowerPoint with  **File** > **Account** > **Office Theme** set t
 
 
 ## OfficeTheme.css classes
-<a name="officeCSS_Classes"> </a>
+
 
 The OfficeThemes.css file contains two sets of classes you can use with your content and task pane add-ins for PowerPoint.
 
 
 ### Theme classes for content add-ins
-<a name="officeCSS_Classes_Content"> </a>
+
 
 The OfficeThemes.css file provides classes that correspond to the 2 fonts and 12 colors used in a document theme. These classes are appropriate to use with content add-ins for PowerPoint so that your add-in's fonts and colors will be coordinated with the presentation it's inserted into.
 
@@ -202,7 +202,7 @@ The following screenshot shows examples of all of the theme color classes (excep
 
 
 ### Theme classes for task pane add-ins
-<a name="officeCSS_Classes_TaskPane"> </a>
+
 
 The OfficeThemes.css file provides classes that correspond to the 4 colors assigned to fonts and backgrounds used by the Office application UI theme. These classes are appropriate to use with task add-ins for PowerPoint so that your add-in's colors will be coordinated with the other built-in task panes in Office.
 
@@ -218,7 +218,7 @@ The OfficeThemes.css file provides classes that correspond to the 4 colors assig
 | `office-officeTheme-secondary-bgColor`|Secondary background color. Default #FFFFFF|
 
 ## Additional resources
-<a name="bk_addresources"> </a>
+
 
 
 - [Create content and task pane add-ins for PowerPoint](../powerpoint/powerpoint-add-ins.md)

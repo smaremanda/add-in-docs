@@ -88,7 +88,7 @@ Specifically for OWA for Devices, and Outlook Web App running in a browser on sm
 |Outlook Web App|iPhone 4 or later, iPad 2 or later, iPod Touch 4 or later|iOS 5 or later|On Office 365, Exchange Online, or on premise on Exchange Server 2013 or later|Safari|
 
 ## Components of an Office Add-in solution
-<a name="StartBuildingApps_Components"> </a>
+
 
 A typical Office Add-in solution involves the following components:
 
@@ -140,7 +140,7 @@ When a supported Office application starts, it reads the XML manifests for the a
     
 
 ## Additional resources
-<a name="bk_addresources"> </a>
+
 
 
 - [Office Add-ins platform overview](../overview/platform-overview.md)

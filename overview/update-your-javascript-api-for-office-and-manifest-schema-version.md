@@ -6,7 +6,7 @@ Update the JavaScript files (Office.js and app-specific .js files) and the add-i
 
 
 ## Using the most up-to-date project files
-<a name="UpdateNuGet_using"> </a>
+
 
 If you use Visual Studio to develop your add-in, to use the [newest API members](http://msdn.microsoft.com/en-us/library/802cf4ae-7c18-4e7d-b4d6-ecaa84c569bc%28Office.15%29.aspx) of the JavaScript API for Office and the [v1.1 features of the add-in manifest](../overview/add-in-manifests.md) (which is validated against offappmanifest-1.1.xsd), you need to download and install the [Visual Studio 2015 and the latest Office Developer Tools](https://www.visualstudio.com/features/office-tools-vs).
 
@@ -25,7 +25,7 @@ To download Office, SharePoint, and Exchange SP1 products, see the following:
     
 
 ## Updating an Office Add-in project created with Visual Studio to use the latest JavaScript API for Office library and version 1.1 add-in manifest schema
-<a name="UpdateNuGet_updating"> </a>
+
 
 For projects created before the release of v1.1 of the JavaScript API for Office and add-in manifest schema, you can update a project's files using the  **NuGet Package Manager**, and then update your add-in's HTML pages to reference them. 
 
@@ -72,7 +72,7 @@ Note that the update process is applied on a  _per-project basis_ - you'll need 
      >**Note**  After updating the version of the add-in manifest schema to 1.1, you will need to remove the  **Capabilities** and **Capability** elements, and replace them with either the [Hosts and Host elements](http://msdn.microsoft.com/library/cff9fbdf-a530-4f6e-91ca-81bcacd90dcd%28Office.15%29.aspx) or the [Requirements and Requirement elements](../overview/specify-office-hosts-and-api-requirements.md).
 
 ## Updating an Office Add-in project created with a text editor or other IDE to use the newest JavaScript API for Office library and version 1.1 add-in manifest schema
-<a name="UpdateNuGet_updating2"> </a>
+
 
 For projects created before the release of v1.1 of the JavaScript API for Office and add-in manifest schema, you need to update your add-in's HTML pages to reference CDN of the v1.1 library, and update your add-in's manifest file to use schema v1.1. 
 
@@ -111,7 +111,7 @@ Note that the update process is applied on a  _per-project basis_ - you'll need 
     
 
 ## Additional resources
-<a name="UpdateNuGet_addresources"> </a>
+
 
 
 - [Specify Office hosts and API requirements](../overview/specify-office-hosts-and-api-requirements.md)

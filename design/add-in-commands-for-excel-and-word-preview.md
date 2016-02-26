@@ -47,7 +47,7 @@ After you update your manifest file, install your add-in and test your add-in co
     
 
 ### Install your add-in on Excel Online
-<a name="installaddinOfficeOnline"> </a>
+
 
 
 1. Open [Microsoft Office Online](https://office.live.com/).
@@ -64,7 +64,7 @@ After you update your manifest file, install your add-in and test your add-in co
     
 
 ### Known issues with add-in commands in Excel Online
-<a name="installaddinOfficeOnline"> </a>
+
 
 
 - When you close Excel Online, the add-in and the add-in commands close too. When next you open a document in Excel Online, you must perform the steps in [Install your add-in on Excel Online](../design/add-in-commands-for-excel-and-word-preview.md#installaddinOfficeOnline) again.
@@ -79,7 +79,7 @@ After you update your manifest file, install your add-in and test your add-in co
     
 
 ### Install your add-in on Excel 2016 or Word 2016 on a Windows desktop
-<a name="installaddinOfficeOnline"> </a>
+
 
 Before you install your add-in, verify that you are running Excel 2016 or Word 2016, version 16.0.6326, at a minimum.
 
@@ -129,7 +129,7 @@ Before performing the following steps, make sure that your add-in runs without g
     
 
 ### Known issues with add-in commands in Office on Windows desktop
-<a name="installaddinOfficeOnline"> </a>
+
 
 
 - If you're using a Click-to-Run version of Office, such as Office 365 ProPlus, make sure that the updates finish installing before you install your add-in. 
@@ -158,7 +158,7 @@ Before performing the following steps, make sure that your add-in runs without g
     
 
 ## Additional resources
-<a name="bk_addresources"> </a>
+
 
 
 - [Create add-in commands in your manifest for Excel, Word, and PowerPoint (Preview)](../design/create-add-in-commands-in-your-manifest-preview.md)

@@ -6,7 +6,7 @@ Learn how to use regular expressions to specify the criteria for a Outlook add-i
 
 
 ## Support for regular expressions
-<a name="MailAppRegExpressions_Support"> </a>
+
 
 You can specify regular expression rules to have an Outlook add-in activated in read scenarios - when the user views a message or appointment in the Reading Pane or inspector, Outlook evaluates regular expression rules to determine if it should activate your add-in. Outlook does not evaluate these rules when the user is composing an item. There are also other scenarios where Outlook does not activate add-ins, for example, items protected by Information Rights Management (IRM) or in the Junk Email folder. For more information, see [Activation rules for Outlook add-ins](../outlook/manifests/activation-rules.md#MailAppDefineRules_Activation).
 
@@ -23,7 +23,7 @@ You can specify a regular expression as part of an [ItemHasRegularExpressionMatc
 |>|Greater-than sign|&amp;gt;|
 
 ## ItemHasRegularExpressionMatch rule
-<a name="MailAppRegExpressions_ItemHasRegularExpressionMatch"> </a>
+
 
 An  **ItemHasRegularExpressionMatch** rule is useful in controlling activation of an add-in based on specific values of a supported property. The **ItemHasRegularExpressionMatch** rule has the following attributes.
 
@@ -116,7 +116,7 @@ The following  **ItemHasRegularExpressionMatch** rule activates the add-in whene
 
 
 ## ItemHasKnownEntity rule
-<a name="MailAppRegExpressions_ItemHasKnownEntity"> </a>
+
 
 An  **ItemHasKnownEntity** rule activates a add-in based on the existence of an entity in the subject or body of the selected item. The [KnownEntityType](http://msdn.microsoft.com/en-us/library/432d413b-9fcc-eb50-cfea-0ed10a43bd52%28Office.15%29.aspx) type defines the supported entities. Applying a regular expression on an **ItemHasKnownEntity** rule provides the convenience where activation is based on a subset of values for an entity (for example, a specific set of URLs, or telephone numbers with a certain area code).
 
@@ -149,7 +149,7 @@ The following  **ItemHasKnownEntity** rule activates the add-in whenever there i
 
 
 ## Using regular expression results in code
-<a name="MailAppRegExpressions_InCode"> </a>
+
 
 You can obtain matches to a regular expression by using the following methods on the current item:
 
@@ -235,7 +235,7 @@ var suggestions = Office.context.mailbox.item.getFilteredEntitiesByName(CampSugg
 
 
 ## Additional resources
-<a name="MailAppRegExpressions_AdditionalResources"> </a>
+
 
 
 - [Create Outlook add-ins for read forms](../outlook/read/read-scenario.md)

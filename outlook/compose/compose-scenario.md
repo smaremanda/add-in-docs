@@ -6,7 +6,7 @@ Build Outlook add-ins for the read scenario and find information for available A
 
 
 ## Setting up Outlook add-ins for compose forms
-<a name="mod_off15_CreatingForCompose_SettingUp"> </a>
+
 
 Starting with version 1.1 of the schema for Office Add-ins manifests and v1.1 of office.js, you can create compose add-ins, which are Outlook add-ins activated in compose forms. In contrast with read add-ins (Outlook add-ins that are activated in read mode when a user is viewing a message or appointment), compose add-ins are available in the following user scenarios:
 
@@ -40,13 +40,13 @@ Figure 2 shows the add-in selection pane consisting of 2 compose add-ins that do
 
 
 ## Types of add-ins available in compose mode
-<a name="mod_off15_CreatingForCompose_SettingUp"> </a>
+
 
 Compose add-ins are implemented as [Add-in commands for Outlook](../outlook/add-in-commands-for-outlook.md).
 
 
 ## API features available to compose add-ins
-<a name="mod_off15_CreatingForCompose_APIFeatures"> </a>
+
 
 
 - For activating add-ins in compose forms: see Table 1 in [Specify activation rules in a manifest](../outlook/manifests/activation-rules.md#MailAppDefineRules_Manifest).
@@ -69,7 +69,7 @@ Compose add-ins are implemented as [Add-in commands for Outlook](../outlook/add-
     
 
 ## Additional resources
-<a name="mod_off15_CreatingForCompose_AdditionalResources"> </a>
+
 
 
 - [Get Started with Outlook add-ins for Office 365](https://dev.outlook.com/MailAppsGettingStarted/GetStarted.aspx)

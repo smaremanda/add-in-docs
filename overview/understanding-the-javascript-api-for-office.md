@@ -13,7 +13,7 @@ Zoom: [1.1](http://go.microsoft.com/fwlink/?LinkId=391751)
 Explore the object model by add-in type or host: [1.1](http://msdn.microsoft.com/library/b27e70c3-d87d-4d27-85e0-103996273298%28Office.15%29.aspx)
 
 ## Referencing the JavaScript API for Office library in your add-in
-<a name="APIOverview_ReferenceJavaScriptAPI"> </a>
+
 
 The JavaScript API for Office library is implemented in the Office.js file and associated .js files that contain application-specific implementations, such as Excel-15.js and Outlook-15.js. [Reference the JavaScript API for Office library](../get-started/referencing-the-javascript-api-for-office-library-from-its-cdn.md) inside the `<head>` tag of the web page (such as an .html, .aspx, or .php file) that implements the UI of your add-in by using a `script` tag with its `src` attribute set to the following CDN URL:
 
@@ -28,7 +28,7 @@ This will download and cache the JavaScript API for Office files the first time 
 
 
 ## Initializing your add-in
-<a name="APIOverview_Initializing"> </a>
+
 
  **Applies to:** All add-in types
 
@@ -79,7 +79,7 @@ function write(message){
 
 
 ## Context Object
-<a name="APIOverview_Context"> </a>
+
 
  **Applies to:** All add-in types
 
@@ -91,7 +91,7 @@ The  **Context** object also provides access to the [contentLanguage](http://msd
 
 
 ## Document object
-<a name="APIOverview_DocumentObject"> </a>
+
 
  **Applies to:** Content and task pane add-in types
 
@@ -158,7 +158,7 @@ If the data can't be coerced to the specified type, the [AsyncResult.status](htt
 
 
 ## Working with selections using the Document object
-<a name="O15APIOverview_WorkingWithSelections"> </a>
+
 
 The  **Document** object exposes methods that let you to read and write to the user's current selection in a "get and forget" fashion. To do that, the **Document** object provides the **getSelectedDataAsync** and **setSelectedDataAsync** methods.
 
@@ -166,7 +166,7 @@ For code examples that demonstrate how to perform tasks with selections, see [Re
 
 
 ## Working with bindings using the Bindings and Binding objects
-<a name="O15APIOverview_WorkingWithBindings"> </a>
+
 
 Binding-based data access enables content and task pane add-ins to consistently access a particular region of a document or spreadsheet through an identifier associated with a binding. The add-in first needs to establish the binding by calling one of the methods that associates a portion of the document with a unique identifier: [addFromPromptAsync](http://msdn.microsoft.com/library/9dc03608-b08b-4700-8be1-3c86ae236799%28Office.15%29.aspx), [addFromSelectionAsync](http://msdn.microsoft.com/library/edc99214-e63e-43f2-9392-97ead42fc155%28Office.15%29.aspx), or [addFromNamedItemAsync](http://msdn.microsoft.com/library/afbadac7-60c7-47cb-9477-6e9466ded44c%28Office.15%29.aspx). After the binding is established, the add-in can use the provided identifier to access the data contained in the associated region of the document or spreadsheet. Creating bindings provides the following value to your add-in:
 
@@ -196,7 +196,7 @@ For code examples that demonstrate how to perform tasks with bindings, see [Bind
 
 
 ## Working with custom XML parts using the CustomXmlParts and CustomXmlPart objects
-<a name="APIOverview_CustomXmlParts"> </a>
+
 
  **Applies to:** Task pane add-ins for Word
 
@@ -204,7 +204,7 @@ The [CustomXmlParts](http://msdn.microsoft.com/library/ba40cd4c-29bb-4f31-875d-6
 
 
 ## Working with the entire document using the getFileAsync method
-<a name="APIOverview_EntireDocument"> </a>
+
 
  **Applies to:** Task pane add-ins for Word and PowerPoint
 
@@ -212,7 +212,7 @@ The [Document.getFileAsync](http://msdn.microsoft.com/library/78047418-89c4-4c7d
 
 
 ## Mailbox object
-<a name="APIOverview_Mailbox"> </a>
+
 
  **Applies to:** Outlook add-ins
 
@@ -240,7 +240,7 @@ For information about using JavaScript in Outlook add-ins, see [Outlook add-ins]
 
 
 ## API support matrix
-<a name="APIOverview_APISupportMatrix"> </a>
+
 
 This table summarizes the API and features supported across add-in types (content, task pane, and Outlook) and the Office applications that can host them when you specify the [Office host applications your add-in supports](http://msdn.microsoft.com/library/cff9fbdf-a530-4f6e-91ca-81bcacd90dcd%28Office.15%29.aspx) using the [1.1 add-in manifest schema and features supported by v1.1 JavaScript API for Office](../overview/update-your-javascript-api-for-office-and-manifest-schema-version.md).
 

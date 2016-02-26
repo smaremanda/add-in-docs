@@ -7,7 +7,7 @@ Sideload your Office Add-in onto an iPad or Mac to test how it will run in Offic
 To see how your add-in will run in Office for iOS, you can sideload your add-in's manifest onto an iPad using iTunes. Or sideload your add-in's manifest directly in Office for Mac. This action won't enable you to set breakpoints and debug your add-in's code while it's running, but you can see how it behaves and verify that the UI is usable and rendering appropriately. 
 
 ## Prerequisites for Office for iOS
-<a name="FirstAppWordExcelVS_Prerequisites"> </a>
+
 
 
 - A Windows or Mac computer with [iTunes](http://www.apple.com/itunes/download/) installed.
@@ -18,7 +18,7 @@ To see how your add-in will run in Office for iOS, you can sideload your add-in'
     
 
 ## Prerequisites for Office for Mac
-<a name="PrereqOfficeForMac"> </a>
+
 
 
 - A Mac running OS X v10.10 "Yosemite" or later with [Office for Mac](https://products.office.com/en-us/buy/compare-microsoft-office-products?tab=omac) installed.
@@ -31,7 +31,7 @@ To see how your add-in will run in Office for iOS, you can sideload your add-in'
     
 
 ## Sideload an add-in on Excel or Word for iPad
-<a name="PrereqOfficeForMac"> </a>
+
 
 
 1. Use a sync cable to connect your iPad to your computer. If you're connecting the iPad to your computer for the first time, you'll be prompted with  **Trust This Computer?** Choose **Trust** to continue.
@@ -60,7 +60,7 @@ To see how your add-in will run in Office for iOS, you can sideload your add-in'
 
 
 ## Sideload an add-in on Office for Mac
-<a name="PrereqOfficeForMac"> </a>
+
 
 
 1. Open  **Terminal** and navigate to one of the following folders where you'll save your add-in's manifest file. If the `wef` folder doesn't exist on your computer, create it.
@@ -86,7 +86,7 @@ To see how your add-in will run in Office for iOS, you can sideload your add-in'
 
 
 ## Known issues in Office for Mac
-<a name="PrereqOfficeForMac"> </a>
+
 
 
 - Word crashes when  **getFileAsync** is called.
@@ -95,7 +95,7 @@ To see how your add-in will run in Office for iOS, you can sideload your add-in'
     
 
 ## Additional resources
-<a name="bk_addresources"> </a>
+
 
 
 - [Make your Office Add-in available for iPad](8ddc78f6-5746-412e-9921-182fc159e5e2.md)

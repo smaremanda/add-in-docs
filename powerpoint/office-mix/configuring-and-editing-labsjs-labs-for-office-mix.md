@@ -180,7 +180,7 @@ hints[0].getValue((err, hint) => {
 
 
 ### ActivityComponentInstance
-<a name="bkActivity"> </a>
+
 
 Use the  **ActivityComponentInstace** object to track a user's interaction with an activity component. This class provides a **complete** method to indicate that the user has finished interacting with the activity. The method can indicate that the user has completed an assigned task, finished a reading, or any other end point associated with the activity. The following code shows how to use the **complete** method.
 
@@ -193,7 +193,7 @@ attempt.complete((err, unused) => {
 
 
 ### ChoiceComponentInstance
-<a name="bkChoice"> </a>
+
 
 Use the  **ChoiceComponentInstance** object to track a user's interaction with a choice component. Choice components are problems that present the user with a list of choices that they then need to select from. There may or may not be a correct answer. The class provides two primary methods: **getSubmissions** and **submit**. The  **getSubmissions** method allows you to retrieve previously stored submissions; the **submit** method allows a new submission to be stored. The following code examples illustrate using the methods.
 
@@ -216,7 +216,7 @@ this._attempt.submit(
 
 
 ### InputComponentInstance
-<a name="bkInput"> </a>
+
 
 Use the  **InputComponentInstance** object to track a user's interaction with an input component. The class provides two primary methods: **getSubmission** and **submit**. The  **getSubmissions** method allows you to retrieve previously stored submissions; the **submit** method allows you to store a new submission. The following code snippet illustrates using the **getSubmissions** method.
 
@@ -241,7 +241,7 @@ this._attempt.submit(
 
 
 ### DynamicComponentInstance
-<a name="bkDynamicComp"> </a>
+
 
 Use the  **DynamicComponentInstance** object to track a user's interaction with a dynamic component. The primary methods in this class are **getComponents**,  **createComponent**, and  **close**.
 
@@ -299,7 +299,7 @@ dynamicComponentInstance.close((err, unused) => {
 
 
 ## Additional resources
-<a name="bk_addresources"> </a>
+
 
 
 - [Office Mix add-ins](../powerpoint/office-mix/office-mix-add-ins.md)

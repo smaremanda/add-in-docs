@@ -6,7 +6,7 @@ Learn how to get or set the subject from an Outlook add-in when the user is comp
 
 
 ## Prerequisites for getting or setting the subject in a compose form
-<a name="mod_off15_HowToGetSetSubject_Prerequisites"> </a>
+
 
 The JavaScript API for Office provides asynchronous methods ([subject.getAsync](https://dev.outlook.com/reference/add-ins/Subject.html%28Office.15%29.md) and [subject.setAsync](https://dev.outlook.com/reference/add-ins/Subject.html%28Office.15%29.md)) to get and set the subject of an appointment or message that the user is composing. These asynchronous methods are available to only compose add-ins. To use these methods, make sure you have set up the add-in manifest appropriately for Outlook to activate the add-in in compose forms, as described in the section [Setting up Outlook add-ins for compose forms](../outlook/compose/compose-scenario.md#mod_off15_CreatingForCompose_SettingUp) of [Create Outlook add-ins for compose forms](../outlook/compose/compose-scenario.md).
 
@@ -34,7 +34,7 @@ As with most asynchronous methods in the JavaScript API for Office,  **getAsync*
 
 
 ## To get the subject
-<a name="mod_off15_HowToGetSetSubject_Get"> </a>
+
 
 This section shows a code sample that gets the subject of the appointment or message that the user is composing, and displays the subject. This code sample assumes a rule in the add-in manifest that activates the add-in in a compose form for an appointment or message, as shown below.
 
@@ -87,7 +87,7 @@ function write(message){
 
 
 ## To set the subject
-<a name="mod_off15_HowToGetSetSubject_Set"> </a>
+
 
 This section shows a code sample that sets the subject of the appointment or message that the user is composing. Similar to the previous example, this code sample assumes a rule in the add-in manifest that activates the add-in in a compose form for an appointment or message.
 
@@ -140,7 +140,7 @@ function write(message){
 
 
 ## Additional resources
-<a name="mod_off15_HowToGetSetSubject_AdditionalRsc"> </a>
+
 
 
 - [Get and set item data in a compose form in Outlook](../outlook/compose/get-and-set-item-data-in-a-compose-form.md)

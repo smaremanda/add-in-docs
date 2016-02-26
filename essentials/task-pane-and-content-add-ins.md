@@ -6,7 +6,7 @@ Use the JavaScript API to create task pane or content add-ins with the features 
 
 
 ## JavaScript API support for content and task pane add-ins
-<a name="FundamentalsTaskContentApp_JavaScriptSupport"> </a>
+
 
 This section briefly describes the subset of the [JavaScript API for Office](http://msdn.microsoft.com/library/b27e70c3-d87d-4d27-85e0-103996273298%28Office.15%29.aspx) that you can call from content and task pane add-ins. See [Understanding the JavaScript API for Office](../overview/understanding-the-javascript-api-for-office.md) for an overview of the features of the API. For samples, see [Office Add-ins code samples](../samples/code-samples.md).
 
@@ -44,7 +44,7 @@ For a summary of the JavaScript API for Office support available across Office h
 
 
 ## Reading and writing to an active selection
-<a name="FundamentalsTaskContentApp_ReadWriteActiveSelection"> </a>
+
 
 You can read or write to the user's current selection in a document, spreadsheet, or presentation. Depending on the host application for your add-in, you can specify the type of data structure to read or write as a parameter in the [getSelectedDataAsync](http://msdn.microsoft.com/library/f85ad02c-64f0-4b73-87f6-7f521b3afd69%28Office.15%29.aspx) and [setSelectedDataAsync](http://msdn.microsoft.com/library/998f38dc-83bd-4659-a759-4758c632a6ef%28Office.15%29.aspx) methods of the [Document](http://msdn.microsoft.com/library/f8859516-cc1f-4b20-a8f3-cee37a983e70%28Office.15%29.aspx) object. For example, you can specify any type of data (text, HTML, tabular data, or Office Open XML) for Word, text and tabular data for Excel, and text for PowerPoint and Project. You can also create event handlers to detect changes to the user's selection. The following example gets data from the selection as text using the **getSelectedDataAsync** method.
 
@@ -71,7 +71,7 @@ For more details and examples, see [Read and write data to the active selection 
 
 
 ## Binding to a region in a document or spreadsheet
-<a name="FundamentalsTaskContentApp_BindingToARegion"> </a>
+
 
 As described in the previous section, you can use the  **getSelectedDataAsync** and **setSelectedDataAsync** methods to read or write to the user's _current_ selection in a document, spreadsheet, or presentation. However, if you would like to access the same region in a document across sessions of running your add-in without requiring the user to make a selection, you should first bind to that region. You can also subscribe to data and selection change events for that bound region.
 
@@ -103,7 +103,7 @@ For more details and examples, see [Bind to regions in a document or spreadsheet
 
 
 ## Getting entire documents
-<a name="FundamentalsTaskContentApp_GettingEntireDocument"> </a>
+
 
 If your task pane add-in runs in PowerPoint or Word, you can use the [Document.getFileAsync](http://msdn.microsoft.com/en-us/library/78047418-89c4-4c7d-9427-4735b8559518%28Office.15%29.aspx), [File.getSliceAsync](http://msdn.microsoft.com/en-us/library/5a8a5cc2-e883-42cd-92ab-d63e10c4c707%28Office.15%29.aspx), and [File.closeAsync](http://msdn.microsoft.com/en-us/library/1ad5cebf-6feb-43ff-8b19-97d91132ab2b%28Office.15%29.aspx) methods to get an entire presentation or document.
 
@@ -113,7 +113,7 @@ For more details, see how to [get the whole document from an add-in for PowerPoi
 
 
 ## Reading and writing custom XML parts of a Word document
-<a name="FundamentalsTaskContentApp_ReadingWritingCustomXMLParts"> </a>
+
 
 Using the Open Office XML file format and content controls, you can add custom XML parts to a Word document and bind elements in the XML parts to content controls in that document. When you open the document, Word reads and automatically populates bound content controls with data from the custom XML parts. Users can also write data into the content controls, and when the user saves the document, the data in the controls will be saved to the bound XML parts. Task pane add-ins for Word, can use the [Document.customXmlParts](http://msdn.microsoft.com/en-us/library/b72c08bc-b49c-497c-9521-26ccce148bda%28Office.15%29.aspx) property, [CustomXmlParts](http://msdn.microsoft.com/en-us/library/ba40cd4c-29bb-4f31-875d-6f1382fd1ee8%28Office.15%29.aspx), [CustomXmlPart](http://msdn.microsoft.com/en-us/library/83f0e668-8236-4f2f-a20f-b173a9e3f65f%28Office.15%29.aspx), and [CustomXmlNode](http://msdn.microsoft.com/en-us/library/dc1518de-47fa-4108-aab7-04a022724b04%28Office.15%29.aspx) objects to read and write data dynamically to the document.
 
@@ -127,7 +127,7 @@ For detailed information about how to work with custom XML parts with a task pan
 
 
 ## Persisting add-in settings
-<a name="FundamentalsTaskContentApp_PersistingAppSettings"> </a>
+
 
 Often you need to save custom data for your add-in, such as a user's preferences or the add-in's state, and access that data the next time the add-in is opened. You can use common web programming techniques to save that data, such as browser cookies or HTML 5 web storage. Alternatively, if your add-in runs in Excel, PowerPoint, or Word, you can use the methods of the [Document.Settings](http://msdn.microsoft.com/en-us/library/ad733387-a58c-4514-8fc2-53e64fad468d%28Office.15%29.aspx) object. Data created with the **Settings** object is stored in the spreadsheet, presentation, or document that the add-in was inserted into and saved with. This data is available to only the add-in that created it.
 
@@ -146,7 +146,7 @@ For more details about working with custom data using the methods of the  **Sett
 
 
 ## Reading properties of a project document
-<a name="FundamentalsTaskContentApp_ReadingProjectDoc"> </a>
+
 
 If your task pane add-in runs in Project, your add-in can read data from some of the project fields, resource, and task fields in the active project. To do that, you use the methods and events of the [ProjectDocument](http://msdn.microsoft.com/en-us/library/1908af4f-93b9-4859-87e3-06942014fae1%28Office.15%29.aspx) object, which extends the **Document** object to provide additional Project-specific functionality.
 
@@ -154,7 +154,7 @@ For examples of reading Project data, see [Create your first task pane add-in fo
 
 
 ## Permissions model and governance
-<a name="FundamentalsTaskContentApp_Permissions"> </a>
+
 
 Your add-in uses the  **Permissions** element in its manifest to request permission to access the level of functionality it requires from the JavaScript API for Office. For example, if your add-in requires read/write access to the document, its manifest must specify `ReadWriteDocument` as the text value in its **Permissions** element. Because permissions exist to protect a user's privacy and security, as a best practice you should request the minimum level of permissions it needs for its features. The following example shows how to request the **ReadDocument** permission in a task pane's manifest.
 
@@ -175,7 +175,7 @@ For more information, see [Requesting permissions for API use in content and tas
 
 
 ## Additional resources
-<a name="FundamentalsTaskContentApp_AdditionalResources"> </a>
+
 
 
 - [JavaScript API for Office](http://msdn.microsoft.com/library/b27e70c3-d87d-4d27-85e0-103996273298%28Office.15%29.aspx)

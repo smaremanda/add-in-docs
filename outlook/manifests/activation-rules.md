@@ -6,7 +6,7 @@ Define activation rules in an Outlook add-in manifest to specify when Outlook di
 
 
 ## Activation by specified rules
-<a name="MailAppDefineRules_Displaying"> </a>
+
 
 Outlook activates some types of add-ins if the message or appointment that the user is reading or composing satisfies the activation rules of the add-in. This is true for all add-ins that use the 1.1 manifest schema and for custom pane addins. The user can then choose the add-in from the Outlook UI to start it for the current item.
 
@@ -19,7 +19,7 @@ The following figure shows Outlook add-ins activated in the add-in bar for the m
 
 
 ## Specify activation rules in a manifest
-<a name="MailAppDefineRules_Manifest"> </a>
+
 
 To have Outlook activate an add-in for specific conditions, specify activation rules in the add-in manifest. There are two  **Rule** elements that you can use:
 
@@ -46,7 +46,7 @@ The following table lists the types of rules available. You can find more inform
 |[RuleCollection](http://msdn.microsoft.com/en-us/library/926249ab-2d2f-39f5-1d73-fab1c989966f%28Office.15%29.aspx)|Read, Compose, Custom pane|Combines a set of rules so that you can form more complex rules.|
 
 ## ItemIs rule
-<a name="MailAppDefineRules_ItemIs"> </a>
+
 
 The  **ItemIs** complex type defines a rule that evaluates to **true** if the current item matches the item type, and optionally the item message class if it's stated in the rule.
 
@@ -93,7 +93,7 @@ The following example is an  **ItemIs** rule that lets users see the add-in in t
 
 
 ## ItemHasAttachment rule
-<a name="MailAppDefineRules_ItemHasAttachment"> </a>
+
 
 The  **ItemHasAttachment** complex type defines a rule that checks if the selected item contains an attachment.
 
@@ -104,7 +104,7 @@ The  **ItemHasAttachment** complex type defines a rule that checks if the select
 
 
 ## ItemHasKnownEntity rule
-<a name="MailAppDefineRules_ItemHasKnownEntity"> </a>
+
 
 Before an item is made available to an add-in, the server examines it to determine whether the subject and body contain any text that is likely to be one of the known entities. If any of these entities are found, it is placed in a collection of known entities that you access by using the  **getEntities** or **getEntitiesByType** method of that item.
 
@@ -155,7 +155,7 @@ For more information about entities in activation rules, see [Match strings in a
 
 
 ## ItemHasRegularExpressionMatch rule
-<a name="MailAppDefineRules_ItemHasRegularExpressionMatch"> </a>
+
 
 The  **ItemHasRegularExpressionMatch** complex type defines a rule that uses a regular expression to match the contents of the specified property of an item. If text that matches the regular expression is found in the specified property of the item, Outlook activates the add-in bar and displays the add-in. You can use the **getRegExMatches** or **getRegExMatchesByName** method of the object that represents the currently selected item to obtain matches for the specified regular expression.
 
@@ -172,7 +172,7 @@ For more information about using the  **ItemHasRegularExpressionMatch** rule, se
 
 
 ## RuleCollection rule
-<a name="MailAppDefineRules_RuleCollection"> </a>
+
 
 The  **RuleCollection** complex type combines multiple rules into a single rule. You can specify whether the rules in the collection should be combined with a logical OR or a logical AND by using the **Mode** attribute.
 
@@ -213,7 +213,7 @@ The following example activates the add-in when the user is composing a message,
 
 
 ## Limits for rules and regular expressions
-<a name="MailAppDefineRules_RuleCollection"> </a>
+
 
 To provide a satisfactory experience with Outlook add-ins, you should adhere to the activation and API usage guidelines. The following table shows general limits for regular expressions and rules but there are specific rules for different hosts. For more information, see [Limits for activation and JavaScript API for Outlook add-ins](../outlook/testing/limits-for-activation-and-javascript-api-for-outlook-add-ins.md) and [Troubleshoot Outlook add-in activation](../outlook/troubleshoot-outlook-add-in-activation.md).
 
@@ -229,7 +229,7 @@ To provide a satisfactory experience with Outlook add-ins, you should adhere to 
 <ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>Specify no more than 5 regular expressions in activation rules for an Outlook add-in. You cannot install an add-in if you exceed the that limit.</p></li><li><p>Specify regular expressions whose anticipated results are returned by the <span class="keyword">getRegExMatches</span> method call within the first 50 matches. </p></li><li><p>Specify look-ahead assertions in regular expressions, but not look-behind, (?<=text), and negative look-behind (?<!text).</p></li><li><p>Specify regular expressions whose match does not exceed the following limits.</p><div class="tableSection"><table border="1" width="50%" cellspacing="2" cellpadding="5" frame="lhs"><tbody><tr><th><p>Limit on length of a regex match</p></th><th><p>Outlook rich clients</p></th><th><p>Outlook Web App for Devices</p></th></tr><tr><td><p>Item body is plain text</p></td><td><p>1.5 KB</p></td><td><p>3 KB</p></td></tr><tr><td><p>Item body it HTML</p></td><td><p>3 KB</p></td><td><p>3 KB</p></td></tr></tbody></table></div></li></ul>|
 
 ## Additional resources
-<a name="MailAppDefineRules_AdditionalResources"> </a>
+
 
 
 - [Outlook add-ins](../outlook/outlook-add-ins.md)

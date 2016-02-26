@@ -6,7 +6,7 @@ This article describes how to read and write to the user's selection in a docume
 
 
 ## Overview
-<a name="ReadWriteDocumentData_Overview"> </a>
+
 
 The [Document](http://msdn.microsoft.com/en-us/library/f8859516-cc1f-4b20-a8f3-cee37a983e70%28Office.15%29.aspx) object exposes methods that let you to read and write to the user's current selection in a document or spreadsheet. To do that, the **Document** object provides the **getSelectedDataAsync** and **setSelectedDataAsync** methods. This topic also describes how to read, write, and create event handlers to detect changes to the user's selection.
 
@@ -14,7 +14,7 @@ The  **getSelectedDataAsync** method only works against the user's current selec
 
 
 ### Read selected data
-<a name="ReadWriteDocumentData_Read"> </a>
+
 
 The following example shows how to get data from a selection in a document by using the [getSelectedDataAsync](http://msdn.microsoft.com/en-us/library/f85ad02c-64f0-4b73-87f6-7f521b3afd69%28Office.15%29.aspx) method.
 
@@ -46,7 +46,7 @@ The [AsyncResult.status](http://msdn.microsoft.com/en-us/library/eec9c712-79eb-4
 
 
 ### Write data to the selection
-<a name="ReadWriteDocumentData_Write"> </a>
+
 
 The following example shows how to set the selection to show "Hello World!".
 
@@ -72,7 +72,7 @@ The anonymous function passed into the [setSelectedDataAsync](http://msdn.micros
 
 
 ### Detect changes in the selection
-<a name="ReadWriteDocumentData_DetectChanges"> </a>
+
 
 The following example shows how to detect changes in the selection by using the [Document.addHandlerAsync](http://msdn.microsoft.com/en-us/library/8b2ec6c4-0983-4f5e-abd9-16f15b4fc87b%28Office.15%29.aspx) method to add an event handler for the [SelectionChanged](http://msdn.microsoft.com/en-us/library/4cbc527c-a1d5-4fb0-b6db-28cc40c5d5e2%28Office.15%29.aspx) event on the document.
 
@@ -101,7 +101,7 @@ The  `myHander()` function that is passed into the function as the second _handl
 
 
 ### Stop detecting changes in the selection
-<a name="ReadWriteDocumentData_StopDetectingChanges"> </a>
+
 
 The following example shows how to stop listening to the [Document.SelectionChanged](http://msdn.microsoft.com/en-us/library/4cbc527c-a1d5-4fb0-b6db-28cc40c5d5e2%28Office.15%29.aspx) event by calling the [document.removeHandlerAsync](http://msdn.microsoft.com/en-us/library/47e0b00f-e301-4f21-836d-aeac783c42e0%28Office.15%29.aspx) method.
 
@@ -117,7 +117,7 @@ The  `myHandler` function name that is passed as the second _handler_ parameter 
 
 
 ## Additional resources
-<a name="ReadWriteDocumentData_AdditionalResources"> </a>
+
 
 
 - [Task pane and content add-ins for Office 2013](../essentials/task-pane-and-content-add-ins.md)

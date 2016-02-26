@@ -27,7 +27,7 @@ You can download the solution that contains these examples from the web at  [Out
 
 
 ## Set up to validate your identity token
-<a name="setup"> </a>
+
 
 The code examples in this article depend on the Windows Identity Foundation (WIF), along with a DLL that extends the WIF with handlers for JSON tokens. You can download the required assemblies from the following locations:
 
@@ -40,7 +40,7 @@ The code examples in this article depend on the Windows Identity Foundation (WIF
     
 
 ## Extract the JSON Web Token
-<a name="extractthejsonwebtoken"> </a>
+
 
 The  **Decode** factory method splits the JWT from the Exchange server into the three strings that make up the token, and then uses the **Base64Decode** method (shown in the second example) to decode the JWT header and payload into JSON strings. The strings are passed to the **JsonToken** constructor, where the contents of the JWT are validated and a new **JsonToken** object instance is returned.
 
@@ -110,7 +110,7 @@ The  **Base64Decode** method implements the decoding logic that is described in 
 
 
 ## Parse the JWT
-<a name="parsethejwt"> </a>
+
 
 The constructor for the  **JsonToken** object checks the structure and contents of the JWT to determine whether it's valid. It's best to do this before you ask for the authentication metadata document. If the JWT does not contain the proper claims, or if it's outside of its lifetime, you can avoid a call to the Exchange server and the associated delay.
 
@@ -315,7 +315,7 @@ The authentication metadata object that is stored on the Exchange server contain
 
 
 ## Validate the identity token signature
-<a name="validatetheidentitytokensignature"> </a>
+
 
 After you know that the JWT contains the claims that you need to validate the signature, you can use the Windows Identity Foundation (WIF) and the WIF extensions to validate the signature on the token. You need the following information to validate the signature:
 
@@ -480,7 +480,7 @@ The  **ServicePointManager** class in the .NET Framework System.Net namespace en
 
 
 ## Compute the unique ID for an Exchange account
-<a name="uniqueid"> </a>
+
 
 You can create a unique identifier for an Exchange account by hashing the authentication metadata document URL with the Exchange identifier for the account. When you have this unique identifier, you can use it to create a single sign-on (SSO) system for your Outlook add-in web service. For details about using the unique identifier for SSO, see [Authenticate a user with an identity token for Exchange](../outlook/authentication/authenticate-a-user-with-an-identity-token.md)
 
@@ -522,7 +522,7 @@ The  **UniqueUserIdentification** property creates a salted SHA256 hash of the E
 
 
 ## Utility objects
-<a name="utilityobjects"> </a>
+
 
 The code examples in this article depend on a few utility objects that provide friendly names to the constants that are used. The following table lists the utility objects.
 
@@ -658,7 +658,7 @@ namespace IdentityTest
 
 
 ## Additional resources
-<a name="utilityobjects"> </a>
+
 
 
 - [Authenticate an Outlook add-in by using Exchange identity tokens](../outlook/authentication/authentication.md)

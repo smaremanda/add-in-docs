@@ -10,7 +10,7 @@ The LabsJS content helps you implementing the labs.js JavaScript API by providin
 
 
 ## General guidelines
-<a name="bkGuidelines"> </a>
+
 
 The following are some general guidelines to help when writing add-ins using the LabJS API.
 
@@ -107,7 +107,7 @@ Labs.getTimeline().next({}, (err, unused) => { });
 
 
 ## Handling events
-<a name="bkEvents"> </a>
+
 
 The LabsJS events API tracks lab-specific events and enables you to add event handlers so you can respond to or act on the events. The event methods, of which there are three, are on the  **EventTypes** object: **ModeChanged**,  **Activate**, and  **Deactivate**. 
 
@@ -164,7 +164,7 @@ Labs.getTimeline().next({}, (err, unused) => { });
 
 
 ## Additional resources
-<a name="bk_addresources"> </a>
+
 
 
 - [Office Mix add-ins](../powerpoint/office-mix/office-mix-add-ins.md)

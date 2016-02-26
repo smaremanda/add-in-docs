@@ -18,7 +18,7 @@ To add an event handler for the  **ActiveViewChanged** event of a document, use 
 
 
 ## Support details
-<a name="bk_support"> </a>
+
 
 A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
 

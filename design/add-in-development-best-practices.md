@@ -7,7 +7,7 @@ Apply best practices to build Office Add-ins that optimize the user experience.
 Effective add-ins offer unique and compelling functionality that extends Office applications in a visually appealing way. To create a great add-in, provide an engaging first-time experience for your users, design a first-class UI experience, and optimize your add-in's performance. Apply the best practices described in this article to create add-ins that help your users complete their tasks quickly and efficiently.
 
 ## Provide clear value
-<a name="bk_value"> </a>
+
 
 
 - Create add-ins that help users complete tasks quickly and efficiently. Focus on scenarios that make sense for Office applications. For example:
@@ -20,7 +20,7 @@ Effective add-ins offer unique and compelling functionality that extends Office 
 
 
 ## Create an engaging first-run experience
-<a name="bk_firstrun"> </a>
+
 
 
 - Engage new users with a highly usable and intuitive first experience. Note that users are still deciding whether to use or abandon an add-in after they download it from the store.
@@ -47,7 +47,7 @@ Effective add-ins offer unique and compelling functionality that extends Office 
 
 
 ## Use add-in commands
-<a name="bk_commands"> </a>
+
 
 
 - Provide multiple UI entry points to your add-in by using [add-in commands](../outlook/add-in-commands-for-outlook.md).
@@ -115,7 +115,7 @@ To ensure that your add-in works well in both types of hosts:
      >**Note**  Add-ins that take up too much space might not pass [Office Store validation](http://msdn.microsoft.com/library/cd90836a-523e-42f5-ab02-5123cdf9fefe%28Office.15%29.aspx).
 
 ## Apply UX design principles
-<a name="bk_ux"> </a>
+
 
 
 - Ensure that the look and feel and functionality of your add-in complements the Office experience. Use the [Office UI toolkit for add-ins and web apps](http://msdn.microsoft.com/library/83ffc2f8-4c5b-4b50-9251-0f3093538944%28Office.15%29.aspx).
@@ -138,7 +138,7 @@ To ensure that your add-in works well in both types of hosts:
 
 
 ### Optimize for touch
-<a name="bk_Touch"> </a>
+
 
 
 - Use the [Context.touchEnabled](http://msdn.microsoft.com/library/fd73f94b-7e4a-422c-afdb-fef6fba43766%28Office.15%29.aspx) property to detect whether the host application your add-in runs on is touch enabled.
@@ -157,7 +157,7 @@ To ensure that your add-in works well in both types of hosts:
 
 
 ## Optimize and monitor add-in performance
-<a name="bk_performance"> </a>
+
 
 
 - Create the perception of fast UI responses. Your add-in should load in 500 ms or less.
@@ -187,7 +187,7 @@ To ensure that your add-in works well in both types of hosts:
 
 
 ## Market your add-in
-<a name="bk_market"> </a>
+
 
 
 - Publish your add-in to the [Office Store](http://msdn.microsoft.com/library/ff075782-1303-4517-91cc-b3d730e9b9ae%28Office.15%29.aspx) and [promote it](http://msdn.microsoft.com/library/b19e21f8-76f5-44e1-9971-bef79cad4c71%28Office.15%29.aspx) from your website. Create an [effective Office Store listing](http://msdn.microsoft.com/library/c66a6e6b-2e96-458f-8f8c-2a499fe942c9%28Office.15%29.aspx).

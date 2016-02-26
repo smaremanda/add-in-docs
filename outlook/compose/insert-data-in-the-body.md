@@ -6,7 +6,7 @@ Learn how to insert data in the body of the appointment or message that the user
 
 
 ## Inserting data in the body of a compose form
-<a name="mod_off15_HowToInsertDataBody_Prereq"> </a>
+
 
 You can use the asynchronous methods ([Body.getAsync](https://dev.outlook.com/reference/add-ins/Body.html%28Office.15%29.md), [Body.getTypeAsync](https://dev.outlook.com/reference/add-ins/Body.html%28Office.15%29.md), [Body.prependAsync](https://dev.outlook.com/reference/add-ins/Body.html%28Office.15%29.md), [Body.setAsync](https://dev.outlook.com/reference/add-ins/Body.html%28Office.15%29.md) and [Body.setSelectedDataAsync](https://dev.outlook.com/reference/add-ins/Body.html%28Office.15%29.md)) to get the body type and insert data in the body of an appointment or message item that the user is composing. These asynchronous methods are available to only compose add-ins. To use these methods, make sure you have set up the add-in manifest appropriately so that Outlook activates your add-in in compose forms, as described in the section [Setting up Outlook add-ins for compose forms](../outlook/compose/compose-scenario.md#mod_off15_CreatingForCompose_SettingUp) of [Create Outlook add-ins for compose forms](../outlook/compose/compose-scenario.md).
 
@@ -29,7 +29,7 @@ In addition to  _coercionType_, as with most asynchronous methods in the JavaScr
 
 
 ## To insert data at the current cursor position
-<a name="mod_off15_HowToInsertDataBody_AtCursor"> </a>
+
 
 This section shows a code sample that uses  **getTypeAsync** to verify the body type of the item that is being composed, and then uses **setSelectedDataAsync** to insert data in the current cursor location.
 
@@ -131,7 +131,7 @@ function write(message){
 
 
 ## To insert data at the beginning of the item body
-<a name="mod_off15_HowToInsertDataBody_Prepend"> </a>
+
 
 Alternatively, you can use  **prependAsync** to insert data at the beginning of the item body and disregard the current cursor location. Other than the point of insertion, **prependAsync** and **setSelectedDataAsync** behave in similar ways:
 
@@ -223,7 +223,7 @@ function write(message){
 
 
 ## Additional resources
-<a name="mod_off15_HowToInsertDataBody_AdditionalRsc"> </a>
+
 
 
 - [Get and set item data in a compose form in Outlook](../outlook/compose/get-and-set-item-data-in-a-compose-form.md)

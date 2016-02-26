@@ -54,7 +54,7 @@ function applyOfficeTheme(){
 
 
 ## Support details
-<a name="bk_support"> </a>
+
 
 
 |||
@@ -65,7 +65,7 @@ function applyOfficeTheme(){
 |**Namespace**|Office|
 
 ## Support history
-<a name="bk_history"> </a>
+
 
 
 ****

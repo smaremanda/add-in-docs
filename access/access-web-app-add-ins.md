@@ -143,7 +143,7 @@ Download the sample [Office 365: Bind and manipulate data in an Access web app](
 
 
 ## Additional resources
-<a name="FirstProjectApp_AdditionalResources"> </a>
+
 
 
 - [Understanding the JavaScript API for add-ins](http://msdn.microsoft.com/en-us/library/01180dae-ca45-40c8-b3dd-fd2a85651c0c%28Office.15%29.aspx)

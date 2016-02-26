@@ -6,7 +6,7 @@ Learn how an Outlook add-in can get, set, or add recipients when a user is compo
 
 
 ## Prerequisites for getting, setting, or adding recipients in a compose form
-<a name="mod_off15_HowToGetSetRecipients_Prereq"> </a>
+
 
 The JavaScript API for Office provides asynchronous methods ([Recipients.getAsync](http://dev.outlook.com/reference/add-ins/Recipients.html%28Office.15%29.md), [Recipients.setAsync](http://dev.outlook.com/reference/add-ins/Recipients.html%28Office.15%29.md), or [Recipients.addAysnc](http://dev.outlook.com/reference/add-ins/Recipients.html%28Office.15%29.md)) to respectively get, set, or add recipients in a compose form of an appointment or message. These asynchronous methods are available to only compose add-ins. To use these methods, make sure you have set up the add-in manifest appropriately for Outlook to activate the add-in in compose forms, as described in the section [Setting up Outlook add-ins for compose forms](../outlook/compose/compose-scenario.md#mod_off15_CreatingForCompose_SettingUp) of [Create Outlook add-ins for compose forms](../outlook/compose/compose-scenario.md).
 
@@ -34,7 +34,7 @@ As with most asynchronous methods in the JavaScript API for Office,  **getAsync*
 
 
 ## To get recipients
-<a name="mod_off15_HowToGetSetRecipients_ToGetRecipients"> </a>
+
 
 This section shows a code sample that gets the recipients of the appointment or message that is being composed, and displays the email addresses of the recipients. The code sample assumes a rule in the add-in manifest that activates the add-in in a compose form for an appointment or message, as shown below. 
 
@@ -146,7 +146,7 @@ function write(message){
 
 
 ## To set recipients
-<a name="mod_off15_HowToGetSetRecipients_ToSetRecipients"> </a>
+
 
 This section shows a code sample that sets the recipients of the appointment or message that is being composed by the user. Setting recipients overwrites any existing recipients. Similar to the previous example that gets recipients in a compose form, this example assumes that the add-in is activated in compose forms for appointments and messages. This example first verifies if the composed item is an appointment or message, so to apply the asynchronous method,  **Recipients.setAsync**, on the appropriate properties that represent recipients of the appointment or message.
 
@@ -273,7 +273,7 @@ function write(message){
 
 
 ## To add recipients
-<a name="mod_off15_HowToGetSetRecipients_ToAddRecipients"> </a>
+
 
 If you do not want to overwrite any existing recipients in an appointment or message, instead of using  **Recipients.setAsync**, you can use the  **Recipients.addAsync** asynchronous method to append recipients. **addAsync** works similarly as **setAsync** in that it requires a _recipients_ input argument. You can optionally provide a callback method, and any arguments for the callback using the asyncContext parameter. You can then check the status, result, and any error of the asynchronous **addAsync** call by using the _asyncResult_ output parameter of the callback method. The following example checks if the item being composed is an appointment, and appends two required attendees to the appointment.
 
@@ -307,7 +307,7 @@ function addAttendees() {
 
 
 ## Additional resources
-<a name="mod_off15_HowToGetSetRecipients_AdditionalRsc"> </a>
+
 
 
 - [Get and set item data in a compose form in Outlook](../outlook/compose/get-and-set-item-data-in-a-compose-form.md)

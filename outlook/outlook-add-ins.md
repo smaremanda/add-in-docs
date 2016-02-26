@@ -6,7 +6,7 @@ Create Outlook add-ins in read or compose mode.
 
 
 ## What is an Outlook add-in?
-<a name="SeeingMailApp_WhatIs"> </a>
+
 
 Outlook add-ins (formerly called "apps for Outlook") are integrations built by 3rd parties into Outlook using the new web technologies based platform. Outlook add-ins have 3 key aspects:
 
@@ -23,7 +23,7 @@ The Outlook items that support mail add-ins include email messages, meeting requ
 
 
 ## Extension points
-<a name="SeeingMailApp_WhatIs"> </a>
+
 
 Extension points are the ways that add-ins integrate with Outlook. The following are the ways this can be done:
 
@@ -48,7 +48,7 @@ Extension points are the ways that add-ins integrate with Outlook. The following
 
 
 ## Mailbox items available to add-ins
-<a name="MailAppDefineRules_Activation"> </a>
+
 
 Outlook add-ins are available on messages or appointments while composing or reading, but not other item types. Outlook does not activate add-ins if the current message item, in a compose or read form, is one of the following:
 
@@ -67,19 +67,19 @@ In general, Outlook can activate add-ins in read forms for items in the Sent Ite
 
 
 ## Supported hosts
-<a name="MailAppDefineRules_Activation"> </a>
+
 
 Outlook add-ins are supported in Outlook 2013 and later versions, Outlook 2016 for Mac, Outlook Web App for Exchange 2013 on-premises, Outlook Web App in Office 365 and Outlook.com. Not all of the newest features are supported in all clients at the same time. Please refer to individual topics and API references, to see which hosts they are/are not supported in.
 
 
 ## Get started building Outlook add-ins
-<a name="MailAppDefineRules_Activation"> </a>
+
 
 To get started building Outlook add-ins, see [Get Started with Outlook add-ins for Office 365](https://dev.outlook.com/MailAppsGettingStarted/GetStarted.aspx).
 
 
 ## Additional Resources
-<a name="MailAppDefineRules_Activation"> </a>
+
 
 [Overview of Outlook add-ins architecture and features](../outlook/overview.md)
 

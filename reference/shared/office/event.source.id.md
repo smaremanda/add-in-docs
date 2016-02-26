@@ -24,7 +24,7 @@ The id of the control that triggered calling this function. The id comes from th
 
 
 ## Support details
-<a name="bk_support"> </a>
+
 
 A capital Y in the following table indicates that this property is supported in the corresponding Outlook host application. An empty cell indicates that the Outlook host application doesn't support this property.
 
@@ -50,7 +50,7 @@ For more information about Office host application and server requirements, see 
 |**Namespace**|Office|
 
 ## Support history
-<a name="bk_history"> </a>
+
 
 
 

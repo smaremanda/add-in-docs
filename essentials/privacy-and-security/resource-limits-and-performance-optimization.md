@@ -7,7 +7,7 @@ Apply resource usage limits to your Office Add-ins and optimize the performance 
 To create the best experience for your users, ensure that your Office Add-in performs within specific limits for CPU core and memory usage, reliability and, for Outlook add-ins, the response time for evaluating regular expressions. These run-time resource usage limits apply to add-ins running on Office clients for Windows and OS X, but not Office Online, Outlook Web App,or OWA for Devices. You can also optimize the performance of your add-ins on desktop and mobile devices by optimizing the use of resources in your add-in design and implementation.
 
 ## Resource usage limits for add-ins
-<a name="off15wecon_FollowingRscUsageReasons"> </a>
+
 
 Run-time resource usage limits apply to all types of Office Add-ins. These limits help ensure performance for your users and mitigate denial-of-service attacks. Be sure to test your Office Add-in on your target host application using range of possible data and measure its performance against the following run-time usage limits:
 
@@ -55,7 +55,7 @@ Run-time resource usage limits apply to all types of Office Add-ins. These limit
     
 
 ## Verifying resource usage issues in the Telemetry Log
-<a name="off15wecon_VerifyingInTelemetryLog"> </a>
+
 
 Office provides a Telemetry Log that maintains a record of certain events (loading, opening, closing, and errors) of Office solutions running on the local computer, including resource usage issues in an Office Add-in. If you have the Telemetry Log set up, you can use Excel to open the Telemetry Log in the following default location on your local drive:
 
@@ -87,7 +87,7 @@ For more information, see [Deploying Telemetry Dashboard](http://msdn.microsoft.
 
 
 ## Design and implementation techniques
-<a name="off15wecon_FollowingRscUsageTechniques"> </a>
+
 
 While the resources limits on CPU and memory usage, crash tolerance, UI responsiveness apply to Office Add-ins running only on the rich clients, optimizing the usage of these resources and battery should be a priority if you want your add-in to perform satisfactorily on all supporting clients and devices. Optimization is particularly important if your add-in carries out long-running operations or handles large data sets. The following list suggests some techniques to break up CPU-intensive or data-intensive operations into smaller chunks so that your add-in can avoid excessive resource consumption and the host application can remain responsive:
 
@@ -104,7 +104,7 @@ While the resources limits on CPU and memory usage, crash tolerance, UI responsi
     
 
 ## Additional resources
-<a name="off15wecon_FollowingRscUsageAdditionalRsc"> </a>
+
 
 
 - [Privacy and security for Office Add-ins](87c59a88-10e2-4c88-b6a8-736bd356e5f8.md)

@@ -37,7 +37,7 @@ The following example defines a custom pane for items that are messages or have 
     
 
 ## Additional resources
-<a name="bk_addresources"> </a>
+
 
 
 - [Get Started with Outlook add-ins for Office 365](https://dev.outlook.com/MailAppsGettingStarted/GetStarted.aspx)

@@ -6,7 +6,7 @@ Use Napa Office 365 Development Tools to create Office Add-ins directly out of a
 
 
 ## Introducing Napa
-<a name="Napa"> </a>
+
 
 Napa is a great way to get started building Office Add-ins directly out of a browser window. You don't have to install any other tools like Visual Studio. All you need is a supported browser and a couple of other things:
 
@@ -19,7 +19,7 @@ When you're ready to use the advanced capabilities in Visual Studio, Napa makes 
 
 
 ## Create and manage projects
-<a name="Create"> </a>
+
 
 Napa gives you a page where you manage your projects. Use the page to create a mail add-in, content add-in, or task pane add-in project, or rename and delete projects. You can also open any project in Visual Studio if you decide to use features like advanced debugging or the ability to use a web project as part of your Office Add-in. You choose a filter to view recently modified projects or all projects. You click a project tile to open an existing project. 
 
@@ -30,7 +30,7 @@ Napa gives you a page where you manage your projects. Use the page to create a m
 
 
 ## Develop add-ins
-<a name="Develop"> </a>
+
 
 When you open a project, a default HTML file appears in a code editor. This file contains all the file references you need to get started. From there, you can use the productivity features of the editor, like syntax highlighting and code completion to write your code. Many of the features have shortcut key combinations. To see a list of shortcut key combinations, press CTRL and the "." key at the same time. 
 
@@ -43,7 +43,7 @@ Project files appear in a top-down view to the side of the editor. Use the conte
 
 
 ## Share and Publish add-ins
-<a name="Share"> </a>
+
 
 To share your add-in while you're developing it, click the  **Share Project** button on the side of the page. That creates a copy of the add-in project and gives you a public link that you can give to anyone to share the copy of the add-in project.
 
@@ -53,7 +53,7 @@ After you've completed your add-in project and want to distribute it, you can pu
 
 
 ## Get Started
-<a name="GetStarted"> </a>
+
 
 To get started, open the [Napa Office 365 Development Tools](https://www.napacloudapp.com) web app in your browser. Here are some topics to help you get started:
 
@@ -66,7 +66,7 @@ To get started, open the [Napa Office 365 Development Tools](https://www.napaclo
     
 
 ## Create both Office Add-ins and SharePoint Add-ins with Napa
-<a name="GetStarted"> </a>
+
 
 If you want to create both Office and SharePoint Add-ins in the same browser-based development environment, there's an alternate version of Napa that you can use; see [Sign up for an Office 365 Developer Site](http://msdn.microsoft.com/library/b22ce52a-ae9e-4831-9b68-c9210af6dc54%28Office.15%29.aspx#o365_signup).
 

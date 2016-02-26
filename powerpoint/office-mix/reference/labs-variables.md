@@ -14,7 +14,7 @@ The LabsJS.Labs module contains the following variable objects.
 |[Labs.DefaultHostBuilder](../powerpoint/office-mix/reference/labs.defaulthostbuilder.md)|Use this object to construct a default [Labs.Core.ILabHost](../powerpoint/office-mix/reference/labs.core.ilabhost.md) instance.|
 
 ## Additional resources
-<a name="bk_addresources"> </a>
+
 
 
 - [Labs Functions](../powerpoint/office-mix/reference/labs-functions.md)

@@ -16,7 +16,7 @@ Here's what you need to do that:
     
 
 ## Create a basic add-in
-<a name="create"> </a>
+
 
 
 1. Open the [Napa Office 365 Development Tools](https://www.napacloudapp.com/ ) web app in your browser.
@@ -40,7 +40,7 @@ Here's what you need to do that:
     
 
 ## Next steps
-<a name="O15BuildAddlresources"> </a>
+
 
 Now that you've created your first add-in, see the following for some more in-depth examples:
 
@@ -58,7 +58,7 @@ You can also use Visual Studio or a text editor to create Office Add-ins. To lea
     
 
 ## Additional resources
-<a name="O15BuildAddlresources"> </a>
+
 
 
 - [Submit Office and SharePoint Add-ins and Office 365 web apps to the Office Store](http://msdn.microsoft.com/library/ff075782-1303-4517-91cc-b3d730e9b9ae%28Office.15%29.aspx)

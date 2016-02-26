@@ -24,7 +24,7 @@ Provides information about the view that raised the [ActiveViewChanged](../refer
 |[type](../reference/shared/document/activeviewchangedeventargs-object/type-property.md)|Get an  **EventType** enumeration value that identifies the kind of event that was raised.|
 
 ## Support details
-<a name="bk_support"> </a>
+
 
 A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
 
