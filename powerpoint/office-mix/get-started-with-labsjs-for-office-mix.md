@@ -39,14 +39,14 @@ For more information, see [Set up a development environment for SharePoint Add-i
 
 ### Set up an app catalog on SharePoint Online
 
-After your developer site is created and provisioned, you then set up an add-in catalog on SharePoint Online. For more information, see [Set up an add-in catalog on Office 365](../publish/set-up-an-add-in-catalog-on-office-365.md).
+After your developer site is created and provisioned, you then set up an add-in catalog on SharePoint Online. For more information, see [Set up an add-in catalog on Office 365](../../publish/set-up-an-add-in-catalog-on-office-365.md).
 
 For Office Mix, you use an add-in catalog so you can insert pre-production add-ins into a lesson and conduct end-to-end testing before submitting the labs to the store.
 
 
 ## Create your lab
 
-To create your first lab, follow the steps in the [walkthrough](../powerpoint/office-mix/creating-your-first-lab-for-office-mix.md), which explains how to create a simple true/false quiz. See [Walkthrough: Creating your first lab for Office Mix](../powerpoint/office-mix/creating-your-first-lab-for-office-mix.md).
+To create your first lab, follow the steps in the [walkthrough](../../powerpoint/office-mix/creating-your-first-lab-for-office-mix.md), which explains how to create a simple true/false quiz. See [Walkthrough: Creating your first lab for Office Mix](../../powerpoint/office-mix/creating-your-first-lab-for-office-mix.md).
 
 
 ## Publish your lab
@@ -58,7 +58,7 @@ After you create your lab, you can publish it and submit it to the store.
 
 The application manifest is an XML document that describes your LabJS lab. It provides a reference to the URL where the lab is hosted and provides details about the lab, including display name, description, icons, size, and so on.
 
-We include a sample manifest, "SampleManifest.xml". For more information about the manifest schema as well as a link to the schema definition, see [Office Add-ins XML manifest](../overview/add-in-manifests.md).
+We include a sample manifest, "SampleManifest.xml". For more information about the manifest schema as well as a link to the schema definition, see [Office Add-ins XML manifest](../../overview/add-in-manifests.md).
 
 To upload your manifest to your SharePoint site, first navigate to your application catalog, which you'll typically find at the URL  `https://<your site>/sites/AppCatalog`. Then, choose the  **New app** button and follow the steps to upload your application manifest.
 
@@ -84,16 +84,16 @@ Now you can take advantage of all the available Office Mix functionality to publ
 
 ### Submit your lab to the Office Store
 
-To submit your lab to the Office Store, see [Publish your Office Add-in](../../publish/publish.md)
+To submit your lab to the Office Store, see [Publish your Office Add-in](../../../publish/publish.md)
 
 
 ## Additional resources
 
 
 
-- [Office Mix add-ins](../powerpoint/office-mix/office-mix-add-ins.md)
+- [Office Mix add-ins](../../powerpoint/office-mix/office-mix-add-ins.md)
     
-- [Office Add-ins](../overview/office-add-ins.md)
+- [Office Add-ins](../../overview/office-add-ins.md)
     
-- [Creating your first lab for Office Mix](../powerpoint/office-mix/creating-your-first-lab-for-office-mix.md)
+- [Creating your first lab for Office Mix](../../powerpoint/office-mix/creating-your-first-lab-for-office-mix.md)
     

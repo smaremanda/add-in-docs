@@ -54,7 +54,7 @@ The typical development lifecycle of an Office Add-in includes the following ste
     
     Place the HTML files and any JavaScript and CSS files on the web servers that are specified in the add-in manifest file. The process to install an add-in depends on the type of the add-in.
     
-    For Outlook add-ins, install it in an Exchange mailbox, and specify the location of the add-in manifest file in the Exchange Admin Center (EAC). For more information, see [Deploy and install Outlook add-ins for testing](../outlook/testing/testing-and-tips.md).
+    For Outlook add-ins, install it in an Exchange mailbox, and specify the location of the add-in manifest file in the Exchange Admin Center (EAC). For more information, see [Deploy and install Outlook add-ins for testing](../outlook/testing-and-tips.md).
     
 7.  **Publish the add-in.**
     

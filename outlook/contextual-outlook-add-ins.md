@@ -27,7 +27,7 @@ To make a contextual add-in, its add-in manifest must specify the entity or regu
 
 ```
 
-Once a contextual add-in is associated with an account, it will automatically start when the user clicks a highlighted entity or regular expression. For more information on regular expressions for Outlook add-ins, see [Use regular expression activation rules to show an Outlook add-in](../outlook/read/use-regular-expressions-to-show-an-outlook-add-in.md).
+Once a contextual add-in is associated with an account, it will automatically start when the user clicks a highlighted entity or regular expression. For more information on regular expressions for Outlook add-ins, see [Use regular expression activation rules to show an Outlook add-in](../outlook/use-regular-expressions-to-show-an-outlook-add-in.md).
 
 There are several restrictions on contextual add-ins:
 
@@ -138,7 +138,7 @@ Also, the [Package Tracker](https://store.office.com/package-tracker-WA104162083
 
 - [Get Started with Outlook add-ins for Office 365](https://dev.outlook.com/MailAppsGettingStarted/GetStarted.aspx)
     
-- [Use regular expression activation rules to show an Outlook add-in](../outlook/read/use-regular-expressions-to-show-an-outlook-add-in.md)
+- [Use regular expression activation rules to show an Outlook add-in](../outlook/use-regular-expressions-to-show-an-outlook-add-in.md)
     
 - [Understanding the Office Add-ins XML manifest](https://msdn.microsoft.com/en-us/library/office/fp161044%28v=office.15%29.aspx .aspx)
     

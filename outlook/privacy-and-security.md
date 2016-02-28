@@ -32,7 +32,7 @@ Manifest schema version 1.1 includes four levels of permissions.
 |Read item|ReadItem|
 |Read/write item|ReadWriteItem|
 |Read/write mailbox|ReadWriteMailbox|
-The four levels of permissions are cumulative: the  **read/write mailbox** permission includes the permissions of **read/write item**,  **read item** and **restricted**,  **read/write item** includes **read item** and **restricted**, and the  **read item** permission includes **restricted**. Figure 1 shows the four levels of permissions and describes the capabilities offered to the end user, developer, and administrator by each tier. For more information about these permissions, see [End users: privacy and performance concerns](#olowa15conagave_privacy), [Developers: permission choices and resource usage limits](#olowa15conagave_choices), and [Understanding Outlook add-in permissions](../outlook/privacy/understanding-outlook-add-in-permissions.md). 
+The four levels of permissions are cumulative: the  **read/write mailbox** permission includes the permissions of **read/write item**,  **read item** and **restricted**,  **read/write item** includes **read item** and **restricted**, and the  **read item** permission includes **restricted**. Figure 1 shows the four levels of permissions and describes the capabilities offered to the end user, developer, and administrator by each tier. For more information about these permissions, see [End users: privacy and performance concerns](#olowa15conagave_privacy), [Developers: permission choices and resource usage limits](#olowa15conagave_choices), and [Understanding Outlook add-in permissions](../outlook/understanding-outlook-add-in-permissions.md). 
 
 
 **Figure 1. Relating the four-tier permission model to the end user, developer, and administrator**
@@ -145,7 +145,7 @@ Developers should follow the tiered permissions model to provide transparency an
 
 ### Resource usage tuning
 
-Developers should be aware of resource usage limits for activation, incorporate performance tuning in their development workflow, so as to reduce the chance of a poorly performing add-in denying service of the host. Developers should follow the guidelines in designing activation rules as described in [Limits for activation and JavaScript API for Outlook add-ins](../outlook/testing/limits-for-activation-and-javascript-api-for-outlook-add-ins.md). If an Outlook add-in is intended to run on an Outlook rich client, then developers should verify that the add-in performs within the resource usage limits.
+Developers should be aware of resource usage limits for activation, incorporate performance tuning in their development workflow, so as to reduce the chance of a poorly performing add-in denying service of the host. Developers should follow the guidelines in designing activation rules as described in [Limits for activation and JavaScript API for Outlook add-ins](../outlook/limits-for-activation-and-javascript-api-for-outlook-add-ins.md). If an Outlook add-in is intended to run on an Outlook rich client, then developers should verify that the add-in performs within the resource usage limits.
 
 
 ### Other measures to promote user security
@@ -188,9 +188,9 @@ The security model provides the following rights and responsibilities to adminis
     
 - [Privacy and security for Office Add-ins](87c59a88-10e2-4c88-b6a8-736bd356e5f8.md)
     
-- [Outlook add-in APIs](../outlook/apis/apis.md)
+- [Outlook add-in APIs](../outlook/apis.md)
     
 - [Requesting permissions for API use in content and task pane add-ins](../how-to/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins.md)
     
-- [Limits for activation and JavaScript API for Outlook add-ins](../outlook/testing/limits-for-activation-and-javascript-api-for-outlook-add-ins.md)
+- [Limits for activation and JavaScript API for Outlook add-ins](../outlook/limits-for-activation-and-javascript-api-for-outlook-add-ins.md)
     

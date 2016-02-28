@@ -257,11 +257,11 @@ After verifying the property value, you can then use a regular expression evalua
 This section applies to all activation rules that use regular expressions -- particularly those that are applied to the item body, which may be large in size and take longer to evaluate for matches. You should be aware that even if the item property that an activation rule depends on has the value you expect, the host application may not be able to evaluate all the regular expressions on the entire value of the item property. To provide reasonable performance and to control excessive resource usage by a read add-in, Outlook, Outlook Web App and OWA for Devices observe the following limits on processing regular expressions in activation rules at run time:
 
 
-- The size of the item body evaluated -- There are limits to the portion of an item body on which the host application evaluates a regular expression. These limits depend on the host application, form factor, and format of the item body. See the details in Table 2 in [Limits for activation and JavaScript API for Outlook add-ins](../outlook/testing/limits-for-activation-and-javascript-api-for-outlook-add-ins.md).
+- The size of the item body evaluated -- There are limits to the portion of an item body on which the host application evaluates a regular expression. These limits depend on the host application, form factor, and format of the item body. See the details in Table 2 in [Limits for activation and JavaScript API for Outlook add-ins](../outlook/limits-for-activation-and-javascript-api-for-outlook-add-ins.md).
     
 - Number of regular expression matches -- The Outlook rich clients, Outlook Web App and OWA for Devices each returns a maximum of 50 regular expression matches. These matches are unique, and duplicate matches do not count against this limit. Do not assume any order to the returned matches, and do not assume the order in an Outlook rich client is the same as that in Outlook Web App and OWA for Devices. If you expect many matches to regular expressions in your activation rules, and you're missing a match, you may be exceeding this limit.
     
-- Length of a regular expression match -- There are limits to the length of a regular expression match that the host application would return. The host application does not include any match above the limit and does not display any warning message. You can run your regular expression using other regex evaluation tools or a stand-alone C++ test program to verify whether you have a match that exceeds such limits. Table 3 summarizes the limits. For more information, see Table 3 in [Limits for activation and JavaScript API for Outlook add-ins](../outlook/testing/limits-for-activation-and-javascript-api-for-outlook-add-ins.md).
+- Length of a regular expression match -- There are limits to the length of a regular expression match that the host application would return. The host application does not include any match above the limit and does not display any warning message. You can run your regular expression using other regex evaluation tools or a stand-alone C++ test program to verify whether you have a match that exceeds such limits. Table 3 summarizes the limits. For more information, see Table 3 in [Limits for activation and JavaScript API for Outlook add-ins](../outlook/limits-for-activation-and-javascript-api-for-outlook-add-ins.md).
     
     **Table 3. Length limits for a regular expression match**
 
@@ -278,13 +278,13 @@ This section applies to all activation rules that use regular expressions -- par
 
 
 
-- [Deploy and install Outlook add-ins for testing](../outlook/testing/testing-and-tips.md)
+- [Deploy and install Outlook add-ins for testing](../outlook/testing-and-tips.md)
     
 - [Activation rules for Outlook add-ins](../outlook/manifests/activation-rules.md)
     
-- [Use regular expression activation rules to show an Outlook add-in](../outlook/read/use-regular-expressions-to-show-an-outlook-add-in.md)
+- [Use regular expression activation rules to show an Outlook add-in](../outlook/use-regular-expressions-to-show-an-outlook-add-in.md)
     
-- [Limits for activation and JavaScript API for Outlook add-ins](../outlook/testing/limits-for-activation-and-javascript-api-for-outlook-add-ins.md)
+- [Limits for activation and JavaScript API for Outlook add-ins](../outlook/limits-for-activation-and-javascript-api-for-outlook-add-ins.md)
     
 - [Open Event Viewer](http://windows.microsoft.com/en-US/windows7/Open-Event-Viewer)
     

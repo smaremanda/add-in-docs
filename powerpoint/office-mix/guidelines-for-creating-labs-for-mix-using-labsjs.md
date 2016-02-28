@@ -88,7 +88,7 @@ Initialization establishes the communication pathway between the lab and its hos
 Labs.connect((err, connectionResponse) => {});
 ```
 
-After you initialize, you can call other methods of the labs.js API. The  _connectionResponse_ parameter contains information about the host, user, and other connection-related information. For more information about the values returned, see the [Labs.Core.IConnectionResponse](../powerpoint/office-mix/reference/labs.core.iconnectionresponse.md).
+After you initialize, you can call other methods of the labs.js API. The  _connectionResponse_ parameter contains information about the host, user, and other connection-related information. For more information about the values returned, see the [Labs.Core.IConnectionResponse](../../reference/office-mix/labs.core.iconnectionresponse.md).
 
 
 ### Time format
@@ -167,5 +167,5 @@ Labs.getTimeline().next({}, (err, unused) => { });
 
 
 
-- [Office Mix add-ins](../powerpoint/office-mix/office-mix-add-ins.md)
+- [Office Mix add-ins](../../powerpoint/office-mix/office-mix-add-ins.md)
     

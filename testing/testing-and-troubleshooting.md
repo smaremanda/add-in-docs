@@ -61,5 +61,5 @@ Verify that the latest Office updates are installed, or download the [update for
     
 - [Create and debug Office Add-ins in Visual Studio](../essentials/create-and-debug-office-add-ins-in-visual-studio.md)
     
-- [Deploy and install Outlook add-ins for testing](../outlook/testing/testing-and-tips.md)
+- [Deploy and install Outlook add-ins for testing](../outlook/testing-and-tips.md)
     

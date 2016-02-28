@@ -42,7 +42,7 @@ Alternatively, in a corporate setting, IT can deploy task pane and content add-i
 ## Publishing Outlook add-ins to an Exchange server
 
 
-Outlook add-ins are published to an Exchange catalog that is available to users of the Exchange server on which it resides. It enables publishing and management of Outlook add-ins, including internally created ones as well as solutions that are acquired from the Office Store and licensed for corporate use. Outlook add-ins are installed into an Exchange catalog by using either the Exchange Admin Center (EAC) or by running remote Windows PowerShell commands (cmdlets). For information about publishing an Outlook add-in, see [Deploy and install Outlook add-ins for testing](../outlook/testing/testing-and-tips.md).
+Outlook add-ins are published to an Exchange catalog that is available to users of the Exchange server on which it resides. It enables publishing and management of Outlook add-ins, including internally created ones as well as solutions that are acquired from the Office Store and licensed for corporate use. Outlook add-ins are installed into an Exchange catalog by using either the Exchange Admin Center (EAC) or by running remote Windows PowerShell commands (cmdlets). For information about publishing an Outlook add-in, see [Deploy and install Outlook add-ins for testing](../outlook/testing-and-tips.md).
 
 
 ## Add-in experience for end users

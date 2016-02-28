@@ -706,7 +706,7 @@ This is separate from the  **Hosts** element inside the **VersionOverrides** ele
 
 ## Requirements
 
-The  **Requirements** element specifies the set of APIs available to the add-in. For an Outlook add-in, the requirement set must be Mailbox and a value of 1.1 or above. Please refer to the API reference for the latest requirement set version. Refer to the [Outlook add-in APIs](../outlook/apis/apis.md) for more information on requirement sets.
+The  **Requirements** element specifies the set of APIs available to the add-in. For an Outlook add-in, the requirement set must be Mailbox and a value of 1.1 or above. Please refer to the API reference for the latest requirement set version. Refer to the [Outlook add-in APIs](../outlook/apis.md) for more information on requirement sets.
 
 The  **Requirements** element can also appear in the **VersionOverrides** element, allowing the add-in to specify a different requirement when loaded in clients that support **VersionOverrides**.
 
@@ -761,7 +761,7 @@ App domains are also necessary to enable cookie sharing between the pop-out wind
 
 ## Permissions
 
-The  **Permissions** element contains the required permissions for the add-in. In general, you should specify the minimum necessary permission that your add-in needs, depending on the exact methods that you plan to use. For example, a mail add-in that activates in compose forms and only reads but does not write to item properties like [item.requiredAttendees](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html), and does not call [mailbox.makeEwsRequestAsync](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.html) to access any Exchange Web Services operations should specify **ReadItem** permission. For details on the available permissions, see [Understanding Outlook add-in permissions](../outlook/privacy/understanding-outlook-add-in-permissions.md).
+The  **Permissions** element contains the required permissions for the add-in. In general, you should specify the minimum necessary permission that your add-in needs, depending on the exact methods that you plan to use. For example, a mail add-in that activates in compose forms and only reads but does not write to item properties like [item.requiredAttendees](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html), and does not call [mailbox.makeEwsRequestAsync](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.html) to access any Exchange Web Services operations should specify **ReadItem** permission. For details on the available permissions, see [Understanding Outlook add-in permissions](../outlook/understanding-outlook-add-in-permissions.md).
 
 
 **Four-tier permissions model for mail add-ins**
@@ -813,9 +813,9 @@ After defining a basic manifest, [define add-in commands for your add-in](../out
     
 - [Create a mail add-in for Outlook that runs on desktops, tablets, and mobile devices (schema v1.1)](http://msdn.microsoft.com/library/8d425fb3-8a7c-429d-87b3-8046e964b153%28Office.15%29.aspx)
     
-- [Privacy, permissions, and security for Outlook add-ins](../outlook/../essentials/privacy-and-security/privacy-and-security.md)
+- [Privacy, permissions, and security for Outlook add-ins](../outlook/../essentials/privacy-and-security.md)
     
-- [Outlook add-in APIs](../outlook/apis/apis.md)
+- [Outlook add-in APIs](../outlook/apis.md)
     
 - [Office Add-ins XML manifest](../overview/add-in-manifests.md)
     
@@ -825,9 +825,9 @@ After defining a basic manifest, [define add-in commands for your add-in](../out
     
 - [Design guidelines for Office Add-ins](../design/add-in-design.md)
     
-- [Understanding Outlook add-in permissions](../outlook/privacy/understanding-outlook-add-in-permissions.md)
+- [Understanding Outlook add-in permissions](../outlook/understanding-outlook-add-in-permissions.md)
     
-- [Use regular expression activation rules to show an Outlook add-in](../outlook/read/use-regular-expressions-to-show-an-outlook-add-in.md)
+- [Use regular expression activation rules to show an Outlook add-in](../outlook/use-regular-expressions-to-show-an-outlook-add-in.md)
     
-- [Match strings in an Outlook item as well-known entities](../outlook/read/match-strings-in-an-item-as-well-known-entities.md)
+- [Match strings in an Outlook item as well-known entities](../outlook/match-strings-in-an-item-as-well-known-entities.md)
     
