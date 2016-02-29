@@ -41,7 +41,7 @@ The Document API subset of the JavaScript API for Office includes objects, metho
 <ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>Access</p></li><li><p>Excel</p></li><li><p>Word</p></li></ul>|
 |[TableData](../../reference/shared/tabledata.md)|Represents the data in a table or a  **TableBinding**.|
 <ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>Access</p></li><li><p>Excel</p></li><li><p>Word</p></li></ul>|
-|[TextBinding](../../reference/shared/binding.tablebinding.textbinding.md)|Represents a bound text selection in the document.|
+|[TextBinding](../../reference/shared/binding.textbinding.md)|Represents a bound text selection in the document.|
 <ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>Excel</p></li><li><p>Word</p></li></ul>|
 
 ## Supported host applications

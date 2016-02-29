@@ -53,7 +53,7 @@ Adds the specified type of binding object to the  **Bindings** collection, which
 
 ## Example
 
-Adds a [TextBinding](../../reference/shared/binding.tablebinding.textbinding.md) to the current selection with a **Binding.id** of 'MyBinding'.
+Adds a [TextBinding](../../reference/shared/binding.textbinding.md) to the current selection with a **Binding.id** of 'MyBinding'.
 
 
 ```
