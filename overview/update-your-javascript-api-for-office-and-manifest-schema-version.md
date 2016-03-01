@@ -51,9 +51,9 @@ Note that the update process is applied on a  _per-project basis_ - you'll need 
     
 5. In the  **head** tag of your add-in's HTML pages, comment out or delete any existing office.js script references (for example: `<script src="https://appsforoffice.microsoft.com/lib/1.0/hosted/office.js" type="text/javascript"></script>)`, and now reference the updated JavaScript API for Office library like this (changing the version value to  `1`).
     
-  ```
+```
   <script src="https://appsforoffice.microsoft.com/lib/1/hosted/Office.js" type="text/javascript"></script>
-  ```
+```
 
 
     The  `/1/` in front of `office.js` in the CDN URL specifies to use the latest incremental release within version 1 of Office.js.
@@ -64,9 +64,9 @@ Note that the update process is applied on a  _per-project basis_ - you'll need 
 
 - In your project's add-in manifest ( _projectname_ Manifest.xml) file, update the **xmlns** attribute of the **OfficeApp** element changing the version value to `1.1` (leaving attributes other than the **xmlns** attribute unchanged).
     
-  ```XML
+```XML
   <OfficeApp xsi:type="ContentApp" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" >
-  ```
+```
 
 
      >**Note**  After updating the version of the add-in manifest schema to 1.1, you will need to remove the  **Capabilities** and **Capability** elements, and replace them with either the [Hosts and Host elements](http://msdn.microsoft.com/library/cff9fbdf-a530-4f6e-91ca-81bcacd90dcd%28Office.15%29.aspx) or the [Requirements and Requirement elements](../overview/specify-office-hosts-and-api-requirements.md).
@@ -89,9 +89,9 @@ Note that the update process is applied on a  _per-project basis_ - you'll need 
     
 2. In the  **head** tag of your add-in's HTML pages, comment out or delete any existing office.js script references (for example: `<script src="https://appsforoffice.microsoft.com/lib/1.0/hosted/office.js" type="text/javascript"></script>)`, and now reference the updated JavaScript API for Office library like this (changing the version value to  `1` ).
     
-  ```
+```
   <script src="https://appsforoffice.microsoft.com/lib/1/hosted/Office.js" type="text/javascript"></script>
-  ```
+```
 
 
     The  `/1/` in front of `office.js` in the CDN URL specifies to use the latest incremental release within version 1 of Office.js.
@@ -102,9 +102,9 @@ Note that the update process is applied on a  _per-project basis_ - you'll need 
 
 - In your project's add-in manifest ( _projectname_ Manifest.xml) file, update the **xmlns** attribute of the **OfficeApp** element changing the version value to `1.1` (leaving attributes other than the **xmlns** attribute unchanged).
     
-  ```XML
+```XML
   <OfficeApp xsi:type="ContentApp" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" >
-  ```
+```
 
 
     Note that after updating the version of the add-in manifest schema to 1.1, you will need to remove the  **Capabilities** and **Capability** elements, and replace them with either the [Hosts and Host elements](http://msdn.microsoft.com/library/cff9fbdf-a530-4f6e-91ca-81bcacd90dcd%28Office.15%29.aspx) or the [Requirements and Requirement elements](../overview/specify-office-hosts-and-api-requirements.md).

@@ -51,7 +51,7 @@ The XML manifest file for the add-in for PowerPoint provides important informati
 
 1. In a text editor, add the following code to the manifest file.
     
-  ```XML
+```XML
   
 <?xml version="1.0" encoding="utf-8" ?> 
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" 
@@ -73,7 +73,7 @@ The XML manifest file for the add-in for PowerPoint provides important informati
     </DefaultSettings>
     <Permissions>ReadWriteDocument</Permissions> 
 </OfficeApp>
-  ```
+```
 
 2. Save the file as GetDoc_App.xml using UTF-8 encoding to a network location or to an add-in catalog.
     
@@ -88,7 +88,7 @@ Use the following procedure to create a simple user interface for the add-in tha
 
 1. In a new file in the text editor, add the following HTML.
     
-  ```HTML
+```HTML
   
 <!DOCTYPE html>
 <html>
@@ -113,7 +113,7 @@ Use the following procedure to create a simple user interface for the add-in tha
       </form>
     </body>
 </html>
-  ```
+```
 
 2. Save the file as GetDoc_App.html using UTF-8 encoding to a network location or to a web server.
     
@@ -125,7 +125,7 @@ We'll use some CSS to give the add-in a simple, yet modern and professional appe
 
 1. In a new file in the text editor, add the following CSS.
     
-  ```
+```
   
 body
 {
@@ -145,7 +145,7 @@ input [type="submit"], input[type="button"]
     border-color: #dedfe0 #b9b9b9 #b9b9b9 #dedfe0; 
     cursor:pointer; 
 }
-  ```
+```
 
 2. Save the file as Program.css using UTF-8 encoding to the network location or to the web server where the GetDoc_App.html file is located.
     

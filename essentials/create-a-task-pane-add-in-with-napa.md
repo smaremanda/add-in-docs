@@ -82,7 +82,7 @@ You can also build a task pane add-in using [Visual Studio](http://msdn.microsof
     
 2. Change the label for the  `get-data-from-selection` button to "Search Flickr", and add a `div` named `Images` in the `content-main` div. Here's the code.
     
-  ```HTML
+```HTML
   <body>
     <!-- Page content -->
     <div id="content-header">
@@ -111,7 +111,7 @@ You can also build a task pane add-in using [Visual Studio](http://msdn.microsof
 </body>
 
 
-  ```
+```
 
 3. Choose  **Home.js**.
     
@@ -124,7 +124,7 @@ You can also build a task pane add-in using [Visual Studio](http://msdn.microsof
     
 
 
-  ```
+```
   function getDataFromSelection() {
         Office.context.document.getSelectedDataAsync(Office.CoercionType.Text,
             function (result) {
@@ -136,7 +136,7 @@ You can also build a task pane add-in using [Visual Studio](http://msdn.microsof
             }
         );
     }
-  ```
+```
 
 
     This code gets the value of text that the user selects and calls a method to display images for the selected text. You'll define that method in the next procedure.
@@ -151,7 +151,7 @@ You can also build a task pane add-in using [Visual Studio](http://msdn.microsof
 
 In the Home.js file, add the following code. This code adds a function that shows images that relate to the selected text.
     
-  ```
+```
   function showImages(selectedText) {
     
     $('#Images').empty();
@@ -171,7 +171,7 @@ In the Home.js file, add the following code. This code adds a function that show
                     }
     );
 }
-  ```
+```
 
 
 ### Run it!

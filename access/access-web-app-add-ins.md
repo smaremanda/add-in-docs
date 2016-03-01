@@ -59,18 +59,18 @@ To create an Office Add-in that targets Access web apps, you need:
 
 1. In your Visual Studio project, open the  **Home.html** file, and find the lines that reference the office.js script library.
 
-  ```
+```
   <script src="https://appsforoffice.microsoft.com/lib/1/hosted/Office.js" type="text/javascript"></script>
-  ```
+```
  >**Note** that script tag references version 1.1 (and above) of Office.js. Access uses API elements introduced in version 1.1.
 
 2. Open the manifest file associated with your project. This file will be named after the name of your project, and have the extension ".xml".
 
 3.  In the manifest file, find the **Hosts** section and look for a **Host** entry.
 
-  ```
+```
   <Hosts> <Host Name="Database" /> </Hosts>
-  ```
+```
  >**Note** This is where the applications that can use the add-in are listed. Because you selected  **Access** in the **Create Office Add-in** dialog box, **Database** is listed. If you included Excel, there is an entry for **Workbook** as well.
 
 Office and SharePoint Add-ins are web based. The code for the add-in must be hosted on a web server. For this example, the web server is your development computer. The server must be running to serve the add-in for testing, which means that Visual Studio must be running the add-in at the time that you view and debug it in SharePoint.

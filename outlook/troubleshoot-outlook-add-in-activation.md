@@ -33,24 +33,24 @@ You can verify the version of Exchange 2013 by using one of the following approa
     
       - If there is only one Exchange account in the user's profile:
     
-  ```
+```
   ?Session.ExchangeMailboxServerVersion
-  ```
+```
 
   - If there are multiple Exchange accounts in the same user profile:
     
-  ```
+```
   ?Session.Accounts.Item(emailAddress).ExchangeMailboxServerVersion
-  ```
+```
 
 
      _emailAddress_ represents a string that contains the user's primary STMP address. For example, if the user's primary SMTP address is randy@contoso.com, type the following:
     
 
 
-  ```
+```
   ?Session.Accounts.Item("randy@contoso.com").ExchangeMailboxServerVersion
-  ```
+```
 
 
 ## Is the add-in disabled?
@@ -213,28 +213,28 @@ If you use an  **ItemHasRegularExpressionMatch** activation rule, verify whether
     
       - The HTML body of the message or appointment item selected in the Outlook explorer:
     
-  ```
+```
   ?ActiveExplorer.Selection.Item(1).HTMLBody
-  ```
+```
 
   - The plain text body of the message or appointment item selected in the Outlook explorer:
     
-  ```
+```
   ?ActiveExplorer.Selection.Item(1).Body
 
-  ```
+```
 
   - The HTML body of the message or appointment item opened in the current Outlook inspector:
     
-  ```
+```
   ?ActiveInspector.CurrentItem.HTMLBody
-  ```
+```
 
   - The plain text body of the message or appointment item opened in the current Outlook inspector:
     
-  ```
+```
   ?ActiveInspector.CurrentItem.Body
-  ```
+```
 
 If the  **ItemHasRegularExpressionMatch** activation rule specifies **Subject** or **SenderSMTPAddress**, or if you use an  **ItemIs** or **ItemHasAttachment** rule, and you are familiar with or would like to use MAPI, you can use [MFCMAPI](http://mfcmapi.codeplex.com/) to verify the value in Table 2 that your rule relies on.
 

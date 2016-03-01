@@ -104,9 +104,9 @@ To get the latest version of Office that includes developer features in Preview,
 
 3. Open a command prompt with elevated privileges (Run as administrator), and run the following command.
 
-  ```
+```
   setup.exe /configuration configuration.xml
-  ```
+```
 
 4. Verify that the version number of Office is  **16.0.6326.0000** or higher for Excel or Word, and **16.0.6568.2025** or higher for PowerPoint.
 

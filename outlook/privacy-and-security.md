@@ -112,13 +112,13 @@ Developers should follow the tiered permissions model to provide transparency an
     
 
 
-  ```XML
+```XML
   <Permissions>ReadItem</Permissions>
-  ```
+```
 
 - Developers can request the  **restricted** permission if the Outlook add-in activates on a specific type of Outlook items (appointment or message), or on specific extracted entities (phone number, address, URL) being present in the item's subject or body. For example, the following rule activates the Outlook add-in if one or more of three entities - phone number, postal address, or URL - are found in the subject or body of the current message.
     
-  ```XML
+```XML
   <Permissions>Restricted</Permissions>
     <Rule xsi:type="RuleCollection" Mode="And">
     <Rule xsi:type="ItemIs" FormType="Read" ItemType="Message" />
@@ -128,7 +128,7 @@ Developers should follow the tiered permissions model to provide transparency an
         <Rule xsi:type="ItemHasKnownEntity" EntityType="Url" />
     </Rule>
 </Rule>
-  ```
+```
 
 - Developers should request the  **read item** permission if the Outlook add-in needs to read properties of the current item other than the default extracted entities, or write custom properties set by the add-in on the current item, but does not require reading or writing to other items, or creating or sending a message in the user's mailbox. For example, a developer should request **read item** permission if an Outlook add-in needs to look for an entity like a meeting suggestion, task suggestion, email address, or contact name in the item's subject or body, or uses a regular expression to activate.
     

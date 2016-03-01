@@ -32,16 +32,16 @@ Following are the prerequisites for creating a Project task pane add-in that rea
     
 2. Query the  **ProjectData** service by using your browser with the following URL:
     
-  ```HTML
+```HTML
   http://ServerName /ProjectServerName /_api/ProjectData
-  ```
+```
 
 
     For example, if the Project Web App instance is  `http://MyServer/pwa`, the browser shows the following results:
     
 
 
-  ```XML
+```XML
   <?xml version="1.0" encoding="utf-8"?>
 <service xml:base="http://myserver/pwa/_api/ProjectData/" 
         xmlns="http://www.w3.org/2007/app" 
@@ -57,7 +57,7 @@ Following are the prerequisites for creating a Project task pane add-in that rea
         <!-- ... and 33 more collection elements -->
     </workspace>
 </service>
-  ```
+```
 
 
     You may have to provide your network credentials to see the results. If the browser shows "Error 403, Access Denied," either you do not have logon permission for that Project Web App instance, or there is a network problem that requires administrative help.
@@ -136,9 +136,9 @@ For more information about the manifest, see [Office Add-ins XML manifest](../ov
     
 5. In the HelloProjectOData.xml manifest, add an  **IconUrl** element below the **Description** element, where the value of the icon URL is the relative path to the 32x32 icon file. For example, add the following line:
     
-  ```XML
+```XML
   <IconUrl DefaultValue="~remoteAppUrl/Images/NewIcon.png" />
-  ```
+```
 
 The HelloProjectOData.xml manifest file now contains the following (your  **Id** value will be different):
 
@@ -200,7 +200,7 @@ The task pane shows the add-in display name at the top, which is the value of th
     
 
 
-  ```HTML
+```HTML
   <!DOCTYPE html>
 <html>
 <head>
@@ -232,7 +232,7 @@ The task pane shows the add-in display name at the top, which is the value of th
 <!-- See the code in Step 3. -->
 </body>
 </html>
-  ```
+```
 
 3. In the  **body** element, delete the existing code from the template, and then add the code for the user interface. If an element is to be filled with data or manipulated by a jQuery statement, the element must include a unique **id** attribute. In the following code, the **id** attributes for the **button**,  **span**, and  **td** (table cell definition) elements that jQuery functions use are shown in bold font.
     
@@ -240,7 +240,7 @@ The task pane shows the add-in display name at the top, which is the value of th
     
 
 
-  ```HTML
+```HTML
   <body>
   <div id="SectionContent">
     <div id="odataQueries">
@@ -292,7 +292,7 @@ The task pane shows the add-in display name at the top, which is the value of th
   <br />
   <textarea id="odataText" rows="12" cols="40"></textarea>
 </body>
-  ```
+```
 
 
 ## Creating the JavaScript code for the add-in
@@ -310,7 +310,7 @@ The remainder of the HelloProjectOData.js file includes two functions: the  **re
 
 1. Delete all code in the default HelloProjectOData.js file, and then add the global variables and  **Office.initialize** function. Variable names that are all capitals imply that they are constants; they are later used with the **_pwa** variable to create the REST query in this example.
     
-  ```
+```
   var PROJDATA = "/_api/ProjectData";
 var PROJQUERY = "/Projects?";
 var QUERY_FILTER = "$filter=ProjectName ne 'Timesheet Administrative Work Items'";
@@ -330,13 +330,13 @@ Office.initialize = function (reason) {
 }
 
 
-  ```
+```
 
 2. Add  **setOdataUrl** and related functions. The **setOdataUrl** function calls **getProjectGuid** and **getDocumentUrl** to initialize the global variables. In the [getProjectFieldAsync method](http://msdn.microsoft.com/en-us/library/d35b19ff-c403-4db1-8239-7dd67ee29d72%28Office.15%29.aspx), the anonymous function for the  _callback_ parameter enables the **Compare All Projects** button by using the **removeAttr** method in the jQuery library, and then displays the URL of the **ProjectData** service. If Project is not connected with Project Web App, the function throws an error, which displays a pop-up error message. The SurfaceErrors.js file includes the **throwError** method.
     
      >**Note**  If you run Visual Studio on the Project Server computer, to use  **F5** debugging, uncomment the code after the line that initializes the **_pwa** global variable. To enable using the jQuery **ajax** method when debugging on the Project Server computer, you must set the **localhost** value for the PWA URL.If you run Visual Studio on a remote computer, the  **localhost** URL is not required. Before you deploy the add-in, comment out that code.
 
-  ```
+```
   function setOdataUrl() {
     Office.context.document.getProjectFieldAsync(
         Office.ProjectProjectFields.ProjectServerUrl,
@@ -390,7 +390,7 @@ function getProjectGuid() {
 function getDocumentUrl() {
     _docUrl = "Document path:\r\n" + Office.context.document.url;
 }
-  ```
+```
 
 3. Add the  **retrieveOData** function, which concatenates values for the REST query and then calls the **ajax** function in jQuery to get the requested data from the **ProjectData** service. The **support.cors** variable enables cross-origin resource sharing (CORS) with the **ajax** function. If the **support.cors** statement is missing or is set to **false**, the  **ajax** function returns a **No transport** error.
     
@@ -400,7 +400,7 @@ function getDocumentUrl() {
     
 
 
-  ```
+```
   /****************************************************************
 * Functions to get and parse the Project Server reporting data.
 *****************************************************************/
@@ -454,7 +454,7 @@ function getProjectDataErrorHandler(data, errorCode, errorMessage) {
       + errorMessage);
     throwError(errorCode, errorMessage);
 }
-  ```
+```
 
 4. Add the  **parseODataResult** method, which deserializes and processes the JSON response from the OData service. The **parseODataResult** method calculates average values of the cost and work data to an accuracy of one or two decimal places, formats values with the correct color and adds a unit ( **$**,  **hrs**, or  **%**), and then displays the values in specified table cells.
     
@@ -462,7 +462,7 @@ function getProjectDataErrorHandler(data, errorCode, errorMessage) {
     
 
 
-  ```
+```
   // Calculate the average values of actual cost, cost, work, and percent complete   
 // for all projects, and compare with the values for the current project.
 function parseODataResult(oDataResult, currentProjectGuid) {
@@ -572,7 +572,7 @@ function parseODataResult(oDataResult, currentProjectGuid) {
         document.getElementById("CurrentProjectPercentComplete").style.color = "blue"
     }
 }
-  ```
+```
 
 
 ## Testing the HelloProjectOData add-in
@@ -624,7 +624,7 @@ Basic tests should include the following:
     
 
 
-  ```
+```
   Document path: <>\WinProj test1
 
 REST query:
@@ -668,7 +668,7 @@ ResponseText:
     "ProjectPercentCompleted":37,
     "ProjectWork":"104.000000"}
 ]}}
-  ```
+```
 
 7. Stop debugging (press  **Shift + F5**), and then press  **F5** again to run a new instance of Project. In the **Login** dialog box, choose the local **Computer** profile, not Project Web App. Create or open a local project .mpp file, open the **Hello ProjectData** task pane, and then select **Get ProjectData Endpoint**. The add-in should show a  **No connection!** error (see Figure 6), and the **Compare All Projects** button should remain disabled.
     
@@ -1151,9 +1151,9 @@ If you modify the  **HelloProjectOData** add-in for production use, do the follo
 
 - In the HelloProjectOData.html file, for better performance, change the office.js reference from the local project to the CDN reference:
     
-  ```HTML
+```HTML
   <script src="https://appsforoffice.microsoft.com/lib/1.0/hosted/office.js"></script>
-  ```
+```
 
 - Rewrite the  **retrieveOData** function to enable queries of more than 100 projects. For example, you could get the number of projects with a `~/ProjectData/Projects()/$count` query, and use the _$skip_ operator and _$top_ operator in the REST query for project data. Run multiple queries in a loop, and then average the data from each query. Each query for project data would be of the form, `~/ProjectData/Projects()?skip= [numSkipped]&amp;$top=100&amp;$filter=[filter]&amp;$select=[field1,field2, ???????]`.
     

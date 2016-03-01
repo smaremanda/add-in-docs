@@ -31,7 +31,7 @@ The UI of the add-in is provided by an HTML file that can optionally provide Jav
     
 2. Create a file named HelloWorld.html that contains the following HTML code.
     
-  ```HTML
+```HTML
   <!DOCTYPE html>
 <html>
     <head>
@@ -44,14 +44,14 @@ The UI of the add-in is provided by an HTML file that can optionally provide Jav
     </body>
 </html>
 
-  ```
+```
 
 
     This file provides the minimum set of HTML tags to display the UI of an add-in.
     
 3. Create a file named program.css that contains the following CSS code.
     
-  ```
+```
   body
 {
     position:relative;
@@ -67,7 +67,7 @@ h1,h3,h4,p,a,li
     text-decoration-color:#4ec724;
 }
 
-  ```
+```
 
 
     This file provides the style sheet for the add-in.
@@ -76,7 +76,7 @@ h1,h3,h4,p,a,li
     
      >**Important**  Replace the value in the  `<id>` tag with a GUID that you have generated yourself.
 
-  ```XML
+```XML
   <?xml version="1.0" encoding="utf-8"?>
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
@@ -101,7 +101,7 @@ h1,h3,h4,p,a,li
   <Permissions>ReadWriteDocument</Permissions>
 </OfficeApp>
 
-  ```
+```
 
 
     This file provides the manifest XML file for the add-in.
@@ -155,7 +155,7 @@ The next set of steps will show you how to add some basic programming logic to t
 
 1. Open the HelloWorld.html file and add the  `<script>` tags inside the `<head>` tags of the file.
     
-  ```HTML
+```HTML
   <!DOCTYPE html>
 <html>
     <head>
@@ -170,7 +170,7 @@ The next set of steps will show you how to add some basic programming logic to t
         <p>Hello World!</p>
     </body>
 </html>
-  ```
+```
 
 
     This adds a reference to the Office.js library file that implements the JavaScript API for Office. It also adds a reference to Program.js, which is a file we'll create to contain the programming logic for the add-in.
@@ -178,7 +178,7 @@ The next set of steps will show you how to add some basic programming logic to t
      >**Note**  The  `src` attribute of the `<script>` tag references the JavaScript API for Office (office.js) that will be externally available.
 2. Replace  `<p>Hello World!</p>` with the lines inside the `<body>` tags of the file.
     
-  ```HTML
+```HTML
   <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
@@ -195,7 +195,7 @@ The next set of steps will show you how to add some basic programming logic to t
     </body>
 </html>
 
-  ```
+```
 
 
     This adds two buttons to the add-in UI and defines a  `div` to display results.
@@ -204,7 +204,7 @@ The next set of steps will show you how to add some basic programming logic to t
     
      >**Note**  [Office.initialize](http://msdn.microsoft.com/en-us/library/727adf79-a0b5-48d2-99c7-6642c2c334fc%28Office.15%29.aspx) must be initialized as a function at the beginning of the code file so that the [Office.context](http://msdn.microsoft.com/en-us/library/6c4b2c16-d4fb-4ecf-b72c-1e33b205daaf%28Office.15%29.aspx) property will be available when called from the functions that follow.
 
-  ```
+```
   // The initialize function is required for all add-ins.
 Office.initialize = function (reason) {
     // Checks for the DOM to load using the jQuery ready function.
@@ -244,7 +244,7 @@ function ReadData() {
     }
 }
 
-  ```
+```
 
 4. Redeploy the add-in files as described in the "To specify a trusted location for the manifest" procedure.
     

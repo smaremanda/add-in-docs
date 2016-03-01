@@ -17,7 +17,7 @@ For an introduction to using JavaScript in Office Add-ins, see [Understanding th
 
 - Create an XML file in a local directory. The XML file includes the  **OfficeApp** element and child elements, which are described in the [Office Add-ins XML manifest](../overview/add-in-manifests.md). For example, create a file named JSOM_SimpleOMCalls.xml that contains the following XML (change the GUID value of the **Id** element).
     
-  ```XML
+```XML
   <?xml version="1.0" encoding="utf-8"?>
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" 
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
@@ -48,7 +48,7 @@ For an introduction to using JavaScript in Office Add-ins, see [Understanding th
   </IconUrl>
   <AllowSnapshot>true</AllowSnapshot>
 </OfficeApp>
-  ```
+```
 
 
     For Project, the  **OfficeApp** element must include the `xsi:type="TaskPaneApp"` attribute value. The **Id** element is a GUID. The **SourceLocation** value must be a file share path or a SharePoint URL for the add-in HTML source file or the web application that runs in the task pane. For an explanation of the other elements in manifest file, see [Task pane add-ins for Project](../project/project-add-ins.md).
@@ -65,7 +65,7 @@ Procedure 2 shows how to create the HTML file that the JSOM_SimpleOMCalls.xml ma
     
 
 
-  ```HTML
+```HTML
   <!DOCTYPE html>
 <html>
 <head>
@@ -86,7 +86,7 @@ Procedure 2 shows how to create the HTML file that the JSOM_SimpleOMCalls.xml ma
     <textarea id="text" rows="6" cols="25">This is the text result.</textarea>
 </body>
 </html>
-  ```
+```
 
 
     The  **textarea** element specifies a text box that shows results of the JavaScript functions.
@@ -101,7 +101,7 @@ Procedure 2 shows how to create the HTML file that the JSOM_SimpleOMCalls.xml ma
     
 
 
-  ```
+```
   /*
 * JavaScript functions for the Project OM Test example app
 * in the Project 2013 SDK.
@@ -159,7 +159,7 @@ function getApplicationContentLanguage() {
 function getApplicationDisplayLanguage() {
     text.value = text.value + "\nDisplay language: " + _app.displayLanguage;
 }
-  ```
+```
 
 
     For information about the functions in the Office.debug.js file, see [JavaScript API for Office](http://msdn.microsoft.com/library/b27e70c3-d87d-4d27-85e0-103996273298%28Office.15%29.aspx). For example, the  **getDocumentUrl** function gets the URL or file path of the open project.
@@ -185,7 +185,7 @@ function getApplicationDisplayLanguage() {
     
 
 
-  ```
+```
   // Get the data in the selected cells of the grid in the active view.
 function getSelectedDataAsync() {
     _projDoc.getSelectedDataAsync(
@@ -537,7 +537,7 @@ function getProjectFields() {
         }
     );
 }
-  ```
+```
 
 4. Add JavaScript event handler callbacks and functions to register the task selection, resource selection, and view selection change event handlers and to unregister the event handlers. The  **manageEventHandlerAsync** function adds or removes the specified event handler, depending on the _operation_ parameter. The operation can be **addHandlerAsync** or **removeHandlerAsync**.
     
@@ -545,7 +545,7 @@ function getProjectFields() {
     
 
 
-  ```
+```
   // Task selection changed event handler.
 function onTaskSelectionChanged(eventArgs) {
     text.value = "In task selection change event handler";
@@ -615,11 +615,11 @@ function manageViewEventHandler(docMethod) {
         onComplete                // Manages the successful asyncResult data (optional).
     );
 }
-  ```
+```
 
 5. For the body of the HTML document, add buttons that call the JavaScript functions for testing. For example, in the  **div** element for the common JSOM API, add an input button that calls the general **getSelectedDataAsync** function.
     
-  ```HTML
+```HTML
   <body>
     <div id="Common_JSOM_API">
     OBJECT MODEL TESTS
@@ -630,11 +630,11 @@ function manageViewEventHandler(docMethod) {
         value="getSelectedDataAsync" />
     </div>
    <!--  more code . . .  -->
-  ```
+```
 
 6. Add a  **div** section with buttons for project-specific task functions and for the **TaskSelectionChanged** event.
     
-  ```HTML
+```HTML
   <div id="ProjectSpecificTask">
   <br />
   <strong>Project-specific task methods:</strong><br />
@@ -646,11 +646,11 @@ function manageViewEventHandler(docMethod) {
   <button class="button-narrow" onclick="manageTaskEventHandler('addHandlerAsync')">Add</button>
   <button class="button-narrow" onclick="manageTaskEventHandler('removeHandlerAsync')">Remove</button>         
 </div>
-  ```
+```
 
 7. Add  **div** sections with buttons for the resource methods and events, view methods and events, project properties, and context properties
     
-  ```HTML
+```HTML
   <div id="ResourceMethods">
   <br />
   <strong>Resource methods:</strong>
@@ -678,11 +678,11 @@ function manageViewEventHandler(docMethod) {
   <strong>Context properties:</strong>
   <button class="button-wide" onclick="getContextValues()">Get Context Values</button>
 </div>
-  ```
+```
 
 8. To format the button elements, add a CSS  **style** element. For example, add the following as a child of the **head** element.
     
-  ```HTML
+```HTML
   <style type="text/css">
     .button-wide
     {
@@ -695,7 +695,7 @@ function manageViewEventHandler(docMethod) {
         margin-top: 2px;
     }
 </style>
-  ```
+```
 
 
      >**Note**  The  **Task Pane Add-in (Project)** template in Visual Studio 2015 includes default .css files for a common look and feel of add-ins.
@@ -707,18 +707,18 @@ Procedure 3 shows how to install and use the Project OM Test add-in features.
 
 1. Create a file share for the directory that contains the JSOM_SimpleOMCalls.xml manifest. You can create the file share on the local computer or on a remote computer that is accessible on the network. For example, if the manifest is in the  `C:\Project\AppManifests` directory on the local computer, run the following command:
     
-  ```
+```
   Net share AppManifests=C:\Project\AppManifests
-  ```
+```
 
 
     For more information, see [Create a network shared folder catalog for task pane and content add-ins](../publish/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins.md).
     
 2. Create a file share for the directory that contains the HTML and JavaScript files for the Project OM Test add-in. Ensure the file share path matches the path that is specified in the JSOM_SimpleOMCalls.xml manifest. For example, if the files are in the  `C:\Project\AppSource` directory on the local computer, run the following command:
     
-  ```
+```
   net share AppSource=C:\Project\AppSource
-  ```
+```
 
 3. In Project, open the  **Project Options** dialog box, choose **Trust Center**, and then choose  **Trust Center Settings**.
     
@@ -760,23 +760,23 @@ Procedure 3 shows how to install and use the Project OM Test add-in features.
     
 
 
-  ```
+```
   Task name: T2
 GUID: {25D3E03B-9A7D-E111-92FC-00155D3BA208}
 WSS Id: 0
 ResourceNames: R1[50%],R2[50%]
-  ```
+```
 
 12. Choose the  **Get Task Fields** button. The **getTaskFields** function calls the **getTaskfieldAsync** function multiple times for the task name, index, start date, duration, priority, and task notes.
     
-  ```
+```
   Name: T2
 ID: 2
 Start: Thu 6/14/12
 Duration: 4d
 Priority: 500
 Notes: This is a note for task T2. It is only a test note. If it had been a real note, there would be some real information.
-  ```
+```
 
 13. Choose the  **getWSSUrlAsync** button. If the project is one of the following kinds, the results show the task list URL and name.
     
@@ -790,34 +790,34 @@ Notes: This is a note for task T2. It is only a test note. If it had been a real
     
 
 
-  ```
+```
   SharePoint URL: http://ServerName
 List name: Test task list
-  ```
+```
 
 14. Choose the  **Add** button in the **TaskSelectionChanged event** section, which calls the **manageTaskEventHandler** function to register a task selection changed event and returns `In onComplete function for addHandlerAsync Status: succeeded` in the text box. Select a different task; the text box shows `In task selection changed event handler`, which is the output of the callback function for the task selection changed event. Choose the  **Remove** button to unregister the event handler.
     
 15. To use the resource methods, first select a view such as  **Resource Sheet**,  **Resource Usage**, or  **Resource Form**, and then select a resource in that view. Choose  **getSelectedResourceAsync** to initialize the **resourceGuid** variable, and then choose **Get Resource Fields** to call **getResourceFieldAsync** multiple times for the resource properties. You can also add or remove the resource selection changed event handler.
     
-  ```
+```
   Resource name: R1
 Cost: $800.00
 Standard Rate: $50.00/h
 Actual Cost: $0.00
 Actual Work: 0h
 Units: 100%
-  ```
+```
 
 16. Choose  **getSelectedViewAsync** to show the type and name of the active view. You can also add or remove the view selection changed event handler. For example, if **Resource Form** is the active view, the **getSelectedViewAsync** function shows the following in the text box:
     
-  ```
+```
   View type: 6
 Name: Resource Form
-  ```
+```
 
 17. Choose  **Get Project Fields** to call the **getProjectFieldAsync** function multiple times for different properties of the active project. If the project is opened from Project Web App, the **getProjectFieldAsync** function can get the URL of the Project Web App instance.
     
-  ```
+```
   Project GUID: 9845922E-DAB4-E111-8AF3-00155D3BA208
 
 Start: Tue 6/12/12
@@ -829,17 +829,17 @@ Symbol position: 0
 
 Project web app URL:
   http://servername/pwa
-  ```
+```
 
 18. Choose the  **Get Context Values** button get properties of the document and the application in which the add-in is running, by getting properties of the **Office.Context.document** object and the **Office.context.application** object. For example, if the Project1.mpp file is on the local computer desktop, the document URL is `C:\Users\UserAlias\Desktop\Project1.mpp`. If the .mpp file is in a SharePoint library, the value is the URL of the document. If you use Project Professional 2013 to open a project named Project1 from Project Web App, the document URL is  `<>\Project1`.
     
-  ```
+```
   Document URL:
 <>\Project1
 Document mode: readWrite
 App language: en-US
 Display language: en-US
-  ```
+```
 
 19. You can refresh the add-in after you edit the source code by closing and restarting Project. In the  **Project** ribbon, the **Office Add-ins** drop-down list maintains the list of recently used add-ins.
     

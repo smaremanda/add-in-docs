@@ -117,7 +117,7 @@ Your Office Add-in can get the value of a single cell or the values of a collect
     
 2. Replace all the code within the  `<head>` tags (including the opening and closing `<head>` tags) with this code.
     
-  ```HTML
+```HTML
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
@@ -133,7 +133,7 @@ Your Office Add-in can get the value of a single cell or the values of a collect
     <script src="MyAddinPage.js" type="text/javascript"></script>
 </head>
 
-  ```
+```
 
 
     This code gives your MyAddinPage webpage the same JavaScript libraries and CSS file references as the default Home.html file. The following table describes each file reference.
@@ -150,7 +150,7 @@ Your Office Add-in can get the value of a single cell or the values of a collect
     
 
 
-  ```HTML
+```HTML
   <body>
 <div style="padding: 15px; overflow: auto; border: .2em solid #000;">
 
@@ -245,7 +245,7 @@ Your Office Add-in can get the value of a single cell or the values of a collect
 
 
 
-  ```
+```
 
 4. Open the MyAddinPage.js file, and then add this code.
     
@@ -253,7 +253,7 @@ Your Office Add-in can get the value of a single cell or the values of a collect
     
 
 
-  ```
+```
   /// <reference path../../Scripts/App.js" />
 
 (function () {
@@ -311,7 +311,7 @@ $('#yield').text(quotes.DividendYield);
 
 
 
-  ```
+```
 
 
     The call to  `getSelectedDataAsync` passes an anonymous function with a parameter, named `asyncResult`, as the callback argument. When the callback function runs, it uses the  `asyncResult` parameter to access the value property of the `AsyncResult` object to display the data in the cell that the user chose.
@@ -354,7 +354,7 @@ Your Office Add-in can put data into any cell or collection of cells. The most b
 
 1. In the code editor, open the  **MyAddinPage.js** file, and then add this code.
     
-  ```
+```
   function addTextToDocument() {
 
     var e = document.getElementById("input");
@@ -364,14 +364,14 @@ Your Office Add-in can put data into any cell or collection of cells. The most b
         function (asyncResult) {});
 }
 
-  ```
+```
 
 
     This code gets the text from the  `input` text box in MyAddinPage.html and places that text into a cell that the user chooses in the worksheet.
     
 2. Replace the  `initialize` function with this code.
     
-  ```
+```
   Office.initialize = function (reason) {
         $(document).ready(function () {
 $('#get-text').click(getTextFromDocument);
@@ -380,7 +380,7 @@ $('#add-text').click(addTextToDocument);
         });
     }
 
-  ```
+```
 
 
 ### Run it!
@@ -415,7 +415,7 @@ So far, your Office Add-in requires the user to choose a button to get and set d
 
 1. In the code editor, open the  **MyAddinPage.js** file, and then replace the `initialize` function with this code.
     
-  ```
+```
   Office.initialize = function (reason) {
         $(document).ready(function () {
 $('#get-text').click(getTextFromDocument);
@@ -426,20 +426,20 @@ $('#add-text').click(addTextToDocument);
         });
     }
 
-  ```
+```
 
 
     This code binds functions to the buttons on the page, and adds an event handler that's called when the user chooses a cell.
     
 2. Add this code to the MyAddinPage.js file.
     
-  ```
+```
   function updateApp()
 {
         getTextFromDocument();
 }
 
-  ```
+```
 
 
     This method is called when a user chooses a cell. The code calls the method that you defined earlier. That method gets the value of the chosen cell (stock symbol) and shows the data related to that symbol in a table.
@@ -470,7 +470,7 @@ The most advanced way to get and set data is to establish a binding with a cell 
 
 1. In the code editor, open the MyAddinPage.js file, and then add this code. This code establishes a binding to a cell that the user chooses. This code also defines a method to call when the data in the bound cell changes.
     
-  ```
+```
   function addBindingFromSelection() {
     Office.context.document.bindings.addFromSelectionAsync(Office.BindingType.Text, { id: 'MyBinding' },
         function (asyncResult) {
@@ -493,11 +493,11 @@ function onBindingSelectionChanged(eventArgs) {
          });
 }
 
-  ```
+```
 
 2. Replace the  `initialize` function with this code.
     
-  ```
+```
   Office.initialize = function (reason) {
         $(document).ready(function () {
 $('#get-text').click(getTextFromDocument);
@@ -510,7 +510,7 @@ $('#bind-text').click(addBindingFromSelection);
         });
     }
 
-  ```
+```
 
 
 ### Run It!

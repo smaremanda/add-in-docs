@@ -133,12 +133,12 @@ In addition to the behaviors described for Excel above, the following limits app
     
 - The number of  _formatting groups_ passed to the _cellFormat_ parameter can't exceed 100. A single formatting group consists of a set of formatting applied to a specified range of cells. For example, the following call passes two formatting groups to _cellFormat_.
     
-  ```
+```
   Office.context.document.setSelectedDataAsync(
     {cellFormat:[{cells: {row: 1}, format: {fontColor: "yellow"}}, 
         {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}]}, 
     function (asyncResult){});
-  ```
+```
 
  **For PowerPoint**
 
