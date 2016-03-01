@@ -6,10 +6,8 @@ Understand the functional areas of the JavaScript API for Office, which is imple
 
 This article provides information about the JavaScript API for Office and how to use it. For reference information, see [JavaScript API for Office](http://msdn.microsoft.com/en-us/library/b27e70c3-d87d-4d27-85e0-103996273298%28Office.15%29.aspx). To run and edit some JavaScript API for Office code in your web browser with Excel Online, see the [API Tutorial for Office](http://msdn.microsoft.com/en-us/office/dn449240.aspx). For information about updating Visual Studio project files to the most current version of the JavaScript API for Office, see [Update the version of your JavaScript API for Office and manifest schema files](../overview/update-your-javascript-api-for-office-and-manifest-schema-version.md).
 
- **Explore the JavaScript API for Office object model visually by using ZoomIt.**
+ **Explore the JavaScript API for Office object model**
 
-[![Zoom into the JavaScript API for Office model](../images/appIcons_all.png)](http://go.microsoft.com/fwlink/?LinkId=317268)
-Zoom: [1.1](http://go.microsoft.com/fwlink/?LinkId=391751)
 Explore the object model by add-in type or host: [1.1](http://msdn.microsoft.com/library/b27e70c3-d87d-4d27-85e0-103996273298%28Office.15%29.aspx)
 
 ## Referencing the JavaScript API for Office library in your add-in
