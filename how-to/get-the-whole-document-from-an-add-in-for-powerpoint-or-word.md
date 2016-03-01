@@ -259,7 +259,7 @@ The  **Slice.data** property returns the raw data of the file as a byte array. I
 
 You must implement your own function (or use an available library) to convert byte array data to a Base64-encoded string. For information about Base64 encoding with JavaScript, see [Base64 encoding and decoding](https://developer.mozilla.org/docs/Web/JavaScript/Base64_encoding_and_decoding).
 
-Once you have converted the data to Base64, you can then transmit it to a web server in several ways????????including as the body of an HTTP POST request.
+Once you have converted the data to Base64, you can then transmit it to a web server in several ways -- including as the body of an HTTP POST request.
 
 Add the following code to send a slice to a web service.
 
