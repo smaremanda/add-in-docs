@@ -94,9 +94,9 @@ The following table lists the error codes, names, and messages displayed, and th
 |7004|Invalid navigation|The operation failed because the Index is out of range.|The user is trying to navigate to an index that is out of range.|
 |8000|Missing Parameter|We couldn't format the table cell because some parameter values are missing. Double-check the parameters and try again.|The cellFormat method is missing some parameters. For example, there are missing cells, format, or tableOptions parameters.|
 |8010|Invalid value|One or more of the cells parameters have values that aren't allowed. Double-check the values and try again.|The common cells reference enumeration is not defined. For example, All, Data, Headers.|
-|8011|Invalid value|One or more of the tableOptions parameters have values that aren't allowed. Double-check the values and try again.|One of the values in tableOptions is invalid.â€‹|
+|8011|Invalid value|One or more of the tableOptions parameters have values that aren't allowed. Double-check the values and try again.|One of the values in tableOptions is invalid.|
 |8012|Invalid value|One or more of the format parameters have values that aren't allowed. Double-check the values and try again.|One of the values in the format is invalid.|
-|8020|Out of range|The row index value is out of the allowed range. Use a positive value (0 or higher) that's less than the number of rows.|â€‹The row index is more than the biggest row index of the table or less than 0.|
+|8020|Out of range|The row index value is out of the allowed range. Use a positive value (0 or higher) that's less than the number of rows.|The row index is more than the biggest row index of the table or less than 0.|
 |8021|Out of range|The column index value is out of the allowed range. Use a positive value (0 or higher) that's less than the number of columns.|The column index is more than the biggest column index of the table or less than 0.|
 |8022|Out of range|The value is out of the allowed range.|Some of the values in the format are out of the supported ranges.|
 |9016|Permission denied|Permission denied|Access is denied.|
