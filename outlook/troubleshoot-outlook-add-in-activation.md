@@ -33,24 +33,21 @@ You can verify the version of Exchange 2013 by using one of the following approa
     
       - If there is only one Exchange account in the user's profile:
     
-```
-  ?Session.ExchangeMailboxServerVersion
-```
+    ```
+      ?Session.ExchangeMailboxServerVersion
+    ```
 
-  - If there are multiple Exchange accounts in the same user profile:
+      - If there are multiple Exchange accounts in the same user profile:
     
-```
-  ?Session.Accounts.Item(emailAddress).ExchangeMailboxServerVersion
-```
-
-
-     _emailAddress_ represents a string that contains the user's primary STMP address. For example, if the user's primary SMTP address is randy@contoso.com, type the following:
+    ```
+      ?Session.Accounts.Item(emailAddress).ExchangeMailboxServerVersion
+    ```
     
-
-
-```
-  ?Session.Accounts.Item("randy@contoso.com").ExchangeMailboxServerVersion
-```
+      _emailAddress_ represents a string that contains the user's primary STMP address. For example, if the user's primary SMTP address is randy@contoso.com, type the following:
+    
+    ```
+      ?Session.Accounts.Item("randy@contoso.com").ExchangeMailboxServerVersion
+    ```
 
 
 ## Is the add-in disabled?
