@@ -55,7 +55,7 @@ This code sample assumes a rule in the add-in manifest that activates the add-in
 
 
 
-```
+```js
 var item;
 
 Office.initialize = function () {
@@ -147,7 +147,7 @@ The following JavaScript code is part of a sample add-in that is activated in co
 
 
 
-```
+```js
 var item;
 
 Office.initialize = function () {
