@@ -1,6 +1,6 @@
 
 # CustomXmlPart.id property (JavaScript API for Office)
-Gets the GUID of the CustomXMLPart
+Gets the GUID of the CustomXMLPart.
 
 |||
 |:-----|:-----|
