@@ -27,7 +27,7 @@ To validate an Exchange identity token, you must have the EWS Managed API authen
 The EWS Managed API validation library provides the  **AppIdentityToken** class to manage the Exchange identity tokens. The following method shows how to create an **AppIdentityToken** instance and call the **Validate** method to verify that the token is valid.
 
 
-```
+```C#
 // Required to use the validation library.
 using Microsoft.Exchange.WebServices.Auth.Validate;
 

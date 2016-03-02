@@ -10,14 +10,14 @@ Learn how to insert data in the body of the appointment or message that the user
 
 You can use the asynchronous methods ([Body.getAsync](https://dev.outlook.com/reference/add-ins/Body.html), [Body.getTypeAsync](https://dev.outlook.com/reference/add-ins/Body.html), [Body.prependAsync](https://dev.outlook.com/reference/add-ins/Body.html), [Body.setAsync](https://dev.outlook.com/reference/add-ins/Body.html) and [Body.setSelectedDataAsync](https://dev.outlook.com/reference/add-ins/Body.html)) to get the body type and insert data in the body of an appointment or message item that the user is composing. These asynchronous methods are available to only compose add-ins. To use these methods, make sure you have set up the add-in manifest appropriately so that Outlook activates your add-in in compose forms, as described in the section [Setting up Outlook add-ins for compose forms](../outlook/compose-scenario.md#mod_off15_CreatingForCompose_SettingUp) of [Create Outlook add-ins for compose forms](../outlook/compose-scenario.md).
 
-In Outlook, a user can create a message in text, HTML, or Rich Text Format (RTF), and can create an appointment in HTML format. Before inserting, you should always first verify the supported item format by calling  **getTypeAsync**, as you may need to take additional steps. The value that  **getTypeAsync** returns depends on the original item format, as well as the support of the device operating system and host to editing in HTML format1. Then set the  _coercionType_ parameter of **prependAsync** or **setSelectedDataAsync** accordingly2 to insert the data, as shown in the following table. If you don't specify an argument, **prependAsync** and **setSelectedDataAsync** assume the data to insert is in text format.
+In Outlook, a user can create a message in text, HTML, or Rich Text Format (RTF), and can create an appointment in HTML format. Before inserting, you should always first verify the supported item format by calling  **getTypeAsync**, as you may need to take additional steps. The value that  **getTypeAsync** returns depends on the original item format, as well as the support of the device operating system and host to editing in HTML format (1). Then set the  _coercionType_ parameter of **prependAsync** or **setSelectedDataAsync** accordingly (2) to insert the data, as shown in the following table. If you don't specify an argument, **prependAsync** and **setSelectedDataAsync** assume the data to insert is in text format.
 
 
 
 |**Data to insert**|**Item format returned by getTypeAsync**|**Use this coercionType**|
 |:-----|:-----|:-----|
-|Text|Text1|Text|
-|HTML|Text1|Text2|
+|Text|Text (1)|Text|
+|HTML|Text (1)|Text (2)|
 |Text|HTML|Text/HTML|
 |HTML|HTML |HTML|
 
@@ -55,7 +55,7 @@ This code sample assumes a rule in the add-in manifest that activates the add-in
 
 
 
-```
+```js
 var item;
 
 Office.initialize = function () {
@@ -147,7 +147,7 @@ The following JavaScript code is part of a sample add-in that is activated in co
 
 
 
-```
+```js
 var item;
 
 Office.initialize = function () {

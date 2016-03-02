@@ -7,7 +7,7 @@ Gets an object that represents the custom XML parts in the document.
 |**Hosts:**|Word|
 |**Added in**|1.1|
 
-```
+```js
 var xmlParts = Office.context.document.customXmlParts;
 ```
 

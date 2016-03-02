@@ -40,7 +40,7 @@ Figure 1 describes how Exchange Server and Outlook support well-known entities f
 
 **Figure 1. How Exchange Server, Outlook and add-ins support well-known entities**
 
-![Support and use of well-known entities in mail app](../../images/mod_off15_mailapp_wellknownentities_curvedlines.png)
+![Support and use of well-known entities in mail app](../images/mod_off15_mailapp_wellknownentities_curvedlines.png)
 
 
 ## Permissions to extract entities

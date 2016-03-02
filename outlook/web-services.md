@@ -59,8 +59,10 @@ PropertyType="String"/>
 ```
 
 
-    Code as in the following would work on a browser like Chrome to get the XML enclosed by the  **ExtendedProperty** tags:
+   
+     Code as in the following would work on a browser like Chrome to get the XML enclosed by the  **ExtendedProperty** tags:
     
+
 
 
 ```js
@@ -71,7 +73,8 @@ mailbox.makeEwsRequestAsync(mailbox.item.itemId), function(result) {
 ```
 
 
-    On Internet Explorer, you must include the  `t:` prefix of the tag name, as shown below:
+   
+     On Internet Explorer, you must include the  `t:` prefix of the tag name, as shown below:
     
 
 
