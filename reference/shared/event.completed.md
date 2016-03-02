@@ -37,7 +37,7 @@ For more information about Office host application and server requirements, see 
 
 ||
 |:-----|
-|**Office for Windows desktop**|**Office Online (in browser)**|**OWA for Devices**|
+|**Office for Windows desktop**|**Office Online(in browser)**|**OWA for Devices**|
 |:-----|:-----|:-----|
 |**Outlook**|Y|||
 

@@ -51,7 +51,7 @@ For more information about Office host application and server requirements, see 
 
 ||
 |:-----|
-|**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|**OWA for Devicess**|**Outlook for Mac**|
+|**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|**OWA for Devicess**|**Outlook for Mac**|
 |:-----|:-----|:-----|:-----|:-----|
 |**Access**||Y||||
 |**Excel**|Y|Y|Y|||
