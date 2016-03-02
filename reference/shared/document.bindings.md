@@ -7,7 +7,7 @@ Gets an object that provides access to the bindings defined in the document.
 |**Hosts:**|Access, Excel, Word|
 |**Last changed in**|1.1|
 
-```
+```js
 var docBindings = Office.context.document.bindings;
 ```
 
