@@ -45,7 +45,7 @@ To get the view of the current presentation, you need to write a callback functi
 -  **Display the value** on the add-in's page.
     
 
-```
+```js
 function getFileView() {
     // Get whether the current view is edit or read.
     Office.context.document.getActiveViewAsync(function (asyncResult) {
