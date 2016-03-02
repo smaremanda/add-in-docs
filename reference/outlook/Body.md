@@ -44,7 +44,7 @@ The body is provided in the requested format in the `asyncResult.value` property
 
 This example gets the body of the message in plain text.
 
-```
+```js
 Office.context.mailbox.item.body.getAsync(
   "text",
   { asyncContext:"This is passed to the callback" },
