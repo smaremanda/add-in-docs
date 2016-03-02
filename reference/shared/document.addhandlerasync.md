@@ -11,7 +11,7 @@ Adds an event handler for a  **Document** object event.
 [![Try out this call in the interactive API Tutorial for Excel](../../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](http://officeapitutorial.azurewebsites.net/Redirect.html?scenario=Selection+Changed)
 
 
-```
+```js
 Office.context.document.addHandlerAsync(eventType, handler  [, options], callback);
 ```
 
@@ -54,7 +54,7 @@ You can add multiple event handlers for the specified  _eventType_ as long as th
 
 
 
-```
+```js
 function addSelectionChangedEventHandler() {
     Office.context.document.addHandlerAsync(Office.EventType.DocumentSelectionChanged, MyHandler);
 }
