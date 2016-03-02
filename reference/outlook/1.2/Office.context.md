@@ -44,7 +44,7 @@ The `displayLanguage` value reflects the current **Display Language** setting sp
 
 ##### Example
 
-```
+```js
 function sayHelloWithDisplayLanguage() {
   var myDisplayLanguage = Office.context.displayLanguage;
   switch (myDisplayLanguage) {

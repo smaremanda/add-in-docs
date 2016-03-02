@@ -90,7 +90,7 @@ When the call completes, the `asyncResult.value` property will contain an array 
 
 The following example gets the optional attendees of a meeting.
 
-```
+```js
 Office.context.mailbox.item.optionalAttendees.getAsync(function(result) {
   if (result.error) {
     showMessage(result.error);

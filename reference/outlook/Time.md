@@ -64,7 +64,7 @@ The time must be in UTC; you can get the correct UTC time by using the [`convert
 
 The following example sets the start time of an appointment.
 
-```
+```js
 var startTime = new Date("3/14/2015");
 var options = {
   // Pass information that can be used

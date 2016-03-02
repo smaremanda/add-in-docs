@@ -257,7 +257,7 @@ The token is provided as a string in the `asyncResult.value` property.|
 
 ##### Example
 
-```
+```js
 function getCallbackToken() {
   Office.context.mailbox.getCallbackTokenAsync(cb);
 }
@@ -292,7 +292,7 @@ The token is provided as a string in the `asyncResult.value` property.|
 
 ##### Example
 
-```
+```js
 function getIdentityToken() {
   Office.context.mailbox.getUserIdentityTokenAsync(cb);
 }
@@ -352,7 +352,7 @@ The XML result of the EWS call is provided as a string in the `asyncResult.value
 
 The following example calls `makeEwsRequestAsync` to use the `GetItem` operation to get the subject of an item.
 
-```
+```js
 function getSubjectRequest(id) {
    // Return a GetItem operation request for the subject of the specified item. 
    var request = 
