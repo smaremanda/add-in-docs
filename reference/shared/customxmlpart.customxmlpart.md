@@ -21,7 +21,7 @@ Office.context.document.customXmlParts.getByIdAsync(id);
 
 |**Name**|**Description**|
 |:-----|:-----|
-|[builtIn](../../reference/shared/customxmlpart.builtin.md)|Get a value that indicates whether the CustomXMLPart is built-in.|
+|[builtIn](../../reference/shared/customxmlpart.builtin.md)|Gets a value that indicates whether the CustomXMLPart is built-in.|
 |[id](../../reference/shared/customxmlpart.id.md)|Gets the GUID of the CustomXMLPart|
 |[namespaceManager](../../reference/shared/customxmlpart.namespacemanager.md)|Gets the set of namespace prefix mappings (CustomXMLPrefixMappings) used against the current CustomXMLPart.|
 
