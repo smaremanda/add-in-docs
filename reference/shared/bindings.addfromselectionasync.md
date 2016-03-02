@@ -8,7 +8,7 @@ Adds a binding to the current selection in the document.
 |**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|MatrixBindings, TableBindings, TextBindings|
 |**Last changed**|1.1|
 
-[![Try out this call in the interactive API Tutorial for Excel](../../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](http://officeapitutorial.azurewebsites.net/Redirect.mdl?scenario=Update+a+Row+in+a+Table)
+[![Try out this call in the interactive API Tutorial for Excel](../../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](https://officeapitutorial.azurewebsites.net/TryItOut.html)
 
 
 ```
@@ -81,8 +81,6 @@ A capital Y in the following matrix indicates that this method is supported in t
 For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
 
 
-||
-|:-----|
 |**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
 |:-----|:-----|:-----|
 |**Access**||Y||
