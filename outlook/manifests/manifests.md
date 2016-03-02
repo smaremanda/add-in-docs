@@ -653,7 +653,7 @@ If the add-in's requested permissions change, users will be prompted to upgrade 
 
 ## VersionOverrides
 
-The  **VersionOverrides** element is the location of information for add-in commands. For more information on this element, see [Define add-in commands in your Outlook add-in manifest](../outlook/manifests/define-add-in-commands.md).
+The  **VersionOverrides** element is the location of information for add-in commands. For more information on this element, see [Define add-in commands in your Outlook add-in manifest](../../outlook/manifests/define-add-in-commands.md).
 
 
 ## Localization
@@ -676,7 +676,7 @@ Some aspects of the add-in need to be localized for different locales, such as t
     <bt:ShortStrings> 
       </bt:String>
       <bt:String id="residViewTemplates" DefaultValue="Launch My Add-in">
-        <bt:Override Locale="ar-sa" Value="إطلاق بلدي الوظيفة الإضافية" />
+        <bt:Override Locale="ar-sa" Value="?????????? ???????? ?????????????? ????????????????" />
         <!-- add information for other locales -->
     </bt:ShortStrings>
 
@@ -701,12 +701,12 @@ Outlook add-ins specify the  **Hosts** element like the followiing.
 </OfficeApp>
 ```
 
-This is separate from the  **Hosts** element inside the **VersionOverrides** element, which is discussed in [Define add-in commands in your Outlook add-in manifest](../outlook/manifests/define-add-in-commands.md).
+This is separate from the  **Hosts** element inside the **VersionOverrides** element, which is discussed in [Define add-in commands in your Outlook add-in manifest](../../outlook/manifests/define-add-in-commands.md).
 
 
 ## Requirements
 
-The  **Requirements** element specifies the set of APIs available to the add-in. For an Outlook add-in, the requirement set must be Mailbox and a value of 1.1 or above. Please refer to the API reference for the latest requirement set version. Refer to the [Outlook add-in APIs](../outlook/apis.md) for more information on requirement sets.
+The  **Requirements** element specifies the set of APIs available to the add-in. For an Outlook add-in, the requirement set must be Mailbox and a value of 1.1 or above. Please refer to the API reference for the latest requirement set version. Refer to the [Outlook add-in APIs](../../outlook/apis.md) for more information on requirement sets.
 
 The  **Requirements** element can also appear in the **VersionOverrides** element, allowing the add-in to specify a different requirement when loaded in clients that support **VersionOverrides**.
 
@@ -761,7 +761,7 @@ App domains are also necessary to enable cookie sharing between the pop-out wind
 
 ## Permissions
 
-The  **Permissions** element contains the required permissions for the add-in. In general, you should specify the minimum necessary permission that your add-in needs, depending on the exact methods that you plan to use. For example, a mail add-in that activates in compose forms and only reads but does not write to item properties like [item.requiredAttendees](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html), and does not call [mailbox.makeEwsRequestAsync](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.html) to access any Exchange Web Services operations should specify **ReadItem** permission. For details on the available permissions, see [Understanding Outlook add-in permissions](../outlook/understanding-outlook-add-in-permissions.md).
+The  **Permissions** element contains the required permissions for the add-in. In general, you should specify the minimum necessary permission that your add-in needs, depending on the exact methods that you plan to use. For example, a mail add-in that activates in compose forms and only reads but does not write to item properties like [item.requiredAttendees](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html), and does not call [mailbox.makeEwsRequestAsync](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.html) to access any Exchange Web Services operations should specify **ReadItem** permission. For details on the available permissions, see [Understanding Outlook add-in permissions](../../outlook/understanding-outlook-add-in-permissions.md).
 
 
 **Four-tier permissions model for mail add-ins**
@@ -779,7 +779,7 @@ The  **Permissions** element contains the required permissions for the add-in. I
 
 ## Activation rules
 
-Activation rules are specified in the  **Rule** element. The **Rule** element can appear as a child of the **OfficeApp** element in 1.1 manifests, and additionally as a child of the **ExtensionPoint** element in **VersionOverrides**. See [Define add-in commands in your Outlook add-in manifest](../outlook/manifests/define-add-in-commands.md) for details on using this element in **VersionOverrides**.
+Activation rules are specified in the  **Rule** element. The **Rule** element can appear as a child of the **OfficeApp** element in 1.1 manifests, and additionally as a child of the **ExtensionPoint** element in **VersionOverrides**. See [Define add-in commands in your Outlook add-in manifest](../../outlook/manifests/define-add-in-commands.md) for details on using this element in **VersionOverrides**.
 
 Activation rules can be used to activate an add-in based on one or more of the following conditions on the currently selected item.
 
@@ -792,30 +792,30 @@ Activation rules can be used to activate an add-in based on one or more of the f
     
 - The presence of an attachment
     
-For details and samples of activation rules, see [Activation rules for Outlook add-ins](../outlook/manifests/activation-rules.md).
+For details and samples of activation rules, see [Activation rules for Outlook add-ins](../../outlook/manifests/activation-rules.md).
 
 
 ## Next steps: Add-in commands
 
 
-After defining a basic manifest, [define add-in commands for your add-in](../outlook/manifests/define-add-in-commands.md). Add-in commands present a button in the ribbon so users can activate your add-in in a simple, intuitive way. For more information, see [Add-in commands for Outlook](../outlook/add-in-commands-for-outlook.md).
+After defining a basic manifest, [define add-in commands for your add-in](../../outlook/manifests/define-add-in-commands.md). Add-in commands present a button in the ribbon so users can activate your add-in in a simple, intuitive way. For more information, see [Add-in commands for Outlook](../../outlook/add-in-commands-for-outlook.md).
 
 
 ## Additional resources
 
 
 
-- [Outlook add-ins](../outlook/outlook-add-ins.md)
+- [Outlook add-ins](../../outlook/outlook-add-ins.md)
     
-- [Activation rules for Outlook add-ins](../outlook/manifests/activation-rules.md)
+- [Activation rules for Outlook add-ins](../../outlook/manifests/activation-rules.md)
     
 - [Localization for Office Add-ins](../essentials/localization.md)
     
 - [Create a mail add-in for Outlook that runs on desktops, tablets, and mobile devices (schema v1.1)](http://msdn.microsoft.com/library/8d425fb3-8a7c-429d-87b3-8046e964b153%28Office.15%29.aspx)
     
-- [Privacy, permissions, and security for Outlook add-ins](../outlook/../essentials/privacy-and-security.md)
+- [Privacy, permissions, and security for Outlook add-ins](../../outlook/../essentials/privacy-and-security.md)
     
-- [Outlook add-in APIs](../outlook/apis.md)
+- [Outlook add-in APIs](../../outlook/apis.md)
     
 - [Office Add-ins XML manifest](../overview/add-in-manifests.md)
     
@@ -825,9 +825,9 @@ After defining a basic manifest, [define add-in commands for your add-in](../out
     
 - [Design guidelines for Office Add-ins](../design/add-in-design.md)
     
-- [Understanding Outlook add-in permissions](../outlook/understanding-outlook-add-in-permissions.md)
+- [Understanding Outlook add-in permissions](../../outlook/understanding-outlook-add-in-permissions.md)
     
-- [Use regular expression activation rules to show an Outlook add-in](../outlook/use-regular-expressions-to-show-an-outlook-add-in.md)
+- [Use regular expression activation rules to show an Outlook add-in](../../outlook/use-regular-expressions-to-show-an-outlook-add-in.md)
     
-- [Match strings in an Outlook item as well-known entities](../outlook/match-strings-in-an-item-as-well-known-entities.md)
+- [Match strings in an Outlook item as well-known entities](../../outlook/match-strings-in-an-item-as-well-known-entities.md)
     
