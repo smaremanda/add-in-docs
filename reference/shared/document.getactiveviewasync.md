@@ -4,7 +4,7 @@
 
 |||
 |:-----|:-----|
-|**Hosts:** PowerPoint|**Add-in types:** Content, Task pane|
+|**Hosts:** Excel, PowerPoint, Word|**Add-in types:** Content, Task pane|
 |**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|ActiveView|
 |**Added in ActiveView**|1.1|
 
@@ -75,7 +75,9 @@ For more information about Office host application and server requirements, see 
 
 ||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
 |:-----|:-----|:-----|:-----|
+|**Excel**|||Y|
 |**PowerPoint**|Y|Y|Y|
+|**Word**|||Y|
 
 |||
 |:-----|:-----|
