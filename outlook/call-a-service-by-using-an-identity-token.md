@@ -16,7 +16,7 @@ Adding an identity token to the service request that your add-in sends is easy. 
 This simple initialization method for an add-in uses the  **getUserIdentityTokenAsync** method to request an identity token from the Exchange server. The _getUserIdentityToken_ parameter is the function that is called when the asynchronous request to the server returns. See the next step for the callback method.
 
 
-```
+```js
 var _mailbox;
 var _xhr;
 // The initialize function is required for all add-ins.
