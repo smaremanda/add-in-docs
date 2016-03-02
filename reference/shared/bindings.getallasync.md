@@ -19,7 +19,7 @@ bindingsObj.getAllAsync([options], callback);
 
 |**Name**|**Type**|**Description**|**Support notes**|
 |:-----|:-----|:-----|:-----|
-| _options_|**object**|Specifies any of the following [optional parameters](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters)||
+| _options_|**object**|Specifies any of the following [optional parameters](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters).||
 | _asyncContext_|**array**,  **boolean**,  **null**,  **number**,  **object**, **string**, or  **undefined**|A user-defined item of any type that is returned in the  **AsyncResult** object without being altered.||
 | _callback_|**object**|A function that is invoked when the callback returns, whose only parameter is of type  **AsyncResult**.||
 
@@ -33,7 +33,7 @@ In the callback function passed to the  **getAllAsync** method, you can use the 
 
 |**Property**|**Use to...**|
 |:-----|:-----|
-|[AsyncResult.value](../../reference/shared/asyncresult.value.md)|Access an array that contains each binding created for the referenced [Bindings](../../reference/shared/bindings.bindings.md) object|
+|[AsyncResult.value](../../reference/shared/asyncresult.value.md)|Access an array that contains each binding created for the referenced [Bindings](../../reference/shared/bindings.bindings.md) object.|
 |[AsyncResult.status](../../reference/shared/asyncresult.status.md)|Determine the success or failure of the operation.|
 |[AsyncResult.error](../../reference/shared/asyncresult.error.md)|Access an [Error](../../reference/shared/error.md) object that provides error information if the operation failed.|
 |[AsyncResult.asyncContext](../../reference/shared/asyncresult.asynccontext.md)|Access your user-defined  **object** or value, if you passed one as the _asyncContext_ parameter.|
@@ -59,9 +59,6 @@ function write(message){
 }
 ```
 
-
-
-
 ## Support details
 
 
@@ -70,8 +67,6 @@ A capital Y in the following matrix indicates that this method is supported in t
 For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
 
 
-|
-|
 ||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
 |:-----|:-----|:-----|:-----|
 |**Access**||Y||
