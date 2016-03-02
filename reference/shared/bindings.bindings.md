@@ -61,7 +61,7 @@ For more information about Office host application and server requirements, see 
 
 |**Version**|**Changes**|
 |:-----|:-----|
-|1.1|Added support for Excel and Word in Office for iPad|
+|1.1|Added support for Excel and Word in Office for iPad.|
 |1.1|For [addFromNamedItemAsync](../../reference/shared/bindings.addfromnameditemasync.md), [addFromPromptAsync](../../reference/shared/bindings.addfrompromptasync.md), and [addFromSelectionAsync](../../reference/shared/bindings.addfromselectionasync.md) added support for binding to matrix data as a table binding in add-ins for Excel.|
 |1.1|<ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>For <a href="8fa0cb4a-fad1-4f2e-9a7e-5f7aa7789eca.htm">document</a> property, added access to a <span class="keyword">Document</span> object that represents the current Access database in content add-ins for Access. </p></li><li><p>For all methods, added support for table binding in content add-ins for Access. </p></li></ul>|
 |1.0|Introduced|
