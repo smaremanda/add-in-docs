@@ -47,16 +47,14 @@ When parsing a SOAP response from a EWS operation, note the following browser-de
     
      **getElementsByTagName** behaves differently depending on browser type. For example, a EWS response can contain the following XML (formatted and abbreviated for display purposes):
     
-
-
-```XML
-  <t:ExtendedProperty><t:ExtendedFieldURI PropertySetId="00000000-0000-0000-0000-000000000000" 
-PropertyName="MyProperty" 
-PropertyType="String"/>
-<t:Value>{
-...
-}</t:Value></t:ExtendedProperty>
-```
+    ```XML
+      <t:ExtendedProperty><t:ExtendedFieldURI PropertySetId="00000000-0000-0000-0000-000000000000" 
+    PropertyName="MyProperty" 
+    PropertyType="String"/>
+    <t:Value>{
+    ...
+    }</t:Value></t:ExtendedProperty>
+    ```
 
 
    
