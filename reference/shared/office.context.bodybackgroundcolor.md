@@ -39,7 +39,7 @@ For more information about Office host application and server requirements, see 
 **Supported hosts, by platform**
 
 
-||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|**OWA for Devices**|
+||**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|**OWA for Devices**|
 |:-----|:-----|:-----|:-----|:-----|
 |**Excel**|Y||||
 |**Outlook**|Y||||
