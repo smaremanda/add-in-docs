@@ -25,7 +25,7 @@ In each of these read scenarios, Outlook activates add-ins when their activation
 
 **Figure 1. The add-in pane showing the Bing Maps add-in in action for the selected Outlook message that contains an address**
 
-![Bing Map mail app in Outlook](../../images/off15appsdk_BingMapMailAppScreenshot.jpg)
+![Bing Map mail app in Outlook](../images/off15appsdk_BingMapMailAppScreenshot.jpg)
 
 
 ## Types of add-ins available in read mode
