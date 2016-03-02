@@ -13,7 +13,7 @@ Gets the id of the control that triggered calling this function.
 
 
 
-```
+```js
 event.source.id;
 ```
 
