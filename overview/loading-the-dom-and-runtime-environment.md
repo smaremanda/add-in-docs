@@ -1,19 +1,17 @@
 
 # Loading the DOM and runtime environment
-An add-in must ensure that both the DOM and the Office Add-ins runtime environment are loaded before running its own custom logic. 
 
  _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | Outlook | PowerPoint | Project | Word_
 
+An add-in must ensure that both the DOM and the Office Add-ins runtime environment are loaded before running its own custom logic. 
 
 ## Startup of a content or task pane add-in
 
+The following figure shows the flow of events involved in starting a content or task pane add-in in Excel, PowerPoint, Project, Word, or Access.
 
+![Flow of events when starting a content or task pane add-in](../images/off15appsdk_LoadingDOMAgaveRuntime.png)
 
-**Figure 1. The flow of events involved in starting a content or task pane add-in in Excel, PowerPoint, Project, Word, or Access**
-
-![Flow of events when starting content/task pane app](../images/off15appsdk_LoadingDOMAgaveRuntime.png)
-
-The following summarizes the events involved in starting and initializing a content or task pane add-in: 
+The following events occur when a content or task pane add-in starts: 
 
 
 
@@ -36,11 +34,11 @@ The following summarizes the events involved in starting and initializing a cont
 
 
 
-**Figure 2. The flow of events involved in starting an Outlook add-in running on the desktop, tablet, or smartphone**
+The following figure shows the flow of events involved in starting an Outlook add-in running on the desktop, tablet, or smartphone.
 
-![Flow of events when starting Outlook mail app](../images/olowawecon15_LoadingDOMAgaveRuntime.png)
+![Flow of events when starting Outlook add-in](../images/olowawecon15_LoadingDOMAgaveRuntime.png)
 
-The following summarizes the events involved in starting an Outlook add-in: 
+The events occur when an Outlook add-in starts: 
 
 
 
@@ -48,7 +46,7 @@ The following summarizes the events involved in starting an Outlook add-in:
     
 2. The user selects an item in Outlook.
     
-3. If the selected item satisfies the activation conditions of an Outlook add-in, Outlook activates the add-in and makes its button visible in the user interface.
+3. If the selected item satisfies the activation conditions of an Outlook add-in, Outlook activates the add-in and makes its button visible in the UI.
     
 4. If the user clicks the button to start the Outlook add-in, Outlook opens the HTML page in a browser control. The next two steps, steps 5 and 6, occur in parallel.
     
