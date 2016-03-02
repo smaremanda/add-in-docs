@@ -67,40 +67,40 @@ To design the appearance of the add-in, you add HTML to the default page of the 
 ### To create a Hello World add-in
 
 
-1. In the Home.html file, delete all of the tags between the opening and closing  `<body>` tags, and then type<div>Hello World!</div> inside the opening and closing **body** tags. The finished HTML should look like the following.
+1. In the Home.html file, delete all of the tags between the opening and closing `<body>` tags, and then type `<div>Hello World!</div>` inside the opening and closing **body** tags. The finished HTML should look like the following.
     
-```HTML
-  <!DOCTYPE html> 
-<html> 
-   <head> 
-      <meta charset="UTF-8" /> 
-      <meta http-equiv="X-UA-Compatible" content="IE=Edge" /> 
-      <title></title>
- 
-      <script src="../../Scripts/jquery-1.9.1.js" type="text/javascript"></script> 
-      <link href="../../Content/Office.css" rel="stylesheet" type="text/css" /> 
-      <script src="https://appsforoffice.microsoft.com/lib/1/hosted/Office.js" type="text/javascript"></script>
- 
-      <!-- To enable offline debugging using a local reference to Office.js, use: --> 
-      <!-- <script src="../../Scripts/Office/MicrosoftAjax.js" type="text/javascript"></script> --> 
-      <!-- <script src="../../Scripts/Office/1.1/office.js" type="text/javascript"></script> -->
- 
-      <link href="../App.css" rel="stylesheet" type="text/css" /> 
-      <script src="../App.js" type="text/javascript"></script> 
-      <link href="Home.css" rel="stylesheet" type="text/css" /> 
-      <script src="Home.js" type="text/javascript"></script> 
-   </head>
- 
-   <body> 
-      <div>Hello World!</div> 
-   </body>
- 
-</html>
-```
+    ```HTML
+    <!DOCTYPE html> 
+    <html> 
+       <head> 
+          <meta charset="UTF-8" /> 
+          <meta http-equiv="X-UA-Compatible" content="IE=Edge" /> 
+          <title></title>
+     
+          <script src="../../Scripts/jquery-1.9.1.js" type="text/javascript"></script> 
+          <link href="../../Content/Office.css" rel="stylesheet" type="text/css" /> 
+          <script src="https://appsforoffice.microsoft.com/lib/1/hosted/Office.js" type="text/javascript"></script>
+     
+          <!-- To enable offline debugging using a local reference to Office.js, use: --> 
+          <!-- <script src="../../Scripts/Office/MicrosoftAjax.js" type="text/javascript"></script> --> 
+          <!-- <script src="../../Scripts/Office/1.1/office.js" type="text/javascript"></script> -->
+     
+          <link href="../App.css" rel="stylesheet" type="text/css" /> 
+          <script src="../App.js" type="text/javascript"></script> 
+          <link href="Home.css" rel="stylesheet" type="text/css" /> 
+          <script src="Home.js" type="text/javascript"></script> 
+       </head>
+     
+       <body> 
+          <div>Hello World!</div> 
+       </body>
+     
+    </html>
+    ```
 
 2. To get ready to deploy to IIS Express and debug in a local installation of Excel, confirm the configuration of the  **Start Action** property:
     
-      1. In Solution Explorer, choose the HelloWorld add-in.
+  1. In Solution Explorer, choose the HelloWorld add-in.
     
   2. In the  **Properties** window, make sure that the **Start Action** property is set to **Office Desktop Client**.
     
@@ -130,16 +130,16 @@ In the following procedures, we'll extend your Hello World add-in to access data
 
 1. Replace  `<div>Hello World!</div>` inside the opening and closing `<body>` tags of the HelloWorld.html page with the following HTML.
     
-```HTML
-  <button id="writeDataBtn"> Write Data </button> 
-<button id="readDataBtn"> Read Selected Data </button> 
-<button id="bindDataBtn"> Bind Selected Data </button> 
-<button id="readBoundDataBtn"> Read Bound Data </button>
-<button id="addEventBtn"> Add Event </button>
-
-<span>Results: </span>
-<div id="results"></div>
-```
+    ```HTML
+    <button id="writeDataBtn"> Write Data </button> 
+    <button id="readDataBtn"> Read Selected Data </button> 
+    <button id="bindDataBtn"> Bind Selected Data </button> 
+    <button id="readBoundDataBtn"> Read Bound Data </button>
+    <button id="addEventBtn"> Add Event </button>
+    
+    <span>Results: </span>
+    <div id="results"></div>
+    ```
 
 
     This adds some buttons to perform data access actions and a  `div` to display results in the HTML page of the add-in. Next, we'll call the `writeData()` function to write sample text to the current selection.
@@ -148,34 +148,34 @@ In the following procedures, we'll extend your Hello World add-in to access data
     
 3. Add an event handler  `$("#writeDataBtn").click` to the `$(document).ready` code to respond when a user clicks the **Write Data** button. The code should like the following.
     
-```js
-  // The initialize function must be run each time a new page is loaded 
-Office.initialize = function (reason) { 
-   $(document).ready(function () { app.initialize();
- 
-       
-      $("#writeDataBtn").click(function (event) { writeData(); 
-      });
- 
-   }); 
-};
-```
+    ```js
+    // The initialize function must be run each time a new page is loaded 
+    Office.initialize = function (reason) { 
+       $(document).ready(function () { app.initialize();
+     
+           
+          $("#writeDataBtn").click(function (event) { writeData(); 
+          });
+     
+       }); 
+    };
+    ```
 
 4. Add the following functions to the Home.js file.
     
-```js
-  function writeData() { 
-    Office.context.document.setSelectedDataAsync("Hello World!", function (asyncResult) { 
-        if (asyncResult.status === "failed") { 
-            writeToPage('Error: ' + asyncResult.error.message); 
-        } 
-    }); 
-} 
-
-function writeToPage(text) { 
-    document.getElementById('results').innerText = text; 
-}
-```
+    ```js
+    function writeData() { 
+        Office.context.document.setSelectedDataAsync("Hello World!", function (asyncResult) { 
+            if (asyncResult.status === "failed") { 
+                writeToPage('Error: ' + asyncResult.error.message); 
+            } 
+        }); 
+    } 
+    
+    function writeToPage(text) { 
+        document.getElementById('results').innerText = text; 
+    }
+    ```
 
 
      >**Note**  Do not to delete or overwrite the  `Office.initialize` event handler function (although you can replace the code within it). The `Office.initialize` event handler must be in place for your add-in to initialize correctly at runtime.
@@ -193,16 +193,16 @@ function writeToPage(text) {
     ![Write text](../images/AgaveHelloWorld02.JPG)
 
 7. Switch back to the code editor, and replace  `"Hello World!"` in the call to the **setSelectedDataAsync** method with `[["red"],["green"],["blue"]]` like this.
-    
-```js
-  function writeData() { 
-    Office.context.document.setSelectedDataAsync([["red"],["green"],["blue"]], function (asyncResult) { 
-        if (asyncResult.status === "failed") { 
-            writeToPage('Error: ' + asyncResult.error.message); 
-        } 
-    }); 
-}
-```
+        
+    ```js
+    function writeData() { 
+        Office.context.document.setSelectedDataAsync([["red"],["green"],["blue"]], function (asyncResult) { 
+            if (asyncResult.status === "failed") { 
+                writeToPage('Error: ' + asyncResult.error.message); 
+            } 
+        }); 
+    }
+    ```
 
 
     Writing an array of arrays like  `[["red"],["green"],["blue"]]` creates what's called amatrix data structure, which in this case creates a single column of three cells (rows). You can create a matrix of two columns of three rows like this:
@@ -238,36 +238,36 @@ function writeToPage(text) {
     
 2. Add an event handler  `$("#readDataBtn").click` to the `$(document).ready` code to respond when a user clicks the **Read Selected Data** button. The code should like the following.
     
-```js
-  // The initialize function must be run each time a new page is loaded 
-Office.initialize = function (reason) { 
-    $(document).ready(function () { 
-        app.initialize(); 
-      
-        $("#writeDataBtn").click(function (event) { 
-            writeData(); 
+    ```js
+    // The initialize function must be run each time a new page is loaded 
+    Office.initialize = function (reason) { 
+        $(document).ready(function () { 
+            app.initialize(); 
+          
+            $("#writeDataBtn").click(function (event) { 
+                writeData(); 
+            }); 
+            $("#readDataBtn").click(function (event) { 
+                readData(); 
+            }); 
         }); 
-        $("#readDataBtn").click(function (event) { 
-            readData(); 
-        }); 
-    }); 
-};
-```
+    };
+    ```
 
 3. Add the following code to the Home.js file below the functions you added in the previous procedure.
     
-```js
-function readData() { 
-    Office.context.document.getSelectedDataAsync("matrix", function (asyncResult) { 
-        if (asyncResult.status === "failed") { 
-            writeToPage('Error: ' + asyncResult.error.message); 
-        } 
-        else{ 
-            writeToPage('Selected data: ' + asyncResult.value); 
-        } 
-    }); 
-}
-```
+    ```js
+    function readData() { 
+            Office.context.document.getSelectedDataAsync("matrix", function (asyncResult) { 
+                if (asyncResult.status === "failed") { 
+                    writeToPage('Error: ' + asyncResult.error.message); 
+            } 
+            else{ 
+                writeToPage('Selected data: ' + asyncResult.value); 
+            } 
+        }); 
+    }
+    ```
 
 
     The  `readData()` function calls the [Document.getSelectedDataAsync](http://msdn.microsoft.com/en-us/library/f85ad02c-64f0-4b73-87f6-7f521b3afd69%28Office.1501401%29) method to read the data that's currently selected by the user as a "matrix" _coercionType_, which is a 2-D array. For Excel, this will read a contiguous range of one or more cells.
@@ -293,60 +293,60 @@ function readData() {
     
 2. Add event handlers  `$("#bindDataBtn").click` and `$("#readBoundDataBtn").click` to the `$(document).ready` code to respond when a user clicks the **Bind Selected Data** and **Read Bound Data** buttons. The code should like the following.
     
-```js
-  // The initialize function must be run each time a new page is loaded 
-Office.initialize = function (reason) { 
-    $(document).ready(function () { 
-        app.initialize(); 
-   
-        $("#writeDataBtn").click(function (event) { 
-            writeData(); 
+    ```js
+    // The initialize function must be run each time a new page is loaded 
+    Office.initialize = function (reason) { 
+        $(document).ready(function () { 
+            app.initialize(); 
+       
+            $("#writeDataBtn").click(function (event) { 
+                writeData(); 
+            }); 
+            $("#readDataBtn").click(function (event) { 
+                readData(); 
+            }); 
+            $("#bindDataBtn").click(function (event) { 
+                bindData(); 
+            }); 
+            $("#readBoundDataBtn").click(function (event) { 
+                readBoundData(); 
+            }); 
         }); 
-        $("#readDataBtn").click(function (event) { 
-            readData(); 
-        }); 
-        $("#bindDataBtn").click(function (event) { 
-            bindData(); 
-        }); 
-        $("#readBoundDataBtn").click(function (event) { 
-            readBoundData(); 
-        }); 
-    }); 
-};
-```
+    };
+    ```
 
 3. Add the following code to the Home.js file below the function you added in the previous procedure. 
     
-```js
-  function bindData() { 
-    Office.context.document.bindings.addFromSelectionAsync("matrix", { id: 'myBinding' }, function (asyncResult) { 
-        if (asyncResult.status === "failed") { 
-            writeToPage('Error: ' + asyncResult.error.message); 
-        } 
-        else { 
-            writeToPage('Added binding with type: ' + asyncResult.value.type + ' and id: ' + asyncResult.value.id); 
-        } 
-    }); 
-}
-```
+    ```js
+    function bindData() { 
+        Office.context.document.bindings.addFromSelectionAsync("matrix", { id: 'myBinding' }, function (asyncResult) { 
+            if (asyncResult.status === "failed") { 
+                writeToPage('Error: ' + asyncResult.error.message); 
+            } 
+            else { 
+                writeToPage('Added binding with type: ' + asyncResult.value.type + ' and id: ' + asyncResult.value.id); 
+            } 
+        }); 
+    }
+    ```
 
 
     The  `bindData()` function calls the [Bindings.addFromSelectionAsync](http://msdn.microsoft.com/en-us/library/edc99214-e63e-43f2-9392-97ead42fc155%28Office.1501401%29) method to create a matrix binding with an [id](http://msdn.microsoft.com/en-us/library/94a0814d-70a0-4258-a837-2be04f68f068%28Office.1501401%29)of  `myBinding` that is associated with the cells that the user selected. You can specify the _bindingType_ as `"text"` to create a binding to a single cell in Excel, or to run of characters (a string) in a Word document. For more information about bindings, see [Bind to regions in a document or spreadsheet](../how-to/bind-to-regions-in-a-document-or-spreadsheet.md).
     
 4. Add the following code to the Home.js file below the  `bindData ()` function.
     
-```js
-  function readBoundData() { 
-    Office.select("bindings#myBinding").getDataAsync({ coercionType: "matrix" }, function (asyncResult) { 
-        if (asyncResult.status === "failed") { 
-            writeToPage('Error: ' + asyncResult.error.message); 
-        } 
-        else { 
-            writeToPage('Selected data: ' + asyncResult.value); 
-        } 
-    }); 
-}
-```
+    ```js
+    function readBoundData() { 
+        Office.select("bindings#myBinding").getDataAsync({ coercionType: "matrix" }, function (asyncResult) { 
+            if (asyncResult.status === "failed") { 
+                writeToPage('Error: ' + asyncResult.error.message); 
+            } 
+            else { 
+                writeToPage('Selected data: ' + asyncResult.value); 
+            } 
+        }); 
+    }
+    ```
 
 
     The  `readBoundData()` function calls the [Office.select](http://msdn.microsoft.com/en-us/library/23aeb136-da1f-4127-a798-99dc27bc4dae%28Office.1501401%29) method to get the binding created by the `bindData()` function, which has an **id** of `myBinding`. (Alternatively, you can use the [Bindings.getByIdAsync](http://msdn.microsoft.com/en-us/library/2727c891-bc05-465c-9324-113fbfeb3fbb%28Office.1501401%29) method to access a binding by its **id**.) The function then calls the [Binding.getDataAsync](http://msdn.microsoft.com/en-us/library/5372ffd8-579d-4fcb-9e5b-e9a2128f3201%28Office.1501401%29) method to read the data from the binding. Because the binding is a matrix binding, you must specify the _coersionType_ as `"matrix"` for the call to succeed.
@@ -385,57 +385,57 @@ Now let's add an event handler that will read and display the data in the bindin
 
 1. Add an event handler  `$("#addEventBtn").click` to the `$(document).ready` code to respond when a user clicks the **Add Event** button. The code should like the following.
     
-```js
-  // The initialize function must be run each time a new page is loaded 
-Office.initialize = function (reason) { 
-    $(document).ready(function () { 
-        app.initialize(); 
-     
-        $("#writeDataBtn").click(function (event) { 
-            writeData(); 
+    ```js
+    // The initialize function must be run each time a new page is loaded 
+    Office.initialize = function (reason) { 
+        $(document).ready(function () { 
+            app.initialize(); 
+         
+            $("#writeDataBtn").click(function (event) { 
+                writeData(); 
+            }); 
+            $("#readDataBtn").click(function (event) { 
+                readData(); 
+            }); 
+            $("#bindDataBtn").click(function (event) { 
+                bindData(); 
+            }); 
+            $("#readBoundDataBtn").click(function (event) { 
+                readBoundData(); 
+            }); 
+            $("#addEventBtn").click(function (event) { 
+                addEvent(); 
+            }); 
         }); 
-        $("#readDataBtn").click(function (event) { 
-            readData(); 
-        }); 
-        $("#bindDataBtn").click(function (event) { 
-            bindData(); 
-        }); 
-        $("#readBoundDataBtn").click(function (event) { 
-            readBoundData(); 
-        }); 
-        $("#addEventBtn").click(function (event) { 
-            addEvent(); 
-        }); 
-    }); 
-};
-```
+    };
+    ```
 
 2. Add the following code to the Home.js file below the functions you added in the previous procedure.
     
-```js
-  
-function addEvent() { 
-    Office.select("bindings#myBinding").addHandlerAsync("bindingDataChanged", myHandler, function (asyncResult) { 
-        if (asyncResult.status === "failed") { 
-            writeToPage('Error: ' + asyncResult.error.message); 
-        } 
-        else { 
-            writeToPage('Added event handler'); 
-        } 
-    }); 
-}
- 
-function myHandler(eventArgs) { 
-    eventArgs.binding.getDataAsync({ coerciontype: "matrix" }, function (asyncResult) { 
-        if (asyncResult.status === "failed") { 
-            writeToPage('Error: ' + asyncResult.error.message); 
-        } 
-        else { 
-            writeToPage('Bound data: ' + asyncResult.value); 
-        } 
-    }); 
-}
-```
+    ```js
+      
+    function addEvent() { 
+        Office.select("bindings#myBinding").addHandlerAsync("bindingDataChanged", myHandler, function (asyncResult) { 
+            if (asyncResult.status === "failed") { 
+                writeToPage('Error: ' + asyncResult.error.message); 
+            } 
+            else { 
+                writeToPage('Added event handler'); 
+            } 
+        }); 
+    }
+     
+    function myHandler(eventArgs) { 
+        eventArgs.binding.getDataAsync({ coerciontype: "matrix" }, function (asyncResult) { 
+            if (asyncResult.status === "failed") { 
+                writeToPage('Error: ' + asyncResult.error.message); 
+            } 
+            else { 
+                writeToPage('Bound data: ' + asyncResult.value); 
+            } 
+        }); 
+    }
+    ```
 
 
     The  `addEvent()` function calls the **Office.select** method to get the `myBinding` binding object, and then calls the [Binding.addHandlerAsync](http://msdn.microsoft.com/en-us/library/b9c2f4ea-726c-4b48-a3fb-89beda337a17%28Office.1501401%29) method to add an event handler for the [Binding.bindingDataChanged](http://msdn.microsoft.com/en-us/library/7b9ed4bf-3ce5-44eb-8548-2b081afd868d%28Office.1501401%29) event. The `myHandler` function uses the [binding](http://msdn.microsoft.com/en-us/library/3f5adb74-0da6-46c6-a95e-0890bd935379%28Office.15%29.aspx) property of the [BindingDataChangedEventArgs](http://msdn.microsoft.com/en-us/library/d08e5556-20a6-469a-9c51-b0b95c8213ac%28Office.1501401%29) object to access the binding that raised the event, and then calls the **Binding.getDataAsync** method to read and display the data when the event occurs.
@@ -528,11 +528,11 @@ You can perform the following steps to modify this add-in project so that it wil
     
 2. In the opening  `OfficeApp` tag, change the value of the `xsi:type` attribute to `"ContentApp"`.
     
-```XML
-  <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" 
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-          xsi:type="ContentApp">
-```
+    ```XML
+      <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" 
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+              xsi:type="ContentApp">
+    ```
 
 
     The  **xsi:type** attribute specifies the type of Office Add-in, which determines how the add-in runs when the user inserts it into a document or workbook. The previous value, `"TaskPaneApp"`, specifies that the add-in runs in a task pane. Changing  **xsi:type** to `"ContentApp"` specifies that the add-in runs in line with the workbook content as a content add-in.
@@ -540,21 +540,21 @@ You can perform the following steps to modify this add-in project so that it wil
      >**Note**  In this release of Office, content add-ins can run only in the [client applications that support content add-ins](../overview/platform-overview.md#StartBuildingApps_SupportedApplications). After you change  **xsi:type** to `"ContentApp"` in the manifest, this add-in will run only in Access web apps, Excel, or PowerPoint.
 3. Add the following  **RequestedWidth** and **RequestedHeight** elements in the manifest within the `<DefaultSettings>` tags.
     
-```XML
-  <DefaultSettings> 
-    <SourceLocation DefaultValue="~remoteAppUrl/App/Home/Home.html" /> 
-    <RequestedWidth>200</RequestedWidth> 
-    <RequestedHeight>200</RequestedHeight> 
-</DefaultSettings>
-```
+    ```XML
+    <DefaultSettings> 
+        <SourceLocation DefaultValue="~remoteAppUrl/App/Home/Home.html" /> 
+        <RequestedWidth>200</RequestedWidth> 
+        <RequestedHeight>200</RequestedHeight> 
+    </DefaultSettings>
+    ```
 
 4. Remove the  `"Presentation"`,  `"Project"`, and  `"Document"` **Host** elements from the **Hosts** element, so that only the `"Workbook"` **Host** element remains.
     
-```XML
-  <Hosts> 
-    <Host Name="Workbook" /> 
-</Hosts>
-```
+    ```XML
+    <Hosts> 
+        <Host Name="Workbook" /> 
+    </Hosts>
+    ```
 
 5. Save these changes to the HelloWorld.xml file.
     
