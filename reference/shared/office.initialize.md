@@ -30,7 +30,7 @@ The  _reason_ parameter of the **initialize** event listener function returns an
 You can use the value of the  **InitializationEnumeration** to implement different logic for when the add-in is first inserted versus when it is already part of the document. The following example shows some simple logic that uses the value of the _reason_ parameter to display how the task pane or content add-in was initialized.
 
 
-```
+```js
 Office.initialize = function (reason) {
     // Checks for the DOM to load using the jQuery ready function.
     $(document).ready(function () {

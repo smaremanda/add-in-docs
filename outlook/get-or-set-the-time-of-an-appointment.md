@@ -65,7 +65,7 @@ To use  **item.start.getAsync** or **item.end.getAsync**, provide a callback met
 
 
 
-```
+```js
 var item;
 
 Office.initialize = function () {
@@ -113,7 +113,7 @@ To use  **item.start.setAsync** or **item.end.setAsync**, specify a  **Date** va
 
 
 
-```
+```js
 var item;
 
 Office.initialize = function () {
