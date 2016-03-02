@@ -7,7 +7,7 @@ Toggles on and off the  `Office` alias for the full `Microsoft.Office.WebExtensi
 |**Hosts:**|Access, Excel, Outlook, PowerPoint, Project, Word|
 |**Last changed in**|1.1|
 
-```
+```js
 Office.useShortNamespace(useShortcut);
 ```
 
@@ -21,13 +21,10 @@ Office.useShortNamespace(useShortcut);
     
 
 
-
 ## Example
 
 
-
-
-```
+```js
 function startUsingShortNamespace() {
     if (typeof Office === 'undefined') {
         Microsoft.Office.WebExtension.useShortNamespace(true);
@@ -53,8 +50,6 @@ function write(message){
     document.getElementById('message').innerText += message; 
 }
 ```
-
-
 
 
 ## Support details

@@ -101,7 +101,7 @@ Procedure 2 shows how to create the HTML file that the JSOM_SimpleOMCalls.xml ma
     
 
 
-```
+```js
   /*
 * JavaScript functions for the Project OM Test example app
 * in the Project 2013 SDK.
@@ -545,7 +545,7 @@ function getProjectFields() {
     
 
 
-```
+```js
   // Task selection changed event handler.
 function onTaskSelectionChanged(eventArgs) {
     text.value = "In task selection change event handler";
@@ -974,8 +974,6 @@ It is easier to develop an add-in when you use Visual Studio 2015, where you can
 The following code in the SurfaceErrors.js file includes the  **throwError** function that creates a **Toast** object.
 
 
-
-
 ```js
 /*
  * Show error messages in a "toast" notification.
@@ -1117,7 +1115,7 @@ To use the  **throwError** function, include the JQuery library and the SurfaceE
 
 
 
-```
+```js
 function logMethodError(methodName, errorName, errorMessage, actionMessage) {
     logError(methodName + " method.\nError name: " + errorName
         + "\nMessage: " + errorMessage

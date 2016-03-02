@@ -149,7 +149,7 @@ From the above example:
 You might want to provide additional functionality in your add-in if certain requirement sets are supported by the Office host. For example, you might want to use the new JavaScript API for Word in your existing add-in if your add-in runs in Word 2016. To do this, you use the  **isSetSupported** method with the name of the requirement set. **isSetSupported** determines, at runtime, whether the Office host running the add-in supports the requirement set. If the requirement set is supported, **isSetSupported** returns **true** and runs the additional code that uses the API members from that requirement set. If the Office host doesn't support the requirement set, **isSetSupported** returns **false** and the additional code won't run. The following code shows the syntax to use with **isSetSupported**.
 
 
-```
+```js
 if (Office.context.requirements.isSetSupported(RequirementSetName , VersionNumber )
 {
    // Code that uses API members from RequirementSetName .
@@ -174,7 +174,7 @@ The following code example shows how an add-in can provide different functionali
 
 
 
-```
+```js
 if (Office.context.requirements.isSetSupported('WordApi', 1.1)
 {
    	// Run code that provides additional functionality using the JavaScript API for Word when the add-in runs in Word 2016.
@@ -204,7 +204,7 @@ The following code example checks whether the host supports  **document.setSelec
 
 
 
-```
+```js
 if (Office.context.document.setSelectedDataAsync)
 {
     // Run code that uses document.setSelectedDataAsync.

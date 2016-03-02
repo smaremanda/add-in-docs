@@ -153,7 +153,7 @@ The  **CustomPane** extension point defines an add-in that activates when specif
 
 
 
-```
+```XML
 <ExtensionPoint xsi:type="CustomPane">
    <RequestedHeight>100< /RequestedHeight> 
    <SourceLocation resid="residReadTaskpaneUrl"/>
@@ -246,7 +246,7 @@ The button control looks like the following:
 
 
 
-```
+```XML
 <Control xsi:type="Button" id="<choose a descriptive name>" >
   <!-- include button elements, as described in the following table -->
 </Control>
@@ -284,7 +284,7 @@ The following is an example of a  _UI-less button_, which executes a function na
 
 
 
-```
+```XML
 <Control xsi:type="Button" id="msgReadFunctionButton">
   <Label resid="funcReadButtonLabel" />
   <Supertip>
@@ -308,7 +308,7 @@ A  _task pane button_ control is a button that launches a task pane. Task pane b
 
 
 
-```
+```XML
 <Control xsi:type="Button" id="msgReadOpenPaneButton">
   <Label resid="paneReadButtonLabel" />
   <Supertip>
@@ -338,7 +338,7 @@ The syntax for the menu control is as follows:
 
 
 
-```
+```XML
 <Control xsi:type="Menu" id="<choose a descriptive name>" >
   <!-- include menu elements, as described in the following table -->
 </Control>
@@ -371,7 +371,7 @@ The following is an example of a menu.
 
 
 
-```
+```XML
 <Control xsi:type="Menu" id="msgReadMenuButton">
   <Label resid="menuReadButtonLabel" />
   <Supertip>
@@ -446,7 +446,7 @@ The following is an example of the  **Resources** element.
 
 
 
-```
+```XML
 <Resources>
   <bt:Images>
     <!-- Blue icon -->

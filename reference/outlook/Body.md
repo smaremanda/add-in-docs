@@ -55,7 +55,7 @@ Office.context.mailbox.item.body.getAsync(
 
 The following is an example of the `result` parameter passed to the callback function.
 
-```
+```js
 {
   "value": "TEXT of whole body (including threads below)",
   "status": "succeeded",
@@ -91,7 +91,7 @@ The `prependAsync` method inserts the specified string at the beginning of the i
 
 When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (`<a>`) to `LPNoLP`. For example:
 
-```
+```js
 Office.context.mailbox.item.body.prependAsync(
   '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>', 
   {coercionType: Office.CoercionType.Html}, 
@@ -121,7 +121,7 @@ The `setAsync` method replaces the existing body of the item with the specified 
 
 When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (`<a>`) to `LPNoLP`. For example:
 
-```
+```js
 Office.context.mailbox.item.body.setAsync(
   '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>', 
   {coercionType: Office.CoercionType.Html}, 
@@ -148,7 +148,7 @@ Office.context.mailbox.item.body.setAsync(
 
 The following example replaces the body with HTML content.
 
-```
+```js
 Office.context.mailbox.item.body.setAsync(
   "<b>(replaces all body, including threads you are replying to that may be on the bottom)</b>",
   { coercionType:"html", asyncContext:"This is passed to the callback" },
@@ -159,7 +159,7 @@ Office.context.mailbox.item.body.setAsync(
 
 The following is an example of the `result` parameter passed to the callback function.
 
-```
+```js
 {
   "value":null,
   "status":"succeeded",
@@ -175,7 +175,7 @@ The `setSelectedDataAsync` method inserts the specified string at the cursor loc
 
 When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (`<a>`) to `LPNoLP`. For example:
 
-```
+```js
 Office.context.mailbox.item.body.setSelectedDataAsync(
   '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>', 
   {coercionType: Office.CoercionType.Html}, 
