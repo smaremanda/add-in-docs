@@ -21,10 +21,8 @@ Office
 |:-----|:-----|
 |Name|Description|
 |[context](../../reference/shared/office.context.md)|Gets the Context object that represents the runtime environment of the add-in and provides access to the top-level objects of the API.|
-|[cast.item](../../reference/shared/office.cast.item.md)|Provides IntelliSense in Visual Studio specific to compose or read mode messages and appointments. 
-
->**Note**  Only applicable at design time when developing Outlook add-ins in Visual Studio.
- |
+|[cast.item](../../reference/shared/office.cast.item.md)|Provides IntelliSense in Visual Studio specific to compose or read mode messages and appointments. <br/><br/><blockquote>**Note**  Only applicable at design time when developing Outlook add-ins in Visual Studio. </blockquote>
+|
 
 **Methods**
 
