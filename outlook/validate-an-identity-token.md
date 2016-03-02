@@ -5,25 +5,15 @@ Learn how to validate the Exchange 2013 identity token that links the email acco
  _**Applies to:** apps for Office | Office Add-ins | Outlook_
 
 
-![Related code snippets and sample apps](../../images/mod_icon_links_samples.png)[Outlook-Add-in-JavaScript-ValidateIdentityToken](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-ValidateIdentityToken)
+![Related code snippets and sample apps](../images/mod_icon_links_samples.png)[Outlook-Add-in-JavaScript-ValidateIdentityToken](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-ValidateIdentityToken)
 
 Your Outlook add-in can send you an identity token, but before you trust the request you must validate the token to ensure that it came from the Exchange server that you expect. The examples in this article show you how to validate the Exchange identity token using a validation object written in C#; however, you can use any programming language to do the validation. The steps required to validate the token are described in the [JSON Web Token (JWT) Internet Draft](http://self-issued.info/docs/draft-goland-json-web-token-00.mdl). 
 
 We suggest that you use a four-step process to validate the identity token and obtain the user's unique identifier. First, extract the JSON Web Token (JWT) from a base64 URL-encoded string. Second, make sure that the token is well-formed, that it is for your Outlook add-in, that it has not expired, and that you can extract a valid URL for the authentication metadata document. Next, retrieve the authentication metadata document from the Exchange server and validate the signature attached to the identity token. Finally, compute a unique identifier for the user by hashing the user's Exchange ID with the URL of the authentication metadata document. Overall the process may seem complex, but each individual step is quite simple.
 You can download the solution that contains these examples from the web at  [Outlook-Add-in-JavaScript-ValidateIdentityToken](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-ValidateIdentityToken).
- **In this article**
+ 
 
-![One](../../images/mod_icon_one.png)[Set up to validate your identity token](#setup)
-
-![Two](../../images/mod_icon_two.png)[Extract the JSON Web Token](#extractthejsonwebtoken)
-
-![Three](../../images/mod_icon_three.png)[Parse the JWT](#parsethejwt)
-
-![Four](../../images/mod_icon_four.png)[Validate the identity token signature](#validatetheidentitytokensignature)
-
-![five](../../images/mod_icon_five.png)[Compute the unique ID for an Exchange account](#uniqueid)
-
-![Related code snippets and sample apps](../../images/mod_icon_links_samples.png)[Utility objects](#utilityobjects)
+![Related code snippets and sample apps](../images/mod_icon_links_samples.png)[Utility objects](#utilityobjects)
 
 
 ## Set up to validate your identity token
@@ -169,7 +159,7 @@ Each of the utility methods is described further later in this article.
 
 The  **ValidateHeader** method checks to make sure that the required claims are in the token header, and that the claims have the correct values. The header must be set as follows; otherwise, the method will throw an application exception and end.
 
-```
+```js
 { "typ" : "JWT", "alg" : "RS256", "x5t" : "<thumbprint>" }
 ```
 
@@ -278,7 +268,7 @@ The identity token is only valid for the add-in that requested it. The  **Valida
 The  **ValidateVersion** method checks the version of the identity token and makes sure that it matches the expected version. Different versions of the token can carry different claims. Checking the version ensures that the expected claims will be in the identity token.
 
 
-```
+```js
     private void ValidateVersion()
     {
       if (!this.appContext.ContainsKey(AuthClaimTypes.MsExchExtensionVersion))
@@ -384,7 +374,7 @@ Most of the code in the  **IdentityToken** object constructor sets the propertie
 The  **GetSecurityTokenHandler** method returns a WIF token handler that will validate the identity token. Most of the code in the method initializes the token handler to do the validation; however, the method does call the **GetSigningCertificate** method to retrieve the X.509 certificate used to sign the token from the Exchange server.
 
 
-```
+```C#
     private JsonWebSecurityTokenHandler GetSecurityTokenHandler(string audience,
         string authMetadataEndpoint,
         X509Certificate2 currentCertificate)
@@ -420,7 +410,7 @@ The  **GetSecurityTokenHandler** method returns a WIF token handler that will va
 The  **GetSigningCertificate** method calls the **GetMetadataDocument** method to retrieve the authentication metadata from the Exchange server and then returns the first X.509 certificate in the authentication metadata document. If the document doesn't exist, the method throws an application exception.
 
 
-```
+```C#
     private X509Certificate2 GetSigningCertificate(Uri authMetadataEndpoint)
     {
       JsonAuthMetadataDocument document = GetMetadataDocument(authMetadataEndpoint);
@@ -446,7 +436,7 @@ The  **GetSigningCertificate** method calls the **GetMetadataDocument** method t
 The authentication metadata document contains the information that you need to validate the signature on the Exchange identity token. The document is sent as a JSON string. The  **GetMetatDataDocument** method requests the document from the location specified in the Exchange identity token and returns an object that encapsulates the JSON string as an object. If the URL does not contain an authentication metadata document, the method throws an application exception.
 
 
-```
+```C#
     private JsonAuthMetadataDocument GetMetadataDocument(Uri authMetadataEndpoint)
     {
       // Uncomment the next line if your Exchange server uses the default
@@ -541,7 +531,7 @@ The code examples in this article depend on a few utility objects that provide f
 The  **AuthClaimTypes** object collects the claim identifiers that are used by the token validation code into a single place. It includes both standard JWT claims as well as the specific claims in the Exchange identity token.
 
 
-```
+```C#
   public class AuthClaimTypes
   {
     public const string NameIdentifier =
@@ -579,7 +569,7 @@ The  **Config** object contains the constants that are used to validate the iden
  **Security Note**  The security certificate callback method is only required if your server uses the default self-signed certificate. The callback method in this example returns  **false** when the certificate is self-signed, so you'll need to replace it with a callback method that meets the security requirements of your organization. For an example of a certificate validation callback method that is suitable for development and testing, see [Validating X509 certificates](http://msdn.microsoft.com/en-us/library/dd633677%28EXCHG.80%29.aspx).
 
 
-```
+```C#
   public static class Config
   {
     public static string Algorithm = "RS256";
@@ -616,7 +606,7 @@ The  **Config** object contains the constants that are used to validate the iden
 The  **JsonAuthMetadataDocument** object exposes the contents of the authentication metadata document through properties.
 
 
-```
+```C#
 using System;
 
 namespace IdentityTest
