@@ -49,7 +49,7 @@ Fails if the specified  _id_ does not exist.
 
 
 
-```
+```js
 function displayBindingType() {
     Office.context.document.bindings.getByIdAsync('MyBinding', function (asyncResult) {
         write('Retrieved binding with type: ' + asyncResult.value.type + ' and id: ' + asyncResult.value.id);

@@ -23,7 +23,7 @@ The number of columns in the specified [MatrixBinding](../../reference/shared/bi
 
 
 
-```
+```js
 function showBindingColumnCount() {
     Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
         write("Column: " + asyncResult.value.columnCount);

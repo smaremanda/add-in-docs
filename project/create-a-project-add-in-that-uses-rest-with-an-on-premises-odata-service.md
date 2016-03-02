@@ -336,7 +336,7 @@ Office.initialize = function (reason) {
     
      >**Note**  If you run Visual Studio on the Project Server computer, to use  **F5** debugging, uncomment the code after the line that initializes the **_pwa** global variable. To enable using the jQuery **ajax** method when debugging on the Project Server computer, you must set the **localhost** value for the PWA URL.If you run Visual Studio on a remote computer, the  **localhost** URL is not required. Before you deploy the add-in, comment out that code.
 
-```
+```js
   function setOdataUrl() {
     Office.context.document.getProjectFieldAsync(
         Office.ProjectProjectFields.ProjectServerUrl,
@@ -400,7 +400,7 @@ function getDocumentUrl() {
     
 
 
-```
+```js
   /****************************************************************
 * Functions to get and parse the Project Server reporting data.
 *****************************************************************/
@@ -462,7 +462,7 @@ function getProjectDataErrorHandler(data, errorCode, errorMessage) {
     
 
 
-```
+```js
   // Calculate the average values of actual cost, cost, work, and percent complete   
 // for all projects, and compare with the values for the current project.
 function parseODataResult(oDataResult, currentProjectGuid) {
@@ -792,7 +792,7 @@ Even if your add-in is working correctly in the previous tests, there are other 
 
 
 
-```
+```js
 /* File: HelloProjectOData.js
 * JavaScript functions for the HelloProjectOData example task pane app.
 * October 2, 2012

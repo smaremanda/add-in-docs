@@ -4,7 +4,7 @@
 You can specify an enumerated value by using either its fully qualified enumeration name ( `Office.CoercionType.Text`) or its corresponding text value ( `"text"`). For example, the following method call uses enumeration names:
 
 
-```
+```js
 Office.context.document.getSelectedDataAsync(Office.CoercionType.Text, {valueFormat:Office.ValueFormat.Unformatted, filterType:Office.FilterType.All}, 
    function (result) {
       if (result.status === Office.AsyncResultStatus.Success)      
@@ -28,7 +28,7 @@ Here's the same call using the enumeration text values:
 
 
 
-```
+```js
 Office.context.document.getSelectedDataAsync("text", {valueFormat:"unformatted", filterType:"all"}, 
    function (result) {
       if (result.status === "success")      

@@ -67,7 +67,7 @@ For testing purposes, and to run your lab within labhost.html, you need to switc
 
 
 
-```
+```js
 
 Labs.DefaultHostBuilder = function () {
     if (window.location.href.indexOf("PostMessageLabHost") !== -1) {
@@ -121,7 +121,7 @@ Data in the  **ModeChangedEventData** object that is passed to the callback cont
 
 
 
-```
+```js
 Labs.on(Labs.Core.EventTypes.ModeChanged, (data) => {
     var modeChangedEvent = <Labs.Core.ModeChangedEventData> data;
     this.switchToMode(modeChangedEvent.mode);

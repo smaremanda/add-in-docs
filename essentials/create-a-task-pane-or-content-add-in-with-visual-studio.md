@@ -148,7 +148,7 @@ In the following procedures, we'll extend your Hello World add-in to access data
     
 3. Add an event handler  `$("#writeDataBtn").click` to the `$(document).ready` code to respond when a user clicks the **Write Data** button. The code should like the following.
     
-```js
+```jsjs
   // The initialize function must be run each time a new page is loaded 
 Office.initialize = function (reason) { 
    $(document).ready(function () { app.initialize();
@@ -163,7 +163,7 @@ Office.initialize = function (reason) {
 
 4. Add the following functions to the Home.js file.
     
-```
+```js
   function writeData() { 
     Office.context.document.setSelectedDataAsync("Hello World!", function (asyncResult) { 
         if (asyncResult.status === "failed") { 
@@ -194,7 +194,7 @@ function writeToPage(text) {
 
 7. Switch back to the code editor, and replace  `"Hello World!"` in the call to the **setSelectedDataAsync** method with `[["red"],["green"],["blue"]]` like this.
     
-```js
+```jsjs
   function writeData() { 
     Office.context.document.setSelectedDataAsync([["red"],["green"],["blue"]], function (asyncResult) { 
         if (asyncResult.status === "failed") { 
@@ -238,7 +238,7 @@ function writeToPage(text) {
     
 2. Add an event handler  `$("#readDataBtn").click` to the `$(document).ready` code to respond when a user clicks the **Read Selected Data** button. The code should like the following.
     
-```
+```js
   // The initialize function must be run each time a new page is loaded 
 Office.initialize = function (reason) { 
     $(document).ready(function () { 
@@ -256,7 +256,7 @@ Office.initialize = function (reason) {
 
 3. Add the following code to the Home.js file below the functions you added in the previous procedure.
     
-```js
+```jsjs
 function readData() { 
     Office.context.document.getSelectedDataAsync("matrix", function (asyncResult) { 
         if (asyncResult.status === "failed") { 
@@ -293,7 +293,7 @@ function readData() {
     
 2. Add event handlers  `$("#bindDataBtn").click` and `$("#readBoundDataBtn").click` to the `$(document).ready` code to respond when a user clicks the **Bind Selected Data** and **Read Bound Data** buttons. The code should like the following.
     
-```js
+```jsjs
   // The initialize function must be run each time a new page is loaded 
 Office.initialize = function (reason) { 
     $(document).ready(function () { 
@@ -317,7 +317,7 @@ Office.initialize = function (reason) {
 
 3. Add the following code to the Home.js file below the function you added in the previous procedure. 
     
-```js
+```jsjs
   function bindData() { 
     Office.context.document.bindings.addFromSelectionAsync("matrix", { id: 'myBinding' }, function (asyncResult) { 
         if (asyncResult.status === "failed") { 
@@ -335,7 +335,7 @@ Office.initialize = function (reason) {
     
 4. Add the following code to the Home.js file below the  `bindData ()` function.
     
-```js
+```jsjs
   function readBoundData() { 
     Office.select("bindings#myBinding").getDataAsync({ coercionType: "matrix" }, function (asyncResult) { 
         if (asyncResult.status === "failed") { 
@@ -385,7 +385,7 @@ Now let's add an event handler that will read and display the data in the bindin
 
 1. Add an event handler  `$("#addEventBtn").click` to the `$(document).ready` code to respond when a user clicks the **Add Event** button. The code should like the following.
     
-```js
+```jsjs
   // The initialize function must be run each time a new page is loaded 
 Office.initialize = function (reason) { 
     $(document).ready(function () { 
@@ -412,7 +412,7 @@ Office.initialize = function (reason) {
 
 2. Add the following code to the Home.js file below the functions you added in the previous procedure.
     
-```js
+```jsjs
   
 function addEvent() { 
     Office.select("bindings#myBinding").addHandlerAsync("bindingDataChanged", myHandler, function (asyncResult) { 

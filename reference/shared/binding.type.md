@@ -22,7 +22,7 @@ A [BindingType](../../reference/shared/bindingtype-enumeration.md).
 
 
 
-```
+```js
 Office.context.document.bindings.getByIdAsync("MyBinding", function (asyncResult) { 
     write(asyncResult.value.type); 
 }) 

@@ -185,7 +185,7 @@ function getApplicationDisplayLanguage() {
     
 
 
-```
+```js
   // Get the data in the selected cells of the grid in the active view.
 function getSelectedDataAsync() {
     _projDoc.getSelectedDataAsync(
@@ -943,7 +943,7 @@ For a simple example, the error output in the following code includes the  **act
 
 
 
-```
+```js
 function logError(errorText) {
     text.value = "Error in " + errorText;
 }
@@ -976,7 +976,7 @@ The following code in the SurfaceErrors.js file includes the  **throwError** fun
 
 
 
-```
+```js
 /*
  * Show error messages in a "toast" notification.
  */

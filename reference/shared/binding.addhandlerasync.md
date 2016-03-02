@@ -50,7 +50,7 @@ You can add multiple event handlers for the specified  _eventType_ as long as th
 The following code sample calls the [select](../../reference/shared/office.select.md) method of the **Office** object to access the binding with ID "MyBinding", and then calls the **addHandlerAsync** method to add a handler function for the [bindingDataChanged](../../reference/shared/binding.bindingdatachangedevent.md) event of that binding.
 
 
-```
+```js
 function addEventHandlerToBinding() {
     Office.select("bindings#MyBinding").addHandlerAsync(Office.EventType.BindingDataChanged, onBindingDataChanged);
 }

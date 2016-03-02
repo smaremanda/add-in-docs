@@ -91,7 +91,7 @@ If you specify the  `"table"` _coercionType_, the [TableData.rows](../../referen
 
 
 
-```
+```js
 function selectionChanged(evtArgs) { 
     Office.select("bindings#TableTranslate").getDataAsync({ coercionType: 'table', startRow: evtArgs.startRow, startCol: 0, rowCount: 1, columnCount: 1 },  
         function (result) { 
@@ -113,7 +113,7 @@ However, if you specify the  `"matrix"` _coercionType_,  `result.value` in the f
 
 
 
-```
+```js
 function selectionChanged(evtArgs) { 
     Office.select("bindings#TableTranslate").getDataAsync({ coercionType: 'matrix', startRow: evtArgs.startRow, startCol: 0, rowCount: 1, columnCount: 1 },  
         function (result) { 

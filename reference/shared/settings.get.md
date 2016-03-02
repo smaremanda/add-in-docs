@@ -33,7 +33,7 @@ An  **object** that has property names mapped to JSON serialized values.
 
 
 
-```
+```js
 function displayMySetting() {
     write('Current value for mySetting: ' + Office.context.document.settings.get('mySetting'));
 }

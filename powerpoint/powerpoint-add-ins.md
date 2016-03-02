@@ -33,7 +33,7 @@ The  `registerActiveViewChanged` function calls the [addHandlerAsync](http://msd
 
 
 
-```
+```js
 function registerActiveViewChanged() {
     Globals.activeViewHandler = function (args) {
         app.showNotification(JSON.stringify(args));
@@ -57,7 +57,7 @@ function registerActiveViewChanged() {
 The  `getFileUrl` function calls the [Document.getFileProperties](http://msdn.microsoft.com/library/2533a563-95ae-4d52-b2d5-a6783e4ef5b4%28Office.15%29.aspx) method to get the URL of the presentation file.
 
 
-```
+```js
 function getFileUrl() {
     //Get the URL of the current file.
     Office.context.document.getFilePropertiesAsync(function (asyncResult) {
@@ -78,7 +78,7 @@ function getFileUrl() {
 The  `getSelectedRange` function calls the [Document.getSelectedDataAsync](http://msdn.microsoft.com/library/f85ad02c-64f0-4b73-87f6-7f521b3afd69%28Office.15%29.aspx) method to get a JSON object returned by `asyncResult.value`, which contains an array named "slides" that contains the ids, titles, and indexes of selected range of slides (or just the current slide). It also saves the id of the first slide in the selected range to a global variable.
 
 
-```
+```js
 function getSelectedRange() {
     // Get the id, title, and index of the current slide (or selected slides) and store the first slide id */
     Globals.firstSlideId = 0;
@@ -100,7 +100,7 @@ The  `goToFirstSlide` function calls the [Document.goToByIdAsync](http://msdn.mi
 
 
 
-```
+```js
 function goToFirstSlide() {
     Office.context.document.goToByIdAsync(Globals.firstSlideId, Office.GoToType.Slide, function (asyncResult) {
         if (asyncResult.status == "failed") {
@@ -119,7 +119,7 @@ function goToFirstSlide() {
 The  `goToSlideByIndex` function calls the **Document.goToByIdAsync** method to navigate to the next slide in the presentation.
 
 
-```
+```js
 function goToSlideByIndex() {
     var goToFirst = Office.Index.First;
     var goToLast = Office.Index.Last;

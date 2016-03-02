@@ -41,7 +41,7 @@ The data in a  **RoamingSettings** object is stored as a serialized JavaScript O
 A mail add-in typically loads roaming settings in the [Office.initialize](http://msdn.microsoft.com/en-us/library/727adf79-a0b5-48d2-99c7-6642c2c334fc%28Office.15%29.aspx) event handler. The following JavaScript code example shows how to load existing roaming settings and get the values of 2 settings, "customerName" and "customerBalance":
 
 
-```
+```js
 var _mailbox;
 var _settings;
 var _customerName;
@@ -145,7 +145,7 @@ This example includes the following methods:
 
 
 
-```
+```js
 var _mailbox;
 var _customProps;
 

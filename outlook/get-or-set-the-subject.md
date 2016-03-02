@@ -96,7 +96,7 @@ To use  **item.subject.setAsync**, specify a string of up to 255 characters in t
 
 
 
-```
+```js
 var item;
 
 Office.initialize = function () {

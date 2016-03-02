@@ -104,7 +104,7 @@ The following is an example of an HTML file defining a trackMessage function.
 
 
 
-```
+```js
 Office.intialize = function () {
     doAuth();
 }

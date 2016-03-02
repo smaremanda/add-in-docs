@@ -50,7 +50,7 @@ You can add multiple event handlers for the specified  _eventType_ as long as th
 
 
 
-```
+```js
 function addNodeInsertedEvent() {
     Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
         var xmlPart = result.value;

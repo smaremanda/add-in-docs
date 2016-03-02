@@ -239,7 +239,7 @@ Office.initialize = function () {
 When the user clicks the  **Get Addresses** button, the `myGetAddresses` event handler obtains an array of addresses from the [addresses](http://dev.outlook.com/reference/add-ins/simple-types.html) property of the `_MyEntities` object, if any address was extracted. Each extracted address is stored as a string in the array. `myGetAddresses` forms a local HTML string in `htmlText` to display the list of extracted addresses. The following is the related JavaScript code.
 
 
-```
+```js
 // Gets instances of the Address entity on the item.
 function myGetAddresses()
 {
@@ -282,7 +282,7 @@ When the user clicks the  **Get Contact Information** button, the `myGetContacts
 
 
 
-```
+```js
 // Gets instances of the Contact entity on the item.
 function myGetContacts()
 {
@@ -351,7 +351,7 @@ function myGetContacts()
 When the user clicks the  **Get Email Addresses** button, the `myGetEmailAddresses` event handler obtains an array of SMTP email addresses from the [emailAddresses](http://dev.outlook.com/reference/add-ins/simple-types.html) property of the `_MyEntities` object, if any was extracted. Each extracted email address is stored as a string in the array. `myGetEmailAddresses` forms a local HTML string in `htmlText` to display the list of extracted email addresses. The following is the related JavaScript code.
 
 
-```
+```js
 // Gets instances of the EmailAddress entity on the item.
 function myGetEmailAddresses()
 {
@@ -590,7 +590,7 @@ function myGetTaskSuggestions()
 When the user clicks the  **Get URLs** button, the `myGetUrls` event handler obtains an array of URLs from the [urls](http://dev.outlook.com/reference/add-ins/simple-types.html) property of the `_MyEntities` object, if any was extracted. Each extracted URL is stored as a string in the array. `myGetUrls` forms a local HTML string in `htmlText` to display the list of extracted URLs.
 
 
-```
+```js
 // Gets instances of the URL entity on the item.
 function myGetUrls()
 {
@@ -615,7 +615,7 @@ function myGetUrls()
 Lastly, the entities add-in specifies a  `myClearEntitiesBox` event handler which clears any displayed strings. The following is the related code.
 
 
-```
+```js
 // Clears the div with id="entities_box".
 function myClearEntitiesBox()
 {

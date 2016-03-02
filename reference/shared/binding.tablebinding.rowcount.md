@@ -37,7 +37,7 @@ In content add-ins for Access, for performance reasons the  **rowCount** propert
 
 
 
-```
+```js
 function showBindingRowCount() {
     Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
         write("Rows: " + asyncResult.value.rowCount);

@@ -22,7 +22,7 @@ An  **[AsyncResultStatus](../../reference/shared/asyncresultstatus-enumeration.m
 
 
 
-```
+```js
 function getData() {
     Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
         if (asyncResult.status == Office.AsyncResultStatus.Failed) {
