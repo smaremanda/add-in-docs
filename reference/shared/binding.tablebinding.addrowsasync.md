@@ -74,7 +74,7 @@ The total number of cells in the value passed to the  _rows_ parameter can't exc
 
 
 
-```
+```js
 function addRowsToTable() {
     Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
         var binding = asyncResult.value;

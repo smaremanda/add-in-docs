@@ -35,7 +35,7 @@ If you specify  **null** for the **rows** property (or leave the property empty 
 The following example creates a single-column table with a header and three rows.
 
 
-```
+```js
 function createTableData() {
     var tableData = new Office.TableData();
     tableData.headers = [['header1']];

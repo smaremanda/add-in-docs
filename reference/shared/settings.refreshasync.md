@@ -50,7 +50,7 @@ The  **refreshAsync** method can be called from add-ins created for Excel, but s
 
 
 
-```
+```js
 function refreshSettings() {
     Office.context.document.settings.refreshAsync(function (asyncResult) {
         write('Settings refreshed with status: ' + asyncResult.status);

@@ -19,7 +19,7 @@ The  **getSelectedDataAsync** method only works against the user's current selec
 The following example shows how to get data from a selection in a document by using the [getSelectedDataAsync](http://msdn.microsoft.com/en-us/library/f85ad02c-64f0-4b73-87f6-7f521b3afd69%28Office.15%29.aspx) method.
 
 
-```
+```js
 Office.context.document.getSelectedDataAsync(Office.CoercionType.Text, function (asyncResult) {
     if (asyncResult.status == Office.AsyncResultStatus.Failed) {
         write('Action failed. Error: ' + asyncResult.error.message);
@@ -51,7 +51,7 @@ The [AsyncResult.status](http://msdn.microsoft.com/en-us/library/eec9c712-79eb-4
 The following example shows how to set the selection to show "Hello World!".
 
 
-```
+```js
 Office.context.document.setSelectedDataAsync("Hello World!", function (asyncResult) {
     if (asyncResult.status == Office.AsyncResultStatus.Failed) {
         write(asyncResult.error.message);

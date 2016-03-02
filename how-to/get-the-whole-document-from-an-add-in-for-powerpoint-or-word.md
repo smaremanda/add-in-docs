@@ -160,7 +160,7 @@ The following code example shows the event handler for the  **Office.initialize*
 
 
 
-```
+```js
 // The initialize function is required for all add-ins.
 Office.initialize = function (reason) {
     // Checks for the DOM to load using the jQuery ready function.
@@ -195,7 +195,7 @@ Use the following code to get the PowerPoint or Word document as a  **File** obj
 
 
 
-```
+```js
 
 // Get all of the content from a PowerPoint or Word document in 100-KB chunks of text.
 function sendFile() {
@@ -235,7 +235,7 @@ The  **Slice** object gives you access to the data contained in the file. Unless
 
 
 
-```
+```js
 
 // Get a slice from the file and then call sendSlice.
 function getSlice(state) {
@@ -269,7 +269,7 @@ Add the following code to send a slice to a web service.
 
 
 
-```
+```js
 
 function sendSlice(slice, state) {
     var data = slice.data;

@@ -22,7 +22,7 @@ Returns the user-defined item (which can be of any JavaScript type:  **String**,
 
 
 
-```
+```js
 function getDataWithContext() {
     var format = "Your data: ";
     Office.context.document.getSelectedDataAsync(Office.CoercionType.Text, { asyncContext: format }, showDataWithContext);

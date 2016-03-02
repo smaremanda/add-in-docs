@@ -253,7 +253,7 @@ Your Office Add-in can get the value of a single cell or the values of a collect
     
 
 
-```
+```js
   /// <reference path../../Scripts/App.js" />
 
 (function () {
@@ -354,7 +354,7 @@ Your Office Add-in can put data into any cell or collection of cells. The most b
 
 1. In the code editor, open the  **MyAddinPage.js** file, and then add this code.
     
-```
+```js
   function addTextToDocument() {
 
     var e = document.getElementById("input");
@@ -371,7 +371,7 @@ Your Office Add-in can put data into any cell or collection of cells. The most b
     
 2. Replace the  `initialize` function with this code.
     
-```
+```js
   Office.initialize = function (reason) {
         $(document).ready(function () {
 $('#get-text').click(getTextFromDocument);
@@ -415,7 +415,7 @@ So far, your Office Add-in requires the user to choose a button to get and set d
 
 1. In the code editor, open the  **MyAddinPage.js** file, and then replace the `initialize` function with this code.
     
-```
+```js
   Office.initialize = function (reason) {
         $(document).ready(function () {
 $('#get-text').click(getTextFromDocument);
@@ -433,7 +433,7 @@ $('#add-text').click(addTextToDocument);
     
 2. Add this code to the MyAddinPage.js file.
     
-```
+```js
   function updateApp()
 {
         getTextFromDocument();
@@ -470,7 +470,7 @@ The most advanced way to get and set data is to establish a binding with a cell 
 
 1. In the code editor, open the MyAddinPage.js file, and then add this code. This code establishes a binding to a cell that the user chooses. This code also defines a method to call when the data in the bound cell changes.
     
-```
+```js
   function addBindingFromSelection() {
     Office.context.document.bindings.addFromSelectionAsync(Office.BindingType.Text, { id: 'MyBinding' },
         function (asyncResult) {
@@ -497,7 +497,7 @@ function onBindingSelectionChanged(eventArgs) {
 
 2. Replace the  `initialize` function with this code.
     
-```
+```js
   Office.initialize = function (reason) {
         $(document).ready(function () {
 $('#get-text').click(getTextFromDocument);

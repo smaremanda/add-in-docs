@@ -43,7 +43,7 @@ In the callback function passed to the  **getAllAsync** method, you can use the 
 
 
 
-```
+```js
 function displayAllBindingNames() {
     Office.context.document.bindings.getAllAsync(function (asyncResult) {
         var bindingString = '';

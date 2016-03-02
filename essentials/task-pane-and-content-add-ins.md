@@ -49,7 +49,7 @@ For a summary of the JavaScript API for Office support available across Office h
 You can read or write to the user's current selection in a document, spreadsheet, or presentation. Depending on the host application for your add-in, you can specify the type of data structure to read or write as a parameter in the [getSelectedDataAsync](http://msdn.microsoft.com/library/f85ad02c-64f0-4b73-87f6-7f521b3afd69%28Office.15%29.aspx) and [setSelectedDataAsync](http://msdn.microsoft.com/library/998f38dc-83bd-4659-a759-4758c632a6ef%28Office.15%29.aspx) methods of the [Document](http://msdn.microsoft.com/library/f8859516-cc1f-4b20-a8f3-cee37a983e70%28Office.15%29.aspx) object. For example, you can specify any type of data (text, HTML, tabular data, or Office Open XML) for Word, text and tabular data for Excel, and text for PowerPoint and Project. You can also create event handlers to detect changes to the user's selection. The following example gets data from the selection as text using the **getSelectedDataAsync** method.
 
 
-```
+```js
 Office.context.document.getSelectedDataAsync(
     Office.CoercionType.Text, function (asyncResult) {
         if (asyncResult.status == Office.AsyncResultStatus.Failed) {
@@ -82,7 +82,7 @@ The following is an example that adds a binding to the currently selected text i
 
 
 
-```
+```js
 Office.context.document.bindings.addFromSelectionAsync(
     Office.BindingType.Text, { id: 'myBinding' }, function (asyncResult) {
     if (asyncResult.status == Office.AsyncResultStatus.Failed) {

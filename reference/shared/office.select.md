@@ -46,7 +46,7 @@ Supported formats: "bindings# _bindingId_", which returns a  **Binding** object 
 The following code example uses the  **select** method to retrieve a binding with the **id** " `cities`" from the  **Bindings** collection, and then calls the [addHandlerAsync](../../reference/shared/binding.addhandlerasync.md) method to add an event handler for the [dataChanged](../../reference/shared/binding.bindingdatachangedevent.md) event of the binding.
 
 
-```
+```js
 function addBindingDataChangedEventHandler() {
     Office.select("bindings#cities", function onError(){}).addHandlerAsync(Office.EventType.BindingDataChanged,
     function (eventArgs) {

@@ -65,7 +65,7 @@ The following summarizes the events involved in starting an Outlook add-in:
 One way to check that both the DOM and the runtime environment have finished loading is to use the jQuery [.ready()](http://api.jquery.com/ready/) function: `$(document).ready()`. For example, the following  **initialize** event handler function makes sure the DOM is first loaded before the code specific to initializing the add-in runs. Subsequently, the **initialize** event handler proceeds to use the [mailbox.item](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html) property to obtain the currently selected item in Outlook, and calls the main function of the add-in, `initDialer`.
 
 
-```
+```js
 Office.initialize = function () {
     // Checks for the DOM to load.
     $(document).ready(function () {
@@ -86,7 +86,7 @@ The phone dialer sample Outlook add-in shows a slightly different approach using
 
 
 
-```
+```js
 Office.initialize = function () {
 };
 ```

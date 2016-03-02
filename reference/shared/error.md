@@ -34,7 +34,7 @@ The  **Error** object is accessed from the [AsyncResult](../../reference/shared/
 The following example uses the  **setSelectedDataAsync** method to set the selected text to "Hello World!", and if that fails, displays the values of the **name** and **message** properties of the **Error** object.
 
 
-```
+```js
 function setText() {
 
     Office.context.document.setSelectedDataAsync("Hello World!", {},

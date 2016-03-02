@@ -93,7 +93,7 @@ The  `Office.context.mailbox.item.attachments` property contains a collection of
 
 
 
-```
+```js
     function makeServiceRequest() {
       // Format the attachment details for sending.
       for (var i = 0; i < mailbox.item.attachments.length; i++) {

@@ -71,7 +71,7 @@ No more than two documents are allowed to be in memory; otherwise the  **getFile
 The following example gets the document in Office Open XML ("compressed") format in 65536 bytes (64KB) slices. Note: The implementation of  `app.showNotification` in this example is from the Visual Studio template for Office Add-ins.
 
 
-```
+```js
 function getDocumentAsCompressed() {
     Office.context.document.getFileAsync(Office.FileType.Compressed, { sliceSize: 65536 /*64 KB*/ }, 
         function (result) {
@@ -143,7 +143,7 @@ function onGotAllSlices(docdataSlices) {
 The following example gets the document in PDF format.
 
 
-```
+```js
 Office.context.document.getFileAsync(Office.FileType.Pdf,
     function(result) {
         if (result.status == "succeeded") {

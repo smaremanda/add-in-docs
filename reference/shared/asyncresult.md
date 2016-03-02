@@ -34,7 +34,7 @@ The following is an example applicable to content and task pane add-ins. The exa
 
 
 
-```
+```js
 Office.context.document.getSelectedDataAsync("text", {valueFormat:"unformatted", filterType:"all"}, 
    function (result) {
       if (result.status === "success")      

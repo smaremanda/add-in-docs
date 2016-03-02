@@ -42,7 +42,7 @@ This callback function creates an  **XMLHttpRequest** object to call the web ser
 
 
 
-```
+```js
 function getUserIdentityTokenCallback(asyncResult) {
     var token = asyncResult.value;
 
@@ -66,7 +66,7 @@ function getUserIdentityTokenCallback(asyncResult) {
 This is another simple function that processes the response from the web service. It follows the standard pattern for  **XHMHttpResponse** callback functions. It waits for the entire response to come in from the web service and then puts the contents of the response on the add-in UI. The response that this function is parsing is the response from the web service. For information about this response, see [Validate an Exchange identity token](../outlook/validate-an-identity-token.md). 
 
 
-```
+```js
 function readyStateChange() {
     if (_xhr.readyState == 4 &amp;&amp; _xhr.status == 200) {
 
@@ -122,7 +122,7 @@ You'll also need the Identity Test web service. For information about that web s
 The following example shows the IdentityTest.js file.
 
 
-```
+```js
 var _mailbox;
 var _xhr;
 

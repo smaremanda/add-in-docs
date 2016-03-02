@@ -29,7 +29,7 @@ For Word, this property will work only for bindings of [BindingType](../../refer
 The following example adds an event handler for the [SelectionChanged](../../reference/shared/binding.bindingselectionchangedevent.md) event to the binding with an [id](../../reference/shared/binding.id.md) of `myTable`. When the user changes the selection, the handler displays the coordinates of the first cell in the selection, and the number of row and columns selected.
 
 
-```
+```js
 function addSelectionHandler() {
     Office.context.document.bindings.getByIdAsync("myTable", function (result) {
         result.value.addHandlerAsync("bindingSelectionChanged", myHandler);

@@ -51,7 +51,7 @@ The following example shows how to pass this anonymous callback function in line
 
 
 
-```
+```js
 Office.context.document.getSelectedDataAsync(Office.CoercionType.Text, 
     function (result) {
         write('Selected data: ' + result.value);
@@ -134,7 +134,7 @@ The following code example nests two asynchronous calls.
 
 
 
-```
+```js
 function readData() {
     Office.context.document.bindings.getByIdAsync("MyBinding", function (result) {
         result.value.getDataAsync({ coercionType: 'text' }, function (result2) {
@@ -159,7 +159,7 @@ The following sections show how to use either anonymous or named functions for n
 In the following example, two anonymous functions are declared inline and passed into the  **getByIdAsync** and **getDataAsync** methods as nested callbacks. Because the functions are simple and inline, the intent of the implementation is immediately clear.
 
 
-```
+```js
 Office.context.document.bindings.getByIdAsync('myBinding', function (bindingResult) {
     bindingResult.value.getDataAsync(function (getResult) {
         if (getResult.status == Office.AsyncResultStatus.Failed) {
@@ -182,7 +182,7 @@ function write(message){
 In complex implementations, it may be helpful to use named functions to make your code easier to read, maintain, and reuse. In the following example, the two anonymous functions from the example in the previous section have been rewritten as functions named  `deleteAllData` and `showResult`. These named functions are then passed into the  **getByIdAsync** and **deleteAllDataValuesAsync** methods as callbacks by name.
 
 
-```
+```js
 Office.context.document.bindings.getByIdAsync('myBinding', deleteAllData);
 
 function deleteAllData(asyncResult) {
@@ -222,7 +222,7 @@ The  _onError_ parameter is an error handling function which takes a single para
 
 
 
-```
+```js
 function onError(result){
     var err = result.error;
     write(err.name + ": " + err.message);
@@ -242,7 +242,7 @@ The following code example uses the  **select** method to retrieve a binding wit
 
 
 
-```
+```js
 function addBindingDataChangedEventHandler() {
     Office.select("bindings#cities", function onError(){/* error handling code */}).addHandlerAsync(Office.EventType.BindingDataChanged,
     function (eventArgs) {

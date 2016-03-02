@@ -163,7 +163,7 @@ Office.initialize = function (reason) {
 
 4. Add the following functions to the Home.js file.
     
-```
+```js
   function writeData() { 
     Office.context.document.setSelectedDataAsync("Hello World!", function (asyncResult) { 
         if (asyncResult.status === "failed") { 
@@ -238,7 +238,7 @@ function writeToPage(text) {
     
 2. Add an event handler  `$("#readDataBtn").click` to the `$(document).ready` code to respond when a user clicks the **Read Selected Data** button. The code should like the following.
     
-```
+```js
   // The initialize function must be run each time a new page is loaded 
 Office.initialize = function (reason) { 
     $(document).ready(function () { 

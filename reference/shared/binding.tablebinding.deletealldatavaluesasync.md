@@ -48,7 +48,7 @@ In Excel, if the table has no header row, this method will delete the table itse
 
 
 
-```
+```js
 function deleteAllRowsFromTable() {
     Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
         var binding = asyncResult.value;
