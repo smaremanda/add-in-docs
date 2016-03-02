@@ -5,7 +5,7 @@
 
 Indicates whether the lab is connected to the host.
 
-```
+```js
 function isConnected(): boolean
 ```
 

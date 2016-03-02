@@ -59,7 +59,7 @@ You don't instantiate the  **Document** object directly in your script. To call 
 The following example uses the  **getSelectedDataAsync** method of the **Document** object to retrieve the user's current selection as text, and then display it in the add-in's page.
 
 
-```
+```js
 
 // Display the user's current selection.
 function showSelection() {

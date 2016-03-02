@@ -49,7 +49,7 @@ The following example shows how to:
 -  **Call setTableOptions** on a previously bound table (with an **id** of `myBinding`) passing the object with formatting settin as the  _tableOptions_ parameter.
     
 
-```
+```js
 function updateTableFormatting(){
     var tableOptions = {bandedRows: true, filterButton: false, style: "TableStyleMedium3"}; 
 

@@ -124,7 +124,7 @@ You can also build a task pane add-in using [Visual Studio](http://msdn.microsof
     
 
 
-```
+```js
   function getDataFromSelection() {
         Office.context.document.getSelectedDataAsync(Office.CoercionType.Text,
             function (result) {
@@ -151,7 +151,7 @@ You can also build a task pane add-in using [Visual Studio](http://msdn.microsof
 
 In the Home.js file, add the following code. This code adds a function that shows images that relate to the selected text.
     
-```
+```js
   function showImages(selectedText) {
     
     $('#Images').empty();

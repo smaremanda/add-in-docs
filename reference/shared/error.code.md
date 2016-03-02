@@ -27,7 +27,7 @@ The  **Error** object and its properties are accessed from the [AsyncResult](../
 To cause an error to be thrown, select a table or a matrix, and then call the  `setText` function.
 
 
-```
+```js
 function setText() {
     Office.context.document.setSelectedDataAsync("Hello World!",
         function (asyncResult) {

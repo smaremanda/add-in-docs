@@ -164,7 +164,7 @@ You can optionally provide a callback method as an input argument to the  **setA
 
 
 
-```
+```js
 var item;
 
 Office.initialize = function () {
@@ -278,7 +278,7 @@ function write(message){
 If you do not want to overwrite any existing recipients in an appointment or message, instead of using  **Recipients.setAsync**, you can use the  **Recipients.addAsync** asynchronous method to append recipients. **addAsync** works similarly as **setAsync** in that it requires a _recipients_ input argument. You can optionally provide a callback method, and any arguments for the callback using the asyncContext parameter. You can then check the status, result, and any error of the asynchronous **addAsync** call by using the _asyncResult_ output parameter of the callback method. The following example checks if the item being composed is an appointment, and appends two required attendees to the appointment.
 
 
-```
+```js
 // Add specified recipients as required attendees of
 // the composed appointment. 
 function addAttendees() {

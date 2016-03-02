@@ -44,7 +44,7 @@ In the callback function passed to the  **getByNamespaceAsync** method, you can 
 
 
 
-```
+```js
 function showXMLPartsInNamespace() {
     Office.context.document.customXmlParts.getByNamespaceAsync("http://tempuri.org", function (eventArgs) {
         write("Found " + eventArgs.value.length + " parts with this namespace");

@@ -70,7 +70,7 @@ Overall the process may seem complex, but each individual step is quite simple. 
 The following code is a PHP library for validating an Exchange identity token.
 
 
-```
+```js
 <?php
 /*
 Exchange Identity Token Validator for Office Add-ins

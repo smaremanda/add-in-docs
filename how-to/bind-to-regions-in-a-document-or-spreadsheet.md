@@ -41,7 +41,7 @@ After a binding is created by using one of the three "addFrom" methods of the  *
 The following example shows how to add a text binding called  `myBinding` to the current selection in a document by using the [Bindings.addFromSelectionAsync](http://msdn.microsoft.com/en-us/library/edc99214-e63e-43f2-9392-97ead42fc155%28Office.15%29.aspx) method.
 
 
-```
+```js
 Office.context.document.bindings.addFromSelectionAsync(Office.BindingType.Text, { id: 'myBinding' }, function (asyncResult) {
     if (asyncResult.status == Office.AsyncResultStatus.Failed) {
         write('Action failed. Error: ' + asyncResult.error.message);
@@ -69,7 +69,7 @@ The anonymous function that is passed into the function as the final  _callback_
 The following example shows how to add a text binding called  `myBinding` by using the [Bindings.addFromPromptAsync](http://msdn.microsoft.com/en-us/library/9dc03608-b08b-4700-8be1-3c86ae236799%28Office.15%29.aspx) method, which is only supported in Excel 2013 and Excel Online. This method lets the user specify the range for the binding by using the application's built-in range selection prompt.
 
 
-```
+```js
 function bindFromPrompt() {
     Office.context.document.bindings.addFromPromptAsync(Office.BindingType.Text, { id: 'myBinding' }, function (asyncResult) {
         if (asyncResult.status == Office.AsyncResultStatus.Failed) {
@@ -106,7 +106,7 @@ Figure 1 shows the built-in range selection prompt in Excel.
 The following example shows how to add a binding to the existing  `myRange` named item as a "matrix" binding by using the [Bindings.addFromNamedItemAsync](http://msdn.microsoft.com/en-us/library/afbadac7-60c7-47cb-9477-6e9466ded44c%28Office.15%29.aspx) method, and assigns the binding's **id** as "myMatrix".
 
 
-```
+```js
 function bindNamedItem() {
     Office.context.document.bindings.addFromNamedItemAsync("myRange", "matrix", {id:'myMatrix'}, function (result) {
         if (result.status == 'succeeded'){
@@ -134,7 +134,7 @@ The following example creates a binding in Excel to the first three cells in col
 
 
 
-```
+```js
  function bindingFromA1Range() {
     Office.context.document.bindings.addFromNamedItemAsync("A1:A3", "matrix", {id: "MyCities" },
         function (asyncResult) {
@@ -167,7 +167,7 @@ The following example creates a text binding in Word to a rich text content cont
 
 
 
-```
+```js
 function bindContentControl() {
     Office.context.document.bindings.addFromNamedItemAsync('FirstName', 
         Office.BindingType.Text, {id:'firstName'},
@@ -193,7 +193,7 @@ function write(message){
 The following example shows how to get all bindings in a document by using the [Bindings.getAllAsync](http://msdn.microsoft.com/en-us/library/ef902b73-cc4c-4551-95de-d8a51eeba82f%28Office.15%29.aspx) method.
 
 
-```
+```js
 Office.context.document.bindings.getAllAsync(function (asyncResult) {
     var bindingString = '';
     for (var i in asyncResult.value) {
@@ -217,7 +217,7 @@ The anonymous function that is passed into the function as the  _callback_ param
 The following example shows how to use the [Bindings.getByIdAsync](http://msdn.microsoft.com/en-us/library/2727c891-bc05-465c-9324-113fbfeb3fbb%28Office.15%29.aspx) method to get a binding in a document by specifying its ID. This example assumes that a binding named `'myBinding'` was added to the document using one of the methods described earlier in this topic.
 
 
-```
+```js
 Office.context.document.bindings.getByIdAsync('myBinding', function (asyncResult) {
     if (asyncResult.status == Office.AsyncResultStatus.Failed) {
         write('Action failed. Error: ' + asyncResult.error.message);
@@ -244,7 +244,7 @@ The anonymous function that is passed into the function as the second  _callback
 The following example shows how to use the [Office.select](http://msdn.microsoft.com/en-us/library/23aeb136-da1f-4127-a798-99dc27bc4dae%28Office.15%29.aspx) method to get a **Binding** object promise in a document by specifying its ID in a selector string. It then calls the [Binding.getDataAsync](http://msdn.microsoft.com/en-us/library/5372ffd8-579d-4fcb-9e5b-e9a2128f3201%28Office.15%29.aspx) method to get data from the specified binding. This example assumes that a binding named `'myBinding'` was added to the document using one of the methods described earlier in this topic.
 
 
-```
+```js
 Office.select("bindings#myBinding", function onError(){}).getDataAsync(function (asyncResult) {
     if (asyncResult.status == Office.AsyncResultStatus.Failed) {
         write('Action failed. Error: ' + asyncResult.error.message);
@@ -269,7 +269,7 @@ function write(message){
 The following example shows how use the [Bindings.releaseByIdAsync](http://msdn.microsoft.com/en-us/library/ad285984-8b44-435d-9b84-f0ade570c896%28Office.15%29.aspx) method to release a binding in a document by specifying its ID.
 
 
-```
+```js
 Office.context.document.bindings.releaseByIdAsync('myBinding', function (asyncResult) {
     write('Released myBinding!');
 });
@@ -291,7 +291,7 @@ The anonymous function that is passed into the function as the second parameter 
 The following example shows how to use the [Binding.getDataAsync](http://msdn.microsoft.com/en-us/library/5372ffd8-579d-4fcb-9e5b-e9a2128f3201%28Office.15%29.aspx) method to get data from an existing binding.
 
 
-```
+```js
 myBinding.getDataAsync(function (asyncResult) {
     if (asyncResult.status == Office.AsyncResultStatus.Failed) {
         write('Action failed. Error: ' + asyncResult.error.message);
@@ -317,7 +317,7 @@ The anonymous function that is passed into the function is a callback that is ex
 The following example shows how to use the [Binding.setDataAsync](http://msdn.microsoft.com/en-us/library/6a59bb6d-40b6-4a95-9b98-d70d4616de09%28Office.15%29.aspx) method to set data in an existing binding.
 
 
-```
+```js
 myBinding.setDataAsync('Hello World!', function (asyncResult) { });
 ```
 
@@ -336,7 +336,7 @@ The anonymous function that is passed into the function is a callback that is ex
 The following example shows how to attach an event handler to the [DataChanged](http://msdn.microsoft.com/en-us/library/7b9ed4bf-3ce5-44eb-8548-2b081afd868d%28Office.15%29.aspx) event of a binding with an id of "MyBinding".
 
 
-```
+```js
 function addHandler() {
 Office.select("bindings#MyBinding").addHandlerAsync(
     Office.EventType.BindingDataChanged, dataChanged);

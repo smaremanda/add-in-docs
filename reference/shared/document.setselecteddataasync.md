@@ -133,7 +133,7 @@ In addition to the behaviors described for Excel above, the following limits app
     
 - The number of  _formatting groups_ passed to the _cellFormat_ parameter can't exceed 100. A single formatting group consists of a set of formatting applied to a specified range of cells. For example, the following call passes two formatting groups to _cellFormat_.
     
-```
+```js
   Office.context.document.setSelectedDataAsync(
     {cellFormat:[{cells: {row: 1}, format: {fontColor: "yellow"}}, 
         {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}]}, 
@@ -150,7 +150,7 @@ Inserted images are floating. The position  **imageLeft** and **imageTop** param
 The following example sets the selected text or cell to "Hello World!", and if that fails, displays the value of the [error.message](../../reference/shared/error.message.md) property.
 
 
-```
+```js
 function writeText() {
     Office.context.document.setSelectedDataAsync("Hello World!",
         function (asyncResult) {
@@ -174,7 +174,7 @@ Specifying the optional  _coercionType_ parameter lets you specify the kind of d
 
 
 
-```
+```js
 function writeMatrix() {
     Office.context.document.setSelectedDataAsync([["Red", "Rojo"], ["Green", "Verde"], ["Blue", "Azul"]], {coercionType: Office.CoercionType.Matrix}
         function (asyncResult) {
@@ -198,7 +198,7 @@ The following example writes data as a one column table with a header and four r
 
 
 
-```
+```js
 function writeTable() {
     // Build table.
     var myTable = new Office.TableData();
@@ -228,7 +228,7 @@ function write(message){
 
 
 
-```
+```js
 function writeHtmlData() {
     Office.context.document.setSelectedDataAsync("<b>Hello</b> World!", {coercionType: Office.CoercionType.Html}, function (asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Failed) {
@@ -248,7 +248,7 @@ In Word, PowerPoint, or Excel, if you want to write an image to the selection, y
 
 
 
-```
+```js
 function insertPictureAtSelection(base64EncodedImageStr) {
 
     Office.context.document.setSelectedDataAsync(base64EncodedImageStr, {

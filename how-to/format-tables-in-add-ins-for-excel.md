@@ -89,7 +89,7 @@ When setting formatting in Excel Online, the number of  _formatting groups_ pass
 
 
 
-```
+```js
 Office.context.document.setSelectedDataAsync(
     {cellFormat:[{cells: {row: 1}, format: {fontColor: "yellow"}}, 
         {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}]}, 
@@ -106,7 +106,7 @@ In this release, only the  **Document.setSelectedDataAsync** and **TableBinding.
 
 
 
-```
+```js
 Office.context.document.setSelectedDataAsync(tableData, 
     {tableOptions: {headerRow:false}, 
         cellFormat: [{cells: Office.Table.Headers, format: {fontColor: "yellow"}}]}, 
@@ -118,7 +118,7 @@ Office.context.document.setSelectedDataAsync(tableData,
 
 
 
-```
+```js
 Office.select("bindings#myBinding").setDataAsync(tableData, 
     {tableOptions: {headerRow:false}, 
         cellFormat: [{cells: Office.Table.Headers, format: {fontColor: "yellow"}}]}, 
@@ -139,7 +139,7 @@ When you set formatting with the  _cellFormat_ and _tableOptions_ optional param
 The [TableBinding.setFormatsAsync](http://msdn.microsoft.com/en-us/library/49712906-f582-4055-9ef8-6edde6e97679%28Office.15%29.aspx) method is only for updating cell formatting, such as width, height, font, background, and alignment. It takes _cellFormat_ as the required parameter:
 
 
-```
+```js
 Office.select("bindings#myBinding").setFormatsAsync(
     [{cells: {row: 1}, format: {fontColor: "yellow"}}, 
         {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}], 

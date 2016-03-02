@@ -23,7 +23,7 @@ The number of rows in the specified [MatrixBinding](../../reference/shared/bindi
 
 
 
-```
+```js
 function showBindingRowCount() {
     Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
         write("Rows: " + asyncResult.value.rowCount);

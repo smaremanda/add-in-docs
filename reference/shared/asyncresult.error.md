@@ -22,7 +22,7 @@ An  **[Error](../../reference/shared/error.md)** object.
 
 
 
-```
+```js
 function getData() {
     Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
         if (asyncResult.status == Office.AsyncResultStatus.Failed) {

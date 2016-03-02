@@ -79,7 +79,7 @@ Office.context.document.settings.set('themeColor', 'green');
 The following example shows how use the [Settings.get](http://msdn.microsoft.com/en-us/library/aeac06dd-994e-4235-b208-1bd117395296%28Office.15%29.aspx) method to get the value of a setting called "themeColor". The only parameter of the **get** method is the case-sensitive _name_ of the setting.
 
 
-```
+```js
 write('Current value for mySetting: ' + Office.context.document.settings.get('themeColor'));
 
 // Function that writes to a div with id='message' on the page.
@@ -108,7 +108,7 @@ Nothing will happen if the setting does not exist. Use the  **Settings.saveAsync
 To save any additions, changes, or deletions your add-in made to the in-memory copy of the settings property bag during the current session, you must call the [Settings.saveAsync](http://msdn.microsoft.com/en-us/library/7147c221-937c-477c-98a6-f59d6200c27b%28Office.15%29.aspx) method to store them in the document. The only parameter of the **saveAsync** method is _callback_, which is a callback function with a single parameter. 
 
 
-```
+```js
 Office.context.document.settings.saveAsync(function (asyncResult) {
     if (asyncResult.status == Office.AsyncResultStatus.Failed) {
         write('Settings save failed. Error: ' + asyncResult.error.message);
