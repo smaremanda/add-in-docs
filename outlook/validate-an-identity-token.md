@@ -13,7 +13,7 @@ We suggest that you use a four-step process to validate the identity token and o
 You can download the solution that contains these examples from the web at  [Outlook-Add-in-JavaScript-ValidateIdentityToken](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-ValidateIdentityToken).
  
 
-![Related code snippets and sample apps](../images/mod_icon_links_samples.png)[Utility objects](#utilityobjects)
+
 
 
 ## Set up to validate your identity token
