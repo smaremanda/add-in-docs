@@ -13,7 +13,7 @@ The callback that the add-in invokes to let Outlook know that the operation is d
 
 
 
-```
+```js
 event.completed();
 ```
 
