@@ -26,7 +26,7 @@ You can specify data specific to a user's Exchange mailbox using the [RoamingSet
 The data in a  **RoamingSettings** object is stored as a serialized JavaScript Object Notation (JSON) string. The following is an example of the structure, assuming there are three defined roaming settings named `add-in_setting_name_0`,  `add-in_setting_name_1`, and  `add-in_setting_name_2`.
 
 
-```
+```js
 {
   "add-in_setting_name_0":"add-in_setting_value_0",
   "add-in_setting_name_1":"add-in_setting_value_1",
@@ -65,7 +65,7 @@ Office.initialize = function () {
 Continuing with the preceding example, the following JavaScript function,  `setAddInSetting`, shows how to use the [RoamingSettings.set](https://dev.outlook.com/reference/add-ins/RoamingSettings.html) method to set a setting named `cookie` with today's date, and persist the data by using the [RoamingSettings.saveAsync](https://dev.outlook.com/reference/add-ins/RoamingSettings.html) method to save all the roaming settings back to the server. The **set** method creates the setting if the setting does not already exist, and assigns the setting to the specified value. The **saveAsync** method saves roaming settings asynchronously. This code sample passes a callback method, `saveMyAddInSettingsCallback`, to  **saveAsync**. When the asynchronous call finishes,  `saveMyAddInSettingsCallback` is called by using one parameter, _asyncResult_. This parameter is an [AsyncResult](https://dev.outlook.com/reference/add-ins/simple-types.html) object that contains the result of and any details about the asynchronous call. You can use the optional _userContext_ parameter to pass any state information from the asynchronous call to the callback function.
 
 
-```
+```js
 // Set a roaming setting.
 function setAddInSetting() {
   _settings.set("cookie", Date());
@@ -90,7 +90,7 @@ function saveMyAddInSettingsCallback(asyncResult) {
 Also extending the preceding examples, the following JavaScript function,  `removeAddInSetting`, shows how to use the [RoamingSettings.remove](https://dev.outlook.com/reference/add-ins/RoamingSettings.html) method to remove the `cookie` setting and save all the roaming settings back to the Exchange Server.
 
 
-```
+```js
 // Remove an add-in setting.
 function removeAddInSetting()
 {
