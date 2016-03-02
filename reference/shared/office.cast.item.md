@@ -14,7 +14,7 @@ Provides IntelliSense specific to compose or read mode messages and appointments
 |:-----|:-----|
 |**Applicable Outlook modes**|Design time in Visual Studio only|
 
-```
+```js
 Office.cast.item.toAppointmentCompose(Office.context.mailbox.item);
 ```
 
