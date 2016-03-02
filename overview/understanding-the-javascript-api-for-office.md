@@ -37,7 +37,7 @@ The JavaScript API for Office provides the [Office](http://msdn.microsoft.com/li
 
 
 
-```js
+```
 Office.initialize = function () {
 };
 ```

@@ -67,7 +67,7 @@ The following example shows how to:
 
 
 
-```js
+```
 function gotoBinding() {
     //Create a new table binding for the selected table.
     Office.context.document.bindings.addFromSelectionAsync("table",{ id: "MyTableBinding" }, function (asyncResult) {
@@ -107,7 +107,7 @@ The following example shows how to:
 
 
 
-```js
+```
 function goToTable() {
     Office.context.document.goToByIdAsync("Table1", Office.GoToType.NamedItem, function (asyncResult) {
         if (asyncResult.status == "failed") {
@@ -138,7 +138,7 @@ The following example shows how to:
 
 
 
-```js
+```
 var firstSlideId = 0;
 function gotoSelectedSlide() {
     //Get currently selected slide's id
@@ -179,7 +179,7 @@ The following example shows how to:
 
 
 
-```js
+```
 function goToSlideByIndex() {
     var goToFirst = Office.Index.First;
     var goToLast = Office.Index.Last;

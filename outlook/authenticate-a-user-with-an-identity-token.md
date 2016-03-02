@@ -164,7 +164,7 @@ The following code example shows a simple authentication object that matches the
 If you are using the managed library to validate identity tokens, you do not need to compute the unique key. The  **UniqueUserIdentification** property on the **AppIdentityToken** class can be used directly as the unique key for the user. The following code example shows the modifications to the **GetResponseFromService** method in the previous example that you need to make to use the **AppIdentityToken** class.
 
 
-```js
+```
         public JsonResponse GetResponseFromService(AppIdentityToken token, LocalCredentials credentials, object data)
         {
             JsonResponse response = null;

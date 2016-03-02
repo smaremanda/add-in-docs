@@ -65,7 +65,7 @@ The total number of cells in the  **TableData** object passed to the _data_ para
 The following example adds a single column with three rows to a bound table with the [id](../../reference/shared/binding.id.md) `"myTable"` by passing a **TableData** object as the _data_ argument of the **addColumnsAsync** method. To succeed, the table being updated must have three rows.
 
 
-```js
+```
 // Add a column to a binding of type table by passing a TableData object.
 function addColumns() {
     var myTable = new Office.TableData();
@@ -83,7 +83,7 @@ The following example adds a single column with three rows to a bound table with
 
 
 
-```js
+```
 // Add a column to a binding of type table by passing an array of arrays.
 function addColumns() {
     var myTable = [["Berlin"], ["Roma"], ["Tokyo"]];

@@ -63,7 +63,7 @@ By default, a content control has no  **Title** value assigned. To assign a mean
 The following example adds a binding to the  `myRange` named item in Excel as a "matrix" binding, and assigns the binding's [id](../../reference/shared/binding.id.md) as `myMatrix`.
 
 
-```js
+```
 function bindNamedItem() {
     Office.context.document.bindings.addFromNamedItemAsync("myRange", "matrix", {id:'myMatrix'}, function (result) {
         if (result.status == 'succeeded'){
@@ -85,7 +85,7 @@ The following example adds a binding to the  `Table1` named item in Excel as a "
 
 
 
-```js
+```
 function bindNamedItem() {
     Office.context.document.bindings.addFromNamedItemAsync("Table1", "table", {id:'myTable'}, function (result) {
         if (result.status == 'succeeded'){
@@ -107,7 +107,7 @@ The following example creates a text binding in Word to a rich text content cont
 
 
 
-```js
+```
 function bindContentControl() {
     Office.context.document.bindings.addFromNamedItemAsync('FirstName', 
         Office.BindingType.Text, {id:'firstName'},

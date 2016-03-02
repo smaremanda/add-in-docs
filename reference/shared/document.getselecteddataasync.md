@@ -99,7 +99,7 @@ To read the value of the current selection, you need to write a callback functio
 -  **Display the value** on the add-in's page.
     
 
-```js
+```
 function getText() {
     Office.context.document.getSelectedDataAsync(Office.CoercionType.Text, 
         { valueFormat: "unformatted", filterType: "all" },

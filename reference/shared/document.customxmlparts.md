@@ -22,7 +22,7 @@ A [CustomXmlParts](../../reference/shared/customxmlparts.customxmlparts.md) obje
 
 
 
-```js
+```
 function getCustomXmlParts(){
     Office.context.document.customXmlParts.getByNamespaceAsync('http://tempuri.org', function (asyncResult) {
         write('Retrieved ' + asyncResult.value.length + ' custom XML parts');

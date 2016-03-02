@@ -22,7 +22,7 @@ A [Bindings](../../reference/shared/bindings.bindings.md) object.
 
 
 
-```js
+```
 function displayAllBindings() {
     Office.context.document.bindings.getAllAsync(function (asyncResult) {
         var bindingString = '';

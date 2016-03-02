@@ -159,7 +159,7 @@ function removeAttachment(ID) {
 If your compose add-in adds and removes attachments, structure your code such that you pass a valid attachment ID to the remove-attachment call, and handle the case when  **AsyncResult.error** returns **InvalidAttachmentId**. Depending on the location and size of an attachment, attaching a file or item can take some time to complete. The following example contains a call to  **addFileAttachmentAsync**,  `write`, and  **removeAttachmentAsync**. You might think that the calls would execute sequentially one after another.
 
 
-```js
+```
 var attachmentURI = "https://webserver/picture.png";
 var attachmentID;
 
@@ -225,7 +225,7 @@ One way to avoid this is to check that  `attachmentID` is defined before calling
 
 
 
-```js
+```
 var attachmentURI = "https://webserver/picture.png";
 var attachmentID;
 

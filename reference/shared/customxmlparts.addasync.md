@@ -44,7 +44,7 @@ In the callback function passed to the  **addAsync** method, you can use the pro
 
 
 
-```js
+```
 function addXMLPart() {
     Office.context.document.customXmlParts.addAsync('<root categoryId="1" xmlns="http://tempuri.org"><item name="Cheap Item" price="$193.95"/><item name="Expensive Item" price="$931.88"/></root>', function (result) {
         });

@@ -49,7 +49,7 @@ Fails if the specified  _id_ does not exist.
 
 
 
-```js
+```
 Office.context.document.bindings.releaseByIdAsync("MyBinding", function (asyncResult) { 
     write("Released MyBinding!"); 
 }); 

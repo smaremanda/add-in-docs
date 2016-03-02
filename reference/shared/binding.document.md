@@ -22,7 +22,7 @@ A [Document](../../reference/shared/document.md) object.
 
 
 
-```js
+```
 Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
     write(asyncResult.value.document.url);
 });

@@ -52,7 +52,7 @@ In the callback function passed to the  **getByIdAsync** method, you can use the
 
 
 
-```js
+```
 function showXMLPartInnerXML() {
     Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
         var xmlPart = result.value;

@@ -23,7 +23,7 @@ If the specified [TableBinding](../../reference/shared/binding.tablebinding.tabl
 
 
 
-```js
+```
 function showBindingHasHeaders() {
     Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
         write("Binding has headers: " + asyncResult.value.hasHeaders);

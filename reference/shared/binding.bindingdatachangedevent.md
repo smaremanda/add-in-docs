@@ -22,7 +22,7 @@ To add an event handler for the  **BindingDataChanged** event of a binding, use 
 
 
 
-```js
+```
 function addEventHandlerToBinding() {
     Office.select("bindings#MyBinding").addHandlerAsync(Office.EventType.BindingDataChanged, onBindingDataChanged);
 }

@@ -192,7 +192,7 @@ Multiple matches are stored as array elements in that object. The following code
 
 
 
-```js
+```
 function initDialer() 
 {
     var myEntities;

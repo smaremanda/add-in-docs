@@ -221,7 +221,7 @@ In this function, notice that all but the last line are used to get your saved m
 
 
 
-```js
+```
 function writeContent() {
     var myOOXMLRequest = new XMLHttpRequest();
     var myXML;
@@ -503,7 +503,7 @@ As you examine the JavaScript that follows, consider these requirements:
 - You can have several named controls and bind to them as needed. Use a unique content control name, unique content control ID, and a unique binding ID.
     
 
-```js
+```
 function addAndBindControl() {
         Office.context.document.bindings.addFromNamedItemAsync("MyContentControlTitle", "text", { id: 'myBinding' }, function (result) {
             if (result.status == "failed") {
@@ -549,7 +549,7 @@ In the document part named webExtensions1.xml, you'll see a list of the bindings
 The code for writing content to a binding is similar to that for writing content to a selection.
 
 
-```js
+```
 function populateBinding(filename) {
         var myOOXMLRequest = new XMLHttpRequest();
         var myXML;

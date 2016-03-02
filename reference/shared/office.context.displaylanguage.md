@@ -29,7 +29,7 @@ In content add-ins for Access web apps, the  **displayLanguage** property gets t
 
 
 
-```js
+```
 function sayHelloWithDisplayLanguage() {
     var myDisplayLanguage = Office.context.displayLanguage;
     switch (myDisplayLanguage) {

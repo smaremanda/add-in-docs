@@ -99,7 +99,7 @@ Additionally, these application-specific actions apply when writing data to a bi
     
 - The number of  _formatting groups_ passed to the _cellFormat_ parameter can't exceed 100. A single formatting group consists of a set of formatting applied to a specified range of cells. For example, the following call passes two formatting groups to _cellFormat_.
     
-```js
+```
   Office.select("bindings#myBinding).setDataAsync([['Berlin'],['Munich'],['Duisburg']],
     {cellFormat:[{cells: {row: 1}, format: {fontColor: "yellow"}}, 
         {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}]}, 
@@ -117,7 +117,7 @@ The  **setDataAsync** method will write data in a subset of a table or matrix bi
 
 
 
-```js
+```
 function setBindingData() {
     Office.select("bindings#MyBinding").setDataAsync('Hello World!', function (asyncResult) { });
 }
@@ -129,7 +129,7 @@ Specifying the optional  _coercionType_ parameter lets you specify the kind of d
 
 
 
-```js
+```
 function writeHtmlData() {
     Office.select("bindings#myBinding").setDataAsync("<b>Hello</b> World!", {coercionType: "html"}, function (asyncResult) {
         if (asyncResult.status == "failed") {
@@ -149,7 +149,7 @@ In this example, the call to  **setDataAsync** passes the _data_ parameter as an
 
 
 
-```js
+```
 function writeBoundDataMatrix() {
     Office.select("bindings#myBinding").setDataAsync([['Berlin'],['Munich'],['Duisburg']],{ coercionType: "matrix" }, function (asyncResult) {
         if (asyncResult.status == "failed") {
@@ -172,7 +172,7 @@ In the  `updateTableData` function, the call to **setDataAsync** again passes th
 
 
 
-```js
+```
 function writeBoundDataTable() {
     // Create a TableData object.
     var myTable = new Office.TableData();

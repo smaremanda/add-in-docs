@@ -70,7 +70,7 @@ The example assumes your add-in has a reference to the jQuery library and that t
 
 
 
-```js
+```
 (function () {
     "use strict";
 

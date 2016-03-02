@@ -22,7 +22,7 @@ A string which uniquely identifies this binding among the bindings in the same [
 
 
 
-```js
+```
 Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
     write(asyncResult.value.id);
 });

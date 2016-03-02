@@ -56,7 +56,7 @@ To read the URL of the current file, you need to write a callback function that 
 -  **Display the value** on the add-in's page.
     
 
-```js
+```
 function getFileUrl() {
     //Get the URL of the current file.
     Office.context.document.getFilePropertiesAsync(function (asyncResult) {

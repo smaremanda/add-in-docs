@@ -55,7 +55,7 @@ Adds a binding object of the specified type to the [Bindings](../../reference/sh
 
 
 
-```js
+```
 function addBindingFromPrompt() {
 
     Office.context.document.bindings.addFromPromptAsync(Office.BindingType.Text, { id: 'MyBinding', promptText: 'Select text to bind to.' }, function (asyncResult) {

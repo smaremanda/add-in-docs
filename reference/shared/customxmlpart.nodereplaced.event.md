@@ -23,7 +23,7 @@ To add an event handler for the  **nodeInserted** event, use the [addHandlerAsyn
 
 
 
-```js
+```
 function addNodeReplacedEvent() {
     Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
         var xmlPart = result.value;

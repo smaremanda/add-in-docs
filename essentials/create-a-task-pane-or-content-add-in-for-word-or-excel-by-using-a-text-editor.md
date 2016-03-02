@@ -204,7 +204,7 @@ The next set of steps will show you how to add some basic programming logic to t
     
      >**Note**  [Office.initialize](http://msdn.microsoft.com/en-us/library/727adf79-a0b5-48d2-99c7-6642c2c334fc%28Office.15%29.aspx) must be initialized as a function at the beginning of the code file so that the [Office.context](http://msdn.microsoft.com/en-us/library/6c4b2c16-d4fb-4ecf-b72c-1e33b205daaf%28Office.15%29.aspx) property will be available when called from the functions that follow.
 
-```js
+```
   // The initialize function is required for all add-ins.
 Office.initialize = function (reason) {
     // Checks for the DOM to load using the jQuery ready function.

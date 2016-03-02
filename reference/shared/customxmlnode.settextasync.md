@@ -43,7 +43,7 @@ In the callback function passed to the  **setTextAsync** method, you can use the
 Learn how to set the text value of a node in a custom XML part.
 
 
-```js
+```
 // Get the built-in core properties XML part by using its ID. This results in a call to Word.
 Office.context.document.customXmlParts.getByIdAsync("{6C3C8BC8-F283-45AE-878A-BAB7291924A1}", function (getByIdAsyncResult) {
     

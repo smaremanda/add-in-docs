@@ -30,7 +30,7 @@ You access the  **AsyncResult** object in the function passed as the argument to
 
 
 
-```js
+```
 function getData() {
     Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
         if (asyncResult.status == Office.AsyncResultStatus.Failed) {

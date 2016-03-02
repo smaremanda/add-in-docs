@@ -83,7 +83,7 @@ After you have set the lab configuration, you are ready to begin interacting wit
 You interact with the lab using the [Labs.LabInstance](../../reference/office-mix/labs.labinstance.md) object, which is an instance of the configured lab for the current user. To run (or "take") the lab, call the [Labs.takeLab](../../reference/office-mix/labs.takelab.md) function.
 
 
-```js
+```
 Labs.takeLab((err, labInstance) => {
     this._labInstance = labInstance;
     var activityComponentInstance = <Labs.Components.ActivityComponentInstance> this._labInstance.components[0];
@@ -139,7 +139,7 @@ You can retrieve the results for all the attempts associated with a given compon
 
 
 
-```js
+```
 var attemptsDeferred = $.Deferred();
 activityComponentInstance.getAttempts(createCallback(attemptsDeferred));
 var attemptP = attemptsDeferred.promise().then((attempts) => {

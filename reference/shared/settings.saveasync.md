@@ -53,7 +53,7 @@ The [refreshAsync](../../reference/shared/settings.refreshasync.md) method is on
 
 
 
-```js
+```
 function persistSettings() {
     Office.context.document.settings.saveAsync(function (asyncResult) {
         write('Settings saved with status: ' + asyncResult.status);

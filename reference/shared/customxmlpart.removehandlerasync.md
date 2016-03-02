@@ -50,7 +50,7 @@ If the optional  _handler_ parameter is omitted when calling the **removeHandler
 
 
 
-```js
+```
 function removeNodeInsertedEventHandler() {
     Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", 
         function (result) {

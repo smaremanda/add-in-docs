@@ -63,7 +63,7 @@ PropertyType="String"/>
     
 
 
-```js
+```
   var mailbox = Office.context.mailbox;
 mailbox.makeEwsRequestAsync(mailbox.item.itemId), function(result) {
     var response = $.parseXML(result.value);
@@ -75,7 +75,7 @@ mailbox.makeEwsRequestAsync(mailbox.item.itemId), function(result) {
     
 
 
-```js
+```
   var mailbox = Office.context.mailbox;
 mailbox.makeEwsRequestAsync(mailbox.item.itemId), function(result) {
     var response = $.parseXML(result.value);
@@ -105,7 +105,7 @@ The following example calls  **makeEwsRequestAsync** to use the [GetItem](http:/
 -  `callback` -- Processes the SOAP response which includes any subject and other information about the specified item.
     
 
-```js
+```
 function getSubjectRequest(id) {
    // Return a GetItem operation request for the subject of the specified item. 
    var result = 

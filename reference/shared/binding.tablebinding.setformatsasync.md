@@ -113,7 +113,7 @@ The following example shows a  _cellFormat_ value that sets the font color of th
 
 
 
-```js
+```
 Office.select("bindings#myBinding).setFormatsAsync(
     [{cells: Office.Table.Headers, format: {fontColor: "red"}}], 
     function (asyncResult){});
@@ -126,7 +126,7 @@ The  **setFormatsAsync** method can support formatting multiple targets within t
 
 
 
-```js
+```
 Office.select("bindings#myBinding).setFormatsAsync(
     [{cells: {row: 1}, format: {fontColor: "yellow"}}, 
         {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}], 
@@ -151,7 +151,7 @@ The number of  _formatting groups_ passed to the _cellFormat_ parameter can't ex
 
 
 
-```js
+```
 Office.select("bindings#myBinding).setFormatsAsync(
     [{cells: {row: 1}, format: {fontColor: "yellow"}}, 
         {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}], 
