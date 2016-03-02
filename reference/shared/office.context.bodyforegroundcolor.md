@@ -20,7 +20,7 @@ var bodyForegroundColor = Office.context.officeTheme.bodyForegroundColor;
 
 ## Return value
 
-A hex color triplet
+A hex color triplet.
 
 
 ## Remarks
