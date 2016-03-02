@@ -38,7 +38,7 @@ The following figure shows the flow of events involved in starting an Outlook ad
 
 ![Flow of events when starting Outlook add-in](../images/olowawecon15_LoadingDOMAgaveRuntime.png)
 
-The events occur when an Outlook add-in starts: 
+The following events occur when an Outlook add-in starts: 
 
 
 
