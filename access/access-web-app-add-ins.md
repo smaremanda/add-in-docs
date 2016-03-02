@@ -1,6 +1,5 @@
 
 # Create add-ins for Access web apps
-Create an Office Add-in that extends Access web apps with custom HTML and JavaScript.
 
  _**Applies to:** Access apps for SharePoint | apps for Office | Office Add-ins_
 
