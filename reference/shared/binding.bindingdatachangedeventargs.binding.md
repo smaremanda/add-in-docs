@@ -7,7 +7,7 @@ Gets a  **Binding** object that represents the binding that raised the [DataChan
 |**Hosts:**|Access, Excel, Word|
 |**Last changed in BindingEvents**|1.1|
 
-```
+```js
 var myBinding = eventArgsObj.binding;
 ```
 
@@ -42,12 +42,6 @@ For more information about Office host application and server requirements, see 
 |**Namespace**|Office|
 
 ## Support history
-
-
-
-
-
-****
 
 
 |**Version**|**Changes**|
