@@ -17,12 +17,17 @@ Office.context.document.getMaxResourceIndexAsync([options][, callback]);
 ## Parameters
 
 
--  _options_The following [optional parameter](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters):
+*  _options_ The following [optional parameter](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters):
     
-||
-|:-----|
-|<dl class="authored" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><dt><span class="parameter" sdata="paramReference">asyncContext</span></dt><dd><p>Type: <span class="keyword">array</span>, <span class="keyword">boolean</span>, <span class="keyword">null</span>, <span class="keyword">number</span>, <b>object</b> , <span class="keyword">string</span>, or <span class="keyword">undefined</span></p><p>A user-defined item of any type that is returned in the <a href="540c114f-0398-425c-baf3-7363f2f6bc47.htm">AsyncResult</a> object without being altered. Optional.</p><p>For example, you can pass the <span class="parameter" sdata="paramReference">asyncContext</span> argument by using the format <span class="code">{asyncContext: 'Some text'}</span> or <span class="code">{asyncContext: <object>}</span>.</p></dd></dl>|
--  _callback_Type:  **function**
+  * asyncContext
+
+    Type: **array**, **boolean**, **null**, **number**, **object**, **string**, or **undefined**
+
+    A user-defined item of any type that is returned in the [AsyncResult](../../reference/shared/asyncresult.md) object without being altered. Optional.
+
+    For example, you can pass the _asyncContext_ argument by using the format `{asyncContext: 'Some text'}` or `{asyncContext: <object>}`.
+
+*  _callback_ Type:  **function**
     
     A function that is invoked when the method call returns, where the only parameter is of type [AsyncResult](../../reference/shared/asyncresult.md). Optional.
     
@@ -177,5 +182,7 @@ For more information about Office host application and server requirements, see 
 
 
 [getResourceByIndexAsync](../../reference/shared/projectdocument.getresourcebyindexasync.md)
+
 [AsyncResult object](../../reference/shared/asyncresult.md)
+
 [ProjectDocument object](../../reference/shared/projectdocument.projectdocument.md)
