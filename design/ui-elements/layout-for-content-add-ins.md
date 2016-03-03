@@ -12,7 +12,7 @@ Create a consistent look and feel for your content add-ins by using the recommen
 - Add-in content
 - Branding element (optional)
 
-![Layout of a content add-in, content and a command bar](images/layouts_content_v0.02.png)
+![Layout of a content add-in, content and a command bar](../../images/layouts_content_v0.02.png)
 
 You can also add [custom HTML-based UI](UIElements.md#custom-HTML-based-UI) to your content add-in.
 
