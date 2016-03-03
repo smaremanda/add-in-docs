@@ -14,7 +14,7 @@ var isTouchEnabled = Office.context.touchEnabled;
 
 ## Return value
 
- ****Returns  **True** if the add-in is running on a touch device, such as an iPad; otherwise returns **False**.
+Returns **True** if the add-in is running on a touch device, such as an iPad; otherwise returns **False**.
 
 
 ## Remarks
