@@ -8,7 +8,7 @@ Persists the in-memory copy of the settings property bag in the document.
 |**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|Settings|
 |**Last changed in**|1.1|
 
-```
+```js
 Office.context.document.settings.saveAsync(callback);
 ```
 
@@ -16,9 +16,10 @@ Office.context.document.settings.saveAsync(callback);
 ## Parameters
 
 
--  _callback_Type:  **object**
-    
-    A function that is invoked when the callback returns, whose only parameter is of type  **AsyncResult**. Optional.
+_callback_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Type:  **object**
+
+&nbsp;&nbsp;&nbsp;&nbsp;A function that is invoked when the callback returns, whose only parameter is of type  **AsyncResult**. Optional.
     
 
 
@@ -43,7 +44,9 @@ In the callback function passed to the  **saveAsync** method, you can use the pr
 Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the session you can just use the [set](../../reference/shared/settings.set.md) and [get](../../reference/shared/settings.get.md) methods to work with the in-memory copy of the settings property bag. When you want to persist the settings so that they are available the next time the add-in is used, use the **saveAsync** method.
 
 
- >**Note**  The  **saveAsync** method persists the in-memory settings property bag into the document file; however, the changes to the document file itself are saved only when the user (or **AutoRecover** setting) saves the document to the file system.
+>**Note**
+---
+The  **saveAsync** method persists the in-memory settings property bag into the document file; however, the changes to the document file itself are saved only when the user (or **AutoRecover** setting) saves the document to the file system.
 
 The [refreshAsync](../../reference/shared/settings.refreshasync.md) method is only useful in coauthoring scenarios (which are only supported in Word) when other instances of the same add-in might change the settings and those changes should be made available to all instances.
 
@@ -76,9 +79,7 @@ A capital Y in the following matrix indicates that this method is supported in t
 For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
 
 
-|
-|
-||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
+| |**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
 |:-----|:-----|:-----|:-----|
 |**Access**||Y||
 |**Excel**|Y|Y|Y|
