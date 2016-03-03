@@ -1,5 +1,5 @@
 
-# Slice.size property (JavaScript API for Office)
+# Slice.size property
 Gets the size of the slice in bytes.
 
 |||

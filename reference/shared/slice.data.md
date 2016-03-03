@@ -1,5 +1,5 @@
 
-# Slice.data property (JavaScript API for Office)
+# Slice.data property
 Gets the raw data of the file slice.
 
 |||

@@ -1,5 +1,5 @@
 
-# ProjectDocument.removeHandlerAsync method (JavaScript API for Office)
+# ProjectDocument.removeHandlerAsync method
 Asynchronously removes an event handler for the task selection changed event in a [ProjectDocument](../../reference/shared/projectdocument.projectdocument.md) object.
 
 |||

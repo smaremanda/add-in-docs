@@ -1,5 +1,5 @@
 
-# BindingDataChangedEventArgs.type property (JavaScript API for Office)
+# BindingDataChangedEventArgs.type property
 Gets an  **EventType** enumeration value that identifies the kind of event that was raised.
 
 |||

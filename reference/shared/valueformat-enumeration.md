@@ -1,5 +1,5 @@
 
-# ValueFormat enumeration (JavaScript API for Office)
+# ValueFormat enumeration
 Specifies whether values, such as numbers and dates, returned by the invoked method are returned with their formatting applied.
 
 |||

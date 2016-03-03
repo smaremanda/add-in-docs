@@ -1,5 +1,5 @@
 
-# CustomXmlParts.getByNamespaceAsync method (JavaScript API for Office)
+# CustomXmlParts.getByNamespaceAsync method
 Asynchronously gets an array of custom XML parts that match the specified namespace.
 
 |||

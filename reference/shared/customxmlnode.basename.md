@@ -1,5 +1,5 @@
 
-# CustomXmlNode.baseName property (JavaScript API for Office)
+# CustomXmlNode.baseName property
 Gets the base name of the node without the namespace prefix, if one exists.
 
 |||

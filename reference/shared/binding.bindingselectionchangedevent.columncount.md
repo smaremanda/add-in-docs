@@ -1,5 +1,5 @@
 
-# BindingSelectionChangedEventArgs.columnCount property (JavaScript API for Office)
+# BindingSelectionChangedEventArgs.columnCount property
 Gets the number of columns selected.
 
 |||

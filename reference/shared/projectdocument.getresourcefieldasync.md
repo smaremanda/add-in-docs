@@ -1,5 +1,5 @@
 
-# ProjectDocument.getResourceFieldAsync method (JavaScript API for Office)
+# ProjectDocument.getResourceFieldAsync method
 Asynchronously gets the value of the specified field for the specified resource in a resource view.
 
 |||

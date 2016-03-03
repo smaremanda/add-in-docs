@@ -1,5 +1,5 @@
 
-# CustomXmlPart.deleteAsync method (JavaScript API for Office)
+# CustomXmlPart.deleteAsync method
 Asynchronously deletes this custom XML part from the collection.
 
 |||

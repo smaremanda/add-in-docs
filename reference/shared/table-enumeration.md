@@ -1,5 +1,5 @@
 
-# Table enumeration (JavaScript API for Office)
+# Table enumeration
 Specifies enumerated values for the  `cells:` property in the _cellFormat_ parameter of [table formatting methods](http://msdn.microsoft.com/library/46b05707-b350-41be-b6b8-311799c71a33%28Office.15%29.aspx).
 
 |||

@@ -1,5 +1,5 @@
 
-# Office.cast.item property (JavaScript API for Office)
+# Office.cast.item property
 Provides IntelliSense specific to compose or read mode messages and appointments.
 
 |||

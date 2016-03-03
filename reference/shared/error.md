@@ -1,5 +1,5 @@
 
-# Error object (JavaScript API for Office)
+# Error object
 Provides specific information about an error that occurred during an asynchronous data operation.
 
 |||

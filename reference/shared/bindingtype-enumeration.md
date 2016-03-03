@@ -1,5 +1,5 @@
 
-# BindingType enumeration (JavaScript API for Office)
+# BindingType enumeration
  Specifies the type of the binding object that should be returned.
 
 |||

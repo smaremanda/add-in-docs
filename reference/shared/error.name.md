@@ -1,5 +1,5 @@
 
-# Error.name property (JavaScript API for Office)
+# Error.name property
 Gets the name of the error.
 
 |||

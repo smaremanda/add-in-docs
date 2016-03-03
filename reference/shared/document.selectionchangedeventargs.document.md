@@ -1,5 +1,5 @@
 
-# DocumentSelectionChangedEventArgs.document property (JavaScript API for Office)
+# DocumentSelectionChangedEventArgs.document property
 Gets a  **Document** object that represents the document that raised the **SelectionChanged** event.
 
 |||

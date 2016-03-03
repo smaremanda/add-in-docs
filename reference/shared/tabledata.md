@@ -1,5 +1,5 @@
 
-# TableData object (JavaScript API for Office)
+# TableData object
 Represents the data in a table or a [TableBinding](../../reference/shared/binding.tablebinding.tablebinding.md).
 
 |||

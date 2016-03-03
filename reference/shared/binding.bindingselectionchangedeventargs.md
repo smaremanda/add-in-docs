@@ -1,5 +1,5 @@
 
-# BindingSelectionChangedEventArgs object (JavaScript API for Office)
+# BindingSelectionChangedEventArgs object
 Provides information about the binding that raised the [SelectionChanged](../../reference/shared/binding.bindingselectionchangedevent.md) event.
 
 |||

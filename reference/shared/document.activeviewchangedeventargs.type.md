@@ -1,5 +1,5 @@
 
-# DocumentActiveViewChangedEventArgs.type property (JavaScript API for Office)
+# DocumentActiveViewChangedEventArgs.type property
 Gets an  **EventType** enumeration value that identifies the kind of event that was raised.
 
 |||

@@ -1,5 +1,5 @@
 
-# Binding.bindingSelectionChanged event (JavaScript API for Office)
+# Binding.bindingSelectionChanged event
 Occurs when the selection is changed within the binding.
 
 |||

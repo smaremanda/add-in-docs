@@ -1,5 +1,5 @@
 
-# FileType enumeration (JavaScript API for Office)
+# FileType enumeration
 Specifies the format in which to return the document.
 
 |||

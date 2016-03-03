@@ -1,5 +1,5 @@
 
-# Settings.removeHandlerAsync Method (JavaScript API for Office)
+# Settings.removeHandlerAsync Method
 Removes an event handler for the  **settingsChanged** event.
 
 |||

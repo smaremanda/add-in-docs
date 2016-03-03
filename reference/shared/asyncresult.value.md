@@ -1,5 +1,5 @@
 
-# AsyncResult.value property (JavaScript API for Office)
+# AsyncResult.value property
 Gets the payload or content of this asynchronous operation, if any.
 
 |||

@@ -1,5 +1,5 @@
 
-# CustomXmlPart.nodeDeleted event (JavaScript API for Office)
+# CustomXmlPart.nodeDeleted event
 Occurs when a node is deleted.
 
 |||

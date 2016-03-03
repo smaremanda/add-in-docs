@@ -1,5 +1,5 @@
 
-# NodeReplacedEventArgs object (JavaScript API for Office)
+# NodeReplacedEventArgs object
 Provides information about the replaced node that raised the [nodeReplaced](../../reference/shared/customxmlpart.nodereplaced.event.md) event.
 
 |||

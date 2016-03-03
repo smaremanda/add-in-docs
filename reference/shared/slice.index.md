@@ -1,5 +1,5 @@
 
-# Slice.index property (JavaScript API for Office)
+# Slice.index property
 Gets the index of the file slice.
 
 |||

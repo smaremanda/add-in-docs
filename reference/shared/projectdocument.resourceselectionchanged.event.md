@@ -1,5 +1,5 @@
 
-# ProjectDocument.ResourceSelectionChanged event (JavaScript API for Office)
+# ProjectDocument.ResourceSelectionChanged event
 Occurs when the resource selection changes in the active project.
 
 |||

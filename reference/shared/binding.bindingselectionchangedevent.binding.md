@@ -1,5 +1,5 @@
 
-# BindingSelectionChangedEventArgs.binding property (JavaScript API for Office)
+# BindingSelectionChangedEventArgs.binding property
 Gets a  **Binding** object that represents the binding that raised the **SelectionChanged** event.
 
 |||

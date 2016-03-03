@@ -1,5 +1,5 @@
 
-# Document.goToByIdAsync method (JavaScript API for Office)
+# Document.goToByIdAsync method
 Goes to the specified object or location in the document.
 
 |||

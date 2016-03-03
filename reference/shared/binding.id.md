@@ -1,5 +1,5 @@
 
-# Binding.id property (JavaScript API for Office)
+# Binding.id property
 Gets the identifier of the object.
 
 |||

@@ -1,5 +1,5 @@
 
-# CustomXmlPart.nodeReplaced event (JavaScript API for Office)
+# CustomXmlPart.nodeReplaced event
 Occurs when a node is replaced.
 
 |||

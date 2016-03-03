@@ -1,5 +1,5 @@
 
-# CustomXmlPrefixMappings.getNamespaceAsync method (JavaScript API for Office)
+# CustomXmlPrefixMappings.getNamespaceAsync method
 Asynchronously gets the namespace mapped to the specified prefix.
 
 |||

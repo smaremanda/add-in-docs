@@ -1,5 +1,5 @@
 
-# CustomXmlNode.namespaceUri property (JavaScript API for Office)
+# CustomXmlNode.namespaceUri property
 Retrieves the string GUID of the [CustomXMLPart](../../reference/shared/customxmlpart.customxmlpart.md).
 
 |||

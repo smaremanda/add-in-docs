@@ -1,5 +1,5 @@
 
-# ProjectProjectFields enumeration (JavaScript API for Office)
+# ProjectProjectFields enumeration
 Specifies the project fields that are available as a parameter for the  **[getProjectFieldAsync](../../reference/shared/projectdocument.getprojectfieldasync.md)** method.
 
 |||

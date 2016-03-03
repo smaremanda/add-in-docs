@@ -1,5 +1,5 @@
 
-# BindingSelectionChangedEventArgs.startRow property (JavaScript API for Office)
+# BindingSelectionChangedEventArgs.startRow property
 Gets the index of the first row of the selection (zero-based).
 
 |||

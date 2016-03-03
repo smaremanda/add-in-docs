@@ -1,5 +1,5 @@
 
-# Bindings.getByIdAsync method (JavaScript API for Office)
+# Bindings.getByIdAsync method
 Gets the specified binding by its identifier.
 
 |||

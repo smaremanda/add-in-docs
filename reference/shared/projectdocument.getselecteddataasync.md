@@ -1,5 +1,5 @@
 
-# ProjectDocument.getSelectedDataAsync method (JavaScript API for Office)
+# ProjectDocument.getSelectedDataAsync method
 Asynchronously gets the text value of the data that is contained in the current selection of one or more cells in the Gantt Chart view.
 
 |||

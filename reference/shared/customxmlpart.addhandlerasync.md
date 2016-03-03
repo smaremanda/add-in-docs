@@ -1,5 +1,5 @@
 
-# CustomXmlPart.addHandlerAsync method (JavaScript API for Office)
+# CustomXmlPart.addHandlerAsync method
 Adds an event handler for a  **CustomXmlPart** object event.
 
 |||

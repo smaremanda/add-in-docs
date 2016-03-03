@@ -1,5 +1,5 @@
 
-# Slice object (JavaScript API for Office)
+# Slice object
 Represents a slice of a document file.
 
 |||

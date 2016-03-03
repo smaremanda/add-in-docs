@@ -1,5 +1,5 @@
 
-# Context.touchEnabled property (JavaScript API for Office)
+# Context.touchEnabled property
 Gets whether the add-in is running in an Office host application that is touch enabled.
 
 |||

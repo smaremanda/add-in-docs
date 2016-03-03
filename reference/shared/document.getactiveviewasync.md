@@ -1,5 +1,5 @@
 
-# Document.getActiveViewAsync method (JavaScript API for Office)
+# Document.getActiveViewAsync method
  Returns the state of the current view of the presentation (edit or read).
 
 |||

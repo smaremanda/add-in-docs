@@ -1,5 +1,5 @@
 
-# Bindings.addFromSelectionAsync method (JavaScript API for Office)
+# Bindings.addFromSelectionAsync method
 Adds a binding to the current selection in the document.
 
 |||

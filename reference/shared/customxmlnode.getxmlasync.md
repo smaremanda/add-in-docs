@@ -1,5 +1,5 @@
 
-# CustomXmlNode.getXmlAsync method (JavaScript API for Office)
+# CustomXmlNode.getXmlAsync method
 Asynchronously gets the XML of the node.
 
 |||

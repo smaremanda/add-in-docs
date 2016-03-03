@@ -1,5 +1,5 @@
 
-# ProjectDocument object (JavaScript API for Office)
+# ProjectDocument object
 An abstract class that represents the project document (the active project) with which the Office Add-in interacts.
 
 |||

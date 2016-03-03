@@ -1,5 +1,5 @@
 
-# CustomXMLNodeType enumeration (JavaScript API for Office)
+# CustomXMLNodeType enumeration
 Specifies the node type.
 
 

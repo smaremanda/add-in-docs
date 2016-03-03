@@ -1,5 +1,5 @@
 
-# NodeDeletedEventArgs.oldNode property (JavaScript API for Office)
+# NodeDeletedEventArgs.oldNode property
 Gets the node which was just deleted from the  **CustomXmlPart** object.
 
 |||

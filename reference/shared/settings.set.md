@@ -1,5 +1,5 @@
 
-# Settings.set method (JavaScript API for Office)
+# Settings.set method
 Sets or creates the specified setting.
 
 |||

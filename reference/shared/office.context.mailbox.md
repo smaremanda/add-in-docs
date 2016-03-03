@@ -1,5 +1,5 @@
 
-# Context.mailbox property (JavaScript API for Office)
+# Context.mailbox property
 Gets the  **mailbox** object that provides access to API members specifically for Outlook add-ins.
 
 |||

@@ -1,5 +1,5 @@
 
-# Office.select method (JavaScript API for Office)
+# Office.select method
 Creates a promise to return a binding based on the selector string passed in.
 
 |||

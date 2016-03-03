@@ -1,5 +1,5 @@
 
-# FilterType enumeration (JavaScript API for Office)
+# FilterType enumeration
 Specifies whether filtering from the host application is applied when the data is retrieved.
 
 |||

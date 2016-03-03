@@ -1,5 +1,5 @@
 
-# AsyncResultStatus enumeration (JavaScript API for Office)
+# AsyncResultStatus enumeration
 Specifies the result of an asynchronous call. 
 
 |||

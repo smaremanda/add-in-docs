@@ -1,5 +1,5 @@
 
-# TextBinding object (JavaScript API for Office)
+# TextBinding object
 Represents a bound text selection in the document.
 
 |||

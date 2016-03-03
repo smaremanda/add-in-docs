@@ -1,5 +1,5 @@
 
-# ProjectDocument.getWSSUrlAsync method (JavaScript API for Office)
+# ProjectDocument.getWSSUrlAsync method
 Asynchronously gets the URL of the synchronized SharePoint task list.
 
 |||

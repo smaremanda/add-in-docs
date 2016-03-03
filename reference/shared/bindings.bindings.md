@@ -1,5 +1,5 @@
 
-# Bindings object (JavaScript API for Office)
+# Bindings object
 Represents the bindings the add-in has within the document.
 
 |||

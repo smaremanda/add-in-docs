@@ -1,5 +1,5 @@
 
-# Settings.settingsChanged event (JavaScript API for Office)
+# Settings.settingsChanged event
 Occurs when the in-memory copy of the settings property bag is saved into the document with the [Settings.saveAsync](../../reference/shared/settings.saveasync.md) method.
 
 |||

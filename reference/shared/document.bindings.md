@@ -1,5 +1,5 @@
 
-# Document.bindings property (JavaScript API for Office)
+# Document.bindings property
 Gets an object that provides access to the bindings defined in the document.
 
 |||

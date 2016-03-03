@@ -1,5 +1,5 @@
 
-# Bindings.addFromNamedItemAsync method (JavaScript API for Office)
+# Bindings.addFromNamedItemAsync method
 Adds a binding to a named item in the document.
 
 |||

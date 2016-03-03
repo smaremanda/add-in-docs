@@ -1,5 +1,5 @@
 
-# Error.code property (JavaScript API for Office)
+# Error.code property
 Gets the numeric code of the error.
 
 |||

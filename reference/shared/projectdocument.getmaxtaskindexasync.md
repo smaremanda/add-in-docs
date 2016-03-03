@@ -1,5 +1,5 @@
 
-# ProjectDocument.getMaxTaskIndexAsync method (JavaScript API for Office)
+# ProjectDocument.getMaxTaskIndexAsync method
 Asynchronously gets the maximum index of the collection of tasks in the current project.
 
  **Important:** This API works only in Project 2016 on Windows desktop.

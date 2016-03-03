@@ -1,5 +1,5 @@
 
-# CustomXmlNode object (JavaScript API for Office)
+# CustomXmlNode object
 Represents an XML node in a tree in a document.
 
 |||

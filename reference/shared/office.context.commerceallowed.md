@@ -1,5 +1,5 @@
 
-# Context.commerceAllowed property (JavaScript API for Office)
+# Context.commerceAllowed property
 Gets whether the add-in is running on a platform that allows links to external payment systems.
 
 |||

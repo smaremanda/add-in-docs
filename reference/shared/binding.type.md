@@ -1,5 +1,5 @@
 
-# Binding.type property (JavaScript API for Office)
+# Binding.type property
 Gets the type of the binding.
 
 |||

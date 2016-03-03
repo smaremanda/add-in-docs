@@ -1,5 +1,5 @@
 
-# Settings object (JavaScript API for Office)
+# Settings object
 Represents custom settings for a task pane or content add-in that are stored in the host document as name/value pairs.
 
 |||

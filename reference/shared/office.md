@@ -1,5 +1,5 @@
 
-# Office object (JavaScript API for Office)
+# Office object
 Represents an instance of an add-in, which provides access to the top-level objects of the API.
 
 |||

@@ -1,5 +1,5 @@
 
-# Error.message property (JavaScript API for Office)
+# Error.message property
 Gets a detailed description of the error.
 
 |||

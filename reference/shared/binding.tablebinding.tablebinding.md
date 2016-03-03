@@ -1,5 +1,5 @@
 
-# TableBinding object (JavaScript API for Office)
+# TableBinding object
 Represents a binding in two dimensions of rows and columns, optionally with headers.
 
 |||

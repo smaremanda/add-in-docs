@@ -1,5 +1,5 @@
 
-# CustomXmlPart.getNodesAsync method (JavaScript API for Office)
+# CustomXmlPart.getNodesAsync method
 Asynchronously gets any CustomXmlNodes in this custom XML part which match the specified XPath.
 
 |||

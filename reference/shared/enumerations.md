@@ -1,5 +1,5 @@
 
-# Enumerations (JavaScript API for Office)
+# Enumerations
 
 You can specify an enumerated value by using either its fully qualified enumeration name ( `Office.CoercionType.Text`) or its corresponding text value ( `"text"`). For example, the following method call uses enumeration names:
 

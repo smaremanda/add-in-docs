@@ -1,5 +1,5 @@
 
-# CustomXmlNode.getTextAsync method (JavaScript API for Office)
+# CustomXmlNode.getTextAsync method
 Asynchronously gets the text of an XML node in a custom XML part.
 
 |||

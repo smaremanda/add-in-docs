@@ -1,5 +1,5 @@
 
-# Document.ActiveViewChanged event (JavaScript API for Office)
+# Document.ActiveViewChanged event
 Occurs when the user changes the current view of the document.
 
 |||

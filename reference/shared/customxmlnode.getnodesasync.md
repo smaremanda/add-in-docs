@@ -1,5 +1,5 @@
 
-# CustomXmlNode.getNodesAsync method (JavaScript API for Office)
+# CustomXmlNode.getNodesAsync method
 Gets the nodes as an array of  **CustomXMLNode** objects matching the relative XPath expression.
 
 |||

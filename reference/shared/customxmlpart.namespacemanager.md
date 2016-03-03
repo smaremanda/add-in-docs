@@ -1,5 +1,5 @@
 
-# CustomXmlPart.namespaceManager property (JavaScript API for Office)
+# CustomXmlPart.namespaceManager property
 Gets the set of namespace prefix mappings (CustomXMLPrefixMappings) used against the current CustomXMLPart.
 
 |||

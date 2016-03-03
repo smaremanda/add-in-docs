@@ -1,5 +1,5 @@
 
-# SettingsChangedEventArgs.type property (JavaScript API for Office)
+# SettingsChangedEventArgs.type property
 Get an  **EventType** enumeration value that identifies the kind of event that was raised.
 
 |||

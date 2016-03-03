@@ -1,5 +1,5 @@
 
-# ProjectDocument.getTaskFieldAsync method (JavaScript API for Office)
+# ProjectDocument.getTaskFieldAsync method
 Asynchronously gets the value of the specified field for the specified task.
 
 |||

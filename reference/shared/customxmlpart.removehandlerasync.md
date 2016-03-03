@@ -1,5 +1,5 @@
 
-# CustomXmlPart.removeHandlerAsync method (JavaScript API for Office)
+# CustomXmlPart.removeHandlerAsync method
 Removes an event handler for a  **CustomXmlPart** object event.
 
 |||

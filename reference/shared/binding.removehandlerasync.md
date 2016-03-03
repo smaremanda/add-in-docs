@@ -1,5 +1,5 @@
 
-# Binding.removeHandlerAsync method (JavaScript API for Office)
+# Binding.removeHandlerAsync method
 Removes the specified handler from the binding for the specified event type.
 
 |||

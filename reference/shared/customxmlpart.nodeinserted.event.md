@@ -1,5 +1,5 @@
 
-# CustomXmlPart.nodeInserted event (JavaScript API for Office)
+# CustomXmlPart.nodeInserted event
 Occurs when a node is inserted.
 
 |||

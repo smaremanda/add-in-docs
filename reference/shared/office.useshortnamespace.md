@@ -1,5 +1,5 @@
 
-# Office.useShortNamespace method (JavaScript API for Office)
+# Office.useShortNamespace method
 Toggles on and off the  `Office` alias for the full `Microsoft.Office.WebExtension` namespace.
 
 |||

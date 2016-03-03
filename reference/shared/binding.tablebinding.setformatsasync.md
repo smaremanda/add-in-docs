@@ -1,5 +1,5 @@
 
-# TableBinding.setFormatsAsync method (JavaScript API for Office)
+# TableBinding.setFormatsAsync method
 Sets or updates formatting on specified items and data in the bound table.
 
 |||

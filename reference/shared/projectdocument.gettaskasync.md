@@ -1,5 +1,5 @@
 
-# ProjectDocument.getTaskAsync method (JavaScript API for Office)
+# ProjectDocument.getTaskAsync method
 Asynchronously gets the specified task's name, assigned resources, and the ID of the task in the synchronized SharePoint task list.
 
 |||

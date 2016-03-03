@@ -1,5 +1,5 @@
 
-# ProjectDocument.getSelectedViewAsync method (JavaScript API for Office)
+# ProjectDocument.getSelectedViewAsync method
 Asynchronously gets the type and name of the active view in the document.
 
 |||

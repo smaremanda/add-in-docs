@@ -1,5 +1,5 @@
 
-# TableBinding.addColumnsAsync method (JavaScript API for Office)
+# TableBinding.addColumnsAsync method
 Adds columns and values to a table.
 
 |||

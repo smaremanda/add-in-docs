@@ -1,5 +1,5 @@
 
-# Binding object (JavaScript API for Office)
+# Binding object
 An abstract class that represents a binding to a section of the document.
 
 |||

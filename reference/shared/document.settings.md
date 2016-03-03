@@ -1,5 +1,5 @@
 
-# Document.settings property (JavaScript API for Office)
+# Document.settings property
 Gets an object that represents the saved custom settings of the content or task pane add-in for the current document.
 
 |||

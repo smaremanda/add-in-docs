@@ -1,5 +1,5 @@
 
-# CustomXmlNode.setNodeValueAsync method (JavaScript API for Office)
+# CustomXmlNode.setNodeValueAsync method
 Asynchronously sets the value of the node.
 
 |||

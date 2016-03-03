@@ -1,5 +1,5 @@
 
-# ActiveView enumeration (JavaScript API for Office)
+# ActiveView enumeration
 Specifies the state of the active view of the document, for example, whether the user can edit the document.
 
 |||

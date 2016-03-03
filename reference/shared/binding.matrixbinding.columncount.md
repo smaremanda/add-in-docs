@@ -1,5 +1,5 @@
 
-# MatrixBinding.columnCount property (JavaScript API for Office)
+# MatrixBinding.columnCount property
 Gets the number of columns in the matrix data structure, as an integer value.
 
 |||

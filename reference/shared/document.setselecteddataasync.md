@@ -1,5 +1,5 @@
 
-# Document.setSelectedDataAsync method (JavaScript API for Office)
+# Document.setSelectedDataAsync method
 Writes data to the current selection in the document.
 
 |||

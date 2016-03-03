@@ -1,5 +1,5 @@
 
-# Context.contentLanguage property (JavaScript API for Office)
+# Context.contentLanguage property
  Gets the locale (language) specified by the user for editing the document or item.
 
 |||

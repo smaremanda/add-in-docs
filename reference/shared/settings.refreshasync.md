@@ -1,5 +1,5 @@
 
-# Settings.refreshAsync method (JavaScript API for Office)
+# Settings.refreshAsync method
 Reads all settings persisted in the document and refreshes the content or task pane add-in's copy of those settings held in memory.
 
 |||

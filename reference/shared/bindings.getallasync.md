@@ -1,5 +1,5 @@
 
-# Bindings.getAllAsync method (JavaScript API for Office)
+# Bindings.getAllAsync method
 Gets all bindings that were previously created.
 
 |||

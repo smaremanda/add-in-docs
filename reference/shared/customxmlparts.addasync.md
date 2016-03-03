@@ -1,5 +1,5 @@
 
-# CustomXmlParts.addAsync method (JavaScript API for Office)
+# CustomXmlParts.addAsync method
 Asynchronously adds a new custom XML part to a file.
 
 |||

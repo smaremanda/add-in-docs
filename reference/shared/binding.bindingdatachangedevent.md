@@ -1,5 +1,5 @@
 
-# Binding.bindingDataChanged event (JavaScript API for Office)
+# Binding.bindingDataChanged event
 Occurs when data within the binding is changed.
 
 |||

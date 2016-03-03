@@ -1,5 +1,5 @@
 
-# NodeInsertedEventArgs object (JavaScript API for Office)
+# NodeInsertedEventArgs object
 Provides information about the inserted node that raised the [nodeInserted](../../reference/shared/customxmlpart.nodeinserted.event.md) event.
 
 |||

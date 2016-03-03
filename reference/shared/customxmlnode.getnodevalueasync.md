@@ -1,5 +1,5 @@
 
-# CustomXmlNode.getNodeValueAsync method (JavaScript API for Office)
+# CustomXmlNode.getNodeValueAsync method
 Asynchronously gets the value of the node.
 
 |||

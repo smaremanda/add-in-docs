@@ -1,5 +1,5 @@
 
-# Context.roamingSettings property (JavaScript API for Office)
+# Context.roamingSettings property
 Gets an object that represents the custom settings or state of a Outlook add-in saved to a user's mailbox.
 
 |||

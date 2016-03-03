@@ -1,5 +1,5 @@
 
-# TableBinding.columnCount property (JavaScript API for Office)
+# TableBinding.columnCount property
 Gets the number of columns in the table, as an integer value.
 
 |||

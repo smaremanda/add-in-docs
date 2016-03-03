@@ -1,5 +1,5 @@
 
-# File.size property (JavaScript API for Office)
+# File.size property
 Gets the document file size in bytes.
 
 |||

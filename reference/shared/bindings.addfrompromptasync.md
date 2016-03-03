@@ -1,5 +1,5 @@
 
-# Bindings.addFromPromptAsync method (JavaScript API for Office)
+# Bindings.addFromPromptAsync method
  Displays UI that lets the user specify a selection to bind to.
 
 |||

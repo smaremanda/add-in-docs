@@ -1,5 +1,5 @@
 
-# ProjectResourceFields enumeration (JavaScript API for Office)
+# ProjectResourceFields enumeration
 Specifies the resource fields that are available as a parameter for the  **[getResourceFieldAsync](../../reference/shared/projectdocument.getresourcefieldasync.md)** method.
 
 |||

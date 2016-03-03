@@ -1,5 +1,5 @@
 
-# Context.document property (JavaScript API for Office)
+# Context.document property
 Gets an object that represents the document the add-in in interacting with.
 
 |||

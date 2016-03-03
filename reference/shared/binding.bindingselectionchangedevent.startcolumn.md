@@ -1,5 +1,5 @@
 
-# BindingSelectionChangedEventArgs.startColumn property (JavaScript API for Office)
+# BindingSelectionChangedEventArgs.startColumn property
 Gets the index of the first column of the selection (zero-based).
 
 |||

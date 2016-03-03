@@ -1,5 +1,5 @@
 
-# CoercionType enumeration (JavaScript API for Office)
+# CoercionType enumeration
 Specifies how to coerce data returned or set by the invoked method.
 
 |||

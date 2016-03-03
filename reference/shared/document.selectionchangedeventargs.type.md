@@ -1,5 +1,5 @@
 
-# DocumentSelectionChangedEventArgs.type property (JavaScript API for Office)
+# DocumentSelectionChangedEventArgs.type property
 Get an  **EventType** enumeration value that identifies the kind of event that was raised.
 
 |||

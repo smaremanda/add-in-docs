@@ -1,5 +1,5 @@
 
-# TableData.rows property (JavaScript API for Office)
+# TableData.rows property
 Gets or sets the rows in the table.
 
 |||

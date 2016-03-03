@@ -1,5 +1,5 @@
 
-# Document.getSelectedDataAsync method (JavaScript API for Office)
+# Document.getSelectedDataAsync method
 Reads the data contained in the current selection in the document.
 
 |||

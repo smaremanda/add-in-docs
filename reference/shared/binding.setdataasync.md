@@ -1,5 +1,5 @@
 
-# Binding.setDataAsync method (JavaScript API for Office)
+# Binding.setDataAsync method
 Writes data to the bound section of the document represented by the specified binding object.
 
 |||

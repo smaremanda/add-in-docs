@@ -1,5 +1,5 @@
 
-# Document.getFilePropertiesAsync method (JavaScript API for Office)
+# Document.getFilePropertiesAsync method
 Gets file properties of the current document.
 
 |||

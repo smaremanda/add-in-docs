@@ -1,5 +1,5 @@
 
-# NodeDeletedEventArgs.oldNextSibling property (JavaScript API for Office)
+# NodeDeletedEventArgs.oldNextSibling property
 Gets the former next sibling of the node that was just deleted from the  **CustomXMLPart** object.
 
 |||

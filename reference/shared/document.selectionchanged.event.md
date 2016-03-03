@@ -1,5 +1,5 @@
 
-# Document.SelectionChanged event (JavaScript API for Office)
+# Document.SelectionChanged event
 Occurs when the selection in the document is changed.
 
 |||

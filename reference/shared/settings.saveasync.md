@@ -1,5 +1,5 @@
 
-# Settings.saveAsync method (JavaScript API for Office)
+# Settings.saveAsync method
 Persists the in-memory copy of the settings property bag in the document.
 
 |||

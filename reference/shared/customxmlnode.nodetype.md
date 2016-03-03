@@ -1,5 +1,5 @@
 
-# CustomXmlNode.nodeType property (JavaScript API for Office)
+# CustomXmlNode.nodeType property
 Gets the type of the [CustomXMLNode](../../reference/shared/customxmlnode.customxmlnode.md).
 
 |||

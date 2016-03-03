@@ -1,5 +1,5 @@
 
-# ProjectViewTypes enumeration (JavaScript API for Office)
+# ProjectViewTypes enumeration
 Specifies the types of views that the  **[getSelectedViewAsync](../../reference/shared/projectdocument.getselectedviewasync.md)** method can recognize.
 
 |||

@@ -1,5 +1,5 @@
 
-# Document.mode property (JavaScript API for Office)
+# Document.mode property
 Gets the mode the document is in.
 
 |||

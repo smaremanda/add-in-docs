@@ -1,5 +1,5 @@
 
-# ProjectDocument.getSelectedResourceAsync method (JavaScript API for Office)
+# ProjectDocument.getSelectedResourceAsync method
 Asynchronously gets the GUID of the selected resource in a resource view.
 
 |||

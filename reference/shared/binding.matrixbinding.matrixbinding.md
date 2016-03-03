@@ -1,5 +1,5 @@
 
-# MatrixBinding object (JavaScript API for Office)
+# MatrixBinding object
 Represents a binding in two dimensions of rows and columns. 
 
 |||

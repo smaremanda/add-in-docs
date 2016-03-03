@@ -1,5 +1,5 @@
 
-# Context.displayLanguage property (JavaScript API for Office)
+# Context.displayLanguage property
 Gets the locale (language) specified by the user for the UI of the Office host application.
 
 |||

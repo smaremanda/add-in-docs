@@ -1,5 +1,5 @@
 
-# ProjectDocument.addHandlerAsync method (JavaScript API for Office)
+# ProjectDocument.addHandlerAsync method
 Asynchronously adds an event handler for a change event in a [ProjectDocument](../../reference/shared/projectdocument.projectdocument.md) object.
 
 |||

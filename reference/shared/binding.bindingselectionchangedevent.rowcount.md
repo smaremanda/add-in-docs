@@ -1,5 +1,5 @@
 
-# BindingSelectionChangedEventArgs.rowCount property (JavaScript API for Office)
+# BindingSelectionChangedEventArgs.rowCount property
 Gets the number of rows selected.
 
 |||

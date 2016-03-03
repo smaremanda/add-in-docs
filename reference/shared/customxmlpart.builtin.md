@@ -1,5 +1,5 @@
 
-# CustomXmlPart.builtIn property (JavaScript API for Office)
+# CustomXmlPart.builtIn property
 Get a value that indicates whether the CustomXMLPart is built-in.
 
 |||

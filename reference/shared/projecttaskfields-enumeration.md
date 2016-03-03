@@ -1,5 +1,5 @@
 
-# ProjectTaskFields enumeration (JavaScript API for Office)
+# ProjectTaskFields enumeration
 Specifies the task fields that are available as a parameter for the  **[getTaskFieldAsync](../../reference/shared/projectdocument.gettaskfieldasync.md)** method.
 
 |||

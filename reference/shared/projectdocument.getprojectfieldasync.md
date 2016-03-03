@@ -1,5 +1,5 @@
 
-# ProjectDocument.getProjectFieldAsync method (JavaScript API for Office)
+# ProjectDocument.getProjectFieldAsync method
 Asynchronously gets the value of the specified field in the active project.
 
 |||

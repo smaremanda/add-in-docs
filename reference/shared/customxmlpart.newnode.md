@@ -1,5 +1,5 @@
 
-# NodeInsertedEventArgs.newNode property (JavaScript API for Office)
+# NodeInsertedEventArgs.newNode property
 Gets the node that was just added to the  **CustomXMLPart** object.
 
 |||

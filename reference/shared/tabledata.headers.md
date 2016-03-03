@@ -1,5 +1,5 @@
 
-# TableData.headers property (JavaScript API for Office)
+# TableData.headers property
 Gets or sets the headers of the table.
 
 |||

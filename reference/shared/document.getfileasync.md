@@ -1,5 +1,5 @@
 
-# Document.getFileAsync method (JavaScript API for Office)
+# Document.getFileAsync method
 Returns the entire document file in slices of up to 4194304 bytes (4MB) or for add-ins for iOS up to 65536 (64KB).
 
 |||

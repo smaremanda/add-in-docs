@@ -1,5 +1,5 @@
 
-# Document.addHandlerAsync method (JavaScript API for Office)
+# Document.addHandlerAsync method
 Adds an event handler for a  **Document** object event.
 
 |||

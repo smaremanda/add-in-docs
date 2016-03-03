@@ -1,5 +1,5 @@
 
-# event.completed (JavaScript API for Office)
+# event.completed
 The callback that the add-in invokes to let Outlook know that the operation is done.
 
 ****

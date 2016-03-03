@@ -1,5 +1,5 @@
 
-# Document.customXmlParts property (JavaScript API for Office)
+# Document.customXmlParts property
 Gets an object that represents the custom XML parts in the document.
 
 |||

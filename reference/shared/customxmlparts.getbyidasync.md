@@ -1,5 +1,5 @@
 
-# CustomXmlParts.getByIdAsync method (JavaScript API for Office)
+# CustomXmlParts.getByIdAsync method
 Asynchronously gets a custom XML part by its ID.
 
 |||

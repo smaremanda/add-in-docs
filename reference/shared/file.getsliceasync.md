@@ -1,5 +1,5 @@
 
-# File.getSliceAsync method (JavaScript API for Office)
+# File.getSliceAsync method
 Returns the specified slice.
 
 |||

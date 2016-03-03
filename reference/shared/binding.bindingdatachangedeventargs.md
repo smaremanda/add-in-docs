@@ -1,5 +1,5 @@
 
-# BindingDataChangedEventArgs object (JavaScript API for Office)
+# BindingDataChangedEventArgs object
 Provides information about the binding that raised the [DataChanged](../../reference/shared/binding.bindingdatachangedevent.md) event.
 
 |||

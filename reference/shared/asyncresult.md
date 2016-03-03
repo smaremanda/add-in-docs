@@ -1,5 +1,5 @@
 
-# AsyncResult object (JavaScript API for Office)
+# AsyncResult object
 An object which encapsulates the result of an asynchronous request, including status and error information if the request failed.
 
 |||

@@ -1,5 +1,5 @@
 
-# ProjectDocument.getSelectedTaskAsync method (JavaScript API for Office)
+# ProjectDocument.getSelectedTaskAsync method
 Asynchronously gets the GUID of the selected task in a task view.
 
 |||

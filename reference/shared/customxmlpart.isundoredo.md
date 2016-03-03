@@ -1,5 +1,5 @@
 
-# NodeDeletedEventArgs.isUndoRedo property (JavaScript API for Office)
+# NodeDeletedEventArgs.isUndoRedo property
 Gets whether the node was deleted as part of an Undo/Redo action by the user.
 
 |||

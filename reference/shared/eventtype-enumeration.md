@@ -1,5 +1,5 @@
 
-# EventType enumeration (JavaScript API for Office)
+# EventType enumeration
 Specifies the kind of event that was raised. Returned by the  **type** property of an _EventName_**EventArgs** object.
 
 |||

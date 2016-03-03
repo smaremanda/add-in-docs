@@ -1,5 +1,5 @@
 
-# Settings.get method (JavaScript API for Office)
+# Settings.get method
 Retrieves the specified setting.
 
 |||

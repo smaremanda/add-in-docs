@@ -1,5 +1,5 @@
 
-# File object (JavaScript API for Office)
+# File object
 Represents the document file associated with an Office Add-in.
 
 |||

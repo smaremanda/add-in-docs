@@ -1,5 +1,5 @@
 
-# CustomXmlPrefixMappings object (JavaScript API for Office)
+# CustomXmlPrefixMappings object
 Represents a collection of custom namespace prefix mappings.
 
 |||

@@ -1,5 +1,5 @@
 
-# TableBinding.clearFormatsAsync method (JavaScript API for Office)
+# TableBinding.clearFormatsAsync method
 Clears formatting on the bound table.
 
 |||

@@ -1,5 +1,5 @@
 
-# Document.removeHandlerAsync method (JavaScript API for Office)
+# Document.removeHandlerAsync method
 Removes an event handler for a  **Document** object event.
 
 |||

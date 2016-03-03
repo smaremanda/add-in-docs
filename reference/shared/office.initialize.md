@@ -1,5 +1,5 @@
 
-# Office.initialize event (JavaScript API for Office)
+# Office.initialize event
 Occurs when the runtime environment is loaded and the add-in is ready to start interacting with the application and hosted document. 
 
 |||

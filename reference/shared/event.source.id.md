@@ -1,5 +1,5 @@
 
-# event.source.id (JavaScript API for Office)
+# event.source.id
 Gets the id of the control that triggered calling this function.
 
 ****

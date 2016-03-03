@@ -1,5 +1,5 @@
 
-# TableBinding.addRowsAsync method (JavaScript API for Office)
+# TableBinding.addRowsAsync method
 Adds rows and values to a table.
 
 |||

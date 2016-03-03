@@ -1,5 +1,5 @@
 
-# Settings.remove method (JavaScript API for Office)
+# Settings.remove method
 Removes the specified setting.
 
 |||

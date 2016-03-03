@@ -1,5 +1,5 @@
 
-# Binding.document property (JavaScript API for Office)
+# Binding.document property
 Get the  **Document** object associated with the binding.
 
 |||

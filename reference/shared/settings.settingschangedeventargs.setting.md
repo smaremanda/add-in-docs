@@ -1,5 +1,5 @@
 
-# SettingsChangedEventArgs.settings property (JavaScript API for Office)
+# SettingsChangedEventArgs.settings property
 Gets a  **Settings** object that represents the settings that raised the **settingsChanged** event.
 
 |||

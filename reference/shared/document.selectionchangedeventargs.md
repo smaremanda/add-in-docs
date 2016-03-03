@@ -1,5 +1,5 @@
 
-# DocumentSelectionChangedEventArgs object (JavaScript API for Office)
+# DocumentSelectionChangedEventArgs object
 Provides information about the document that raised the [SelectionChanged](../../reference/shared/document.selectionchanged.event.md) event.
 
 |||

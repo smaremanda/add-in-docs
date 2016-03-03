@@ -1,5 +1,5 @@
 
-# AsyncResult.status property (JavaScript API for Office)
+# AsyncResult.status property
 Gets the status of the asynchronous operation.
 
 |||

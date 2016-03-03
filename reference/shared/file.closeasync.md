@@ -1,5 +1,5 @@
 
-# File.closeAsync method (JavaScript API for Office)
+# File.closeAsync method
 Closes the document file.
 
 |||

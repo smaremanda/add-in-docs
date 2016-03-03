@@ -1,5 +1,5 @@
 
-# CustomXmlPart.getXmlAsync method (JavaScript API for Office)
+# CustomXmlPart.getXmlAsync method
 Asynchronously gets the XML inside this custom XML part.
 
 |||

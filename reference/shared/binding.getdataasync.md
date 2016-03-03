@@ -1,5 +1,5 @@
 
-# Binding.getDataAsync method (JavaScript API for Office)
+# Binding.getDataAsync method
 Returns the data contained within the binding.
 
 |||

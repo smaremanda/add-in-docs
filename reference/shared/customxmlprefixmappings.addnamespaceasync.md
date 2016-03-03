@@ -1,5 +1,5 @@
 
-# CustomXmlPrefixMappings.addNamespaceAsync method (JavaScript API for Office)
+# CustomXmlPrefixMappings.addNamespaceAsync method
 Asynchronously adds a prefix to namespace mapping to use when querying an item.
 
 |||

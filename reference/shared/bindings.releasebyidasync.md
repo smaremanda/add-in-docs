@@ -1,5 +1,5 @@
 
-# Bindings.releaseByIdAsync method (JavaScript API for Office)
+# Bindings.releaseByIdAsync method
 Removes the specified binding.
 
 |||

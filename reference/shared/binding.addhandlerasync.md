@@ -1,5 +1,5 @@
 
-# Binding.addHandlerAsync method (JavaScript API for Office)
+# Binding.addHandlerAsync method
 Adds a handler to the binding for the specified event type.
 
 |||

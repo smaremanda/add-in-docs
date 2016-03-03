@@ -1,5 +1,5 @@
 
-# Document object (JavaScript API for Office)
+# Document object
 An abstract class that represents the document the add-in is interacting with.
 
 |||

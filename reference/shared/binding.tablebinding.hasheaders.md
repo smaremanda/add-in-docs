@@ -1,5 +1,5 @@
 
-# TableBinding.hasHeaders property (JavaScript API for Office)
+# TableBinding.hasHeaders property
 Gets whether the table has headers.
 
 |||

@@ -1,5 +1,5 @@
 
-# DocumentMode enumeration (JavaScript API for Office)
+# DocumentMode enumeration
 Specifies whether the document in the associated application is read-only or read-write. 
 
 |||

@@ -1,5 +1,5 @@
 
-# ProjectDocument.ViewSelectionChanged event (JavaScript API for Office)
+# ProjectDocument.ViewSelectionChanged event
 Occurs when the active view changes in the active project.
 
 |||

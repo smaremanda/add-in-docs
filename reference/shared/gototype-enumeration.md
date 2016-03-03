@@ -1,5 +1,5 @@
 
-# GoToType enumeration (JavaScript API for Office)
+# GoToType enumeration
 Specifies the type of place or object to navigate to.
 
 |||
