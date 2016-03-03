@@ -24,28 +24,28 @@ You can verify the version of Exchange 2013 by using one of the following approa
     
       1. First, verify that macros are enabled for Outlook. Choose  **File**,  **Options**,  **Trust Center**,  **Trust Center Settings**,  **Macro Settings**. Ensure that  **Notifications for all macros** is selected in the Trust Center. You should have also selected **Enable Macros** during Outlook startup.
     
-  2. On the  **Developer** tab of the ribbon, choose **Visual Basic**.
+      2. On the  **Developer** tab of the ribbon, choose **Visual Basic**.
     
      >**Note**  Not seeing the  **Developer** tab? See [How to: Show the Developer Tab on the Ribbon](http://msdn.microsoft.com/en-us/library/ce7cb641-44f2-4a40-867e-a7d88f8e98a9%28Office.15%29.aspx) to turn it on.
-  3. In the Visual Basic Editor, choose  **View**,  **Immediate Window**.
+      3. In the Visual Basic Editor, choose  **View**,  **Immediate Window**.
     
-  4. Type the following in the Immediate window to display the version of the Exchange Server. The major version of the returned value must be equal to or greater than 15.
+      4. Type the following in the Immediate window to display the version of the Exchange Server. The major version of the returned value must be equal to or greater than 15.
     
       - If there is only one Exchange account in the user's profile:
     
-    ```
+    ```vba
       ?Session.ExchangeMailboxServerVersion
     ```
-
+    
       - If there are multiple Exchange accounts in the same user profile:
     
-    ```
+    ```vba
       ?Session.Accounts.Item(emailAddress).ExchangeMailboxServerVersion
     ```
     
       _emailAddress_ represents a string that contains the user's primary STMP address. For example, if the user's primary SMTP address is randy@contoso.com, type the following:
     
-    ```
+    ```vba
       ?Session.Accounts.Item("randy@contoso.com").ExchangeMailboxServerVersion
     ```
 
@@ -125,9 +125,7 @@ Figure 1 shows a summary of the steps to verify whether Outlook has a valid vers
     
     [GUID]\ [BASE 64 Hash]]\Manifests\[ManifestID]_[ManifestVersion]
     
-     >**Note**  
-
-    The following is an example of a path to a manifest installed for a mailbox for the user John:
+     >**Note**  The following is an example of a path to a manifest installed for a mailbox for the user John:
     
     C:\Users\john\appdata\Local\Microsoft\Office\15.0\WEF\{8D8445A4-80E4-4D6B-B7AC-D4E6AF594E73}\GoRshCWa7vW8+jhKmyiDhA==\Manifests\b3d7d9d5-6f57-437d-9830-94e2aaccef16_1.2
     
@@ -139,13 +137,13 @@ Figure 1 shows a summary of the steps to verify whether Outlook has a valid vers
     
       1. Under  **Windows Logs**, choose  **Application**.
     
-  2. Look for a reasonably recent event for which the Event ID equals 63, which represents Outlook downloading a manifest from an Exchange Server.
+      2. Look for a reasonably recent event for which the Event ID equals 63, which represents Outlook downloading a manifest from an Exchange Server.
     
-  3. If Outlook successfully read a manifest, the logged event should have the following description:
+      3. If Outlook successfully read a manifest, the logged event should have the following description:
     
-     **The Exchange web service request GetAppManifests succeeded.**
+         **The Exchange web service request GetAppManifests succeeded.**
     
-    Then skip the rest of this section and consider the other possible reasons following this section.
+        Then skip the rest of this section and consider the other possible reasons following this section.
     
 
     For information about opening the Event Viewer in Windows 7, see [Open Event Viewer](http://windows.microsoft.com/en-US/windows7/Open-Event-Viewer).
@@ -204,34 +202,33 @@ If you use an  **ItemHasRegularExpressionMatch** activation rule, verify whether
     
       1. Ensure that macros are enabled and the  **Developer** tab is displayed in the ribbon for Outlook. If you're not sure how to do this, see Steps 1 and 2 under [Is the user mailbox on a version of Exchange Server that is at least Exchange 2013?](#TroubleshootingMailApps_MailboxE15)
     
-  2. In the Visual Basic Editor, choose  **View**,  **Immediate Window**.
+      2. In the Visual Basic Editor, choose  **View**,  **Immediate Window**.
     
-  3. Type the following to display various properties depending on the scenario. 
+      3. Type the following to display various properties depending on the scenario. 
     
       - The HTML body of the message or appointment item selected in the Outlook explorer:
     
-```
-  ?ActiveExplorer.Selection.Item(1).HTMLBody
-```
+    ```vba
+      ?ActiveExplorer.Selection.Item(1).HTMLBody
+    ```
 
-  - The plain text body of the message or appointment item selected in the Outlook explorer:
+      - The plain text body of the message or appointment item selected in the Outlook explorer:
     
-```
-  ?ActiveExplorer.Selection.Item(1).Body
+    ```vba
+      ?ActiveExplorer.Selection.Item(1).Body
+    ```
 
-```
-
-  - The HTML body of the message or appointment item opened in the current Outlook inspector:
+      - The HTML body of the message or appointment item opened in the current Outlook inspector:
     
-```
-  ?ActiveInspector.CurrentItem.HTMLBody
-```
+    ```vba
+      ?ActiveInspector.CurrentItem.HTMLBody
+    ```
 
-  - The plain text body of the message or appointment item opened in the current Outlook inspector:
+      - The plain text body of the message or appointment item opened in the current Outlook inspector:
     
-```
-  ?ActiveInspector.CurrentItem.Body
-```
+    ```vba
+      ?ActiveInspector.CurrentItem.Body
+    ```
 
 If the  **ItemHasRegularExpressionMatch** activation rule specifies **Subject** or **SenderSMTPAddress**, or if you use an  **ItemIs** or **ItemHasAttachment** rule, and you are familiar with or would like to use MAPI, you can use [MFCMAPI](http://mfcmapi.codeplex.com/) to verify the value in Table 2 that your rule relies on.
 
