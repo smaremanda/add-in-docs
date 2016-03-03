@@ -1,6 +1,5 @@
 
 # Guidelines for creating labs for Mix using LabsJS
-Get a concise introduction to using the LabsJS JavaScript library to create Labs for Office Mix.
 
  _**Applies to:** apps for Office | Office Add-ins | Office Mix | PowerPoint_
 
