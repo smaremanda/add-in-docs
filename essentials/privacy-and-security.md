@@ -1,6 +1,7 @@
 
 # Privacy and security for Office Add-ins
 
+Office Add-ins are secured by a runtime framework, a multiple-tier permissions model, and the ability to govern use of memory, CPU, and network resources.
 
  _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | Outlook | PowerPoint | Project | Word_
 
@@ -37,7 +38,9 @@ In supported clients for desktop and tablet devices, such as Excel, Outlook, and
 
 **Figure 1. Office Add-ins runtime environment in Windows-based desktop and tablet clients**
 
-![Rich-client infrastructure](../images/DK2_AgaveOverview02.png)As shown in figure 2, on an OS X Mac desktop, the add-in web page is hosted inside a sandboxed WebKit runtime host process which helps provide similar level of security and performance protection. 
+![Rich-client infrastructure](../images/DK2_AgaveOverview02.png)
+
+As shown in figure 2, on an OS X Mac desktop, the add-in web page is hosted inside a sandboxed WebKit runtime host process which helps provide similar level of security and performance protection. 
 
 
 **Figure 2. Office Add-ins runtime environment in OS X Mac clients**
