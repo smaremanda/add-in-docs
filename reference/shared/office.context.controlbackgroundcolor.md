@@ -19,7 +19,7 @@ var controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor;
 
 ## Return value
 
-A hex color triplet
+A hex color triplet.
 
 
 ## Remarks
