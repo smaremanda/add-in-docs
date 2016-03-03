@@ -24,7 +24,7 @@ A hex color triplet.
 
 ## Remarks
 
-The colors returned correspond to the values of the Office theme selected by the user with  ** File** > **Office Account** > **Office Theme** UI, which is applied across all Office host applications.
+The colors returned correspond to the values of the Office theme selected by the user with  **File** > **Office Account** > **Office Theme** UI, which is applied across all Office host applications.
 
 
 ## Support details
