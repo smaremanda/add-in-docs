@@ -55,7 +55,7 @@ The success or failure of an  **addColumnAsync** operation is atomic. That is, t
     
 - If you pass a  **TableData** object as the data argument, the number of header rows must match that of the table being updated.
     
- **Additional remarks for Excel Online**
+**Additional remarks for Excel Online**
 
 The total number of cells in the  **TableData** object passed to the _data_ parameter can't exceed 20,000 in a single call to this method.
 
