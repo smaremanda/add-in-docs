@@ -67,7 +67,7 @@ After you update your manifest file, install your add-in and test your add-in co
 
 
 
-- When you close Excel Online, the add-in and the add-in commands close too. When next you open a document in Excel Online, you must perform the steps in [Install your add-in on Excel Online](#install-your-add-in-on-excel-online) again.
+- When you close Excel Online, the add-in and its commands are removed. When next you open a document in Excel Online, you must perform the steps in [Install your add-in on Excel Online](#install-your-add-in-on-excel-online) again.
 
 - To use add-in commands in your add-in, upload your add-in by using  **Insert** > **Office Add-ins** > **Upload My Add-in**. Add-ins submitted to the Office Store or to an internal organization add-in catalog in SharePoint won't display add-in commands.
 
