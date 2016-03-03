@@ -349,7 +349,7 @@ In the following procedures, we'll extend your Hello World add-in to access data
     ```
 
 
-    The  `readBoundData()` function calls the [Office.select](http://msdn.microsoft.com/en-us/library/23aeb136-da1f-4127-a798-99dc27bc4dae%28Office.1501401%29) method to get the binding created by the `bindData()` function, which has an **id** of `myBinding`. (Alternatively, you can use the [Bindings.getByIdAsync](http://msdn.microsoft.com/en-us/library/2727c891-bc05-465c-9324-113fbfeb3fbb%28Office.1501401%29) method to access a binding by its **id**.) The function then calls the [Binding.getDataAsync](http://msdn.microsoft.com/en-us/library/5372ffd8-579d-4fcb-9e5b-e9a2128f3201%28Office.1501401%29) method to read the data from the binding. Because the binding is a matrix binding, you must specify the _coersionType_ as `"matrix"` for the call to succeed.
+    The  `readBoundData()` function calls the [Office.select](https://msdn.microsoft.com/en-us/library/office/fp161004.aspx) method to get the binding created by the `bindData()` function, which has an **id** of `myBinding`. (Alternatively, you can use the [Bindings.getByIdAsync](https://msdn.microsoft.com/en-us/library/office/fp161008.aspx) method to access a binding by its **id**.) The function then calls the [Binding.getDataAsync](https://msdn.microsoft.com/en-us/library/office/fp161073.aspx) method to read the data from the binding. Because the binding is a matrix binding, you must specify the _coersionType_ as `"matrix"` for the call to succeed.
     
 5. On the  **Debug** menu, choose **Start Debugging** or press the F5 key.
     
@@ -438,7 +438,7 @@ Now let's add an event handler that will read and display the data in the bindin
     ```
 
 
-    The  `addEvent()` function calls the **Office.select** method to get the `myBinding` binding object, and then calls the [Binding.addHandlerAsync](http://msdn.microsoft.com/en-us/library/b9c2f4ea-726c-4b48-a3fb-89beda337a17%28Office.1501401%29) method to add an event handler for the [Binding.bindingDataChanged](http://msdn.microsoft.com/en-us/library/7b9ed4bf-3ce5-44eb-8548-2b081afd868d%28Office.1501401%29) event. The `myHandler` function uses the [binding](http://msdn.microsoft.com/en-us/library/3f5adb74-0da6-46c6-a95e-0890bd935379%28Office.15%29.aspx) property of the [BindingDataChangedEventArgs](http://msdn.microsoft.com/en-us/library/d08e5556-20a6-469a-9c51-b0b95c8213ac%28Office.1501401%29) object to access the binding that raised the event, and then calls the **Binding.getDataAsync** method to read and display the data when the event occurs.
+    The  `addEvent()` function calls the **Office.select** method to get the `myBinding` binding object, and then calls the [Binding.addHandlerAsync](https://msdn.microsoft.com/en-us/library/office/fp142201.aspx) method to add an event handler for the [Binding.bindingDataChanged](https://msdn.microsoft.com/en-us/library/office/fp161149.aspx) event. The `myHandler` function uses the [binding](https://msdn.microsoft.com/en-us/library/office/fp161042.aspx) property of the [BindingDataChangedEventArgs](https://msdn.microsoft.com/en-us/library/office/fp142247.aspx) object to access the binding that raised the event, and then calls the **Binding.getDataAsync** method to read and display the data when the event occurs.
     
 3. On the  **Debug** menu, choose **Start Debugging** or press the F5 key.
     
@@ -512,7 +512,7 @@ You can perform the following steps to modify this add-in project so that it wil
 You can perform the following steps to modify this add-in project so that it will run as a content add-in in Excel:
 
 
-- Modify the manifest file to set the  **xsi:type** attribute to `"ContentApp"` in the [OfficeApp](http://msdn.microsoft.com/en-us/library/68f1cada-66f8-4341-45f5-14e0634c24fb%28Office.1501401%29) element.
+- Modify the manifest file to set the  **xsi:type** attribute to `"ContentApp"` in the [OfficeApp](http://msdn.microsoft.com/en-us/library/68f1cada-66f8-4341-45f5-14e0634c24fb) element.
     
 - Modify the manifest file to set values for the [RequestedWidth](http://msdn.microsoft.com/en-us/library/29032529-6661-fb99-1ff3-c02cc474017f) and [RequestedHeight](http://msdn.microsoft.com/en-us/library/f573269b-7615-af82-2e0d-7e5661b66a20) elements.
     
