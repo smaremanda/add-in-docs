@@ -27,7 +27,9 @@ Office.context.document.getMaxResourceIndexAsync([options][, callback]);
 
     For example, you can pass the _asyncContext_ argument by using the format `{asyncContext: 'Some text'}` or `{asyncContext: <object>}`.
 
-*  _callback_ Type:  **function**
+*  _callback_
+
+    Type:  **function**
     
     A function that is invoked when the method call returns, where the only parameter is of type [AsyncResult](../../reference/shared/asyncresult.md). Optional.
     
