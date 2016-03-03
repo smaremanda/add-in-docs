@@ -39,9 +39,9 @@ You can verify the version of Exchange 2013 by using one of the following approa
         
           - If there are multiple Exchange accounts in the same user profile:
         
-        ```vba
-          ?Session.Accounts.Item(emailAddress).ExchangeMailboxServerVersion
-        ```
+            ```vba
+              ?Session.Accounts.Item(emailAddress).ExchangeMailboxServerVersion
+            ```
         
           _emailAddress_ represents a string that contains the user's primary STMP address. For example, if the user's primary SMTP address is randy@contoso.com, type the following:
         
