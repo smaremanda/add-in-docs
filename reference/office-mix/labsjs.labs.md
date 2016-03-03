@@ -1,6 +1,5 @@
 
 # LabsJS.Labs
-Get an overview of APIs in the LabsJS.Labs module.
 
  _**Applies to:** apps for Office | Office Add-ins | Office Mix | PowerPoint_
 
