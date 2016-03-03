@@ -106,7 +106,7 @@ While the resources limits on CPU and memory usage, crash tolerance, UI responsi
 
 
 
-- [Privacy and security for Office Add-ins](87c59a88-10e2-4c88-b6a8-736bd356e5f8.md)
+- [Privacy and security for Office Add-ins](../privacy-and-security.md)
     
 - [Limits for activation and JavaScript API for Outlook add-ins](../outlook/limits-for-activation-and-javascript-api-for-outlook-add-ins.md)
     

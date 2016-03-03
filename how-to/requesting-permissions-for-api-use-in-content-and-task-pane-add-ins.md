@@ -50,7 +50,7 @@ The following table describes the subset of the JavaScript API that is enabled b
 
 - [Task pane and content add-ins for Office 2013](../essentials/task-pane-and-content-add-ins.md)
     
-- [Privacy and security for Office Add-ins](87c59a88-10e2-4c88-b6a8-736bd356e5f8.md)
+- [Privacy and security for Office Add-ins](../privacy-and-security.md)
     
 
 
