@@ -433,5 +433,5 @@ $(document).ready(function () {
 <a name="bk_addresources"> </a>
 
 
-- [Office Mix add-ins](dcd87c0f-7c3a-4bd6-9276-74f15b15ab08.md)
+- [Office Mix add-ins](office-mix-add-ins.md)
     
