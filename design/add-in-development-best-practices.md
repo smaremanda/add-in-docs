@@ -15,7 +15,7 @@ Effective add-ins offer unique and compelling functionality that extends Office 
  - Enable new scenarios within Office.
  - Embed complementary services within Office hosts.
  - Improve the Office experience to enhance productivity.
-- Make sure that the value of your add-in is clear to users right away by [creating an engaging first run experience](#creating-an-engaging-first-run-experience).
+- Make sure that the value of your add-in is clear to users right away by [creating an engaging first run experience](#create-an-engaging-first-run-experience).
 - Create an [effective Office Store listing](http://msdn.microsoft.com/library/c66a6e6b-2e96-458f-8f8c-2a499fe942c9%28Office.15%29.aspx). Make the benefits of your add-in clear in your title and description. Don't rely on your brand to communicate what your add-in does.
 
 
