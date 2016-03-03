@@ -7,7 +7,7 @@ Gets the identifier of the object.
 |**Hosts:**|Access, Excel, Word|
 |**Last changed in**|1.1|
 
-```
+```js
 var bindingID = bindingObj.id;
 ```
 
