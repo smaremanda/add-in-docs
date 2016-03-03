@@ -8,7 +8,7 @@ Removes the specified handler from the binding for the specified event type.
 |**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|BindingEvents|
 |**Last changed in**|1.1|
 
-```
+```js
 bindingObj.removeHandlerAsync(eventType [, options], callback);
 ```
 
@@ -50,7 +50,7 @@ If the optional  _handler_ parameter is omitted when calling the **removeHandler
 The following example removes the handler for the  **BindingDataChanged** event named `onBindingDataChanged`.
 
 
-```
+```js
 function removeEventHandlerFromBinding() {
     Office.select("bindings#MyBinding").removeHandlerAsync(Office.EventType.BindingDataChanged, {handler:onBindingDataChanged});
 }
