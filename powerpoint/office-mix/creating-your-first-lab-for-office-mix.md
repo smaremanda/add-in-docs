@@ -27,7 +27,7 @@ The walkthrough is going to cover four main lab features:
 - Taking (or running) the lab
     
 
- **Note**  The file labhost.html runs on a web server and provides the hosting environment for lab development and testing. This greatly simplifies lab development. See [Get started with LabsJS for Office Mix](0a796406-4795-417c-92ca-bbb44b0e13f7.md) for information about setting up your development environment.
+ **Note**  The file labhost.html runs on a web server and provides the hosting environment for lab development and testing. This greatly simplifies lab development. See [Get started with LabsJS for Office Mix](get-started-with-labsjs-for-office-mix.md) for information about setting up your development environment.
 
 Finally, you can view the completed JavaScript file (TrueFalse.js) among the files distributed with this SDK. What follows is a walkthrough of the coding process.
 
