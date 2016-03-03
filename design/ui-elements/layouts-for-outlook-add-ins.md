@@ -12,10 +12,10 @@ You can use any of the following layouts for mail add-ins:
 - Custom pane (horizontal or contextual)
 - Functions with InfoBar notifications
 
-For guidelines about UI text in your add-ins, see [Office Voice](Voice.md).
+For guidelines about UI text in your add-ins, see [Office Voice](https://msdn.microsoft.com/en-us/library/office/mt484351.aspx).
 
 ##Task pane
- For recommendations for task pane layouts for mail add-ins, see [Layout for task pane add-ins](TaskpaneAddin.md).
+ For recommendations for task pane layouts for mail add-ins, see [Layout for task pane add-ins](layout-for-task-pane-add-ins.md).
 
 
 ##Custom pane

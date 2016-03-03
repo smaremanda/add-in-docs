@@ -14,7 +14,7 @@ Create a consistent look and feel for task pane add-ins by using the recommended
 
 ![Layout of a task pane add-in, showing branding, navigation, and content elements](../../images/layouts_taskpane_v0.02.png)
 
-You can also add [custom HTML-based UI](UIElements.md#custom-HTML-based-UI) to your task pane add-in.
+You can also add [custom HTML-based UI](ui-elements.md#custom-HTML-based-UI) to your task pane add-in.
 
 For a sample that shows how to use Office UI Fabric in Office Add-ins, see [Office Add-in Fabric UI Sample](https://github.com/OfficeDev/Office-Add-in-Fabric-UI-Sample).
 
