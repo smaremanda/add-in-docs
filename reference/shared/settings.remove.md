@@ -8,7 +8,7 @@ Removes the specified setting.
 |**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|Settings|
 |**Last changed in**|1.1|
 
-```
+```js
 Office.context.document.settings.remove(name);
 ```
 
@@ -16,9 +16,10 @@ Office.context.document.settings.remove(name);
 ## Parameters
 
 
--  _name_Type:  **string**
-    
-    The case-sensitive name of the setting to remove.
+_name_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Type:  **string**
+
+&nbsp;&nbsp;&nbsp;&nbsp;The case-sensitive name of the setting to remove.
     
 
 
@@ -28,7 +29,9 @@ Office.context.document.settings.remove(name);
  **null** is a valid value for a setting. Therefore, assigning **null** to the setting will not remove it from the settings property bag.
 
 
- >**Important**  Be aware that the  **Settings.remove** method affects only the in-memory copy of the settings property bag. To persist the removal of the specified setting in the document, at some point after calling the **Settings.remove** method and before the add-in is closed, you must call the [Settings.saveAsync](../../reference/shared/settings.saveasync.md) method.
+>**Important**
+---
+Be aware that the  **Settings.remove** method affects only the in-memory copy of the settings property bag. To persist the removal of the specified setting in the document, at some point after calling the **Settings.remove** method and before the add-in is closed, you must call the [Settings.saveAsync](../../reference/shared/settings.saveasync.md) method.
 
 
 ## Example
@@ -36,7 +39,7 @@ Office.context.document.settings.remove(name);
 
 
 
-```
+```js
 function removeMySetting() {
     Office.context.document.settings.remove('mySetting');
 }
@@ -53,9 +56,7 @@ A capital Y in the following matrix indicates that this method is supported in t
 For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
 
 
-|
-|
-||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
+| |**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
 |:-----|:-----|:-----|:-----|
 |**Access**||Y||
 |**Excel**|Y|Y|Y|
