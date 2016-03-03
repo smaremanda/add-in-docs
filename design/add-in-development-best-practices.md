@@ -53,7 +53,7 @@ Effective add-ins offer unique and compelling functionality that extends Office 
 - Provide multiple UI entry points to your add-in by using [add-in commands](../outlook/add-in-commands-for-outlook.md).
 
 
- >**Note**  Add-in commands are currently supported in Outlook 2016. Other hosts and platforms will support add-in commands in the future.
+ >**Note**  Add-in commands are currently supported in Outlook 2016 and are in preview for Word, Excel and PowerPoint 2016. 
 
 
 ### Add-in command design best practices
