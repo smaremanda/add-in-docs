@@ -37,12 +37,12 @@ In supported clients for desktop and tablet devices, such as Excel, Outlook, and
 
 **Figure 1. Office Add-ins runtime environment in Windows-based desktop and tablet clients**
 
-![Rich-client infrastructure](images/DK2_AgaveOverview02.png)As shown in figure 2, on an OS X Mac desktop, the add-in web page is hosted inside a sandboxed WebKit runtime host process which helps provide similar level of security and performance protection. 
+![Rich-client infrastructure](../images/DK2_AgaveOverview02.png)As shown in figure 2, on an OS X Mac desktop, the add-in web page is hosted inside a sandboxed WebKit runtime host process which helps provide similar level of security and performance protection. 
 
 
 **Figure 2. Office Add-ins runtime environment in OS X Mac clients**
 
-![Apps for Office runtime environment on OS X Mac](images/DK2_AgaveOverview_Mac_02.png)The Office Add-ins runtime manages interprocess communication, the translation of JavaScript API calls and events into native ones, as well as UI remoting support to enable the add-in to be rendered inside the document, in a task pane, or adjacent to an email message, meeting request, or appointment.
+![Apps for Office runtime environment on OS X Mac](../images/DK2_AgaveOverview_Mac_02.png)The Office Add-ins runtime manages interprocess communication, the translation of JavaScript API calls and events into native ones, as well as UI remoting support to enable the add-in to be rendered inside the document, in a task pane, or adjacent to an email message, meeting request, or appointment.
 
 
 ### Web clients
@@ -52,7 +52,7 @@ In supported Web clients, such as Excel Online and Outlook Web App, Office Add-i
 
 **Figure 3. Infrastructure that supports Office Add-ins in Office web clients**
 
-![Web-client infrastructure](images/DK2_AgaveOverview03.png)
+![Web-client infrastructure](../images/DK2_AgaveOverview03.png)
 
 
 ## Add-in integrity in the Office Store
