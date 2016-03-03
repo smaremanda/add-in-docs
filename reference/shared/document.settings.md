@@ -11,7 +11,7 @@ Gets an object that represents the saved custom settings of the content or task 
 var _settings = Office.context.document.settings;
 ```
 
-[![Try out this call in the interactive API Tutorial for Excel](../../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](http://officeapitutorial.azurewebsites.net/Redirect.mdl?scenario=Persist+Settings)
+[![Try out this call in the interactive API Tutorial for Excel](../../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](http://officeapitutorial.azurewebsites.net/Redirect.html?scenario=Persist+Settings)
 
 ## Return Value
 
