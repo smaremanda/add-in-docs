@@ -1,6 +1,5 @@
 
 # Get started with LabsJS for Office Mix
-Learn how to set up an Office Add-ins development environment to support the development of Microsoft Office Mix Labs using the Labs.js API.
 
  _**Applies to:** apps for Office | Office Add-ins | Office Mix | PowerPoint_
 
