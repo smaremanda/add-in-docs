@@ -8,7 +8,7 @@ Creates a promise to return a binding based on the selector string passed in.
 |**Available in [Requirement sets](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|MatrixBindings, PartialTableBindings, TableBindings, TextBindings|
 |**Last changed in**|1.1|
 
-```
+```js
 Office.select(str, onError);
 ```
 
@@ -16,14 +16,13 @@ Office.select(str, onError);
 ## Parameters
 
 
--  _str_Type:  **string**
-    
-    The selector string to parse and create a promise for.
-    
+_str_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Type: **string**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;The selector string to parse and create a promise for.
 
--  _onError_Type:  **function**
-    
-    A function that is invoked when the callback returns, whose only parameter is of type  **AsyncResult**. Optional.
+_onError_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Type: **function**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;A function that is invoked when the callback returns, whose only parameter is of type  **AsyncResult**. Optional.
     
 
 ## Callback Value
@@ -38,7 +37,9 @@ The  **Office.select** method provides access to a [Binding](../../reference/sha
 Supported formats: "bindings# _bindingId_", which returns a  **Binding** object for the binding with the [id](../../reference/shared/binding.id.md) of `bindingId`. For more information, see [Asynchronous programming in Office Add-ins](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_PromisesPattern) and [Bind to regions in a document or spreadsheet](http://msdn.microsoft.com/library/5bf788db-d788-4d91-bcb6-fc3913b40012%28Office.15%29.aspx).
 
 
- >**Note**  If the  **select** method promise successfully returns a **Binding** object, that object exposes only the following four methods of the [Binding](../../reference/shared/binding.md) object: [getDataAsync](../../reference/shared/binding.getdataasync.md), [setDataAsync](../../reference/shared/binding.setdataasync.md), [addHandlerAsync](../../reference/shared/binding.addhandlerasync.md), and [removeHandlerAsync](../../reference/shared/binding.removehandlerasync.md). If the promise cannot return a  **Binding** object, the _onError_ callback can be used to access an [asyncResult.error](../../reference/shared/asyncresult.error.md) object to get more information.If you need to call a member of the  **Binding** object other than the four methods exposed by the **Binding** object promise returned by the **select** method, instead use the [getByIdAsync](../../reference/shared/bindings.getbyidasync.md) method by using the [Document.bindings](../../reference/shared/document.bindings.md) property and [Bindings.getByIdAsync](../../reference/shared/bindings.getbyidasync.md) method to retrieve the **Binding** object.
+ >**Note** 
+ ---
+ If the  **select** method promise successfully returns a **Binding** object, that object exposes only the following four methods of the [Binding](../../reference/shared/binding.md) object: [getDataAsync](../../reference/shared/binding.getdataasync.md), [setDataAsync](../../reference/shared/binding.setdataasync.md), [addHandlerAsync](../../reference/shared/binding.addhandlerasync.md), and [removeHandlerAsync](../../reference/shared/binding.removehandlerasync.md). If the promise cannot return a  **Binding** object, the _onError_ callback can be used to access an [asyncResult.error](../../reference/shared/asyncresult.error.md) object to get more information.If you need to call a member of the  **Binding** object other than the four methods exposed by the **Binding** object promise returned by the **select** method, instead use the [getByIdAsync](../../reference/shared/bindings.getbyidasync.md) method by using the [Document.bindings](../../reference/shared/document.bindings.md) property and [Bindings.getByIdAsync](../../reference/shared/bindings.getbyidasync.md) method to retrieve the **Binding** object.
 
 
 ## Example
@@ -53,7 +54,6 @@ function addBindingDataChangedEventHandler() {
         doSomethingWithBinding(eventArgs.binding);
     });
 }
-
 ```
 
 
@@ -67,9 +67,7 @@ A capital Y in the following matrix indicates that this method is supported in t
 For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
 
 
-|
-|
-||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
+| |**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
 |:-----|:-----|:-----|:-----|
 |**Access**||Y||
 |**Excel**|Y|Y|Y|
