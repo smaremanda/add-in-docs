@@ -1,6 +1,5 @@
 
-# Create a task pane or content add-in for Word or Excel by using a text editor
-Create a simple Office Add-in by using a text editor.
+# Create a task pane or content add-in for Word or Excel by using a text editor.
 
  _**Applies to:** apps for Office | Excel | Office Add-ins | Word_
 
