@@ -37,9 +37,6 @@ For the  **getWSSUrlAsync** method, the returned [AsyncResult](../../reference/s
 |[status](../../reference/shared/asyncresult.status.md)|The  **succeeded** or **failed** status of the asynchronous call.|
 |[value](../../reference/shared/asyncresult.value.md)|Contains the following properties:<br/><br/><div>* The **listName** property is the name of the synchronized SharePoint task list.<br/>* The **serverUrl** property is the URL of the synchronized SharePoint task list.</div>|
 
-
-<ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>The <span class="keyword">listName</span> property is the name of the synchronized SharePoint task list.</p></li><li><p>The <span class="keyword">serverUrl</span> property is the URL of the synchronized SharePoint task list.</p></li></ul>|
-
 ## Remarks
 
 If the active project is not synchronized with a SharePoint task list, the  **listName** and **serverUrl** values are empty.
