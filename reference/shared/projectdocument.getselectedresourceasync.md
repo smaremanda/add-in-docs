@@ -185,5 +185,7 @@ For more information about Office host application and server requirements, see 
 
 
 [getResourceFieldAsync method](../../reference/shared/projectdocument.getresourcefieldasync.md)
+
 [AsyncResult object](../../reference/shared/asyncresult.md)
+
 [ProjectDocument object](../../reference/shared/projectdocument.projectdocument.md)

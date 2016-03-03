@@ -171,5 +171,7 @@ For more information about Office host application and server requirements, see 
 
 
 [getTaskAsync method](../../reference/shared/projectdocument.gettaskasync.md)
+
 [AsyncResult object](../../reference/shared/asyncresult.md)
+
 [ProjectDocument object](../../reference/shared/projectdocument.projectdocument.md)
