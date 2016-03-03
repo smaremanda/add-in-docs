@@ -1,6 +1,5 @@
 
 # Resource limits and performance optimization for Office Add-ins
-Apply resource usage limits to your Office Add-ins and optimize the performance of your add-in. 
 
  _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | Outlook | PowerPoint | Project | Word_
 
