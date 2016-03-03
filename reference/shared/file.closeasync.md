@@ -16,7 +16,7 @@ File.closeAsync(callback);
 ## Parameters
 
 
--  _callback_Type:  **object**
+-  _callback_ Type:  **object**
     
     A function that is invoked when the callback returns, whose only parameter is of type [AsyncResult](../../reference/shared/asyncresult.md). Optional.
     

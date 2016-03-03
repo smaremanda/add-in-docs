@@ -19,11 +19,11 @@ Office.context.document.settings.set(name, value);
 ## Parameters
 
 
--  _name_Type:  **string**
+-  _name_ Type:  **string**
     
     The case-sensitive name of the setting to set or create.
     
--  _value_Type:  **string**,  **number**,  **boolean**,  **null**,  **object** or **array**
+-  _value_ Type:  **string**,  **number**,  **boolean**,  **null**,  **object** or **array**
     
     Specifies the value to be stored.
     

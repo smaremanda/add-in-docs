@@ -15,7 +15,7 @@ Office.useShortNamespace(useShortcut);
 ## Parameters
 
 
--  _useShortcut_Type:  **boolean**
+-  _useShortcut_ Type:  **boolean**
     
      **true** to use the shortcut alias; otherwise **false** to disable it. The default is **true**.
     

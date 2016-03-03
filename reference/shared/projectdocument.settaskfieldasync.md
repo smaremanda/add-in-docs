@@ -28,7 +28,7 @@ Office.context.document.setTaskFieldAsync(taskId, fieldId, fieldValue[, options]
 ||
 |:-----|
 |<dl class="authored" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><dt><span class="parameter" sdata="paramReference">asyncContext</span></dt><dd><p>Type: <span class="keyword">array</span>, <span class="keyword">boolean</span>, <span class="keyword">null</span>, <span class="keyword">number</span>, <b>object</b> , <span class="keyword">string</span>, or <span class="keyword">undefined</span></p><p>A user-defined item of any type that is returned in the <a href="540c114f-0398-425c-baf3-7363f2f6bc47.htm">AsyncResult</a> object without being altered. Optional.</p><p>For example, you can pass the <span class="parameter" sdata="paramReference">asyncContext</span> argument by using the format <span class="code">{asyncContext: 'Some text'}</span> or <span class="code">{asyncContext: <object>}</span>.</p></dd></dl>|
--  _callback_Type:  **function**
+-  _callback_ Type:  **function**
     
     A function that is invoked when the method call returns, where the only parameter is of type [AsyncResult](../../reference/shared/asyncresult.md). Optional.
     

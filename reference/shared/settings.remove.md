@@ -16,7 +16,7 @@ Office.context.document.settings.remove(name);
 ## Parameters
 
 
--  _name_Type:  **string**
+-  _name_ Type:  **string**
     
     The case-sensitive name of the setting to remove.
     

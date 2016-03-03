@@ -16,11 +16,11 @@ File.getSliceAsync(sliceIndex, callback);
 ## Parameters
 
 
--  _sliceIndex_Type:  **number**
+-  _sliceIndex_ Type:  **number**
     
     Specifies the zero-based index of the slice to be retrieved. Required.
     
--  _callback_Type:  **object**
+-  _callback_ Type:  **object**
     
     A function that is invoked when the callback returns, whose only parameter is of type [AsyncResult](../../reference/shared/asyncresult.md). Optional.
     

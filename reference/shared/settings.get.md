@@ -16,7 +16,7 @@ var mySetting = Office.context.document.settings.get(name);
 ## Parameters
 
 
--  _name_Type:  **string**
+-  _name_ Type:  **string**
     
     The case-sensitive name of the setting to retrieve.
     

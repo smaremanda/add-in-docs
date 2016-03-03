@@ -16,12 +16,12 @@ Office.select(str, onError);
 ## Parameters
 
 
--  _str_Type:  **string**
+-  _str_ Type:  **string**
     
     The selector string to parse and create a promise for.
     
 
--  _onError_Type:  **function**
+-  _onError_ Type:  **function**
     
     A function that is invoked when the callback returns, whose only parameter is of type  **AsyncResult**. Optional.
     
