@@ -25,5 +25,5 @@ The following Office Mix instances in the [Office Mix Gallery](https://mix.offic
     
 - [Get started with LabsJS for Office Mix](../../powerpoint/office-mix/get-started-with-labsjs-for-office-mix.md)
     
-- [Walkthrough: Creating your first lab for Office Mix](../../powerpoint/office-mix/-creating-your-first-lab-for-office-mix.md)
+- [Walkthrough: Creating your first lab for Office Mix](../../powerpoint/office-mix/creating-your-first-lab-for-office-mix.md)
     
