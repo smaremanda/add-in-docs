@@ -16,11 +16,11 @@ bindingObj.addRowsAsync(rows, [,options], callback);
 ## Parameters
 
 
--  _rows_Type:  **Array**
+-  _rows_ Type:  **Array**
     
     An array of arrays that contains one or more rows of data to add to the table. Required.
     
--  _options_Type: **object**
+-  _options_ Type: **object**
     
     Specifies the following [optional parameters](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters).
     
