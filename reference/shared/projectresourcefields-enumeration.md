@@ -469,6 +469,6 @@ For more information about Office host application and server requirements, see 
 
 #### Other resources
 
-
 [getResourceFieldAsync method](../../reference/shared/projectdocument.getresourcefieldasync.md)
+
 [Available fields reference](http://office.microsoft.com/en-us/project-help/available-fields-reference-HA102749299.aspx?CTT=1)
