@@ -172,5 +172,7 @@ For more information about Office host application and server requirements, see 
 
 
 [TaskSelectionChanged event](../../reference/shared/projectdocument.taskselectionchanged.event.md)
+
 [removeHandlerAsync method](../../reference/shared/projectdocument.addhandlerasync.md)
+
 [ProjectDocument object](../../reference/shared/projectdocument.projectdocument.md)
