@@ -114,7 +114,7 @@ These add-in-specific, item-specific custom properties can only be accessed by u
 
 However, a mail add-in can get MAPI-based extended properties by using the EWS [GetItem](http://msdn.microsoft.com/en-us/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) operation. Access **GetItem** on the server side by using a callback token, or on the client side by using the [mailbox.makeEwsRequestAsync](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.html) method. In the **GetItem** request, specify the custom extended properties you need in a property set. A mail add-in can also use **makeEwsRequestAsync** and EWS [CreateItem](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) and [UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) operations to create and modify extended properties.
 
-For more information about MAPI properties, Outlook  **UserProperties**, EWS extended properties, using the callback token mechanism and  **makeEwsRequestAsync**, see the [Save item-specific metadata as custom properties](http://msdn.microsoft.com/library/30217d63-7615-4f3f-8618-c91e4e60cd43%28Office.15%29.aspx#MailAppCustomProperties_AdditionalResources) section.
+
 
 
 ### Using custom properties
