@@ -63,12 +63,12 @@ When parsing a SOAP response from a EWS operation, note the following browser-de
 
 
 
-```js
-  var mailbox = Office.context.mailbox;
-mailbox.makeEwsRequestAsync(mailbox.item.itemId), function(result) {
-    var response = $.parseXML(result.value);
-    var extendedProps = response.getElementsByTagName("ExtendedProperty");
-```
+    ```js
+    var mailbox = Office.context.mailbox;
+    mailbox.makeEwsRequestAsync(mailbox.item.itemId), function(result) {
+        var response = $.parseXML(result.value);
+        var extendedProps = response.getElementsByTagName("ExtendedProperty");
+    ```
 
 
    
@@ -76,18 +76,18 @@ mailbox.makeEwsRequestAsync(mailbox.item.itemId), function(result) {
     
 
 
-```js
-  var mailbox = Office.context.mailbox;
-mailbox.makeEwsRequestAsync(mailbox.item.itemId), function(result) {
-    var response = $.parseXML(result.value);
-    var extendedProps = response.getElementsByTagName("t:ExtendedProperty");
-```
+    ```js
+    var mailbox = Office.context.mailbox;
+    mailbox.makeEwsRequestAsync(mailbox.item.itemId), function(result) {
+        var response = $.parseXML(result.value);
+        var extendedProps = response.getElementsByTagName("t:ExtendedProperty");
+    ```
 
 - Use the DOM property  **textContent** to get the contents of a tag in a EWS response, as shown below:
     
-```
-  content = $.parseJSON(value.textContent);
-```
+    ```
+      content = $.parseJSON(value.textContent);
+    ```
 
 
     Other properties such as  **innerHTML** may not work on Internet Explorer for some tags in a EWS response.
