@@ -331,7 +331,7 @@ In the following procedures, we'll extend your Hello World add-in to access data
     ```
 
 
-    The  `bindData()` function calls the [Bindings.addFromSelectionAsync](https://msdn.microsoft.com/en-us/library/office/fp142282.aspx) method to create a matrix binding with an [id](http://msdn.microsoft.com/en-us/library/94a0814d-70a0-4258-a837-2be04f68f068%28Office.1501401%29)of  `myBinding` that is associated with the cells that the user selected. You can specify the _bindingType_ as `"text"` to create a binding to a single cell in Excel, or to run of characters (a string) in a Word document. For more information about bindings, see [Bind to regions in a document or spreadsheet](../how-to/bind-to-regions-in-a-document-or-spreadsheet.md).
+    The  `bindData()` function calls the [Bindings.addFromSelectionAsync](https://msdn.microsoft.com/en-us/library/office/fp142282.aspx) method to create a matrix binding with an [id](https://msdn.microsoft.com/en-us/library/office/fp142137.aspx) of  `myBinding` that is associated with the cells that the user selected. You can specify the _bindingType_ as `"text"` to create a binding to a single cell in Excel, or to run of characters (a string) in a Word document. For more information about bindings, see [Bind to regions in a document or spreadsheet](../how-to/bind-to-regions-in-a-document-or-spreadsheet.md).
     
 4. Add the following code to the Home.js file below the  `bindData ()` function.
     
