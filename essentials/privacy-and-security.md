@@ -45,7 +45,9 @@ As shown in figure 2, on an OS X Mac desktop, the add-in web page is hosted insi
 
 **Figure 2. Office Add-ins runtime environment in OS X Mac clients**
 
-![Apps for Office runtime environment on OS X Mac](../images/DK2_AgaveOverview_Mac_02.png)The Office Add-ins runtime manages interprocess communication, the translation of JavaScript API calls and events into native ones, as well as UI remoting support to enable the add-in to be rendered inside the document, in a task pane, or adjacent to an email message, meeting request, or appointment.
+![Apps for Office runtime environment on OS X Mac](../images/DK2_AgaveOverview_Mac_02.png)
+
+The Office Add-ins runtime manages interprocess communication, the translation of JavaScript API calls and events into native ones, as well as UI remoting support to enable the add-in to be rendered inside the document, in a task pane, or adjacent to an email message, meeting request, or appointment.
 
 
 ### Web clients
