@@ -10,7 +10,7 @@ Gets a  **Document** object that represents the document that raised the **Selec
 
 
 
-```
+```js
 var myDoc = eventArgsObj.document;
 ```
 
