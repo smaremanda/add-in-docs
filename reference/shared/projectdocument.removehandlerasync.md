@@ -17,7 +17,7 @@ Office.context.document.removeHandlerAsync(eventType[, options][, callback]);
 ## Parameters
 |**Name**|**Type**|**Description**|**Support notes**|
 |:-----|:-----|:-----|:-----|
-|_eventType_|[EventType](../../reference/shared/eventtype-enumeration.md)|<table><tr><th>Enumeration</th><th>Text value</th></tr><tr><td data-th="Enumeration"><a href="https://msdn.microsoft.com/en-us/library/office/fp179836.aspx">Office.EventType.ResourceSelectionChanged</a></td><td data-th="Text value">resourceSelectionChanged</td></tr><tr><td data-th="Enumeration"><a href="https://msdn.microsoft.com/en-us/library/office/fp179816.aspx">Office.EventType.TaskSelectionChanged</a></td><td data-th="Text value">taskSelectionChanged</td></tr><tr><td data-th="Enumeration"><a href="https://msdn.microsoft.com/en-us/library/office/fp179839.aspx">Office.EventType.ViewSelectionChanged</a></td><td data-th="Text value">viewSelectionChanged</td></tr></table>||
+|_eventType_|[EventType](../../reference/shared/eventtype-enumeration.md)|********THE TABLE GOES HERE***********||
 |_options_|**object**|Specifies any of the following [optional parameters](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters).||
 |_asyncContext_|**array**,  **boolean**,  **null**,  **number**,  **object**, **string**, or  **undefined**|A user-defined item of any type that is returned in the  **AsyncResult** object without being altered.||
 |_callback_|**object**|A function that is invoked when the callback returns, whose only parameter is of type  **AsyncResult**.||
