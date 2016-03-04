@@ -1,7 +1,6 @@
 
 # LabsJS labs for Office Mix examples
-
- _**Applies to:** apps for Office | Office Add-ins | Office Mix | PowerPoint_
+
 
 The [Office Mix Gallery](https://mix.office.com/Gallery) is an important resource for learning about the power of Office Mix in general, and about implementations of LabsJS labs specifically. The Gallery contains several labs that are implemented in Office Mix examples.
 

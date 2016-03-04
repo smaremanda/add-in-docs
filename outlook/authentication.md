@@ -1,8 +1,7 @@
 
 # Authenticate an Outlook add-in by using Exchange identity tokens
 Learn how to use Exchange 2013 identity tokens to authenticate your Outlook add-in.
-
- _**Applies to:** apps for Office | Office Add-ins | Outlook_
+
 
 Your Outlook add-in can provide your customers with information from anywhere on the Internet, whether from the server that hosts the add-in, from your internal network, or from somewhere else in the cloud. If that information is protected, however, your add-in needs a way to associate the Exchange email account with your information service. Exchange 2013 can enable single sign-on (SSO) for your add-in by providing a token that identifies the email account that is making the request. You can associate this token with a registered user for your application so that the user is recognized whenever the add-in connects to your service.
 

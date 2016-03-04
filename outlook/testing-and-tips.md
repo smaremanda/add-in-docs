@@ -1,8 +1,7 @@
 
 # Deploy and install Outlook add-ins for testing
 Learn how to deploy and install an Outlook add-in for testing, as part of the Outlook add-in development cycle. 
-
- _**Applies to:** apps for Office | Office Add-ins | Outlook_
+
 
 
 ## Deploying an Outlook add-in for testing

@@ -1,8 +1,7 @@
 
 # Get and set add-in metadata for an Outlook add-in
 Learn to load and store custom data that only your Outlook add-in can access - through roaming settings and custom properties.
-
- _**Applies to:** apps for Office | Office Add-ins | Outlook_
+
 
 There are two ways to manage custom data in your Outlook add-in:
 

@@ -1,8 +1,7 @@
 
 # Privacy, permissions, and security for Outlook add-ins
 End users, developers, and administrators can use the tiered permission levels of the security model for Outlook add-ins to control privacy and performance.
-
- _**Applies to:** apps for Office | Office Add-ins | Outlook_
+
 
 This article describes the possible permissions that Outlook add-ins can request, and examines the security model from the following perspectives:
 

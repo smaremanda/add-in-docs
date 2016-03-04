@@ -1,8 +1,7 @@
 
 # Task pane add-ins for Project
 Office Add-ins enable many scenarios for integrating Project 2013 with webpages and other applications. You can develop Project task pane add-ins by using a text editor or by using Visual Studio.
-
- _**Applies to:** apps for Office | Office Add-ins | Project_
+
 
 Project Standard 2013 and Project Professional 2013 both include support for task pane add-ins. You can run general task pane add-ins that are developed for Microsoft Word 2013 or Microsoft Excel 2013. You can also develop custom add-ins that handle selection events in Project and integrate task, resource, view, and other cell-level data in a project with SharePoint lists, SharePoint Add-ins, Web Parts, web services, and enterprise applications.
 

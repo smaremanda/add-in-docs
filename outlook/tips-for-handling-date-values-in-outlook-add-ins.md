@@ -1,8 +1,7 @@
 
 # Tips for handling date values in Outlook add-ins
 Explore tips on how Outlook add-ins should handle input and output date values for the various date-related methods in the JavaScript API for Office.
-
- _**Applies to:** apps for Office | Office Add-ins | Outlook_
+
 
 
 ## General JavaScript date-time support

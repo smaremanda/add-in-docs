@@ -1,8 +1,7 @@
 
 # Outlook add-in APIs
 Learn how to specify the APIs needed for your Outlook add-in.
-
- _**Applies to:** apps for Office | Office Add-ins | Outlook_
+
 
 To use APIs in your Outlook add-in, you must specify the location of the Office.js library, the requirement set, the schema, and the permissions.
 

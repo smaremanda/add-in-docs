@@ -1,8 +1,7 @@
 
 # Set up an add-in catalog on Office 365
 Set up an add-in catalog on Office 365 (SharePoint Online) for publishing task pane and content Office Add-ins.
-
- _**Applies to:** apps for Office | Office Add-ins_
+
 
 An add-in catalog is a dedicated site collection in a SharePoint web application or SharePoint Online tenancy that hosts document libraries for SharePoint Add-ins and Office Add-ins. Administrators can upload Office Add-ins manifest files to the add-in catalog for use within their organization. When an administrator registers an add-in catalog as a trusted catalog (by setting group policy, or by specifying the trusted catalog on the  **Trusted Add-in Catalogs** tab of the **Options** dialog box by choosing **File** > **Options** > **Trust Center** > **Trust Center Settings** > **Trusted Add-in Catalogs**), users can insert the add-in from the insertion UI in an Office client application.
 

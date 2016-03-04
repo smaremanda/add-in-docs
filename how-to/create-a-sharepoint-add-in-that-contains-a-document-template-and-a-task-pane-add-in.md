@@ -1,8 +1,7 @@
 
 # Create a SharePoint Add-in that contains a document template and a task pane add-in
 Use Visual Studio to develop an Office Add-in that appears in a document that is opened from a SharePoint Add-in.
-
- _**Applies to:** apps for Office | Excel | Office Add-ins | PowerPoint | Project | Word_
+
 
 You can create a SharePoint Add-in that includes a document template (for example, an expense report). The document can include a task pane add-in that interacts with SharePoint data. For example, users can populate fields of an invoice by using data from the Business Connectivity Services (BCS) or create an expense report by selecting an expense category from a SharePoint list.
 

@@ -1,7 +1,6 @@
 # Office Mix add-ins
 
-
- _**Applies to:** apps for Office | Office Add-ins | Office Mix | PowerPoint_
+
 
 Microsoft Office Mix is a platform for creating Office Add-ins that you embed in PowerPoint to enable audio-visual components to your PowerPoint presentations. LabsJS, on the other hand, is a technology that allows you to create specialized Office Mix instances, called labs, that you can then insert into your Office Mix. These labs extend Office Mix functionality so that you can create fully interactive educational components like simulations, demonstrations, and quizzes.
 

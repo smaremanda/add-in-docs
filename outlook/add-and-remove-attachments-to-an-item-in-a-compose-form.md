@@ -1,8 +1,7 @@
 
 # Add and remove attachments to an item in a compose form in Outlook
 See JavaScript examples of using asynchronous methods and an Exchange Web Services (EWS) ID from an Outlook add-in to add an attachment to an item a user is composing in Outlook.
-
- _**Applies to:** apps for Office | Office Add-ins | Outlook_
+
 
 
 ## Adding a file or Outlook item as an attachment

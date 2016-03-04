@@ -1,8 +1,7 @@
 
 # Publish task pane and content add-ins to an add-in catalog on SharePoint
 After you upload your add-in manifest to a catalog, users can configure their Office clients so your add-in is available from the Office Add-ins dialog box.
-
- _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | PowerPoint | Project | Word_
+
 
 Use the following steps to upload the manifest for your task pane or content add-in to an Office Add-ins catalog on SharePoint. 
 

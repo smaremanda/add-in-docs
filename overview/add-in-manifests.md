@@ -1,7 +1,6 @@
 
 # Office Add-ins XML manifest
-
- _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | Outlook | PowerPoint | Project | Word_
+
 
 The XML manifest file of an Office Add-in enables you to declaratively describe how your add-in should be activated when an end user installs and uses it with Office documents and applications. The [offappmanifest.xsd](http://msdn.microsoft.com/en-us/library/d5f72bff-3446-c64f-02ca-ab10b5648789%28Office.15%29.aspx) defines an XML schema that is common to all supported Office applications (both rich client applications and their corresponding web app web clients).
 

@@ -1,7 +1,6 @@
 
 # Configuring and editing LabsJS labs for Office Mix
-
- _**Applies to:** apps for Office | Office Add-ins | Office Mix | PowerPoint_
+
 
 Office Mix provides office.js methods to get and set lab configurations. The configuration indicates to Office Mix what type of lab you are creating, as well as what type of data the lab will send back. This information is used to collect and visualize analytics.
 

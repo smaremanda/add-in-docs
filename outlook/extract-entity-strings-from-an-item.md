@@ -1,8 +1,7 @@
 
 # Extract entity strings from an Outlook item
 Create an Outlook add-in that matches special strings in the subject and body of the currently viewed Outlook item - addresses, contacts, email addresses, meeting suggestions, phone numbers, task suggestions, and URLs - and displays them in the add-in pane.
-
- _**Applies to:** apps for Office | Office Add-ins | Outlook_
+
 
 This article describes how to create a  **Display entities** Outlook add-in that extracts string instances of supported well-known entities in the subject and body of the selected Outlook item. This item can be an appointment, email message, or meeting request, response, or cancellation. The supported entities include:
 

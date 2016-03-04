@@ -1,8 +1,7 @@
 
 # Insert data in the body when composing an appointment or message in Outlook
 Learn how to insert data in the body of the appointment or message that the user is composing from an Outlook add-in.
-
- _**Applies to:** apps for Office | Office Add-ins | Outlook_
+
 
 
 ## Inserting data in the body of a compose form

@@ -1,8 +1,7 @@
 
 # Limits for activation and JavaScript API for Outlook add-ins
 Learn about the limits for using activation rules and the JavaScript API for Office to get or set data with asynchronous calls in Outlook add-ins.
-
- _**Applies to:** apps for Office | Office Add-ins | Outlook_
+
 
 To provide a satisfactory experience for users of Outlook add-ins, you should be aware of certain activation and API usage guidelines, and implement your add-ins to stay within these limits. These guidelines exist so that an individual add-in cannot require Exchange Server or Outlook to spend an unusually long period of time to process its activation rules or calls to the JavaScript API for Office, affecting the overall user experience for Outlook and other add-ins. These limits apply to designing activation rules in the add-in manifest, and using custom properties, roaming settings, recipients, Exchange Web Services (EWS) requests and responses, and asynchronous calls. 
 

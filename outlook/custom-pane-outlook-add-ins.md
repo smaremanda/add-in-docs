@@ -1,8 +1,7 @@
 
 # Custom pane Outlook add-ins
 Learn how to define an Outlook add-in that activates based on specific rules.
-
- _**Applies to:** apps for Office | Office Add-ins | Outlook_
+
 
 A custom pane is an extension point for an add-in that activates when specific conditions are satisfied on the currently selected item. It is defined in the add-in manifest in the  **VersionOverrides** element, along with any add-in commands implemented by the add-in. For more information, see [Define add-in commands in your Outlook add-in manifest](../outlook/manifests/define-add-in-commands.md).
 A custom pane can only appear in a message read or appointment attendee views. It displays an entry in the add-in bar. When the user clicks the entry, the custom pane shows with a horizontal orientation above the body of the item. The appearance and behavior is the same as with read mode add-ins that do not implement add-in commands.

@@ -1,8 +1,7 @@
 
 # Get attachments of an Outlook item from the server
 Use an Outlook add-in to enable a service to get attachments from an Exchange server. 
-
- _**Applies to:** apps for Office | Office Add-ins | Outlook_
+
 
 An Outlook add-in cannot pass the attachments of a selected item directly to the remote service that runs on your server. Instead, the add-in can use the attachments API to send information about the attachments to the remote service. The service can then contact the Exchange server directly to retrieve the attachments.
 

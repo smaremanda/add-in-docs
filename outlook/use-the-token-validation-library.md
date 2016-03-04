@@ -1,8 +1,7 @@
 
 # Use the Exchange token validation library
 Learn how to use the EWS Managed API validation library to validate an Exchange identity token.
-
- _**Applies to:** apps for Office | Office Add-ins | Outlook_
+
 
 You can identify the clients of your Outlook add-in by using an identity token that your add-in requests from a server running Exchange Server 2013. The token, formatted as a JSON Web token, provides a unique identifier for an email account on an Exchange server. The Exchange Web Services (EWS) Managed API provides helper classes to simplify the use of the identity token.
 

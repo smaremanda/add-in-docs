@@ -1,8 +1,7 @@
 
 # Contextual Outlook add-ins
 Activate an Outlook add-in based on specified text in a message or appointment.
-
- _**Applies to:** apps for Office | Office Add-ins | Outlook_
+
 
 Contextual add-ins are Outlook add-ins that activate based on text in a message or appointment. By using contextual add-ins, a user can initiate tasks related to a message without leaving the message itself, which results in an easier and richer user experience.
 

@@ -1,8 +1,7 @@
 
 # Walkthrough: Creating your first lab for Office Mix
 Build your first LabsJS lab using a step-by-step walkthrough.
-
- _**Applies to:** apps for Office | Office Add-ins | Office Mix | PowerPoint_
+
 
 In this walkthrough you'll create a simple LabsJS lab from scratch. Your lab will be a simple true/false quiz that provides just a single question. 
 

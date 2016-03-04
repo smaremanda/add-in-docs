@@ -1,8 +1,7 @@
 
 # Inside the Exchange identity token
 Find out what's inside an Exchange 2013 identity token.
-
- _**Applies to:** apps for Office | Office Add-ins | Outlook_
+
 
 The authentication identity token that the Exchange server sends to your Outlook add-in is opaque to your add-in; you don't have to look inside the token to send it on to your server. But when you're writing the web service code that interacts with your Outlook add-in, you'll need to know what's inside the identity token.
 

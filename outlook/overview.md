@@ -1,8 +1,7 @@
 
 # Overview of Outlook add-ins architecture and features
 Learn about Outlook add-ins architecture and features.
-
- _**Applies to:** apps for Office | Office Add-ins | Outlook_
+
 
 
 ## Architecture

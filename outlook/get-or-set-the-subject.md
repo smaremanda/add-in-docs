@@ -1,8 +1,7 @@
 
 # Get or set the subject when composing an appointment or message in Outlook
 Learn how to get or set the subject from an Outlook add-in when the user is composing an appointment or message in Outlook.
-
- _**Applies to:** apps for Office | Office Add-ins | Outlook_
+
 
 
 ## Prerequisites for getting or setting the subject in a compose form

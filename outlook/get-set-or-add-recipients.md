@@ -1,8 +1,7 @@
 
 # Get, set, or add recipients when composing an appointment or message in Outlook
 Learn how an Outlook add-in can get, set, or add recipients when a user is composing an appointment or message in Outlook.
-
- _**Applies to:** apps for Office | Office Add-ins | Outlook_
+
 
 
 ## Prerequisites for getting, setting, or adding recipients in a compose form

@@ -1,8 +1,7 @@
 
 # Get and set Outlook item data in read or compose forms
 Learn about the ways to get or set data on an appointment or message from an Outlook add-in, taking into account whether the user is viewing or composing that item. You can use item-level properties in the JavaScript API for Office, Exchange Server callback tokens, or Exchange Web Services.
-
- _**Applies to:** apps for Office | Office Add-ins | Outlook_
+
 
 
 ## Properties available in read and compose forms

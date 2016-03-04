@@ -1,8 +1,7 @@
 
 # Match strings in an Outlook item as well-known entities
 Take advantage of the capabilities of Exchange Server to recognize specific string patterns to activate an Outlook add-in or facilitate further processing of these string matches.
-
- _**Applies to:** apps for Office | Office Add-ins | Outlook_
+
 
 
 ## What are well-known entities

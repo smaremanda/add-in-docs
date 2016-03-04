@@ -1,8 +1,7 @@
 
 # Validate an Exchange identity token
 Learn how to validate the Exchange 2013 identity token that links the email accounts of your Outlook add-in customers to the information that your web service provides.
-
- _**Applies to:** apps for Office | Office Add-ins | Outlook_
+
 
 
 ![Related code snippets and sample apps](../images/mod_icon_links_samples.png)[Outlook-Add-in-JavaScript-ValidateIdentityToken](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-ValidateIdentityToken)

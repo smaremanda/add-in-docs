@@ -1,8 +1,7 @@
 
 # Format tables in add-ins for Excel
 Learn how to specify formatting for tables in add-ins for Excel.
-
- _**Applies to:** apps for Office | Excel | Office Add-ins_
+
 
 This article explains the different features of the formatting API and outlines how to use them. In this release, you can programmatically specify cell formatting and some other options only for tables (not for  **Office.CoercionType.Text** or **Office.CoercionType.Matrix** data structures) and only in Excel add-ins. To set formatting with your add-in:
 

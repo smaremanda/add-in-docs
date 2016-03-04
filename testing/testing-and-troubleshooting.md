@@ -1,8 +1,7 @@
 
 # Troubleshoot user errors with Office Add-ins
 Troubleshoot issues your users are having with Office Add-ins.
-
- _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | Outlook | PowerPoint | Project | Word_
+
 
 At times your users might encounter issues with Office Add-ins that you develop. For example, an add-in fails to load or is inaccessible. Use the information in this article to help resolve common issues that your users encounter with your Office Add-in. 
 

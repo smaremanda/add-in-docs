@@ -1,8 +1,7 @@
 
 # Bind to regions in a document or spreadsheet
 This article describes how to create bindings to regions of documents and spreadsheets, and then read and write data to those bindings. It also describes how to create and remove event handlers for changes to data or the user's selection in a binding. 
-
- _**Applies to:** apps for Office | Excel | Office Add-ins | Word_
+
 
 
 ## Binding to regions in a document or spreadsheet

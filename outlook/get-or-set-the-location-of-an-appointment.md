@@ -1,8 +1,7 @@
 
 # Get or set the location when composing an appointment in Outlook
 Learn how to get or set the location from an Outlook add-in when the user is composing an appointment in Outlook.
-
- _**Applies to:** apps for Office | Office Add-ins | Outlook_
+
 
 
 ## Prerequisites for getting or setting the location in a compose form

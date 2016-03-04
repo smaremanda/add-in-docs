@@ -1,8 +1,7 @@
 
 # Get or set the time when composing an appointment in Outlook
 Learn how to get or set the time of an appointment from an Outlook add-in.
-
- _**Applies to:** apps for Office | Office Add-ins | Outlook_
+
 
 
 ## Prerequisites for getting or setting the start or end time in a compose form

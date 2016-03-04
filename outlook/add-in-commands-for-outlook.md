@@ -1,8 +1,7 @@
 
 # Add-in commands for Outlook
 Use add-in commands to integrate Outlook add-ins with the Outlook UI. 
-
- _**Applies to:** apps for Office | Office Add-ins | Outlook_
+
 
 Outlook add-in commands provide ways to initiate specific add-in actions from the ribbon by adding buttons or drop-down menus. This lets users access add-ins in a simple, intuitive, and unobtrusive way. Because they offer increased functionality in a seamless manner, you can use add-in commands to create more engaging solutions.
 

@@ -1,7 +1,6 @@
 
 # Get started with LabsJS for Office Mix
-
- _**Applies to:** apps for Office | Office Add-ins | Office Mix | PowerPoint_
+
 
 LabsJS content exposes an API (labs.js), samples, documentation, and associated files that you can use to develop interactive Labs, integrate them into Office Mix, and then render them in Microsoft PowerPoint. These labs are, in fact, Office Add-ins that you create using HTML5 and the labs.js JavaScript library.
 

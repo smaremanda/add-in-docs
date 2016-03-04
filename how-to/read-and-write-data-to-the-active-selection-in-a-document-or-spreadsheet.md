@@ -1,8 +1,7 @@
 
 # Read and write data to the active selection in a document or spreadsheet
 This article describes how to read and write to the user's selection in a document or spreadsheet. It also describes how to create event handlers for changes in user's selection.
-
- _**Applies to:** apps for Office | Excel | Office Add-ins | PowerPoint | Project | Word_
+
 
 
 ## Overview

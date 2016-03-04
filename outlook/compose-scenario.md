@@ -1,8 +1,7 @@
 
 # Create Outlook add-ins for compose forms
 Build Outlook add-ins for the read scenario and find information for available API features. 
-
- _**Applies to:** apps for Office | Office Add-ins | Outlook_
+
 
 
 ## Setting up Outlook add-ins for compose forms

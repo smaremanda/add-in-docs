@@ -1,8 +1,7 @@
 
 # Use PHP to validate an identity token
 Learn how to use PHP to validate the Exchange 2013 identity token that links the email accounts of your Outlook add-in customers to the information that your service provides.
-
- _**Applies to:** apps for Office | Office Add-ins | Outlook_
+
 
 Your Outlook add-in can send you an identity token, but before you trust the request you must validate the token to ensure that it came from the Exchange server that you expect. The example in this article uses PHP to validate the identity token; however, you can use any programming language to do the validation. The steps required to validate the token are described in the [JSON Web Token (JWT) Internet Draft](http://self-issued.info/docs/draft-goland-json-web-token-00.mdl).
 

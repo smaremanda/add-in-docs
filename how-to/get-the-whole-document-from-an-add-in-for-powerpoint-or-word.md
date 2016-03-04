@@ -1,8 +1,7 @@
 
 # Get the whole document from an add-in for PowerPoint or Word
 Create a task pane add-in for PowerPoint or Word that gets a reference to all of the content of the current document and sends it to a web server.
-
- _**Applies to:** apps for Office | Office Add-ins | PowerPoint | Word_
+
 
 You can create an Office Add-in to provide one-click sending or publishing of a Word 2013 or PowerPoint 2013 document to a remote location. This article demonstrates how to build a simple task pane add-in for PowerPoint 2013 that gets all of the presentation as a data object and sends that data to a web server via an HTTP request.
 

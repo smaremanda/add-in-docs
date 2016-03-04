@@ -1,8 +1,7 @@
 
 # Office Add-ins code samples
 Find Office Add-ins code samples.
-
- _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | Outlook | PowerPoint | Project | Word_
+
 
 Great code samples are key to getting up and running quickly. To find samples, go to [GitHub](https://github.com/OfficeDev) or the [MSDN Code Gallery](http://code.msdn.microsoft.com/officeapps/site/search?f%5B0%5D.Type=Technology&amp;f%5B0%5D.Value=apps%20for%20Office). You can download all the samples at once as a [sample pack](http://code.msdn.microsoft.com/office/Apps-for-Office-code-d04762b7), or browse and download individual samples.
 

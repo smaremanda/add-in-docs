@@ -1,8 +1,7 @@
 
 # Persisting add-in state and settings
 Understand the options for persisting add-in state and settings data for content, task pane, and Outlook add-ins. Learn about the common features and differences between the  **Settings**,  **RoamingSettings**, and  **CustomProperties** objects of the JavaScript API for Office for persisting add-in state, and see examples of how to use them.
-
- _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | Outlook | PowerPoint | Project | Word_
+
 
 Office Add-ins are essentially web applications running in the stateless environment of a browser control. As a result, your add-in may need to persist data to maintain the continuity of certain operations or features across sessions of using your add-in. For example, your add-in may have custom settings or other values that it needs to save and reload the next time it's initialized, such as a user's preferred view or default location.
 

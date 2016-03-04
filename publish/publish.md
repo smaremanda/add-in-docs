@@ -1,8 +1,7 @@
 
 # Publish your Office Add-in
 Make your add-ins available to users via an add-in catalog, a shared folder, or an Exchange server. Extend the reach of your add-ins to your end users.
-
- _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | Outlook | PowerPoint | Project | Word_
+
 
 You can publish your add-ins to the Office Store or upload them to a private shared folder add-in catalog on SharePoint, a shared network folder, or an Exchange server. The options that are available depend on the type of add-in you create. 
 

@@ -1,8 +1,7 @@
 
 # Understanding Outlook add-in permissions
 Use the Outlook add-in permissions model to request the appropriate mailbox access for an add-in:  **Restricted**,  **ReadItem**,  **ReadWriteItem**, or  **ReadWriteMailbox**.
-
- _**Applies to:** apps for Office | Office Add-ins | Outlook_
+
 
 
 ## Outlook add-in permissions model

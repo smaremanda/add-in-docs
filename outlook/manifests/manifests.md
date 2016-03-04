@@ -1,8 +1,7 @@
 
 # Outlook add-in manifests
 Create a manifest for an Outlook add-in for read or compose form.
-
- _**Applies to:** apps for Office | Office Add-ins | Outlook_
+
 
 An Outlook add-in consists of two components: the XML add-in manifest and a web page, supported by the JavaScript library for Office Add-ins (office.js). The manifest describes how the add-in integrates across Outlook clients. There are now 3 versions of the manifest schema, including  **VersionOverrides**. At this time, developers should focus on building an add-in with commands using manifest schema version 1.1 and  **VersionOverrides** 1.0. Here is a sample:
 

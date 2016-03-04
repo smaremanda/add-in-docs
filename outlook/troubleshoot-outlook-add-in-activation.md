@@ -1,8 +1,7 @@
 
 # Troubleshoot Outlook add-in activation
 Outlook add-in activation is contextual and based on rules in an add-in manifest. Explore reasons an installed add-in can fail to activate in Outlook.
-
- _**Applies to:** apps for Office | Office Add-ins | Outlook_
+
 
 Outlook add-in activation is contextual and is based on the activation rules in the add-in manifest. When conditions for the currently selected item satisfy the activation rules for the add-in, the host application activates and displays the add-in button in the Outlook user interface (add-in selection pane for compose add-ins, add-in bar for read add-ins). However, if your add-in doesn't activate as you expect, you should look into the following areas for possible reasons.
 

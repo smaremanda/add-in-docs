@@ -1,8 +1,7 @@
 
 # Debug add-ins in Office Online
 Use Office Online to debug add-ins without running Office on the Windows platform - for example, if you're developing on a Mac.
-
- _**Applies to:** apps for Office | Excel | Office Add-ins | Word_
+
 
 You can build and debug add-ins on a computer that isn't running Windows or the Office 2013 or Office 2016 desktop client. This article describes how to use Office Online to test and debug you add-ins. 
 

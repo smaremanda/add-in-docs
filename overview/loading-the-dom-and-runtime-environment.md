@@ -1,7 +1,6 @@
 
 # Loading the DOM and runtime environment
-
- _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | Outlook | PowerPoint | Project | Word_
+
 
 An add-in must ensure that both the DOM and the Office Add-ins runtime environment are loaded before running its own custom logic. 
 

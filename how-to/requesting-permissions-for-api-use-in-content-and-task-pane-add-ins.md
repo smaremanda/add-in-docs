@@ -1,8 +1,7 @@
 
 # Requesting permissions for API use in content and task pane add-ins
 This article describes the different permission levels that you can declare in your content or task pane add-in's manifest to specify the level of JavaScript API access your add-in requires for its features. 
-
- _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | PowerPoint | Project | Word_
+
 
 
 ## Permissions model

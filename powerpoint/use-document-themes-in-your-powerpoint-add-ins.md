@@ -1,8 +1,7 @@
 
 # Use document themes in your PowerPoint add-ins
 Learn how to use the OfficeThemes.css style sheet to define and dynamically update fonts and colors in the pages of your add-ins for PowerPoint so that they match the current document and Office UI theme.
-
- _**Applies to:** apps for Office | Office Add-ins | PowerPoint_
+
 
 
 ## Understanding Office themes

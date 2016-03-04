@@ -1,8 +1,7 @@
 
 # Outlook add-ins
 Create Outlook add-ins in read or compose mode.
-
- _**Applies to:** apps for Office | Office Add-ins | Outlook_
+
 
 
 ## What is an Outlook add-in?
