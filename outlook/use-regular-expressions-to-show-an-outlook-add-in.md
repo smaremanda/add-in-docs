@@ -1,8 +1,5 @@
 
 # Use regular expression activation rules to show an Outlook add-in
-Learn how to use regular expressions to specify the criteria for a Outlook add-in to be relevant in a read scenario and that Outlook should display the add-in in the UI.
-
-
 
 ## Support for regular expressions
 
