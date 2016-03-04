@@ -1,5 +1,6 @@
 
-# ProjectDocument.setResourceFieldAsync method (JavaScript API for Office v1.1)
+
+# ProjectDocument.setResourceFieldAsync method
 Asynchronously sets the value of the specified field for the specified resource.
  **Important:** This API works only in Project 2016 on Windows desktop.
 
@@ -9,28 +10,37 @@ Asynchronously sets the value of the specified field for the specified resource.
 |**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|Selection|
 |**Added in**|1.1|
 
-```
+```js
 Office.context.document.setResourceFieldAsync(resourceId, fieldId, fieldValue[, options][, callback]);
 ```
 
 
 ## Parameters
 
+_resourceId_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;The GUID of the resource. Required.
+    
+_fieldId_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;The ID of the target field, as a [ProjectResourceFields](../../reference/shared/projectresourcefields-enumeration.md) constant or its corresponding integer value. Required.
+    
+_fieldValue_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;The value for the target field, as  **string**,  **number**,  **boolean**, or  **object**. Required.
+    
+_options_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;The following [optional parameter](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters):
+   
+   
 
--  _resourceId_The GUID of the resource. Required.
-    
--  _fieldId_The ID of the target field, as a [ProjectResourceFields](../../reference/shared/projectresourcefields-enumeration.md) constant or its corresponding integer value. Required.
-    
--  _fieldValue_The value for the target field, as  **string**,  **number**,  **boolean**, or  **object**. Required.
-    
--  _options_The following [optional parameter](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters):
-    
-||
+|_asyncContext_|
 |:-----|
-|<dl class="authored" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><dt><span class="parameter" sdata="paramReference">asyncContext</span></dt><dd><p>Type: <span class="keyword">array</span>, <span class="keyword">boolean</span>, <span class="keyword">null</span>, <span class="keyword">number</span>, <b>object</b> , <span class="keyword">string</span>, or <span class="keyword">undefined</span></p><p>A user-defined item of any type that is returned in the <a href="540c114f-0398-425c-baf3-7363f2f6bc47.htm">AsyncResult</a> object without being altered. Optional.</p><p>For example, you can pass the <span class="parameter" sdata="paramReference">asyncContext</span> argument by using the format <span class="code">{asyncContext: 'Some text'}</span> or <span class="code">{asyncContext: <object>}</span>.</p></dd></dl>|
--  _callback_ Type:  **function**
-    
-    A function that is invoked when the method call returns, where the only parameter is of type [AsyncResult](../../reference/shared/asyncresult.md). Optional.
+|<div>&nbsp;&nbsp;&nbsp;&nbsp;Type: **array, boolean, null, number, object, string,** or **undefined**<br/></br>&nbsp;&nbsp;&nbsp;&nbsp;A user-defined item of any type that is returned in the [AsyncResult](../../reference/shared/asyncresult.md) object without being altered. Optional.</br></br>&nbsp;&nbsp;&nbsp;&nbsp;For example, you can pass the _asyncContext_ argument by using the format `{asyncContext: 'Some text'}` or `{asyncContext: <object>}`.</div>|
+
+
+_callback_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Type:  **function**
+
+&nbsp;&nbsp;&nbsp;&nbsp;A function that is invoked when the method call returns, where the only parameter is of type [AsyncResult](../../reference/shared/asyncresult.md). Optional.
+
     
 
 ## Callback Value
@@ -38,9 +48,6 @@ Office.context.document.setResourceFieldAsync(resourceId, fieldId, fieldValue[, 
 When the  _callback_ function executes, it receives an [AsyncResult](../../reference/shared/asyncresult.md) object that you can access from the parameter in the callback function.
 
 For the  **setResourceFieldAsync** method, the returned [AsyncResult](../../reference/shared/asyncresult.md) object contains following properties.
-
-
-****
 
 
 |**Name**|**Description**|
@@ -166,11 +173,6 @@ For more information about Office host application and server requirements, see 
 
 ## Support history
 
-
-
-****
-
-
 |**Version**|**Changes**|
 |:-----|:-----|
 |1.1|Introduced|
@@ -187,3 +189,4 @@ For more information about Office host application and server requirements, see 
 [AsyncResult object](../../reference/shared/asyncresult.md)
 [ProjectResourceFields enumeration](../../reference/shared/projectresourcefields-enumeration.md)
 [ProjectDocument object](../../reference/shared/projectdocument.projectdocument.md)
+
