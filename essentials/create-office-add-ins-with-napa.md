@@ -1,6 +1,5 @@
 
 # Create Office Add-ins with Napa Office 365 Development Tools
-Use Napa Office 365 Development Tools to create Office Add-ins directly out of a browser window.
 
  _**Applies to:** apps for Office | Office 365 | Office Add-ins_
 

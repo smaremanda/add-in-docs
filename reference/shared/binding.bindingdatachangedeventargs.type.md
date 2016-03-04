@@ -7,7 +7,7 @@ Gets an  **EventType** enumeration value that identifies the kind of event that 
 |**Hosts:**|Access, Excel, Word|
 |**Last changed in BindingEvents**|1.1|
 
-```
+```js
 var myEvent = eventArgsObj.type;
 ```
 

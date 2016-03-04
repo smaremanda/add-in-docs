@@ -1,6 +1,5 @@
 
 # Create a task pane add-in with Napa Office 365 Development Tools
-Use Napa Office 365 Development Tools to create a task pane Office Add-in that shows a list of images. When users select text in the open document, a list of images that are tagged with the selected text are retrieved from Flickr and displayed in the task pane.
 
  _**Applies to:** apps for Office | Excel | Office Add-ins | PowerPoint | Project | Word_
 

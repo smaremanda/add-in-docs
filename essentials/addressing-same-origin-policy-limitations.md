@@ -1,6 +1,5 @@
 
 # Addressing same-origin policy limitations in Office Add-ins
-This article provides a brief overview of ways to address the same-origin policy limitations that prevent a script loaded from one domain from getting or manipulating properties of a document from another domain in an Office Add-in.
 
  _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | Outlook | PowerPoint | Project | Word_
 
@@ -58,7 +57,7 @@ For an example of server-side code that shows how to use the  **Cookie** object 
 ## Using cross-origin resource sharing (CORS)
 
 
-For an example of using the cross-origin resource sharing feature of [XmlHttpRequest2](http://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.mdl), see the "Cross Origin Resource Sharing (CORS)" section of [New Tricks in XMLHttpRequest2](http://www.mdl5rocks.com/en/tutorials/file/xhr2/).
+For an example of using the cross-origin resource sharing feature of [XmlHttpRequest2](http://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html), see the "Cross Origin Resource Sharing (CORS)" section of [New Tricks in XMLHttpRequest2](http://www.html5rocks.com/en/tutorials/file/xhr2/).
 
 
 ## Building your own proxy using IFRAME and POST MESSAGE

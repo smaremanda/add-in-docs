@@ -304,7 +304,6 @@ The simplest way to deploy and test your add-in is to copy the files to a networ
 
 ### Additional resources
 
-
 *  [Excel add-ins programming overview](excel-add-ins-programming-overview.md)
 *  [Snippet Explorer for Excel](http://officesnippetexplorer.azurewebsites.net/#/snippets/excel)
 *  [Excel add-ins code samples](excel-add-ins-code-samples.md)

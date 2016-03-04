@@ -1,6 +1,5 @@
 
 # Localization for Office Add-ins
-Provide locale-specific content for an Office Add-in, including UI strings, add-in name, description, icon, source file, and date/time format.
 
  _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | Outlook | PowerPoint | Project | Word_
 

@@ -1,6 +1,5 @@
 
 # Create a task pane or content add-in with Visual Studio
-This article shows you how to use Visual Studio to create a Hello World Office Add-in and then extend it to read, write, and bind to the document.
 
  _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | PowerPoint | Project | Word_
 
