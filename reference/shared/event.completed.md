@@ -1,4 +1,5 @@
 
+
 # event.completed
 The callback that the add-in invokes to let Outlook know that the operation is done.
 
@@ -13,7 +14,7 @@ The callback that the add-in invokes to let Outlook know that the operation is d
 
 
 
-```
+```js
 event.completed();
 ```
 
@@ -35,10 +36,9 @@ For more information about Office host application and server requirements, see 
 
 **Supported hosts, by platform**
 
-||
-|:-----|
-|**Office for Windows desktop**|**Office Online (in browser)**|**OWA for Devices**|
-|:-----|:-----|:-----|
+
+| |**Office for Windows desktop**|**Office Online(in browser)**|**OWA for Devices**|
+|:-----|:-----|:-----|:-----|
 |**Outlook**|Y|||
 
 |||
@@ -52,10 +52,6 @@ For more information about Office host application and server requirements, see 
 ## Support history
 
 
-
-
-
-****
 
 
 |**Version**|**Changes**|
