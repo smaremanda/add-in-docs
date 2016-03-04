@@ -1,7 +1,6 @@
 
 # Create Outlook add-ins for read forms
-Build Outlook add-ins for the read scenario and find information for available API features. These features include contextual activation based on message class, the existence of an attachment, or string matching by regular expressions or well-known entities, and getting attachments of an item.
-
+These features include contextual activation based on message class, the existence of an attachment, or string matching by regular expressions or well-known entities, and getting attachments of an item.
 
 
 ## Setting up Outlook add-ins for read forms
