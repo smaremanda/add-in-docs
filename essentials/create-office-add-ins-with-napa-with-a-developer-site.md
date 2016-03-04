@@ -1,6 +1,5 @@
 
 # Create Office Add-ins with Napa with an Office 365 Developer Site
-Use Napa Office 365 Development Tools with an Office 365 Developer Site to create Office and SharePoint Add-ins.
 
  _**Applies to:** apps for Office | Office 365 | Office Add-ins_
 
