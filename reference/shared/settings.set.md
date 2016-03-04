@@ -1,5 +1,5 @@
 
-# Settings.set method (JavaScript API for Office)
+# Settings.set method
 Sets or creates the specified setting.
 
 |||
@@ -8,7 +8,7 @@ Sets or creates the specified setting.
 |**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|Settings|
 |**Last changed in**|1.1|
 
-[![Try out this call in the interactive API Tutorial for Excel](../../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](http://officeapitutorial.azurewebsites.net/Redirect.mdl?scenario=Persist+Settings&amp;amp;task=setSettings" target="_blank")
+[![Try out this call in the interactive API Tutorial for Excel](../../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](http://officeapitutorial.azurewebsites.net/Redirect.html?scenario=Persist+Settings&amp;amp;task=setSettings" target="_blank")
 
 
 ```js
@@ -19,10 +19,12 @@ Office.context.document.settings.set(name, value);
 ## Parameters
 
 
+
 _name_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;Type:  **string**
 
 &nbsp;&nbsp;&nbsp;&nbsp;The case-sensitive name of the setting to set or create.
+
     
 _value_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;Type:  **string**,  **number**,  **boolean**,  **null**,  **object** or **array**
@@ -63,7 +65,8 @@ A capital Y in the following matrix indicates that this method is supported in t
 For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
 
 
-| |**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
+
+||**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|
 |:-----|:-----|:-----|:-----|
 |**Access**||Y||
 |**Excel**|Y|Y|Y|

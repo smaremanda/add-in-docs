@@ -1,5 +1,5 @@
 
-# Settings.refreshAsync method (JavaScript API for Office)
+# Settings.refreshAsync method
 Reads all settings persisted in the document and refreshes the content or task pane add-in's copy of those settings held in memory.
 
 |||
@@ -19,6 +19,7 @@ _callback_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;Type:  **object**
 
 &nbsp;&nbsp;&nbsp;&nbsp;A function that is invoked when the callback returns, whose only parameter is of type  **AsyncResult**.
+
     
 
 
@@ -73,7 +74,8 @@ A capital Y in the following matrix indicates that this method is supported in t
 For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
 
 
-| |**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
+
+||**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|
 |:-----|:-----|:-----|:-----|
 |**Access**||Y||
 |**Excel**|Y|Y|Y|

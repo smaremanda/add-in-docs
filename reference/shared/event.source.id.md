@@ -1,5 +1,5 @@
 
-# event.source.id (JavaScript API for Office)
+# event.source.id
 Gets the id of the control that triggered calling this function.
 
 ****
@@ -35,7 +35,7 @@ For more information about Office host application and server requirements, see 
 
 **Supported hosts, by platform**
 
-| |**Office for Windows desktop**|**Office Online(in browser)**|**OWA for Devices**|
+| |**Office for Windows desktop**|**Office Online (in browser)**|**OWA for Devices**|
 |:-----|:-----|:-----|:-----|
 |**Outlook**|Y|||
 

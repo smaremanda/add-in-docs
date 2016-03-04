@@ -21,6 +21,7 @@ _taskIndex_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;Type:  **number**
 
 &nbsp;&nbsp;&nbsp;&nbsp;The index of the task in the collection of tasks for the project. Required.
+
     
 _options_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;The following [optional parameter](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters):
@@ -34,7 +35,7 @@ _callback_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;Type:  **function**
 
 &nbsp;&nbsp;&nbsp;&nbsp;A function that is invoked when the method call returns, where the only parameter is of type [AsyncResult](../../reference/shared/asyncresult.md). Optional.
-    
+
 
 ## Callback Value
 
@@ -151,7 +152,7 @@ A capital Y in the following matrix indicates that this method is supported in t
 For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
 
 
-| |**Office for Windows desktop**|**Office Online(in browser)**|
+||**Office for Windows desktop**|**Office Online (in browser)**|
 |:-----|:-----|:-----|
 |**Project**|Y||
 

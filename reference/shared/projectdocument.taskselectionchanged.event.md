@@ -1,5 +1,5 @@
 
-# ProjectDocument.TaskSelectionChanged event (JavaScript API for Office)
+# ProjectDocument.TaskSelectionChanged event
 Occurs when the task selection changes in the active project.
 
 |||
@@ -83,7 +83,7 @@ For more information about Office host application and server requirements, see 
 
 ||||
 |:-----|:-----|:-----|
-||Office for Windows desktop|Office Online(in browser)|
+||Office for Windows desktop|Office Online (in browser)|
 |**Project**|Y||
 
 |||
