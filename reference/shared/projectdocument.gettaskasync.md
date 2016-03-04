@@ -1,4 +1,5 @@
 
+
 # ProjectDocument.getTaskAsync method
 Asynchronously gets the specified task's name, assigned resources, and the ID of the task in the synchronized SharePoint task list.
 
@@ -8,7 +9,7 @@ Asynchronously gets the specified task's name, assigned resources, and the ID of
 |**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|Selection|
 |**Added in**|1.0|
 
-```
+```js
 Office.context.document.getTaskAsync(taskId [,options][, callback]);
 ```
 
@@ -39,8 +40,7 @@ For the  **getTaskAsync** method, the returned [AsyncResult](../../reference/sha
 |[asyncContext](../../reference/shared/asyncresult.asynccontext.md)|The data passed in the optional  _asyncContext_ parameter, if the parameter was used.|
 |[error](../../reference/shared/asyncresult.error.md)|Information about the error, if the  **status** property equals **failed**.|
 |[status](../../reference/shared/asyncresult.status.md)|The  **succeeded** or **failed** status of the asynchronous call.|
-|[value](../../reference/shared/asyncresult.value.md)|Contains the following properties:
-<ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p><span class="keyword">taskName</span> - The name of the task.</p></li><li><p><span class="keyword">wssTaskId</span> - The ID of the task in the synchronized SharePoint task list. If the project is not synchronized with a SharePoint task list, the value is <span class="keyword">0</span>.</p></li><li><p><span class="keyword">resourceNames</span> - The comma-separated list of the names of resources that are assigned to the task.</p></li></ul>|
+|[value](../../reference/shared/asyncresult.value.md)|Contains the following properties:<br/><br/><div>* **taskName** - The name of the task.<br/>* **wssTaskId** - The ID of the task in the synchronized SharePoint task list. If the project is not synchronized with a SharePoint task list, the value is **0**.<br/>* **resourceNames** - The comma-separated list of the names of resources that are assigned to the task.</div>|
 
 ## Remarks
 
@@ -151,9 +151,6 @@ For more information about Office host application and server requirements, see 
 
 ## Support history
 
-
-
-****
 
 
 |**Version**|**Changes**|
