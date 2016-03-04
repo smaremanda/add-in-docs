@@ -1,4 +1,5 @@
 
+
 # Office.useShortNamespace method
 Toggles on and off the  `Office` alias for the full `Microsoft.Office.WebExtension` namespace.
 
@@ -15,13 +16,17 @@ Office.useShortNamespace(useShortcut);
 ## Parameters
 
 
--  _useShortcut_ Type:  **boolean**
+
+_useShortcut_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Type:  **boolean**
+
     
-     **true** to use the shortcut alias; otherwise **false** to disable it. The default is **true**.
+&nbsp;&nbsp;&nbsp;&nbsp;**true** to use the shortcut alias; otherwise **false** to disable it. The default is **true**.
     
 
 
 ## Example
+
 
 
 ```js
@@ -77,10 +82,6 @@ For more information about Office host application and server requirements, see 
 |**Namespace**|Office|
 
 ## Support history
-
-
-
-****
 
 
 |**Version**|**Changes**|
