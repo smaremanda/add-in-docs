@@ -1,8 +1,5 @@
 
 # Activation rules for Outlook add-ins
-Define activation rules in an Outlook add-in manifest to specify when Outlook displays the add-in.
-
-
 
 ## Activation by specified rules
 
