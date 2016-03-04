@@ -1,4 +1,5 @@
 
+
 # ProjectDocument.removeHandlerAsync method
 Asynchronously removes an event handler for the task selection changed event in a [ProjectDocument](../../reference/shared/projectdocument.projectdocument.md) object.
 
@@ -8,37 +9,25 @@ Asynchronously removes an event handler for the task selection changed event in 
 |**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|Selection|
 |**Added in**|1.0|
 
-```
+```js
 Office.context.document.removeHandlerAsync(eventType[, options][, callback]);
 ```
 
 
 ## Parameters
-
-
-
 |**Name**|**Type**|**Description**|**Support notes**|
 |:-----|:-----|:-----|:-----|
-| _eventType_|[EventType](../../reference/shared/eventtype-enumeration.md)|The type of event to remove, as an [EventType](../../reference/shared/eventtype-enumeration.md) constant or its corresponding text value. Required.The following table shows valid  _eventType_ arguments for a [ProjectDocument](../../reference/shared/projectdocument.projectdocument.md) object.
+|_eventType_|[EventType](../../reference/shared/eventtype-enumeration.md)|<table><tr><th>Enumeration</th><th>Text value</th></tr><tr><td data-th="Enumeration"><a href="https://msdn.microsoft.com/en-us/library/office/fp179836.aspx">Office.EventType.ResourceSelectionChanged</a></td><td data-th="Text value">resourceSelectionChanged</td></tr><tr><td data-th="Enumeration"><a href="https://msdn.microsoft.com/en-us/library/office/fp179816.aspx">Office.EventType.TaskSelectionChanged</a></td><td data-th="Text value">taskSelectionChanged</td></tr><tr><td data-th="Enumeration"><a href="https://msdn.microsoft.com/en-us/library/office/fp179839.aspx">Office.EventType.ViewSelectionChanged</a></td><td data-th="Text value">viewSelectionChanged</td></tr></table>||
+|_options_|**object**|Specifies any of the following [optional parameters](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters).||
+|_asyncContext_|**array**,  **boolean**,  **null**,  **number**,  **object**, **string**, or  **undefined**|A user-defined item of any type that is returned in the  **AsyncResult** object without being altered.||
+|_callback_|**object**|A function that is invoked when the callback returns, whose only parameter is of type  **AsyncResult**.||
 
-|**Enumeration**|**Text value**|
-|:-----|:-----|
-|[Office.EventType.ResourceSelectionChanged](../../reference/shared/projectdocument.resourceselectionchanged.event.md)|resourceSelectionChanged|
-|[Office.EventType.TaskSelectionChanged](../../reference/shared/projectdocument.taskselectionchanged.event.md)|taskSelectionChanged|
-|[Office.EventType.ViewSelectionChanged](../../reference/shared/projectdocument.viewselectionchanged.event.md)|viewSelectionChanged|
-||
-| _options_|**object**|Specifies any of the following [optional parameters](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters).||
-| _asyncContext_|**array**,  **boolean**,  **null**,  **number**,  **object**, **string**, or  **undefined**|A user-defined item of any type that is returned in the  **AsyncResult** object without being altered.||
-| _callback_|**object**|A function that is invoked when the callback returns, whose only parameter is of type  **AsyncResult**.||
 
 ## Callback Value
 
 When the  _callback_ function executes, it receives an [AsyncResult](../../reference/shared/asyncresult.md) object that you can access from the parameter in the callback function.
 
 For the  **removeHandlerAsync** method, the returned [AsyncResult](../../reference/shared/asyncresult.md) object contains the following properties.
-
-
-****
 
 
 |**Name**|**Description**|
@@ -144,11 +133,6 @@ For more information about Office host application and server requirements, see 
 
 ## Support history
 
-
-
-****
-
-
 |**Version**|**Changes**|
 |:-----|:-----|
 |1.0|Introduced|
@@ -163,3 +147,4 @@ For more information about Office host application and server requirements, see 
 [addHandlerAsync method](../../reference/shared/projectdocument.addhandlerasync.md)
 [EventType enumeration](../../reference/shared/eventtype-enumeration.md)
 [ProjectDocument object](../../reference/shared/projectdocument.projectdocument.md)
+
