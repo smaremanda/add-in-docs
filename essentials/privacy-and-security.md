@@ -1,8 +1,6 @@
 
 # Privacy and security for Office Add-ins
 
-Office Add-ins are secured by a runtime framework, a multiple-tier permissions model, and the ability to govern use of memory, CPU, and network resources.
-
  _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | Outlook | PowerPoint | Project | Word_
 
 
