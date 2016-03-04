@@ -1,7 +1,6 @@
 
 # Create add-ins for Access web apps
-
- _**Applies to:** Access apps for SharePoint | apps for Office | Office Add-ins_
+
 
 This article shows you how to use Visual Studio 2015 to develop an Office Add-in that targets Access web apps.
 
