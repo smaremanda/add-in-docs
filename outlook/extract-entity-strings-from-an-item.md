@@ -1,7 +1,8 @@
 
 # Extract entity strings from an Outlook item
 Create an Outlook add-in that matches special strings in the subject and body of the currently viewed Outlook item - addresses, contacts, email addresses, meeting suggestions, phone numbers, task suggestions, and URLs - and displays them in the add-in pane.
-
+
+
 
 This article describes how to create a  **Display entities** Outlook add-in that extracts string instances of supported well-known entities in the subject and body of the selected Outlook item. This item can be an appointment, email message, or meeting request, response, or cancellation. The supported entities include:
 
@@ -20,7 +21,9 @@ This article describes how to create a  **Display entities** Outlook add-in that
 - URL.
     
 Most of these entities rely on natural language recognition, which is based on machine learning of large amounts of data. This recognition is nondeterministic and sometimes depends on the context in the Outlook item.
-Outlook activates the entities add-in whenever the user selects an appointment, email message, or meeting request, response, or cancellation for viewing. During initialization, the sample entities add-in reads all instances of the supported entities from the current item. The add-in provides buttons for the user to choose a type of entity. When the user selects an entity, the add-in displays instances of the selected entity in the add-in pane. The following sections list the XML manifest, and HTML and JavaScript files of the entities add-in, and highlight the code that supports the respective entity extraction.
+Outlook activates the entities add-in whenever the user selects an appointment, email message, or meeting request, response, or cancellation for viewing. During initialization, the sample entities add-in reads all instances of the supported entities from the current item. 
+
+The add-in provides buttons for the user to choose a type of entity. When the user selects an entity, the add-in displays instances of the selected entity in the add-in pane. The following sections list the XML manifest, and HTML and JavaScript files of the entities add-in, and highlight the code that supports the respective entity extraction.
 
 ## XML manifest
 
