@@ -1,6 +1,5 @@
 
 # Create and debug Office Add-ins in Visual Studio
-Use Visual Studio project templates to create an Office Add-ins project, modify your add-in settings, and develop and debug your add-in.
 
  _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | Outlook | PowerPoint | Project | Word_
 
