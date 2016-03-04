@@ -8,13 +8,13 @@ Provides IntelliSense specific to compose or read mode messages and appointments
 |**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|Mailbox|
 |**Last changed in**|1.0|
 
-****
+
 
 |||
 |:-----|:-----|
 |**Applicable Outlook modes**|Design time in Visual Studio only|
 
-```
+```js
 Office.cast.item.toAppointmentCompose(Office.context.mailbox.item);
 ```
 
@@ -38,7 +38,7 @@ At run time, the  **Office.cast.item** methods have no effect on your Outlook ad
 The following example uses the  **toMessageCompose** method to cast the **Office.context.mailbox.item** property so that it will only show IntelliSense for the **Message** object in compose mode. After the cast, the `message` variable will only display IntelliSense for methods and properties that can be used in compose mode.
 
 
-```
+```js
 var message = Office.cast.item.toMessageCompose(Office.context.mailbox.item);
 
 ```
@@ -51,10 +51,8 @@ A capital Y in the following matrix indicates that this method is supported in t
 
 For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
 
-
-|||||
-|:-----|:-----|:-----|:-----|
 ||Office for Windows desktop|Office Online (in browser)|Outlook for Mac|
+|:-----|:-----|:-----|:-----|
 |**Outlook**|Y|Y|Y|
 
 |||
@@ -67,9 +65,6 @@ For more information about Office host application and server requirements, see 
 
 ## Support history
 
-
-
-****
 
 
 |**Version**|**Changes**|
