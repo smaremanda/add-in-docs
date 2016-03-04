@@ -1,6 +1,5 @@
 
 # excel-add-ins-javascript-reference
-Find JavaScript API reference content for add-ins for Excel 2016.
 
  _**Applies to:** apps for Office | Excel | Excel 2016 | Office Add-ins_
 
