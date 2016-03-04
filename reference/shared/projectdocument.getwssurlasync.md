@@ -1,4 +1,5 @@
 
+
 # ProjectDocument.getWSSUrlAsync method
 Asynchronously gets the URL of the synchronized SharePoint task list.
 
@@ -8,7 +9,7 @@ Asynchronously gets the URL of the synchronized SharePoint task list.
 |**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|Selection|
 |**Added in**|1.0|
 
-```
+```js
 Office.context.document.getWSSUrlAsync([options,] [callback]);
 ```
 
@@ -30,16 +31,12 @@ When the  _callback_ function executes, it receives an [AsyncResult](../../refer
 For the  **getWSSUrlAsync** method, the returned [AsyncResult](../../reference/shared/asyncresult.md) object contains following properties.
 
 
-****
-
-
 |**Name**|**Description**|
 |:-----|:-----|
 |[asyncContext](../../reference/shared/asyncresult.asynccontext.md)|The data passed in the optional  _asyncContext_ parameter, if the parameter was used.|
 |[error](../../reference/shared/asyncresult.error.md)|Information about the error, if the  **status** property equals **failed**.|
 |[status](../../reference/shared/asyncresult.status.md)|The  **succeeded** or **failed** status of the asynchronous call.|
-|[value](../../reference/shared/asyncresult.value.md)|Contains the following properties:
-<ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>The <span class="keyword">listName</span> property is the name of the synchronized SharePoint task list.</p></li><li><p>The <span class="keyword">serverUrl</span> property is the URL of the synchronized SharePoint task list.</p></li></ul>|
+|[value](../../reference/shared/asyncresult.value.md)|Contains the following properties:<br/><br/><div>* The **listName** property is the name of the synchronized SharePoint task list.<br/>* The **serverUrl** property is the URL of the synchronized SharePoint task list.</div>|
 
 ## Remarks
 
@@ -107,6 +104,7 @@ A capital Y in the following matrix indicates that this method is supported in t
 For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
 
 
+
 ||**Office for Windows desktop**|**Office Online (in browser)**|
 |:-----|:-----|:-----|
 |**Project**|Y||
@@ -120,10 +118,6 @@ For more information about Office host application and server requirements, see 
 |**Namespace**|Office|
 
 ## Support history
-
-
-
-****
 
 
 |**Version**|**Changes**|
