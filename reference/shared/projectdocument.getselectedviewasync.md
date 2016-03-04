@@ -1,4 +1,5 @@
 
+
 # ProjectDocument.getSelectedViewAsync method
 Asynchronously gets the type and name of the active view in the document.
 
@@ -8,7 +9,7 @@ Asynchronously gets the type and name of the active view in the document.
 |**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|Selection|
 |**Added in**|1.0|
 
-```
+```js
 Office.context.document.getSelectedViewAsync([options,] [callback]);
 ```
 
@@ -38,8 +39,7 @@ For the  **getSelectedViewAsync** method, the returned [AsyncResult](../../refer
 |[asyncContext](../../reference/shared/asyncresult.asynccontext.md)|The data passed in the optional  _asyncContext_ parameter, if the parameter was used.|
 |[error](../../reference/shared/asyncresult.error.md)|Information about the error, if the  **status** property equals **failed**.|
 |[status](../../reference/shared/asyncresult.status.md)|The  **succeeded** or **failed** status of the asynchronous call.|
-|[value](../../reference/shared/asyncresult.value.md)|Contains the following properties:
-<ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p><span class="keyword">viewName</span> - The name of the view, as a <a href="8916192b-2a83-4a57-83b8-44b62b46fdc1.htm">ProjectViewTypes</a> constant.</p></li><li><p><span class="keyword">viewType</span> - The type of view, as the integer value of a <a href="8916192b-2a83-4a57-83b8-44b62b46fdc1.htm">ProjectViewTypes</a> constant.</p></li></ul>|
+|[value](../../reference/shared/asyncresult.value.md)|Contains the following properties:<br/><br/><div>* **viewName** - The name of the view, as a [ProjectViewTypes](../../reference/shared/projectviewtypes-enumeration.md) constant.<br/>* **viewType** - The type of view, as the integer value of a [ProjectViewTypes](../../reference/shared/projectviewtypes-enumeration.md) constant.</div>|
 
 ## Example
 
