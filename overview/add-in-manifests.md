@@ -1,6 +1,5 @@
 
 # Office Add-ins XML manifest
-Create or edit the manifest XML file for an Office Add-in.
 
  _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | Outlook | PowerPoint | Project | Word_
 

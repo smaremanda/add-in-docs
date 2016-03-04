@@ -1,10 +1,9 @@
 
 # Specify Office hosts and API requirements
-Specify Office hosts, requirement sets, or API members your add-in requires. Use  **isSetSupported** or other runtime checks to provide additional functionality if an API member is supported in the Office host running your add-in.
 
  _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | Outlook | PowerPoint | Project | Word_
 
-Your Officeadd-in might depend on a specific Office host, a requirement set, an API member, or a version of the API in order to work as expected. For example, your add-in might:
+Your Office Add-in might depend on a specific Office host, a requirement set, an API member, or a version of the API in order to work as expected. For example, your add-in might:
 
 - Run in a single Office application (for example, Word or Excel only), or in several Office applications.
     
@@ -51,18 +50,18 @@ If you use runtime checks, reference the most current version of the JavaScript 
 
 ## Options to specify Office hosts or API requirements
 
-When specifying Office hosts or API requirements, there are several decisions to consider to select the right technique for your add-in. The following diagram shows how to decide which technique to use in your add-in.
+When you specify Office hosts or API requirements, there are several factors to consider. The following diagram shows how to decide which technique to use in your add-in.
 
 
-![Choose the best option for your add-in when specifying Office hosts or API requirements](../images/e3498f8f-7c7c-461c-84f3-b93910b088b9.png)From the diagram:
+![Choose the best option for your add-in when specifying Office hosts or API requirements](../images/e3498f8f-7c7c-461c-84f3-b93910b088b9.png)
 
-
+Consider the following:
 
 - If your add-in runs in one Office host, set the  **Hosts** element in the manifest. For more information, see [Set the Hosts element](../overview/specify-office-hosts-and-api-requirements.md#SetHosts).
     
 - To set the minimum requirement set or API members that an Office host must support to run your add-in, set the  **Requirements** element in the manifest. For more information, see [Set the Requirements element in the manifest](../overview/specify-office-hosts-and-api-requirements.md#RequirementsElement).
     
-- If you would like to provide additional functionality if specific requirement sets or API members are available in the Office host, perform a runtime check in your add-in's JavaScript code. For example, if your add-in runs in Excel 2016, you may want to use API members from the new JavaScript API for Excel to provide additional functionality. For more information, see [Use runtime checks in your JavaScript code](../overview/specify-office-hosts-and-api-requirements.md#Runtimecheck).
+- If you would like to provide additional functionality if specific requirement sets or API members are available in the Office host, perform a runtime check in your add-in's JavaScript code. For example, if your add-in runs in Excel 2016, use API members from the new JavaScript API for Excel to provide additional functionality. For more information, see [Use runtime checks in your JavaScript code](../overview/specify-office-hosts-and-api-requirements.md#Runtimecheck).
     
 
 ## Set the Hosts element
@@ -149,7 +148,7 @@ From the above example:
 You might want to provide additional functionality in your add-in if certain requirement sets are supported by the Office host. For example, you might want to use the new JavaScript API for Word in your existing add-in if your add-in runs in Word 2016. To do this, you use the  **isSetSupported** method with the name of the requirement set. **isSetSupported** determines, at runtime, whether the Office host running the add-in supports the requirement set. If the requirement set is supported, **isSetSupported** returns **true** and runs the additional code that uses the API members from that requirement set. If the Office host doesn't support the requirement set, **isSetSupported** returns **false** and the additional code won't run. The following code shows the syntax to use with **isSetSupported**.
 
 
-```
+```js
 if (Office.context.requirements.isSetSupported(RequirementSetName , VersionNumber )
 {
    // Code that uses API members from RequirementSetName .
@@ -174,7 +173,7 @@ The following code example shows how an add-in can provide different functionali
 
 
 
-```
+```js
 if (Office.context.requirements.isSetSupported('WordApi', 1.1)
 {
    	// Run code that provides additional functionality using the JavaScript API for Word when the add-in runs in Word 2016.
@@ -204,7 +203,7 @@ The following code example checks whether the host supports  **document.setSelec
 
 
 
-```
+```js
 if (Office.context.document.setSelectedDataAsync)
 {
     // Run code that uses document.setSelectedDataAsync.

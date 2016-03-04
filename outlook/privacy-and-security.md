@@ -186,7 +186,7 @@ The security model provides the following rights and responsibilities to adminis
 
 - [Outlook add-ins](../outlook/outlook-add-ins.md)
     
-- [Privacy and security for Office Add-ins](87c59a88-10e2-4c88-b6a8-736bd356e5f8.md)
+- [Privacy and security for Office Add-ins](../essentials/privacy-and-security.md)
     
 - [Outlook add-in APIs](../outlook/apis.md)
     

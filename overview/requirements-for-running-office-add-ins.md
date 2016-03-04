@@ -1,9 +1,9 @@
 
 # Requirements for running Office Add-ins
-Learn about the software and device requirements for running Office Add-ins.
 
  _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | Outlook | PowerPoint | Project | Word_
 
+This article describes the software and device requirements for running Office Add-ins.
 
 ## Server requirements
 

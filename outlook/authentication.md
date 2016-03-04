@@ -41,18 +41,7 @@ On the server side, things are somewhat more complex. When your server receives 
 Let's get into the specifics. As an example, we'll use a simple Outlook add-in that sends the identity token and a list of phone numbers found in the message to a web service. 
 
 
-## In this section
 
-
-
-
-|**Article**|**Description**|
-|:-----|:-----|
-|[Inside the Exchange identity token](../outlook/inside-the-identity-token.md)|Describes the specific claims that are included in the token.|
-|[Call a service from an Outlook add-in by using an identity token in Exchange](../outlook/call-a-service-by-using-an-identity-token.md)|Provides code examples for Outlook add-in writers.|
-|[Use the Exchange token validation library](../outlook/use-the-token-validation-library.md)|Provides code examples for using the .NET Framework validation library to write server-side code.|
-|[Validate an Exchange identity token](../outlook/validate-an-identity-token.md)|Provides code examples for implementing your own token validator.|
-|[Authenticate a user with an identity token for Exchange](../outlook/authenticate-a-user-with-an-identity-token.md)|Provides code examples for implementing a simple single sign-on system for a service.|
 
 ## Additional resources
 

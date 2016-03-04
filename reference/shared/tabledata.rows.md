@@ -1,5 +1,5 @@
 
-# TableData.rows property (JavaScript API for Office)
+# TableData.rows property
 Gets or sets the rows in the table.
 
 |||
@@ -46,7 +46,7 @@ function createTableData() {
 
 
 
-[![Try out this call in the interactive API Tutorial for Excel](../../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](http://officeapitutorial.azurewebsites.net/Redirect.mdl?scenario=Write+and+Read+a+Table)
+[![Try out this call in the interactive API Tutorial for Excel](../../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](http://officeapitutorial.azurewebsites.net/Redirect.html?scenario=Write+and+Read+a+Table)
 
 ## Support details
 
@@ -56,7 +56,7 @@ A capital Y in the following matrix indicates that this method is supported in t
 For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
 
 
-||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
+||**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|
 |:-----|:-----|:-----|:-----|
 |**Excel**|Y|Y|Y|
 |**Word**|Y|Y|Y|

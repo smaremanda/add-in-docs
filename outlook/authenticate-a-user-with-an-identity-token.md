@@ -41,7 +41,7 @@ The following code example shows a simple authentication object that matches the
  >**Note**  This is just one suggestion for how to use the identity token. As always, when you're dealing with identity and authentication, you have to make sure that your code meets the security requirements of your organization.
 
 
-```
+```C#
     public class TokenAuthentication
     {
         // This example uses a Dictionary object to store local credentials. Your application should use

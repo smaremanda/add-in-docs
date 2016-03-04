@@ -235,7 +235,7 @@ Further, the runtime framework provides the following benefits to ensure that an
     
 Also, the runtime framework governs the use of memory, CPU, and network resources by Office Add-ins to ensure that good performance and reliability are maintained. 
 
-For more information about the Office Add-ins privacy and security model, see [Privacy and security for Office Add-ins](87c59a88-10e2-4c88-b6a8-736bd356e5f8.md).
+For more information about the Office Add-ins privacy and security model, see [Privacy and security for Office Add-ins](../essentials/privacy-and-security.md).
 
 
 ## Publishing basics

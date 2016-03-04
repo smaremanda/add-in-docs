@@ -1,17 +1,78 @@
+# ChartGridlines object (JavaScript API for Excel)
 
-# chartgridlines
-Summary
+_Applies to: Excel 2016, Excel Online, Office 2016_
 
- _**Applies to:** apps for Office | Excel 2016_
+Represents major or minor gridlines on a chart axis.
 
-{insert introductory content}
+## Properties
 
-## {insert section title text}
+| Property	   | Type	|Description
+|:---------------|:--------|:----------|
+|visible|bool|Boolean value representing if the axis gridlines are visible or not.|
 
-{insert body text}
+_See property access [examples.](#property-access-examples)_
 
+## Relationships
+| Relationship | Type	|Description|
+|:---------------|:--------|:----------|
+|format|[ChartGridlinesFormat](chartgridlinesformat.md)|Represents the formatting of chart gridlines. Read-only.|
 
-### {insert subsection title text}
+## Methods
 
-{insert body text}
+| Method		   | Return Type	|Description|
+|:---------------|:--------|:----------|
+|[load(param: object)](#loadparam-object)|void|Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.|
 
+## Method Details
+
+### load(param: object)
+Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.
+
+#### Syntax
+```js
+object.load(param);
+```
+
+#### Parameters
+| Parameter	   | Type	|Description|
+|:---------------|:--------|:----------|
+|param|object|Optional. Accepts parameter and relationship names as a delimited string or an array. Or, provide [loadOption](loadoption.md) object.|
+
+#### Returns
+void
+### Property access examples
+
+Get the `visible` property of the major gridlines on value axis of Chart1.
+
+```js
+Excel.run(function (ctx) { 
+	var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");	
+	var majGridlines = chart.axes.valueaxis.majorGridlines;
+	majGridlines.load('visible');
+	return ctx.sync().then(function() {
+			console.log(majGridlines.visible);
+	});
+}).catch(function(error) {
+		console.log("Error: " + error);
+		if (error instanceof OfficeExtension.Error) {
+			console.log("Debug info: " + JSON.stringify(error.debugInfo));
+		}
+});
+```
+
+Set to show major gridlines on value axis of Chart1.
+
+```js
+Excel.run(function (ctx) { 
+	var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");	
+	chart.axes.valueaxis.majorgridlines.visible = true;
+	return ctx.sync().then(function() {
+			console.log("Axis Gridlines Added ");
+	});
+}).catch(function(error) {
+		console.log("Error: " + error);
+		if (error instanceof OfficeExtension.Error) {
+			console.log("Debug info: " + JSON.stringify(error.debugInfo));
+		}
+});
+```

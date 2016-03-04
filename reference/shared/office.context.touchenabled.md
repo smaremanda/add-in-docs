@@ -1,5 +1,5 @@
 
-# Context.touchEnabled property (JavaScript API for Office)
+# Context.touchEnabled property
 Gets whether the add-in is running in an Office host application that is touch enabled.
 
 |||
@@ -14,7 +14,7 @@ var isTouchEnabled = Office.context.touchEnabled;
 
 ## Return value
 
- ****Returns  **True** if the add-in is running on a touch device, such as an iPad; otherwise returns **False**.
+Returns **True** if the add-in is running on a touch device, such as an iPad; otherwise returns **False**.
 
 
 ## Remarks
@@ -29,9 +29,6 @@ A capital Y in the following matrix indicates that this method is supported in t
 
 For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
 
-
-|
-|
 ||**Office for iPad**|
 |:-----|:-----|
 |**Excel**|Y|

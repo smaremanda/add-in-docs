@@ -1,6 +1,5 @@
 
 # Create a task pane or content add-in for Word or Excel by using a text editor
-Create a simple Office Add-in by using a text editor.
 
  _**Applies to:** apps for Office | Excel | Office Add-ins | Word_
 
@@ -31,43 +30,43 @@ The UI of the add-in is provided by an HTML file that can optionally provide Jav
     
 2. Create a file named HelloWorld.html that contains the following HTML code.
     
-```HTML
-  <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-        <link rel="stylesheet" type="text/css" href="program.css" />
-    </head>
-    <body>
-        <p>Hello World!</p>
-    </body>
-</html>
-
-```
+    ```HTML
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+            <link rel="stylesheet" type="text/css" href="program.css" />
+        </head>
+        <body>
+            <p>Hello World!</p>
+        </body>
+    </html>
+    
+    ```
 
 
     This file provides the minimum set of HTML tags to display the UI of an add-in.
     
 3. Create a file named program.css that contains the following CSS code.
     
-```
-  body
-{
-    position:relative;
-}
-li :hover
-{  
-    text-decoration: underline;
-    cursor:pointer;
-}
-h1,h3,h4,p,a,li
-{
-    font-family: "Segoe UI Light","Segoe UI",Tahoma,sans-serif;
-    text-decoration-color:#4ec724;
-}
-
-```
+    ```
+     body
+    {
+        position:relative;
+    }
+    li :hover
+    {  
+        text-decoration: underline;
+        cursor:pointer;
+    }
+    h1,h3,h4,p,a,li
+    {
+        font-family: "Segoe UI Light","Segoe UI",Tahoma,sans-serif;
+        text-decoration-color:#4ec724;
+    }
+    
+    ```
 
 
     This file provides the style sheet for the add-in.
@@ -76,32 +75,32 @@ h1,h3,h4,p,a,li
     
      >**Important**  Replace the value in the  `<id>` tag with a GUID that you have generated yourself.
 
-```XML
-  <?xml version="1.0" encoding="utf-8"?>
-<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xsi:type="TaskPaneApp">
-  <Id>08afd7fe-1631-42f4-84f1-5ba51e242f98</Id>
-  <Version>1.0</Version>
-  <ProviderName>Microsoft</ProviderName>
-  <DefaultLocale>EN-US</DefaultLocale>
-  <DisplayName DefaultValue="Hello World add-in"/>
-  <Description DefaultValue="My first app."/>
-  <IconUrl DefaultValue=
-    "http://officeimg.vo.msecnd.net/_layouts/images/general/office_logo.jpg"/>
-
-  <Hosts>
-    <Host Name="Document"/>
-    <Host Name="Workbook"/>
-  </Hosts>
-
-  <DefaultSettings>
-    <SourceLocation DefaultValue="\\MyShare\MyManifests\HelloWorld\HelloWorld.html"/>
-  </DefaultSettings>
-  <Permissions>ReadWriteDocument</Permissions>
-</OfficeApp>
-
-```
+    ```XML
+    <?xml version="1.0" encoding="utf-8"?>
+    <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:type="TaskPaneApp">
+      <Id>08afd7fe-1631-42f4-84f1-5ba51e242f98</Id>
+      <Version>1.0</Version>
+      <ProviderName>Microsoft</ProviderName>
+      <DefaultLocale>EN-US</DefaultLocale>
+      <DisplayName DefaultValue="Hello World add-in"/>
+      <Description DefaultValue="My first app."/>
+      <IconUrl DefaultValue=
+        "http://officeimg.vo.msecnd.net/_layouts/images/general/office_logo.jpg"/>
+    
+      <Hosts>
+        <Host Name="Document"/>
+        <Host Name="Workbook"/>
+      </Hosts>
+    
+      <DefaultSettings>
+        <SourceLocation DefaultValue="\\MyShare\MyManifests\HelloWorld\HelloWorld.html"/>
+      </DefaultSettings>
+      <Permissions>ReadWriteDocument</Permissions>
+    </OfficeApp>
+    
+    ```
 
 
     This file provides the manifest XML file for the add-in.
@@ -155,22 +154,22 @@ The next set of steps will show you how to add some basic programming logic to t
 
 1. Open the HelloWorld.html file and add the  `<script>` tags inside the `<head>` tags of the file.
     
-```HTML
-  <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-        <link rel="stylesheet" type="text/css" href="program.css" />
-        <script src="https://appsforoffice.microsoft.com/lib/1/hosted/Office.js"></script>
-        <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
-        <script src="Program.js"></script>
-    </head>
-    <body>
-        <p>Hello World!</p>
-    </body>
-</html>
-```
+    ```HTML
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+            <link rel="stylesheet" type="text/css" href="program.css" />
+            <script src="https://appsforoffice.microsoft.com/lib/1/hosted/Office.js"></script>
+            <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
+            <script src="Program.js"></script>
+        </head>
+        <body>
+            <p>Hello World!</p>
+        </body>
+    </html>
+    ```
 
 
     This adds a reference to the Office.js library file that implements the JavaScript API for Office. It also adds a reference to Program.js, which is a file we'll create to contain the programming logic for the add-in.
@@ -178,73 +177,73 @@ The next set of steps will show you how to add some basic programming logic to t
      >**Note**  The  `src` attribute of the `<script>` tag references the JavaScript API for Office (office.js) that will be externally available.
 2. Replace  `<p>Hello World!</p>` with the lines inside the `<body>` tags of the file.
     
-```HTML
-  <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-        <link rel="stylesheet" type="text/css" href="program.css" />
-        <script src="https://appsforoffice.microsoft.com/lib/1/hosted/Office.js"></script>
-        <script src="Program.js"></script>
-    </head>
-    <body>
-        <button onclick="writeData()"> Write Data </button></br>
-        <button onclick="ReadData()"> Read Selected Data </button></br>
-        Results: <div id="results"></div>
-    </body>
-</html>
-
-```
+    ```HTML
+    <!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+            <link rel="stylesheet" type="text/css" href="program.css" />
+            <script src="https://appsforoffice.microsoft.com/lib/1/hosted/Office.js"></script>
+            <script src="Program.js"></script>
+        </head>
+        <body>
+            <button onclick="writeData()"> Write Data </button></br>
+            <button onclick="ReadData()"> Read Selected Data </button></br>
+            Results: <div id="results"></div>
+        </body>
+    </html>
+    
+    ```
 
 
     This adds two buttons to the add-in UI and defines a  `div` to display results.
     
 3. Create a file named Program.js that contains the following JavaScript code.
     
-     >**Note**  [Office.initialize](http://msdn.microsoft.com/en-us/library/727adf79-a0b5-48d2-99c7-6642c2c334fc%28Office.15%29.aspx) must be initialized as a function at the beginning of the code file so that the [Office.context](http://msdn.microsoft.com/en-us/library/6c4b2c16-d4fb-4ecf-b72c-1e33b205daaf%28Office.15%29.aspx) property will be available when called from the functions that follow.
+     >**Note**  [Office.initialize](http://msdn.microsoft.com/en-us/library/727adf79-a0b5-48d2-99c7-6642c2c334fc) must be initialized as a function at the beginning of the code file so that the [Office.context](http://msdn.microsoft.com/en-us/library/6c4b2c16-d4fb-4ecf-b72c-1e33b205daaf) property will be available when called from the functions that follow.
 
-```js
-  // The initialize function is required for all add-ins.
-Office.initialize = function (reason) {
-    // Checks for the DOM to load using the jQuery ready function.
-    $(document).ready(function () {
-    // After the DOM is loaded, app-specific code can run.
-    // Add any initialization logic to this function.
-    });
-}
-var MyArray = [['Berlin'],['Munich'],['Duisburg']];
-
-function writeData() {
-    Office.context.document.setSelectedDataAsync(MyArray, { coercionType: 'matrix' });
-}
-
-function ReadData() {
-    Office.context.document.getSelectedDataAsync("matrix", function (result) {
-        if (result.status === "succeeded"){
-            printData(result.value);
-        }
-
-        else{
-            printData(result.error.name + ":" + err.message);
-        }
-    });
-}
-
-      function printData(data) {
-    {
-        var printOut = "";
-
-        for (var x = 0 ; x < data.length; x++) {
-            for (var y = 0; y < data[x].length; y++) {
-                printOut += data[x][y] + ",";
-            }
-        }
-       document.getElementById("results").innerText = printOut;
+    ```js
+    // The initialize function is required for all add-ins.
+    Office.initialize = function (reason) {
+        // Checks for the DOM to load using the jQuery ready function.
+        $(document).ready(function () {
+        // After the DOM is loaded, app-specific code can run.
+        // Add any initialization logic to this function.
+        });
     }
-}
-
-```
+    var MyArray = [['Berlin'],['Munich'],['Duisburg']];
+    
+    function writeData() {
+        Office.context.document.setSelectedDataAsync(MyArray, { coercionType: 'matrix' });
+    }
+    
+    function ReadData() {
+        Office.context.document.getSelectedDataAsync("matrix", function (result) {
+            if (result.status === "succeeded"){
+                printData(result.value);
+            }
+    
+            else{
+                printData(result.error.name + ":" + err.message);
+            }
+        });
+    }
+    
+    function printData(data) {
+        {
+            var printOut = "";
+    
+            for (var x = 0 ; x < data.length; x++) {
+                for (var y = 0; y < data[x].length; y++) {
+                    printOut += data[x][y] + ",";
+                }
+            }
+           document.getElementById("results").innerText = printOut;
+        }
+    }
+    
+    ```
 
 4. Redeploy the add-in files as described in the "To specify a trusted location for the manifest" procedure.
     

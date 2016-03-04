@@ -1,5 +1,5 @@
 
-# TableBinding.rowCount property (JavaScript API for Office)
+# TableBinding.rowCount property
 Gets the number of rows in the table, as an integer value.
 
 |||
@@ -63,7 +63,7 @@ For more information about Office host application and server requirements, see 
 **Supported hosts, by platform**
 
 
-||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
+||**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|
 |:-----|:-----|:-----|:-----|
 |**Access**||Y||
 |**Excel**|Y|Y|Y|

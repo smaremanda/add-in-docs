@@ -1,5 +1,5 @@
 
-# CoercionType enumeration (JavaScript API for Office)
+# CoercionType enumeration
 Specifies how to coerce data returned or set by the invoked method.
 
 |||
@@ -11,7 +11,7 @@ Specifies how to coerce data returned or set by the invoked method.
 Office.CoercionType
 ```
 
-[![Try out this call in the interactive API Tutorial for Excel](../../../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](https://officeapitutorial.azurewebsites.net/TryItOut.html)
+[![Try out this call in the interactive API Tutorial for Excel](../../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](https://officeapitutorial.azurewebsites.net/TryItOut.html)
 
 ## Members
 
@@ -44,7 +44,7 @@ For more information about Office host application and server requirements, see 
 **Supported hosts, by platform**
 
 
-||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|**OWA for Devices**|**Office for Mac**|
+||**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|**OWA for Devices**|**Office for Mac**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |**Access**|Y|||||
 |**Excel**|Y|Y|Y|||

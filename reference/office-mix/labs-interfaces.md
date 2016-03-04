@@ -1,6 +1,5 @@
 
 # Labs Interfaces
-Interfaces of the  **LabsJS.Labs** module
 
  _**Applies to:** apps for Office | Office Add-ins | Office Mix | PowerPoint_
 

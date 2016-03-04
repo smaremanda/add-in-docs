@@ -1,5 +1,5 @@
 
-# Document.url property (JavaScript API for Office)
+# Document.url property
 Gets the URL of the document that the host application currently has open.
 
 |||
@@ -52,7 +52,7 @@ For more information about Office host application and server requirements, see 
 **Supported hosts, by platform**
 
 
-||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
+||**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|
 |:-----|:-----|:-----|:-----|
 |**Access**||Y||
 |**Excel**|Y|Y|Y|

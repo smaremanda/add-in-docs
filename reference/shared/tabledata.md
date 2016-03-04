@@ -1,5 +1,5 @@
 
-# TableData object (JavaScript API for Office)
+# TableData object
 Represents the data in a table or a [TableBinding](../../reference/shared/binding.tablebinding.tablebinding.md).
 
 |||
@@ -12,7 +12,7 @@ Represents the data in a table or a [TableBinding](../../reference/shared/bindin
 TableData
 ```
 
-[![Try out this call in the interactive API Tutorial for Excel](../../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](http://officeapitutorial.azurewebsites.net/Redirect.mdl?scenario=Set+Formatting)
+[![Try out this call in the interactive API Tutorial for Excel](../../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](http://officeapitutorial.azurewebsites.net/Redirect.html?scenario=Set+Formatting)
 
 ## Members
 
@@ -33,7 +33,7 @@ A capital Y in the following matrix indicates that this object is supported in t
 For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
 
 
-||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
+||**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|
 |:-----|:-----|:-----|:-----|
 |**Excel**|Y|Y|Y|
 |**Word**|Y|Y|Y|

@@ -1,5 +1,5 @@
 
-# File.sliceCount property (JavaScript API for Office)
+# File.sliceCount property
 Gets the number of slices into which the file is divided.
 
 |||
@@ -27,7 +27,7 @@ For more information about Office host application and server requirements, see 
 
 |||||
 |:-----|:-----|:-----|:-----|
-||Office for Windows desktop|Office Online(in browser)|Office for iPad|
+||Office for Windows desktop|Office Online (in browser)|Office for iPad|
 |**PowerPoint**|Y|Y|Y|
 |**Word**|Y|Y|Y|
 

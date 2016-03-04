@@ -1,5 +1,5 @@
 
-# MatrixBinding.rowCount property (JavaScript API for Office)
+# MatrixBinding.rowCount property
 Gets the number of rows in the matrix data structure, as an integer value.
 
 |||
@@ -49,7 +49,7 @@ For more information about Office host application and server requirements, see 
 **Supported hosts, by platform**
 
 
-||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
+||**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|
 |:-----|:-----|:-----|:-----|
 |**Excel**|Y|Y|Y|
 |**Word**|Y||Y|

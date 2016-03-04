@@ -1,5 +1,5 @@
 
-# Context.mailbox property (JavaScript API for Office)
+# Context.mailbox property
 Gets the  **mailbox** object that provides access to API members specifically for Outlook add-ins.
 
 |||
@@ -40,9 +40,7 @@ A capital Y in the following matrix indicates that this method is supported in t
 For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
 
 
-|
-|
-||**Office for Windows desktop**|**Office Online(in browser)**|**Outlook for Mac**|
+||**Office for Windows desktop**|**Office Online (in browser)**|**Outlook for Mac**|
 |:-----|:-----|:-----|:-----|
 |**Outlook**|Y|Y|Y|
 

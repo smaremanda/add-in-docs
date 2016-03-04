@@ -15,7 +15,7 @@ The  **subject** property is available for read access in both compose and read 
 
 
 
-```
+```js
 item.subject
 ```
 
@@ -24,7 +24,7 @@ But in a compose form, because both the user and your add-in can be inserting or
 
 
 
-```
+```js
 item.subject.getAsync
 ```
 
@@ -52,7 +52,7 @@ To use  **item.subject.getAsync**, provide a callback method that checks for the
 
 
 
-```
+```js
 var item;
 
 Office.initialize = function () {

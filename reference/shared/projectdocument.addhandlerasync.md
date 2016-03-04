@@ -1,5 +1,5 @@
 
-# ProjectDocument.addHandlerAsync method (JavaScript API for Office)
+# ProjectDocument.addHandlerAsync method
 Asynchronously adds an event handler for a change event in a [ProjectDocument](../../reference/shared/projectdocument.projectdocument.md) object.
 
 |||
@@ -17,22 +17,13 @@ Office.context.document.addHandlerAsync(eventType, handler[, options][, callback
 
 
 
-|**Name**|**Type**|**Description**|**Support notes**|
-|:-----|:-----|:-----|:-----|
-| _eventType_|[EventType](../../reference/shared/eventtype-enumeration.md)|The type of event to add, as an [EventType](../../reference/shared/eventtype-enumeration.md) constant or its corresponding text value. Required.The following table shows valid  _eventType_ arguments for a [ProjectDocument](../../reference/shared/projectdocument.projectdocument.md) object.
-****
-
-
-|**Enumeration**|**Text value**|
-|:-----|:-----|
-|[Office.EventType.ResourceSelectionChanged](../../reference/shared/projectdocument.resourceselectionchanged.event.md)|resourceSelectionChanged|
-|[Office.EventType.TaskSelectionChanged](../../reference/shared/projectdocument.taskselectionchanged.event.md)|taskSelectionChanged|
-|[Office.EventType.ViewSelectionChanged](../../reference/shared/projectdocument.viewselectionchanged.event.md)|viewSelectionChanged|
-||
-| _handler_|**function**|The name of the event handler. Required.||
-| _options_|**object**|Specifies any of the following [optional parameters](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters).||
-| _asyncContext_|**array**,  **boolean**,  **null**,  **number**,  **object**, **string**, or  **undefined**|A user-defined item of any type that is returned in the  **AsyncResult** object without being altered.||
-| _callback_|**object**|A function that is invoked when the callback returns, whose only parameter is of type  **AsyncResult**.||
+|**Name**|**Type**|**Description**|
+|:-----|:-----|:-----|
+| _eventType_|[EventType](../../reference/shared/eventtype-enumeration.md)|The type of event to add, as an [EventType](../../reference/shared/eventtype-enumeration.md) constant or its corresponding text value. Required.The following table shows valid  _eventType_ arguments for a [ProjectDocument](../../reference/shared/projectdocument.projectdocument.md) object. <table><tr><td>**Enumeration**</td><td>**Text value**</td></tr><tr><td>[Office.EventType.ResourceSelectionChanged](../../reference/shared/projectdocument.resourceselectionchanged.event.md)</td><td>resourceSelectionChanged</td></tr><tr><td>[Office.EventType.TaskSelectionChanged](../../reference/shared/projectdocument.taskselectionchanged.event.md)</td><td>taskSelectionChanged</td></tr><tr><td>[Office.EventType.ViewSelectionChanged](../../reference/shared/projectdocument.viewselectionchanged.event.md)</td><td>viewSelectionChanged</td></tr></table>|
+| _handler_|**function**|The name of the event handler. Required.|
+| _options_|**object**|Specifies any of the following [optional parameters](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters).|
+| _asyncContext_|**array**,  **boolean**,  **null**,  **number**,  **object**, **string**, or  **undefined**|A user-defined item of any type that is returned in the  **AsyncResult** object without being altered.|
+| _callback_|**object**|A function that is invoked when the callback returns, whose only parameter is of type  **AsyncResult**.|
 
 ## Callback Value
 
@@ -150,9 +141,7 @@ A capital Y in the following matrix indicates that this method is supported in t
 For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
 
 
-|
-|
-||**Office for Windows desktop**|**Office Online(in browser)**|
+||**Office for Windows desktop**|**Office Online (in browser)**|
 |:-----|:-----|:-----|
 |**Project**|Y||
 
@@ -183,5 +172,7 @@ For more information about Office host application and server requirements, see 
 
 
 [TaskSelectionChanged event](../../reference/shared/projectdocument.taskselectionchanged.event.md)
+
 [removeHandlerAsync method](../../reference/shared/projectdocument.addhandlerasync.md)
+
 [ProjectDocument object](../../reference/shared/projectdocument.projectdocument.md)

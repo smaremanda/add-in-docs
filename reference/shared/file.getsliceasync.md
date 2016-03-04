@@ -1,5 +1,5 @@
 
-# File.getSliceAsync method (JavaScript API for Office)
+# File.getSliceAsync method
 Returns the specified slice.
 
 |||
@@ -16,11 +16,11 @@ File.getSliceAsync(sliceIndex, callback);
 ## Parameters
 
 
--  _sliceIndex_Type:  **number**
+-  _sliceIndex_ Type:  **number**
     
     Specifies the zero-based index of the slice to be retrieved. Required.
     
--  _callback_Type:  **object**
+-  _callback_ Type:  **object**
     
     A function that is invoked when the callback returns, whose only parameter is of type [AsyncResult](../../reference/shared/asyncresult.md). Optional.
     
@@ -47,10 +47,7 @@ A capital Y in the following matrix indicates that this method is supported in t
 
 For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
 
-
-|
-|
-||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
+||**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|
 |:-----|:-----|:-----|:-----|
 |**PowerPoint**|Y|Y|Y|
 |**Word**|Y|Y|Y|
