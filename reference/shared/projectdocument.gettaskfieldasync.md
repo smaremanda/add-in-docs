@@ -1,4 +1,5 @@
 
+
 # ProjectDocument.getTaskFieldAsync method
 Asynchronously gets the value of the specified field for the specified task.
 
@@ -8,7 +9,7 @@ Asynchronously gets the value of the specified field for the specified task.
 |**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|Selection|
 |**Added in**|1.0|
 
-```
+```js
 Office.context.document.getTaskFieldAsync(taskId, fieldId[, options][, callback]);
 ```
 
@@ -31,8 +32,6 @@ When the  _callback_ function executes, it receives an [AsyncResult](../../refer
 
 For the  **getTaskFieldAsync** method, the returned [AsyncResult](../../reference/shared/asyncresult.md) object contains following properties.
 
-
-****
 
 
 |**Name**|**Description**|
@@ -168,9 +167,6 @@ For more information about Office host application and server requirements, see 
 
 ## Support history
 
-
-
-****
 
 
 |**Version**|**Changes**|
