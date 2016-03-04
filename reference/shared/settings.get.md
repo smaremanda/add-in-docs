@@ -8,7 +8,7 @@ Retrieves the specified setting.
 |**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|Settings|
 |**Last changed in**|1.1|
 
-```
+```js
 var mySetting = Office.context.document.settings.get(name);
 ```
 
@@ -16,9 +16,12 @@ var mySetting = Office.context.document.settings.get(name);
 ## Parameters
 
 
--  _name_ Type:  **string**
-    
-    The case-sensitive name of the setting to retrieve.
+
+_name_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Type:  **string**
+
+&nbsp;&nbsp;&nbsp;&nbsp;The case-sensitive name of the setting to retrieve.
+
     
 
 
@@ -52,6 +55,7 @@ function write(message){
 A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this property.
 
 For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
+
 
 
 ||**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|
