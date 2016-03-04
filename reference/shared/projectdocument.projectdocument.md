@@ -1,4 +1,5 @@
 
+
 # ProjectDocument object
 An abstract class that represents the project document (the active project) with which the Office Add-in interacts.
 
@@ -7,7 +8,7 @@ An abstract class that represents the project document (the active project) with
 |**Hosts:**|Project|
 |**Added in**|1.0|
 
-```
+```js
 Office.context.document
 ```
 
@@ -114,10 +115,6 @@ For more information about Office host application and server requirements, see 
 ## Support history
 
 
-
-****
-
-
 |**Version**|**Changes**|
 |:-----|:-----|
 |1.0|Introduced|
@@ -131,3 +128,4 @@ For more information about Office host application and server requirements, see 
 
 [Task pane add-ins for Project](http://msdn.microsoft.com/library/74e80cc5-8095-4d42-886b-47a0820e9e09%28Office.15%29.aspx)
 [Document object](../../reference/shared/document.md)
+
