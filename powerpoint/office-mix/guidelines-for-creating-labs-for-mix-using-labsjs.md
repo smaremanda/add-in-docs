@@ -1,5 +1,6 @@
 
 # Guidelines for creating labs for Mix using LabsJS
+Get a concise introduction to using the LabsJS JavaScript library to create Labs for Office Mix.
 
  _**Applies to:** apps for Office | Office Add-ins | Office Mix | PowerPoint_
 
@@ -31,7 +32,7 @@ The labs.js library is included with the LabsJS SDK. Alternatively, you can refe
 Several methods in the labs.js API operate asynchronously. For these operations, the API adopts a standard callback interface,  **ILabCallback**. 
 
 
-```js
+```
 function(err, result) {
 }
 ```
@@ -43,7 +44,7 @@ The callback operation never fires immediately, even if the result is available 
 
 
 
-```js
+```
 function createCallback<T>(deferred: JQueryDeferred<T>): Labs.Core.ILabCallback<T> {
     return (err, data) => {
         if (err) {
@@ -67,6 +68,7 @@ For testing purposes, and to run your lab within labhost.html, you need to switc
 
 
 ```js
+
 Labs.DefaultHostBuilder = function () {
     if (window.location.href.indexOf("PostMessageLabHost") !== -1) {
         return new Labs.PostMessageLabHost("test", parent, "*");
@@ -82,7 +84,7 @@ Labs.DefaultHostBuilder = function () {
 Initialization establishes the communication pathway between the lab and its host. Initialize your lab by calling the following.
 
 
-```js
+```
 Labs.connect((err, connectionResponse) => {});
 ```
 
@@ -99,7 +101,7 @@ Labs.js stores numbers as milliseconds elapsed since January 1st 1970 UTC. This 
 The lab can also interact with the lesson player timeline. The timeline allows the lab to tell the lesson player to advance to the next slide. The timeline object is retrieved by calling the  **Labs.getTimeline** method.
 
 
-```js
+```
 Labs.getTimeline().next({}, (err, unused) => { });
 ```
 
@@ -132,7 +134,7 @@ Labs.on(Labs.Core.EventTypes.ModeChanged, (data) => {
 The  **activate** event fires when the PowerPoint slide that the lab is on becomes active in the lesson player.
 
 
-```js
+```
 Labs.on(Labs.Core.EventTypes.Activate, (data) => {
     //  is now on the active slide
 });
@@ -144,7 +146,7 @@ Labs.on(Labs.Core.EventTypes.Activate, (data) => {
 The  **deactivate** event fires when the PowerPoint slide the lab is on is no longer the active slide.
 
 
-```js
+```
 Labs.on(Labs.Core.EventTypes.Deactivate, (data) => {                
     //  is no longer on the active slide
 });
@@ -156,7 +158,7 @@ Labs.on(Labs.Core.EventTypes.Deactivate, (data) => {
 The lab can also interact with the lesson player timeline. The timeline allows the lab to tell the lesson player to advance to the next slide. The timeline object is retrieved by calling the  **Labs.getTimeline** method.
 
 
-```js
+```
 Labs.getTimeline().next({}, (err, unused) => { });
 ```
 

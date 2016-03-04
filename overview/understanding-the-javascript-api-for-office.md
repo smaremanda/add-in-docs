@@ -1,9 +1,12 @@
 
 # Understanding the JavaScript API for Office
+Understand the functional areas of the JavaScript API for Office, which is implemented in the Office.js file.
 
  _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | Outlook | PowerPoint | Project | Word_
 
 This article provides information about the JavaScript API for Office and how to use it. For reference information, see [JavaScript API for Office](http://msdn.microsoft.com/en-us/library/b27e70c3-d87d-4d27-85e0-103996273298%28Office.15%29.aspx). To run and edit some JavaScript API for Office code in your web browser with Excel Online, see the [API Tutorial for Office](http://msdn.microsoft.com/en-us/office/dn449240.aspx). For information about updating Visual Studio project files to the most current version of the JavaScript API for Office, see [Update the version of your JavaScript API for Office and manifest schema files](../overview/update-your-javascript-api-for-office-and-manifest-schema-version.md).
+
+ **Explore the JavaScript API for Office object model**
 
 Explore the object model by add-in type or host: [1.1](http://msdn.microsoft.com/library/b27e70c3-d87d-4d27-85e0-103996273298%28Office.15%29.aspx)
 
@@ -52,7 +55,7 @@ You can use the value of the  **InitializationReason** enumeration to implement 
 
 
 
-```js
+```
 Office.initialize = function (reason) {
     // Checks for the DOM to load using the jQuery ready function.
     $(document).ready(function () {
@@ -216,7 +219,7 @@ Outlook add-ins primarily use a subset of the API exposed through the [Mailbox](
 
 
 
-```js
+```
 // Access the Item object.
 var item = Office.context.mailbox.item;
 
@@ -247,7 +250,7 @@ This table summarizes the API and features supported across add-in types (conten
 |**Supported add-in types**|Content|Y|Y||Y|||
 ||Task pane||Y||Y|Y|Y|
 ||Outlook|||Y||||
-|**Supported API features**|Read/Write Text||Y||Y|Y|Y (Read only)|
+|**Supported API features**|Read/Write Text||Y||Y|Y|YRead only|
 ||Read/Write Matrix||Y|||Y||
 ||Read/Write Table||Y|||Y||
 ||Read/Write HTML|||||Y||
@@ -255,9 +258,9 @@ This table summarizes the API and features supported across add-in types (conten
 ||Read task, resource, view, and field properties||||||Y|
 ||Selection changed events||Y|||Y||
 ||Get whole document||||Y|Y||
-||Bindingsand binding events|Y (Only full and partialtable bindings)|Y|||Y||
+||Bindingsand binding events|YOnly full and partialtable bindings|Y|||Y||
 ||Read/WriteCustom Xml Parts|||||Y||
-||Persist add-in state data(settings)|Y (Per host add-in)|Y (Per document)|Y (Per mailbox)|Y (Per document)|Y (Per document)||
+||Persist add-in state data(settings)|YPer host add-in|YPer document|YPer mailbox|YPer document|YPer document||
 ||Settings changed events|Y|Y||Y|Y||
 ||Get active view modeand view changed events||||Y|||
 ||Navigate to locationsin the document||Y||Y|Y||

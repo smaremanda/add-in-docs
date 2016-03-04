@@ -1,5 +1,5 @@
 
-# MatrixBinding.columnCount property
+# MatrixBinding.columnCount property (JavaScript API for Office)
 Gets the number of columns in the matrix data structure, as an integer value.
 
 |||
@@ -8,7 +8,7 @@ Gets the number of columns in the matrix data structure, as an integer value.
 |**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|MatrixBindings|
 |**Last changed in Selection**|1.1|
 
-```js
+```
 var colCount = bindingObj.columnCount;
 ```
 
@@ -49,7 +49,7 @@ For more information about Office host application and server requirements, see 
 **Supported hosts, by platform**
 
 
-||**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|
+||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
 |:-----|:-----|:-----|:-----|
 |**Excel**|Y|Y|Y|
 |**Word**|Y||Y|
@@ -63,6 +63,11 @@ For more information about Office host application and server requirements, see 
 |**Namespace**|Office|
 
 ## Support history
+
+
+
+****
+
 
 |**Version**|**Changes**|
 |:-----|:-----|

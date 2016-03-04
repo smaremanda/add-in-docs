@@ -310,7 +310,7 @@ The remainder of the HelloProjectOData.js file includes two functions: the  **re
 
 1. Delete all code in the default HelloProjectOData.js file, and then add the global variables and  **Office.initialize** function. Variable names that are all capitals imply that they are constants; they are later used with the **_pwa** variable to create the REST query in this example.
     
-```js
+```
   var PROJDATA = "/_api/ProjectData";
 var PROJQUERY = "/Projects?";
 var QUERY_FILTER = "$filter=ProjectName ne 'Timesheet Administrative Work Items'";

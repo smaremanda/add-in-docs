@@ -1,5 +1,5 @@
 
-# TableBinding.deleteAllDataValuesAsync method
+# TableBinding.deleteAllDataValuesAsync method (JavaScript API for Office)
 Deletes all non-header rows and their values in the table, shifting appropriately for the host application.
 
 |||
@@ -72,7 +72,7 @@ For more information about Office host application and server requirements, see 
 **Supported hosts, by platform**
 
 
-||**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|
+||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
 |:-----|:-----|:-----|:-----|
 |**Access**||Y||
 |**Excel**|Y|Y|Y|

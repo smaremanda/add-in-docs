@@ -1,5 +1,5 @@
 
-# ProjectTaskFields enumeration
+# ProjectTaskFields enumeration (JavaScript API for Office)
 Specifies the task fields that are available as a parameter for the  **[getTaskFieldAsync](../../reference/shared/projectdocument.gettaskfieldasync.md)** method.
 
 |||
@@ -598,7 +598,7 @@ For more information about working with fields in Project, see the [Available fi
 ## Support details
 
 
-A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+A checkmark (???) in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
 
 For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
 
@@ -606,9 +606,9 @@ For more information about Office host application and server requirements, see 
 **Supported hosts, by platform**
 
 
-||**Office for Windows desktop**|**Office Online (in browser)**|
+||**Office for Windows desktop**|**Office Online(in browser)**|
 |:-----|:-----|:-----|
-|**Project**|Y||
+|**Project**|???||
 
 |||
 |:-----|:-----|
@@ -633,6 +633,6 @@ For more information about Office host application and server requirements, see 
 
 #### Other resources
 
-[getTaskFieldAsync method](../../reference/shared/projectdocument.gettaskfieldasync.md)
 
+[getTaskFieldAsync method](../../reference/shared/projectdocument.gettaskfieldasync.md)
 [Available fields reference](http://office.microsoft.com/en-us/project-help/available-fields-reference-HA102749299.aspx?CTT=1)

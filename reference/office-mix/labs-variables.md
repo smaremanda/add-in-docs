@@ -1,9 +1,10 @@
 
 # Labs Variables
+Variables in the LabsJS object model function either as constants, or as placeholders that are used to store data.
 
  _**Applies to:** apps for Office | Office Add-ins | Office Mix | PowerPoint_
 
-Variables in the LabsJS object model function either as constants, or as placeholders that are used to store data. The LabsJS.Labs module contains the following variable objects.
+The LabsJS.Labs module contains the following variable objects.
 
 ## 
 

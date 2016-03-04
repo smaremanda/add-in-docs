@@ -1,5 +1,5 @@
 
-# TableBinding.setTableOptionsAsync method
+# TableBinding.setTableOptionsAsync method (JavaScript API for Office)
 Updates table formatting options on the bound table.
 
 |||
@@ -71,7 +71,7 @@ For more information about Office host application and server requirements, see 
 **Supported hosts, by platform**
 
 
-||**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|
+||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
 |:-----|:-----|:-----|:-----|
 |**Excel**|Y|Y|Y|
 

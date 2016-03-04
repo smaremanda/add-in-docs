@@ -1,5 +1,5 @@
 
-# BindingDataChangedEventArgs object
+# BindingDataChangedEventArgs object (JavaScript API for Office)
 Provides information about the binding that raised the [DataChanged](../../reference/shared/binding.bindingdatachangedevent.md) event.
 
 |||
@@ -7,7 +7,7 @@ Provides information about the binding that raised the [DataChanged](../../refer
 |**Hosts:**|Access, Excel, Word|
 |**Last changed in BindingEvents**|1.1|
 
-```js
+```
 Office.EventType.BindingDataChanged
 ```
 
@@ -34,7 +34,7 @@ For more information about Office host application and server requirements, see 
 **Supported hosts, by platform**
 
 
-||**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|
+||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
 |:-----|:-----|:-----|:-----|
 |**Access**||Y||
 |**Excel**|Y|Y|Y|
@@ -49,6 +49,10 @@ For more information about Office host application and server requirements, see 
 ## Support history
 
 
+
+
+
+****
 
 
 |**Version**|**Changes**|

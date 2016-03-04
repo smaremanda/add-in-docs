@@ -1,40 +1,17 @@
-# ChartAxes object (JavaScript API for Excel)
 
-_Applies to: Excel 2016, Excel Online, Office 2016_
+# chartaxes
+Summary
 
-Represents the chart axes.
+ _**Applies to:** apps for Office | Excel 2016_
 
-## Properties
+{insert introductory content}
 
-None
+## {insert section title text}
 
-## Relationships
-| Relationship | Type	|Description|
-|:---------------|:--------|:----------|
-|categoryAxis|[ChartAxis](chartaxis.md)|Represents the category axis in a chart. Read-only.|
-|seriesAxis|[ChartAxis](chartaxis.md)|Represents the series axis of a 3-dimensional chart. Read-only.|
-|valueAxis|[ChartAxis](chartaxis.md)|Represents the value axis in an axis. Read-only.|
+{insert body text}
 
-## Methods
 
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[load(param: object)](#loadparam-object)|void|Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.|
+### {insert subsection title text}
 
-## Method Details
+{insert body text}
 
-### load(param: object)
-Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.
-
-#### Syntax
-```js
-object.load(param);
-```
-
-#### Parameters
-| Parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-|param|object|Optional. Accepts parameter and relationship names as a delimited string or an array. Or, provide [loadOption](loadoption.md) object.|
-
-#### Returns
-void

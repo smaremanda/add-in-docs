@@ -1,5 +1,6 @@
 
 # Task pane and content add-ins for Office 2013
+Use the JavaScript API to create task pane or content add-ins with the features that you want for different host applications. 
 
  _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | PowerPoint | Project | Word_
 

@@ -1,5 +1,5 @@
 
-# Binding.bindingSelectionChanged event
+# Binding.bindingSelectionChanged event (JavaScript API for Office)
 Occurs when the selection is changed within the binding.
 
 |||
@@ -12,7 +12,7 @@ Occurs when the selection is changed within the binding.
 Office.EventType.BindingSelectionChanged
 ```
 
-[![Try out this call in the interactive API Tutorial for Excel](../../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](http://officeapitutorial.azurewebsites.net/Redirect.html?scenario=Get+Selected+Coordinates)
+[![Try out this call in the interactive API Tutorial for Excel](../../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](http://officeapitutorial.azurewebsites.net/Redirect.mdl?scenario=Get+Selected+Coordinates)
 
 ## Remarks
 
@@ -50,7 +50,7 @@ For more information about Office host application and server requirements, see 
 **Supported hosts, by platform**
 
 
-||**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|
+||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
 |:-----|:-----|:-----|:-----|
 |**Access**||Y||
 |**Excel**|Y|Y|Y|

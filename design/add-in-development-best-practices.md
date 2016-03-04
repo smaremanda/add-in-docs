@@ -15,7 +15,7 @@ Effective add-ins offer unique and compelling functionality that extends Office 
  - Enable new scenarios within Office.
  - Embed complementary services within Office hosts.
  - Improve the Office experience to enhance productivity.
-- Make sure that the value of your add-in is clear to users right away by [creating an engaging first run experience](#create-an-engaging-first-run-experience).
+- Make sure that the value of your add-in is clear to users right away by creating an [engaging first run experience](#bk_firstrun).
 - Create an [effective Office Store listing](http://msdn.microsoft.com/library/c66a6e6b-2e96-458f-8f8c-2a499fe942c9%28Office.15%29.aspx). Make the benefits of your add-in clear in your title and description. Don't rely on your brand to communicate what your add-in does.
 
 
@@ -53,7 +53,7 @@ Effective add-ins offer unique and compelling functionality that extends Office 
 - Provide multiple UI entry points to your add-in by using [add-in commands](../outlook/add-in-commands-for-outlook.md).
 
 
- >**Note**  Add-in commands are currently supported in Outlook 2016 and are in preview for Word, Excel and PowerPoint 2016. 
+ >**Note**  Add-in commands are currently supported in Outlook 2016. Other hosts and platforms will support add-in commands in the future.
 
 
 ### Add-in command design best practices
@@ -134,7 +134,7 @@ To ensure that your add-in works well in both types of hosts:
 
 - Account for [accessibility](http://msdn.microsoft.com/library/3be1abbb-237a-48ec-8e17-72caa25a3cb2%28Office.15%29.aspx) - make your add-in easy for all users to interact with, and accommodate assistive technologies such as screen readers.
 
-- Design for all platforms and input methods, including mouse/keyboard and [touch](#optimize-for-touch). Ensure that your UI is responsive to different form factors.
+- Design for all platforms and input methods, including mouse/keyboard and [touch](#bk_Touch). Ensure that your UI is responsive to different form factors.
 
 
 ### Optimize for touch

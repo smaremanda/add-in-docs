@@ -1,5 +1,6 @@
 
 # Create a content add-in for Excel with Napa Office 365 Development Tools
+Create a content add-in for Excel using Napa Office 365 Development Tools that gets stock symbols from a worksheet and then shows data related to that symbol in the add-in. The add-in also shows you how to write data back to the worksheet, handle events, and bind to cells in the worksheet.
 
  _**Applies to:** apps for Office | Excel | Office Add-ins_
 

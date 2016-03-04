@@ -1,5 +1,5 @@
 
-# Context object
+# Context object (JavaScript API for Office)
 Represents the runtime environment of the add-in and provides access to key objects of the API.
 
 |||

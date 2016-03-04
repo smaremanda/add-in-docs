@@ -1,5 +1,6 @@
 
 # Configuring and editing LabsJS labs for Office Mix
+Learn how to configure your lab to support viewing and editing.
 
  _**Applies to:** apps for Office | Office Add-ins | Office Mix | PowerPoint_
 

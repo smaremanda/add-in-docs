@@ -13,7 +13,7 @@ The [Document](http://msdn.microsoft.com/en-us/library/f8859516-cc1f-4b20-a8f3-c
 The  **getSelectedDataAsync** method only works against the user's current selection. If you need to persist the selection in the document, so that the same selection is available to read and write to across sessions of running your add-in, you must add abinding using the [Bindings.addFromSelectionAsync](http://msdn.microsoft.com/en-us/library/edc99214-e63e-43f2-9392-97ead42fc155.aspx) method (or create a binding with one of the other "addFrom" methods of the [Bindings](http://msdn.microsoft.com/en-us/library/09979e31-3bfb-45be-adda-0f7cc2db1fe1.aspx) object). For information about creating a binding to a region of a document, and then reading and writing to a binding, see [Bind to regions in a document or spreadsheet](../how-to/bind-to-regions-in-a-document-or-spreadsheet.md).
 
 
-### [Read selected data] (#ReadWriteDocumentData_Read)
+### Read selected data
 
 
 The following example shows how to get data from a selection in a document by using the [getSelectedDataAsync](http://msdn.microsoft.com/en-us/library/f85ad02c-64f0-4b73-87f6-7f521b3afd69%28Office.15%29.aspx) method.

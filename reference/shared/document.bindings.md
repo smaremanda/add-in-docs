@@ -1,5 +1,5 @@
 
-# Document.bindings property
+# Document.bindings property (JavaScript API for Office)
 Gets an object that provides access to the bindings defined in the document.
 
 |||
@@ -7,7 +7,7 @@ Gets an object that provides access to the bindings defined in the document.
 |**Hosts:**|Access, Excel, Word|
 |**Last changed in**|1.1|
 
-```js
+```
 var docBindings = Office.context.document.bindings;
 ```
 
@@ -53,7 +53,7 @@ For more information about Office host application and server requirements, see 
 **Supported hosts, by platform**
 
 
-||**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|
+||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
 |:-----|:-----|:-----|:-----|
 |**Access**||Y||
 |**Excel**|Y|Y|Y|

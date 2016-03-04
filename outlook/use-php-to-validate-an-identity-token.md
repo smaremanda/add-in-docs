@@ -21,7 +21,7 @@ Overall the process may seem complex, but each individual step is quite simple. 
 
 
 
-```js
+```
    static function validate($token, $phpseclib_path, $audiences,
       &amp;$user_id=NULL, &amp;$user_email=NULL, $debug=FALSE)
    {

@@ -1,5 +1,5 @@
 
-# AsyncResult.asyncContext property
+# AsyncResult.asyncContext property (JavaScript API for Office)
 Gets the user-defined item passed to the optional  _asyncContext_ parameter of the invoked method in the same state as it was passed in.
 
 |||
@@ -52,7 +52,7 @@ For more information about Office host application and server requirements, see 
 **Supported hosts, by platform**
 
 
-||**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|**OWA for Devices**|**Outlook for Mac**|
+||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|**OWA for Devices**|**Outlook for Mac**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |**Access**|Y|||||
 |**Excel**|Y|Y|Y|||

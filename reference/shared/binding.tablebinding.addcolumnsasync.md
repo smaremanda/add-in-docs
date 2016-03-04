@@ -1,5 +1,5 @@
 
-# TableBinding.addColumnsAsync method
+# TableBinding.addColumnsAsync method (JavaScript API for Office)
 Adds columns and values to a table.
 
 |||
@@ -8,7 +8,7 @@ Adds columns and values to a table.
 |**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|TableBindings|
 |**Last changed in**|1.0|
 
-[![Try out this call in the interactive API Tutorial for Excel](../../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](http://officeapitutorial.azurewebsites.net/Redirect.html?scenario=Update+a+Row+in+a+Table)
+[![Try out this call in the interactive API Tutorial for Excel](../../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](http://officeapitutorial.azurewebsites.net/Redirect.mdl?scenario=Update+a+Row+in+a+Table)
 
 
 ```
@@ -23,7 +23,7 @@ bindingObj.addColumnsAsync(data [, options], callback);
 |**Name**|**Type**|**Description**|**Support notes**|
 |:-----|:-----|:-----|:-----|
 | _data_|**array** or [TableData](../../reference/shared/tabledata.md)|An array of arrays ("matrix") or a  **TableData** object that contains one or more rows of data to add to the table. Required.||
-| _options_|**object**|Specifies any of the following [optional parameters](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters).||
+| _options_|**object**|Specifies any of the following [optional parameters](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters)||
 | _asyncContext_|**array**,  **boolean**,  **null**,  **number**,  **object**, **string**, or  **undefined**|A user-defined item of any type that is returned in the  **AsyncResult** object without being altered.||
 | _callback_|**object**|A function that is invoked when the callback returns, whose only parameter is of type  **AsyncResult**.||
 
@@ -55,7 +55,7 @@ The success or failure of an  **addColumnAsync** operation is atomic. That is, t
     
 - If you pass a  **TableData** object as the data argument, the number of header rows must match that of the table being updated.
     
-**Additional remarks for Excel Online**
+ **Additional remarks for Excel Online**
 
 The total number of cells in the  **TableData** object passed to the _data_ parameter can't exceed 20,000 in a single call to this method.
 
@@ -106,7 +106,7 @@ For more information about Office host application and server requirements, see 
 **Supported hosts, by platform**
 
 
-||**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|
+||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
 |:-----|:-----|:-----|:-----|
 |**Excel**|Y|Y|Y|
 |**Word**|Y||Y|

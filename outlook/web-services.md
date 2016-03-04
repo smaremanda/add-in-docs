@@ -16,7 +16,7 @@ The way that you call a web service varies based on where the web service is loc
 |:-----|:-----|
 |The Exchange server that hosts the client mailbox|Use the [mailbox.makeEwsRequestAsync](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.html) method to call EWS operations that add-ins support. The Exchange server that hosts the mailbox also exposes EWS.|
 |The web server that provides the source location for the add-in UI|Call the web service by using standard JavaScript techniques. The JavaScript code in the UI frame runs in the context of the web server that provides the UI. Therefore, it can call web services on that server without causing a cross-site scripting error.|
-|All other locations|Create a proxy for the web service on the web server that provides the source location for the UI. If you do not provide a proxy, cross-site scripting errors will prevent your add-in from running. One way to provide a proxy is by using JSON/P. For more information, see [Privacy and security for Office Add-ins](../essentials/privacy-and-security.md).|
+|All other locations|Create a proxy for the web service on the web server that provides the source location for the UI. If you do not provide a proxy, cross-site scripting errors will prevent your add-in from running. One way to provide a proxy is by using JSON/P. For more information, see [Privacy and security for Office Add-ins](87c59a88-10e2-4c88-b6a8-736bd356e5f8.md).|
 
 ## Using the makeEwsRequestAsync method to access EWS operations
 
@@ -47,47 +47,46 @@ When parsing a SOAP response from a EWS operation, note the following browser-de
     
      **getElementsByTagName** behaves differently depending on browser type. For example, a EWS response can contain the following XML (formatted and abbreviated for display purposes):
     
-    ```XML
-      <t:ExtendedProperty><t:ExtendedFieldURI PropertySetId="00000000-0000-0000-0000-000000000000" 
-    PropertyName="MyProperty" 
-    PropertyType="String"/>
-    <t:Value>{
-    ...
-    }</t:Value></t:ExtendedProperty>
-    ```
 
 
-   
-     Code as in the following would work on a browser like Chrome to get the XML enclosed by the  **ExtendedProperty** tags:
+```XML
+  <t:ExtendedProperty><t:ExtendedFieldURI PropertySetId="00000000-0000-0000-0000-000000000000" 
+PropertyName="MyProperty" 
+PropertyType="String"/>
+<t:Value>{
+...
+}</t:Value></t:ExtendedProperty>
+```
+
+
+    Code as in the following would work on a browser like Chrome to get the XML enclosed by the  **ExtendedProperty** tags:
     
 
 
+```js
+  var mailbox = Office.context.mailbox;
+mailbox.makeEwsRequestAsync(mailbox.item.itemId), function(result) {
+    var response = $.parseXML(result.value);
+    var extendedProps = response.getElementsByTagName("ExtendedProperty");
+```
 
-    ```js
-    var mailbox = Office.context.mailbox;
-    mailbox.makeEwsRequestAsync(mailbox.item.itemId), function(result) {
-        var response = $.parseXML(result.value);
-        var extendedProps = response.getElementsByTagName("ExtendedProperty");
-    ```
 
-
-   
-     On Internet Explorer, you must include the  `t:` prefix of the tag name, as shown below:
+    On Internet Explorer, you must include the  `t:` prefix of the tag name, as shown below:
     
 
 
-    ```js
-    var mailbox = Office.context.mailbox;
-    mailbox.makeEwsRequestAsync(mailbox.item.itemId), function(result) {
-        var response = $.parseXML(result.value);
-        var extendedProps = response.getElementsByTagName("t:ExtendedProperty");
-    ```
+```js
+  var mailbox = Office.context.mailbox;
+mailbox.makeEwsRequestAsync(mailbox.item.itemId), function(result) {
+    var response = $.parseXML(result.value);
+    var extendedProps = response.getElementsByTagName("t:ExtendedProperty");
+```
 
 - Use the DOM property  **textContent** to get the contents of a tag in a EWS response, as shown below:
     
-    ```
-      content = $.parseJSON(value.textContent);
-    ```
+```
+  content = $.parseJSON(value.textContent);
+```
 
 
     Other properties such as  **innerHTML** may not work on Internet Explorer for some tags in a EWS response.
@@ -212,7 +211,7 @@ Your add-in must specify the  **ReadWriteMailbox** permission in its add-in mani
 
 - [Outlook add-ins](../outlook/outlook-add-ins.md)
     
-- [Privacy and security for Office Add-ins](../essentials/privacy-and-security.md)
+- [Privacy and security for Office Add-ins](87c59a88-10e2-4c88-b6a8-736bd356e5f8.md)
     
 - [Addressing same-origin policy limitations in Office Add-ins](../essentials/addressing-same-origin-policy-limitations.md)
     

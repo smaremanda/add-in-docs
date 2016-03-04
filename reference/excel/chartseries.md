@@ -1,61 +1,17 @@
-# ChartSeries object (JavaScript API for Excel)
 
-_Applies to: Excel 2016, Excel Online, Office 2016_
+# chartseries
+Summary
 
-Represents a series in a chart.
+ _**Applies to:** apps for Office | Excel 2016_
 
-## Properties
+{insert introductory content}
 
-| Property	   | Type	|Description
-|:---------------|:--------|:----------|
-|name|string|Represents the name of a series in a chart.|
+## {insert section title text}
 
-_See property access [examples.](#property-access-examples)_
+{insert body text}
 
-## Relationships
-| Relationship | Type	|Description|
-|:---------------|:--------|:----------|
-|format|[ChartSeriesFormat](chartseriesformat.md)|Represents the formatting of a chart series, which includes fill and line formatting. Read-only.|
-|points|[ChartPointsCollection](chartpointscollection.md)|Represents a collection of all points in the series. Read-only.|
 
-## Methods
+### {insert subsection title text}
 
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[load(param: object)](#loadparam-object)|void|Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.|
+{insert body text}
 
-## Method Details
-
-### load(param: object)
-Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.
-
-#### Syntax
-```js
-object.load(param);
-```
-
-#### Parameters
-| Parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-|param|object|Optional. Accepts parameter and relationship names as a delimited string or an array. Or, provide [loadOption](loadoption.md) object.|
-
-#### Returns
-void
-### Property access examples
-
-Rename the first series of Chart1 to "New Series Name".
-
-```js
-Excel.run(function (ctx) { 
-	var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");	
-	chart.series.getItemAt(0).name = "New Series Name";
-	return ctx.sync().then(function() {
-			console.log("Series1 Renamed");
-	});
-}).catch(function(error) {
-		console.log("Error: " + error);
-		if (error instanceof OfficeExtension.Error) {
-			console.log("Debug info: " + JSON.stringify(error.debugInfo));
-		}
-});
-```

@@ -8,7 +8,7 @@ To use APIs in your Outlook add-in, you must specify the location of the Office.
 
 ## Office.js
 
-To interact with the Outlook add-in API, developers must use the JavaScript APIs in Office.js. The CDN for the library is  _https://appsforoffice.microsoft.com/lib/1/hosted/Office.js_. Add-ins submitted to the store must reference Office.js by this CDN; they can't use a local reference. Declare the CDN in the **[head]** tag of the web page (.html, .aspx, or .php file) that implements the UI of your add-in, in the **[src]** attribute of the **[script]** tag:
+To interact with the Outlook add-in API, developers must use the JavaScript APIs in Office.js. The CDN for the library is  _https://appsforoffice.microsoft.com/lib/1/hosted/Office.js_. Add-ins submitted to the store must reference Office.js by this CDN; they can't use a local reference. Declare the CDN in the **[<head>]** tag of the web page (.html, .aspx, or .php file) that implements the UI of your add-in, in the **[src]** attribute of the **[script]** tag:
 
 
 ```HTML
@@ -31,10 +31,11 @@ To check availability of any APIs from a requirement set greater than the one sp
 
 
 
-```js
+```
 if (item.somePropertyOrFunction) {
    item.somePropertyOrFunction...  
 }
+
 ```
 
 No such checks are necessary for any APIs that are in the requirement set version specified in the manifest.
@@ -49,6 +50,8 @@ The  **Methods** element doesn't apply to mail add-ins, so you can't declare sup
 Your add-in requires the appropriate permissions to use the APIs that it needs. There are four levels of permissions, summarized below. For full details, see [Understanding Outlook add-in permissions](../outlook/understanding-outlook-add-in-permissions.md).
 
 
+|
+|
 |**Permission level**|**Description**|
 |:-----|:-----|
 |Restricted|Allows use of entities but not regular expressions.|

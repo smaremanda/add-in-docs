@@ -1,5 +1,6 @@
 
 # Office Add-ins
+Get started with Office Add-ins by using Napa Office 365 Development Tools from your browser to create a basic content, task pane, or Outlook add-in for Excel, Outlook, PowerPoint, Project, or Word.
 
  _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | Outlook | PowerPoint | Project | Word_
 

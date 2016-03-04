@@ -32,7 +32,7 @@ We strongly recommend that you start from one of the samples we provide in [Offi
 
 ## Step 2: Create a task pane add-in
 
-To start using add-in commands, you must first create a task pane add-in, and then modify the add-in's manifest as described in this article. You can't use add-in commands with content add-ins. If you're updating an existing manifest, you can add the  **VersionOverrides** element to the manifest as described in [Step 3: Add VersionOverrides element](#step-3-add-versionoverrides-element).
+To start using add-in commands, you must first create a task pane add-in, and then modify the add-in's manifest as described in this article. You can't use add-in commands with content add-ins. If you're updating an existing manifest, you can add the  **VersionOverrides** element to the manifest as described in [Step 3: Add VersionOverrides element](../design/create-add-in-commands-in-your-manifest-preview.md#versionoverrides).
 
 The following example shows an Office 2013 add-in's manifest. There are no add-in commands in this manifest because there is no  **VersionOverrides** element. Office 2013 doesn't support add-in commands, but by adding **VersionOverrides** to this manifest, your add-in will run in both Office 2013 and Office 2016. In Office 2013, your add-in won't display add-in commands, and uses the value of **SourceLocation** to run your add-in as a single task pane add-in. In Office 2016, if no **VersionOverrides** element is included, **SourceLocation** is used to run your add-in. If you include **VersionOverrides**, however, your add-in displays the add-in commands only, and doesn't display your add-in as a single task pane add-in.
 
@@ -85,7 +85,7 @@ The following table identifies the child elements of  **VersionOverrides**.
 |**Description**|Optional. Describes the add-in. This child  **Description** element overrides a previous **Description** element in the parent portion of the manifest. The **resid** attribute for this **Description** element is set to the **id** of a **String** element. The **String** element contains the text for **Description**.|
 |**Requirements**|Optional. Specifies the minimum requirement set and version of Office.js that the add-in requires. This child  **Requirements** element overrides the **Requirements** element in the parent portion of the manifest. For more information, see [Specify Office hosts and API requirements](../overview/specify-office-hosts-and-api-requirements.md).|
 |**Hosts**|Required. Specifies a collection of Office hosts. The child  **Hosts** element overrides the **Hosts** element in the parent portion of the manifest. You must include a **xsi:type** attribute set to "Workbook" or "Document".|
-|**Resources**|Defines a collection of resources (strings, URLs, and images) that other manifest elements reference. For example, the  **Description** element's value refers to a child element in **Resources**. The  **Resources** element is described in [Step 7: Add the Resources element](#step-7-add-the-resources-element) later in this article.|
+|**Resources**|Defines a collection of resources (strings, URLs, and images) that other manifest elements reference. For example, the  **Description** element's value refers to a child element in **Resources**. The  **Resources** element is described in [Step 7: Add the Resources element](../design/create-add-in-commands-in-your-manifest-preview.md#VersionOverrides10_Resources) later in this article.|
 The following example shows how to use the  **VersionOverrides** element and its child elements.
 
 
@@ -152,7 +152,7 @@ The following is an example of  **Hosts**, **Host**, and **DesktopFormFactor** e
 ## Step 5: Add the FunctionFile element
 
 
- The **FunctionFile** element specifies a file that contains JavaScript code to run when an add-in command uses the **ExecuteFunction** action (see [Button controls](#button-controls) for a description). The **FunctionFile** element's **resid** attribute is set to a HTML file that includes all the JavaScript files your add-in commands require. You can't link directly to a JavaScript file. You can only link to an HTML file. The file name is specified as a **Url** element in the **Resources** element.
+ The **FunctionFile** element specifies a file that contains JavaScript code to run when an add-in command uses the **ExecuteFunction** action (see [Button controls](../design/create-add-in-commands-in-your-manifest-preview.md#VersionOverrides10_Buttons) for a description). The **FunctionFile** element's **resid** attribute is set to a HTML file that includes all the JavaScript files your add-in commands require. You can't link directly to a JavaScript file. You can only link to an HTML file. The file name is specified as a **Url** element in the **Resources** element.
 
 The following is an example of the  **FunctionFile** element.
 
@@ -174,7 +174,7 @@ The following is an example of the  **FunctionFile** element.
 
  >**Important**  Make sure your JavaScript code calls  `Office.initialize`.
 
-The JavaScript in the HTML file referenced by the  **FunctionFile** element must call `Office.initialize`. The  **FunctionName** element (see [Button controls](#button-controls) for a description) uses the functions in **FunctionFile**.
+The JavaScript in the HTML file referenced by the  **FunctionFile** element must call `Office.initialize`. The  **FunctionName** element (see [Button controls](../design/create-add-in-commands-in-your-manifest-preview.md#VersionOverrides10_Buttons) for a description) uses the functions in **FunctionFile**.
 
 The following code shows how to implement the function used by  **FunctionName**.
 
@@ -271,13 +271,13 @@ The following examples show how to use the  **ExtensionPoint** element with **Pr
 |**Element**|**Description**|
 |:-----|:-----|
 |**CustomTab**|Required if you want to add a custom tab to the ribbon (using  **PrimaryCommandSurface**). If you use the  **CustomTab** element, you can't use the **OfficeTab** element. The **id** attribute is required.|
-|**OfficeTab**|Required if you want to extend a default Office ribbon tab (using  **PrimaryCommandSurface**). If you use the  **OfficeTab** element, you can't use the **CustomTab** element.For more tab values to use with the  **id** attribute, see [Tab values for default Office ribbon tabs](#tab-values-for-default-office-ribbon-tabs).|
+|**OfficeTab**|Required if you want to extend a default Office ribbon tab (using  **PrimaryCommandSurface**). If you use the  **OfficeTab** element, you can't use the **CustomTab** element.For more tab values to use with the  **id** attribute, see [Tab values for default Office ribbon tabs](../design/create-add-in-commands-in-your-manifest-preview.md#OfficeTabs).|
 |**OfficeMenu**|Required if you're adding add-in commands to a default context menu (using  **ContextMenu**). The  **id** attribute must be set to: **ContextMenuText** for Excel or Word. Displays the item on the context menu when text is selected and then the user right-clicks on the selected text. **ContextMenuCell** for Excel. Displays the  item on the context menu when the user right-clicks on a cell on the spreadsheet.|
 |**Group**|A group of user interface extension points on a tab. A group can have up to six controls. The  **id** attribute is required. It's a string with a maximum of 125 characters.|
 |**Label**|Required. The label of the group. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element. The **String** element is a child element of the **ShortStrings** element, which is a child element of the **Resources** element.|
 |**Icon**|Required. Specifies the group's icon to be used on small form factor devices, or when too many buttons are displayed. The  **resid** attribute must be set to the value of the **id** attribute of an **Image** element. The **Image** element is a child element of the **Images** element, which is a child element of the **Resources** element. The **size** attribute gives the size, in pixels, of the image. Three image sizes are required: 16, 32, and 80. Five optional sizes are also supported: 20, 24, 40, 48, and 64.|
 |**Tooltip**|Optional. The tooltip of the group. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element. The **String** element is a child element of the **LongStrings** element, which is a child element of the **Resources** element.|
-|**Control**|Each group requires at least one control. A  **Control** element can be either a **Button** or a **Menu**. Use  **Menu** to specify a drop-down list of button controls. Currently, only buttons and menus are supported.See the [Button controls](#button-controls) and [Menu controls](#menu-controls) sections for more information.
+|**Control**|Each group requires at least one control. A  **Control** element can be either a **Button** or a **Menu**. Use  **Menu** to specify a drop-down list of button controls. Currently, only buttons and menus are supported.See the [Button controls](../design/create-add-in-commands-in-your-manifest-preview.md#VersionOverrides10_Buttons) and [Menu controls](../design/create-add-in-commands-in-your-manifest-preview.md#VersionOverrides10_Menus) sections for more information.
  >**Note**  To make troubleshooting easier, we recommend that a  **Control** element and the related **Resources** child elements be added one at a time.
 
 |
@@ -418,7 +418,7 @@ A  **Menu** control can be used with either **PrimaryCommandSurface** or **Conte
 |**Tooltip**|Optional. The tooltip for the menu. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element. The **String** element is a child element of the **LongStrings** element, which is a child element of the **Resources** element.|
 |**Supertip**|Required. The supertip for this menu, which is defined by the following: <br/><br/>-  **Title** - Required. The text for the supertip. The **resid** attribute must be set to the value of the **id** attribute of a **String** element. The **String** element is a child element of the **ShortStrings** element, which is a child element of the **Resources**  element. <br/>-  **Description** - Required. The description for the supertip. The **resid**  attribute must be set to the value of the **id** attribute of a **String** element. The **String** element is a child element  of the **LongStrings** element, which is a child element of the **Resources** element.|
 |**Icon**|Required. Contains the  **Image** elements for the menu. Image files must be .png format. <br/><br/> - **Image** - Defines an image to display on the menu. The **resid**  attribute must be set to the value of the **id** attribute of an **Image** element. The **Image** element  is a child element of the **Images** element, which is a child element of the **Resources** element. The **size** attribute indicates the size, in pixels, of the image. Three image sizes are required: 16, 32, and 80. Five optional sizes are also supported: 20, 24, 40, 48, and 64.|
-|**Items**|Required. Contains the  **Item** elements for each submenu item. Each **Item** element contains the same child elements as [Button controls](#button-controls).|
+|**Items**|Required. Contains the  **Item** elements for each submenu item. Each **Item** element contains the same child elements as [Button controls](../design/create-add-in-commands-in-your-manifest-preview.md#VersionOverrides10_Buttons).|
 
 ## Step 7: Add the Resources element
 

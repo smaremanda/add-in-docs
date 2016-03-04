@@ -1,5 +1,5 @@
 
-# Binding.setDataAsync method
+# Binding.setDataAsync method (JavaScript API for Office)
 Writes data to the bound section of the document represented by the specified binding object.
 
 |||
@@ -8,10 +8,10 @@ Writes data to the bound section of the document represented by the specified bi
 |**Available in [Requirement sets](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|MatrixBindings, TableBindings, TextBindings|
 |**Last changed in TableBindings**|1.1|
 
-[![Try out this call in the interactive API Tutorial for Excel](../../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](http://officeapitutorial.azurewebsites.net/Redirect.html?scenario=Update+a+Row+in+a+Table)
+[![Try out this call in the interactive API Tutorial for Excel](../../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](http://officeapitutorial.azurewebsites.net/Redirect.mdl?scenario=Update+a+Row+in+a+Table)
 
 
-```js
+```
 bindingObj.setDataAsync(data [, options] ,callback);
 ```
 
@@ -22,7 +22,15 @@ bindingObj.setDataAsync(data [, options] ,callback);
 
 |**Name**|**Type**|**Description**|**Support notes**|
 |:-----|:-----|:-----|:-----|
-| _data_|<table><tr><td><b>string</b></td><td>Excel, Excel Online, Word, and Word Online only</td></tr><tr><td><b>array</b> (array of arrays – "matrix")</td><td>Excel and Word only</td></tr><tr><td><a href="https://msdn.microsoft.com/en-us/library/office/fp161002"><b>TableData</b></a></td><td data-th="Text value">Access, Excel, and Word only</td></tr><tr><td><b>HTML</b></td><td>Word and Word Online only</td></tr><tr><td><b>Office Open XML</b></td><td>Word only</td></tr></table>|The data to be set in the current selection. Required.|**Changed in:** 1.1.Support for content add-ins for Access requires  **TableBinding** requirement set 1.1 or later.|
+| _data_|
+|||
+|:-----|:-----|
+|**string**|Excel, Excel Online, Word, and Word Online only|
+|**array** (array of arrays - "matrix")|Excel and Word only|
+|[TableData](../../reference/shared/tabledata.md)|Access, Excel, and Word only|
+|**HTML**|Word and Word Online only|
+|**Office Open XML**|Word only|
+|The data to be set in the current selection. Required.|**Changed in:** 1.1.Support for content add-ins for Access requires  **TableBinding** requirement set 1.1 or later.|
 | _options_|**object**|Specifies any of the following [optional parameters](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters)||
 | _coercionType_|**[CoercionType](../../reference/shared/coerciontype-enumeration.md)**|Specifies how to coerce the data being set. ||
 | _columns_|**array of strings**| Specifies the column names.|**Added in:** v1.1.Only for table bindings in content add-ins for Access.|
@@ -113,6 +121,7 @@ The  **setDataAsync** method will write data in a subset of a table or matrix bi
 function setBindingData() {
     Office.select("bindings#MyBinding").setDataAsync('Hello World!', function (asyncResult) { });
 }
+
 ```
 
 Specifying the optional  _coercionType_ parameter lets you specify the kind of data you want to write to a binding. For example, in Word if you want to write HTML to a text binding, you can specify the _coercionType_ parameter as `"html"` as shown in the following example, which uses HTML `<b>` tags to make "Hello" bold.
@@ -201,7 +210,7 @@ function updateTableData() {
 ## Support details
 
 
-A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+A checkmark (???) in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
 
 For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
 
@@ -209,11 +218,11 @@ For more information about Office host application and server requirements, see 
 **Supported hosts, by platform**
 
 
-||**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|
+||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
 |:-----|:-----|:-----|:-----|
-|**Access**||Y||
-|**Excel**|Y|Y|Y|
-|**Word**|Y||Y|
+|**Access**||???||
+|**Excel**|???|???|???|
+|**Word**|???||???|
 
 |||
 |:-----|:-----|

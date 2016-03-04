@@ -1,5 +1,5 @@
 
-# AsyncResult.error property
+# AsyncResult.error property (JavaScript API for Office)
 Gets an  **Error** object that provides a description of the error, if any error occurred.
 
 |||
@@ -51,7 +51,7 @@ For more information about Office host application and server requirements, see 
 
 ||
 |:-----|
-|**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|**OWA for Devicess**|**Outlook for Mac**|
+|**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|**OWA for Devicess**|**Outlook for Mac**|
 |:-----|:-----|:-----|:-----|:-----|
 |**Access**||Y||||
 |**Excel**|Y|Y|Y|||

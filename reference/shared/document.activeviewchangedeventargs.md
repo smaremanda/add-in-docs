@@ -1,5 +1,5 @@
 
-# DocumentActiveViewChangedEventArgs object
+# DocumentActiveViewChangedEventArgs object (JavaScript API for Office)
 Provides information about the view that raised the [ActiveViewChanged](../../reference/shared/document.activeviewchanged.md) event.
 
 |||
@@ -34,7 +34,7 @@ For more information about Office host application and server requirements, see 
 **Supported hosts, by platform**
 
 
-||**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|
+||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
 |:-----|:-----|:-----|:-----|
 |**PowerPoint**|Y|Y|Y|
 

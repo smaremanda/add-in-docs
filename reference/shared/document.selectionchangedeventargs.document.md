@@ -1,5 +1,5 @@
 
-# DocumentSelectionChangedEventArgs.document property
+# DocumentSelectionChangedEventArgs.document property (JavaScript API for Office)
 Gets a  **Document** object that represents the document that raised the **SelectionChanged** event.
 
 |||
@@ -10,7 +10,7 @@ Gets a  **Document** object that represents the document that raised the **Selec
 
 
 
-```js
+```
 var myDoc = eventArgsObj.document;
 ```
 
@@ -31,7 +31,7 @@ For more information about Office host application and server requirements, see 
 **Supported hosts, by platform**
 
 
-||**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|
+||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
 |:-----|:-----|:-----|:-----|
 |**Excel**|Y|Y|Y|
 |**Word**|Y||Y|

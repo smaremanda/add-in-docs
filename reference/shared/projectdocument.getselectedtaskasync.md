@@ -1,5 +1,5 @@
 
-# ProjectDocument.getSelectedTaskAsync method
+# ProjectDocument.getSelectedTaskAsync method (JavaScript API for Office)
 Asynchronously gets the GUID of the selected task in a task view.
 
 |||
@@ -140,7 +140,9 @@ A capital Y in the following matrix indicates that this method is supported in t
 For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
 
 
-||**Office for Windows desktop**|**Office Online (in browser)**|
+|
+|
+||**Office for Windows desktop**|**Office Online(in browser)**|
 |:-----|:-----|:-----|
 |**Project**|Y||
 
@@ -171,7 +173,5 @@ For more information about Office host application and server requirements, see 
 
 
 [getTaskAsync method](../../reference/shared/projectdocument.gettaskasync.md)
-
 [AsyncResult object](../../reference/shared/asyncresult.md)
-
 [ProjectDocument object](../../reference/shared/projectdocument.projectdocument.md)

@@ -1,5 +1,6 @@
 
 # LabsJS.Labs
+Get an overview of APIs in the LabsJS.Labs module.
 
  _**Applies to:** apps for Office | Office Add-ins | Office Mix | PowerPoint_
 
@@ -67,4 +68,4 @@ The Labs module contains the following types:
 |||
 |:-----|:-----|
 |[Labs.ConnectionState](../../reference/office-mix/labs.connectionstate.md)|Enumerates the possible connection states of the lab to host.|
-|[Labs.ProblemState](../../reference/office-mix/labs.problemstate.md)|State values for a given lab.|
+|[Labs.ProblemState](../../reference/office-mix/labs.problemstate.md)||

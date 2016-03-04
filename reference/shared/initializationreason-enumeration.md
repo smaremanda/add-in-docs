@@ -1,5 +1,5 @@
 
-# InitializationReason Enumeration
+# InitializationReason Enumeration (JavaScript API for Office)
 Specifies whether the add-in was just inserted or was already contained in the document. 
 
 |||
@@ -34,7 +34,7 @@ For more information about Office host application and server requirements, see 
 **Supported hosts, by platform**
 
 
-||**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|
+||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
 |:-----|:-----|:-----|:-----|
 |**Excel**|Y|Y|Y|
 |**Project**|Y|||

@@ -1,5 +1,6 @@
 
 # Create and debug Office Add-ins in Visual Studio
+Use Visual Studio project templates to create an Office Add-ins project, modify your add-in settings, and develop and debug your add-in.
 
  _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | Outlook | PowerPoint | Project | Word_
 
@@ -87,7 +88,10 @@ The following table describes the fields that appear in the  **Activation** tab 
 
 |**Property**|**Description**|
 |:-----|:-----|
-|**Required API Sets**|Enables you to specify the API set names and the minimum versions required by your add-in to activate properly. To add an API set, choose it in the drop-down list. To delete an API set, choose it in the list and then choose the  **Delete** key. As you specify API sets, the page displays the Office clients that support that combination of API sets.<br/> **Note**  Because some API sets support only certain Office clients, specifying more API sets decreases the number of Office clients on which your add-in can activate.|
+|**Required API Sets**|Enables you to specify the API set names and the minimum versions required by your add-in to activate properly. To add an API set, choose it in the drop-down list. To delete an API set, choose it in the list and then choose the  **Delete** key. As you specify API sets, the page displays the Office clients that support that combination of API sets.
+ >**Note**  Because some API sets support only certain Office clients, specifying more API sets decreases the number of Office clients on which your add-in can activate.
+
+|
 |**Applications**|Enables you to choose the Office applications that you want your add-in to target. You can target any Office application that's available in Office 365 and Office 2013 SP1, or you can target specific Office applications.|
 |**IntelliSense**|Enables you to choose whether IntelliSense displays syntax information for all Office JavaScript APIs, or only for APIs in the  **Required API Sets** list.|
 |**Summary**|The summary section shows where the add-in will be activated based on your input in the  **Required API Sets** and the **Applications** sections.|
@@ -108,6 +112,8 @@ App Domains settings are used when the add-in needs to communicate with a remote
 Read Form settings are only available for Outlook add-ins. These settings specify when a read form add-in is activated and also its UI properties.
 
 
+|
+|
 |**Property**|**Description**|
 |:-----|:-----|
 |Activation|Specifies the activation rules for the read form add-in. You select the appropriate rule or rules in the tree pane or you can add rules by choosing the  **Add** drop down list. You can optionally specify the message class of the mail or appointment item.|
@@ -121,6 +127,8 @@ Read Form settings are only available for Outlook add-ins. These settings specif
 Compose Form settings are only available for Outlook add-ins. These settings specify when a compose form add-in is activated and also its UI properties.
 
 
+|
+|
 |**Property**|**Description**|
 |:-----|:-----|
 |Activation|Specifies the item types that will activate a compose form add-in. You can choose either or both of  **email messages** or **appointments**.|

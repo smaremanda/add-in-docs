@@ -1,5 +1,5 @@
 
-# Binding.document property
+# Binding.document property (JavaScript API for Office)
 Get the  **Document** object associated with the binding.
 
 |||
@@ -47,7 +47,7 @@ For more information about Office host application and server requirements, see 
 **Supported hosts, by platform**
 
 
-||**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|
+||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
 |:-----|:-----|:-----|:-----|
 |**Access**||Y||
 |**Excel**|Y|Y|Y|

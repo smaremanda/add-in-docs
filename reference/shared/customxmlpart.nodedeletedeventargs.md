@@ -1,5 +1,5 @@
 
-# NodeDeletedEventArgs object
+# NodeDeletedEventArgs object (JavaScript API for Office)
 Provides information about the deleted node that raised the [nodeDeleted](../../reference/shared/customxmlpart.nodedeleted.event.md) event.
 
 |||
@@ -33,8 +33,9 @@ A capital Y in the following matrix indicates that this object is supported in t
 For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
 
 
-
-||**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|
+|
+|
+||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
 |:-----|:-----|:-----|:-----|
 |**Word**|Y||Y|
 

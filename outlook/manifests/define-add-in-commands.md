@@ -4,7 +4,7 @@ Use the  **VersionOverrides** element in your Outlook add-in manifest to define 
 
  _**Applies to:** apps for Office | Office Add-ins | Outlook_
 
-To support add-in commands, some additional elements have been added to the add-in manifest v1.1 within the  **VersionOverrides** element.. When a manifest contains the **VersionOverrides** element, versions of Outlook that support add-in commands will use the information within that element to load the add-in. Older versions of Outlook that do not support add-in commands will ignore the element and continue to use the old elements as described in [Outlook add-in manifests](../../outlook/manifests/manifests.md).
+To support add-in commands, some additional elements have been added to the add-in manifest v1.1 within the  **VersionOverrides** element.. When a manifest contains the **VersionOverrides** element, versions of Outlook that support add-in commands will use the information within that element to load the add-in. Older versions of Outlook that do not support add-in commands will ignore the element and continue to use the old elements as described in [Outlook add-in manifests](../outlook/manifests/manifests.md).
 
 When the client application recognizes the  **VersionOverrides** node, the add-in name appears in the ribbon, not in the read/compose pane. The add-in won't appear in both places.
  
@@ -28,7 +28,7 @@ The following table shows the child elements of  **VersionOverrides**.
 |**Element**|**Description**|
 |:-----|:-----|
 |**Description**|Describes the add-in. This overrides the  **Description** element in any parent portion of the manifest. The text of the description is contained in a child element of the **LongString** element contained in the **Resources** element. The **resid** attribute of the **Description** element is set to the value of the **id** attribute of the **String** element that contains the text.|
-|**Requirements**|Specifies the minimum requirement set and version of Office.js that the Office add-in needs to activate. It is defined the same as in [Outlook add-in manifests](../../outlook/manifests/manifests.md). This overrides the  **Requirements** element in the parent portion of the manifest.|
+|**Requirements**|Specifies the minimum requirement set and version of Office.js that the Office add-in needs to activate. It is defined the same as in [Outlook add-in manifests](../outlook/manifests/manifests.md). This overrides the  **Requirements** element in the parent portion of the manifest.|
 |**Hosts**|Required. Specifies a collection of host types and their settings. It overrides the  **Hosts** element in the parent portion of the manifest. It must have an **xsi:type** attribute set to "MailHost", and it must contain a **FormFactor** child element.|
 |**Resources**|Defines a collection of resources (strings, URLs, and images) that are referenced by other elements of the manifest. This is described in the [Resources element](#VersionOverrides10_Resources) section later in this topic.|
 Here an example of  **VersionOverrides**, showing its child elements.
@@ -146,14 +146,14 @@ The  **CustomPane** extension point defines an add-in that activates when specif
 |:-----|:-----|
 |**RequestedHeight**| Optional. The requested height, in pixels, for the display pane when it is running on a desktop computer. This can be from 32 to 450 pixels. It is the same as in read add-ins (see[RequestedHeight element (ItemReadTabletMailAppSettings complexType) (app manifest schema v1.1)](http://msdn.microsoft.com/library/6296f5b0-3d5b-5ab9-eee9-55a7eb90f92c%28Office.15%29.aspx)|
 |**SourceLocation**|Required. The URL for the source code file of the add-in. This refers to a  **Url** element in the **Resources** element.|
-|**Rule**|Required. The rule or collection of rules that specify when the add-in activates. It is the same as defined in [Outlook add-in manifests](../../outlook/manifests/manifests.md), except the [ItemIs](http://msdn.microsoft.com/en-us/library/f7dac4a3-1574-9671-1eda-47f092390669%28Office.15%29.aspx) rule has the following changes: **ItemType** is either "Message" or "AppointmentAttendee", and there is no **FormType** attribute. For more information, see [Custom pane Outlook add-ins](../../outlook/custom-pane-outlook-add-ins.md) and [Activation rules for Outlook add-ins](../../outlook/manifests/activation-rules.md).|
+|**Rule**|Required. The rule or collection of rules that specify when the add-in activates. It is the same as defined in [Outlook add-in manifests](../outlook/manifests/manifests.md), except the [ItemIs](http://msdn.microsoft.com/en-us/library/f7dac4a3-1574-9671-1eda-47f092390669%28Office.15%29.aspx) rule has the following changes: **ItemType** is either "Message" or "AppointmentAttendee", and there is no **FormType** attribute. For more information, see [Custom pane Outlook add-ins](../outlook/custom-pane-outlook-add-ins.md) and [Activation rules for Outlook add-ins](../outlook/manifests/activation-rules.md).|
 |**DisableEntityHighlighting**|Optional. Specifies whether entity highlighting should be turned off for this mail add-in. |
  The following example defines a custom pane for items that are messages or have an attachment or include an address.
 
 
 
 
-```XML
+```
 <ExtensionPoint xsi:type="CustomPane">
    <RequestedHeight>100< /RequestedHeight> 
    <SourceLocation resid="residReadTaskpaneUrl"/>
@@ -246,7 +246,7 @@ The button control looks like the following:
 
 
 
-```XML
+```
 <Control xsi:type="Button" id="<choose a descriptive name>" >
   <!-- include button elements, as described in the following table -->
 </Control>
@@ -284,7 +284,7 @@ The following is an example of a  _UI-less button_, which executes a function na
 
 
 
-```XML
+```
 <Control xsi:type="Button" id="msgReadFunctionButton">
   <Label resid="funcReadButtonLabel" />
   <Supertip>
@@ -308,7 +308,7 @@ A  _task pane button_ control is a button that launches a task pane. Task pane b
 
 
 
-```XML
+```
 <Control xsi:type="Button" id="msgReadOpenPaneButton">
   <Label resid="paneReadButtonLabel" />
   <Supertip>
@@ -338,7 +338,7 @@ The syntax for the menu control is as follows:
 
 
 
-```XML
+```
 <Control xsi:type="Menu" id="<choose a descriptive name>" >
   <!-- include menu elements, as described in the following table -->
 </Control>
@@ -371,7 +371,7 @@ The following is an example of a menu.
 
 
 
-```XML
+```
 <Control xsi:type="Menu" id="msgReadMenuButton">
   <Label resid="menuReadButtonLabel" />
   <Supertip>
@@ -446,7 +446,7 @@ The following is an example of the  **Resources** element.
 
 
 
-```XML
+```
 <Resources>
   <bt:Images>
     <!-- Blue icon -->
@@ -498,9 +498,9 @@ For a full sample manifest, see the [command-demo](https://github.com/jasonjoh/c
 
 
 
-- [Add-in commands for Outlook](../../outlook/add-in-commands-for-outlook.md)
+- [Add-in commands for Outlook](../outlook/add-in-commands-for-outlook.md)
     
-- [Outlook add-in manifests](../../outlook/manifests/manifests.md)
+- [Outlook add-in manifests](../outlook/manifests/manifests.md)
     
 - [command-demo sample](https://github.com/jasonjoh/command-demo.aspx)
     

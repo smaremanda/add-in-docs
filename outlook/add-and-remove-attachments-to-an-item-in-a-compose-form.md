@@ -15,7 +15,7 @@ For example, you can define  _options.asyncContext_ as a JSON object that contai
 
 
 
-```js
+```
 { asyncContext: { var1: 1, var2: 2} }
 ```
 
@@ -34,7 +34,7 @@ The following JavaScript example is a compose add-in that attaches a file, pictu
 
 
 
-```js
+```
 var mailbox;
 var attachmentURI = "https://webserver/picture.png";
 var attachmentID;
@@ -84,7 +84,7 @@ The following JavaScript function,  `addItemAttachment`, extends the first examp
 
 
 
-```js
+```
 // Adds the specified item as an attachment to the composed item.
 // ID is the EWS ID of the item to be attached.
 function addItemAttachment(ID) {
@@ -125,7 +125,7 @@ The following JavaScript function,  `removeAttachment`, continues to extend the 
 
 
 
-```js
+```
 // Removes the specified attachment from the composed item.
 // ID is the Exchange identifier of the attachment to be 
 // removed. 

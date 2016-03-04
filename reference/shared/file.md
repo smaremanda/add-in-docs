@@ -1,5 +1,5 @@
 
-# File object
+# File object (JavaScript API for Office)
 Represents the document file associated with an Office Add-in.
 
 |||
@@ -47,7 +47,7 @@ For more information about Office host application and server requirements, see 
 
 |||||
 |:-----|:-----|:-----|:-----|
-||Office for Windows desktop|Office Online (in browser)|Office for iPad|
+||Office for Windows desktop|Office Online(in browser)|Office for iPad|
 |**PowerPoint**|Y|Y|Y|
 |**Word**|Y||Y|
 

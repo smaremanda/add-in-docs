@@ -1,5 +1,5 @@
 
-# Document.getSelectedDataAsync method
+# Document.getSelectedDataAsync method (JavaScript API for Office)
 Reads the data contained in the current selection in the document.
 
 |||
@@ -8,7 +8,7 @@ Reads the data contained in the current selection in the document.
 |**Available in requirement sets**|Selection|
 |**Last changed in Selection**|1.1|
 
-[![Try out this call in the interactive API Tutorial for Excel](../../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](http://officeapitutorial.azurewebsites.net/Redirect.html?scenario=Write+and+Read+Text&amp;task=writeSelectedDataText)
+[![Try out this call in the interactive API Tutorial for Excel](../../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](http://officeapitutorial.azurewebsites.net/Redirect.mdl?scenario=Write+and+Read+Text&amp;task=writeSelectedDataText)
 
 
 ```
@@ -136,7 +136,7 @@ For more information about Office host application and server requirements, see 
 **Supported hosts, by platform**
 
 
-||**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|
+||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
 |:-----|:-----|:-----|:-----|
 |**Access**||Y||
 |**Excel**|Y|Y|Y|

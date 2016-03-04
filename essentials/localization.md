@@ -1,5 +1,6 @@
 
 # Localization for Office Add-ins
+Provide locale-specific content for an Office Add-in, including UI strings, add-in name, description, icon, source file, and date/time format.
 
  _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | Outlook | PowerPoint | Project | Word_
 
@@ -11,7 +12,7 @@ You can implement any localization scheme that's appropriate for your Office Add
 The JavaScript API for Office provides two properties that support displaying or interpreting values consistent with the locale of the host application and data:
 
 
-- [Context.displayLanguage](http://msdn.microsoft.com/library/732ba34c-c99f-4c00-836d-4250eb7f0dac.aspx) specifies the locale (or language) of the user interface of the host application. The following example verifies if the host application uses the en-US or fr-Fr locale, and displays a locale-specific greeting.
+- [Context.displayLanguage](http://msdn.microsoft.com/library/732ba34c-c99f-4c00-836d-4250eb7f0dac%28Office.15%29.aspx) specifies the locale (or language) of the user interface of the host application. The following example verifies if the host application uses the en-US or fr-Fr locale, and displays a locale-specific greeting.
     
 ```js
   function sayHelloWithDisplayLanguage() {
@@ -32,11 +33,11 @@ function write(message){
 
 ```
 
-- [Context.contentLanguage](http://msdn.microsoft.com/library/4fd063c2-0cd0-4b5b-8993-93d7ff8ce3bf.aspx) specifies the locale (or language) of the data. Extending the last code sample, instead of checking the **displayLanguage** property:
+- [Context.contentLanguage](http://msdn.microsoft.com/library/4fd063c2-0cd0-4b5b-8993-93d7ff8ce3bf%28Office.15%29.aspx) specifies the locale (or language) of the data. Extending the last code sample, instead of checking the **displayLanguage** property:
     
-    ```js
-      var myLanguage = Office.context.displayLanguage;
-    ```
+```js
+  var myLanguage = Office.context.displayLanguage;
+```
 
 
     Assign  `myLanguage` to the **contentLanguage** property, and use the rest of the same code to display a greeting based on the locale of the data:
@@ -51,7 +52,7 @@ function write(message){
 ## Control localization from the manifest
 
 
-Every Office Add-in specifies a [DefaultLocale](http://msdn.microsoft.com/library/04796a3a-3afa-dc85-db66-4677560c185c.aspx) element and a locale in its manifest. By default, the Office Add-in platform and Office host applications apply the values of the [Description](http://msdn.microsoft.com/library/bcce6bad-23d0-7631-7d8c-1064b8453b5a.aspx), [DisplayName](http://msdn.microsoft.com/library/529159ca-53bf-efcf-c245-e572dab0ef57.aspx), [IconUrl](http://msdn.microsoft.com/library/c7dac2d4-4fda-6fc7-3774-49f02b2d3e1e.aspx) (if present), [HighResolutionIconUrl](https://msdn.microsoft.com/en-us/library/office/dn592031.aspx) (if present), and **SourceLocation** elements to all locales. You can optionally support specific values for specific locales, by specifying an **Override** child element for each additional locale, for any of these five elements. The value for the **DefaultLocale** element and for the **Locale** attribute of the **Overrride** element is specified according to [RFC 3066](http://www.ietf.org/rfc/rfc3066.txt), "Tags for the Identification of Languages." Table 1 describes the localizing support for these elements.
+Every Office Add-in specifies a [DefaultLocale](http://msdn.microsoft.com/library/04796a3a-3afa-dc85-db66-4677560c185c%28Office.15%29.aspx) element and a locale in its manifest. By default, the Office Add-in platform and Office host applications apply the values of the [Description](http://msdn.microsoft.com/library/bcce6bad-23d0-7631-7d8c-1064b8453b5a%28Office.15%29.aspx), [DisplayName](http://msdn.microsoft.com/library/529159ca-53bf-efcf-c245-e572dab0ef57%28Office.15%29.aspx), [IconUrl](http://msdn.microsoft.com/library/c7dac2d4-4fda-6fc7-3774-49f02b2d3e1e%28Office.15%29.aspx) (if present), [HighResolutionIconUrl](http://msdn.microsoft.com/library/cd5493c5-a019-0059-3009-236234a034f1%28Office.15%29.aspx) (if present), and **SourceLocation** elements to all locales. You can optionally support specific values for specific locales, by specifying an **Override** child element for each additional locale, for any of these five elements. The value for the **DefaultLocale** element and for the **Locale** attribute of the **Overrride** element is specified according to [RFC 3066](http://www.ietf.org/rfc/rfc3066.txt), "Tags for the Identification of Languages." Table 1 describes the localizing support for these elements.
 
 
 **Table 1. Localization support**
@@ -59,13 +60,13 @@ Every Office Add-in specifies a [DefaultLocale](http://msdn.microsoft.com/librar
 
 |**Element**|**Localization support**|
 |:-----|:-----|
-|**Description***|Users in each locale you specify can see a localized description for the add-in in the Office Store (or private catalog).<br/>For Outlook add-ins, users can see the description in the Exchange Admin Center (EAC) after installation.|
-|**DisplayName***|Users in each locale you specify can see a localized description for the add-in in the Office Store (or private catalog).<br/>For Outlook add-ins, users can see the display name as a label for the Outlook add-in button and in the EAC after installation.<br/>For content and task pane add-ins, users can see the display name in the ribbon after installing the add-in.|
-|**IconUrl**|The icon image is optional. You can use the same override technique to specify a certain image for a specific culture. If you use and localize an icon, users in each locale you specify can see a localized icon image for the add-in.<br/>For Outlook add-ins, users can see the icon in the EAC after installing the add-in.<br/>For content and task pane add-ins, users can see the icon in the ribbon after installing the add-in.|
-|**HighResolutionIconUrl**  **Important**  This element is available only when using add-in manifest version 1.1.|The high resolution icon image is optional but if it is specified, it must occur after the  **IconUrl** element. When **HighResolutionIconUrl** is specified, and the add-in is installed on a device that supports high dpi resolution, the **HighResolutionIconUrl** value is used instead of the value for **IconUrl**.<br/>You can use the same override technique to specify a certain image for a specific culture. If you use and localize an icon, users in each locale you specify can see a localized icon image for the add-in.<br/>For Outlook add-ins, users can see the icon in the EAC after installing the add-in.<br/>For content and task pane add-ins, users can see the icon in the ribbon after installing the add-in.|
+|**Description***|Users in each locale you specify can see a localized description for the add-in in the Office Store (or private catalog). For Outlook add-ins, users can see the description in the Exchange Admin Center (EAC) after installation.|
+|**DisplayName***|Users in each locale you specify can see a localized description for the add-in in the Office Store (or private catalog). For Outlook add-ins, users can see the display name as a label for the Outlook add-in button and in the EAC after installation.For content and task pane add-ins, users can see the display name in the ribbon after installing the add-in.|
+|**IconUrl**|The icon image is optional. You can use the same override technique to specify a certain image for a specific culture. If you use and localize an icon, users in each locale you specify can see a localized icon image for the add-in. For Outlook add-ins, users can see the icon in the EAC after installing the add-in.For content and task pane add-ins, users can see the icon in the ribbon after installing the add-in.|
+|**HighResolutionIconUrl** >**Important**  This element is available only when using add-in manifest version 1.1.|The high resolution icon image is optional but if it is specified, it must occur after the  **IconUrl** element. When **HighResolutionIconUrl** is specified, and the add-in is installed on a device that supports high dpi resolution, the **HighResolutionIconUrl** value is used instead of the value for **IconUrl**. You can use the same override technique to specify a certain image for a specific culture. If you use and localize an icon, users in each locale you specify can see a localized icon image for the add-in.For Outlook add-ins, users can see the icon in the EAC after installing the add-in.For content and task pane add-ins, users can see the icon in the ribbon after installing the add-in.|
 |**SourceLocation**|Users in each locale you specify can see a webpage that you specifically design for the add-in for that locale. |
 
- >**Note** You can localize the description and display name for only the locales that Office supports. See [Language identifiers and OptionState Id values in Office 2013](http://technet.microsoft.com/en-us/library/cc179219.aspx) for a list of languages and locales for the current release of Office.
+ >**Note**  * You can localize the description and display name for only the locales that Office supports. See [Language identifiers and OptionState Id values in Office 2013](http://technet.microsoft.com/en-us/library/cc179219%28Office.15%29.aspx) for a list of languages and locales for the current release of Office.
 
 
 ### Examples
@@ -83,21 +84,21 @@ For example, an Office Add-in can specify the  **DefaultLocale** as `en-us`. For
 
 This means that the add-in assumes the  `en-us` locale by default. Users see the English display name of "Video player" for all locales unless the client computer's locale is `fr-fr`, in which case users would see the French display name "Lecteur vidÃ©o".
 
-The following example applies a locale override for the  **Description** element. It first specifies a default locale of `en-us` and an English description, and then specifies an [Override](http://msdn.microsoft.com/library/d6a0e4f3-1cc9-c544-89bf-8923c7434316.aspx) statement with a French description for the `fr-fr` locale:
+The following example applies a locale override for the  **Description** element. It first specifies a default locale of `en-us` and an English description, and then specifies an [Override](http://msdn.microsoft.com/library/d6a0e4f3-1cc9-c544-89bf-8923c7434316%28Office.15%29.aspx) statement with a French description for the `fr-fr` locale:
 
 
 
 
 ```XML
-<DefaultLocale>en-us</DefaultLocale>
+    <DefaultLocale>en-us</DefaultLocale>
 ...
-<Description DefaultValue=
-   "Watch YouTube videos referenced in the emails you receive 
-   without leaving your email client.">
-   <Override Locale="fr-fr" Value=
-   "Visualisez les vidéos YouTube référencées dans vos courriers 
-   électronique directement depuis Outlook et Outlook Web App."/>
-</Description>
+    <Description DefaultValue=
+      "Watch YouTube videos referenced in the emails you receive 
+      without leaving your email client.">
+      <Override Locale="fr-fr" Value=
+      "Visualisez les vidéos YouTube référencées dans vos courriers 
+      électronique directement depuis Outlook et Outlook Web App."/>
+    </Description>
 ```
 
 This means that the add-in assumes the  `en-us` locale by default. Users would see the English description in the **DefaultValue** attribute for all locales unless the client computer's locale is `fr-fr`, in which case they would see the French description.
@@ -115,7 +116,7 @@ In the following example, the add-in specifies a separate image that's more appr
 
 For the  **SourceLocation** element, supporting additional locales means providing a separate source HTML file for each of the specified locales. Users in each locale you specify can see a customized webpage that you design for that them.
 
-For Outlook add-ins, the  **SourceLocation** element also aligns to the form factor. This allows you to provide a separate, localized source HTML file for each corresponding form factor. You can specify one or more **Override** child elements in each applicable settings element ([DesktopSettings](http://msdn.microsoft.com/library/da9fd085-b8cc-2be0-d329-2aa1ef5d3f1c.aspx), [TabletSettings](http://msdn.microsoft.com/library/5c89cc7c-7ae0-49c9-fdd5-4c52118228f6.aspx), or [PhoneSettings](http://msdn.microsoft.com/library/13e4eae3-8e8c-fd55-a1c2-3297b485f327.aspx)). The following example shows settings elements for the desktop, tablet, and smartphone form factors, each with one HTML file for the default locale and another for the French locale.
+For Outlook add-ins, the  **SourceLocation** element also aligns to the form factor. This allows you to provide a separate, localized source HTML file for each corresponding form factor. You can specify one or more **Override** child elements in each applicable settings element ([DesktopSettings](http://msdn.microsoft.com/library/da9fd085-b8cc-2be0-d329-2aa1ef5d3f1c%28Office.15%29.aspx), [TabletSettings](http://msdn.microsoft.com/library/5c89cc7c-7ae0-49c9-fdd5-4c52118228f6%28Office.15%29.aspx), or [PhoneSettings](http://msdn.microsoft.com/library/13e4eae3-8e8c-fd55-a1c2-3297b485f327%28Office.15%29.aspx)). The following example shows settings elements for the desktop, tablet, and smartphone form factors, each with one HTML file for the default locale and another for the French locale.
 
 
 
@@ -215,14 +216,14 @@ To localize the add-in display name and description:
     
      >**Note**  You can replace the Spanish language localized strings used in this example for the  **DisplayName** and **Description** elements with the localized strings for any other language.
 
-    ```XML
-      <DisplayName DefaultValue="World Ready add-in">
-        <Override Locale="es-es" Value="Aplicación de uso internacional"/>
-      </DisplayName>
-      <Description DefaultValue="An add-in for testing localization">
-        <Override Locale="es-es" Value="Una aplicación para la prueba de la localización"/>
-      </Description>
-    ```
+```XML
+  <DisplayName DefaultValue="World Ready add-in">
+    <Override Locale="es-es" Value="Aplicación de uso internacional"/>
+  </DisplayName>
+  <Description DefaultValue="An add-in for testing localization">
+    <Override Locale="es-es" Value="Una aplicación para la prueba de la localización"/>
+  </Description>
+```
 
 3. When you change the display language for Office 2013 from English to Spanish, for example, and then run the add-in, the add-in display name and description are shown with localized text. 
     
@@ -233,43 +234,43 @@ To lay out the add-in UI:
     
 2. Replace the HTML in Home.html with the following HTML.
     
-    ```HTML
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-        <title></title>
-        <script src="../../Scripts/jquery-1.8.2.js" type="text/javascript"></script>
-    
-        <link href="../../Content/Office.css" rel="stylesheet" type="text/css" />
-        <script src="https://appsforoffice.microsoft.com/lib/1.0/hosted/office.js" type="text/javascript"></script>
-    
-        <!-- To enable offline debugging using a local reference to Office.js, use:                        -->
-        <!-- <script src="../../Scripts/Office/MicrosoftAjax.js" type="text/javascript"></script>          -->
-        <!--    <script src="../../Scripts/Office/1.0/office.js" type="text/javascript"></script>          -->
-    
-        <link href="../App.css" rel="stylesheet" type="text/css" />
-        <script src="../App.js" type="text/javascript"></script>
-    
-        <link href="Home.css" rel="stylesheet" type="text/css" />
-        <script src="Home.js" type="text/javascript"></script> <body>
-        <!-- Page content -->
-        <div id="content-header">
-            <div class="padding">
-                <h1 id="greeting"></h1>
-            </div>
+```HTML
+  <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title></title>
+    <script src="../../Scripts/jquery-1.8.2.js" type="text/javascript"></script>
+
+    <link href="../../Content/Office.css" rel="stylesheet" type="text/css" />
+    <script src="https://appsforoffice.microsoft.com/lib/1.0/hosted/office.js" type="text/javascript"></script>
+
+    <!-- To enable offline debugging using a local reference to Office.js, use:                        -->
+    <!-- <script src="../../Scripts/Office/MicrosoftAjax.js" type="text/javascript"></script>          -->
+    <!--    <script src="../../Scripts/Office/1.0/office.js" type="text/javascript"></script>          -->
+
+    <link href="../App.css" rel="stylesheet" type="text/css" />
+    <script src="../App.js" type="text/javascript"></script>
+
+    <link href="Home.css" rel="stylesheet" type="text/css" />
+    <script src="Home.js" type="text/javascript"></script> <body>
+    <!-- Page content -->
+    <div id="content-header">
+        <div class="padding">
+            <h1 id="greeting"></h1>
         </div>
-        <div id="content-main">
-            <div class="padding">
-                <div>
-                    <p id="about"></p>
-                </div>            
-            </div>
+    </div>
+    <div id="content-main">
+        <div class="padding">
+            <div>
+                <p id="about"></p>
+            </div>            
         </div>
-    </head>
-    </html>
-    ```
+    </div>
+</body>
+</html>
+```
 
 3. In Visual Studio, choose  **File**,  **Save AddIn\Home\Home.html**.
     
@@ -296,54 +297,54 @@ To add the resource file to the add-in project:
     
 3. Add the following code to the UIStrings.js file.
     
-    ```
-      /* Store the locale-specific strings */
-    
-    var UIStrings = (function ()
+```
+  /* Store the locale-specific strings */
+
+var UIStrings = (function ()
+{
+    "use strict";
+
+    var UIStrings = {};
+
+    // JSON object for English strings
+    UIStrings.EN =
+    {        
+        "Greeting": "Welcome",
+        "Introduction": "This is my localized add-in."        
+    };
+
+
+    // JSON object for Spanish strings
+    UIStrings.ES =
+    {        
+        "Greeting": "Bienvenido",
+        "Introduction": "Esta es mi aplicación localizada."
+    };
+
+    UIStrings.getLocaleStrings = function (locale)
     {
-        "use strict";
-    
-        var UIStrings = {};
-    
-        // JSON object for English strings
-        UIStrings.EN =
-        {        
-            "Greeting": "Welcome",
-            "Introduction": "This is my localized add-in."        
-        };
-    
-    
-        // JSON object for Spanish strings
-        UIStrings.ES =
-        {        
-            "Greeting": "Bienvenido",
-            "Introduction": "Esta es mi aplicación localizada."
-        };
-    
-        UIStrings.getLocaleStrings = function (locale)
+        var text;
+        
+        // Get the resource strings that match the language.
+        switch (locale)
         {
-            var text;
-            
-            // Get the resource strings that match the language.
-            switch (locale)
-            {
-                case 'en-US':
-                    text = UIStrings.EN;
-                    break;
-                case 'es-ES':
-                    text = UIStrings.ES;
-                    break;
-                default:
-                    text = UIStrings.EN;
-                    break;
-            }
-    
-            return text;
-        };
-    
-        return UIStrings;
-    })();
-    ```
+            case 'en-US':
+                text = UIStrings.EN;
+                break;
+            case 'es-ES':
+                text = UIStrings.ES;
+                break;
+            default:
+                text = UIStrings.EN;
+                break;
+        }
+
+        return text;
+    };
+
+    return UIStrings;
+})();
+```
 
 The UIStrings.js resource file creates an object,  **UIStrings**, which contains the localized strings for your add-in UI. 
 

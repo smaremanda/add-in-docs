@@ -33,7 +33,7 @@ Office.context.officeTheme
 
 ## Remarks
 
-Using Office theme colors let's you coordinate the color scheme of your add-in with the current Office theme selected by the user with  **File** > **Office Account** > **Office Theme** UI, which is applied across all Office host applications. Using Office theme colors is appropriate for Outlook and task pane add-ins.
+Using Office theme colors let's you coordinate the color scheme of your add-in with the current Office theme selected by the user with  ** File** > **Office Account** > **Office Theme** UI, which is applied across all Office host applications. Using Office theme colors is appropriate for Outlook and task pane add-ins.
 
 
 ## Example

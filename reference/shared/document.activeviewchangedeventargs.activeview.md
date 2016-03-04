@@ -1,5 +1,5 @@
 
-# DocumentActiveViewChangedEventArgs.activeView property
+# DocumentActiveViewChangedEventArgs.activeView property (JavaScript API for Office)
 Gets an  **ActiveView** enumeration value that identifies the state of the active view of the document, for example, whether the user can edit the document.
 
 |||
@@ -28,7 +28,7 @@ For more information about Office host application and server requirements, see 
 **Supported hosts, by platform**
 
 
-||**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|
+||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
 |:-----|:-----|:-----|:-----|
 |**PowerPoint**|Y|Y|Y|
 

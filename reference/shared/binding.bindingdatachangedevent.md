@@ -1,5 +1,5 @@
 
-# Binding.bindingDataChanged event
+# Binding.bindingDataChanged event (JavaScript API for Office)
 Occurs when data within the binding is changed.
 
 |||
@@ -7,7 +7,7 @@ Occurs when data within the binding is changed.
 |**Hosts:**|Access, Excel, Word|
 |**Last changed in BindingEvents**|1.1|
 
-```js
+```
 Office.EventType.BindingDataChanged
 ```
 
@@ -49,7 +49,7 @@ For more information about Office host application and server requirements, see 
 **Supported hosts, by platform**
 
 
-||**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|
+||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
 |:-----|:-----|:-----|:-----|
 |**Access**||Y||
 |**Excel**|Y|Y|Y|
@@ -63,6 +63,13 @@ For more information about Office host application and server requirements, see 
 |**Namespace**|Office|
 
 ## Support history
+
+
+
+
+
+****
+
 
 |**Version**|**Changes**|
 |:-----|:-----|

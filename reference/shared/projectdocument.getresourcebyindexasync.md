@@ -1,7 +1,6 @@
 
 # ProjectDocument.getResourceByIndexAsync method (JavaScript API for Office v1.1)
 Asynchronously gets the GUID of the resource that has the specified index in the resource collection.
-
  **Important:** This API works only in Project 2016 on Windows desktop.
 
 |||
@@ -18,26 +17,16 @@ Office.context.document.getResourceByIndexAsync(resourceIndex[, options][, callb
 ## Parameters
 
 
--  _resourceIndex_
-
-    Type:  **number**
+-  _resourceIndex_Type:  **number**
     
     The index of the resource in the collection of resources for the project. Required.
     
--  _options_
-
-    The following [optional parameter](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters):
+-  _options_The following [optional parameter](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters):
     
-  - asyncContext
-
-    Type: **array, boolean, null, number, object, string, or undefined**
-
-    A user-defined item of any type that is returned in the [AsyncResult](../../reference/shared/asyncresult.md) object without being altered. Optional.
-
-    For example, you can pass the _asyncContext_ argument by using the format `{asyncContext: 'Some text'}` or `{asyncContext: <object>}`.
-- _callback_
-    
-    _Type_:  **function**
+||
+|:-----|
+|<dl class="authored" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><dt><span class="parameter" sdata="paramReference">asyncContext</span></dt><dd><p>Type: <span class="keyword">array</span>, <span class="keyword">boolean</span>, <span class="keyword">null</span>, <span class="keyword">number</span>, <b>object</b> , <span class="keyword">string</span>, or <span class="keyword">undefined</span></p><p>A user-defined item of any type that is returned in the <a href="540c114f-0398-425c-baf3-7363f2f6bc47.htm">AsyncResult</a> object without being altered. Optional.</p><p>For example, you can pass the <span class="parameter" sdata="paramReference">asyncContext</span> argument by using the format <span class="code">{asyncContext: 'Some text'}</span> or <span class="code">{asyncContext: <object>}</span>.</p></dd></dl>|
+-  _callback_Type:  **function**
     
     A function that is invoked when the method call returns, where the only parameter is of type [AsyncResult](../../reference/shared/asyncresult.md). Optional.
     
@@ -161,7 +150,9 @@ A capital Y in the following matrix indicates that this method is supported in t
 For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
 
 
-||**Office for Windows desktop**|**Office Online (in browser)**|
+|
+|
+||**Office for Windows desktop**|**Office Online(in browser)**|
 |:-----|:-----|:-----|
 |**Project**|Y||
 
@@ -192,7 +183,5 @@ For more information about Office host application and server requirements, see 
 
 
 [getMaxResourceIndexAsync](../../reference/shared/projectdocument.getmaxresourceindexasync.md)
-
 [AsyncResult object](../../reference/shared/asyncresult.md)
-
 [ProjectDocument object](../../reference/shared/projectdocument.projectdocument.md)

@@ -15,7 +15,7 @@ Some of the properties that represent recipients in an appointment or message ar
 
 
 
-```js
+```
 item.cc
 ```
 
@@ -24,7 +24,7 @@ But in a compose form, because both the user and your add-in can be inserting or
 
 
 
-```js
+```
 item.cc.getAsync
 ```
 
@@ -55,7 +55,7 @@ Note that because the  **getAsync** method is asynchronous, if there are subsequ
 
 
 
-```js
+```
 var item;
 
 Office.initialize = function () {

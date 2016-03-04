@@ -15,7 +15,7 @@ The [location](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.i
 
 
 
-```js
+```
 item.location
 ```
 
@@ -24,7 +24,7 @@ But in a compose form, because both the user and your add-in can be inserting or
 
 
 
-```js
+```
 item.location.getAsync
 ```
 
@@ -49,7 +49,7 @@ To use  **item.location.getAsync**, provide a callback method that checks for th
 
 
 
-```js
+```
 var item;
 
 Office.initialize = function () {
@@ -93,7 +93,7 @@ To use  **item.location.setAsync**, specify a string of up to 255 characters in 
 
 
 
-```js
+```
 var item;
 
 Office.initialize = function () {

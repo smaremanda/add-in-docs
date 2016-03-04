@@ -1,5 +1,5 @@
 
-# Document.goToByIdAsync method
+# Document.goToByIdAsync method (JavaScript API for Office)
 Goes to the specified object or location in the document.
 
 |||
@@ -8,7 +8,7 @@ Goes to the specified object or location in the document.
 |**Available in requirement sets**|Not in a set|
 |**Added in**|1.1|
 
-[![Try out this call in the interactive API Tutorial for Excel](../../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](http://officeapitutorial.azurewebsites.net/Redirect.html?scenario=Navigate+to+Binding)
+[![Try out this call in the interactive API Tutorial for Excel](../../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](http://officeapitutorial.azurewebsites.net/Redirect.mdl?scenario=Navigate+to+Binding)
 
 
 ```
@@ -211,7 +211,7 @@ For more information about Office host application and server requirements, see 
 **Supported hosts, by platform**
 
 
-||**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|
+||**Office for Windows desktop**|**Office Online(in browser)**|**Office for iPad**|
 |:-----|:-----|:-----|:-----|
 |**Excel**|Y|Y|Y|
 |**PowerPoint**|Y|Y|Y|
