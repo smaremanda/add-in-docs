@@ -1,7 +1,6 @@
 
 # Create Office Add-ins with Napa with an Office 365 Developer Site
-
- _**Applies to:** apps for Office | Office 365 | Office Add-ins_
+
 
 Napa is a great way to get started building Office Add-ins right in a browser window. You don't need to install any tools such as Visual Studio. All you need is an Office 365 account and a supported browser. To get started, sign up for an Office 365 Developer Site. Then, install Napa on your Developer site and you are ready to create Office Add-ins. See [Set up a development environment for SharePoint Add-ins on Office 365](http://msdn.microsoft.com/library/b22ce52a-ae9e-4831-9b68-c9210af6dc54%28Office.15%29.aspx). When you're ready to use the powerful capabilities in Visual Studio, Napa makes it easy to download your project and continue developing your Office Add-in.
 

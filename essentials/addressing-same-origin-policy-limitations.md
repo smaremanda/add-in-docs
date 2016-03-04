@@ -1,7 +1,6 @@
 
 # Addressing same-origin policy limitations in Office Add-ins
-
- _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | Outlook | PowerPoint | Project | Word_
+
 
 The same-origin policy enforced by the browser prevents a script loaded from one domain from getting or manipulating properties of a webpage from another domain. This means that, by default, the domain of a requested URL must be the same as the domain of the current webpage. For example, this policy will prevent a webpage in one domain from making [XmlHttpRequest](http://www.w3.org/TR/XMLHttpRequest/) web-service calls to a domain other than the one where it is hosted.
 

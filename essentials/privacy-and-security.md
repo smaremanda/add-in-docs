@@ -1,7 +1,6 @@
 
 # Privacy and security for Office Add-ins
-
- _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | Outlook | PowerPoint | Project | Word_
+
 
 
 ## Understanding the add-in runtime

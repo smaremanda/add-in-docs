@@ -1,7 +1,6 @@
 
 # Task pane and content add-ins for Office 2013
-
- _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | PowerPoint | Project | Word_
+
 
 
 ## JavaScript API support for content and task pane add-ins

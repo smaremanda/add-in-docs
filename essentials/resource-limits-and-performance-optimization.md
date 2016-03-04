@@ -1,7 +1,6 @@
 
 # Resource limits and performance optimization for Office Add-ins
-
- _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | Outlook | PowerPoint | Project | Word_
+
 
 To create the best experience for your users, ensure that your Office Add-in performs within specific limits for CPU core and memory usage, reliability and, for Outlook add-ins, the response time for evaluating regular expressions. These run-time resource usage limits apply to add-ins running on Office clients for Windows and OS X, but not Office Online, Outlook Web App,or OWA for Devices. You can also optimize the performance of your add-ins on desktop and mobile devices by optimizing the use of resources in your add-in design and implementation.
 

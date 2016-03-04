@@ -1,7 +1,6 @@
 
 # Create a task pane add-in with Napa Office 365 Development Tools
-
- _**Applies to:** apps for Office | Excel | Office Add-ins | PowerPoint | Project | Word_
+
 
 
 

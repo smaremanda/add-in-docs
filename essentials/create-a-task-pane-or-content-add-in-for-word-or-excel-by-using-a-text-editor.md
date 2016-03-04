@@ -1,7 +1,6 @@
 
 # Create a task pane or content add-in for Word or Excel by using a text editor
-
- _**Applies to:** apps for Office | Excel | Office Add-ins | Word_
+
 
 The simplest Office Add-in for Excel 2013 or Word 2013 consists of a manifest XML file that points to a webpage or website. This article shows you how to create a simple add-in that consists of only an XML manifest and an HTML file with a text editor.
 

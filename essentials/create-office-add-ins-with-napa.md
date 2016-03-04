@@ -1,7 +1,6 @@
 
 # Create Office Add-ins with Napa Office 365 Development Tools
-
- _**Applies to:** apps for Office | Office 365 | Office Add-ins_
+
 
 
 ## Introducing Napa

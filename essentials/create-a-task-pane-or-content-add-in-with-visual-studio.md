@@ -1,7 +1,6 @@
 
 # Create a task pane or content add-in with Visual Studio
-
- _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | PowerPoint | Project | Word_
+
 
 The steps in this article describe how to create and run a simple  _Hello World_ task pane add-in in Excel. Then you'll extend the add-in to perform the following tasks:
 

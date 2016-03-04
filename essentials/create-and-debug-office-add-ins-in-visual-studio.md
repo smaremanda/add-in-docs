@@ -1,7 +1,6 @@
 
 # Create and debug Office Add-ins in Visual Studio
-
- _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | Outlook | PowerPoint | Project | Word_
+
 
 
  >**Note**  These instructions are based on Visual Studio 2015. Other versions of Visual Studio will have minor variations on these instructions.
