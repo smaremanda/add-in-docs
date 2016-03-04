@@ -1,4 +1,5 @@
 
+
 # ProjectDocument.ViewSelectionChanged event
 Occurs when the active view changes in the active project.
 
@@ -8,7 +9,7 @@ Occurs when the active view changes in the active project.
 |**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|Selection|
 |**Added in**|1.0|
 
-```
+```js
 Office.EventType.ViewSelectionChanged
 ```
 
@@ -85,6 +86,7 @@ A capital Y in the following matrix indicates that this event is supported in th
 For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
 
 
+
 ||**Office for Windows desktop**|**Office Online (in browser)**|
 |:-----|:-----|:-----|
 |**Project**|Y||
@@ -99,9 +101,6 @@ For more information about Office host application and server requirements, see 
 
 ## Support history
 
-
-
-****
 
 
 |**Version**|**Changes**|
@@ -120,3 +119,4 @@ For more information about Office host application and server requirements, see 
 [ProjectDocument.addHandlerAsync method](../../reference/shared/projectdocument.addhandlerasync.md)
 [ProjectDocument.removeHandlerAsync method](../../reference/shared/projectdocument.removehandlerasync.md)
 [ProjectDocument object](../../reference/shared/projectdocument.projectdocument.md)
+
