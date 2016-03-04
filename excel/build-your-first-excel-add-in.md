@@ -1,6 +1,5 @@
 
 # build-your-first-excel-add-in
-Create a simple task pane add-in for Excel 2016.
 
  _**Applies to:** apps for Office | Excel | Excel 2016 | Office Add-ins_
 
