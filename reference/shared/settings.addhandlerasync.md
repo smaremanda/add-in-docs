@@ -1,4 +1,5 @@
 
+
 # Settings.addHandlerAsync method
 Adds an event handler for the  **settingsChanged** event.
 
@@ -8,7 +9,7 @@ Adds an event handler for the  **settingsChanged** event.
 |**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|Settings|
 |**Last changed in**|1.0|
 
-```
+```js
 Office.context.document.settings.addHandlerAsync(eventType, handler [, options], callback);
 ```
 
@@ -45,7 +46,9 @@ In the callback function passed to the  **addHandlerAsync** method, you can use 
 You can add multiple event handlers for the specified  _eventType_ as long as the name of each event handler function is unique.
 
 
- >**Important**  Your add-in's code can register a handler for the  **settingsChanged** event when the add-in is running with any Excel client, but the event will fire only when the add-in is loaded with a spreadsheet that is opened in Excel Online, _and_ more than one user is editing the spreadsheet (co-authoring). Therefore, effectively the **settingsChanged** event is supported only in Excel Online in co-authoring scenarios.
+ >**Important**
+ ---
+ Your add-in's code can register a handler for the  **settingsChanged** event when the add-in is running with any Excel client, but the event will fire only when the add-in is loaded with a spreadsheet that is opened in Excel Online, _and_ more than one user is editing the spreadsheet (co-authoring). Therefore, effectively the **settingsChanged** event is supported only in Excel Online in co-authoring scenarios.
 
 
 ## Example
@@ -53,7 +56,7 @@ You can add multiple event handlers for the specified  _eventType_ as long as th
 
 
 
-```
+```js
 function addSelectionChangedEventHandler() {
     Office.context.document.settings.addHandlerAsync(Office.EventType.SettingsChanged, MyHandler);
 }
@@ -100,3 +103,4 @@ For more information about Office host application and server requirements, see 
 |**Version**|**Changes**|
 |:-----|:-----|
 |1.0|Introduced|
+
