@@ -1,8 +1,7 @@
 
 # Best practices for developing Office Add-ins
 Apply best practices to build Office Add-ins that optimize the user experience.
-
- _**Applies to:** apps for Office | Office Add-ins | Outlook_
+
 
 Effective add-ins offer unique and compelling functionality that extends Office applications in a visually appealing way. To create a great add-in, provide an engaging first-time experience for your users, design a first-class UI experience, and optimize your add-in's performance. Apply the best practices described in this article to create add-ins that help your users complete their tasks quickly and efficiently.
 
