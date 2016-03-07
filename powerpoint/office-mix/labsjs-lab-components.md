@@ -1,9 +1,10 @@
 
 # LabsJS lab components
 
-
 
-Components are the building blocks of a lab; use the components to assemble your labs. Labs.js provides you with four component types that you can use to assemble your lab. Each component type supports a specific type of lab interaction, including, for example, multiple choice problems, free response problems, or activities like viewing web pages in the lesson's HTML iFrame.
+
+
+Labs.js provides you with four component types that you can use to assemble your lab. Each component type supports a specific type of lab interaction, including, for example, multiple choice problems, free response problems, or activities like viewing web pages in the lesson's HTML iFrame.
 
 ## Components
 
