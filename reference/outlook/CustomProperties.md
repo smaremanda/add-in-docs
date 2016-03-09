@@ -104,7 +104,7 @@ It’s a good practice to have your callback function check for and handle error
 
 |Name| Type| Attributes| Description|
 |---|---|---|---|
-|`callback`| function| &lt;optional&gt;|When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#AsyncResult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.md).|
+|`callback`| function| &lt;optional&gt;|When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#asyncresult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.md).|
 |`asyncContext`| Object| &lt;optional&gt;|Any state data that is passed to the callback method.|
 
 ##### Requirements

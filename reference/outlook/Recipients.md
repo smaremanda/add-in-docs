@@ -28,9 +28,9 @@ The `recipients` parameter can be an array of one of the following:
 
 |Name| Type| Attributes| Description|
 |---|---|---|---|
-|`recipients`| Array.&lt;(String&#124;[EmailUser](simple-types.md#EmailUser)&#124;[EmailAddressDetails](simple-types.md#EmailAddressDetails))&gt;||The recipients to add to the recipients list.|
+|`recipients`| Array.&lt;(String&#124;[EmailUser](simple-types.md#emailuser)&#124;[EmailAddressDetails](simple-types.md#emailaddressdetails))&gt;||The recipients to add to the recipients list.|
 |`options`| Object| &lt;optional&gt;|An object literal that contains one or more of the following properties. For more information on defining and using the `options` parameter, see [Using the `options` parameter](tutorial-options.md).<br/><br/>**Properties**<br/><table class="nested-table"><thead><tr><th>Name</th><th>Type</th><th>Attributes</th><th>Description</th></tr></thead><tbody><tr><td><code>asyncContext</code></td><td>Object</td><td>&lt;optional&gt;</td><td>Developers can provide any object they wish to access in the callback method.</td></tr></tbody></table>|
-|`callback`| function| &lt;optional&gt;|When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#AsyncResult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.md).<br/>If adding the recipients fails, the `asyncResult.error` property will contain an error code.<br/><table class="nested-table"><thead><tr><th>Error code</th><th>Description</th></tr></thead><tbody><tr><td>`NumberOfRecipientsExceeded</td><td>The number of recipients exceeded 100 entries.</td></tr></tbody></table>|
+|`callback`| function| &lt;optional&gt;|When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#asyncresult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.md).<br/>If adding the recipients fails, the `asyncResult.error` property will contain an error code.<br/><table class="nested-table"><thead><tr><th>Error code</th><th>Description</th></tr></thead><tbody><tr><td>`NumberOfRecipientsExceeded</td><td>The number of recipients exceeded 100 entries.</td></tr></tbody></table>|
 
 ##### Requirements
 
@@ -74,9 +74,9 @@ Gets a recipient list for an appointment or message.
 |Name| Type| Attributes| Description|
 |---|---|---|---|
 |`options`| Object| &lt;optional&gt;|An object literal that contains one or more of the following properties. For more information on defining and using the `options` parameter, see [Using the `options` parameter](tutorial-options.md).<br/><br/>**Properties**<br/><table class="nested-table"><thead><tr><th>Name</th><th>Type</th><th>Attributes</th><th>Description</th></tr></thead><tbody><tr><td><code>asyncContext</code></td><td>Object</td><td>&lt;optional&gt;</td><td>Developers can provide any object they wish to access in the callback method.</td></tr></tbody></table>|
-|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#AsyncResult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.md).
+|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#asyncresult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.md).
 
-When the call completes, the `asyncResult.value` property will contain an array of [`EmailAddressDetails`](simple-types.md#EmailAddressDetails) objects.|
+When the call completes, the `asyncResult.value` property will contain an array of [`EmailAddressDetails`](simple-types.md#emailaddressdetails) objects.|
 
 ##### Requirements
 
@@ -120,9 +120,9 @@ The `recipients` parameter can be an array of one of the following:
 
 |Name| Type| Attributes| Description|
 |---|---|---|---|
-|`recipients`| Array.&lt;(String&#124;[EmailUser](simple-types.md#EmailUser)&#124;[EmailAddressDetails](simple-types.md#EmailAddressDetails))&gt;||The recipients to add to the recipients list.|
+|`recipients`| Array.&lt;(String&#124;[EmailUser](simple-types.md#emailuser)&#124;[EmailAddressDetails](simple-types.md#emailaddressdetails))&gt;||The recipients to add to the recipients list.|
 |`options`| Object| &lt;optional&gt;|An object literal that contains one or more of the following properties. For more information on defining and using the `options` parameter, see [Using the `options` parameter](tutorial-options.md).<br/><br/>**Properties**<br/><table class="nested-table"><thead><tr><th>Name</th><th>Type</th><th>Attributes</th><th>Description</th></tr></thead><tbody><tr><td><code>asyncContext</code></td><td>Object</td><td>&lt;optional&gt;</td><td>Developers can provide any object they wish to access in the callback method.</td></tr></tbody></table>|
-|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#AsyncResult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.md).<br/>If setting the recipients fails the `asyncResult.error` property will contain a code that indicates any error that occurred while adding the data.<br/><table class="nested-table"><thead><tr><th>Error code</th><th>Description</th></tr></thead><tbody><tr><td>`NumberOfRecipientsExceeded</td><td>The number of recipients exceeded 100 entries.</td></tr></tbody></table>|
+|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#asyncresult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.md).<br/>If setting the recipients fails the `asyncResult.error` property will contain a code that indicates any error that occurred while adding the data.<br/><table class="nested-table"><thead><tr><th>Error code</th><th>Description</th></tr></thead><tbody><tr><td>`NumberOfRecipientsExceeded</td><td>The number of recipients exceeded 100 entries.</td></tr></tbody></table>|
 
 ##### Requirements
 

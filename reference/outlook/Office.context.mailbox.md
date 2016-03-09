@@ -54,7 +54,7 @@ The `ewsUrl` value can be used by a remote service to make EWS calls to the user
 
 ### Methods
 
-####  convertToLocalClientTime(timeValue) → {[LocalClientTime](simple-types.md#LocalClientTime)}
+####  convertToLocalClientTime(timeValue) → {[LocalClientTime](simple-types.md#localclienttime)}
 
 Gets a dictionary containing time information in local client time.
 
@@ -82,7 +82,7 @@ If the mail app is running in Outlook, the `convertToLocalClientTime` method wil
 
 <dt>Type</dt>
 
-<dd>[LocalClientTime](simple-types.md#LocalClientTime)</dd>
+<dd>[LocalClientTime](simple-types.md#localclienttime)</dd>
 
 </dl>
 
@@ -96,7 +96,7 @@ The `convertToUtcClientTime` method converts a dictionary containing a local dat
 
 |Name| Type| Description|
 |---|---|---|
-|`input`| [LocalClientTime](simple-types.md#LocalClientTime)|The local time value to convert.|
+|`input`| [LocalClientTime](simple-types.md#localclienttime)|The local time value to convert.|
 
 ##### Requirements
 
@@ -198,7 +198,7 @@ If any of the parameters exceed the specified size limits, or if an unknown para
 
 |Name| Type| Description|
 |---|---|---|
-|`parameters`| Object|A dictionary of parameters describing the new appointment.<br/><br/>**Properties**<br/><table class="nested-table"><thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><code>requiredAttendees</code></td><td>Array.&lt;String&gt; &#124; Array.&lt;<a href="simple-types.md#EmailAddressDetails">EmailAddressDetails</a>&gt;</td><td>An array of strings containing the email addresses or an array containing an <code>EmailAddressDetails</code> object for each of the required attendees for the appointment. The array is limited to a maximum of 100 entries.</td></tr><tr><td><code>optionalAttendees</code></td><td>Array.&lt;String&gt; &#124; Array.&lt;<a href="simple-types.md#EmailAddressDetails">EmailAddressDetails</a>&gt;</td><td>An array of strings containing the email addresses or an array containing an EmailAddressDetails object for each of the optional attendees for the appointment. The array is limited to a maximum of 100 entries.</td></tr><tr><td><code>start</code></td><td>Date</td><td>A Date object specifying the start date and time of the appointment.</td></tr><tr><td><code>end</code></td><td>Date</td><td>A Date object specifying the end date and time of the appointment.</td></tr><tr><td><code>location</code></td><td>String</td><td>A string containing the location of the appointment. The string is limited to a maximum of 255 characters.</td></tr><tr><td><code>resources</code></td><td>Array.&lt;String&gt;</td><td>An array of strings containing the resources required for the appointment. The array is limited to a maximum of 100 entries.</td></tr><tr><td><code>subject</code></td><td>String</td><td>A string containing the subject of the appointment. The string is limited to a maximum of 255 characters.</td></tr><tr><td><code>body</code></td><td>String</td><td>The body of the appointment message. The body content is limited to a maximum size of 32 KB.</td></tr></tbody></table>|
+|`parameters`| Object|A dictionary of parameters describing the new appointment.<br/><br/>**Properties**<br/><table class="nested-table"><thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><code>requiredAttendees</code></td><td>Array.&lt;String&gt; &#124; Array.&lt;<a href="simple-types.md#emailaddressdetails">EmailAddressDetails</a>&gt;</td><td>An array of strings containing the email addresses or an array containing an <code>EmailAddressDetails</code> object for each of the required attendees for the appointment. The array is limited to a maximum of 100 entries.</td></tr><tr><td><code>optionalAttendees</code></td><td>Array.&lt;String&gt; &#124; Array.&lt;<a href="simple-types.md#emailaddressdetails">EmailAddressDetails</a>&gt;</td><td>An array of strings containing the email addresses or an array containing an EmailAddressDetails object for each of the optional attendees for the appointment. The array is limited to a maximum of 100 entries.</td></tr><tr><td><code>start</code></td><td>Date</td><td>A Date object specifying the start date and time of the appointment.</td></tr><tr><td><code>end</code></td><td>Date</td><td>A Date object specifying the end date and time of the appointment.</td></tr><tr><td><code>location</code></td><td>String</td><td>A string containing the location of the appointment. The string is limited to a maximum of 255 characters.</td></tr><tr><td><code>resources</code></td><td>Array.&lt;String&gt;</td><td>An array of strings containing the resources required for the appointment. The array is limited to a maximum of 100 entries.</td></tr><tr><td><code>subject</code></td><td>String</td><td>A string containing the subject of the appointment. The string is limited to a maximum of 255 characters.</td></tr><tr><td><code>body</code></td><td>String</td><td>The body of the appointment message. The body content is limited to a maximum size of 32 KB.</td></tr></tbody></table>|
 
 ##### Requirements
 
@@ -242,7 +242,7 @@ Your app must have the **ReadItem** permission specified in its manifest to call
 
 |Name| Type| Attributes| Description|
 |---|---|---|---|
-|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#AsyncResult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.md).
+|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#asyncresult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.md).
 
 The token is provided as a string in the `asyncResult.value` property.|
 |`userContext`| Object| &lt;optional&gt;|Any state data that is passed to the asynchronous method.|
@@ -277,7 +277,7 @@ The `getUserIdentityTokenAsync` method returns a token that you can use to ident
 
 |Name| Type| Attributes| Description|
 |---|---|---|---|
-|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#AsyncResult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.md).
+|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#asyncresult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.md).
 
 The token is provided as a string in the `asyncResult.value` property.|
 |`userContext`| Object| &lt;optional&gt;|Any state data that is passed to the asynchronous method.|
@@ -335,7 +335,7 @@ You do not need to set the encoding value when your mail app is running in Outlo
 |Name| Type| Attributes| Description|
 |---|---|---|---|
 |`data`| String||The EWS request.|
-|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#AsyncResult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.md).
+|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#asyncresult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.md).
 
 The XML result of the EWS call is provided as a string in the `asyncResult.value` property. If the result exceeds 1 MB in size, an error message is returned instead.|
 |`userContext`| Object| &lt;optional&gt;|Any state data that is passed to the asynchronous method.|
