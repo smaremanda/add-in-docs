@@ -1,7 +1,8 @@
 
 # Create an Office add-in using any editor
 Create an Office add-in using any text editor and a Yeoman generator. 
-
+
+
 
 An Office add-in is a web app that you host within an Office application. In this topic, the Yeoman generator provides project scaffolding and build management, while the  `manifest.xml` file tells the Office application where your add-in is located and how you want it to appear. The Office application takes care of hosting it within Office.
 
@@ -230,9 +231,9 @@ You will see an error saying "There is a problem with this website's security ce
 You can use sideloading to install your add-in for testing:
 
 
-- [Sideload Office Add-ins for testing](3e148c21-cd6b-4d46-a2b1-75d57563f931.md)
+- [Sideload Office Add-ins for testing](../testing/sideload-an-office-add-in-on-ipad-and-mac.md)
     
-- [Sideload Outlook add-ins for testing](f5a3a519-7f5d-409c-a437-b203fcaa8d2d.md)
+- [Sideload Outlook add-ins for testing](../outlook/testing-and-tips.md)
     
 Alternatively, you can publish the add-in to a catalog or network share and install it the way end-users do. For details, see [Publish task pane and content add-ins to an add-in catalog on SharePoint](https://msdn.microsoft.com/EN-US/library/office/fp123517.aspx.aspx) and [Create a network shared folder catalog for task pane and content add-ins](https://msdn.microsoft.com/EN-US/library/office/fp123503.aspx.aspx).
 
