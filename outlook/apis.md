@@ -23,7 +23,9 @@ The library must load within 5 seconds of the add-in being launched, or else Out
 
 All Outlook APIs belong to the Mailbox requirement set. The Mailbox requirement set has versions, and each new set of APIs that we release belongs to a higher version of the set. Not all Outlook clients will support the newest set of APIs when we release them, but if an Outlook client declares support for a requirement set, it will support all the APIs in that requirement set. 
 
-Specifying a minimum requirement set version in the manifest controls which Outlook clients the add-in will appear in. For example, if requirement set version 1.3 is specified, this means the add-in will not show up in any Outlook client that doesn't support at least v1.3. However, specifying a requirement set doesn't limit your add-in to the APIs in that version. If the add-in specifies requirement set v1.1 but is running in an Outlook client that supports v1.3, the add-in can still use these new APIs. The requirement set only controls which Outlook clients the add-in appears in.
+Specifying a minimum requirement set version in the manifest controls which Outlook clients the add-in will appear in. For example, if requirement set version 1.3 is specified, this means the add-in will not show up in any Outlook client that doesn't support at least v1.3. 
+
+However, specifying a requirement set doesn't limit your add-in to the APIs in that version. If the add-in specifies requirement set v1.1 but is running in an Outlook client that supports v1.3, the add-in can still use these new APIs. The requirement set only controls which Outlook clients the add-in appears in.
 
 To check availability of any APIs from a requirement set greater than the one specified in the manifest, you can use standard JavaScript technique:
 
