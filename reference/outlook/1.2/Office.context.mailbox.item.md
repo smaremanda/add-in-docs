@@ -228,7 +228,7 @@ The `end` property returns a `Date` object.
 
 The `end` property returns a `Time` object.
 
-When you use the [`Time.setAsync`](Time.md#setAsync) method to set the end time, you should use the [`convertToUtcClientTime`](Office.context.mailbox.md#convertToUtcClientTime) method to convert the local time on the client to UTC for the server.
+When you use the [`Time.setAsync`](Time.md#setasync) method to set the end time, you should use the [`convertToUtcClientTime`](Office.context.mailbox.md#convertToUtcClientTime) method to convert the local time on the client to UTC for the server.
 
 ##### Type:
 
@@ -244,7 +244,7 @@ When you use the [`Time.setAsync`](Time.md#setAsync) method to set the end time,
 
 ##### Example
 
-The following example sets the end time of an appointment in compose mode by using the [`setAsync`](Time.md#setAsync) method of the `Time` object.
+The following example sets the end time of an appointment in compose mode by using the [`setAsync`](Time.md#setasync) method of the `Time` object.
 
 ```
 var endTime = new Date("3/14/2015");
@@ -372,7 +372,7 @@ if (itemId === null || itemId == undefined) {
 }
 ```
 
-####  itemType :[Office.MailboxEnums.ItemType](Office.MailboxEnums.md#.ItemType)
+####  itemType :[Office.MailboxEnums.ItemType](Office.MailboxEnums.md#itemtype-string)
 
 Gets the type of item that an instance represents.
 
@@ -380,7 +380,7 @@ The `itemType` property returns one of the `ItemType` enumeration values, indica
 
 ##### Type:
 
-*   [Office.MailboxEnums.ItemType](Office.MailboxEnums.md#.ItemType)
+*   [Office.MailboxEnums.ItemType](Office.MailboxEnums.md#itemtype-string)
 
 ##### Requirements
 
@@ -606,7 +606,7 @@ The `start` property returns a `Date` object.
 
 The `start` property returns a `Time` object.
 
-When you use the [`Time.setAsync`](Time.md#setAsync) method to set the start time, you should use the [`convertToUtcClientTime`](Office.context.mailbox.md#convertToUtcClientTime) method to convert the local time on the client to UTC for the server.
+When you use the [`Time.setAsync`](Time.md#setasync) method to set the start time, you should use the [`convertToUtcClientTime`](Office.context.mailbox.md#convertToUtcClientTime) method to convert the local time on the client to UTC for the server.
 
 ##### Type:
 
@@ -622,7 +622,7 @@ When you use the [`Time.setAsync`](Time.md#setAsync) method to set the start tim
 
 ##### Example
 
-The following example sets the start time of an appointment in compose mode by using the [`setAsync`](Time.md#setAsync) method of the `Time` object.
+The following example sets the start time of an appointment in compose mode by using the [`setAsync`](Time.md#setasync) method of the `Time` object.
 
 ```
 var startTime = new Date("3/14/2015");
