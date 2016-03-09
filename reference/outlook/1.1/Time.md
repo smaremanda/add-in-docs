@@ -4,7 +4,7 @@
 
 ## Time
 
-The `Time` object is returned as the [`start`](Office.context.mailbox.item.md#start) or [`end`](Office.context.mailbox.item.md#end) property of an appointment in compose mode.
+The `Time` object is returned as the [`start`](Office.context.mailbox.item.md#start-datetime) or [`end`](Office.context.mailbox.item.md#end-datetime) property of an appointment in compose mode.
 
 ##### Requirements
 
@@ -40,7 +40,7 @@ The date and time is provided as a Date object in the `asyncResult.value` proper
 
 Sets the start or end time of an appointment.
 
-If the `setAsync` method is called on the [`start`](Office.context.mailbox.item.md#start) property, the [`end`](Office.context.mailbox.item.md#end) property will be adjusted to maintain the duration of the appointment as previously set. If the `setAsync` method is called on the `end` property, the duration of the appointment will be extended to the new end time.
+If the `setAsync` method is called on the [`start`](Office.context.mailbox.item.md#start-datetime) property, the [`end`](Office.context.mailbox.item.md#end-datetime) property will be adjusted to maintain the duration of the appointment as previously set. If the `setAsync` method is called on the `end` property, the duration of the appointment will be extended to the new end time.
 
 The time must be in UTC; you can get the correct UTC time by using the [`convertToUtcClientTime`](Office.context.mailbox.md#convertToUtcClientTime) method.
 
