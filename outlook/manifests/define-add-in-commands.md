@@ -1,7 +1,7 @@
 
 # Define add-in commands in your Outlook add-in manifest
 
-To support add-in commands, some additional elements have been added to the add-in manifest v1.1 within the  **VersionOverrides** element.. When a manifest contains the **VersionOverrides** element, versions of Outlook that support add-in commands will use the information within that element to load the add-in. Older versions of Outlook that do not support add-in commands will ignore the element and continue to use the old elements as described in [Outlook add-in manifests](../../outlook/manifests/manifests.md).
+To support add-in commands, some additional elements have been added to the add-in manifest v1.1 within the  **VersionOverrides** element. When a manifest contains the **VersionOverrides** element, versions of Outlook that support add-in commands will use the information within that element to load the add-in. Earlier versions of Outlook that do not support add-in commands will ignore the element and continue to use the elements as described in [Outlook add-in manifests](../../outlook/manifests/manifests.md).
 
 When the client application recognizes the  **VersionOverrides** node, the add-in name appears in the ribbon, not in the read/compose pane. The add-in won't appear in both places.
  
@@ -118,7 +118,7 @@ function trackMessage (event) {
 ## ExtensionPoint element
 
 
-The  **ExtensionPoint** element defines where an add-in exposes functionality. It is a child element under **FormFactor**. For each form factor, developers can define **ExtensionPoint** elements with the following **xsi:type** values:
+The  **ExtensionPoint** element defines where an add-in exposes functionality. It is a child element under **FormFactor**. For each form factor, you can define **ExtensionPoint** elements with the following **xsi:type** values:
 
 
 - CustomPane 
@@ -167,7 +167,7 @@ The  **CustomPane** extension point defines an add-in that activates when specif
 
 This extension point puts buttons in the command surface for the mail read view. In Outlook desktop, this appears in the ribbon.
 
-On the ribbon, developers specify which tab and group for their add-in commands. This can either be on the default tab (either  **Home**,  **Message**, or  **Meeting**), or on a custom tab defined by the add-in. If adding to the default tab, this is limited to one group per add-in. On custom tabs, the add-in can create up to 10 groups. Each group is limited to 6 controls, regardless of which tab it appears on. Add-ins are limited to one custom tab.
+On the ribbon, you specify which tab and group for their add-in commands. This can either be on the default tab (either  **Home**,  **Message**, or  **Meeting**), or on a custom tab defined by the add-in. If adding to the default tab, this is limited to one group per add-in. On custom tabs, the add-in can create up to 10 groups. Each group is limited to 6 controls, regardless of which tab it appears on. Add-ins are limited to one custom tab.
 
 An example of a group on the default ribbon tab is as follows.
 
@@ -200,7 +200,7 @@ Where:
 |**Group**|A group of user interface extension points in a tab. A group can have up to six controls.The  **id** attribute is required. It is a string with a maximum of 125 characters.|
 |**Label**|Required. The label of the group. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element in the **ShortStrings** element in the **Resources** element.|
 |**Control**|A group requires at least one control. Currently, only buttons and menus are supported. See the following [Button controls](#VersionOverrides10_Buttons) and [Menu (dropdown button) controls](#VersionOverrides10_Menus) sections for more information.|
-Developers can also create a custom tab on the ribbon by using the  **CustomTab** element, as shown in the following example.
+You can also create a custom tab on the ribbon by using the  **CustomTab** element, as shown in the following example.
 
 
 
