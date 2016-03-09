@@ -10,7 +10,7 @@ The settings created by using the methods of the `RoamingSettings` object are sa
 
 The name of a setting is a String, while the value can be a String, Number, Boolean, null, Object, or Array.
 
-The `RoamingSettings` object is accessible via the [`roamingSettings`](Office.context.html#roamingSettings) property in the `Office.context` namespace.
+The `RoamingSettings` object is accessible via the [`roamingSettings`](Office.context.md#roamingSettings) property in the `Office.context` namespace.
 
 ##### Requirements
 
@@ -82,7 +82,7 @@ Removes the specified setting.
 
 Saves the settings.
 
-Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the session you can just use the [`set`](RoamingSettings.html#set) and [`get`](RoamingSettings.html#get) methods to work with the in-memory copy of the settings property bag. When you want to persist the settings so that they are available the next time the add-in is used, use the `saveAsync` method.
+Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the session you can just use the [`set`](RoamingSettings.md#set) and [`get`](RoamingSettings.md#get) methods to work with the in-memory copy of the settings property bag. When you want to persist the settings so that they are available the next time the add-in is used, use the `saveAsync` method.
 
 ##### Parameters:
 
@@ -105,7 +105,7 @@ The set method creates a new setting of the specified name if it does not alread
 
 A maximum of 2MB is available for the settings of each add-in, and each individual setting is limited to 32KB.
 
-Any changes made to settings using the `set` function will not be saved to the server until the [`saveAsync`](RoamingSettings.html#saveAsync) function is called.
+Any changes made to settings using the `set` function will not be saved to the server until the [`saveAsync`](RoamingSettings.md#saveAsync) function is called.
 
 ##### Parameters:
 

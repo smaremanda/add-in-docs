@@ -31,7 +31,7 @@ An array of `AttachmentDetail` objects is returned as the `attachments` property
 
 |Name| Type| Description|
 |---|---|---|
-|`attachmentType`| [Office.MailboxEnums.AttachmentType](Office.MailboxEnums.html#.AttachmentType)|Gets a value that indicates the type of an attachment.|
+|`attachmentType`| [Office.MailboxEnums.AttachmentType](Office.MailboxEnums.md#.AttachmentType)|Gets a value that indicates the type of an attachment.|
 |`contentType`| String|Gets the MIME content type of the attachment.|
 |`id`| String|Gets the Exchange attachment ID of the attachment.|
 |`isInline`| Boolean|Gets a value that indicates whether the attachment should be displayed in the body of the item.|
@@ -81,10 +81,10 @@ Provides the email properties of the sender or specified recipients of an email 
 
 |Name| Type| Description|
 |---|---|---|
-|`appointmentResponse`| [Office.MailboxEnums.ResponseType](Office.MailboxEnums.html#.ResponseType)|Gets the response that an attendee returned for an appointment. This property applies to only an attendee of an appointment, as represented by the [`optionalAttendees`](Office.context.mailbox.item.html#optionalAttendees) or [`requiredAttendees`](Office.context.mailbox.item.html#requiredAttendees) property. This property returns `undefined` in other scenarios.|
+|`appointmentResponse`| [Office.MailboxEnums.ResponseType](Office.MailboxEnums.md#.ResponseType)|Gets the response that an attendee returned for an appointment. This property applies to only an attendee of an appointment, as represented by the [`optionalAttendees`](Office.context.mailbox.item.md#optionalAttendees) or [`requiredAttendees`](Office.context.mailbox.item.md#requiredAttendees) property. This property returns `undefined` in other scenarios.|
 |`displayName`| String|Gets the display name associated with an email address.|
 |`emailAddress`| String|Gets the SMTP email address.|
-|`recipientType`| [Office.MailboxEnums.RecipientType](Office.MailboxEnums.html#.RecipientType)|Gets the email address type of a recipient.|
+|`recipientType`| [Office.MailboxEnums.RecipientType](Office.MailboxEnums.md#.RecipientType)|Gets the email address type of a recipient.|
 
 ##### Requirements
 
@@ -174,7 +174,7 @@ Represents a date and time in the local client's time zone. Read mode only.
 
 Represents a suggested meeting found in an item. Read mode only.
 
-The list of meetings suggested in an email message is returned in the `meetingSuggestions` property of the [`Entities`](simple-types.md#Entities) object that is returned when the [`getEntities`](Office.context.mailbox.item.html#getEntities) or [`getEntitiesByType`](Office.context.mailbox.item.html#getEntitiesByType) method is called on the active item.
+The list of meetings suggested in an email message is returned in the `meetingSuggestions` property of the [`Entities`](simple-types.md#Entities) object that is returned when the [`getEntities`](Office.context.mailbox.item.md#getEntities) or [`getEntitiesByType`](Office.context.mailbox.item.md#getEntitiesByType) method is called on the active item.
 
 The `start` and `end` values are string representations of a Date object that contains the date and time at which the suggested meeting is to begin and end. The values are in the default time zone specified for the current user.
 
@@ -200,7 +200,7 @@ The `start` and `end` values are string representations of a Date object that co
 
 Represents a phone number identified in an item. Read mode only.
 
-An array of `PhoneNumber` objects containing the phone numbers found in an email message is returned in the `phoneNumbers` property of the [`Entities`](simple-types.md#Entities) object that is returned when you call the [`getEntities`](Office.context.mailbox.item.html#getEntities) method on the selected item.
+An array of `PhoneNumber` objects containing the phone numbers found in an email message is returned in the `phoneNumbers` property of the [`Entities`](simple-types.md#Entities) object that is returned when you call the [`getEntities`](Office.context.mailbox.item.md#getEntities) method on the selected item.
 
 ##### Type:
 
@@ -225,7 +225,7 @@ An array of `PhoneNumber` objects containing the phone numbers found in an email
 
 Represents a suggested task identified in an item. Read mode only.
 
-The list of tasks suggested in an email message is returned in the `taskSuggestions` property of the [`Entities`][`Entities`](simple-types.md#Entities) object that is returned when the [`getEntities`](Office.context.mailbox.item.html#getEntities) or [`getEntitiesByType`](Office.context.mailbox.item.html#getEntitiesByType) method is called on the active item.
+The list of tasks suggested in an email message is returned in the `taskSuggestions` property of the [`Entities`][`Entities`](simple-types.md#Entities) object that is returned when the [`getEntities`](Office.context.mailbox.item.md#getEntities) or [`getEntitiesByType`](Office.context.mailbox.item.md#getEntitiesByType) method is called on the active item.
 
 ##### Properties:
 

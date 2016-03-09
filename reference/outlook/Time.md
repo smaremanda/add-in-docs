@@ -4,7 +4,7 @@
 
 ## Time
 
-The `Time` object is returned as the [`start`](Office.context.mailbox.item.html#start) or [`end`](Office.context.mailbox.item.html#end) property of an appointment in compose mode.
+The `Time` object is returned as the [`start`](Office.context.mailbox.item.md#start) or [`end`](Office.context.mailbox.item.md#end) property of an appointment in compose mode.
 
 ##### Requirements
 
@@ -27,7 +27,7 @@ Gets the start or end time of an appointment.
 |`options`| Object| &lt;optional&gt;|An object literal that contains one or more of the following properties. For more information on defining and using the `options` parameter, see [Using the `options` parameter](tutorial-options.md).<br/><br/>**Properties**<br/><table class="nested-table"><thead><tr><th>Name</th><th>Type</th><th>Attributes</th><th>Description</th></tr></thead><tbody><tr><td><code>asyncContext</code></td><td>Object</td><td>&lt;optional&gt;</td><td>Developers can provide any object they wish to access in the callback method.</td></tr></tbody></table>|
 |`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#AsyncResult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.md).
 
-The date and time is provided as a Date object in the `asyncResult.value` property. The value is in Coordinated Universal Time (UTC). You can convert the UTC time to the local client time by using the [`convertToLocalClientTime`](Office.context.mailbox.html#convertToLocalClientTime) method.|
+The date and time is provided as a Date object in the `asyncResult.value` property. The value is in Coordinated Universal Time (UTC). You can convert the UTC time to the local client time by using the [`convertToLocalClientTime`](Office.context.mailbox.md#convertToLocalClientTime) method.|
 
 ##### Requirements
 
@@ -40,9 +40,9 @@ The date and time is provided as a Date object in the `asyncResult.value` proper
 
 Sets the start or end time of an appointment.
 
-If the `setAsync` method is called on the [`start`](Office.context.mailbox.item.html#start) property, the [`end`](Office.context.mailbox.item.html#end) property will be adjusted to maintain the duration of the appointment as previously set. If the `setAsync` method is called on the `end` property, the duration of the appointment will be extended to the new end time.
+If the `setAsync` method is called on the [`start`](Office.context.mailbox.item.md#start) property, the [`end`](Office.context.mailbox.item.md#end) property will be adjusted to maintain the duration of the appointment as previously set. If the `setAsync` method is called on the `end` property, the duration of the appointment will be extended to the new end time.
 
-The time must be in UTC; you can get the correct UTC time by using the [`convertToUtcClientTime`](Office.context.mailbox.html#convertToUtcClientTime) method.
+The time must be in UTC; you can get the correct UTC time by using the [`convertToUtcClientTime`](Office.context.mailbox.md#convertToUtcClientTime) method.
 
 ##### Parameters:
 

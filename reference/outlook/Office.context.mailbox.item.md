@@ -4,7 +4,7 @@
 
 ## [Office](Office.md)[.context](Office.context.md)[.mailbox](Office.context.mailbox.md). item
 
-The `item` namespace is used to access the currently selected message, meeting request, or appointment. You can determine the type of the `item` by using the [itemType](Office.context.mailbox.item.html#itemType) property.
+The `item` namespace is used to access the currently selected message, meeting request, or appointment. You can determine the type of the `item` by using the [itemType](Office.context.mailbox.item.md#itemType) property.
 
 ##### Requirements
 
@@ -218,7 +218,7 @@ var modified = Office.context.mailbox.item.dateTimeModified;
 
 Gets or sets the date and time that the appointment is to end.
 
-The `end` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the [`convertToLocalClientTime`](Office.context.mailbox.html#convertToLocalClientTime) method to convert the end property value to the client’s local date and time.
+The `end` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the [`convertToLocalClientTime`](Office.context.mailbox.md#convertToLocalClientTime) method to convert the end property value to the client’s local date and time.
 
 ##### Read mode
 
@@ -228,7 +228,7 @@ The `end` property returns a `Date` object.
 
 The `end` property returns a `Time` object.
 
-When you use the [`Time.setAsync`](Time.html#setAsync) method to set the end time, you should use the [`convertToUtcClientTime`](Office.context.mailbox.html#convertToUtcClientTime) method to convert the local time on the client to UTC for the server.
+When you use the [`Time.setAsync`](Time.md#setAsync) method to set the end time, you should use the [`convertToUtcClientTime`](Office.context.mailbox.md#convertToUtcClientTime) method to convert the local time on the client to UTC for the server.
 
 ##### Type:
 
@@ -244,7 +244,7 @@ When you use the [`Time.setAsync`](Time.html#setAsync) method to set the end tim
 
 ##### Example
 
-The following example sets the end time of an appointment in compose mode by using the [`setAsync`](Time.html#setAsync) method of the `Time` object.
+The following example sets the end time of an appointment in compose mode by using the [`setAsync`](Time.md#setAsync) method of the `Time` object.
 
 ```
 var endTime = new Date("3/14/2015");
@@ -267,7 +267,7 @@ Office.context.mailbox.item.end.setAsync(endTime, options, function(result) {
 
 Gets the email address of the sender of a message. Read mode only.
 
-The `from` and [`sender`](Office.context.mailbox.item.html#sender) properties represent the same person unless the message is sent by a delegate. In that case, the `from` property represents the delegator, and the sender property represents the delegate.
+The `from` and [`sender`](Office.context.mailbox.item.md#sender) properties represent the same person unless the message is sent by a delegate. In that case, the `from` property represents the delegator, and the sender property represents the delegate.
 
 ##### Type:
 
@@ -345,7 +345,7 @@ Gets the Exchange Web Services item identifier for the current item. Read mode o
 
 The identifier returned by the `itemId` property is the same as the Exchange Web Services item identifier. The `itemId` property is not identical to the Outlook Entry ID.
 
-The `itemId` property returns `null` in compose mode for items that have not been saved to the server. If an item identifier is required, the [`saveAsync`](Office.context.mailbox.item.html#saveAsync) method can be used to save the item to the server, which will return the item identifier in the [`AsyncResult.value`](simple-types.md#AsyncResult) parameter in the callback function.
+The `itemId` property returns `null` in compose mode for items that have not been saved to the server. If an item identifier is required, the [`saveAsync`](Office.context.mailbox.item.md#saveAsync) method can be used to save the item to the server, which will return the item identifier in the [`AsyncResult.value`](simple-types.md#AsyncResult) parameter in the callback function.
 
 ##### Type:
 
@@ -372,7 +372,7 @@ if (itemId === null || itemId == undefined) {
 }
 ```
 
-####  itemType :[Office.MailboxEnums.ItemType](Office.MailboxEnums.html#.ItemType)
+####  itemType :[Office.MailboxEnums.ItemType](Office.MailboxEnums.md#.ItemType)
 
 Gets the type of item that an instance represents.
 
@@ -380,7 +380,7 @@ The `itemType` property returns one of the `ItemType` enumeration values, indica
 
 ##### Type:
 
-*   [Office.MailboxEnums.ItemType](Office.MailboxEnums.html#.ItemType)
+*   [Office.MailboxEnums.ItemType](Office.MailboxEnums.md#.ItemType)
 
 ##### Requirements
 
@@ -439,7 +439,7 @@ function callback(asyncResult) {
 
 Gets the subject of an item, with all prefixes removed (including `RE:` and `FWD:`). Read mode only.
 
-The normalizedSubject property gets the subject of the item, with any standard prefixes (such as `RE:` and `FW:`) that are added by email programs. To get the subject of the item with the prefixes intact, use the [`subject`](Office.context.mailbox.item.html#subject) property.
+The normalizedSubject property gets the subject of the item, with any standard prefixes (such as `RE:` and `FW:`) that are added by email programs. To get the subject of the item with the prefixes intact, use the [`subject`](Office.context.mailbox.item.md#subject) property.
 
 ##### Type:
 
@@ -586,7 +586,7 @@ Gets the resources required for an appointment. Read mode only.
 
 Gets the email address of the sender of an email message. Read mode only.
 
-The [`from`](Office.context.mailbox.item.html#from) and `sender` properties represent the same person unless the message is sent by a delegate. In that case, the `from` property represents the delegator, and the sender property represents the delegate.
+The [`from`](Office.context.mailbox.item.md#from) and `sender` properties represent the same person unless the message is sent by a delegate. In that case, the `from` property represents the delegator, and the sender property represents the delegate.
 
 ##### Type:
 
@@ -611,7 +611,7 @@ var senderAddress = Office.context.mailbox.item.sender.emailAddress;
 
 Gets or sets the date and time that the appointment is to begin.
 
-The `start` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the [`convertToLocalClientTime`](Office.context.mailbox.html#convertToLocalClientTime) method to convert the value to the client’s local date and time.
+The `start` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the [`convertToLocalClientTime`](Office.context.mailbox.md#convertToLocalClientTime) method to convert the value to the client’s local date and time.
 
 ##### Read mode
 
@@ -621,7 +621,7 @@ The `start` property returns a `Date` object.
 
 The `start` property returns a `Time` object.
 
-When you use the [`Time.setAsync`](Time.html#setAsync) method to set the start time, you should use the [`convertToUtcClientTime`](Office.context.mailbox.html#convertToUtcClientTime) method to convert the local time on the client to UTC for the server.
+When you use the [`Time.setAsync`](Time.md#setAsync) method to set the start time, you should use the [`convertToUtcClientTime`](Office.context.mailbox.md#convertToUtcClientTime) method to convert the local time on the client to UTC for the server.
 
 ##### Type:
 
@@ -637,7 +637,7 @@ When you use the [`Time.setAsync`](Time.html#setAsync) method to set the start t
 
 ##### Example
 
-The following example sets the start time of an appointment in compose mode by using the [`setAsync`](Time.html#setAsync) method of the `Time` object.
+The following example sets the start time of an appointment in compose mode by using the [`setAsync`](Time.md#setAsync) method of the `Time` object.
 
 ```
 var startTime = new Date("3/14/2015");
@@ -664,7 +664,7 @@ The `subject` property gets or sets the entire subject of the item, as sent by t
 
 ##### Read mode
 
-The `subject` property returns a string. Use the [`normalizedSubject`](Office.context.mailbox.item.html#normalizedSubject) property to get the subject minus any leading prefixes such as `RE:` and `FW:`.
+The `subject` property returns a string. Use the [`normalizedSubject`](Office.context.mailbox.item.md#normalizedSubject) property to get the subject minus any leading prefixes such as `RE:` and `FW:`.
 
 ```
 var subject = Office.context.mailbox.item.subject;
@@ -736,7 +736,7 @@ Adds a file to a message or appointment as an attachment.
 
 The `addFileAttachmentAsync` method uploads the file at the specified URI and attaches it to the item in the compose form.
 
-You can subsequently use the identifier with the [`removeAttachmentAsync`](Office.context.mailbox.item.html#removeAttachmentAsync) method to remove the attachment in the same session.
+You can subsequently use the identifier with the [`removeAttachmentAsync`](Office.context.mailbox.item.md#removeAttachmentAsync) method to remove the attachment in the same session.
 
 ##### Parameters:
 
@@ -781,7 +781,7 @@ Adds an Exchange item, such as a message, as an attachment to the message or app
 
 The `addItemAttachmentAsync` method attaches the item with the specified Exchange identifier to the item in the compose form. If you specify a callback method, the method is called with one parameter, `asyncResult`, which contains either the attachment identifier or a code that indicates any error that occurred while attaching the item. You can use the `options` parameter to pass state information to the callback method, if needed.
 
-You can subsequently use the identifier with the [`removeAttachmentAsync`](Office.context.mailbox.item.html#removeAttachmentAsync) method to remove the attachment in the same session.
+You can subsequently use the identifier with the [`removeAttachmentAsync`](Office.context.mailbox.item.md#removeAttachmentAsync) method to remove the attachment in the same session.
 
 If your Office add-in is running in Outlook Web App, the `addItemAttachmentAsync` method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
 
@@ -1096,7 +1096,7 @@ Gets an array of all the entities of the specified entity type found in the sele
 
 |Name| Type| Description|
 |---|---|---|
-|`entityType`| [Office.MailboxEnums.EntityType](Office.MailboxEnums.html#.EntityType)|One of the EntityType enumeration values.|
+|`entityType`| [Office.MailboxEnums.EntityType](Office.MailboxEnums.md#.EntityType)|One of the EntityType enumeration values.|
 
 ##### Requirements
 
@@ -1207,7 +1207,7 @@ The object returned from `getRegExMatches` would have two properties: `fruits` a
 }
 ```
 
-If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body and should not attempt to return the entire body of the item. Using a regular expression such as `.*` to obtain the entire body of an item does not always return the expected results. Instead, use the [`Body.getAsync`](Body.html#getAsync) method to retrieve the entire body.
+If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body and should not attempt to return the entire body of the item. Using a regular expression such as `.*` to obtain the entire body of an item does not always return the expected results. Instead, use the [`Body.getAsync`](Body.md#getAsync) method to retrieve the entire body.
 
 ##### Requirements
 
