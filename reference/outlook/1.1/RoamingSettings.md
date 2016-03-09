@@ -88,7 +88,7 @@ Any settings previously saved by an add-in are loaded when it is initialized, so
 
 |Name| Type| Attributes| Description|
 |---|---|---|---|
-|`callback`| function| &lt;optional&gt;|When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.html#AsyncResult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.html).|
+|`callback`| function| &lt;optional&gt;|When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#AsyncResult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.html).|
 
 ##### Requirements
 

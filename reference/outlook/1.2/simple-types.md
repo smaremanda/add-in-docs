@@ -49,7 +49,7 @@ An array of `AttachmentDetail` objects is returned as the `attachments` property
 
 Represents a contact stored on the server. Read mode only.
 
-The list of contacts associated with an email message or appointment is returned in the `contacts` property of the [`Entities`](simple-types.html#Entities) object that is returned by the `getEntities` or `getEntitiesByType` method of the active item.
+The list of contacts associated with an email message or appointment is returned in the `contacts` property of the [`Entities`](simple-types.md#Entities) object that is returned by the `getEntities` or `getEntitiesByType` method of the active item.
 
 ##### Properties:
 
@@ -59,7 +59,7 @@ The list of contacts associated with an email message or appointment is returned
 |`businessName`| String| &lt;nullable&gt;|A string containing the name of the business associated with the contact.|
 |`emailAddresses`| Array.&lt;String&gt;| &lt;nullable&gt;|An array of strings containing the SMTP email addresses associated with the contact.|
 |`personName`| String| &lt;nullable&gt;|A string containing the name of the person associated with the contact.|
-|`phoneNumbers`| Array.&lt;[PhoneNumber](simple-types.html#PhoneNumber)&gt;| &lt;nullable&gt;|An array containing a `PhoneNumber` object for each phone number associated with the contact.|
+|`phoneNumbers`| Array.&lt;[PhoneNumber](simple-types.md#PhoneNumber)&gt;| &lt;nullable&gt;|An array containing a `PhoneNumber` object for each phone number associated with the contact.|
 |`urls`| Array.&lt;String&gt;| &lt;nullable&gt;|An array of strings containing the Internet URLs associated with the contact.|
 
 ##### Requirements
@@ -132,11 +132,11 @@ When the property arrays are returned by the `getEntitiesByType` method, only th
 |Name| Type| Attributes| Description|
 |---|---|---|---|
 |`addresses`| Array.&lt;String&gt;| &lt;nullable&gt;|Gets the physical addresses (street or mailing addresses) found in an email message or appointment.|
-|`contacts`| Array.&lt;[Contact](simple-types.html#Contact)&gt;| &lt;nullable&gt;|Gets the contacts found in an email address or appointment.|
+|`contacts`| Array.&lt;[Contact](simple-types.md#Contact)&gt;| &lt;nullable&gt;|Gets the contacts found in an email address or appointment.|
 |`emailAddresses`| Array.&lt;String&gt;| &lt;nullable&gt;|Gets the email addresses found in an email message or appointment.|
-|`meetingSuggestions`| Array.&lt;[MeetingSuggestion](simple-types.html#MeetingSuggestion)&gt;| &lt;nullable&gt;|Gets the meeting suggestions found in an email message.|
-|`phoneNumbers`| Array.&lt;[PhoneNumber](simple-types.html#PhoneNumber)&gt;| &lt;nullable&gt;|Gets the phone numbers found in an email message or appointment.|
-|`taskSuggestions`| Array.&lt;[TaskSuggestion](simple-types.html#TaskSuggestion)&gt;| &lt;nullable&gt;|Gets the task suggestions found in an email message or appointment.|
+|`meetingSuggestions`| Array.&lt;[MeetingSuggestion](simple-types.md#MeetingSuggestion)&gt;| &lt;nullable&gt;|Gets the meeting suggestions found in an email message.|
+|`phoneNumbers`| Array.&lt;[PhoneNumber](simple-types.md#PhoneNumber)&gt;| &lt;nullable&gt;|Gets the phone numbers found in an email message or appointment.|
+|`taskSuggestions`| Array.&lt;[TaskSuggestion](simple-types.md#TaskSuggestion)&gt;| &lt;nullable&gt;|Gets the task suggestions found in an email message or appointment.|
 |`urls`| Array.&lt;String&gt;| &lt;nullable&gt;|Gets the Internet URLs present in an email message or appointment.|
 
 ##### Requirements
@@ -174,7 +174,7 @@ Represents a date and time in the local client's time zone. Read mode only.
 
 Represents a suggested meeting found in an item. Read mode only.
 
-The list of meetings suggested in an email message is returned in the `meetingSuggestions` property of the [`Entities`](simple-types.html#Entities) object that is returned when the [`getEntities`](Office.context.mailbox.item.html#getEntities) or [`getEntitiesByType`](Office.context.mailbox.item.html#getEntitiesByType) method is called on the active item.
+The list of meetings suggested in an email message is returned in the `meetingSuggestions` property of the [`Entities`](simple-types.md#Entities) object that is returned when the [`getEntities`](Office.context.mailbox.item.html#getEntities) or [`getEntitiesByType`](Office.context.mailbox.item.html#getEntitiesByType) method is called on the active item.
 
 The `start` and `end` values are string representations of a Date object that contains the date and time at which the suggested meeting is to begin and end. The values are in the default time zone specified for the current user.
 
@@ -182,7 +182,7 @@ The `start` and `end` values are string representations of a Date object that co
 
 |Name| Type| Description|
 |---|---|---|
-|`attendees`| Array.&lt;[EmailUser](simple-types.html#EmailUser)&gt;|Gets the attendees for a suggested meeting.|
+|`attendees`| Array.&lt;[EmailUser](simple-types.md#EmailUser)&gt;|Gets the attendees for a suggested meeting.|
 |`end`| String|Gets the date and time that a suggested meeting is to end.|
 |`location`| String|Gets the location of a suggested meeting.|
 |`meetingString`| String|Gets a string that was identified as a meeting suggestion.|
@@ -200,7 +200,7 @@ The `start` and `end` values are string representations of a Date object that co
 
 Represents a phone number identified in an item. Read mode only.
 
-An array of `PhoneNumber` objects containing the phone numbers found in an email message is returned in the `phoneNumbers` property of the [`Entities`](simple-types.html#Entities) object that is returned when you call the [`getEntities`](Office.context.mailbox.item.html#getEntities) method on the selected item.
+An array of `PhoneNumber` objects containing the phone numbers found in an email message is returned in the `phoneNumbers` property of the [`Entities`](simple-types.md#Entities) object that is returned when you call the [`getEntities`](Office.context.mailbox.item.html#getEntities) method on the selected item.
 
 ##### Type:
 
@@ -225,13 +225,13 @@ An array of `PhoneNumber` objects containing the phone numbers found in an email
 
 Represents a suggested task identified in an item. Read mode only.
 
-The list of tasks suggested in an email message is returned in the `taskSuggestions` property of the [`Entities`][`Entities`](simple-types.html#Entities) object that is returned when the [`getEntities`](Office.context.mailbox.item.html#getEntities) or [`getEntitiesByType`](Office.context.mailbox.item.html#getEntitiesByType) method is called on the active item.
+The list of tasks suggested in an email message is returned in the `taskSuggestions` property of the [`Entities`][`Entities`](simple-types.md#Entities) object that is returned when the [`getEntities`](Office.context.mailbox.item.html#getEntities) or [`getEntitiesByType`](Office.context.mailbox.item.html#getEntitiesByType) method is called on the active item.
 
 ##### Properties:
 
 |Name| Type| Description|
 |---|---|---|
-|`assignees`| Array.&lt;[EmailUser](simple-types.html#EmailUser)&gt;|Gets the users that should be assigned a suggested task.|
+|`assignees`| Array.&lt;[EmailUser](simple-types.md#EmailUser)&gt;|Gets the users that should be assigned a suggested task.|
 |`taskString`| String|Gets the text of an item that was identified as a task suggestion.|
 
 ##### Requirements
