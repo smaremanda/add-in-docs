@@ -673,7 +673,7 @@ Some aspects of the add-in need to be localized for different locales, such as t
     <bt:ShortStrings> 
       </bt:String>
       <bt:String id="residViewTemplates" DefaultValue="Launch My Add-in">
-        <bt:Override Locale="ar-sa" Value="إطلاق بلدي الوظيفة الإضافية" />
+        <bt:Override Locale="ar-sa" Value="<add localized value here>" />
         <!-- add information for other locales -->
     </bt:ShortStrings>
 
