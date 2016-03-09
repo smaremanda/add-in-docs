@@ -2,7 +2,7 @@
 
 # item
 
-## [Office](Office.md)[.context](Office.context.html)[.mailbox](Office.context.mailbox.html). item
+## [Office](Office.md)[.context](Office.context.md)[.mailbox](Office.context.mailbox.md). item
 
 The `item` namespace is used to access the currently selected message, meeting request, or appointment. You can determine the type of the `item` by using the [itemType](Office.context.mailbox.item.html#itemType) property.
 
@@ -74,13 +74,13 @@ if (_Item.attachments.length > 0) {
 // Do something with outputString
 ```
 
-####  bcc :[Recipients](Recipients.html)
+####  bcc :[Recipients](Recipients.md)
 
 Gets or sets the recipients on the Bcc (blind carbon copy) line of a message. Compose mode only.
 
 ##### Type:
 
-*   [Recipients](Recipients.html)
+*   [Recipients](Recipients.md)
 
 ##### Requirements
 
@@ -101,13 +101,13 @@ function callback(asyncResult) {
 }
 ```
 
-####  body :[Body](Body.html)
+####  body :[Body](Body.md)
 
 Gets an object that provides methods for manipulating the body of an item.
 
 ##### Type:
 
-*   [Body](Body.html)
+*   [Body](Body.md)
 
 ##### Requirements
 
@@ -116,7 +116,7 @@ Gets an object that provides methods for manipulating the body of an item.
 |[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.1|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|
-####  cc :Array.<[EmailAddressDetails](simple-types.md#EmailAddressDetails)>|[Recipients](Recipients.html)
+####  cc :Array.<[EmailAddressDetails](simple-types.md#EmailAddressDetails)>|[Recipients](Recipients.md)
 
 Gets or sets the Cc (carbon copy) recipients of a message.
 
@@ -130,7 +130,7 @@ The `cc` property returns a `Recipients` object that provides methods for manipu
 
 ##### Type:
 
-*   Array.<[EmailAddressDetails](simple-types.md#EmailAddressDetails)> | [Recipients](Recipients.html)
+*   Array.<[EmailAddressDetails](simple-types.md#EmailAddressDetails)> | [Recipients](Recipients.md)
 
 ##### Requirements
 
@@ -214,7 +214,7 @@ Gets the date and time that an item was last modified. Read mode only.
 var modified = Office.context.mailbox.item.dateTimeModified;
 ```
 
-####  end :Date|[Time](Time.html)
+####  end :Date|[Time](Time.md)
 
 Gets or sets the date and time that the appointment is to end.
 
@@ -232,7 +232,7 @@ When you use the [`Time.setAsync`](Time.html#setAsync) method to set the end tim
 
 ##### Type:
 
-*   Date | [Time](Time.html)
+*   Date | [Time](Time.md)
 
 ##### Requirements
 
@@ -399,7 +399,7 @@ else
   // do something else
 ```
 
-####  location :String|[Location](Location.html)
+####  location :String|[Location](Location.md)
 
 Gets or sets the location of an appointment.
 
@@ -413,7 +413,7 @@ The `location` property returns a `Location` object that provides methods that a
 
 ##### Type:
 
-*   String | [Location](Location.html)
+*   String | [Location](Location.md)
 
 ##### Requirements
 
@@ -459,7 +459,7 @@ The normalizedSubject property gets the subject of the item, with any standard p
 var normalizedSubject = Office.context.mailbox.item.normalizedSubject;
 ```
 
-####  optionalAttendees :Array.<[EmailAddressDetails](simple-types.md#EmailAddressDetails)>|[Recipients](Recipients.html)
+####  optionalAttendees :Array.<[EmailAddressDetails](simple-types.md#EmailAddressDetails)>|[Recipients](Recipients.md)
 
 Gets or sets a list of email addresses for optional attendees.
 
@@ -473,7 +473,7 @@ The `optionalAttendees` property returns a `Recipients` object that provides met
 
 ##### Type:
 
-*   Array.<[EmailAddressDetails](simple-types.md#EmailAddressDetails)> | [Recipients](Recipients.html)
+*   Array.<[EmailAddressDetails](simple-types.md#EmailAddressDetails)> | [Recipients](Recipients.md)
 
 ##### Requirements
 
@@ -517,7 +517,7 @@ var organizerName = Office.context.mailbox.item.organizer.displayName;
 var organizerAddress = Office.context.mailbox.item.organizer.emailAddress;
 ```
 
-####  requiredAttendees :Array.<[EmailAddressDetails](simple-types.md#EmailAddressDetails)>|[Recipients](Recipients.html)
+####  requiredAttendees :Array.<[EmailAddressDetails](simple-types.md#EmailAddressDetails)>|[Recipients](Recipients.md)
 
 Gets or sets a list of email addresses for required attendees.
 
@@ -531,7 +531,7 @@ The `requiredAttendees` property returns a `Recipients` object that provides met
 
 ##### Type:
 
-*   Array.<[EmailAddressDetails](simple-types.md#EmailAddressDetails)> | [Recipients](Recipients.html)
+*   Array.<[EmailAddressDetails](simple-types.md#EmailAddressDetails)> | [Recipients](Recipients.md)
 
 ##### Requirements
 
@@ -592,7 +592,7 @@ var senderName = Office.context.mailbox.item.sender.displayName;
 var senderAddress = Office.context.mailbox.item.sender.emailAddress;
 ```
 
-####  start :Date|[Time](Time.html)
+####  start :Date|[Time](Time.md)
 
 Gets or sets the date and time that the appointment is to begin.
 
@@ -610,7 +610,7 @@ When you use the [`Time.setAsync`](Time.html#setAsync) method to set the start t
 
 ##### Type:
 
-*   Date | [Time](Time.html)
+*   Date | [Time](Time.md)
 
 ##### Requirements
 
@@ -641,7 +641,7 @@ Office.context.mailbox.item.start.setAsync(startTime, options, function(result) 
 });
 ```
 
-####  subject :String|[Subject](Subject.html)
+####  subject :String|[Subject](Subject.md)
 
 Gets or sets the description that appears in the subject field of an item.
 
@@ -669,7 +669,7 @@ function callback(asyncResult) {
 
 ##### Type:
 
-*   String | [Subject](Subject.html)
+*   String | [Subject](Subject.md)
 
 ##### Requirements
 
@@ -678,7 +678,7 @@ function callback(asyncResult) {
 |[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|
-####  to :Array.<[EmailAddressDetails](simple-types.md#EmailAddressDetails)>|[Recipients](Recipients.html)
+####  to :Array.<[EmailAddressDetails](simple-types.md#EmailAddressDetails)>|[Recipients](Recipients.md)
 
 Gets or sets the recipients of an email message.
 
@@ -692,7 +692,7 @@ The `to` property returns a `Recipients` object that provides methods for manipu
 
 ##### Type:
 
-*   Array.<[EmailAddressDetails](simple-types.md#EmailAddressDetails)> | [Recipients](Recipients.html)
+*   Array.<[EmailAddressDetails](simple-types.md#EmailAddressDetails)> | [Recipients](Recipients.md)
 
 ##### Requirements
 
@@ -729,8 +729,8 @@ You can subsequently use the identifier with the [`removeAttachmentAsync`](Offic
 |---|---|---|---|
 |`uri`| String||The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.|
 |`attachmentName`| String||The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.|
-|`options`| Object| &lt;optional&gt;|An object literal that contains one or more of the following properties. For more information on defining and using the `options` parameter, see [Using the `options` parameter](tutorial-options.html).<br/><br/>**Properties**<br/><table class="nested-table"><thead><tr><th>Name</th><th>Type</th><th>Attributes</th><th>Description</th></tr></thead><tbody><tr><td><code>asyncContext</code></td><td>Object</td><td>&lt;optional&gt;</td><td>Developers can provide any object they wish to access in the callback method.</td></tr></tbody></table>|
-|`callback`| function| &lt;optional&gt;|When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#AsyncResult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.html).<br/>On success, the attachment identifier will be provided in the `asyncResult.value` property.<br/>If uploading the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.<br/><table class="nested-table"><thead><tr><th>Error code</th><th>Description</th></tr></thead><tbody><tr><td><code>AttachmentSizeExceeded</code></td><td>The attachment is larger than allowed.</td></tr><tr><td><code>FileTypeNotSupported</code></td><td>The attachment has an extension that is not allowed.</td></tr><tr><td><code>NumberOfAttachmentsExceeded</code></td><td>The message or appointment has too many attachments.</td></tr></tbody></table>|
+|`options`| Object| &lt;optional&gt;|An object literal that contains one or more of the following properties. For more information on defining and using the `options` parameter, see [Using the `options` parameter](tutorial-options.md).<br/><br/>**Properties**<br/><table class="nested-table"><thead><tr><th>Name</th><th>Type</th><th>Attributes</th><th>Description</th></tr></thead><tbody><tr><td><code>asyncContext</code></td><td>Object</td><td>&lt;optional&gt;</td><td>Developers can provide any object they wish to access in the callback method.</td></tr></tbody></table>|
+|`callback`| function| &lt;optional&gt;|When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#AsyncResult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.md).<br/>On success, the attachment identifier will be provided in the `asyncResult.value` property.<br/>If uploading the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.<br/><table class="nested-table"><thead><tr><th>Error code</th><th>Description</th></tr></thead><tbody><tr><td><code>AttachmentSizeExceeded</code></td><td>The attachment is larger than allowed.</td></tr><tr><td><code>FileTypeNotSupported</code></td><td>The attachment has an extension that is not allowed.</td></tr><tr><td><code>NumberOfAttachmentsExceeded</code></td><td>The message or appointment has too many attachments.</td></tr></tbody></table>|
 
 ##### Requirements
 
@@ -776,8 +776,8 @@ If your Office add-in is running in Outlook Web App, the `addItemAttachmentAsync
 |---|---|---|---|
 |`itemId`| String||The Exchange identifier of the item to attach. The maximum length is 100 characters.|
 |`attachmentName`| String||The sujbect of the item to be attached. The maximum length is 255 characters.|
-|`options`| Object| &lt;optional&gt;|An object literal that contains one or more of the following properties. For more information on defining and using the `options` parameter, see [Using the `options` parameter](tutorial-options.html).<br/><br/>**Properties**<br/><table class="nested-table"><thead><tr><th>Name</th><th>Type</th><th>Attributes</th><th>Description</th></tr></thead><tbody><tr><td><code>asyncContext</code></td><td>Object</td><td>&lt;optional&gt;</td><td>Developers can provide any object they wish to access in the callback method.</td></tr></tbody></table>|
-|`callback`| function| &lt;optional&gt;|When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#AsyncResult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.html).<br/>On success, the attachment identifier will be provided in the `asyncResult.value` property.<br/>If adding the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.<br/><table class="nested-table"><thead><tr><th>Error code</th><th>Description</th></tr></thead><tbody><tr><td><code>NumberOfAttachmentsExceeded</code></td><td>The message or appointment has too many attachments.</td></tr></tbody></table>|
+|`options`| Object| &lt;optional&gt;|An object literal that contains one or more of the following properties. For more information on defining and using the `options` parameter, see [Using the `options` parameter](tutorial-options.md).<br/><br/>**Properties**<br/><table class="nested-table"><thead><tr><th>Name</th><th>Type</th><th>Attributes</th><th>Description</th></tr></thead><tbody><tr><td><code>asyncContext</code></td><td>Object</td><td>&lt;optional&gt;</td><td>Developers can provide any object they wish to access in the callback method.</td></tr></tbody></table>|
+|`callback`| function| &lt;optional&gt;|When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#AsyncResult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.md).<br/>On success, the attachment identifier will be provided in the `asyncResult.value` property.<br/>If adding the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.<br/><table class="nested-table"><thead><tr><th>Error code</th><th>Description</th></tr></thead><tbody><tr><td><code>NumberOfAttachmentsExceeded</code></td><td>The message or appointment has too many attachments.</td></tr></tbody></table>|
 
 ##### Requirements
 
@@ -1261,8 +1261,8 @@ If there is no selection but the cursor is in the body or subject, the method re
 |Name| Type| Attributes| Description|
 |---|---|---|---|
 |`coercionType`| [Office.CoercionType](Office.md#coerciontype-string)||Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.|
-|`options`| Object| &lt;optional&gt;|An object literal that contains one or more of the following properties. For more information on defining and using the `options` parameter, see [Using the `options` parameter](tutorial-options.html).<br/><br/>**Properties**<br/><table class="nested-table"><thead><tr><th>Name</th><th>Type</th><th>Attributes</th><th>Description</th></tr></thead><tbody><tr><td><code>asyncContext</code></td><td>Object</td><td>&lt;optional&gt;</td><td>Developers can provide any object they wish to access in the callback method.</td></tr></tbody></table>|
-|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#AsyncResult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.html).
+|`options`| Object| &lt;optional&gt;|An object literal that contains one or more of the following properties. For more information on defining and using the `options` parameter, see [Using the `options` parameter](tutorial-options.md).<br/><br/>**Properties**<br/><table class="nested-table"><thead><tr><th>Name</th><th>Type</th><th>Attributes</th><th>Description</th></tr></thead><tbody><tr><td><code>asyncContext</code></td><td>Object</td><td>&lt;optional&gt;</td><td>Developers can provide any object they wish to access in the callback method.</td></tr></tbody></table>|
+|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#AsyncResult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.md).
 
 To access the selected data from the callback method, call `asyncResult.value.data`. To access the source property that the selection comes from, call `asyncResult.value.sourceProperty`, which will be either `body` or `subject`.|
 
@@ -1316,7 +1316,7 @@ Custom properties are stored as key/value pairs on a per-app, per-item basis. Th
 
 |Name| Type| Attributes| Description|
 |---|---|---|---|
-|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#AsyncResult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.html).
+|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#AsyncResult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.md).
 
 The custom properties are provided as a [`CustomProperties`](CustomProperties.md) object in the `asyncResult.value` property. This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to the server.|
 |`userContext`| Object| &lt;optional&gt;|Developers can provide any object they wish to access in the callback function. This object can be accessed by the `asyncResult.asyncContext` property in the callback function.|
@@ -1367,8 +1367,8 @@ The `removeAttachmentAsync` method removes the attachment with the specified ide
 |Name| Type| Attributes| Description|
 |---|---|---|---|
 |`attachmentId`| String||The identifier of the attachment to remove. The maximum length of the string is 100 characters.|
-|`options`| Object| &lt;optional&gt;|An object literal that contains one or more of the following properties. For more information on defining and using the `options` parameter, see [Using the `options` parameter](tutorial-options.html).<br/><br/>**Properties**<br/><table class="nested-table"><thead><tr><th>Name</th><th>Type</th><th>Attributes</th><th>Description</th></tr></thead><tbody><tr><td><code>asyncContext</code></td><td>Object</td><td>&lt;optional&gt;</td><td>Developers can provide any object they wish to access in the callback method.</td></tr></tbody></table>|
-|`callback`| function| &lt;optional&gt;|When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#AsyncResult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.html).<br/>If removing the attachment fails, the `asyncResult.error` property will contain an error code with the reason for the failure.<br/><table class="nested-table"><thead><tr><th>Error code</th><th>Description</th></tr></thead><tbody><tr><td><code>InvalidAttachmentId</code></td><td>The attachment identifier does not exist.</td></tr></tbody></table>|
+|`options`| Object| &lt;optional&gt;|An object literal that contains one or more of the following properties. For more information on defining and using the `options` parameter, see [Using the `options` parameter](tutorial-options.md).<br/><br/>**Properties**<br/><table class="nested-table"><thead><tr><th>Name</th><th>Type</th><th>Attributes</th><th>Description</th></tr></thead><tbody><tr><td><code>asyncContext</code></td><td>Object</td><td>&lt;optional&gt;</td><td>Developers can provide any object they wish to access in the callback method.</td></tr></tbody></table>|
+|`callback`| function| &lt;optional&gt;|When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#AsyncResult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.md).<br/>If removing the attachment fails, the `asyncResult.error` property will contain an error code with the reason for the failure.<br/><table class="nested-table"><thead><tr><th>Error code</th><th>Description</th></tr></thead><tbody><tr><td><code>InvalidAttachmentId</code></td><td>The attachment identifier does not exist.</td></tr></tbody></table>|
 
 ##### Requirements
 

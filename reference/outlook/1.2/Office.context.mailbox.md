@@ -2,7 +2,7 @@
 
 # mailbox
 
-## [Office](Office.md)[.context](Office.context.html). mailbox
+## [Office](Office.md)[.context](Office.context.md). mailbox
 
 Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
 
@@ -18,15 +18,15 @@ Provides access to the Outlook Add-in object model for Microsoft Outlook and Mic
 
 <dl>
 
-<dt>[diagnostics](Office.context.mailbox.diagnostics.html)</dt>
+<dt>[diagnostics](Office.context.mailbox.diagnostics.md)</dt>
 
 <dd class="ms-font-m">Provides diagnostic information to an Outlook add-in.</dd>
 
-<dt>[item](Office.context.mailbox.item.html)</dt>
+<dt>[item](Office.context.mailbox.item.md)</dt>
 
 <dd class="ms-font-m">Provides methods and properties for accessing a message or appointment in an Outlook add-in.</dd>
 
-<dt>[userProfile](Office.context.mailbox.userProfile.html)</dt>
+<dt>[userProfile](Office.context.mailbox.userProfile.md)</dt>
 
 <dd class="ms-font-m">Provides information about the user in an Outlook add-in.</dd>
 
@@ -242,7 +242,7 @@ Your app must have the **ReadItem** permission specified in its manifest to call
 
 |Name| Type| Attributes| Description|
 |---|---|---|---|
-|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#AsyncResult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.html).
+|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#AsyncResult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.md).
 
 The token is provided as a string in the `asyncResult.value` property.|
 |`userContext`| Object| &lt;optional&gt;|Any state data that is passed to the asynchronous method.|
@@ -277,7 +277,7 @@ The `getUserIdentityTokenAsync` method returns a token that you can use to ident
 
 |Name| Type| Attributes| Description|
 |---|---|---|---|
-|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#AsyncResult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.html).
+|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#AsyncResult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.md).
 
 The token is provided as a string in the `asyncResult.value` property.|
 |`userContext`| Object| &lt;optional&gt;|Any state data that is passed to the asynchronous method.|
@@ -335,7 +335,7 @@ You do not need to set the encoding value when your mail app is running in Outlo
 |Name| Type| Attributes| Description|
 |---|---|---|---|
 |`data`| String||The EWS request.|
-|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#AsyncResult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.html).
+|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#AsyncResult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.md).
 
 The XML result of the EWS call is provided as a string in the `asyncResult.value` property. If the result exceeds 1 MB in size, an error message is returned instead.|
 |`userContext`| Object| &lt;optional&gt;|Any state data that is passed to the asynchronous method.|

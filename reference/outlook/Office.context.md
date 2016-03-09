@@ -17,7 +17,7 @@ The Office.context namespace provides shared interfaces that are used by add-ins
 
 <dl>
 
-<dt>[mailbox](Office.context.mailbox.html)</dt>
+<dt>[mailbox](Office.context.mailbox.md)</dt>
 
 <dd class="ms-font-m">Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.</dd>
 
@@ -103,7 +103,7 @@ function applyOfficeTheme(){
 }
 ```
 
-####  roamingSettings :[RoamingSettings](RoamingSettings.html)
+####  roamingSettings :[RoamingSettings](RoamingSettings.md)
 
 Gets an object that represents the custom settings or state of a mail add-in saved to a user's mailbox.
 
@@ -111,7 +111,7 @@ The `RoamingSettings` object lets you store and access data for a mail add-in th
 
 ##### Type:
 
-*   [RoamingSettings](RoamingSettings.html)
+*   [RoamingSettings](RoamingSettings.md)
 
 ##### Requirements
 
