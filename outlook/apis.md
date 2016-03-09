@@ -1,7 +1,8 @@
 
 # Outlook add-in APIs
 Learn how to specify the APIs needed for your Outlook add-in.
-
+
+
 
 To use APIs in your Outlook add-in, you must specify the location of the Office.js library, the requirement set, the schema, and the permissions.
 
@@ -56,7 +57,7 @@ Your add-in requires the appropriate permissions to use the APIs that it needs. 
 |Read/write|In addition to what is allowed in  _Read item_, it allows:
 <ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>full Outlook add-in API access except <span class="keyword">makeEwsRequestAsync</span></p></li><li><p> setting the item properties</p></li></ul>|
 |Read/write mailbox|In addition to what is allowed in  _Read/write_, it allows:
-<ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>creating, reading, writing items and folders</p></li><li><p>sending items</p></li><li><p>calling <a href="http://dev.outlook.com/reference/add-ins/Office.context.mailbox.html.aspx#makeEwsRequestAsync" target="_blank">makeEwsRequestAsync</a>,</p></li></ul>|
+<ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>creating, reading, writing items and folders</p></li><li><p>sending items</p></li><li><p>calling [makeEwsRequestAsync](../reference/outlook/Office.context.mailbox.md#makeewsrequestasync),</p></li></ul>|
 In general, you should specify the minimum permission needed for your add-in. Permissions are declared in the  **Permissions** element in the manifest. For more information, see [Outlook add-in manifests](../outlook/manifests/manifests.md). For information on security issues, see [Privacy, permissions, and security for Outlook add-ins](../outlook/../essentials/privacy-and-security.md)
 
 
@@ -66,7 +67,7 @@ In general, you should specify the minimum permission needed for your add-in. Pe
 
 - [Get Started with Outlook add-ins for Office 365](https://dev.outlook.com/MailAppsGettingStarted/GetStarted.aspx)
     
-- [Outlook Add-in API](http://dev.outlook.com/reference/add-ins/index.mdl.aspx)
+- [Outlook Add-in API](../reference/outlook/index.md)
     
 - [Outlook add-in manifests](../outlook/manifests/manifests.md)
     
