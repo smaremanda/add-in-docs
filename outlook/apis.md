@@ -38,7 +38,7 @@ if (item.somePropertyOrFunction) {
 }
 ```
 
-No such checks are necessary for any APIs that are in the requirement set version specified in the manifest.
+**Note:** No such checks are necessary for any APIs that are in the requirement set version specified in the manifest.
 
 Developers should specify the minimum requirement set that supports the critical set of APIs for their scenario, without which the critical features of the add-in won't work. You specify the requirement set in the manifest in the  **Requirements**, **Sets**, and **Set** elements. For more information, see [Outlook add-in manifests](../outlook/manifests/manifests.md).
 
