@@ -39,7 +39,7 @@ For more information about Office host application and server requirements, see 
 
 |||
 |:-----|:-----|
-|**Available in requirement sets**||
+|**Available in requirement sets**|File|
 |**Minimum permission level**|[ReadDocument](http://msdn.microsoft.com/library/da2efadc-4ebf-45fe-be39-397ac1eb1dbd%28Office.15%29.aspx)|
 |**Add-in types**|Content, task pane|
 |**Library**|Office.js|
