@@ -1260,7 +1260,7 @@ If there is no selection but the cursor is in the body or subject, the method re
 
 |Name| Type| Attributes| Description|
 |---|---|---|---|
-|`coercionType`| [Office.CoercionType](Office.html#.CoercionType)||Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.|
+|`coercionType`| [Office.CoercionType](Office.md#.CoercionType)||Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.|
 |`options`| Object| &lt;optional&gt;|An object literal that contains one or more of the following properties. For more information on defining and using the `options` parameter, see [Using the `options` parameter](tutorial-options.html).<br/><br/>**Properties**<br/><table class="nested-table"><thead><tr><th>Name</th><th>Type</th><th>Attributes</th><th>Description</th></tr></thead><tbody><tr><td><code>asyncContext</code></td><td>Object</td><td>&lt;optional&gt;</td><td>Developers can provide any object they wish to access in the callback method.</td></tr></tbody></table>|
 |`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#AsyncResult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.html).
 
