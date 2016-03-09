@@ -10,7 +10,7 @@ The `NotificationMessages` object is returned as the [`notificationMessages`](Of
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.3|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.3|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 
@@ -35,7 +35,7 @@ There are a maximum of 5 notifications per message. Setting more will return a `
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.3|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.3|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 
@@ -76,7 +76,7 @@ On successful completion, the `asyncResult.value` property will contain an array
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.3|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.3|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 
@@ -113,7 +113,7 @@ If the key is not found, a `KeyNotFound` error is returned in the `asyncResult.e
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.3|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.3|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 
@@ -143,7 +143,7 @@ If a notification message with the specified key doesn't exist, `replaceAsync` w
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.3|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.3|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 

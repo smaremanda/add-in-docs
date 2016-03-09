@@ -10,7 +10,7 @@ The Office namespace provides shared interfaces that are used by add-ins in all 
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |Applicable Outlook mode| Compose or read|
 
 ### Namespaces
@@ -48,7 +48,7 @@ Specifies the result of an asynchronous call.
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |Applicable Outlook mode| Compose or read|
 ####  CoercionType :String
 
@@ -69,7 +69,7 @@ Specifies how to coerce data returned or set by the invoked method.
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |Applicable Outlook mode| Compose or read|
 ####  SourceProperty :String
 
@@ -90,5 +90,5 @@ Specifies the source of the data returned by the invoked method.
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |Applicable Outlook mode| Compose or read|

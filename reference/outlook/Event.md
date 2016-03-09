@@ -45,7 +45,7 @@ function testEventObject(event) {
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.3|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.3|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| Restricted|
 |Applicable Outlook mode| Compose or read|
 
@@ -71,7 +71,7 @@ This value can be used when more than one button invokes the same function, but 
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.3|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.3|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| Restricted|
 |Applicable Outlook mode| Compose or read|
 
@@ -106,7 +106,7 @@ This method must be called at the end of a function which was invoked by an add-
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.3|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.3|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| Restricted|
 |Applicable Outlook mode| Compose or read|
 

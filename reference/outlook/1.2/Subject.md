@@ -10,7 +10,7 @@ Provides methods to get and set the subject of an appointment or message in an O
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.1|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.1|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose|
 
@@ -35,7 +35,7 @@ The subject of the item is provided as a string in the `asyncResult.value` prope
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.1|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.1|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose|
 ####  setAsync(subject, optionsopt, callbackopt)
@@ -56,6 +56,6 @@ The `setAsync` method starts an asynchronous call to the Exchange server to set 
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.1|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.1|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose|

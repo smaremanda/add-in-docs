@@ -4,7 +4,7 @@
 
 The Outlook Add-in API subset of the JavaScript API for Office includes objects, methods, properties and events that you can use in an Outlook add-in.
 
-> **Note**: This documentation is for a [requirement set](tutorial-api-requirement-sets.html) other than the latest requirement set. Use the **Version** drop-down in the upper-left corner to select the version of the documentation that corresponds to the applicable requirement set.
+> **Note**: This documentation is for a [requirement set](tutorial-api-requirement-sets.md) other than the latest requirement set. Use the **Version** drop-down in the upper-left corner to select the version of the documentation that corresponds to the applicable requirement set.
 
 ## What are Outlook Add-ins?
 

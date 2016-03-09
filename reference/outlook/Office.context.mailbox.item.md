@@ -10,7 +10,7 @@ The `item` namespace is used to access the currently selected message, meeting r
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| Restricted|
 |Applicable Outlook mode| Compose or read|
 
@@ -46,7 +46,7 @@ Gets an array of attachments for the item. Read mode only.
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Read|
 
@@ -86,7 +86,7 @@ Gets or sets the recipients on the Bcc (blind carbon copy) line of a message. Co
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.1|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.1|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose|
 
@@ -113,7 +113,7 @@ Gets an object that provides methods for manipulating the body of an item.
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.1|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.1|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 ####  cc :Array.<[EmailAddressDetails](simple-types.html#EmailAddressDetails)>|[Recipients](Recipients.html)
@@ -136,7 +136,7 @@ The `cc` property returns a `Recipients` object that provides methods for manipu
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 
@@ -167,7 +167,7 @@ You get null for this property for a new item in a compose form. If the user set
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 #### dateTimeCreated :Date
@@ -182,7 +182,7 @@ Gets the date and time that an item was created. Read mode only.
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Read|
 
@@ -204,7 +204,7 @@ Gets the date and time that an item was last modified. Read mode only.
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Read|
 
@@ -238,7 +238,7 @@ When you use the [`Time.setAsync`](Time.html#setAsync) method to set the end tim
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 
@@ -277,7 +277,7 @@ The `from` and [`sender`](Office.context.mailbox.item.html#sender) properties re
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Read|
 #### internetMessageId :String
@@ -292,7 +292,7 @@ Gets the Internet message identifier for an email message. Read mode only.
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Read|
 
@@ -329,7 +329,7 @@ You can create custom message classes that extends a default message class, for 
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Read|
 
@@ -355,7 +355,7 @@ The `itemId` property returns `null` in compose mode for items that have not bee
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Read|
 
@@ -386,7 +386,7 @@ The `itemType` property returns one of the `ItemType` enumeration values, indica
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 
@@ -419,7 +419,7 @@ The `location` property returns a `Location` object that provides methods that a
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 
@@ -449,7 +449,7 @@ The normalizedSubject property gets the subject of the item, with any standard p
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Read|
 
@@ -471,7 +471,7 @@ Gets the notification messages for an item.
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.3|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.3|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 ####  optionalAttendees :Array.<[EmailAddressDetails](simple-types.html#EmailAddressDetails)>|[Recipients](Recipients.html)
@@ -494,7 +494,7 @@ The `optionalAttendees` property returns a `Recipients` object that provides met
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 
@@ -521,7 +521,7 @@ Gets the email address of the meeting organizer for a specified meeting. Read mo
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Read|
 
@@ -552,7 +552,7 @@ The `requiredAttendees` property returns a `Recipients` object that provides met
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 
@@ -579,7 +579,7 @@ Gets the resources required for an appointment. Read mode only.
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Read|
 #### sender :[EmailAddressDetails](simple-types.html#EmailAddressDetails)
@@ -596,7 +596,7 @@ The [`from`](Office.context.mailbox.item.html#from) and `sender` properties repr
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Read|
 
@@ -631,7 +631,7 @@ When you use the [`Time.setAsync`](Time.html#setAsync) method to set the start t
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 
@@ -690,7 +690,7 @@ function callback(asyncResult) {
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 ####  to :Array.<[EmailAddressDetails](simple-types.html#EmailAddressDetails)>|[Recipients](Recipients.html)
@@ -713,7 +713,7 @@ The `to` property returns a `Recipients` object that provides methods for manipu
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 
@@ -751,7 +751,7 @@ You can subsequently use the identifier with the [`removeAttachmentAsync`](Offic
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.1|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.1|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadWriteItem|
 |Applicable Outlook mode| Compose|
 
@@ -798,7 +798,7 @@ If your Office add-in is running in Outlook Web App, the `addItemAttachmentAsync
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.1|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.1|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadWriteItem|
 |Applicable Outlook mode| Compose|
 
@@ -839,7 +839,7 @@ In the Outlook desktop client, if the message is an inline reply, the `close` me
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.3|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.3|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| Restricted|
 |Applicable Outlook mode| Compose|
 #### displayReplyAllForm(formData)
@@ -862,7 +862,7 @@ When attachments are specified in the `formData.attachments` parameter, Outlook 
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Read|
 
@@ -970,7 +970,7 @@ When attachments are specified in the `formData.attachments` parameter, Outlook 
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Read|
 
@@ -1066,7 +1066,7 @@ Gets the entities found in the selected item.
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Read|
 
@@ -1102,7 +1102,7 @@ Gets an array of all the entities of the specified entity type found in the sele
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| Restricted|
 |Applicable Outlook mode| Read|
 
@@ -1164,7 +1164,7 @@ The `getFilteredEntitiesByName` method returns the entities that match the regul
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Read|
 
@@ -1213,7 +1213,7 @@ If you specify an `ItemHasRegularExpressionMatch` rule on the body property of a
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Read|
 
@@ -1257,7 +1257,7 @@ If you specify an `ItemHasRegularExpressionMatch` rule on the body property of a
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Read|
 
@@ -1300,7 +1300,7 @@ To access the selected data from the callback method, call `asyncResult.value.da
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadWriteItem|
 |Applicable Outlook mode| Compose|
 
@@ -1355,7 +1355,7 @@ The custom properties are provided as a [`CustomProperties`](CustomProperties.ht
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 
@@ -1404,7 +1404,7 @@ The `removeAttachmentAsync` method removes the attachment with the specified ide
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.1|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.1|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadWriteItem|
 |Applicable Outlook mode| Compose|
 
@@ -1442,7 +1442,7 @@ On success, the item identifier is provided in the `asyncResult.value` property.
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.3|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.3|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadWriteItem|
 |Applicable Outlook mode| Compose|
 
@@ -1480,7 +1480,7 @@ Asynchronously inserts data into the body or subject of a message.
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.2|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.2|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadWriteItem|
 |Applicable Outlook mode| Compose|
 

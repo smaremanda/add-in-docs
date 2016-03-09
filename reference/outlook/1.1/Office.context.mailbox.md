@@ -10,7 +10,7 @@ Provides access to the Outlook Add-in object model for Microsoft Outlook and Mic
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| Restricted|
 |Applicable Outlook mode| Compose or read|
 
@@ -48,7 +48,7 @@ The `ewsUrl` value can be used by a remote service to make EWS calls to the user
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Read|
 
@@ -72,7 +72,7 @@ If the mail app is running in Outlook, the `convertToLocalClientTime` method wil
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 
@@ -102,7 +102,7 @@ The `convertToUtcClientTime` method converts a dictionary containing a local dat
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 
@@ -140,7 +140,7 @@ If the specified item identifier does not identify an existing appointment, a bl
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 
@@ -172,7 +172,7 @@ Do not use the `displayMessageForm` with an `itemId` that represents an appointm
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 
@@ -204,7 +204,7 @@ If any of the parameters exceed the specified size limits, or if an unknown para
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Read|
 
@@ -251,7 +251,7 @@ The token is provided as a string in the `asyncResult.value` property.|
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Read|
 
@@ -286,7 +286,7 @@ The token is provided as a string in the `asyncResult.value` property.|
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 
@@ -344,7 +344,7 @@ The XML result of the EWS call is provided as a string in the `asyncResult.value
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadWriteMailbox|
 |Applicable Outlook mode| Compose or read|
 

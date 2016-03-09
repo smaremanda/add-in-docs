@@ -19,7 +19,7 @@ An object which encapsulates the result of an asynchronous request, including st
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |Applicable Outlook mode| Compose or read|
 #### AttachmentDetails
 
@@ -42,7 +42,7 @@ An array of `AttachmentDetail` objects is returned as the `attachments` property
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Read|
 #### Contact
@@ -66,7 +66,7 @@ The list of contacts associated with an email message or appointment is returned
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| Restricted|
 |Applicable Outlook mode| Read|
 ####  EmailAddressDetails
@@ -90,7 +90,7 @@ Provides the email properties of the sender or specified recipients of an email 
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 #### EmailUser
@@ -108,7 +108,7 @@ Represents an email account on an Exchange Server.
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Read|
 #### Entities
@@ -143,7 +143,7 @@ When the property arrays are returned by the `getEntitiesByType` method, only th
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Read|
 #### LocalClientTime
@@ -167,7 +167,7 @@ Represents a date and time in the local client's time zone. Read mode only.
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Read|
 #### MeetingSuggestion
@@ -193,7 +193,7 @@ The `start` and `end` values are string representations of a Date object that co
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Read|
 #### PhoneNumber
@@ -218,7 +218,7 @@ An array of `PhoneNumber` objects containing the phone numbers found in an email
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Read|
 #### TaskSuggestion
@@ -238,6 +238,6 @@ The list of tasks suggested in an email message is returned in the `taskSuggesti
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.html)| 1.0|
+|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Read|
