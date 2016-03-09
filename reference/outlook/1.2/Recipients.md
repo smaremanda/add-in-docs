@@ -8,7 +8,7 @@
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.1|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.1|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose|
 
@@ -36,7 +36,7 @@ The `recipients` parameter can be an array of one of the following:
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.1|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.1|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadWriteItem|
 |Applicable Outlook mode| Compose|
 
@@ -82,7 +82,7 @@ When the call completes, the `asyncResult.value` property will contain an array 
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.1|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.1|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose|
 
@@ -128,7 +128,7 @@ The `recipients` parameter can be an array of one of the following:
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.1|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.1|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadWriteItem|
 |Applicable Outlook mode| Compose|
 

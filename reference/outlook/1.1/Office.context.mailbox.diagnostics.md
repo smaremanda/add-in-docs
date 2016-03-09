@@ -10,7 +10,7 @@ Provides diagnostic information to an Outlook add-in.
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 
@@ -30,7 +30,7 @@ A string that can be one of the following values: `Outlook`, `Mac Outlook` or `O
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 ####  hostVersion :String
@@ -47,7 +47,7 @@ If the mail add-in is running on the Outlook desktop client, the `hostVersion` p
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 ####  OWAView :String
@@ -72,6 +72,6 @@ Outlook Web App has three views that correspond to the width of the screen and t
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|

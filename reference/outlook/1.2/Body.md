@@ -10,7 +10,7 @@ The `body` object provides methods for adding and updating the content of the me
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.1|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.1|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 
@@ -33,7 +33,7 @@ The content type is returned as one of the [CoercionType](Office.html#.CoercionT
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.1|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.1|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose|
 ####  prependAsync(data, optionsopt, callbackopt)
@@ -63,7 +63,7 @@ Office.context.mailbox.item.body.prependAsync(
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.1|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.1|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadWriteItem|
 |Applicable Outlook mode| Compose|
 ####  setSelectedDataAsync(data, optionsopt, callbackopt)
@@ -93,6 +93,6 @@ Office.context.mailbox.item.body.setSelectedDataAsync(
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.1|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.1|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadWriteItem|
 |Applicable Outlook mode| Compose|
