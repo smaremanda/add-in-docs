@@ -2,7 +2,7 @@
 
 # context
 
-## [Office](Office.html). context
+## [Office](Office.md). context
 
 The Office.context namespace provides shared interfaces that are used by add-ins in all of the Office apps. This listing documents only those interfaces that are used by Outlook add-ins. For a full listing of the Office.context namespace, see the [documentation on MSDN](https://msdn.microsoft.com/EN-US/library/office/fp161104.aspx).
 

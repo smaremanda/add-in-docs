@@ -2,7 +2,7 @@
 
 # diagnostics
 
-## [Office](Office.html)[.context](Office.context.html)[.mailbox](Office.context.mailbox.html). diagnostics
+## [Office](Office.md)[.context](Office.context.html)[.mailbox](Office.context.mailbox.html). diagnostics
 
 Provides diagnostic information to an Outlook add-in.
 

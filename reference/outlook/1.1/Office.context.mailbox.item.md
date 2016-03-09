@@ -2,7 +2,7 @@
 
 # item
 
-## [Office](Office.html)[.context](Office.context.html)[.mailbox](Office.context.mailbox.html). item
+## [Office](Office.md)[.context](Office.context.html)[.mailbox](Office.context.mailbox.html). item
 
 The `item` namespace is used to access the currently selected message, meeting request, or appointment. You can determine the type of the `item` by using the [itemType](Office.context.mailbox.item.html#itemType) property.
 
@@ -1260,7 +1260,7 @@ If there is no selection but the cursor is in the body or subject, the method re
 
 |Name| Type| Attributes| Description|
 |---|---|---|---|
-|`coercionType`| [Office.CoercionType](Office.md#.CoercionType)||Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.|
+|`coercionType`| [Office.CoercionType](Office.md#coerciontype-string)||Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.|
 |`options`| Object| &lt;optional&gt;|An object literal that contains one or more of the following properties. For more information on defining and using the `options` parameter, see [Using the `options` parameter](tutorial-options.html).<br/><br/>**Properties**<br/><table class="nested-table"><thead><tr><th>Name</th><th>Type</th><th>Attributes</th><th>Description</th></tr></thead><tbody><tr><td><code>asyncContext</code></td><td>Object</td><td>&lt;optional&gt;</td><td>Developers can provide any object they wish to access in the callback method.</td></tr></tbody></table>|
 |`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#AsyncResult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.html).
 
@@ -1318,7 +1318,7 @@ Custom properties are stored as key/value pairs on a per-app, per-item basis. Th
 |---|---|---|---|
 |`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#AsyncResult) object. For more information, see [Using asynchronous methods](tutorial-asynchronous.html).
 
-The custom properties are provided as a [`CustomProperties`](CustomProperties.html) object in the `asyncResult.value` property. This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to the server.|
+The custom properties are provided as a [`CustomProperties`](CustomProperties.md) object in the `asyncResult.value` property. This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to the server.|
 |`userContext`| Object| &lt;optional&gt;|Developers can provide any object they wish to access in the callback function. This object can be accessed by the `asyncResult.asyncContext` property in the callback function.|
 
 ##### Requirements

@@ -2,7 +2,7 @@
 
 # userProfile
 
-## [Office](Office.html)[.context](Office.context.html)[.mailbox](Office.context.mailbox.html). userProfile
+## [Office](Office.md)[.context](Office.context.html)[.mailbox](Office.context.mailbox.html). userProfile
 
 ##### Requirements
 

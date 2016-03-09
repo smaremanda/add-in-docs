@@ -2,7 +2,7 @@
 
 # mailbox
 
-## [Office](Office.html)[.context](Office.context.html). mailbox
+## [Office](Office.md)[.context](Office.context.html). mailbox
 
 Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
 
