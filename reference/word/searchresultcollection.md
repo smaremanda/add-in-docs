@@ -7,7 +7,7 @@ _Applies to: Word 2016, Word for iPad, Word for Mac_
 ## Properties
 | Property	   | Type	|Description
 |:---------------|:--------|:----------|
-|items|[SearchResult[]](searchresult.md)|A collection of searchResult objects. Read-only.|
+|items|[Range[]](range.md)|A collection of range objects that contain the search results. Read-only.|
 
 ## Relationships
 None
@@ -41,7 +41,7 @@ void
 ```js
 // Run a batch operation against the Word object model.
 Word.run(function (context) {
-    
+
     // Setup the search options.
     var options = Word.SearchOptions.newObject(context);
     options.matchWildCards = true;
@@ -51,8 +51,8 @@ Word.run(function (context) {
 
     // Queue a command to load the search results and get the font property values.
     context.load(searchResults, 'font');
-    
-    // Synchronize the document state by executing the queued commands, 
+
+    // Synchronize the document state by executing the queued commands,
     // and return a promise to indicate task completion.
     return context.sync().then(function () {
         console.log('Found count: ' + searchResults.items.length);
@@ -63,11 +63,11 @@ Word.run(function (context) {
             searchResults.items[i].font.highlightColor = 'pink';
             searchResults.items[i].font.bold = true;
         }
-        
-        // Synchronize the document state by executing the queued commands, 
+
+        // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
         return context.sync();
-    });  
+    });
 })
 .catch(function (error) {
     console.log('Error: ' + JSON.stringify(error));
@@ -79,4 +79,4 @@ Word.run(function (context) {
 
 ## Support details
 
-Use the [requirement set](https://msdn.microsoft.com/EN-US/library/office/mt590206.aspx) in run time checks to make sure your application is supported by the host version of Word. For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](https://msdn.microsoft.com/EN-US/library/office/dn833104.aspx). 
+Use the [requirement set](https://msdn.microsoft.com/EN-US/library/office/mt590206.aspx) in run time checks to make sure your application is supported by the host version of Word. For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](https://msdn.microsoft.com/EN-US/library/office/dn833104.aspx).
