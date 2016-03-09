@@ -27,7 +27,7 @@ Specifying a minimum requirement set version in the manifest controls which Outl
 
 However, specifying a requirement set doesn't limit your add-in to the APIs in that version. If the add-in specifies requirement set v1.1 but is running in an Outlook client that supports v1.3, the add-in can still use these new APIs. The requirement set only controls which Outlook clients the add-in appears in.
 
-To check availability of any APIs from a requirement set greater than the one specified in the manifest, you can use standard JavaScript technique:
+To check availability of any APIs from a requirement set greater than the one specified in the manifest, you can use standard JavaScript:
 
 
 
