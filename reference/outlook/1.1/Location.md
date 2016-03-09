@@ -16,7 +16,7 @@ Provides methods to get and set the location of a meeting in an Outlook add-in.
 
 ### Methods
 
-####  getAsync(optionsopt, callback)
+####  getAsync([options], callback)
 
 Gets the location of an appointment.
 
@@ -38,7 +38,7 @@ The location of the appointment is provided as a string in the `asyncResult.valu
 |[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.1|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose|
-####  setAsync(location, optionsopt, callbackopt)
+####  setAsync(location, [options], [callback])
 
 Sets the location of an appointment.
 

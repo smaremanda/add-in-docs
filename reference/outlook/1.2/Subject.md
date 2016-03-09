@@ -16,7 +16,7 @@ Provides methods to get and set the subject of an appointment or message in an O
 
 ### Methods
 
-####  getAsync(optionsopt, callback)
+####  getAsync([options], callback)
 
 Gets the subject of an appointment or message.
 
@@ -38,7 +38,7 @@ The subject of the item is provided as a string in the `asyncResult.value` prope
 |[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.1|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose|
-####  setAsync(subject, optionsopt, callbackopt)
+####  setAsync(subject, [options], [callback])
 
 Sets the subject of an appointment or message.
 

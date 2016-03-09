@@ -16,7 +16,7 @@ The `body` object provides methods for adding and updating the content of the me
 
 ### Methods
 
-####  getAsync(coercionType, optionsopt, callbackopt)
+####  getAsync(coercionType, [options], [callback])
 
 Returns the current body in a specified format.
 
@@ -63,7 +63,7 @@ The following is an example of the `result` parameter passed to the callback fun
 }  
 ```
 
-####  getTypeAsync(optionsopt, callbackopt)
+####  getTypeAsync([options], [callback])
 
 Gets a value that indicates whether the content is in HTML or text format.
 
@@ -83,7 +83,7 @@ The content type is returned as one of the [CoercionType](Office.md#coerciontype
 |[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.1|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose|
-####  prependAsync(data, optionsopt, callbackopt)
+####  prependAsync(data, [options], [callback])
 
 Adds the specified content to the beginning of the item body.
 
@@ -113,7 +113,7 @@ Office.context.mailbox.item.body.prependAsync(
 |[Minimum mailbox requirement set version](./tutorial-api-requirement-sets.md)| 1.1|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadWriteItem|
 |Applicable Outlook mode| Compose|
-####  setAsync(data, optionsopt, callbackopt)
+####  setAsync(data, [options], [callback])
 
 Replaces the entire body with the specified text.
 
@@ -167,7 +167,7 @@ The following is an example of the `result` parameter passed to the callback fun
 }
 ```
 
-####  setSelectedDataAsync(data, optionsopt, callbackopt)
+####  setSelectedDataAsync(data, [options], [callback])
 
 Replaces the selection in the body with the specified text.
 

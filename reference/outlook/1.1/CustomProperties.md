@@ -92,7 +92,7 @@ To make the removal of the property permanent, you must call the [`saveAsync`](C
 |[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| ReadItem|
 |Applicable Outlook mode| Compose or read|
-####  saveAsync(callbackopt, asyncContextopt)
+####  saveAsync([callback], [asyncContext])
 
 Saves item-specific custom properties to the server.
 

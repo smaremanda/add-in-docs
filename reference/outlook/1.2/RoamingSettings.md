@@ -78,7 +78,7 @@ Removes the specified setting.
 |[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
 |[Minimum permission level](https://msdn.microsoft.com/EN-US/library/office/fp161087.aspx)| Restricted|
 |Applicable Outlook mode| Compose or read|
-####  saveAsync(callbackopt)
+####  saveAsync([callback])
 
 Saves the settings.
 

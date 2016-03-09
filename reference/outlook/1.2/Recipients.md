@@ -14,7 +14,7 @@
 
 ### Methods
 
-####  addAsync(recipients, optionsopt, callbackopt)
+####  addAsync(recipients, [options], [callback])
 
 Adds a recipient list to the existing recipients for an appointment or message.
 
@@ -65,7 +65,7 @@ Office.context.mailbox.item.to.addAsync(newRecipients, function(result) {
 });
 ```
 
-####  getAsync(optionsopt, callback)
+####  getAsync([options], callback)
 
 Gets a recipient list for an appointment or message.
 
@@ -104,7 +104,7 @@ Office.context.mailbox.item.optionalAttendees.getAsync(function(result) {
 });
 ```
 
-####  setAsync(recipients, optionsopt, callback)
+####  setAsync(recipients, [options], callback)
 
 Sets a recipient list for an appointment or message.
 

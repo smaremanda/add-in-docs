@@ -16,7 +16,7 @@ The `NotificationMessages` object is returned as the [`notificationMessages`](Of
 
 ### Methods
 
-####  addAsync(key, JSONmessage, optionsopt, callbackopt)
+####  addAsync(key, JSONmessage, [options], [callback])
 
 Adds a notification to an item.
 
@@ -59,7 +59,7 @@ Office.context.mailbox.item.notificationMessages.addAsync("error", {
 });
 ```
 
-####  getAllAsync(optionsopt, callbackopt)
+####  getAllAsync([options], [callback])
 
 Returns all keys and messages for an item.
 
@@ -95,7 +95,7 @@ Office.context.mailbox.item.notificationMessages.getAllAsync(function (asyncResu
   }
 ```
 
-####  removeAsync(key, optionsopt, callbackopt)
+####  removeAsync(key, [options], [callback])
 
 Removes a notification message for an item.
 
@@ -124,7 +124,7 @@ If the key is not found, a `KeyNotFound` error is returned in the `asyncResult.e
 Office.context.mailbox.item.notificationMessages.removeAsync("progress");
 ```
 
-####  replaceAsync(key, JSONmessage, optionsopt, callbackopt)
+####  replaceAsync(key, JSONmessage, [options], [callback])
 
 Replaces a notification message that has a given key with another message.
 

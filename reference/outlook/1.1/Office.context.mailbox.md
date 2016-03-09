@@ -228,7 +228,7 @@ Office.context.mailbox.displayNewAppointmentForm(
   });
 ```
 
-#### getCallbackTokenAsync(callback, userContextopt)
+#### getCallbackTokenAsync(callback, [userContext])
 
 Gets a string that contains a token used to get an attachment or item from an Exchange Server.
 
@@ -267,7 +267,7 @@ function cb(asyncResult) {
 }
 ```
 
-####  getUserIdentityTokenAsync(callback, userContextopt)
+####  getUserIdentityTokenAsync(callback, [userContext])
 
 Gets a token identifying the user and the Office Add-in.
 
@@ -302,7 +302,7 @@ function cb(asyncResult) {
 }
 ```
 
-####  makeEwsRequestAsync(data, callback, userContextopt)
+####  makeEwsRequestAsync(data, callback, [userContext])
 
 Makes an asynchronous request to an Exchange Web Services (EWS) service on the Exchange server that hosts the user’s mailbox.
 
