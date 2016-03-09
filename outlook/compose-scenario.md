@@ -1,7 +1,8 @@
 
 # Create Outlook add-ins for compose forms
 Build Outlook add-ins for the read scenario and find information for available API features. 
-
+
+
 
 
 ## Setting up Outlook add-ins for compose forms
@@ -71,7 +72,7 @@ Compose add-ins are implemented as [Add-in commands for Outlook](../outlook/add-
 
 
 
-- [Get Started with Outlook add-ins for Office 365](https://dev.outlook.com/MailAppsGettingStarted/GetStarted.aspx)
+- [Get Started with Outlook add-ins for Office 365](https://dev.outlook.com/MailAppsGettingStarted/GetStarted)
     
 - [Outlook add-ins](../outlook/outlook-add-ins.md)
     
