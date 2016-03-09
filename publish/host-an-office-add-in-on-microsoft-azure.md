@@ -1,7 +1,8 @@
 
 # Host an Office Add-in on Microsoft Azure
 Use Visual Studio 2015 and the Microsoft Office Developer Tools to publish to and then host an Office Add-in on Microsoft Azure. 
-
+
+
 
 The simplest Office Add-in is made up of an XML manifest file and an HTML page. The XML manifest file describes the add-in's characteristics, such as its name, what Office client applications it can run in, and the URL for the add-in's HTML page. The HTML page is contained in an Office Add-in website and users see it and interact with it when they install and run your add-in. For more information about Office Add-ins in general, see [Office Add-ins platform overview](../overview/platform-overview.md).
 
@@ -29,13 +30,13 @@ You'll learn:
 
 1. Install the Azure SDK for .NET from the [Azure downloads page](http://azure.microsoft.com/en-us/downloads/). If you don't have Visual Studio installed, Visual Studio Express for Web is installed with the SDK.
     
-      1. Under  **Languages**, choose  **.NET**.
+    - Under  **Languages**, choose  **.NET**.
     
-  2. Choose the version of the Azure .NET SDK that matches your version of Visual Studio, if you already have Visual Studio installed.
+    - Choose the version of the Azure .NET SDK that matches your version of Visual Studio, if you already have Visual Studio installed.
     
-  3. When you're asked whether to run or save the installation executable, choose  **Run**.
+    - When you're asked whether to run or save the installation executable, choose  **Run**.
     
-  4. In the Web Platform Installer window, choose  **Install**.
+    - In the Web Platform Installer window, choose  **Install**.
     
 2. Install Office 2013 if you haven't already. 
     
@@ -149,11 +150,9 @@ There are a couple of ways you can create an empty Azure website. If you're usin
     
 4. Choose  **Office Add-in**, and then choose **OK** to accept the default settings.
     
-5. 
+5. When  **Create Office Add-in** appears, leave the default choice for a Task pane add-in and choose **Next**.
     
-6. When  **Create Office Add-in** appears, leave the default choice for a Task pane add-in and choose **Next**.
-    
-7. On the next page, clear all check boxes except for Word, then choose  **Finish**.
+6. On the next page, clear all check boxes except for Word, then choose  **Finish**.
     
 Your basic Office Add-in is created and ready to publish to Azure.
 Because we're focusing on how to publish to Azure, you won't make any changes to the sample add-in that you created by using the standard Office Add-in template in Visual Studio.
