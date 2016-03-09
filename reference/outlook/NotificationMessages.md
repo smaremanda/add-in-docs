@@ -4,7 +4,7 @@
 
 ## NotificationMessages
 
-The `NotificationMessages` object is returned as the [`notificationMessages`](Office.context.mailbox.item.html#notificationMessages) property of an item.
+The `NotificationMessages` object is returned as the [`notificationMessages`](Office.context.mailbox.item.md#notificationmessages) property of an item.
 
 ##### Requirements
 
