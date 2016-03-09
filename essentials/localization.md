@@ -1,6 +1,7 @@
 
 # Localization for Office Add-ins
-
+
+
 
 You can implement any localization scheme that's appropriate for your Office Add-in. The JavaScript API and manifest schema of the Office Add-ins platform provide some choices. You can use the JavaScript API for Office to determine a locale and display strings based on the locale of the host application, or to interpret or display data based on the locale of the data. You can use the manifest to specify locale-specific add-in file location and descriptive information. Alternatively, you can use Microsoft Ajax script to support globalization and localization.
 
@@ -61,7 +62,7 @@ Every Office Add-in specifies a [DefaultLocale](http://msdn.microsoft.com/librar
 |**Description***|Users in each locale you specify can see a localized description for the add-in in the Office Store (or private catalog).<br/>For Outlook add-ins, users can see the description in the Exchange Admin Center (EAC) after installation.|
 |**DisplayName***|Users in each locale you specify can see a localized description for the add-in in the Office Store (or private catalog).<br/>For Outlook add-ins, users can see the display name as a label for the Outlook add-in button and in the EAC after installation.<br/>For content and task pane add-ins, users can see the display name in the ribbon after installing the add-in.|
 |**IconUrl**|The icon image is optional. You can use the same override technique to specify a certain image for a specific culture. If you use and localize an icon, users in each locale you specify can see a localized icon image for the add-in.<br/>For Outlook add-ins, users can see the icon in the EAC after installing the add-in.<br/>For content and task pane add-ins, users can see the icon in the ribbon after installing the add-in.|
-|**HighResolutionIconUrl**  **Important**  This element is available only when using add-in manifest version 1.1.|The high resolution icon image is optional but if it is specified, it must occur after the  **IconUrl** element. When **HighResolutionIconUrl** is specified, and the add-in is installed on a device that supports high dpi resolution, the **HighResolutionIconUrl** value is used instead of the value for **IconUrl**.<br/>You can use the same override technique to specify a certain image for a specific culture. If you use and localize an icon, users in each locale you specify can see a localized icon image for the add-in.<br/>For Outlook add-ins, users can see the icon in the EAC after installing the add-in.<br/>For content and task pane add-ins, users can see the icon in the ribbon after installing the add-in.|
+|**HighResolutionIconUrl** <br/><br/>**Important**  This element is available only when using add-in manifest version 1.1.|The high resolution icon image is optional but if it is specified, it must occur after the  **IconUrl** element. When **HighResolutionIconUrl** is specified, and the add-in is installed on a device that supports high dpi resolution, the **HighResolutionIconUrl** value is used instead of the value for **IconUrl**.<br/>You can use the same override technique to specify a certain image for a specific culture. If you use and localize an icon, users in each locale you specify can see a localized icon image for the add-in.<br/>For Outlook add-ins, users can see the icon in the EAC after installing the add-in.<br/>For content and task pane add-ins, users can see the icon in the ribbon after installing the add-in.|
 |**SourceLocation**|Users in each locale you specify can see a webpage that you specifically design for the add-in for that locale. |
 
  >**Note** You can localize the description and display name for only the locales that Office supports. See [Language identifiers and OptionState Id values in Office 2013](http://technet.microsoft.com/en-us/library/cc179219.aspx) for a list of languages and locales for the current release of Office.
@@ -80,7 +81,7 @@ For example, an Office Add-in can specify the  **DefaultLocale** as `en-us`. For
 </DisplayName>
 ```
 
-This means that the add-in assumes the  `en-us` locale by default. Users see the English display name of "Video player" for all locales unless the client computer's locale is `fr-fr`, in which case users would see the French display name "Lecteur vidÃ©o".
+This means that the add-in assumes the  `en-us` locale by default. Users see the English display name of "Video player" for all locales unless the client computer's locale is `fr-fr`, in which case users would see the French display name "Lecteur vidéo".
 
 The following example applies a locale override for the  **Description** element. It first specifies a default locale of `en-us` and an English description, and then specifies an [Override](http://msdn.microsoft.com/library/d6a0e4f3-1cc9-c544-89bf-8923c7434316.aspx) statement with a French description for the `fr-fr` locale:
 
@@ -186,7 +187,7 @@ After you install the Language Pack, you can configure Office 2013 to use the in
 ### Create an Office Add-in project
 
 
-1. In Visual Studio, choose  **File**,  **New Project**.
+1. In Visual Studio, choose  **File** > **New Project**.
     
 2. In the  **New Project** dialog box, under **Templates**, expand  **Visual Basic** or **Visual C#**, expand  **Office/SharePoint**, and then choose  **Office Add-ins**.
     
