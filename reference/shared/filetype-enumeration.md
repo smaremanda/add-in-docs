@@ -7,7 +7,7 @@ Specifies the format in which to return the document.
 |**Hosts:**|PowerPoint, Word|
 |**Last changed in**|1.1|
 
-```
+```js
 Office.FileType
 ```
 
@@ -47,10 +47,6 @@ For more information about Office host application and server requirements, see 
 |**Namespace**|Office|
 
 ## Support history
-
-
-
-****
 
 
 |**Version**|**Changes**|
