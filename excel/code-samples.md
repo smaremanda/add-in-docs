@@ -1,7 +1,7 @@
 
 # Office Add-ins code samples
 
-Great code samples are key to getting up and running quickly. To find samples, go to [GitHub](https://github.com/OfficeDev) or the [MSDN Code Gallery](http://code.msdn.microsoft.com/officeapps/site/search?f%5B0%5D.Type=Technology&amp;f%5B0%5D.Value=apps%20for%20Office). 
+Accurate code samples are key to getting up and running quickly. To find samples, go to [GitHub](https://github.com/OfficeDev) or the [MSDN Code Gallery](http://code.msdn.microsoft.com/officeapps/site/search?f%5B0%5D.Type=Technology&amp;f%5B0%5D.Value=apps%20for%20Office). 
 
 You can download all the samples at once as a [sample pack](http://code.msdn.microsoft.com/office/Apps-for-Office-code-d04762b7), or browse and download individual samples. You can also find a list of samples on [dev.office.com](http://dev.office.com/code-samples#?filters=apps%20for%20office,office%20add-ins).
 
