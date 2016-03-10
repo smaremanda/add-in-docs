@@ -6,7 +6,7 @@
 The result of creating an attempt for the given component.
 
 ```
-ICreateAttemptResult extends Core.IActionResult
+interface ICreateAttemptResult extends Core.IActionResult
 ```
 
 
