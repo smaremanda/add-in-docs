@@ -52,12 +52,6 @@ The manifest specifies settings and capabilities of the add-in, such as the foll
 For more information, see [Office Add-ins XML manifest](../overview/add-in-manifests.md).
 
 
-## Development basics
-
-
-To create Office Add-ins, you can use any application that can save a file as text. But, you can create an Office Add-in more easily with the Napa Office 365 Development Tools web-based development environment, or in Visual Studio 2015 with its project templates, development environment, and debugging tools. 
-
-
 ### Basic components of an Office Add-in
 
 To create an Office Add-in, at minimum, a developer must create an HTML webpage and a manifest file. The HTML page can be published to any web server, or web hosting service, such as [Microsoft Azure](../publish/host-an-office-add-in-on-microsoft-azure.md). The manifest file must point to the location of the webpage and be published to any of the following locations: the public Office Store, an internal SharePoint list, or a shared network location.
@@ -68,20 +62,6 @@ The most basic Office Add-in consists of a static HTML page that is hosted insid
 **Components of a Hello World Office Add-in**
 
 ![Components of a Hello World add-in](../images/DK2_AgaveOverview07.png)
-
-
-### Creating an Office Add-in with Napa Office 365 Development Tools
-
-Perhaps the quickest way to build an Office Add-in is directly out of a browser. You can do this by using Napa. Napa is web-based development environment that lets you create projects, write code, and run your add-ins all within the browser. There is no need to install any other tools such as Visual Studio. To learn more, see [Create Office Add-ins with Napa with an Office 365 Developer Site](../essentials/create-office-add-ins-with-napa-with-a-developer-site.md). To get started developing right away, see these topics:
-
-
-- [Create a task pane add-in with Napa Office 365 Development Tools](../essentials/create-a-task-pane-add-in-with-napa.md)
-    
-- [Create a content add-in for Excel with Napa Office 365 Development Tools](../essentials/create-a-content-add-in-with-napa.md)
-    
-- [Get Started with Mail add-ins for Office 365](https://dev.outlook.com/MailAppsGettingStarted/GetStarted.aspx)
-    
-Also, if you begin developing Office Add-ins with Napa, you can develop these projects further in Visual Studio to leverage its more powerful features such as advanced debugging or the ability to use a web project as part of your add-in.
 
 
 ### Creating an Office Add-in with Visual Studio
@@ -114,8 +94,9 @@ The Word and Excel JavaScript APIs provide host-specific object models that you 
 
 ## Types of Office Add-ins
 
-
 This section provides a quick look at the three types of Office Add-ins: task pane, content, and Outlook. 
+
+### App Commands
 
 
 ### Task pane add-ins
@@ -190,9 +171,7 @@ For more details, see [Requirements for running Office Add-ins](../overview/requ
 
 ## What can an Office Add-in do?
 
-
 An Office Add-in can do pretty much anything a webpage can do inside the browser, such as the following:
-
 
 - Provide an interactive UI and custom logic through JavaScript.
     
@@ -212,80 +191,7 @@ In addition to the regular capabilities of a webpage, Office Add-ins can interac
 - For Outlook add-ins, the API lets your add-in access email message, meeting request, and appointment item properties, and user profile information. The API also provides access to some Exchange Web Services operations. For more information about Outlook add-ins, see [Outlook add-ins](../outlook/outlook-add-ins.md). For a summary of top features of Outlook add-ins, see [Overview of Outlook add-ins architecture and features](../outlook/overview.md).
     
 
-## Understanding the runtime
-
-
-Office Add-ins are secured by an add-in runtime environment, a multiple-tier permissions model, and performance governors. This framework protects the user's experience in the following ways:
-
-
-- Access to the host application's UI frame is managed.
-    
-- Only indirect access to the host application's UI thread is allowed.
-    
-- Modal interactions are not allowed, for example JavaScript alerts aren't allowed.
-    
-Further, the runtime framework provides the following benefits to ensure that an Office Add-in can't damage an add-in user's environment:
-
-
-- Isolates the process the add-in runs in.
-    
-- Doesn't require .dll or .exe replacement or ActiveX components.
-    
-- Makes add-ins easy to install and uninstall.
-    
-Also, the runtime framework governs the use of memory, CPU, and network resources by Office Add-ins to ensure that good performance and reliability are maintained. 
-
-For more information about the Office Add-ins privacy and security model, see [Privacy and security for Office Add-ins](../essentials/privacy-and-security.md).
-
-
-## Publishing basics
-
-
-You can publish Office Add-ins to four distribution end-points:
-
-
--  **Office Store** - This is a public marketplace that Microsoft hosts and regulates on Office.com. In the Office Store, developers around the world can publish and sell their custom Office solutions, and then end users and IT professionals can download them for personal or corporate use. 
-    
-    When a developer uploads an add-in to the Office Store, Microsoft validates the code. For example, it verifies that the add-in manifest markup is valid and complete. If the code is valid, Microsoft digitally signs the add-in package. The Office Store then takes care of the consumer download experience from discovery to purchase, upgrades, and updates.
-    
--  **Office Add-ins catalog on SharePoint** - For task pane and content add-ins, IT departments can deploy private add-in catalogs to provide the same add-in acquisition experience that the Office Store provides. This new catalog and development platform enables IT departments to use a streamlined method to distribute Office and SharePoint Add-ins to managed users from a central location. 
-    
-    Add-in catalogs are available to all SharePoint 2013 customers (including Office 365 and SharePoint on-premise). An add-in catalog enables publishing and management of both internally created add-ins as well as add-ins that are available in the Office Store and licensed for corporate use. 
-    
--  **Exchange catalog** - This is a private catalog for Outlook add-ins that is available to users of the Exchange server on which it resides. It enables publishing and management of corporate Outlook add-ins, including internally created add-ins as well as add-ins that are available in the Office Store and licensed for corporate use.
-    
--  **Network shared folder add-in catalog** - IT departments and developers can also deploy task pane and content add-ins to a central network shared folder, where the manifest files will be stored and managed. Users can then acquire add-ins by specifying this shared folder as a trusted catalog, or IT departments can configure this shared folder as a trusted catalog by using a registry setting.
-    
-For more information, see [Publish your Office Add-in](../publish/publish.md).
-
-
-## Scenarios
-
-
-The following scenarios show that Office Add-ins are targeted, quick-hit add-ins that can be used to solve complex, time-consuming problems.
-
-These scenarios suggest ways in which you can, for example, surface line-of-business data and drive adoption of structured business processes in the familiar Office UI across multiple devices. They suggest how you could use an expense-managing add-in that connects Office, SharePoint, and SAP, or create an add-in that combines sales data with maps from the Bing Maps web service to create more effective sales reports. They show how you can unlock the return on your existing investments, such as enterprise resource planning (ERP) and customer relationship management (CRM) applications, by spending less time navigating to and from these applications from an Office client.
-
-Scenarios include:
-
-
--  **Translation wizard** - A Word task pane add-in that automatically translates selected text from the document language to another language selected from a drop-down list.
-    
--  **Chart creation** - An Excel content add-in that builds a chart automatically from selected data.
-    
--  **Third-party service integration** - A Word or Excel task pane add-in that automatically displays the Wikipedia page that corresponds to selected text.
-    
--  **Rich mash-ups** - A Bing map content add-in in Excel that plots the offshore equipment and resource locations for a petroleum company, including getting this information in real time from the company resource-management system.
-    
--  **Spec validation** - A section or paragraph of a design specification for an aircraft component is flagged as outdated, because a Word task pane add-in that communicates with a business system to validate the contents against the latest spec.
-    
--  **Kicking off workflows** - An Outlook add-in can assist creating a message or meeting request based on templates, inserting meeting location details or user's choice of a signature, and attaching related documents.
-    
--  **Order details surfaced in context** - An Outlook add-in that detects a purchase order number or customer number embedded in an email message can present details of the order or customer in the message. This could include an action to take, such as approval.
-    
-
 ## Additional resources
-
 
 
 - [Office Add-ins](../overview/office-add-ins.md)
