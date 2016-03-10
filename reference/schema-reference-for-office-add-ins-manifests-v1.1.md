@@ -4,7 +4,7 @@
 
  _**Applies to:** apps for Office_
 
-Learn more about [supported hosts and other requirements](../overview/requirements-for-running-office-add-ins.md).
+Learn more about [supported hosts and other requirements](../../docs/overview/requirements-for-running-office-add-ins.md).
 
 {insert introductory content}
 

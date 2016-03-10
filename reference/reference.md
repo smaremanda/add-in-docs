@@ -20,7 +20,7 @@ Find API and schema reference information for Office Add-ins.
 ## Additional resources
 
 
-- [Office Add-ins](../overview/office-add-ins.md)
+- [Office Add-ins](../../docs/overview/office-add-ins.md)
     
-- [Office Add-ins development lifecycle](../design/add-in-development-lifecycle.md)
+- [Office Add-ins development lifecycle](../../docs/design/add-in-development-lifecycle.md)
     
