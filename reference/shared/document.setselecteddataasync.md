@@ -69,7 +69,9 @@ Additionally, the following application-specific actions apply when writing data
     
   - If  _data_ is HTML, the specified HTML is inserted.
     
-     >**Important**  If any of the HTML you insert is invalid, Word won't raise an error. Word will insert as much of the HTML as it can and omits any invalid data.
+     >**Important**<br/>
+     ****
+     If any of the HTML you insert is invalid, Word won't raise an error. Word will insert as much of the HTML as it can and omits any invalid data.
   - If  _data_ is Office Open XML, the specified XML is inserted.
     
   - If  _data_ is a base64 encoded image stream, the specified image is inserted.
