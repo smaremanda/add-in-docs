@@ -17,9 +17,7 @@ You can find a list of samples on [dev.office.com](http://dev.office.com/code-sa
 
 If you don't see a sample that you are looking for, take advantage of our community feature to [request a code sample](http://code.msdn.microsoft.com/officeapps/site/requests). 
 
- >**Note**
- ----
-If you use the Napa Office 365 Development Tools to create Office Add-ins, you can share the code and pages in your Napa project with someone else by using the Share Project feature. To share an add-in project, load the project in Napa and then choose the  **Share Project** button on the side of the page. The Share Project feature creates a copy of the add-in project and provides you with a public link. Others can use the public link to view a copy of the add-in project.
+**Note** If you use the Napa Office 365 Development Tools to create Office Add-ins, you can share the code and pages in your Napa project with someone else by using the Share Project feature. To share an add-in project, load the project in Napa and then choose the  **Share Project** button on the side of the page. The Share Project feature creates a copy of the add-in project and provides you with a public link. Others can use the public link to view a copy of the add-in project.
 
 
 ## Additional resources
