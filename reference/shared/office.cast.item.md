@@ -18,6 +18,34 @@ Provides IntelliSense specific to compose or read mode messages and appointments
 Office.cast.item.toAppointmentCompose(Office.context.mailbox.item);
 ```
 
+```js
+Office.cast.item.toAppointmentRead(Office.context.mailbox.item);
+```
+
+```js
+Office.cast.item.toAppointment(Office.context.mailbox.item);
+```
+
+```js
+Office.cast.item.toItemCompose(Office.context.mailbox.item);
+```
+
+```js
+Office.cast.item.toItemRead(Office.context.mailbox.item);
+```
+
+```js
+Office.cast.item.toMessageCompose(Office.context.mailbox.item);
+```
+
+```js
+Office.cast.item.toMessageRead(Office.context.mailbox.item);
+```
+
+```js
+Office.cast.item.toMessage(Office.context.mailbox.item);
+```
+
 
 ## Return value
 
