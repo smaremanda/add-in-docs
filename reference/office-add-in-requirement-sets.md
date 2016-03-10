@@ -1,6 +1,5 @@
 
 # Office add-in requirement sets
-List of all Office add-in requirement sets, and methods that do not belong to a requirement set in Office.js.
 
 Requirement sets are named groups of API members. Office add-ins use requirement sets specified in the manifest or using a runtime check to determine if an Office host supports APIs needed by the add-in. For more information, see [Specify Office hosts and API requirements](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx).
 
@@ -12,7 +11,7 @@ The following table lists the names of requirement sets, the methods in each set
 
 
 
-|**Set name**|**Version**|**Methods in set**|**Office host**|
+|**Set name**|**Version**|**Office host**|**Methods in set**|
 |:-----|:-----|:-----|:-----|
 |ExcelApi|1.1|Excel 2016<br>Excel&nbsp;Online|All elements in the Excel namespace|
 |WordApi|1.2|Word 2016|All elements in the Word namespace. The following methods were added to this version of WordApi:<br>Body.select(selectionMode)<br>Body.insertInlinePictureFromBase64(base64EncodedImage, insertLocation)<br>contentControl.select(selectionMode)<br>contentControl.insertInlinePictureFromBase64(base64EncodedImage, insertLocation)<br>inlinePicture.paragraph<br>inlinePicture.delete<br>inlinePicture.insertBreak(breakType, insertLocation)<br>inlinePicture.insertFileFromBase64(base64file, insertLocation)<br>inlinePicture.insertHtml(html, insertLocation)<br>inlinePicture.insertInlinePictureFromBase64(base64file, insertLocation)<br>inlinePicture.insertOoxml(ooxml, insertLocation)<br>inlinePicture.insertParagraph(paragraphText, insertLocation)<br>inlinePicture.insertText(text, insertLocation)<br>inlinePicture.select(selectionMode)<br>paragraph.select(selectionMode)<br>range.inlinePictures<br>range.select(selectionMode)<br>range.insertInlinePictureFomBase64(base64EcodedImage, insertLocation)|
@@ -48,7 +47,7 @@ The following methods in the JavaScript API for Office aren't part of a requirem
 
 |**Method name**|**Office host support**|
 |:-----|:-----|
-|Bindings.addFromPromptAsync|Access web apps, Excel and Excel Online|
+|Bindings.addFromPromptAsync|Access web apps, Excel, and Excel Online|
 |Document.getFilePropertiesAsync|Excel, Excel Online, Word, and PowerPoint|
 |Document.getProjectFieldAsync|Project Standard 2013 and Project Professional 2013|
 |Document.getResourceFieldAsync|Project Standard 2013 and Project Professional 2013|
