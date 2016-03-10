@@ -7,7 +7,7 @@ Specifies the type of place or object to navigate to.
 |**Hosts:**|Excel, PowerPoint, Word|
 |**Added in**|1.1|
 
-```
+```js
 Office.GoToType
 ```
 
@@ -20,10 +20,10 @@ Office.GoToType
 
 |**Enumeration**|**Value**|**Description**|**Supported clients**|
 |:-----|:-----|:-----|:-----|
-|Office.GoToType.Binding|"binding"|Goes to a binding object using the specified binding id.|ExcelWord|
+|Office.GoToType.Binding|"binding"|Goes to a binding object using the specified binding id.|Excel</br>Word|
 |Office.GoToType.NamedItem|"namedItem"|Goes to an item using that item's name, such as the name assigned to a table or range.In Excel, you can use any structured reference for a named range or table: "Worksheet2!Table1"|Excel|
 |Office.GoToType.Slide|"slide"|Goes to a slide using the specified id.|PowerPoint|
-|Office.GoToType.Index|"index"|Goes to the specified index by slide number or enum: **Office.Index.First** **Office.Index.Last** **Office.Index.Next** **Office.Index.Previous**|PowerPoint|
+|Office.GoToType.Index|"index"|Goes to the specified index by slide number or enum:</br>**Office.Index.First**</br>**Office.Index.Last**</br>**Office.Index.Next**</br>**Office.Index.Previous**|PowerPoint|
 
 ## Support details
 
