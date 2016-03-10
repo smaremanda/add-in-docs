@@ -7,7 +7,7 @@ Specifies whether filtering from the host application is applied when the data i
 |**Hosts:**|Excel, Project, Word|
 |**Last changed in**|1.1|
 
-```
+```js
 Office.FilterType
 ```
 
@@ -47,11 +47,6 @@ For more information about Office host application and server requirements, see 
 |**Namespace**|Office|
 
 ## Support history
-
-
-
-****
-
 
 |**Version**|**Changes**|
 |:-----|:-----|
