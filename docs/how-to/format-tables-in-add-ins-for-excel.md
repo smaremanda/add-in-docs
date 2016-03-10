@@ -1,7 +1,8 @@
 
 # Format tables in add-ins for Excel
 Learn how to specify formatting for tables in add-ins for Excel.
-
+
+
 
 This article explains the different features of the formatting API and outlines how to use them. In this release, you can programmatically specify cell formatting and some other options only for tables (not for  **Office.CoercionType.Text** or **Office.CoercionType.Matrix** data structures) and only in Excel add-ins. To set formatting with your add-in:
 
@@ -184,7 +185,7 @@ For  `format:` values, available settings correspond to a subset of those in the
 |**Key**|**Values**|**Notes**|
 |:-----|:-----|:-----|
 | `alignHorizontal:`|"general" | "left" | "center" | "right" | "fill" | "justify" | "center across selection" | "distributed"|When combined with an indent value, only the following combinations are supported:
-<ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p><span class="code">alignHorizontal: "left"</span> and <span class="code">indentLeft: <value></span></p></li><li><p><span class="code">alignHorizontal: "right"</span> and <span class="code">indentRight: <value></span></p></li><li><p><span class="code">alignHorizontal: "distributed"</span> and <span class="code">indentDistributed: <value></span></p></li></ul>|
+<ul><li><p><span class="code">alignHorizontal: "left"</span> and <span class="code">indentLeft: <value></span></p></li><li><p><span class="code">alignHorizontal: "right"</span> and <span class="code">indentRight: <value></span></p></li><li><p><span class="code">alignHorizontal: "distributed"</span> and <span class="code">indentDistributed: <value></span></p></li></ul>|
 | `alignVertical:`|"top" | "center" | "bottom" | "justify" | "distributed"||
 
 
@@ -275,11 +276,11 @@ For  `format:` values, available settings correspond to a subset of those in the
 |**Key**|**Values**|**Notes**|
 |:-----|:-----|:-----|
 | `indentLeft:`|**Number**|When combined with an alignment value, only the following combination is supported:
-<ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p><span class="code">alignHorizontal: "left"</span> and <span class="code">indentLeft: <value></span></p></li></ul>|
+<ul><li><p><span class="code">alignHorizontal: "left"</span> and <span class="code">indentLeft: <value></span></p></li></ul>|
 | `indentRight:`|**Number**|When combined with an alignment value, only the following combination is supported:
-<ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p><span class="code">alignHorizontal: "right"</span> and <span class="code">indentRight: <value></span></p></li></ul>|
+<ul><li><p><span class="code">alignHorizontal: "right"</span> and <span class="code">indentRight: <value></span></p></li></ul>|
 | `indentDistributed:`|**Number**|When combined with an alignment value, only the following combination is supported:
-<ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p><span class="code">alignHorizontal: "distributed"</span> and <span class="code">indentDistributed: <value></span></p></li></ul>|
+<ul><li><p><span class="code">alignHorizontal: "distributed"</span> and <span class="code">indentDistributed: <value></span></p></li></ul>|
 
 
 
@@ -288,8 +289,7 @@ For  `format:` values, available settings correspond to a subset of those in the
 
 |**Key**|**Values**|**Notes**|
 |:-----|:-----|:-----|
-| `numberFormat:`|**String**|To specify number formatting, use a custom number format string. For example, to specify two decimal places with a comma as the thousands separator, you'd specify:  `numberFormat:"#,###.00"`These are the same custom format strings you can [create with the Custom format category on the Number tab in the Format Cells dialog box](http://office.microsoft.com/en-us/excel-help/create-or-delete-a-custom-number-format-HA102749035.aspx?CTT=1). **Tip:** You can see what a format string looks like for a standard category in the **Format Cells** dialog box in Excel with the following steps:
-<ol xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>Select a standard format category, for example <span class="ui">Currency</span>, from the <span class="ui">Category</span> list.</p></li><li><p>Set the format's options in the right side of the dialog box.</p></li><li><p>Select the <span class="ui">Custom</span> category to view the format string at the top of the <span class="ui">Type</span> list.</p></li></ol>|
+| `numberFormat:`|**String**|To specify number formatting, use a custom number format string. For example, to specify two decimal places with a comma as the thousands separator, you'd specify:  `numberFormat:"#,###.00"`These are the same custom format strings you can [create with the Custom format category on the Number tab in the Format Cells dialog box](http://office.microsoft.com/en-us/excel-help/create-or-delete-a-custom-number-format-HA102749035.aspx?CTT=1). **Tip:** You can see what a format string looks like for a standard category in the **Format Cells** dialog box in Excel with the following steps:<br/><ol><li><p>Select a standard format category, for example <span class="ui">Currency</span>, from the <span class="ui">Category</span> list.</p></li><li><p>Set the format's options in the right side of the dialog box.</p></li><li><p>Select the <span class="ui">Custom</span> category to view the format string at the top of the <span class="ui">Type</span> list.</p></li></ol>|
 
 
 
