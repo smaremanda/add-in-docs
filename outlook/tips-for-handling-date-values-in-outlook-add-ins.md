@@ -1,7 +1,8 @@
 
 # Tips for handling date values in Outlook add-ins
 Explore tips on how Outlook add-ins should handle input and output date values for the various date-related methods in the JavaScript API for Office.
-
+
+
 
 
 ## General JavaScript date-time support
@@ -18,7 +19,7 @@ The following example creates a  **Date** object `myLocalDate` in local time, an
 
 
 
-```
+```js
 // Create and get the current date represented 
 // in the client computer time zone.
 var myLocalDate = new Date (); 
@@ -60,11 +61,7 @@ The following are the properties and methods in the JavaScript API for Office th
 |**API member**|**Time zone representation**|**Example in an Outlook rich client**|**Example in Outlook Web App or OWA for Devices**|
 |:-----|:-----|:-----|:-----|
 |[Office.context.mailbox.userProfile.timeZone](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.userProfile.html)|In an Outlook rich client, this property returns the client computer time zone. In Outlook Web App and OWA for Devices, this property returns the EAC time zone. |EST|PST|
-|[Office.context.mailbox.item.dateTimeCreated](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html) and [Office.context.mailbox.item.dateTimeModified](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|Each of these properties returns a JavaScript  **Date** object. This **Date** value is UTC-correct, as shown in the following example - `myUTCDate` has the same value in an Outlook rich client, Outlook Web App and OWA for Devices.
-```
-var myDate = Office.mailbox.item.dateTimeCreated;
-var myUTCDate = myDate.getUTCDate;
-```
+|[Office.context.mailbox.item.dateTimeCreated](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html) and [Office.context.mailbox.item.dateTimeModified](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|Each of these properties returns a JavaScript  **Date** object. This **Date** value is UTC-correct, as shown in the following example - `myUTCDate` has the same value in an Outlook rich client, Outlook Web App and OWA for Devices.<br/><code><br/>var myDate = Office.mailbox.item.dateTimeCreated;<br/>var myUTCDate = myDate.getUTCDate;</code>
 
 However, calling  `myDate.getDate` returns a date value in the client computer time zone, which is consistent with the time zone used to display date times values in the Outlook rich client interface, but may be different from the EAC time zone that Outlook Web App and OWA for Devices use in its user interface.|If the item is created at 9am UTC:  `Office.mailbox.item.dateTimeCreated.getHours` returns 4am EST.If the item is modified at 11am UTC:  `Office.mailbox.item.dateTimeModified.getHours` returns 6am EST.|If the item creation time is 9am UTC:  `Office.mailbox.item.dateTimeCreated.getHours` returns 4am EST.If the item is modified at 11am UTC:  `Office.mailbox.item.dateTimeModified.getHours` returns 6am EST.Notice that if you want to display the creation or modification time in the user interface, you would want to first convert the time to PST to be consistent with the rest of the user interface.|
 |[Office.context.mailbox.displayNewAppointmentForm](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.html)|Each of the  _Start_ and _End_ parameters requires a JavaScript **Date** object. The arguments should be UTC-correct regardless of the time zone used in the user interface of an Outlook rich client, Outlook Web App or OWA for Devices.|If the start and end times for the appointment form are 9am UTC and 11am UTC, then you should assure that the  `start` and `end` arguments are UTC-correct, which means:
@@ -84,7 +81,7 @@ These helper methods take care of any need to handle date or time differently fo
 If you are displaying the item creation time (**Item.dateTimeCreated**) or modification time (**Item.dateTimeModified**) in the user interface, first use  **convertToLocalClientTime** to convert the **Date** object provided by these properties to obtain a dictionary representation in the appropriate local time. Then display the parts of the dictionary date. The following is an example of this scenario:
 
 
-```
+```js
 // This date is UTC-correct.
 var myDate = Office.context.mailbox.item.dateTimeCreated;
 
@@ -118,7 +115,7 @@ In the following example, assume  `myLocalDictionaryStartDate` and `myLocalDicti
 
 
 
-```
+```js
 var myUTCCorrectStartDate = Office.context.mailbox.convertToUtcClientTime(myLocalDictionaryStartDate);
 var myUTCCorrectEndDate = Office.context.mailbox.convertToUtcClientTime(myLocalDictionaryEndDate);
 
