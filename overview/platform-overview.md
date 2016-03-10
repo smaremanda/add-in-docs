@@ -1,7 +1,8 @@
 
 # Office Add-ins platform overview
 Use the Office Add-ins platform to create engaging new consumer and enterprise experiences for Office client applications. Using the power of the web and standard web technologies like HTML5, XML, CSS3, JavaScript, and REST APIs, create add-ins that interact with Office documents, email messages, meeting requests, and appointments.
-
+
+
 
 This article provides a quick overview of the Office Add-ins platform and how an add-in works with an Office application. To find out how to start developing add-ins right away, see [Development basics](#StartBuildingApps_DevelopmentBasics). 
 
@@ -18,7 +19,7 @@ To try out some add-ins, you can install the following add-ins from the Office S
 
 |**Office product**|**Add-in**|
 |:-----|:-----|
-|Excel|[Bing Maps](https://store.office.com/bing-maps-WA102957661.aspx?assetid=WA102957661&amp;homapppos=0&amp;homappcat=Data Visualization + BI&amp;homchv=0)|
+|Excel|[Bing Maps](https://store.office.com/bing-maps-WA102957661.aspx?assetid=WA102957661&amp;homapppos=0&amp;homappcat=Data Visualization%20+%20BI&amp;homchv=0)|
 |Outlook|[Package Tracker](https://store.office.com/package-tracker-WA104162083.aspx?assetid=WA104162083)|
 |PowerPoint|[Khan Content from Microsoft](https://store.office.com/khan-content-from-microsoft-WA104320031.aspx?assetid=WA104320031)|
 |Word|[Translator](https://store.office.com/translator-WA104124372.aspx?assetid=WA104124372)|
