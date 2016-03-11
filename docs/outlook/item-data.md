@@ -1,7 +1,8 @@
 
 # Get and set Outlook item data in read or compose forms
 Learn about the ways to get or set data on an appointment or message from an Outlook add-in, taking into account whether the user is viewing or composing that item. You can use item-level properties in the JavaScript API for Office, Exchange Server callback tokens, or Exchange Web Services.
-
+
+
 
 
 ## Properties available in read and compose forms
@@ -28,18 +29,18 @@ Table 1 shows the item-level properties in the JavaScript API for Office that ar
 |Appointments|[location](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|String|[Location](http://dev.outlook.com/reference/add-ins/Location.html)|
 |Appointments and messages|[normalizedSubject](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|String|Property not available|
 |Appointments|[optionalAttendees](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|[EmailAddressDetails](http://dev.outlook.com/reference/add-ins/simple-types.html)|[Recipients](http://dev.outlook.com/reference/add-ins/Recipients.html)|
-|Appointments|[organizer](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|**EmailAddressDetails**|Property not available|
-|Appointments|[requiredAttendees](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|**EmailAddressDetails**|**Recipients**|
+|Appointments|[organizer](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|EmailAddressDetails|Property not available|
+|Appointments|[requiredAttendees](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|EmailAddressDetails|Recipients|
 |Appointments|[resources](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|String|Property not available|
-|Appointments|[start](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|JavaScript  **Date** object|**Time**|
+|Appointments|[start](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|JavaScript  **Date** object|Time|
 |Appointments and messages|[subject](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|String|[Subject](http://dev.outlook.com/reference/add-ins/Subject.html)|
-|Messages|[bcc](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|Property not available|**Recipients**|
-|Messages|[cc](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|**EmailAddressDetails**|**Recipients**|
+|Messages|[bcc](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|Property not available|Recipients|
+|Messages|[cc](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|EmailAddressDetails|Recipients|
 |Messages|[conversationId](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|String|String (read only)|
-|Messages|[from](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|**EmailAddressDetails**|Property not available|
+|Messages|[from](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|EmailAddressDetails|Property not available|
 |Messages|[internetMessageId](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|Integer|Property not available|
-|Messages|[sender](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|**EmailAddressDetails**|Property not available|
-|Messages|[to](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|**EmailAddressDetails**|**Recipients**|
+|Messages|[sender](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|EmailAddressDetails|Property not available|
+|Messages|[to](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|EmailAddressDetails|Recipients|
 
 ## Using Exchange Server callback tokens from a read add-in
 
