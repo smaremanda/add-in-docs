@@ -17,7 +17,7 @@ Specifies any additional domains that your Office Add-in will use to load pages.
 
 ## Contained in:
 
- _ [OfficeApp](../../reference/manifest/officeapp.md)_
+[OfficeApp](../../reference/manifest/officeapp.md)
 
 
 ## Can contain:
