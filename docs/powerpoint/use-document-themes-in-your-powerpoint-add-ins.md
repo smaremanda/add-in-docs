@@ -1,7 +1,8 @@
 
 # Use document themes in your PowerPoint add-ins
 Learn how to use the OfficeThemes.css style sheet to define and dynamically update fonts and colors in the pages of your add-ins for PowerPoint so that they match the current document and Office UI theme.
-
+
+
 
 
 ## Understanding Office themes
@@ -21,10 +22,14 @@ Using OfficeThemes.css, helps you design add-ins that are coordinated with Power
 Every Office document theme defines 12 colors. Ten of these colors are available when you set font, background, and other color settings in a presentation with the color picker:
 
 
-![Color palette](../../images/off15app_ColorPalette.png)To view or customize the full set of 12 theme colors in PowerPoint, in the  **Variants** group on the **Design** tab, click the **More** drop-down - then point to **Color**, and click  **Customize Colors** to display the **Create New Theme Colors** dialog box:
+![Color palette](../../images/off15app_ColorPalette.png)
+
+To view or customize the full set of 12 theme colors in PowerPoint, in the  **Variants** group on the **Design** tab, click the **More** drop-down - then point to **Color**, and click  **Customize Colors** to display the **Create New Theme Colors** dialog box:
 
 
-![Create new theme colors dialog box](../../images/off15app_CreateNewThemeColors.png)The first four colors are for text and backgrounds. Text that is created with the light colors will always be legible over the dark colors, and text that is created with dark colors will always be legible over the light colors. The next six are accent colors that are always visible over the four potential background colors. The last two colors are for hyperlinks and followed hyperlinks.
+![Create new theme colors dialog box](../../images/off15app_CreateNewThemeColors.png)
+
+The first four colors are for text and backgrounds. Text that is created with the light colors will always be legible over the dark colors, and text that is created with dark colors will always be legible over the light colors. The next six are accent colors that are always visible over the four potential background colors. The last two colors are for hyperlinks and followed hyperlinks.
 
 
 ### Document theme fonts
@@ -32,7 +37,9 @@ Every Office document theme defines 12 colors. Ten of these colors are available
 Every Office document theme also defines two fonts -- one for headings and one for body text. PowerPoint uses these fonts to construct automatic text styles. In addition,  **Quick Styles** galleries for text and **WordArt** use these same theme fonts. These two fonts are available as the first two selections when you select fonts with the font picker:
 
 
-![The font picker](../../images/off15app_FontPicker.png)To view or customize theme fonts in PowerPoint, in the  **Variants** group on the **Design** tab, click the **More** drop-down - then point to **Fonts**, and click  **Customize Fonts** to display the **Create New Theme Fonts** dialog box.
+![The font picker](../../images/off15app_FontPicker.png)
+
+To view or customize theme fonts in PowerPoint, in the  **Variants** group on the **Design** tab, click the **More** drop-down - then point to **Fonts**, and click  **Customize Fonts** to display the **Create New Theme Fonts** dialog box.
 
 
 ![Create new theme fonts dialog box](../../images/off15app_CreateNewThemeFonts.png)
@@ -43,7 +50,9 @@ Every Office document theme also defines two fonts -- one for headings and one f
 Office also lets you choose between several predefined themes that specify some of the colors and fonts used in the UI of all Office applications. To do that, you use the  **File** > **Account** > **Office Theme** drop-down (from any Office application).
 
 
-![Office theme drop-down](../../images/off15app_OfficeThemePicker.png)OfficeThemes.css includes classes that you can use in your task pane add-ins for PowerPoint so they will use these same fonts and colors. This lets you design your task pane add-ins that match the appearance of built-in task panes.
+![Office theme drop-down](../../images/off15app_OfficeThemePicker.png)
+
+OfficeThemes.css includes classes that you can use in your task pane add-ins for PowerPoint so they will use these same fonts and colors. This lets you design your task pane add-ins that match the appearance of built-in task panes.
 
 
 ## Using OfficeThemes.css
@@ -111,7 +120,9 @@ The following shows a simple example of HTML in a content add-in that uses the O
 At runtime, when inserted into a presentation that uses the default  **Office Theme**, the content add-in is rendered like this:
 
 
-![Content app running with Office theme](../../images/off15app_ContentApp_OfficeTheme.png)If you change the presentation to use another theme or customize the presentation's theme, the fonts and colors specified with OfficeThemes.css classes will dynamically update to correspond to the fonts and colors of the presentation's theme. Using the same HTML example as above, if the presentation the add-in is inserted into uses the  **Facet** theme, the add-in rendering will look like this:
+![Content app running with Office theme](../../images/off15app_ContentApp_OfficeTheme.png)
+
+If you change the presentation to use another theme or customize the presentation's theme, the fonts and colors specified with OfficeThemes.css classes will dynamically update to correspond to the fonts and colors of the presentation's theme. Using the same HTML example as above, if the presentation the add-in is inserted into uses the  **Facet** theme, the add-in rendering will look like this:
 
 
 ![Content app running with Facet theme](../../images/off15app_ContentApp_FacetTheme.png)
@@ -124,8 +135,6 @@ In addition to the document theme, users can customize the color scheme of the O
 The following shows a simple example of HTML in a task pane add-in that uses OfficeTheme.css classes to specify font color and background color. For details about the OfficeThemes.css classes that correspond to fonts and colors of the Office UI theme, see [Theme classes for task pane add-ins](#officeCSS_Classes_TaskPane).
 
 
-
-
 ```HTML
 <body> <div id="content-header" class="office-officeTheme-primary-fontColor office-officeTheme-primary-bgColor"> <div class="padding"> <h1>Welcome</h1> </div> </div> <div id="content-main" class="office-officeTheme-secondary-fontColor office-officeTheme-secondary-bgColor"> <div class="padding"> <p>Add home screen content here.</p> <p>For example:</p> <button id="get-data-from-selection">Get data from selection</button> <p> <a target="_blank" class="office-a" href="https://go.microsoft.com/fwlink/?LinkId=276812"> Find more samples online... </a> </p> </div> </div> </body> 
 ```
@@ -133,7 +142,9 @@ The following shows a simple example of HTML in a task pane add-in that uses Off
 When running in PowerPoint with  **File** > **Account** > **Office Theme** set to **White**, the task pane add-in is rendered like this:
 
 
-![Task pane with Office White theme](../../images/off15app_TaskPaneThemeWhite.png)If you change  **OfficeTheme** to **Dark Gray**, the fonts and colors specified with OfficeThemes.css classes will dynamically update to render like this:
+![Task pane with Office White theme](../../images/off15app_TaskPaneThemeWhite.png)
+
+If you change  **OfficeTheme** to **Dark Gray**, the fonts and colors specified with OfficeThemes.css classes will dynamically update to render like this:
 
 
 ![Task pane with Office Dark Gray theme](../../images/off15app_TaskPaneThemeDarkGray.png)
