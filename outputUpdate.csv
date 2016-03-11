@@ -5,18 +5,16 @@ Documentation path: C:\Users\Keyur\Desktop\add-in-docs
 Using default table parser definitions
 
 Starting test: Check-links
-Error: \docs\design\add-in-development-best-practices.md: Destination missing for link 'Resource limits and performance optimization for Office Add-ins' to URL '../../docs/essentials/resource-limits-and-performance-optimization.md'
 Error: \docs\design\create-add-in-commands-in-your-manifest-preview.md: BookmarkMissing: for link 'Step 3: Add VersionOverrides element' to URL '#step-3-add-versionoverrides-element'
 Error: \docs\design\create-add-in-commands-in-your-manifest-preview.md: BookmarkMissing: for link 'Step 7: Add the Resources element' to URL '#step-7-add-the-resources-element'
 Error: \docs\design\design-office-add-ins-for-the-ipad.md: Destination missing for link 'Update the version of your JavaScript API for Office and manifest schema files' to URL '../../docs/overview/update-your-javascript-api-for-office-and-manifest-schema-version.md'
 Error: \docs\design\ui-elements\layout-for-content-add-ins.md: BookmarkMissing: for link 'custom HTML-based UI' to URL 'ui-elements.md#custom-HTML-based-UI'
 Error: \docs\design\ui-elements\layout-for-task-pane-add-ins.md: BookmarkMissing: for link 'custom HTML-based UI' to URL 'ui-elements.md#custom-HTML-based-UI'
-Error: \docs\develop\addressing-same-origin-policy-limitations.md: Destination missing for link 'Privacy and security for Office Add-ins' to URL '../../docs/essentials/privacy-and-security.md'
 Error: \docs\develop\asynchronous-programming-in-office-add-ins.md: Destination missing for link 'Understanding the JavaScript API for Office' to URL '../../docs/overview/understanding-the-javascript-api-for-office.md'
 Error: \docs\develop\bind-to-regions-in-a-document-or-spreadsheet.md: BookmarkMissing: for link 'Office.select method' to URL '../../docs/develop/bind-to-regions-in-a-document-or-spreadsheet.md#BindRegions_Select'
-Error: \docs\develop\bind-to-regions-in-a-document-or-spreadsheet.md: Destination missing for link 'Task pane and content add-ins for Office 2013' to URL '../../docs/essentials/task-pane-and-content-add-ins.md'
+Error: \docs\develop\bind-to-regions-in-a-document-or-spreadsheet.md: Destination missing for link 'Task pane and content add-ins for Office 2013' to URL '../../docs/develop/task-pane-and-content-add-ins.md'
 Error: \docs\develop\bind-to-regions-in-a-document-or-spreadsheet.md: Destination missing for link 'Understanding the JavaScript API for Office' to URL '../../docs/overview/understanding-the-javascript-api-for-office.md'
-Error: \docs\develop\create-a-sharepoint-add-in-that-contains-a-document-template-and-a-task-pane-add-in.md: Destination missing for link 'Task pane and content add-ins for Office 2013' to URL '../../docs/essentials/task-pane-and-content-add-ins.md'
+Error: \docs\develop\create-a-sharepoint-add-in-that-contains-a-document-template-and-a-task-pane-add-in.md: Destination missing for link 'Task pane and content add-ins for Office 2013' to URL '../../docs/develop/task-pane-and-content-add-ins.md'
 Error: \docs\develop\create-a-sharepoint-add-in-that-contains-a-document-template-and-a-task-pane-add-in.md: Destination missing for link 'Understanding the JavaScript API for Office' to URL '../../docs/overview/understanding-the-javascript-api-for-office.md'
 Error: \docs\develop\create-better-add-ins-for-word-with-office-open-xml.md: BookmarkMissing: for link 'Additional resources' to URL '../../docs/develop/create-better-add-ins-for-word-with-office-open-xml.md#bk_AdditionalResources'
 Error: \docs\develop\create-better-add-ins-for-word-with-office-open-xml.md: BookmarkMissing: for link 'Creating your own markup: best practices' to URL '../../docs/develop/create-better-add-ins-for-word-with-office-open-xml.md#bk_CreatingOwnMarkup'
@@ -27,24 +25,22 @@ Error: \docs\develop\create-better-add-ins-for-word-with-office-open-xml.md: Boo
 Error: \docs\develop\format-tables-in-add-ins-for-excel.md: Destination missing for link 'use or be updated to use Office.js v1.1 or later' to URL '../../docs/overview/update-your-javascript-api-for-office-and-manifest-schema-version.md'
 Error: \docs\develop\format-tables-in-add-ins-for-excel.md: BookmarkMissing: for link 'clear or update formatting' to URL '#FormatTablesInApps_UpdatingClearing'
 Error: \docs\develop\format-tables-in-add-ins-for-excel.md: BookmarkMissing: for link 'Supported formatting keys and values' to URL '../../docs/develop/format-tables-in-add-ins-for-excel.md#FormatTablesInApps_SupportedFormatting'
-Error: \docs\develop\get-the-whole-document-from-an-add-in-for-powerpoint-or-word.md: Destination missing for link 'Create a task pane or content add-in with Visual Studio' to URL '../../docs/essentials/create-a-task-pane-or-content-add-in-with-visual-studio.md'
-Error: \docs\develop\get-the-whole-document-from-an-add-in-for-powerpoint-or-word.md: Destination missing for link 'Create a task pane or content add-in for Word or Excel by using a text editor' to URL '../../docs/essentials/create-a-task-pane-or-content-add-in-for-word-or-excel-by-using-a-text-editor.md'
-Error: \docs\develop\get-the-whole-document-from-an-add-in-for-powerpoint-or-word.md: Destination missing for link 'Create a task pane add-in with Napa Office 365 Development Tools' to URL '../../docs/essentials/create-a-task-pane-add-in-with-napa.md'
-Error: \docs\develop\get-the-whole-document-from-an-add-in-for-powerpoint-or-word.md: Destination missing for link 'Task pane and content add-ins for Office 2013' to URL '../../docs/essentials/task-pane-and-content-add-ins.md'
-Error: \docs\develop\get-the-whole-document-from-an-add-in-for-powerpoint-or-word.md: Destination missing for link 'Create a task pane or content add-in for Word or Excel by using a text editor' to URL '../../docs/essentials/create-a-task-pane-or-content-add-in-for-word-or-excel-by-using-a-text-editor.md'
+Error: \docs\develop\get-the-whole-document-from-an-add-in-for-powerpoint-or-word.md: Destination missing for link 'Create a task pane or content add-in with Visual Studio' to URL '../../docs/develop/create-a-task-pane-or-content-add-in-with-visual-studio.md'
+Error: \docs\develop\get-the-whole-document-from-an-add-in-for-powerpoint-or-word.md: Destination missing for link 'Create a task pane or content add-in for Word or Excel by using a text editor' to URL '../../docs/develop/create-a-task-pane-or-content-add-in-for-word-or-excel-by-using-a-text-editor.md'
+Error: \docs\develop\get-the-whole-document-from-an-add-in-for-powerpoint-or-word.md: Destination missing for link 'Create a task pane add-in with Napa Office 365 Development Tools' to URL '../../docs/develop/create-a-task-pane-add-in-with-napa.md'
+Error: \docs\develop\get-the-whole-document-from-an-add-in-for-powerpoint-or-word.md: Destination missing for link 'Task pane and content add-ins for Office 2013' to URL '../../docs/develop/task-pane-and-content-add-ins.md'
+Error: \docs\develop\get-the-whole-document-from-an-add-in-for-powerpoint-or-word.md: Destination missing for link 'Create a task pane or content add-in for Word or Excel by using a text editor' to URL '../../docs/develop/create-a-task-pane-or-content-add-in-for-word-or-excel-by-using-a-text-editor.md'
 Error: \docs\develop\loading-the-dom-and-runtime-environment.md: Destination missing for link 'Understanding the JavaScript API for Office' to URL '../../docs/overview/understanding-the-javascript-api-for-office.md'
 Error: \docs\develop\persisting-add-in-state-and-settings.md: Destination missing for link 'Understanding the JavaScript API for Office' to URL '../../docs/overview/understanding-the-javascript-api-for-office.md'
 Error: \docs\develop\read-and-write-data-to-the-active-selection-in-a-document-or-spreadsheet.md: Link specifies ID 'Read selected data' which was not found in the document.
-Error: \docs\develop\read-and-write-data-to-the-active-selection-in-a-document-or-spreadsheet.md: Destination missing for link 'Task pane and content add-ins for Office 2013' to URL '../../docs/essentials/task-pane-and-content-add-ins.md'
+Error: \docs\develop\read-and-write-data-to-the-active-selection-in-a-document-or-spreadsheet.md: Destination missing for link 'Task pane and content add-ins for Office 2013' to URL '../../docs/develop/task-pane-and-content-add-ins.md'
 Error: \docs\develop\read-and-write-data-to-the-active-selection-in-a-document-or-spreadsheet.md: BookmarkMissing: for link 'Read data from a binding' to URL '../../docs/develop/bind-to-regions-in-a-document-or-spreadsheet.md#BindRegions_Read'
 Error: \docs\develop\read-and-write-data-to-the-active-selection-in-a-document-or-spreadsheet.md: BookmarkMissing: for link 'Write data to a binding' to URL '../../docs/develop/bind-to-regions-in-a-document-or-spreadsheet.md#BindRegions_Write'
 Error: \docs\develop\referencing-the-javascript-api-for-office-library-from-its-cdn.md: Link specifies ID 'Update the version of your JavaScript API for Office and manifest schema files' which was not found in the document.
 Error: \docs\develop\referencing-the-javascript-api-for-office-library-from-its-cdn.md: Destination missing for link 'Understanding the JavaScript API for Office' to URL '../../docs/overview/understanding-the-javascript-api-for-office.md'
 Error: \docs\develop\referencing-the-javascript-api-for-office-library-from-its-cdn.md: Destination missing for link 'Office Add-ins platform overview' to URL '../../docs/overview/platform-overview.md'
-Error: \docs\develop\requesting-permissions-for-api-use-in-content-and-task-pane-add-ins.md: Destination missing for link 'Task pane and content add-ins for Office 2013' to URL '../../docs/essentials/task-pane-and-content-add-ins.md'
-Error: \docs\develop\requesting-permissions-for-api-use-in-content-and-task-pane-add-ins.md: Destination missing for link 'Privacy and security for Office Add-ins' to URL '../../docs/essentials/privacy-and-security.md'
+Error: \docs\develop\requesting-permissions-for-api-use-in-content-and-task-pane-add-ins.md: Destination missing for link 'Task pane and content add-ins for Office 2013' to URL '../../docs/develop/task-pane-and-content-add-ins.md'
 Error: \docs\develop\resource-limits-and-performance-optimization.md: Link specifies ID 'Current user' which was not found in the document.
-Error: \docs\develop\resource-limits-and-performance-optimization.md: Destination missing for link 'Privacy and security for Office Add-ins' to URL '../../docs/essentials/privacy-and-security.md'
 Error: \docs\develop\understanding-the-javascript-api-for-office.md: Destination missing for link 'Update the version of your JavaScript API for Office and manifest schema files' to URL '../../docs/overview/update-your-javascript-api-for-office-and-manifest-schema-version.md'
 Error: \docs\develop\understanding-the-javascript-api-for-office.md: Destination missing for link 'Reference the JavaScript API for Office library' to URL '../../docs/get-started/referencing-the-javascript-api-for-office-library-from-its-cdn.md'
 Error: \docs\develop\understanding-the-javascript-api-for-office.md: Destination missing for link 'Loading the DOM and runtime environment' to URL '../../docs/overview/loading-the-dom-and-runtime-environment.md'
@@ -54,20 +50,18 @@ Error: \docs\excel\excel-add-ins-javascript-programming-overview.md: Destination
 Error: \docs\get-started\create-an-office-add-in-using-any-editor.md: Link specifies ID 'project folder' which was not found in the document.
 Error: \docs\get-started\create-an-office-add-in-using-any-editor.md: Link specifies ID 'name-of-your-web-app' which was not found in the document.
 Error: \docs\get-started\create-an-office-add-in-using-any-editor.md: Link specifies ID 'path-to-add-in' which was not found in the document.
-Error: \docs\get-started\create-an-office-add-in-using-any-editor.md: Destination missing for link 'Create and debug Office Add-ins in Visual Studio' to URL '../../docs/essentials/create-and-debug-office-add-ins-in-visual-studio.md'
+Error: \docs\get-started\create-an-office-add-in-using-any-editor.md: Destination missing for link 'Create and debug Office Add-ins in Visual Studio' to URL '../../docs/develop/create-and-debug-office-add-ins-in-visual-studio.md'
 Error: \docs\get-started\create-an-office-add-in-with-napa.md: Destination missing for link 'Office Add-in' to URL '../../docs/overview/platform-overview.md'
-Error: \docs\get-started\create-an-office-add-in-with-napa.md: Destination missing for link 'Create a content add-in for Excel with Napa Office 365 Development Tools' to URL '../../docs/essentials/create-a-content-add-in-with-napa.md'
-Error: \docs\get-started\create-an-office-add-in-with-napa.md: Destination missing for link 'Create a task pane add-in with Napa Office 365 Development Tools' to URL '../../docs/essentials/create-a-task-pane-add-in-with-napa.md'
-Error: \docs\get-started\create-an-office-add-in-with-napa.md: Destination missing for link 'Create a task pane or content add-in with Visual Studio' to URL '../../docs/essentials/create-a-task-pane-or-content-add-in-with-visual-studio.md'
-Error: \docs\get-started\create-an-office-add-in-with-napa.md: Destination missing for link 'Create a task pane or content add-in for Word or Excel by using a text editor' to URL '../../docs/essentials/create-a-task-pane-or-content-add-in-for-word-or-excel-by-using-a-text-editor.md'
-Error: \docs\get-started\create-and-debug-office-add-ins-in-visual-studio.md: Destination missing for link 'Create a task pane or content add-in with Visual Studio' to URL '../../docs/essentials/create-a-task-pane-or-content-add-in-with-visual-studio.md'
+Error: \docs\get-started\create-an-office-add-in-with-napa.md: Destination missing for link 'Create a content add-in for Excel with Napa Office 365 Development Tools' to URL '../../docs/develop/create-a-content-add-in-with-napa.md'
+Error: \docs\get-started\create-an-office-add-in-with-napa.md: Destination missing for link 'Create a task pane add-in with Napa Office 365 Development Tools' to URL '../../docs/develop/create-a-task-pane-add-in-with-napa.md'
+Error: \docs\get-started\create-an-office-add-in-with-napa.md: Destination missing for link 'Create a task pane or content add-in with Visual Studio' to URL '../../docs/develop/create-a-task-pane-or-content-add-in-with-visual-studio.md'
+Error: \docs\get-started\create-an-office-add-in-with-napa.md: Destination missing for link 'Create a task pane or content add-in for Word or Excel by using a text editor' to URL '../../docs/develop/create-a-task-pane-or-content-add-in-for-word-or-excel-by-using-a-text-editor.md'
+Error: \docs\get-started\create-and-debug-office-add-ins-in-visual-studio.md: Destination missing for link 'Create a task pane or content add-in with Visual Studio' to URL '../../docs/develop/create-a-task-pane-or-content-add-in-with-visual-studio.md'
 Error: \docs\outlook\add-and-remove-attachments-to-an-item-in-a-compose-form.md: BookmarkMissing: for link 'passing optional parameters to asynchronous methods' to URL '../../docs/develop/asynchronous-programming-in-office-add-ins.md#AsyncProgramming_OptionalParameters'
 Error: \docs\outlook\apis.md: Link specifies ID 'head' which was not found in the document.
 Error: \docs\outlook\apis.md: Link specifies ID 'src' which was not found in the document.
 Error: \docs\outlook\apis.md: Link specifies ID 'script' which was not found in the document.
 Error: \docs\outlook\apis.md: BookmarkMissing: for link 'makeEwsRequestAsync' to URL '../../reference/outlook/Office.context.mailbox.md#makeewsrequestasyncdata-callback-usercontext'
-Error: \docs\outlook\apis.md: Destination missing for link 'Privacy, permissions, and security for Outlook add-ins' to URL '../outlook/../../docs/essentials/privacy-and-security.md'
-Error: \docs\outlook\apis.md: Destination missing for link 'Privacy, permissions, and security for Outlook add-ins' to URL '../outlook/../../docs/essentials/privacy-and-security.md'
 Error: \docs\outlook\compose-scenario.md: BookmarkMissing: for link 'Specify activation rules in a manifest' to URL '../outlook/manifests/activation-rules.md#MailAppDefineRules_Manifest'
 Error: \docs\outlook\extract-entity-strings-from-an-item.md: BookmarkMissing: for link 'JavaScript implementation' to URL '#olowa15conagave_entitiesJSImplementation'
 Error: \docs\outlook\get-or-set-the-location-of-an-appointment.md: BookmarkMissing: for link 'Setting up Outlook add-ins for compose forms' to URL '../outlook/compose-scenario.md#mod_off15_CreatingForCompose_SettingUp'
@@ -76,7 +70,6 @@ Error: \docs\outlook\get-or-set-the-time-of-an-appointment.md: BookmarkMissing: 
 Error: \docs\outlook\get-set-or-add-recipients.md: BookmarkMissing: for link 'Setting up Outlook add-ins for compose forms' to URL '../outlook/compose-scenario.md#mod_off15_CreatingForCompose_SettingUp'
 Error: \docs\outlook\insert-data-in-the-body.md: BookmarkMissing: for link 'Setting up Outlook add-ins for compose forms' to URL '../outlook/compose-scenario.md#mod_off15_CreatingForCompose_SettingUp'
 Error: \docs\outlook\limits-for-activation-and-javascript-api-for-outlook-add-ins.md: Link specifies ID '\s\S' which was not found in the document.
-Error: \docs\outlook\limits-for-activation-and-javascript-api-for-outlook-add-ins.md: Destination missing for link 'Privacy, permissions, and security for Outlook add-ins' to URL '../outlook/../../docs/essentials/privacy-and-security.md'
 Error: \docs\outlook\match-strings-in-an-item-as-well-known-entities.md: BookmarkMissing: for link 'Activation rules for Outlook add-ins' to URL '../outlook/manifests/activation-rules.md#MailAppDefineRules_Activation'
 Error: \docs\outlook\match-strings-in-an-item-as-well-known-entities.md: BookmarkMissing: for link 'Tips for using well-known entities' to URL '#MailAppEntities_Tips'
 Error: \docs\outlook\match-strings-in-an-item-as-well-known-entities.md: BookmarkMissing: for link 'Retrieving entities in your add-in' to URL '#MailAppEntities_Retrieving'
@@ -91,7 +84,6 @@ Error: \docs\outlook\overview.md: Destination missing for link 'Get attachments 
 Error: \docs\outlook\overview.md: Destination missing for link 'Add and remove attachments to an item in a compose form in Outlook' to URL '62669c4d-6829-4476-bac2-cac95fc0961e.htm'
 Error: \docs\outlook\privacy-and-security.md: BookmarkMissing: for link 'End users: privacy and performance concerns' to URL '#olowa15conagave_privacy'
 Error: \docs\outlook\privacy-and-security.md: BookmarkMissing: for link 'Developers: permission choices and resource usage limits' to URL '#olowa15conagave_choices'
-Error: \docs\outlook\privacy-and-security.md: Destination missing for link 'Privacy and security for Office Add-ins' to URL '../../docs/essentials/privacy-and-security.md'
 Error: \docs\outlook\read-scenario.md: BookmarkMissing: for link 'Specify activation rules in a manifest' to URL '../outlook/manifests/activation-rules.md#MailAppDefineRules_Manifest'
 Error: \docs\outlook\troubleshoot-outlook-add-in-activation.md: Link specifies ID 'GUID' which was not found in the document.
 Error: \docs\outlook\troubleshoot-outlook-add-in-activation.md: Link specifies ID 'BASE 64 Hash' which was not found in the document.
@@ -103,12 +95,8 @@ Error: \docs\outlook\understanding-outlook-add-in-permissions.md: BookmarkMissin
 Error: \docs\outlook\understanding-outlook-add-in-permissions.md: BookmarkMissing: for link 'Get all existing well-known entities' to URL '../outlook/match-strings-in-an-item-as-well-known-entities.md#MailAppEntities_Retrieving'
 Error: \docs\outlook\understanding-outlook-add-in-permissions.md: BookmarkMissing: for link 'well-known entities' to URL '../outlook/manifests/activation-rules.md#MailAppDefineRules_ItemHasKnownEntity'
 Error: \docs\outlook\understanding-outlook-add-in-permissions.md: BookmarkMissing: for link 'regular expressions' to URL '../outlook/manifests/activation-rules.md#MailAppDefineRules_ItemHasRegularExpressionMatch'
-Error: \docs\outlook\understanding-outlook-add-in-permissions.md: Destination missing for link 'Privacy, permissions, and security for Outlook add-ins' to URL '../outlook/../../docs/essentials/privacy-and-security.md'
 Error: \docs\outlook\use-regular-expressions-to-show-an-outlook-add-in.md: BookmarkMissing: for link 'Activation rules for Outlook add-ins' to URL '../outlook/manifests/activation-rules.md#MailAppDefineRules_Activation'
-Error: \docs\outlook\web-services.md: Destination missing for link 'Privacy and security for Office Add-ins' to URL '../../docs/essentials/privacy-and-security.md'
 Error: \docs\outlook\web-services.md: BookmarkMissing: for link 'ReadWriteMailbox permission' to URL '../outlook/understanding-outlook-add-in-permissions.md#olowa15conagave_permmodelreadwrite'
-Error: \docs\outlook\web-services.md: Destination missing for link 'Privacy and security for Office Add-ins' to URL '../../docs/essentials/privacy-and-security.md'
-Error: \docs\outlook\web-services.md: Destination missing for link 'Addressing same-origin policy limitations in Office Add-ins' to URL '../../docs/essentials/addressing-same-origin-policy-limitations.md'
 Error: \docs\outlook\manifests\define-add-in-commands.md: BookmarkMissing: for link 'Resources element' to URL '#VersionOverrides10_Resources'
 Error: \docs\outlook\manifests\define-add-in-commands.md: BookmarkMissing: for link 'FunctionFile element' to URL '#VersionOverrides10_FunctionFile'
 Error: \docs\outlook\manifests\define-add-in-commands.md: BookmarkMissing: for link 'ExtensionPoint element' to URL '#VersionOverrides10_ExtensionPoint'
@@ -118,17 +106,15 @@ Error: \docs\outlook\manifests\define-add-in-commands.md: BookmarkMissing: for l
 Error: \docs\outlook\manifests\define-add-in-commands.md: BookmarkMissing: for link 'Button controls' to URL '#VersionOverrides10_Buttons'
 Error: \docs\outlook\manifests\define-add-in-commands.md: BookmarkMissing: for link 'Menu (dropdown button) controls' to URL '#VersionOverrides10_Menus'
 Error: \docs\outlook\manifests\define-add-in-commands.md: BookmarkMissing: for link 'Button controls' to URL '#VersionOverrides10_Buttons'
-Error: \docs\outlook\manifests\manifests.md: Destination missing for link 'Localization for Office Add-ins' to URL '../../essentials/localization.md'
 Error: \docs\outlook\manifests\manifests.md: Destination missing for link 'Design guidelines for Office Add-ins' to URL '../../docs/design/add-in-design.md'
 Error: \docs\overview\add-in-manifests.md: Destination missing for link 'Update the version of your JavaScript API for Office and manifest schema files' to URL '../../docs/overview/update-your-javascript-api-for-office-and-manifest-schema-version.md'
 Error: \docs\overview\add-in-manifests.md: BookmarkMissing: for link 'Manifest v1.1 XML file examples' to URL '#O15AgaveManifestOverview_Samplev1_1'
 Error: \docs\overview\add-in-manifests.md: Destination missing for link 'Update the version of your JavaScript API for Office and manifest schema files' to URL '../../docs/overview/update-your-javascript-api-for-office-and-manifest-schema-version.md'
-Error: \docs\overview\add-in-manifests.md: Destination missing for link 'Localization for Office Add-ins' to URL '../../docs/essentials/localization.md'
-Error: \docs\overview\office-add-ins.md: Destination missing for link 'Create and debug Office Add-ins in Visual Studio' to URL '../../docs/essentials/create-and-debug-office-add-ins-in-visual-studio.md'
-Error: \docs\overview\office-add-ins.md: Destination missing for link 'Create a task pane or content add-in with Visual Studio' to URL '../../docs/essentials/create-a-task-pane-or-content-add-in-with-visual-studio.md'
-Error: \docs\overview\office-add-ins.md: Destination missing for link 'Create a task pane or content add-in for Word or Excel by using a text editor' to URL '../../docs/essentials/create-a-task-pane-or-content-add-in-for-word-or-excel-by-using-a-text-editor.md'
+Error: \docs\overview\office-add-ins.md: Destination missing for link 'Create and debug Office Add-ins in Visual Studio' to URL '../../docs/develop/create-and-debug-office-add-ins-in-visual-studio.md'
+Error: \docs\overview\office-add-ins.md: Destination missing for link 'Create a task pane or content add-in with Visual Studio' to URL '../../docs/develop/create-a-task-pane-or-content-add-in-with-visual-studio.md'
+Error: \docs\overview\office-add-ins.md: Destination missing for link 'Create a task pane or content add-in for Word or Excel by using a text editor' to URL '../../docs/develop/create-a-task-pane-or-content-add-in-for-word-or-excel-by-using-a-text-editor.md'
 Error: \docs\overview\office-add-ins.md: Destination missing for link 'Understanding the JavaScript API for Office' to URL '../../docs/overview/understanding-the-javascript-api-for-office.md'
-Error: \docs\overview\office-add-ins.md: Destination missing for link 'Task pane and content add-ins for Office 2013' to URL '../../docs/essentials/task-pane-and-content-add-ins.md'
+Error: \docs\overview\office-add-ins.md: Destination missing for link 'Task pane and content add-ins for Office 2013' to URL '../../docs/develop/task-pane-and-content-add-ins.md'
 Error: \docs\overview\requirements-for-running-office-add-ins.md: Destination missing for link 'Office Add-ins platform overview' to URL '../../docs/overview/platform-overview.md'
 Error: \docs\overview\specify-office-hosts-and-api-requirements.md: BookmarkMissing: for link 'Set the Hosts element' to URL '../../docs/overview/specify-office-hosts-and-api-requirements.md#SetHosts'
 Error: \docs\overview\specify-office-hosts-and-api-requirements.md: BookmarkMissing: for link 'Set the Requirements element in the manifest' to URL '../../docs/overview/specify-office-hosts-and-api-requirements.md#RequirementsElement'
@@ -145,14 +131,13 @@ Error: \docs\powerpoint\use-document-themes-in-your-powerpoint-add-ins.md: Bookm
 Error: \docs\powerpoint\office-mix\configuring-and-editing-labsjs-labs-for-office-mix.md: Invalid URL format for link 'Walkthrough: Creating your first lab for Office Mix' to URL '../../powerpoint/office-mix/walkthrough:-creating-your-first-lab-for-office-mix.md'
 Error: \docs\powerpoint\office-mix\labsjs-lab-components.md: Invalid URL format for link 'Walkthrough: Creating your first lab for Office Mix' to URL '../../powerpoint/office-mix/walkthrough:-creating-your-first-lab-for-office-mix.md'
 Error: \docs\project\create-a-project-add-in-that-uses-rest-with-an-on-premises-odata-service.md: Link specifies ID 'version' which was not found in the document.
-Error: \docs\project\create-a-project-add-in-that-uses-rest-with-an-on-premises-odata-service.md: Destination missing for link 'Addressing same-origin policy limitations in Office Add-ins' to URL '../../docs/essentials/addressing-same-origin-policy-limitations.md'
 Error: \docs\project\create-a-project-add-in-that-uses-rest-with-an-on-premises-odata-service.md: BookmarkMissing: for link 'Next steps' to URL '#pj15_HelloProjectData_NextSteps'
 Error: \docs\project\create-a-project-add-in-that-uses-rest-with-an-on-premises-odata-service.md: BookmarkMissing: for link 'Next steps' to URL '#pj15_HelloProjectData_NextSteps'
 Error: \docs\project\create-your-first-task-pane-add-in-for-project-by-using-a-text-editor.md: Destination missing for link 'Understanding the JavaScript API for Office' to URL '../../docs/overview/understanding-the-javascript-api-for-office.md'
 Error: \docs\project\project-add-ins.md: Destination missing for link 'Office Add-ins platform overview' to URL '../../docs/overview/platform-overview.md'
 Error: \docs\project\project-add-ins.md: Destination missing for link 'Office Add-ins platform overview' to URL '../../docs/overview/platform-overview.md'
-Error: \docs\project\project-add-ins.md: Destination missing for link 'Create a task pane or content add-in with Visual Studio' to URL '../../docs/essentials/create-a-task-pane-or-content-add-in-with-visual-studio.md'
-Error: \docs\project\project-add-ins.md: Destination missing for link 'Create Office Add-ins with Napa with an Office 365 Developer Site' to URL '../../docs/essentials/create-office-add-ins-with-napa-with-a-developer-site.md'
+Error: \docs\project\project-add-ins.md: Destination missing for link 'Create a task pane or content add-in with Visual Studio' to URL '../../docs/develop/create-a-task-pane-or-content-add-in-with-visual-studio.md'
+Error: \docs\project\project-add-ins.md: Destination missing for link 'Create Office Add-ins with Napa with an Office 365 Developer Site' to URL '../../docs/develop/create-office-add-ins-with-napa-with-a-developer-site.md'
 Error: \docs\project\project-add-ins.md: Destination missing for link 'Office Add-ins platform overview' to URL '../../docs/overview/platform-overview.md'
 Error: \docs\publish\host-an-office-add-in-on-microsoft-azure.md: Destination missing for link 'Office Add-ins platform overview' to URL '../../docs/overview/platform-overview.md'
 Error: \docs\publish\host-an-office-add-in-on-microsoft-azure.md: Destination missing for link 'Office Add-ins platform overview' to URL '../../docs/overview/platform-overview.md'
@@ -161,7 +146,7 @@ Error: \docs\publish\host-an-office-add-in-on-microsoft-azure.md: BookmarkMissin
 Error: \docs\publish\host-an-office-add-in-on-microsoft-azure.md: BookmarkMissing: for link 'Step 5: Publish your Office Add-in to the Azure website' to URL '../publish/host-an-office-add-in-on-microsoft-azure.md#bk_publishA4OtoAzure'
 Error: \docs\testing\debug-office-add-ins-on-ipad-and-mac.md: Destination missing for link 'Make your Office Add-in available for iPad' to URL '8ddc78f6-5746-412e-9921-182fc159e5e2.md'
 Error: \docs\testing\sideload-an-office-add-in-on-ipad-and-mac.md: Destination missing for link 'Make your Office Add-in available for iPad' to URL '8ddc78f6-5746-412e-9921-182fc159e5e2.md'
-Error: \docs\testing\testing-and-troubleshooting.md: Destination missing for link 'Create and debug Office Add-ins in Visual Studio' to URL '../../docs/essentials/create-and-debug-office-add-ins-in-visual-studio.md'
+Error: \docs\testing\testing-and-troubleshooting.md: Destination missing for link 'Create and debug Office Add-ins in Visual Studio' to URL '../../docs/develop/create-and-debug-office-add-ins-in-visual-studio.md'
 Error: \docs\word\word-add-ins.md: Destination missing for link 'platform overview' to URL '../../docs/overview/platform-overview.md'
 Error: \docs\word\word-add-ins.md: Destination missing for link 'Word add-ins programming guide' to URL 'word-add-ins-programming-guide.md'
 Error: \reference\javascript-api-for-office.md: Link specifies ID 'JavaScript API for Office' which was not found in the document.
@@ -622,15 +607,11 @@ Warning: Page docs/access/access-web-app-add-ins.md has no incoming links.
 Warning: Page docs/design/design-office-add-ins-for-the-ipad.md has no incoming links.
 Warning: Page docs/design/ui-elements/interaction-patterns.md has no incoming links.
 Warning: Page docs/design/ui-elements/using-office-ui-fabric.md has no incoming links.
-Warning: Page docs/develop/addressing-same-origin-policy-limitations.md has no incoming links.
 Warning: Page docs/develop/create-a-sharepoint-add-in-that-contains-a-document-template-and-a-task-pane-add-in.md has no incoming links.
 Warning: Page docs/develop/create-better-add-ins-for-word-with-office-open-xml.md has no incoming links.
 Warning: Page docs/develop/dictionary-task-pane-add-ins.md has no incoming links.
 Warning: Page docs/develop/loading-the-dom-and-runtime-environment.md has no incoming links.
-Warning: Page docs/develop/localization.md has no incoming links.
-Warning: Page docs/develop/privacy-and-security.md has no incoming links.
 Warning: Page docs/develop/referencing-the-javascript-api-for-office-library-from-its-cdn.md has no incoming links.
-Warning: Page docs/develop/resource-limits-and-performance-optimization.md has no incoming links.
 Warning: Page docs/develop/understanding-the-javascript-api-for-office.md has no incoming links.
 Warning: Page docs/develop/update-your-javascript-api-for-office-and-manifest-schema-version.md has no incoming links.
 Warning: Page docs/excel/code-samples.md has no incoming links.
@@ -682,4 +663,4 @@ Warning: Page reference/shared/document-api.md has no incoming links.
 Warning: Page reference/shared/enumerations.md has no incoming links.
 Warning: Page reference/shared/settings.settingschangedeventargs.md has no incoming links.
 Warning: Page reference/word/breaktype.md has no incoming links.
-Test Check-links complete. Failed: Multiple errors occured. duration: 00:00:00.4016808
+Test Check-links complete. Failed: Multiple errors occured. duration: 00:00:00.3404108

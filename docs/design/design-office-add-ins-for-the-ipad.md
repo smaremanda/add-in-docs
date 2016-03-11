@@ -15,7 +15,7 @@ Office Add-ins provide users with additional functionality within the context of
 
   - [Designing for iOS](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/)
 
-- Use version 1.1 of the JavaScript API for Office. For more information, see [Update the version of your JavaScript API for Office and manifest schema files](../../docs/overview/update-your-javascript-api-for-office-and-manifest-schema-version.md). To learn about changes in the API, see [What's changed in the JavaScript API for Office](../../reference/what's-changed-in-the-javascript-api-for-office.md).
+- Use version 1.1 of the JavaScript API for Office. For more information, see [Update the version of your JavaScript API for Office and manifest schema files](../../docs/develop/update-your-javascript-api-for-office-and-manifest-schema-version.md). To learn about changes in the API, see [What's changed in the JavaScript API for Office](../../reference/what's-changed-in-the-javascript-api-for-office.md).
 
 - Make your Office Add-in free on the iPad. Only free Office Add-ins are allowed on the iPad. You can sell the same add-in on other platforms, such as Windows or Office 365. Why make a free Office Add-in? A free add-in allows you to reach more users.
 

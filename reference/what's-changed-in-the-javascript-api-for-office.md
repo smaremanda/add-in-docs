@@ -4,7 +4,7 @@ The JavaScript API for Office is periodically updated with new and updated objec
 
  _**Applies to:** Access apps for SharePoint | apps for Office | Excel | Office Add-ins | Outlook | PowerPoint | Project | Word_
 
-To develop add-ins using new API members, you need to [update the JavaScript API for Office files in your project](../../docs/overview/update-your-javascript-api-for-office-and-manifest-schema-version.md).
+To develop add-ins using new API members, you need to [update the JavaScript API for Office files in your project](../../docs/develop/update-your-javascript-api-for-office-and-manifest-schema-version.md).
 
 To view all API members including those that are unchanged from previous updates, see [JavaScript API for Office](http://msdn.microsoft.com/library/b27e70c3-d87d-4d27-85e0-103996273298%28Office.15%29.aspx).
 

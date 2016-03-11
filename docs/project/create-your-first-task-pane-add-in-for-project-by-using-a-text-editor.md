@@ -8,7 +8,7 @@ You can create a task pane add-in for Project Standard 2013 or Project Professio
 Project 2013 uses the same add-in manifest schema that other Microsoft Office 2013 clients use, and much of the same JavaScript API. The complete code for the add-in that is described in this article is available in the  `Samples\Apps` subdirectory of the Project 2013 SDK download.
 
 Project OM Test sample add-in can get the GUID of a task and properties of the application and the active project. If Project Professional 2013 opens a project that is in a SharePoint library, the add-in can show the URL of the project. The [Project 2013 SDK download](https://www.microsoft.com/en-us/download/details.aspx?id=30435%20) includes the complete source code. When you extract and install the SDK and samples that are in the Project2013SDK.msi file, see the `\Samples\Apps\Copy_to_AppManifests_FileShare` subdirectory for the manifest file and the `\Samples\Apps\Copy_to_AppSource_FileShare` subdirectory for the source code. The JSOMCall.html sample uses JavaScript functions in the office.js file and project-15.js file, which are included. You can use the corresponding debug files (office.debug.js and project-15.debug.js) to examine the functions.
-For an introduction to using JavaScript in Office Add-ins, see [Understanding the JavaScript API for Office](../../docs/overview/understanding-the-javascript-api-for-office.md).
+For an introduction to using JavaScript in Office Add-ins, see [Understanding the JavaScript API for Office](../../docs/develop/understanding-the-javascript-api-for-office.md).
 
 ## Procedure 1. To create the add-in manifest file
 

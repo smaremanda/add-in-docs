@@ -4,7 +4,7 @@
 
 The XML manifest file of an Office Add-in enables you to declaratively describe how your add-in should be activated when an end user installs and uses it with Office documents and applications. The [offappmanifest.xsd](http://msdn.microsoft.com/en-us/library/d5f72bff-3446-c64f-02ca-ab10b5648789%28Office.15%29.aspx) defines an XML schema that is common to all supported Office applications (both rich client applications and their corresponding web app web clients).
 
- >**Note**  Your Office Add-in must use manifest schema version 1.1. For information about how to update your add-in to use manifest 1.1, see [Update the version of your JavaScript API for Office and manifest schema files](../../docs/overview/update-your-javascript-api-for-office-and-manifest-schema-version.md).
+ >**Note**  Your Office Add-in must use manifest schema version 1.1. For information about how to update your add-in to use manifest 1.1, see [Update the version of your JavaScript API for Office and manifest schema files](../../docs/develop/update-your-javascript-api-for-office-and-manifest-schema-version.md).
 
 An XML manifest file based on this schema enables an Office Add-in to do the following:
 
@@ -317,7 +317,7 @@ To make sure that the manifest file that describes your Office Add-in is correct
 For information about validating a manifest against a schema, see [XML Schema (XSD) validation tool](http://stackoverflow.com/questions/124865/xml-schema-xsd-validation-tool).
 
 
- >**Note**  Validating your manifest against the offappmanifest.xsd file is obsolete. For information about updating your manifest to schema version 1.1, see [Update the version of your JavaScript API for Office and manifest schema files](../../docs/overview/update-your-javascript-api-for-office-and-manifest-schema-version.md).
+ >**Note**  Validating your manifest against the offappmanifest.xsd file is obsolete. For information about updating your manifest to schema version 1.1, see [Update the version of your JavaScript API for Office and manifest schema files](../../docs/develop/update-your-javascript-api-for-office-and-manifest-schema-version.md).
 
 
 ## Specify domains you want to open in the add-in window

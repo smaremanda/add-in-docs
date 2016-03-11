@@ -281,7 +281,7 @@ When you are ready to package your add-in for publishing, open the  **Publish Of
     
 - [Publish your Office Add-in](../publish/publish.md)
     
-- [Understanding the JavaScript API for Office](../../docs/overview/understanding-the-javascript-api-for-office.md)
+- [Understanding the JavaScript API for Office](../../docs/develop/understanding-the-javascript-api-for-office.md)
     
 - [Office Add-ins XML manifest](../../docs/overview/add-in-manifests.md)
     

@@ -275,7 +275,7 @@ function saveCallback(asyncResult) {
 
 
 
-- [Understanding the JavaScript API for Office](../../docs/overview/understanding-the-javascript-api-for-office.md)
+- [Understanding the JavaScript API for Office](../../docs/develop/understanding-the-javascript-api-for-office.md)
     
 - [Outlook add-ins](../outlook/outlook-add-ins.md)
     

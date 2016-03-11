@@ -114,7 +114,7 @@ After you update the version of the add-in manifest schema to 1.1, you will need
 
 - [Specify Office hosts and API requirements](../../docs/overview/specify-office-hosts-and-api-requirements.md)
     
-- [Understanding the JavaScript API for Office](../../docs/overview/understanding-the-javascript-api-for-office.md)
+- [Understanding the JavaScript API for Office](../../docs/develop/understanding-the-javascript-api-for-office.md)
     
 - [JavaScript API for Office](http://msdn.microsoft.com/library/b27e70c3-d87d-4d27-85e0-103996273298%28Office.15%29.aspx)
     

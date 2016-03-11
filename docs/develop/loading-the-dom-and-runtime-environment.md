@@ -97,5 +97,5 @@ If your add-in includes more than one page, whenever it loads a new page that pa
 
 
 
-- [Understanding the JavaScript API for Office](../../docs/overview/understanding-the-javascript-api-for-office.md)
+- [Understanding the JavaScript API for Office](../../docs/develop/understanding-the-javascript-api-for-office.md)
     

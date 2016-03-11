@@ -10,7 +10,7 @@ This article explains the different features of the formatting API and outlines 
 
 - Or, if the workbook already contains bound tables (or your add-in uses one of the "addFrom" methods of the [Bindings](http://msdn.microsoft.com/en-us/library/09979e31-3bfb-45be-adda-0f7cc2db1fe1%28Office.15%29.aspx) object to create bound tables when it is initialized), your add-in can call the **Binding.setDataAsync** method on those bound tables to set formatting.
     
- **Important:** To use these new and updated methods to format tables in Excel add-ins, your add-in project must [use or be updated to use Office.js v1.1 or later](../../docs/overview/update-your-javascript-api-for-office-and-manifest-schema-version.md).
+ **Important:** To use these new and updated methods to format tables in Excel add-ins, your add-in project must [use or be updated to use Office.js v1.1 or later](../../docs/develop/update-your-javascript-api-for-office-and-manifest-schema-version.md).
 
 ## Specifying formatting
 
