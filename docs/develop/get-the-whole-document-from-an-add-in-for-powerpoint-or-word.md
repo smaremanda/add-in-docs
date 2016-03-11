@@ -308,7 +308,7 @@ As the name implies, the  **File.closeAsync** method closes the connection to th
 
 
 
-```
+```js
 
 function closeFile(state) {
 
