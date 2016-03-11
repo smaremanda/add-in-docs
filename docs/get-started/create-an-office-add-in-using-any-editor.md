@@ -1,8 +1,5 @@
 
 # Create an Office add-in using any editor
-Create an Office add-in using any text editor and a Yeoman generator. 
-
-
 
 An Office add-in is a web app that you host within an Office application. In this topic, the Yeoman generator provides project scaffolding and build management, while the  `manifest.xml` file tells the Office application where your add-in is located and how you want it to appear. The Office application takes care of hosting it within Office.
 
