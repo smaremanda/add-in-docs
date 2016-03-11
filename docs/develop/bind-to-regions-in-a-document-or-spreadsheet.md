@@ -1,7 +1,8 @@
 
 # Bind to regions in a document or spreadsheet
 This article describes how to create bindings to regions of documents and spreadsheets, and then read and write data to those bindings. It also describes how to create and remove event handlers for changes to data or the user's selection in a binding. 
-
+
+
 
 
 ## Binding to regions in a document or spreadsheet
@@ -381,8 +382,6 @@ function removeEventHandlerFromBinding() {
 
 
 
-- [Task pane and content add-ins for Office 2013](../../docs/develop/task-pane-and-content-add-ins.md)
-    
 - [Understanding the JavaScript API for Office](../../docs/develop/understanding-the-javascript-api-for-office.md)
     
 - [Asynchronous programming in Office Add-ins](../../docs/develop/asynchronous-programming-in-office-add-ins.md)
