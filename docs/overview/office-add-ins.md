@@ -68,8 +68,6 @@ The most powerful way to build an Office Add-in is to use the  **Add-in for Offi
 
 If want to use your favorite text editor to create an Office Add-in, see these topics for information about how to get started:
 
-
-- [Create a task pane or content add-in for Word or Excel by using a text editor](../../docs/develop/create-a-task-pane-or-content-add-in-for-word-or-excel-by-using-a-text-editor.md)
     
 - [Get Started with Outlook add-ins for Outlook.com (Preview)](https://dev.outlook.com/MailAppsGettingStarted/GetStarted/outlook-dot-com.aspx)
     
