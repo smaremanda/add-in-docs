@@ -20,5 +20,5 @@ Specify the value in the BCP 47  `language` tag format, such as en-US.
 
 ## Contained in:
 
- _ [OfficeApp](../../reference/manifest/officeapp.md)_
+[OfficeApp](../../reference/manifest/officeapp.md)
 
