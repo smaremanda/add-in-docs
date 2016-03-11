@@ -67,7 +67,6 @@ To view the JavaScript API for Office organized by the subsets of the API that s
 |[Mailbox API](http://dev.outlook.com/reference/add-ins/index.mdl.aspx)|The subset of the API that you can use in Outlook add-ins.|
 
 ## Supported host applications
-## Supported host applications
 * Access
 * Excel
 * Outlook
