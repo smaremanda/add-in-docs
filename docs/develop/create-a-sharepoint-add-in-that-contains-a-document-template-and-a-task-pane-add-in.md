@@ -120,7 +120,7 @@ In this example, the SharePoint list data is only displayed, but you might use t
     
 - [Complete basic operations using JavaScript library code in SharePoint 2013](http://msdn.microsoft.com/library/29089af8-dbc0-49b7-a1a0-9e311f49c826%28Office.15%29.aspx)
     
-- [Persisting add-in state and settings](../../docs/how-to/persisting-add-in-state-and-settings.md)
+- [Persisting add-in state and settings](../../docs/develop/persisting-add-in-state-and-settings.md)
     
 
 1. In  **Solution Explorer**, expand the  **MyTaskPaneAddin** folder, expand the **Home** folder, and then choose the **Home.html** file.

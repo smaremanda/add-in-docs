@@ -156,7 +156,7 @@ If the data can't be coerced to the specified type, the [AsyncResult.status](htt
 
 The  **Document** object exposes methods that let you to read and write to the user's current selection in a "get and forget" fashion. To do that, the **Document** object provides the **getSelectedDataAsync** and **setSelectedDataAsync** methods.
 
-For code examples that demonstrate how to perform tasks with selections, see [Read and write data to the active selection in a document or spreadsheet](../../docs/how-to/read-and-write-data-to-the-active-selection-in-a-document-or-spreadsheet.md).
+For code examples that demonstrate how to perform tasks with selections, see [Read and write data to the active selection in a document or spreadsheet](../../docs/develop/read-and-write-data-to-the-active-selection-in-a-document-or-spreadsheet.md).
 
 
 ## Working with bindings using the Bindings and Binding objects
@@ -186,7 +186,7 @@ There are three different types of bindings that you specify with the  _bindingT
 |Table binding|Binds to a region of a document that contains a table with headers.Data in a table binding is written or read as a [TableData](http://msdn.microsoft.com/library/2183ea52-5a40-4048-b9a4-7cd66bb0ad5d%28Office.15%29.aspx) object. The **TableData** object exposes the data through the **headers** and **rows** properties.|Any Excel or Word table can be the basis for a table binding. After you establish a table binding, each new row or column a user adds to the table is automatically included in the binding. |
 After a binding is created by using one of the three "add" methods of the  **Bindings** object, you can work with the binding's data and properties by using the methods of the corresponding object: [MatrixBinding](http://msdn.microsoft.com/library/35e8568e-9129-4c00-b30f-d8c3b2555f1e%28Office.15%29.aspx), [TableBinding](http://msdn.microsoft.com/library/1508795b-1c70-456c-b3bf-666d40cf8f50%28Office.15%29.aspx), or [TextBinding](http://msdn.microsoft.com/library/6b71b21d-f64d-425c-99d9-c62b2a9969be%28Office.15%29.aspx). All three of these objects inherit the [getDataAsync](http://msdn.microsoft.com/library/5372ffd8-579d-4fcb-9e5b-e9a2128f3201%28Office.15%29.aspx) and [setDataAsync](http://msdn.microsoft.com/library/6a59bb6d-40b6-4a95-9b98-d70d4616de09%28Office.15%29.aspx) methods of the **Binding** object that enable to you interact with the bound data.
 
-For code examples that demonstrate how to perform tasks with bindings, see [Bind to regions in a document or spreadsheet](../../docs/how-to/bind-to-regions-in-a-document-or-spreadsheet.md).
+For code examples that demonstrate how to perform tasks with bindings, see [Bind to regions in a document or spreadsheet](../../docs/develop/bind-to-regions-in-a-document-or-spreadsheet.md).
 
 
 ## Working with custom XML parts using the CustomXmlParts and CustomXmlPart objects
@@ -202,7 +202,7 @@ The [CustomXmlParts](http://msdn.microsoft.com/library/ba40cd4c-29bb-4f31-875d-6
 
  **Applies to:** Task pane add-ins for Word and PowerPoint
 
-The [Document.getFileAsync](http://msdn.microsoft.com/library/78047418-89c4-4c7d-9427-4735b8559518%28Office.15%29.aspx) method and members of the [File](http://msdn.microsoft.com/library/04923ddf-8efa-459f-aed5-d8c06385ca50%28Office.15%29.aspx) and [Slice](http://msdn.microsoft.com/library/011b5647-639b-4b06-8625-ba9de01bed4b%28Office.15%29.aspx) objects to provide functionality for getting entire Word and PowerPoint document files in slices (chunks) of up to 4 MB at a time. For more information, see [How to: Get all file content from a document in an add-in](../../docs/how-to/get-the-whole-document-from-an-add-in-for-powerpoint-or-word.md).
+The [Document.getFileAsync](http://msdn.microsoft.com/library/78047418-89c4-4c7d-9427-4735b8559518%28Office.15%29.aspx) method and members of the [File](http://msdn.microsoft.com/library/04923ddf-8efa-459f-aed5-d8c06385ca50%28Office.15%29.aspx) and [Slice](http://msdn.microsoft.com/library/011b5647-639b-4b06-8625-ba9de01bed4b%28Office.15%29.aspx) objects to provide functionality for getting entire Word and PowerPoint document files in slices (chunks) of up to 4 MB at a time. For more information, see [How to: Get all file content from a document in an add-in](../../docs/develop/get-the-whole-document-from-an-add-in-for-powerpoint-or-word.md).
 
 
 ## Mailbox object

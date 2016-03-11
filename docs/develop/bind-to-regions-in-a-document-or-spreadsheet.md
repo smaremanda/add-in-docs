@@ -305,7 +305,7 @@ function write(message){
 }
 ```
 
- `myBinding` is a variable that contains an existing text binding in the document. Alternatively, you could use the [Office.select method](../../docs/how-to/bind-to-regions-in-a-document-or-spreadsheet.md#BindRegions_Select) to access the binding by its ID, and start your call to the **getDataAsync** method, like this: `Office.select("bindings#myBindingID").getDataAsync`.
+ `myBinding` is a variable that contains an existing text binding in the document. Alternatively, you could use the [Office.select method](../../docs/develop/bind-to-regions-in-a-document-or-spreadsheet.md#BindRegions_Select) to access the binding by its ID, and start your call to the **getDataAsync** method, like this: `Office.select("bindings#myBindingID").getDataAsync`.
 
 The anonymous function that is passed into the function is a callback that is executed when the operation is complete. The [AsyncResult.value](http://msdn.microsoft.com/en-us/library/453a4b43-0fdc-4ea9-967a-c033fab31507%28Office.15%29.aspx) property contains the data within `myBinding`. The type of the value depends on the binding type. The binding in this example is a text binding. Therefore, the value will contain a string. For additional examples of working with matrix and table bindings, see the [Binding.getDataAsync](http://msdn.microsoft.com/en-us/library/5372ffd8-579d-4fcb-9e5b-e9a2128f3201%28Office.15%29.aspx) method topic.
 
@@ -326,7 +326,7 @@ In the example, the first parameter is the value to set on  `myBinding`. Because
 
 The anonymous function that is passed into the function is a callback that is executed when the operation is complete. The function is called with a single parameter,  _asyncResult_, which contains the status of the result.
 
- **Note:** Starting with the release of the Excel 2013 SP1 and the corresponding build of Excel Online, you can now [set formatting when writing and updating data in bound tables](../../docs/how-to/format-tables-in-add-ins-for-excel.md).
+ **Note:** Starting with the release of the Excel 2013 SP1 and the corresponding build of Excel Online, you can now [set formatting when writing and updating data in bound tables](../../docs/develop/format-tables-in-add-ins-for-excel.md).
 
 
 ### Detect changes to data or the selection in a binding
@@ -385,7 +385,7 @@ function removeEventHandlerFromBinding() {
     
 - [Understanding the JavaScript API for Office](../../docs/overview/understanding-the-javascript-api-for-office.md)
     
-- [Asynchronous programming in Office Add-ins](../../docs/how-to/asynchronous-programming-in-office-add-ins.md)
+- [Asynchronous programming in Office Add-ins](../../docs/develop/asynchronous-programming-in-office-add-ins.md)
     
-- [Read and write data to the active selection in a document or spreadsheet](../../docs/how-to/read-and-write-data-to-the-active-selection-in-a-document-or-spreadsheet.md)
+- [Read and write data to the active selection in a document or spreadsheet](../../docs/develop/read-and-write-data-to-the-active-selection-in-a-document-or-spreadsheet.md)
     

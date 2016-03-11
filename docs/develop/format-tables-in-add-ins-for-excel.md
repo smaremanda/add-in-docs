@@ -80,7 +80,7 @@ Use  `cells:` to specify the range of columns, rows, and cells you want to apply
 
 #### format
 
-Use  `format:` to specify the formatting you want to apply to the range defined with `cells:` as list of JavaScript key-value pairs. For a list of supported values, see [Supported formatting keys and values](../../docs/how-to/format-tables-in-add-ins-for-excel.md#FormatTablesInApps_SupportedFormatting).
+Use  `format:` to specify the formatting you want to apply to the range defined with `cells:` as list of JavaScript key-value pairs. For a list of supported values, see [Supported formatting keys and values](../../docs/develop/format-tables-in-add-ins-for-excel.md#FormatTablesInApps_SupportedFormatting).
 
  **Limits specifying formatting for Excel Online**
 

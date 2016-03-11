@@ -9,7 +9,7 @@ This article describes how to read and write to the user's selection in a docume
 
 The [Document](http://msdn.microsoft.com/en-us/library/f8859516-cc1f-4b20-a8f3-cee37a983e70%28Office.15%29.aspx) object exposes methods that let you to read and write to the user's current selection in a document or spreadsheet. To do that, the **Document** object provides the **getSelectedDataAsync** and **setSelectedDataAsync** methods. This topic also describes how to read, write, and create event handlers to detect changes to the user's selection.
 
-The  **getSelectedDataAsync** method only works against the user's current selection. If you need to persist the selection in the document, so that the same selection is available to read and write to across sessions of running your add-in, you must add abinding using the [Bindings.addFromSelectionAsync](http://msdn.microsoft.com/en-us/library/edc99214-e63e-43f2-9392-97ead42fc155.aspx) method (or create a binding with one of the other "addFrom" methods of the [Bindings](http://msdn.microsoft.com/en-us/library/09979e31-3bfb-45be-adda-0f7cc2db1fe1.aspx) object). For information about creating a binding to a region of a document, and then reading and writing to a binding, see [Bind to regions in a document or spreadsheet](../../docs/how-to/bind-to-regions-in-a-document-or-spreadsheet.md).
+The  **getSelectedDataAsync** method only works against the user's current selection. If you need to persist the selection in the document, so that the same selection is available to read and write to across sessions of running your add-in, you must add abinding using the [Bindings.addFromSelectionAsync](http://msdn.microsoft.com/en-us/library/edc99214-e63e-43f2-9392-97ead42fc155.aspx) method (or create a binding with one of the other "addFrom" methods of the [Bindings](http://msdn.microsoft.com/en-us/library/09979e31-3bfb-45be-adda-0f7cc2db1fe1.aspx) object). For information about creating a binding to a region of a document, and then reading and writing to a binding, see [Bind to regions in a document or spreadsheet](../../docs/develop/bind-to-regions-in-a-document-or-spreadsheet.md).
 
 
 ### [Read selected data] (#ReadWriteDocumentData_Read)
@@ -67,7 +67,7 @@ Passing in different object types for the  _data_ parameter will have different 
 
 The anonymous function passed into the [setSelectedDataAsync](http://msdn.microsoft.com/en-us/library/998f38dc-83bd-4659-a759-4758c632a6ef%28Office.15%29.aspx) method as the _callback_ parameter is executed when the asynchronous call is completed. When you write data to the selection by using the **setSelectedDataAsync** method, the _asyncResult_ parameter of the callback provides access only to the status of the call, and to the [Error](http://msdn.microsoft.com/en-us/library/36d1d048-b888-4bb5-9321-d340bcbc86f4%28Office.15%29.aspx) object if the call fails.
 
- **Note:** Starting with the release of the Excel 2013 SP1 and the corresponding build of Excel Online, you can now [set formatting when writing a table to the current selection](../../docs/how-to/format-tables-in-add-ins-for-excel.md).
+ **Note:** Starting with the release of the Excel 2013 SP1 and the corresponding build of Excel Online, you can now [set formatting when writing a table to the current selection](../../docs/develop/format-tables-in-add-ins-for-excel.md).
 
 
 ### Detect changes in the selection
@@ -121,7 +121,7 @@ The  `myHandler` function name that is passed as the second _handler_ parameter 
 
 - [Task pane and content add-ins for Office 2013](../../docs/essentials/task-pane-and-content-add-ins.md)
     
-- [Read data from a binding](../../docs/how-to/bind-to-regions-in-a-document-or-spreadsheet.md#BindRegions_Read)
+- [Read data from a binding](../../docs/develop/bind-to-regions-in-a-document-or-spreadsheet.md#BindRegions_Read)
     
-- [Write data to a binding](../../docs/how-to/bind-to-regions-in-a-document-or-spreadsheet.md#BindRegions_Write)
+- [Write data to a binding](../../docs/develop/bind-to-regions-in-a-document-or-spreadsheet.md#BindRegions_Write)
     

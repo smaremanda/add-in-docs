@@ -145,22 +145,22 @@ function goToSlideByIndex() {
 See the following articles for more code examples:
 
 
-- [Read selected data](../../docs/how-to/read-and-write-data-to-the-active-selection-in-a-document-or-spreadsheet.md#ReadWriteDocumentData_Read)
+- [Read selected data](../../docs/develop/read-and-write-data-to-the-active-selection-in-a-document-or-spreadsheet.md#ReadWriteDocumentData_Read)
     
-- [Write data to the selection](../../docs/how-to/read-and-write-data-to-the-active-selection-in-a-document-or-spreadsheet.md#ReadWriteDocumentData_Write)
+- [Write data to the selection](../../docs/develop/read-and-write-data-to-the-active-selection-in-a-document-or-spreadsheet.md#ReadWriteDocumentData_Write)
     
-- [Detect changes in the selection](../../docs/how-to/read-and-write-data-to-the-active-selection-in-a-document-or-spreadsheet.md#ReadWriteDocumentData_DetectChanges)
+- [Detect changes in the selection](../../docs/develop/read-and-write-data-to-the-active-selection-in-a-document-or-spreadsheet.md#ReadWriteDocumentData_DetectChanges)
     
-- [How to save add-in state and settings per document for content and task pane add-ins](../../docs/how-to/persisting-add-in-state-and-settings.md#PersistSettingsContentTaskPaneApp)
+- [How to save add-in state and settings per document for content and task pane add-ins](../../docs/develop/persisting-add-in-state-and-settings.md#PersistSettingsContentTaskPaneApp)
     
 
 ## 
 
 
 
-- [Read and write data to the active selection in a document or spreadsheet](../../docs/how-to/read-and-write-data-to-the-active-selection-in-a-document-or-spreadsheet.md)
+- [Read and write data to the active selection in a document or spreadsheet](../../docs/develop/read-and-write-data-to-the-active-selection-in-a-document-or-spreadsheet.md)
     
-- [Get the whole document from an add-in for PowerPoint or Word](../../docs/how-to/get-the-whole-document-from-an-add-in-for-powerpoint-or-word.md)
+- [Get the whole document from an add-in for PowerPoint or Word](../../docs/develop/get-the-whole-document-from-an-add-in-for-powerpoint-or-word.md)
     
 - [Use document themes in your PowerPoint add-ins](../powerpoint/use-document-themes-in-your-powerpoint-add-ins.md)
     

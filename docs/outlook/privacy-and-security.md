@@ -189,7 +189,7 @@ The security model provides the following rights and responsibilities to adminis
     
 - [Outlook add-in APIs](../outlook/apis.md)
     
-- [Requesting permissions for API use in content and task pane add-ins](../../docs/how-to/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins.md)
+- [Requesting permissions for API use in content and task pane add-ins](../../docs/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins.md)
     
 - [Limits for activation and JavaScript API for Outlook add-ins](../outlook/limits-for-activation-and-javascript-api-for-outlook-add-ins.md)
     
