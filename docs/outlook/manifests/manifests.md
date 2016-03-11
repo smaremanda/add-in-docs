@@ -820,7 +820,7 @@ After defining a basic manifest, [define add-in commands for your add-in](../../
     
 - [Item Types and Message Classes](http://msdn.microsoft.com/library/15b709cc-7486-b6c7-88a3-4a4d8e0ab292%28Office.15%29.aspx)
     
-- [Design guidelines for Office Add-ins](../../docs/design/add-in-design.md)
+- [Design guidelines for Office Add-ins](../../design/add-in-design.md)
     
 - [Understanding Outlook add-in permissions](../../outlook/understanding-outlook-add-in-permissions.md)
     
