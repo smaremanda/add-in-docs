@@ -4,7 +4,7 @@ Use Visual Studio 2015 and the Microsoft Office Developer Tools to publish to an
 
 
 
-The simplest Office Add-in is made up of an XML manifest file and an HTML page. The XML manifest file describes the add-in's characteristics, such as its name, what Office client applications it can run in, and the URL for the add-in's HTML page. The HTML page is contained in an Office Add-in website and users see it and interact with it when they install and run your add-in. For more information about Office Add-ins in general, see [Office Add-ins platform overview](../../docs/overview/platform-overview.md).
+The simplest Office Add-in is made up of an XML manifest file and an HTML page. The XML manifest file describes the add-in's characteristics, such as its name, what Office client applications it can run in, and the URL for the add-in's HTML page. The HTML page is contained in an Office Add-in website and users see it and interact with it when they install and run your add-in. For more information about Office Add-ins in general, see [Office Add-ins platform overview](../../docs/overview/office-add-ins.md).
 
 You can host the website of an Office Add-in on many of web hosting platforms, including Azure. To host an Office Add-in on Azure, you publish the Office Add-in to a Azure website. 
 
@@ -44,7 +44,7 @@ You'll learn:
 3. Get your Azure account.
     
      >**Note**  If you're a Microsoft Developer Network (MSDN) subscriber, [you get an Azure subscription as part of your MSDN subscription](http://www.windowsazure.com/en-us/pricing/member-offers/msdn-benefits/).If you're not an MSDN subscriber, you can still [get a free trial of Azure at the Windows Azure website](https://azure.microsoft.com/en-us/pricing/free-trial/). 
-To keep the walkthrough simple and focused on using Azure with an Office Add-in, you'll use a local file share as a trusted catalog where you'll store the add-in's XML manifest file. For an add-in that you intend to be used in a business or more than one business, you might keep the add-in manifest file in SharePoint, or publish the add-in to the Office Store. See Publishing basics in [Office Add-ins platform overview](../../docs/overview/platform-overview.md).
+To keep the walkthrough simple and focused on using Azure with an Office Add-in, you'll use a local file share as a trusted catalog where you'll store the add-in's XML manifest file. For an add-in that you intend to be used in a business or more than one business, you might keep the add-in manifest file in SharePoint, or publish the add-in to the Office Store. See Publishing basics in [Office Add-ins platform overview](../../docs/overview/office-add-ins.md).
 
 
 ## Step 1: Create a network file share to host your add-in manifest file

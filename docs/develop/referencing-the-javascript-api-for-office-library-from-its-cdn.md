@@ -21,7 +21,7 @@ The default Home.html file in your project will contain the appropriate  `script
 
 - [Understanding the JavaScript API for Office](../../docs/develop/understanding-the-javascript-api-for-office.md)
     
-- [Office Add-ins platform overview](../../docs/overview/platform-overview.md)
+- [Office Add-ins platform overview](../../docs/overview/office-add-ins.md)
     
 - [Office Add-ins development lifecycle](../../docs/design/add-in-development-lifecycle.md)
     

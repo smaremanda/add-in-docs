@@ -3,7 +3,7 @@
 
 
 
-An [Office Add-in](../../docs/overview/platform-overview.md) is a web application hosted in a browser control or iframe running in the context of an Office application. Add-ins can access data in the current document or mail item, and connect to web services and other web-based resources. To develop add-ins, you use web standards-based technologies, such as HTML5, JavaScript, CSS3, XML, and REST APIs. An add-in isn't actually installed on the computer running the Office host application; its implementation is hosted on a web server, so you can easily maintain and update it from that server.
+An [Office Add-in](../../docs/overview/office-add-ins.md) is a web application hosted in a browser control or iframe running in the context of an Office application. Add-ins can access data in the current document or mail item, and connect to web services and other web-based resources. To develop add-ins, you use web standards-based technologies, such as HTML5, JavaScript, CSS3, XML, and REST APIs. An add-in isn't actually installed on the computer running the Office host application; its implementation is hosted on a web server, so you can easily maintain and update it from that server.
 
 You can create a simple Office Add-in by using Napa.
 

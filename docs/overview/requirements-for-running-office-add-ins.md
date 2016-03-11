@@ -142,5 +142,5 @@ When a supported Office application starts, it reads the XML manifests for the a
 
 
 
-- [Office Add-ins platform overview](../../docs/overview/platform-overview.md)
+- [Office Add-ins platform overview](../../docs/overview/office-add-ins.md)
     
