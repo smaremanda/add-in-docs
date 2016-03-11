@@ -216,7 +216,7 @@ __Figure 1. The Boilerplate content add-in loaded in Word__
 
 ## Learn more
 
-Learn more about extending Word by reading the [Word add-ins programming guide](word-add-ins-programming-guide.md). Read the [Word add-ins JavaScript reference](../../reference/word/word-add-ins-javascript-reference.md) to learn about the objects that you can access.
+Learn more about extending Word by reading the [Word add-ins programming guide](word-add-ins-programming-overview.md). Read the [Word add-ins JavaScript reference](../../reference/word/word-add-ins-javascript-reference.md) to learn about the objects that you can access.
 
 ## Give us your feedback
 
