@@ -1,7 +1,8 @@
 
 # Read and write data to the active selection in a document or spreadsheet
 This article describes how to read and write to the user's selection in a document or spreadsheet. It also describes how to create event handlers for changes in user's selection.
-
+
+
 
 
 ## Overview
@@ -118,9 +119,6 @@ The  `myHandler` function name that is passed as the second _handler_ parameter 
 ## Additional resources
 
 
-
-- [Task pane and content add-ins for Office 2013](../../docs/develop/task-pane-and-content-add-ins.md)
-    
 - [Read data from a binding](../../docs/develop/bind-to-regions-in-a-document-or-spreadsheet.md#BindRegions_Read)
     
 - [Write data to a binding](../../docs/develop/bind-to-regions-in-a-document-or-spreadsheet.md#BindRegions_Write)
