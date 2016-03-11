@@ -1,8 +1,5 @@
 
 # Create content and task pane add-ins for PowerPoint
-Develop task pane and content add-ins for PowerPoint.
-
-
 
 The code examples in the article show you some basic tasks for developing PowerPoint content add-ins. To display information, these examples depend on the  `app.showNotification` function, which is included in the Visual StudioOffice Add-ins project templates. If you aren't using Visual Studio to develop your add-in, you'll need replace the `showNotification` function with your own code. Several of these examples also depend on this `globals` object that is declared outside of the scope of these functions: `var globals = {activeViewHandler:0, firstSlideId:0};`
 
@@ -140,23 +137,9 @@ function goToSlideByIndex() {
 
 
 
-## More tasks
+## Additional resources
 
-See the following articles for more code examples:
-
-
-- [Read selected data](../../docs/develop/read-and-write-data-to-the-active-selection-in-a-document-or-spreadsheet.md#ReadWriteDocumentData_Read)
-    
-- [Write data to the selection](../../docs/develop/read-and-write-data-to-the-active-selection-in-a-document-or-spreadsheet.md#ReadWriteDocumentData_Write)
-    
-- [Detect changes in the selection](../../docs/develop/read-and-write-data-to-the-active-selection-in-a-document-or-spreadsheet.md#ReadWriteDocumentData_DetectChanges)
-    
 - [How to save add-in state and settings per document for content and task pane add-ins](../../docs/develop/persisting-add-in-state-and-settings.md#PersistSettingsContentTaskPaneApp)
-    
-
-## 
-
-
 
 - [Read and write data to the active selection in a document or spreadsheet](../../docs/develop/read-and-write-data-to-the-active-selection-in-a-document-or-spreadsheet.md)
     
