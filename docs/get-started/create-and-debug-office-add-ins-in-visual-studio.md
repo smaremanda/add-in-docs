@@ -1,6 +1,7 @@
 
 # Create and debug Office Add-ins in Visual Studio
-
+
+
 
 
  >**Note**  These instructions are based on Visual Studio 2015. Other versions of Visual Studio will have minor variations on these instructions.
@@ -299,9 +300,5 @@ You can change your code and review the effects of those changes in your add-in 
 
 ## Next steps
 
-
-
-- [Create a task pane or content add-in with Visual Studio](../../docs/develop/create-a-task-pane-or-content-add-in-with-visual-studio.md)
-    
 - [Package your add-in using Napa or Visual Studio to prepare for publishing](../publish/package-your-add-in-using-napa-or-visual-studio.md)
     
