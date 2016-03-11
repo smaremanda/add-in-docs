@@ -86,12 +86,12 @@ The generator will prompt you for the following:
 This creates the structure and basic files for your add-in.
 
 
-## Hosting Your Office add-in
+## Hosting your Office add-in
 
 Office add-ins must be served via HTTPS; the Office application will not load a web app as an add-in if it is HTTP. To develop, debug and host the add-in locally, you need a way to create and serve a web app locally using HTTPS. You could create a self-hosted HTTPS site through gulp (described in the following section) or you could use Azure. 
 
 
-### Using a Self-Hosted HTTPS Site
+### Using a self-hosted HTTPS site
 
 The gulp-webserver plug-in creates a self-hosted HTTPS site. The Office generator will add this to the gulpfile.js as a task named serve-static for the project that's generated. Start the self-hosted webserver using the following statement: 
 
@@ -103,9 +103,9 @@ gulp serve-static
 This will start a HTTPS server at https://localhost:8443.
 
 
-## Develop your Office add-in
+## Develop your Office Add-in
 
-You can use any text editor to develop the files for your custom Office add-in.
+You can use any text editor to develop the files for your custom Office Add-in.
 
 
 ### JavaScript project support
@@ -138,78 +138,78 @@ For our example, we'll create a Hello World add-in. The UI of the add-in is prov
 ### To create the files for a Hello World add-in
 
 
-1. In your project folder, go to  _[project folder]/app/home_ (in our example, it is myHelloWorldaddin/app/home), open home.html, and replace the existing code with the following code.
+1. In your project folder, go to  _[project folder]/app/home_ (in our example, it's myHelloWorldaddin/app/home), open home.html, and replace the existing code with the following code.
     
-```HTML
-  <!DOCTYPE html>  
-<html> 
-  <head> 
-     <meta charset="UTF-8" /> 
-     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/> 
-     <link rel="stylesheet" type="text/css" href="program.css" />
-   </head> 
+   ```HTML
+     <!DOCTYPE html>  
+   <html> 
+     <head> 
+        <meta charset="UTF-8" /> 
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/> 
+        <link rel="stylesheet" type="text/css" href="program.css" />
+      </head> 
+   
+     <body> 
+        <p>Hello World!</p> 
+     </body> 
+   
+    </html> 
+   ```
 
-  <body> 
-     <p>Hello World!</p> 
-  </body> 
 
- </html> 
-```
-
-
-    This file provides the minimum set of HTML tags to display the UI of an add-in.
+       This file provides the minimum set of HTML tags to display the UI of an add-in.
     
 2. In the same folder, open the home.css file and add the following CSS code.
     
-```
-  body 
-{ 
-     position:relative; 
-} 
-li :hover 
-{ 
-     text-decoration: underline; 
-     cursor:pointer; 
-} 
-h1,h3,h4,p,a,li 
-{ 
-     font-family: "Segoe UI Light","Segoe UI",Tahoma,sans-serif; 
-     text-decoration-color:#4ec724; 
-} 
-```
+   ```
+     body 
+   { 
+        position:relative; 
+   } 
+   li :hover 
+   { 
+        text-decoration: underline; 
+        cursor:pointer; 
+   } 
+   h1,h3,h4,p,a,li 
+   { 
+        font-family: "Segoe UI Light","Segoe UI",Tahoma,sans-serif; 
+        text-decoration-color:#4ec724; 
+   } 
+   ```
 
 
-    This file provides the style sheet for the add-in.
+       This file provides the style sheet for the add-in.
     
 3. Go back to the parent project folder and make sure the XML file named manifest-myHelloWorldaddin.xml contains the following XML code.
     
      >**Important**  The value in the  `<id>` tag is a GUID that the yeoman generator creates when it generates the project. Do not change the GUID that the yeoman generator created for your add-in.If the host is Azure, the the  `SourceLocation` value will be a URL that is similar to _https:// [name-of-your-web-app].azurewebsites.net/[path-to-add-in]_. If you are using the self-hosted option, as in this example, it will be _https://localhost:8443/[path-to-add-in]_.
 
-```XML
-  <?xml version="1.0" encoding="utf-8"?> 
-<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" 
-           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-           xsi:type="TaskPaneApp"> 
-<Id>[GUID-for-your-add-in]</Id> 
-<Version>1.0</Version> 
-<ProviderName>Microsoft</ProviderName> 
-<DefaultLocale>EN-US</DefaultLocale> 
-<DisplayName DefaultValue="myHelloWorldaddin"/> 
-<Description DefaultValue="My first app."/> 
- 
-<Hosts> 
-  <Host Name="Document"/> 
-  <Host Name="Workbook"/> 
-</Hosts>
- 
-<DefaultSettings> 
-  <SourceLocation DefaultValue="https://localhost:8443/app/home/home.html"/> 
-</DefaultSettings> 
-
-<Permissions>ReadWriteDocument</Permissions>
- 
-</OfficeApp> 
-```
+   ```XML
+     <?xml version="1.0" encoding="utf-8"?> 
+   <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" 
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+              xsi:type="TaskPaneApp"> 
+   <Id>[GUID-for-your-add-in]</Id> 
+   <Version>1.0</Version> 
+   <ProviderName>Microsoft</ProviderName> 
+   <DefaultLocale>EN-US</DefaultLocale> 
+   <DisplayName DefaultValue="myHelloWorldaddin"/> 
+   <Description DefaultValue="My first app."/> 
+    
+   <Hosts> 
+     <Host Name="Document"/> 
+     <Host Name="Workbook"/> 
+   </Hosts>
+    
+   <DefaultSettings> 
+     <SourceLocation DefaultValue="https://localhost:8443/app/home/home.html"/> 
+   </DefaultSettings> 
+   
+   <Permissions>ReadWriteDocument</Permissions>
+    
+   </OfficeApp> 
+   ```
 
 
 ### Running the add-in locally
