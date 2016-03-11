@@ -169,7 +169,7 @@ To ensure that your add-in works well in both types of hosts:
 
 - Follow standard web practices to optimize your web page. In production, use only minified versions of libraries. Only load resources that you need, and optimize how resources are loaded.
 
-- If operations take time to execute, provide feedback to users. Note the thresholds listed in the following table. See also [Resource limits and performance optimization for Office Add-ins](../../docs/essentials/resource-limits-and-performance-optimization.md)
+- If operations take time to execute, provide feedback to users. Note the thresholds listed in the following table. See also [Resource limits and performance optimization for Office Add-ins](../../docs/develop/resource-limits-and-performance-optimization.md)
 
 
 |**Interaction class**|**Target**|**Upper bound**|**Human perception**|

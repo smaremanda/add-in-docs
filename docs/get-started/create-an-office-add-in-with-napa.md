@@ -43,16 +43,16 @@ Here's what you need to do that:
 Now that you've created your first add-in, see the following for some more in-depth examples:
 
 
-- [Create a content add-in for Excel with Napa Office 365 Development Tools](../../docs/essentials/create-a-content-add-in-with-napa.md)
+- [Create a content add-in for Excel with Napa Office 365 Development Tools](../../docs/develop/create-a-content-add-in-with-napa.md)
     
-- [Create a task pane add-in with Napa Office 365 Development Tools](../../docs/essentials/create-a-task-pane-add-in-with-napa.md)
+- [Create a task pane add-in with Napa Office 365 Development Tools](../../docs/develop/create-a-task-pane-add-in-with-napa.md)
     
 You can also use Visual Studio or a text editor to create Office Add-ins. To learn more, see the following:
 
 
-- [Create a task pane or content add-in with Visual Studio](../../docs/essentials/create-a-task-pane-or-content-add-in-with-visual-studio.md)
+- [Create a task pane or content add-in with Visual Studio](../../docs/develop/create-a-task-pane-or-content-add-in-with-visual-studio.md)
     
-- [Create a task pane or content add-in for Word or Excel by using a text editor](../../docs/essentials/create-a-task-pane-or-content-add-in-for-word-or-excel-by-using-a-text-editor.md)
+- [Create a task pane or content add-in for Word or Excel by using a text editor](../../docs/develop/create-a-task-pane-or-content-add-in-for-word-or-excel-by-using-a-text-editor.md)
     
 
 ## Additional resources

@@ -119,7 +119,7 @@ The  `myHandler` function name that is passed as the second _handler_ parameter 
 
 
 
-- [Task pane and content add-ins for Office 2013](../../docs/essentials/task-pane-and-content-add-ins.md)
+- [Task pane and content add-ins for Office 2013](../../docs/develop/task-pane-and-content-add-ins.md)
     
 - [Read data from a binding](../../docs/develop/bind-to-regions-in-a-document-or-spreadsheet.md#BindRegions_Read)
     

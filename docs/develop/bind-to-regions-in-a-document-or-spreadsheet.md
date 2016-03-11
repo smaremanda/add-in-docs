@@ -381,7 +381,7 @@ function removeEventHandlerFromBinding() {
 
 
 
-- [Task pane and content add-ins for Office 2013](../../docs/essentials/task-pane-and-content-add-ins.md)
+- [Task pane and content add-ins for Office 2013](../../docs/develop/task-pane-and-content-add-ins.md)
     
 - [Understanding the JavaScript API for Office](../../docs/overview/understanding-the-javascript-api-for-office.md)
     

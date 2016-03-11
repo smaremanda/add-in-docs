@@ -806,7 +806,7 @@ After defining a basic manifest, [define add-in commands for your add-in](../../
     
 - [Activation rules for Outlook add-ins](../../outlook/manifests/activation-rules.md)
     
-- [Localization for Office Add-ins](../../essentials/localization.md)
+- [Localization for Office Add-ins](../../develop/localization.md)
     
 - [Create a mail add-in for Outlook that runs on desktops, tablets, and mobile devices (schema v1.1)](http://msdn.microsoft.com/library/8d425fb3-8a7c-429d-87b3-8046e964b153%28Office.15%29.aspx)
     

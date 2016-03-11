@@ -244,7 +244,7 @@ Attempting to use an unsupported operation will result in an error response.
 
 
 
-- [Privacy, permissions, and security for Outlook add-ins](../outlook/../../docs/essentials/privacy-and-security.md)
+- [Privacy, permissions, and security for Outlook add-ins](../outlook/../../docs/develop/privacy-and-security.md)
     
 - [Match strings in an Outlook item as well-known entities](../outlook/match-strings-in-an-item-as-well-known-entities.md)
     

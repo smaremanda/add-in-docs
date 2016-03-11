@@ -273,7 +273,7 @@ When you are ready to package your add-in for publishing, open the  **Publish Of
 
 
 
-- [Task pane and content add-ins for Office 2013](../../docs/essentials/task-pane-and-content-add-ins.md)
+- [Task pane and content add-ins for Office 2013](../../docs/develop/task-pane-and-content-add-ins.md)
     
 - [Design guidelines for Office Add-ins](../../docs/design/add-in-design.md)
     

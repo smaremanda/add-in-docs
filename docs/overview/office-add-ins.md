@@ -62,10 +62,10 @@ The most basic Office Add-in consists of a static HTML page that is hosted insid
 
 ### Creating an Office Add-in with Visual Studio
 
-The most powerful way to build an Office Add-in is to use the  **Add-in for Office** project template in Visual Studio. Visual Studio creates a complete solution that contains all of the files that you need to begin testing your add-in in Office immediately. Visual Studio provides a full range of features to make it easy for you to develop and test Office Add-ins. To learn more, see [Create and debug Office Add-ins in Visual Studio](../../docs/essentials/create-and-debug-office-add-ins-in-visual-studio.md). To get started developing right away, see this topic:
+The most powerful way to build an Office Add-in is to use the  **Add-in for Office** project template in Visual Studio. Visual Studio creates a complete solution that contains all of the files that you need to begin testing your add-in in Office immediately. Visual Studio provides a full range of features to make it easy for you to develop and test Office Add-ins. To learn more, see [Create and debug Office Add-ins in Visual Studio](../../docs/develop/create-and-debug-office-add-ins-in-visual-studio.md). To get started developing right away, see this topic:
 
 
-- [Create a task pane or content add-in with Visual Studio](../../docs/essentials/create-a-task-pane-or-content-add-in-with-visual-studio.md)
+- [Create a task pane or content add-in with Visual Studio](../../docs/develop/create-a-task-pane-or-content-add-in-with-visual-studio.md)
     
 
 ### Creating an Office Add-in with a text editor
@@ -73,7 +73,7 @@ The most powerful way to build an Office Add-in is to use the  **Add-in for Offi
 If want to use your favorite text editor to create an Office Add-in, see these topics for information about how to get started:
 
 
-- [Create a task pane or content add-in for Word or Excel by using a text editor](../../docs/essentials/create-a-task-pane-or-content-add-in-for-word-or-excel-by-using-a-text-editor.md)
+- [Create a task pane or content add-in for Word or Excel by using a text editor](../../docs/develop/create-a-task-pane-or-content-add-in-for-word-or-excel-by-using-a-text-editor.md)
     
 - [Get Started with Outlook add-ins for Outlook.com (Preview)](https://dev.outlook.com/MailAppsGettingStarted/GetStarted/outlook-dot-com.aspx)
     
@@ -182,7 +182,7 @@ And, like webpages, Office Add-ins are subject to the same restrictions imposed 
 In addition to the regular capabilities of a webpage, Office Add-ins can interact with the Office application and an add-in user's content through a JavaScript library that the Office Add-ins infrastructure provides. How your add-ins can interact with Office and content depends on the type of add-in: 
 
 
-- For task pane and content add-ins, the API lets your add-in read and write to documents, as well as handle key application and user events, such as when the active selection changes. For a summary of the features available to task pane and content add-ins, see [Task pane and content add-ins for Office 2013](../../docs/essentials/task-pane-and-content-add-ins.md).
+- For task pane and content add-ins, the API lets your add-in read and write to documents, as well as handle key application and user events, such as when the active selection changes. For a summary of the features available to task pane and content add-ins, see [Task pane and content add-ins for Office 2013](../../docs/develop/task-pane-and-content-add-ins.md).
     
 - For Outlook add-ins, the API lets your add-in access email message, meeting request, and appointment item properties, and user profile information. The API also provides access to some Exchange Web Services operations. For more information about Outlook add-ins, see [Outlook add-ins](../outlook/outlook-add-ins.md). For a summary of top features of Outlook add-ins, see [Overview of Outlook add-ins architecture and features](../outlook/overview.md).
     

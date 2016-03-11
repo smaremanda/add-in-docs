@@ -254,5 +254,5 @@ There are different ways to debug your add-in:
 
 
 
-- [Create and debug Office Add-ins in Visual Studio](../../docs/essentials/create-and-debug-office-add-ins-in-visual-studio.md)
+- [Create and debug Office Add-ins in Visual Studio](../../docs/develop/create-and-debug-office-add-ins-in-visual-studio.md)
     

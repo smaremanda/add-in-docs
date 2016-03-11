@@ -360,7 +360,7 @@ The following XML manifest example hosts its main add-in page in the  `https://w
     
 - [Create add-in commands in your manifest for Excel, Word, and PowerPoint (Preview)](../../docs/design/create-add-in-commands-in-your-manifest-preview.md)
     
-- [Localization for Office Add-ins](../../docs/essentials/localization.md)
+- [Localization for Office Add-ins](../../docs/develop/localization.md)
     
 - [Schema reference for Office Add-ins manifests (v1.1)](http://msdn.microsoft.com/en-us/library/7e0cadc3-f613-8eb9-57ef-9032cbb97f92%28Office.15%29.aspx)
     
