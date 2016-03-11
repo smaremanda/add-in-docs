@@ -1,7 +1,8 @@
 
 # Create your first task pane add-in for Project 2013 by using a text editor
 Develop an Office Add-in that uses an XML manifest pointing to an HTML file on a share to create a task pane that tests the Project object model for add-ins.
-
+
+
 
 You can create a task pane add-in for Project Standard 2013 or Project Professional 2013 by using Visual Studio 2015 to create a complex web application or by using a text editor to create files for a local add-in. This article describes how to create a simple add-in that uses an XML manifest that points to an HTML file on a file share. The Project OM Test sample add-in tests some JavaScript functions that use the object model for add-ins. After you use the  **Trust Center** in Project 2013 to register the file share that contains the manifest file, you can open the task pane add-in from the **PROJECT** tab on the ribbon. (The sample code in this article is based on a test application by Arvind Iyer, Microsoft Corporation.)
 
@@ -16,38 +17,38 @@ For an introduction to using JavaScript in Office Add-ins, see [Understanding th
 
 - Create an XML file in a local directory. The XML file includes the  **OfficeApp** element and child elements, which are described in the [Office Add-ins XML manifest](../../docs/overview/add-in-manifests.md). For example, create a file named JSOM_SimpleOMCalls.xml that contains the following XML (change the GUID value of the **Id** element).
     
-```XML
-  <?xml version="1.0" encoding="utf-8"?>
-<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" 
-           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-           xsi:type="TaskPaneApp">
-  <Id>93A26520-9414-492F-994B-4983A1C7A607</Id>
-  <Version>15.0</Version>
-  <ProviderName>Microsoft</ProviderName>
-  <DefaultLocale>en-us</DefaultLocale>
-  <DisplayName DefaultValue="Project OM Test">
-    <Override Locale="fr-fr" Value="Le Project OM Test"/>
-  </DisplayName>
-  <Description DefaultValue="Test the task pane add-in object model for Project - English (US)">
-    <Override Locale="fr-fr" Value="Test the task pane add-in object model for Project - French (France)"/>
-  </Description>
-  <Hosts>
-    <Host Name="Project"/>
-    <Host Name="Workbook"/>
-    <Host Name="Document"/>
-  </Hosts>
-  <DefaultSettings>
-    <SourceLocation DefaultValue="\\ServerName\AppSource\JSOMCall.html">
-      <Override Locale="fr-fr" Value="\\ServerName\AppSource\JSOMCall.html"/>
-    </SourceLocation>
-  </DefaultSettings>
-  <Permissions>ReadWriteDocument</Permissions>
-  <IconUrl DefaultValue="http://officeimg.vo.msecnd.net/_layouts/images/general/office_logo.jpg">
-    <Override Locale="fr-fr" Value="http://officeimg.vo.msecnd.net/_layouts/images/general/office_logo.jpg"/>
-  </IconUrl>
-  <AllowSnapshot>true</AllowSnapshot>
-</OfficeApp>
-```
+   ```XML
+     <?xml version="1.0" encoding="utf-8"?>
+   <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" 
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+              xsi:type="TaskPaneApp">
+     <Id>93A26520-9414-492F-994B-4983A1C7A607</Id>
+     <Version>15.0</Version>
+     <ProviderName>Microsoft</ProviderName>
+     <DefaultLocale>en-us</DefaultLocale>
+     <DisplayName DefaultValue="Project OM Test">
+       <Override Locale="fr-fr" Value="Le Project OM Test"/>
+     </DisplayName>
+     <Description DefaultValue="Test the task pane add-in object model for Project - English (US)">
+       <Override Locale="fr-fr" Value="Test the task pane add-in object model for Project - French (France)"/>
+     </Description>
+     <Hosts>
+       <Host Name="Project"/>
+       <Host Name="Workbook"/>
+       <Host Name="Document"/>
+     </Hosts>
+    <DefaultSettings>
+       <SourceLocation DefaultValue="\\ServerName\AppSource\JSOMCall.html">
+         <Override Locale="fr-fr" Value="\\ServerName\AppSource\JSOMCall.html"/>
+       </SourceLocation>
+     </DefaultSettings>
+     <Permissions>ReadWriteDocument</Permissions>
+     <IconUrl DefaultValue="http://officeimg.vo.msecnd.net/_layouts/images/general/office_logo.jpg">
+       <Override Locale="fr-fr" Value="http://officeimg.vo.msecnd.net/_layouts/images/general/office_logo.jpg"/>
+     </IconUrl>
+     <AllowSnapshot>true</AllowSnapshot>
+   </OfficeApp>
+   ```
 
 
     For Project, the  **OfficeApp** element must include the `xsi:type="TaskPaneApp"` attribute value. The **Id** element is a GUID. The **SourceLocation** value must be a file share path or a SharePoint URL for the add-in HTML source file or the web application that runs in the task pane. For an explanation of the other elements in manifest file, see [Task pane add-ins for Project](../project/project-add-ins.md).
