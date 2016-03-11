@@ -42,9 +42,6 @@ The following table describes the subset of the JavaScript API that is enabled b
 
 ## Additional resources
 
-
-
-- [Task pane and content add-ins for Office 2013](../../docs/develop/task-pane-and-content-add-ins.md)
     
 - [Privacy and security for Office Add-ins](../../docs/develop/privacy-and-security.md)
     
