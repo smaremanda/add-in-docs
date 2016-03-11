@@ -9,7 +9,7 @@ Explore the object model by add-in type or host: [1.1](http://msdn.microsoft.com
 ## Referencing the JavaScript API for Office library in your add-in
 
 
-The JavaScript API for Office library is implemented in the Office.js file and associated .js files that contain application-specific implementations, such as Excel-15.js and Outlook-15.js. [Reference the JavaScript API for Office library](../../docs/get-started/referencing-the-javascript-api-for-office-library-from-its-cdn.md) inside the `<head>` tag of the web page (such as an .html, .aspx, or .php file) that implements the UI of your add-in by using a `script` tag with its `src` attribute set to the following CDN URL:
+The JavaScript API for Office library is implemented in the Office.js file and associated .js files that contain application-specific implementations, such as Excel-15.js and Outlook-15.js. [Reference the JavaScript API for Office library](../../docs/develop/referencing-the-javascript-api-for-office-library-from-its-cdn.md) inside the `<head>` tag of the web page (such as an .html, .aspx, or .php file) that implements the UI of your add-in by using a `script` tag with its `src` attribute set to the following CDN URL:
 
 
 ```HTML

@@ -6,7 +6,7 @@ Develop task pane and content add-ins for PowerPoint.
 
 The code examples in the article show you some basic tasks for developing PowerPoint content add-ins. To display information, these examples depend on the  `app.showNotification` function, which is included in the Visual StudioOffice Add-ins project templates. If you aren't using Visual Studio to develop your add-in, you'll need replace the `showNotification` function with your own code. Several of these examples also depend on this `globals` object that is declared outside of the scope of these functions: `var globals = {activeViewHandler:0, firstSlideId:0};`
 
-These code examples require your project to [reference Office.js v1.1 library or later](../../docs/get-started/referencing-the-javascript-api-for-office-library-from-its-cdn.md).
+These code examples require your project to [reference Office.js v1.1 library or later](../../docs/develop/referencing-the-javascript-api-for-office-library-from-its-cdn.md).
 
 
 ## Detect the presentation's active view and handle the ActiveViewChanged event
