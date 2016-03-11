@@ -2,7 +2,7 @@
 # JavaScript API for Office
 The JavaScript API for Office includes objects, methods, properties, events, and enumerations that you can use in your Office Add-ins code.
 
-Learn more about [supported hosts and other requirements](../../docs/overview/requirements-for-running-office-add-ins.md).
+Learn more about [supported hosts and other requirements](../docs/overview/requirements-for-running-office-add-ins.md).
 
 The  **Microsoft.Office.WebExtension** namespace (which by default is referenced using the alias[Office](http://msdn.microsoft.com/library/c490b13d-ee52-4291-af5d-f4a5a11d3af0%28Office.15%29.aspx) in code) contains objects you can use to write script that interacts with content in Office documents, worksheets, presentations, mail items, and projects from your Office Add-ins.
 ## JavaScript API for Office objects
