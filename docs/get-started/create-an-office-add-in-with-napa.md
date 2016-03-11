@@ -1,6 +1,7 @@
 
 # Office Add-ins
-
+
+
 
 An [Office Add-in](../../docs/overview/platform-overview.md) is a web application hosted in a browser control or iframe running in the context of an Office application. Add-ins can access data in the current document or mail item, and connect to web services and other web-based resources. To develop add-ins, you use web standards-based technologies, such as HTML5, JavaScript, CSS3, XML, and REST APIs. An add-in isn't actually installed on the computer running the Office host application; its implementation is hosted on a web server, so you can easily maintain and update it from that server.
 
@@ -35,24 +36,6 @@ Here's what you need to do that:
 ![Run button](../../images/Apps_NAPA_Run_Button.png)).
     
     The Office application associated with the kind of add-in you chose opens, and the sample add-in appears. You can now experiment with the features of the add-in.
-    
-
-## Next steps
-
-
-Now that you've created your first add-in, see the following for some more in-depth examples:
-
-
-- [Create a content add-in for Excel with Napa Office 365 Development Tools](../../docs/develop/create-a-content-add-in-with-napa.md)
-    
-- [Create a task pane add-in with Napa Office 365 Development Tools](../../docs/develop/create-a-task-pane-add-in-with-napa.md)
-    
-You can also use Visual Studio or a text editor to create Office Add-ins. To learn more, see the following:
-
-
-- [Create a task pane or content add-in with Visual Studio](../../docs/develop/create-a-task-pane-or-content-add-in-with-visual-studio.md)
-    
-- [Create a task pane or content add-in for Word or Excel by using a text editor](../../docs/develop/create-a-task-pane-or-content-add-in-for-word-or-excel-by-using-a-text-editor.md)
     
 
 ## Additional resources
