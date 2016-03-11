@@ -62,11 +62,7 @@ The most basic Office Add-in consists of a static HTML page that is hosted insid
 
 ### Creating an Office Add-in with Visual Studio
 
-The most powerful way to build an Office Add-in is to use the  **Add-in for Office** project template in Visual Studio. Visual Studio creates a complete solution that contains all of the files that you need to begin testing your add-in in Office immediately. Visual Studio provides a full range of features to make it easy for you to develop and test Office Add-ins. To learn more, see [Create and debug Office Add-ins in Visual Studio](../../docs/develop/create-and-debug-office-add-ins-in-visual-studio.md). To get started developing right away, see this topic:
-
-
-- [Create a task pane or content add-in with Visual Studio](../../docs/develop/create-a-task-pane-or-content-add-in-with-visual-studio.md)
-    
+The most powerful way to build an Office Add-in is to use the  **Add-in for Office** project template in Visual Studio. Visual Studio creates a complete solution that contains all of the files that you need to begin testing your add-in in Office immediately. Visual Studio provides a full range of features to make it easy for you to develop and test Office Add-ins. [Get started with Office Add-ins](https://dev.office.com/getting-started/addins).
 
 ### Creating an Office Add-in with a text editor
 
