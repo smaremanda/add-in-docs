@@ -326,15 +326,3 @@ function closeFile(state) {
     });
 }
 ```
-
-
-## Additional resources
-
-
-
-- [File object](http://msdn.microsoft.com/en-us/library/04923ddf-8efa-459f-aed5-d8c06385ca50%28Office.15%29.aspx)
-    
-- [Slice object](http://msdn.microsoft.com/en-us/library/011b5647-639b-4b06-8625-ba9de01bed4b%28Office.15%29.aspx)
-    
-- [Create a task pane or content add-in for Word or Excel by using a text editor](../../docs/develop/create-a-task-pane-or-content-add-in-for-word-or-excel-by-using-a-text-editor.md)
-    
