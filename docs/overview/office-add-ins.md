@@ -1,5 +1,5 @@
 
-# Office Add-ins platform overview
+# Office Add-ins overview
 With Office Add-ins you can make your solution a native part of any platform that Office supports. Using the power of the web and standard web technologies like HTML5, XML, CSS3, JavaScript, and REST APIs, create add-ins that interact with data in Excel, Word, PowerPoint, Outlook, Project, and Access Web Apps for SharePoint.
 
 An Office Add-in is a web application hosted in a web browser control or iframe running in the context of an Office host application that can interact with a user's documents or mail items. You can use Office Add-ins to extend and interact with: 
@@ -190,8 +190,6 @@ In addition to the regular capabilities of a webpage, Office Add-ins can interac
 ## Additional resources
 
 
-- [Office Add-ins](../../docs/overview/office-add-ins.md)
-    
 - [Design guidelines for Office Add-ins](../../docs/design/add-in-design.md)
     
 - [Publish your Office Add-in](../publish/publish.md)
