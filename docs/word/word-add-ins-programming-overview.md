@@ -1,5 +1,5 @@
 
-# word-add-ins-programming-guide
+# Word add-ins Programming Overview
 Learn about proxy objects, the command queue, and how to run a Word Javascript add-in by using Office.js.
 
 _Applies to: Word 2016, Word for iPad, Word for Mac_
