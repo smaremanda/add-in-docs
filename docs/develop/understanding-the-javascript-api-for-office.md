@@ -1,6 +1,7 @@
 
 # Understanding the JavaScript API for Office
-
+
+
 
 This article provides information about the JavaScript API for Office and how to use it. For reference information, see [JavaScript API for Office](http://msdn.microsoft.com/en-us/library/b27e70c3-d87d-4d27-85e0-103996273298%28Office.15%29.aspx). To run and edit some JavaScript API for Office code in your web browser with Excel Online, see the [API Tutorial for Office](http://msdn.microsoft.com/en-us/office/dn449240.aspx). For information about updating Visual Studio project files to the most current version of the JavaScript API for Office, see [Update the version of your JavaScript API for Office and manifest schema files](../../docs/develop/update-your-javascript-api-for-office-and-manifest-schema-version.md).
 
@@ -42,7 +43,7 @@ If you fail to include an  **Office.initialize** event handler, your add-in may 
 
 If your add-in includes more than one page, whenever it loads a new page that page must include or call an  **Office.initialize** event handler.
 
-For more detail about the sequence of events when an add-in is initialized, see [Loading the DOM and runtime environment](../../docs/overview/loading-the-dom-and-runtime-environment.md).
+For more detail about the sequence of events when an add-in is initialized, see [Loading the DOM and runtime environment](../../docs/develop/loading-the-dom-and-runtime-environment.md).
 
 For task pane and content add-ins (but not Outlook add-ins), the  _reason_ parameter of the **initialize** event listener function provides access to the [InitializationReason](http://msdn.microsoft.com/library/3a1fb60c-a6a7-4c73-b1d0-97096946382e%28Office.15%29.aspx) enumeration that specifies how the initialization occurred. For example, a task pane or content add-in can be initialized because the user inserted it from the Office client's ribbon UI, or because a document that already contains the add-in was opened.
 
