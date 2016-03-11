@@ -30,19 +30,6 @@ You can also create an add-in for PowerPoint or Word by using Visual Studio 2015
 Before you begin creating this add-in for PowerPoint or Word, you should be familiar with building Office Add-ins and working with HTTP requests. This article does not discuss how to decode Base64-encoded text from an HTTP request on a web server. 
 
 
-
-
-**Table 1. Core concepts for creating a task pane add-in for PowerPoint or Word**
-
-
-|**Article title**|**Description**|
-|:-----|:-----|
-|[Create a task pane or content add-in with Visual Studio](../../docs/develop/create-a-task-pane-or-content-add-in-with-visual-studio.md)|Describes how to create a "Hello World" Office Add-in and then extend it to read, write, and bind to the document.PowerPoint 2013Supports only the  **getSelectedDataAsync** and **setSelectedDataAsync** methods mentioned in this article.|
-|[Create a task pane or content add-in for Word or Excel by using a text editor](../../docs/develop/create-a-task-pane-or-content-add-in-for-word-or-excel-by-using-a-text-editor.md)|Describes how to create a simple Office Add-in by using a text editor alone.|
-|[Create a task pane add-in with Napa Office 365 Development Tools](../../docs/develop/create-a-task-pane-add-in-with-napa.md)|Demonstrates how to create a simple Office Add-in by using Napa Office 365 Development Tools.|
-|[XMLHttpRequest object](http://msdn.microsoft.com/library/ie/ms535874%28v=vs.85%29.aspx)|Describes the  **XMLHttpRequest** object in JavaScript and provides a short code sample.|
-|[HttpRequest.InputStream Property](http://msdn.microsoft.com/library/system.web.httprequest.inputstream.aspx)|Describes how to use the  **HttpRequest.InputStream** property to read the body of an HTTP request on an ASP.NET web page. It also includes a short code example.|
-
 ## Create the manifest for the add-in
 
 
