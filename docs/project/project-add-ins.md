@@ -1,7 +1,8 @@
 
 # Task pane add-ins for Project
 Office Add-ins enable many scenarios for integrating Project 2013 with webpages and other applications. You can develop Project task pane add-ins by using a text editor or by using Visual Studio.
-
+
+
 
 Project Standard 2013 and Project Professional 2013 both include support for task pane add-ins. You can run general task pane add-ins that are developed for Microsoft Word 2013 or Microsoft Excel 2013. You can also develop custom add-ins that handle selection events in Project and integrate task, resource, view, and other cell-level data in a project with SharePoint lists, SharePoint Add-ins, Web Parts, web services, and enterprise applications.
 
@@ -46,7 +47,7 @@ The JavaScript library for Project add-ins includes extensions of the  **Office*
 
 To create an add-in, you can use a simple text editor to create an HTML webpage and related JavaScript files, CSS files, and REST queries. In addition to an HTML page or a web application, an add-in requires an XML manifest file for configuration. Project can use a manifest file that includes a  **type** attribute that is specified as **TaskPaneExtension**. The manifest file can be used by multiple Office 2013 client applications, or you can create a manifest file that is specific for Project 2013. For more information, see the  _Development basics_ section in [Office Add-ins platform overview](../../docs/overview/office-add-ins.md).
 
-For complex custom applications, and for easier debugging, we recommend that you use Visual Studio 2015 to develop websites for add-ins. Visual Studio 2015 include templates for add-in projects, where you can choose the kind of add-in (task pane, content, or mail) and the host application (Project, Word, Excel, or Outlook). For general information about creating task pane add-ins, see [Create a task pane or content add-in with Visual Studio](../../docs/develop/create-a-task-pane-or-content-add-in-with-visual-studio.md). For a Project-specific example that integrates with data from Project Online, see [Connecting a Project task pane add-in to PWA](http://blogs.msdn.com/b/project_programmability/archive/2012/11/02/connecting-a-project-task-pane-app-to-pwa.aspx) in the Project Programmability blog on MSDN.
+For complex custom applications, and for easier debugging, we recommend that you use Visual Studio 2015 to develop websites for add-ins. Visual Studio 2015 include templates for add-in projects, where you can choose the kind of add-in (task pane, content, or mail) and the host application (Project, Word, Excel, or Outlook).  For an example that integrates with data from Project Online, see [Connecting a Project task pane add-in to PWA](http://blogs.msdn.com/b/project_programmability/archive/2012/11/02/connecting-a-project-task-pane-app-to-pwa.aspx) in the Project Programmability blog on MSDN.
 
 You can create task pane add-ins for other Office 2013 applications by using the online Napa. For more information, see [Create Office Add-ins with Napa with an Office 365 Developer Site](../../docs/develop/create-office-add-ins-with-napa-with-a-developer-site.md).
 
