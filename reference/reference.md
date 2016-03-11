@@ -14,13 +14,13 @@ Find API and schema reference information for Office Add-ins.
     
 - [JavaScript API for Office error codes](../reference/javascript-api-for-office-error-codes.md)
     
-- [Schema reference for Office Add-ins manifest (v1.1)](http://msdn.microsoft.com/en-us/library/7e0cadc3-f613-8eb9-57ef-9032cbb97f92%28Office.15%29.aspx)
+- [Schema reference for Office Add-ins manifest (v1.1)](schema-reference-for-office-add-ins-manifests-v1.1.md)
     
 
 ## Additional resources
 
 
-- [Office Add-ins](../../docs/overview/office-add-ins.md)
+- [Office Add-ins](../docs/overview/office-add-ins.md)
     
-- [Office Add-ins development lifecycle](../../docs/design/add-in-development-lifecycle.md)
+- [Office Add-ins development lifecycle](../docs/design/add-in-development-lifecycle.md)
     
