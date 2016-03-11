@@ -182,7 +182,7 @@ And, like webpages, Office Add-ins are subject to the same restrictions imposed 
 In addition to the regular capabilities of a webpage, Office Add-ins can interact with the Office application and an add-in user's content through a JavaScript library that the Office Add-ins infrastructure provides. How your add-ins can interact with Office and content depends on the type of add-in: 
 
 
-- For task pane and content add-ins, the API lets your add-in read and write to documents, as well as handle key application and user events, such as when the active selection changes. For a summary of the features available to task pane and content add-ins, see [Task pane and content add-ins for Office 2013](../../docs/develop/task-pane-and-content-add-ins.md).
+- For task pane and content add-ins, the API lets your add-in read and write to documents, as well as handle key application and user events, such as when the active selection changes.
     
 - For Outlook add-ins, the API lets your add-in access email message, meeting request, and appointment item properties, and user profile information. The API also provides access to some Exchange Web Services operations. For more information about Outlook add-ins, see [Outlook add-ins](../outlook/outlook-add-ins.md). For a summary of top features of Outlook add-ins, see [Overview of Outlook add-ins architecture and features](../outlook/overview.md).
     
