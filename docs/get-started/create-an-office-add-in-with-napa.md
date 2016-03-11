@@ -1,5 +1,5 @@
 
-# Office Add-ins
+# Create an Office Add-in with Napa
 
 
 
@@ -11,14 +11,14 @@ Here's what you need to do that:
 
 - A [Microsoft account](http://www.microsoft.com/en-us/account/default.aspx)
     
-- The URL for the [Napa Office 365 Development Tools](https://www.napacloudapp.com/ ) web app
+- The URL for the [Napa](https://www.napacloudapp.com/ ) web app
     
 
 ## Create a basic add-in
 
 
 
-1. Open the [Napa Office 365 Development Tools](https://www.napacloudapp.com/ ) web app in your browser.
+1. Open [Napa](https://www.napacloudapp.com/ ) in your browser.
     
 2. Choose the  **Add New Project** tile.
     
@@ -42,7 +42,7 @@ Here's what you need to do that:
 
 
 
-- [Submit Office and SharePoint Add-ins and Office 365 web apps to the Office Store](http://msdn.microsoft.com/library/ff075782-1303-4517-91cc-b3d730e9b9ae%28Office.15%29.aspx)
+- [Office Add-ins overview](../../docs/overview/office-add-ins.md)
     
 - [Provide feedback about the Office Developer Platform](http://officespdev.uservoice.com/)
     
