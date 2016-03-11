@@ -36,7 +36,7 @@ Before you begin creating this add-in for PowerPoint or Word, you should be fami
 The XML manifest file for the add-in for PowerPoint provides important information about the add-in: what applications can host it, the location of the HTML file, the add-in title and description, and many other characteristics.
 
 
-1. In a text editor, add the following code to the manifest file.
+- In a text editor, add the following code to the manifest file.
     
 ```XML
   
@@ -62,7 +62,7 @@ The XML manifest file for the add-in for PowerPoint provides important informati
 </OfficeApp>
 ```
 
-2. Save the file as GetDoc_App.xml using UTF-8 encoding to a network location or to an add-in catalog.
+- Save the file as GetDoc_App.xml using UTF-8 encoding to a network location or to an add-in catalog.
     
 
 ## Create the user interface for the add-in
@@ -73,7 +73,7 @@ For the user interface of the add-in, you can use HTML, written directly into th
 Use the following procedure to create a simple user interface for the add-in that includes a heading and a single button.
 
 
-3. In a new file in the text editor, add the following HTML.
+- In a new file in the text editor, add the following HTML.
     
 ```HTML
   
@@ -102,7 +102,7 @@ Use the following procedure to create a simple user interface for the add-in tha
 </html>
 ```
 
-4. Save the file as GetDoc_App.html using UTF-8 encoding to a network location or to a web server.
+- Save the file as GetDoc_App.html using UTF-8 encoding to a network location or to a web server.
     
 
  >**Note**  Be sure that the **head** tags of the add-in contains a **script** tag with a valid link to the office.js file. 
@@ -110,7 +110,7 @@ Use the following procedure to create a simple user interface for the add-in tha
 We'll use some CSS to give the add-in a simple, yet modern and professional appearance. Use the following CSS to define the style of the add-in.
 
 
-5. In a new file in the text editor, add the following CSS.
+- In a new file in the text editor, add the following CSS.
     
 ```
   
@@ -134,7 +134,7 @@ input [type="submit"], input[type="button"]
 }
 ```
 
-6. Save the file as Program.css using UTF-8 encoding to the network location or to the web server where the GetDoc_App.html file is located.
+- Save the file as Program.css using UTF-8 encoding to the network location or to the web server where the GetDoc_App.html file is located.
     
 
 ## Add the JavaScript to get the document
