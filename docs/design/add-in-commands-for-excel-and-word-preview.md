@@ -1,7 +1,8 @@
 
 # Add-in commands for Excel, Word and PowerPoint (Preview)
 Use add-in commands in your add-in to extend the default Office UI in Excel, Word, and PowerPoint.
-
+
+
 
 Add-in commands are UI elements that extend the default Office UI, and start actions in your add-in. You can add a button on the ribbon or an item to a context menu. When users select an add-in command, they initiate actions such as running JavaScript code, or showing a page of the add-in in a task pane. Add-in commands help users find and use your add-in, which can help increase your add-in's adoption and reuse, and improve customer retention.
 
@@ -101,11 +102,7 @@ To get the latest version of Office that includes developer features in Preview,
 
 2. Replace  **configuration.xml** with the [First Release Configuration File](https://raw.githubusercontent.com/OfficeDev/Office-Add-in-Commands-Samples/master/Tools/FirstReleaseConfig/configuration.xml).
 
-3. Open a command prompt with elevated privileges (Run as administrator), and run the following command.
-
-```
-  setup.exe /configuration configuration.xml
-```
+3. Open a command prompt with elevated privileges (Run as administrator), and run the following command: **setup.exe /configuration configuration.xml**
 
 4. Verify that the version number of Office is  **16.0.6326.0000** or higher for Excel or Word, and **16.0.6568.2025** or higher for PowerPoint.
 
