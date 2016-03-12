@@ -14,21 +14,21 @@ The JavaScript API for Office provides two properties that support displaying or
 - [Context.displayLanguage](http://msdn.microsoft.com/library/732ba34c-c99f-4c00-836d-4250eb7f0dac.aspx) specifies the locale (or language) of the user interface of the host application. The following example verifies if the host application uses the en-US or fr-Fr locale, and displays a locale-specific greeting.
     
 ```js
-  function sayHelloWithDisplayLanguage() {
-    var myLanguage = Office.context.displayLanguage;
-    switch (myLanguage) {
-        case 'en-US':
-            write('Hello!');
-            break;
-        case 'fr-FR':
-            write('Bonjour!');
-            break;
+      function sayHelloWithDisplayLanguage() {
+        var myLanguage = Office.context.displayLanguage;
+        switch (myLanguage) {
+            case 'en-US':
+                write('Hello!');
+                break;
+            case 'fr-FR':
+                write('Bonjour!');
+                break;
+        }
     }
-}
-// Function that writes to a div with id='message' on the page.
-function write(message){
-    document.getElementById('message').innerText += message; 
-}
+    // Function that writes to a div with id='message' on the page.
+        function write(message){
+        document.getElementById('message').innerText += message; 
+     }
 
 ```
 
@@ -43,9 +43,9 @@ function write(message){
     
 
 
-```js
-  var myLanguage = Office.context.contentLanguage;
-```
+    ```js
+      var myLanguage = Office.context.contentLanguage;
+    ```
 
 
 ## Control localization from the manifest
