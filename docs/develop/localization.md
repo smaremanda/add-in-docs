@@ -295,8 +295,8 @@ To add the resource file to the add-in project:
 2. In the  **Specify Name for Item** dialog box, enterUIStrings.js.
     
 3. Add the following code to the UIStrings.js file.
-    
-    ```
+
+    ```js
       /* Store the locale-specific strings */
     
     var UIStrings = (function ()
