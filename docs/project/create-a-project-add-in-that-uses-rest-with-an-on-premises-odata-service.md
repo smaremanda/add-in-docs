@@ -474,7 +474,6 @@ The remainder of the HelloProjectOData.js file includes two functions: the  **re
         var projWork = 0;
         var projPercentCompleted = 0;
         var myProjectIndex = -1;
-    
         for (i = 0; i < len; i++) {
             // If the current project GUID matches the GUID from the OData query,  
             // store the project index.
@@ -485,19 +484,18 @@ The remainder of the HelloProjectOData.js file includes two functions: the  **re
             projWork += Number(res.d.results[i].ProjectWork);
             projActualCost += Number(res.d.results[i].ProjectActualCost);
             projPercentCompleted += Number(res.d.results[i].ProjectPercentCompleted);
-    
         }
         var avgProjCost = projCost / len;
         var avgProjWork = projWork / len;
         var avgProjActualCost = projActualCost / len;
         var avgProjPercentCompleted = projPercentCompleted / len;
-    
+        
         // Round off cost to two decimal places, and round off other values to one decimal place.
         avgProjCost = avgProjCost.toFixed(2);
         avgProjWork = avgProjWork.toFixed(1);
         avgProjActualCost = avgProjActualCost.toFixed(2);
         avgProjPercentCompleted = avgProjPercentCompleted.toFixed(1);
-    
+        
         // Display averages in the table, with the correct units. 
         document.getElementById("AverageProjectCost").innerHTML = "$"
             + avgProjCost;
@@ -507,50 +505,49 @@ The remainder of the HelloProjectOData.js file includes two functions: the  **re
             = avgProjWork + " hrs";
         document.getElementById("AverageProjectPercentComplete").innerHTML
             = avgProjPercentCompleted + "%";
-    
+            
         // Calculate and display values for the current project.
         if (myProjectIndex != -1) {
-    
             var myProjCost = Number(res.d.results[myProjectIndex].ProjectCost);
             var myProjWork = Number(res.d.results[myProjectIndex].ProjectWork);
             var myProjActualCost = Number(res.d.results[myProjectIndex].ProjectActualCost);
             var myProjPercentCompleted =
               Number(res.d.results[myProjectIndex].ProjectPercentCompleted);
-    
+              
             myProjCost = myProjCost.toFixed(2);
             myProjWork = myProjWork.toFixed(1);
             myProjActualCost = myProjActualCost.toFixed(2);
             myProjPercentCompleted = myProjPercentCompleted.toFixed(1);
-    
+            
             document.getElementById("CurrentProjectCost").innerHTML = "$" + myProjCost;
-    
+            
             if (Number(myProjCost) <= Number(avgProjCost)) {
                 document.getElementById("CurrentProjectCost").style.color = "green"
             }
             else {
                 document.getElementById("CurrentProjectCost").style.color = "red"
             }
-    
+            
             document.getElementById("CurrentProjectActualCost").innerHTML = "$" + myProjActualCost;
-    
+            
             if (Number(myProjActualCost) <= Number(avgProjActualCost)) {
                 document.getElementById("CurrentProjectActualCost").style.color = "green"
             }
             else {
                 document.getElementById("CurrentProjectActualCost").style.color = "red"
             }
-    
+            
             document.getElementById("CurrentProjectWork").innerHTML = myProjWork + " hrs";
-    
+            
             if (Number(myProjWork) <= Number(avgProjWork)) {
                 document.getElementById("CurrentProjectWork").style.color = "red"
             }
             else {
                 document.getElementById("CurrentProjectWork").style.color = "green"
             }
-    
+            
             document.getElementById("CurrentProjectPercentComplete").innerHTML = myProjPercentCompleted + "%";
-    
+            
             if (Number(myProjPercentCompleted) <= Number(avgProjPercentCompleted)) {
                 document.getElementById("CurrentProjectPercentComplete").style.color = "red"
             }
@@ -561,13 +558,13 @@ The remainder of the HelloProjectOData.js file includes two functions: the  **re
         else {
             document.getElementById("CurrentProjectCost").innerHTML = "NA";
             document.getElementById("CurrentProjectCost").style.color = "blue"
-    
+            
             document.getElementById("CurrentProjectActualCost").innerHTML = "NA";
             document.getElementById("CurrentProjectActualCost").style.color = "blue"
-    
+            
             document.getElementById("CurrentProjectWork").innerHTML = "NA";
             document.getElementById("CurrentProjectWork").style.color = "blue"
-    
+            
             document.getElementById("CurrentProjectPercentComplete").innerHTML = "NA";
             document.getElementById("CurrentProjectPercentComplete").style.color = "blue"
         }
@@ -625,49 +622,49 @@ Basic tests should include the following:
 
 
     ```
-      Document path: <>\WinProj test1
+          Document path: <>\WinProj test1
     
-    REST query:
-    http://sphvm-37189/pwa/_api/ProjectData/Projects?$filter=ProjectName ne 'Timesheet Administrative Work Items'
-        &amp;$select=ProjectId, ProjectName, ProjectCost, ProjectWork, ProjectPercentCompleted, ProjectActualCost
-    
-    textStatus: success
-    ContentType: application/json;odata=verbose;charset=utf-8
-    Status: 200
-    
-    ResponseText:
-    {"d":{"results":[
-    {"__metadata":
-        {"id":"http://sphvm-37189/pwa/_api/ProjectData/Projects(guid'ce3d0d65-3904-e211-96cd-00155d157123')",
-        "uri":"http://sphvm-37189/pwa/_api/ProjectData/Projects(guid'ce3d0d65-3904-e211-96cd-00155d157123')",
-        "type":"ReportingData.Project"},
-        "ProjectId":"ce3d0d65-3904-e211-96cd-00155d157123",
-        "ProjectActualCost":"0.000000",
-        "ProjectCost":"0.000000",
-        "ProjectName":"Task list created in PWA",
-        "ProjectPercentCompleted":0,
-        "ProjectWork":"16.000000"},
-    {"__metadata":
-        {"id":"http://sphvm-37189/pwa/_api/ProjectData/Projects(guid'c31023fc-1404-e211-86b2-3c075433b7bd')",
-        "uri":"http://sphvm-37189/pwa/_api/ProjectData/Projects(guid'c31023fc-1404-e211-86b2-3c075433b7bd')",
-        "type":"ReportingData.Project"},
-        "ProjectId":"c31023fc-1404-e211-86b2-3c075433b7bd",
-        "ProjectActualCost":"700.000000",
-        "ProjectCost":"2400.000000",
-        "ProjectName":"WinProj test 2",
-        "ProjectPercentCompleted":29,
-        "ProjectWork":"48.000000"},
-    {"__metadata":
-        {"id":"http://sphvm-37189/pwa/_api/ProjectData/Projects(guid'dc81fbb2-b801-e211-9d2a-3c075433b7bd')",
-        "uri":"http://sphvm-37189/pwa/_api/ProjectData/Projects(guid'dc81fbb2-b801-e211-9d2a-3c075433b7bd')",
-        "type":"ReportingData.Project"},
-        "ProjectId":"dc81fbb2-b801-e211-9d2a-3c075433b7bd",
-        "ProjectActualCost":"1900.000000",
-        "ProjectCost":"5200.000000",
-        "ProjectName":"WinProj test1",
-        "ProjectPercentCompleted":37,
-        "ProjectWork":"104.000000"}
-    ]}}
+        REST query:
+        http://sphvm-37189/pwa/_api/ProjectData/Projects?$filter=ProjectName ne 'Timesheet Administrative Work Items'
+            &amp;$select=ProjectId, ProjectName, ProjectCost, ProjectWork, ProjectPercentCompleted, ProjectActualCost
+        
+        textStatus: success
+        ContentType: application/json;odata=verbose;charset=utf-8
+        Status: 200
+        
+        ResponseText:
+        {"d":{"results":[
+        {"__metadata":
+            {"id":"http://sphvm-37189/pwa/_api/ProjectData/Projects(guid'ce3d0d65-3904-e211-96cd-00155d157123')",
+            "uri":"http://sphvm-37189/pwa/_api/ProjectData/Projects(guid'ce3d0d65-3904-e211-96cd-00155d157123')",
+            "type":"ReportingData.Project"},
+            "ProjectId":"ce3d0d65-3904-e211-96cd-00155d157123",
+            "ProjectActualCost":"0.000000",
+            "ProjectCost":"0.000000",
+            "ProjectName":"Task list created in PWA",
+            "ProjectPercentCompleted":0,
+            "ProjectWork":"16.000000"},
+        {"__metadata":
+            {"id":"http://sphvm-37189/pwa/_api/ProjectData/Projects(guid'c31023fc-1404-e211-86b2-3c075433b7bd')",
+            "uri":"http://sphvm-37189/pwa/_api/ProjectData/Projects(guid'c31023fc-1404-e211-86b2-3c075433b7bd')",
+            "type":"ReportingData.Project"},
+            "ProjectId":"c31023fc-1404-e211-86b2-3c075433b7bd",
+            "ProjectActualCost":"700.000000",
+            "ProjectCost":"2400.000000",
+            "ProjectName":"WinProj test 2",
+            "ProjectPercentCompleted":29,
+            "ProjectWork":"48.000000"},
+        {"__metadata":
+            {"id":"http://sphvm-37189/pwa/_api/ProjectData/Projects(guid'dc81fbb2-b801-e211-9d2a-3c075433b7bd')",
+            "uri":"http://sphvm-37189/pwa/_api/ProjectData/Projects(guid'dc81fbb2-b801-e211-9d2a-3c075433b7bd')",
+            "type":"ReportingData.Project"},
+            "ProjectId":"dc81fbb2-b801-e211-9d2a-3c075433b7bd",
+            "ProjectActualCost":"1900.000000",
+            "ProjectCost":"5200.000000",
+            "ProjectName":"WinProj test1",
+            "ProjectPercentCompleted":37,
+            "ProjectWork":"104.000000"}
+        ]}}
     ```
 
 7. Stop debugging (press  **Shift + F5**), and then press  **F5** again to run a new instance of Project. In the **Login** dialog box, choose the local **Computer** profile, not Project Web App. Create or open a local project .mpp file, open the **Hello ProjectData** task pane, and then select **Get ProjectData Endpoint**. The add-in should show a  **No connection!** error (see Figure 6), and the **Compare All Projects** button should remain disabled.
@@ -703,7 +700,7 @@ Even if your add-in is working correctly in the previous tests, there are other 
  **HelloProjectOData.html file** The following code is in the `Pages\HelloProjectOData.html` file of the **HelloProjectODataWeb** project:
 
 
-    ```HTML
+    ```
     <!DOCTYPE html>
     <html>
     <head>
