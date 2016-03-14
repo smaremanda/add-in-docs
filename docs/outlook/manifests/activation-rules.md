@@ -165,7 +165,7 @@ You can combine  **RuleCollection** rules to form complex rules. The following e
 
 
 
-```
+```XML
 <Rule xsi:type="RuleCollection" Mode="And">
   <Rule xsi:type="RuleCollection" Mode="Or">
     <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read" />
@@ -201,16 +201,9 @@ To provide a satisfactory experience with Outlook add-ins, you should adhere to 
 |manifest size|No larger than 256 KB.|
 |rules|No more than 15 rules.|
 |[ItemHasKnownEntity](http://msdn.microsoft.com/en-us/library/87e10fd2-eab4-c8aa-bec3-dff92d004d39%28Office.15%29.aspx)|An Outlook rich client will apply the rule against the first 1 MB of the body, and not to the rest of the body.|
-|regular expressions|For [ItemHasKnownEntity](http://msdn.microsoft.com/en-us/library/87e10fd2-eab4-c8aa-bec3-dff92d004d39%28Office.15%29.aspx) or [ItemHasRegularExpressionMatch](http://msdn.microsoft.com/en-us/library/bfb726cd-81b0-a8d5-644f-2ca90a5273fc%28Office.15%29.aspx) rules for all Outlook hosts:<br><ul><li>Specify no more than 5 regular expressions in activation rules for an Outlook add-in. You cannot install an add-in if you exceed the that limit.</li><li>Specify regular expressions whose anticipated results are returned by the <b>getRegExMatches</b> method call within the first 50 matches. </li><li>Specify look-ahead assertions in regular expressions, but not look-behind, (?<=text), and negative look-behind (?<!text).</li><li>Specify regular expressions whose match does not exceed the following limits in the table below.<br/><br/>XXXXXXXXXXXXXX Table Goes Here XXXXXXXXXXXXXX|
-
-|**Limit on length of a regex match**|**Outlook rich clients**|**Outlook Web App for Devices**|
-|:-----|:-----|:-----|
-|Item body is plain text|1.5 KB|3 KB|
-|Item body it HTML|3 KB|3 KB|
+|regular expressions|For [ItemHasKnownEntity](http://msdn.microsoft.com/en-us/library/87e10fd2-eab4-c8aa-bec3-dff92d004d39%28Office.15%29.aspx) or [ItemHasRegularExpressionMatch](http://msdn.microsoft.com/en-us/library/bfb726cd-81b0-a8d5-644f-2ca90a5273fc%28Office.15%29.aspx) rules for all Outlook hosts:<br><ul><li>Specify no more than 5 regular expressions in activation rules for an Outlook add-in. You cannot install an add-in if you exceed the that limit.</li><li>Specify regular expressions whose anticipated results are returned by the <b>getRegExMatches</b> method call within the first 50 matches. </li><li>Specify look-ahead assertions in regular expressions, but not look-behind, (?<=text), and negative look-behind (?<!text).</li><li>Specify regular expressions whose match does not exceed the limits in the table below.<br/><br/><table><tr><th>Limit on length of a regex match</th><th>Outlook rich clients</th><th>Outlook Web App for Devices</th></tr><tr><td>Item body is plain text</td><td>1.5 KB</td><td>3 KB</td></tr><tr><td>Item body it HTML</td><td>3 KB</td><td>3 KB</td></tr></table>|
 
 ## Additional resources
-
-
 
 - [Outlook add-ins](../../outlook/outlook-add-ins.md)
 - [Create Outlook add-ins for compose forms](../../outlook/compose-scenario.md)
