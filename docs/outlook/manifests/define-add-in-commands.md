@@ -226,7 +226,6 @@ Where the  **id** attribute is a string with a maximum of 125 characters and the
 |:-----|:-----|
 |**Title**|Required. The text for the supertip. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element in the **ShortStrings** element in the **Resources** element.|
 |**Description**|Required. The description for the supertip. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element in the **LongStrings** element in the **Resources** element.|
-
 |**Icon**|Required. Contains the  **Image** elements for the button.|
 |**Image**|An image for the button. The  **resid** attribute must be set to the value of the **id** attribute of an **Image** element in the **Images** element in the **Resources** element. The **size** attribute indicates the size in pixels of the image. Three image sizes are required (16, 32, and 80 pixels) while five other sizes are supported (20, 24, 40, 48, and 64 pixels).|
 |**Action**|Required. Specifies the action to perform when the user selects the button. It is defined by the following.|
@@ -303,6 +302,7 @@ Where the  **id** attribute is a string with a maximum of 125 characters and the
 |:-----|:-----|
 |**Label**|Required. The text for the menu. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element in the **ShortStrings** element in the **Resources** element.|
 |**SuperTip**|Required. The supertip for the menu, which is defined by the following table.|
+
 
 |**Element**|**Description**|
 |:-----|:-----|
