@@ -222,6 +222,8 @@ Where the  **id** attribute is a string with a maximum of 125 characters and the
 |**Label**|Required. The text for the button. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element in the **ShortStrings** element in the **Resources** element.|
 |**Supertip**|Required. The supertip for this button, which is defined by the following table.|
 
+|**Element**|**Description**|
+|:-----|:-----|
 |**Title**|Required. The text for the supertip. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element in the **ShortStrings** element in the **Resources** element.|
 |**Description**|Required. The description for the supertip. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element in the **LongStrings** element in the **Resources** element.|
 
@@ -302,6 +304,7 @@ Where the  **id** attribute is a string with a maximum of 125 characters and the
 |**Label**|Required. The text for the menu. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element in the **ShortStrings** element in the **Resources** element.|
 |**SuperTip**|Required. The supertip for the menu, which is defined by the following table.|
 
+|**Element**|**Description**|
 |:-----|:-----|
 |**Title**|Required. The text for the supertip. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element in the **ShortStrings** element in the **Resources** element.|
 |**Description**|Required. The description for the supertip. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element in the **LongStrings** element in the **Resources** element.|
