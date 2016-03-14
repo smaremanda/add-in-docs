@@ -63,8 +63,6 @@ In general, you should specify the minimum permission needed for your add-in. Pe
 
 
 
-- [Get Started with Outlook add-ins for Office 365](https://dev.outlook.com/MailAppsGettingStarted/GetStarted.aspx)
-    
 - [Outlook Add-in API](../../reference/outlook/index.md)
     
 - [Outlook add-in manifests](../outlook/manifests/manifests.md)
