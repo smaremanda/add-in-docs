@@ -10,9 +10,6 @@ When the client application recognizes the  **VersionOverrides** node, the add-i
 
 The  **VersionOverrides** element is the root element that contains information for the add-in commands implemented by the add-in. It is supported in manifest schema v1.1 or later but is defined in the VersionOverrides v1.0 schema. The attributes for **VersionOverrides** are as follows.
 
-
-|
-|
 |**Attribute**|**Description**|
 |:-----|:-----|
 |**xmlns**| Required. The schema location. Must be "http://schemas.microsoft.com/office/mailappversionoverrides".|
@@ -20,18 +17,14 @@ The  **VersionOverrides** element is the root element that contains information 
 The following table shows the child elements of  **VersionOverrides**.
 
 
-|
-|
 |**Element**|**Description**|
 |:-----|:-----|
 |**Description**|Describes the add-in. This overrides the  **Description** element in any parent portion of the manifest. The text of the description is contained in a child element of the **LongString** element contained in the **Resources** element. The **resid** attribute of the **Description** element is set to the value of the **id** attribute of the **String** element that contains the text.|
 |**Requirements**|Specifies the minimum requirement set and version of Office.js that the Office add-in needs to activate. It is defined the same as in [Outlook add-in manifests](../../outlook/manifests/manifests.md). This overrides the  **Requirements** element in the parent portion of the manifest.|
 |**Hosts**|Required. Specifies a collection of host types and their settings. It overrides the  **Hosts** element in the parent portion of the manifest. It must have an **xsi:type** attribute set to "MailHost", and it must contain a **FormFactor** child element.|
 |**Resources**|Defines a collection of resources (strings, URLs, and images) that are referenced by other elements of the manifest. This is described in the [Resources element](#VersionOverrides10_Resources) section later in this topic.|
+
 Here an example of  **VersionOverrides**, showing its child elements.
-
-
-
 
 ```XML
 <OfficeApp>
@@ -54,15 +47,11 @@ Here an example of  **VersionOverrides**, showing its child elements.
 </OfficeApp>
 ```
 
-
 ## FormFactor element
 
 The  **FormFactor** element specifies the settings for an add-in for a given form factor. It is a child node under **Hosts** / **Host**. Currently, it can only specify the desktop ( **DesktopFormFactor**). It contains all the add-in information for that form factor except for the  **Resources** node.
 
 The form factor contains the  **FunctionFile** element and one or more **ExtensionPoint** elements. For more information see the following [FunctionFile element](#VersionOverrides10_FunctionFile) and [ExtensionPoint element](#VersionOverrides10_ExtensionPoint) sections. The following is an example of **FormFactor**, showing its child nodes.
-
-
-
 
 ```XML
 <OfficeApp>
@@ -98,9 +87,6 @@ The JavaScript in the HTML file indicated by the  **FunctionFile** element must 
 
 The following is an example of an HTML file defining a trackMessage function.
 
-
-
-
 ```js
 Office.intialize = function () {
     doAuth();
@@ -111,7 +97,6 @@ function trackMessage (event) {
     // save this message
     event.completed();
 }
-
 ```
 
 
@@ -136,18 +121,14 @@ The  **ExtensionPoint** element defines where an add-in exposes functionality. I
 
 The  **CustomPane** extension point defines an add-in that activates when specified rules are satisfied. It is only for read form and it displays in a horizontal pane. The following are the elements of the **CustomPane**.
 
-
-|
-|
 |**Element**|**Description**|
 |:-----|:-----|
 |**RequestedHeight**| Optional. The requested height, in pixels, for the display pane when it is running on a desktop computer. This can be from 32 to 450 pixels. It is the same as in read add-ins (see[RequestedHeight element (ItemReadTabletMailAppSettings complexType) (app manifest schema v1.1)](http://msdn.microsoft.com/library/6296f5b0-3d5b-5ab9-eee9-55a7eb90f92c%28Office.15%29.aspx)|
 |**SourceLocation**|Required. The URL for the source code file of the add-in. This refers to a  **Url** element in the **Resources** element.|
 |**Rule**|Required. The rule or collection of rules that specify when the add-in activates. It is the same as defined in [Outlook add-in manifests](../../outlook/manifests/manifests.md), except the [ItemIs](http://msdn.microsoft.com/en-us/library/f7dac4a3-1574-9671-1eda-47f092390669%28Office.15%29.aspx) rule has the following changes: **ItemType** is either "Message" or "AppointmentAttendee", and there is no **FormType** attribute. For more information, see [Custom pane Outlook add-ins](../../outlook/custom-pane-outlook-add-ins.md) and [Activation rules for Outlook add-ins](../../outlook/manifests/activation-rules.md).|
 |**DisableEntityHighlighting**|Optional. Specifies whether entity highlighting should be turned off for this mail add-in. |
- The following example defines a custom pane for items that are messages or have an attachment or include an address.
 
-
+The following example defines a custom pane for items that are messages or have an attachment or include an address.
 
 
 ```XML
@@ -171,9 +152,6 @@ On the ribbon, you specify which tab and group for their add-in commands. This c
 
 An example of a group on the default ribbon tab is as follows.
 
-
-
-
 ```XML
 <ExtensionPoint xsi:type="MessageReadCommandSurface">
   <OfficeTab id="TabDefault">
@@ -186,24 +164,18 @@ An example of a group on the default ribbon tab is as follows.
     </Group>
   </OfficeTab>
 </ExtensionPoint>
-
 ```
 
 Where:
 
-
-|
-|
 |**Element**|**Description**|
 |:-----|:-----|
 |**OfficeTab**|Required. The pre-existing tab to use. Currently, the  **id** attribute can only be "TabDefault".|
 |**Group**|A group of user interface extension points in a tab. A group can have up to six controls.The  **id** attribute is required. It is a string with a maximum of 125 characters.|
 |**Label**|Required. The label of the group. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element in the **ShortStrings** element in the **Resources** element.|
 |**Control**|A group requires at least one control. Currently, only buttons and menus are supported. See the following [Button controls](#VersionOverrides10_Buttons) and [Menu (dropdown button) controls](#VersionOverrides10_Menus) sections for more information.|
+
 You can also create a custom tab on the ribbon by using the  **CustomTab** element, as shown in the following example.
-
-
-
 
 ```XML
 <ExtensionPoint xsi:type="MessageReadCommandSurface">
@@ -222,9 +194,6 @@ You can also create a custom tab on the ribbon by using the  **CustomTab** eleme
 
 Where:
 
-
-|
-|
 |**Element**|**Description**|
 |:-----|:-----|
 |**CustomTab**|Required. The  **id** attribute must be unique within the manifest.|
@@ -240,9 +209,6 @@ A button performs a single action when the user selects it. It can either execut
 
 The button control looks like the following:
 
-
-
-
 ```XML
 <Control xsi:type="Button" id="<choose a descriptive name>" >
   <!-- include button elements, as described in the following table -->
@@ -251,35 +217,22 @@ The button control looks like the following:
 
 Where the  **id** attribute is a string with a maximum of 125 characters and the button elements are described in the following table.
 
-
-|
-|
 |**Button elements**|**Description**|
 |:-----|:-----|
 |**Label**|Required. The text for the button. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element in the **ShortStrings** element in the **Resources** element.|
-|**Supertip**|Required. The supertip for this button, which is defined by the following
-|||
+|**Supertip**|Required. The supertip for this button, which is defined by the following table.|
+
+|**Element**|**Description**|
 |:-----|:-----|
 |**Title**|Required. The text for the supertip. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element in the **ShortStrings** element in the **Resources** element.|
 |**Description**|Required. The description for the supertip. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element in the **LongStrings** element in the **Resources** element.|
-|
-|**Icon**|Required. Contains the  **Image** elements for the button.
-|||
-|:-----|:-----|
+|**Icon**|Required. Contains the  **Image** elements for the button.|
 |**Image**|An image for the button. The  **resid** attribute must be set to the value of the **id** attribute of an **Image** element in the **Images** element in the **Resources** element. The **size** attribute indicates the size in pixels of the image. Three image sizes are required (16, 32, and 80 pixels) while five other sizes are supported (20, 24, 40, 48, and 64 pixels).|
-|
-|**Action**|Required. Specifies the action to perform when the user selects the button. It is defined by the following.
-|||
-|:-----|:-----|
-|**xsi:type**|This attribute specifies the kind of action performed when the user selects the button. It can be one of the following
-<ul><li><p>"ExecuteFunction"</p></li><li><p>"ShowTaskpane"</p></li></ul>|
+|**Action**|Required. Specifies the action to perform when the user selects the button. It is defined by the following.<br>**xsi:type** This attribute specifies the kind of action performed when the user selects the button. It can be one of the following<ul><li><p>"ExecuteFunction"</p></li><li><p>"ShowTaskpane"</p></li></ul>|
 |**FunctionName**|Required element when  **xsi:type** is "ExecuteFunction". Specifies the name of the function to execute. The function is contained in the file specified in the **FunctionFile** element.|
 |**SourceLocation**|Required element when  **xsi:type** is "ShowTaskpane". Specifies the source file location for this action. The **resid** attribute must be set to the value of the **id** attribute of a **Url** element in the **Urls** element in the **Resources** element.|
-|
+
 The following is an example of a  _UI-less button_, which executes a function named `getSubject`.
-
-
-
 
 ```XML
 <Control xsi:type="Button" id="msgReadFunctionButton">
@@ -343,30 +296,22 @@ The syntax for the menu control is as follows:
 
 Where the  **id** attribute is a string with a maximum of 125 characters and the menu elements are described in the following table.
 
-
-|
-|
 |**Menu elements**|**Description**|
 |:-----|:-----|
 |**Label**|Required. The text for the menu. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element in the **ShortStrings** element in the **Resources** element.|
-|**SuperTip**|Required. The supertip for the menu, which is defined by the following
-|||
+|**SuperTip**|Required. The supertip for the menu, which is defined by the following table.|
+
+
+|**Element**|**Description**|
 |:-----|:-----|
 |**Title**|Required. The text for the supertip. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element in the **ShortStrings** element in the **Resources** element.|
 |**Description**|Required. The description for the supertip. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element in the **LongStrings** element in the **Resources** element.|
-|
-|**Icon**|Required. Contains the  **Image** elements for the menu.
-|||
-|:-----|:-----|
+|**Icon**|Required. Contains the  **Image** elements for the menu.|
 |**Image**|An image for the menu. The  **resid** attribute must be set to the value of the **id** attribute of an **Image** element in the **Images** element in the **Resources** element. The **size** attribute indicates the size in pixels of the image. Three image sizes are required (16, 32, and 80 pixels) while five other sizes are supported (20, 24, 40, 48, and 64 pixels).|
-|
 |**Items**|Required. Contains the  **Item** elements for the menu. Each **Item** element contains the same child elements as a [Button controls](#VersionOverrides10_Buttons).|
 
 
 The following is an example of a menu.
-
-
-
 
 ```XML
 <Control xsi:type="Menu" id="msgReadMenuButton">
@@ -398,7 +343,6 @@ The following is an example of a menu.
     </Item>
   </Items>
 </Control>
-
 ```
 
 
@@ -424,23 +368,16 @@ The  **Resources** element contains icons, strings, and URLs for the **VersionOv
 
 The  **Resources** node defines the following resources. Each resource can have one or more **Override** child elements to define a resource for specific locales.
 
-
-|
-|
 |**Resource**|**Description**|
 |:-----|:-----|
-|**Images**/ **Image**|Provides the HTTPS URL to an image for an icon. Each icon must have three  **Image** elements, one for each of the three mandatory sizes:
-<ul><li><p>16x16</p></li><li><p>32x32</p></li><li><p>80x80</p></li></ul>The following additional sizes are also supported, but not required:
-<ul><li><p>20x20</p></li><li><p>24x24</p></li><li><p>40x40</p></li><li><p>48x48</p></li><li><p>64x64</p></li></ul>|
+|**Images**/ **Image**|Provides the HTTPS URL to an image for an icon. Each icon must have three  **Image** elements, one for each of the three mandatory sizes:<br><ul><li><p>16x16</p></li><li><p>32x32</p></li><li><p>80x80</p></li></ul>The following additional sizes are also supported, but not required:<ul><li><p>20x20</p></li><li><p>24x24</p></li><li><p>40x40</p></li><li><p>48x48</p></li><li><p>64x64</p></li></ul>|
 |**Urls**/ **Url**|Provides an HTTPS URL location. A URL can be a maximum of 2048 characters. |
 |**ShortStrings**/ **String**|The text for  **Label** and **Title** elements. Each **String** contains a maximum of 125 characters.|
 |**LongStrings**/ **String**|The text for  **Description** attributes. Each **String** contains a maximum of 250 characters.|
 
- >**Note**  When defining resources, keep the following requirements in mind:
+**Note**  When defining resources, keep the following requirements in mind:
 
 The following is an example of the  **Resources** element.
-
-
 
 
 ```XML
@@ -468,7 +405,6 @@ The following is an example of the  **Resources** element.
     <!-- Other long strings -->
   </bt:LongStrings>
 </Resources>
-
 ```
 
 

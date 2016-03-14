@@ -1,7 +1,6 @@
 
 # Add-in commands for Outlook
-Use add-in commands to integrate Outlook add-ins with the Outlook UI. 
-
+
 
 Outlook add-in commands provide ways to initiate specific add-in actions from the ribbon by adding buttons or drop-down menus. This lets users access add-ins in a simple, intuitive, and unobtrusive way. Because they offer increased functionality in a seamless manner, you can use add-in commands to create more engaging solutions.
 
@@ -12,28 +11,28 @@ Add-in commands are only available for add-ins that do not use [ItemHasAttachmen
 
 Add-in commands are declared in the add-in manifest in the  **VersionOverrides** element. This element is an addition to the manifest schema v1.1 that ensures backward compatibility. In a client that doesn't support **VersionOverrides**, existing add-ins will continue to function as they did without add-in commands.
 
-The  **VersionOverrides** manifest entries specify many things for the add-in such as the host, types of controls to add to the ribbon, the text, the icons, and any associated functions. For more information, see [Define add-in commands in your Outlook add-in manifest](../outlook/manifests/define-add-in-commands.md). 
+The  **VersionOverrides** manifest entries specify many things for the add-in, such as the host, types of controls to add to the ribbon, the text, the icons, and any associated functions. For more information, see [Define add-in commands in your Outlook add-in manifest](../outlook/manifests/define-add-in-commands.md). 
 
 When an add-in needs to provide status updates, such as progress indicators or error messages, it must do so through the [notification APIs](http://dev.outlook.com/reference/add-ins/NotificationMessages.html). The processing for the notifications must also be defined in a separate HTML file that is specified in the  **FunctionFile** node of the manifest.
 
-Developers should define icons for all needed sizes so the add-in commands will adjust smoothly along with the ribbon. The icon sizes are 80 x 80 pixels, 32 x 32 pixels, and 16 x 16 pixels.
+Developers should define icons for all needed sizes so that the add-in commands will adjust smoothly along with the ribbon. The icon sizes are 80 x 80 pixels, 32 x 32 pixels, and 16 x 16 pixels.
 
 
 ## How do add-in commands appear?
 
-An add-in command appears on the ribbon as a button. When a user installs an add-in, its commands appear in the UI as a group of buttons labeled with the add-in name. This can be either on the ribbon's default tab or on a custom tab. For messages, the default is either the  **Home** or **Message** tab. For the calendar, the default is the **Meeting**,  **Meeting Occurrence**,  **Meeting Series**, or  **Appointment** tab. On the default tab, each add-in can have one ribbon group with up to 6 commands. On custom tabs, the add-in can have up to 10 groups, each with 6 commands. Add-ins are limited to only one custom tab.
+An add-in command appears on the ribbon as a button. When a user installs an add-in, its commands appear in the UI as a group of buttons labeled with the add-in name. This can either be on the ribbon's default tab or on a custom tab. For messages, the default is either the  **Home** or **Message** tab. For the calendar, the default is the **Meeting**,  **Meeting Occurrence**,  **Meeting Series**, or  **Appointment** tab. On the default tab, each add-in can have one ribbon group with up to 6 commands. On custom tabs, the add-in can have up to 10 groups, each with 6 commands. Add-ins are limited to only one custom tab.
 
 As the ribbon gets more crowded, the add-in commands will adjust (collapse) in an orderly way. In all cases, the add-in commands for an add-in will be grouped together.
 
 
 ![Screenshots showing add-in command buttons in a normal and a collapsed state.](../../images/6fcb64d8-9598-41d1-8944-f6d1f6d2edb6.png)
 
-Once an add-in command is added to an add-in, the add-in name is removed from the app bar unless the add-in also includes a [Custom pane Outlook add-ins](../outlook/custom-pane-outlook-add-ins.md). Only the add-in command button on the ribbon remains.
+When an add-in command is added to an add-in, the add-in name is removed from the app bar unless the add-in also includes a [custom pane Outlook add-in](../outlook/custom-pane-outlook-add-ins.md). Only the add-in command button on the ribbon remains.
 
 
 ## What UX shapes exist for add-in commands?
 
-The UX shape for an add-in command consists of a ribbon tab in the host application that contains buttons that can perform various functions. Currently, there are three UI shapes supported:
+The UX shape for an add-in command consists of a ribbon tab in the host application that contains buttons that can perform various functions. Currently, three UI shapes are supported:
 
 
 - A button that executes a JavaScript function
@@ -45,7 +44,7 @@ The UX shape for an add-in command consists of a ribbon tab in the host applicat
 
 ### Executing a JavaScript function
 
-Use an add-in command button that executes a JavaScript function for scenarios where the user doesn't need to make any additional selections to initiate the action. This could be for actions such as track, remind me, or print. It might also be used when the user wants more in-depth information from a service. 
+Use an add-in command button that executes a JavaScript function for scenarios where the user doesn't need to make any additional selections to initiate the action. This can be for actions such as track, remind me, or print, or scenarios when the user wants more in-depth information from a service. 
 
 
 ![A button that executes a function on the Outlook ribbon.](../../images/23ab1de3-3ec4-41a5-ba5b-30b11d464e0c.png)
@@ -53,21 +52,21 @@ Use an add-in command button that executes a JavaScript function for scenarios w
 
 ### Launching a task pane
 
-Use an add-in command button to launch a task pane for scenarios where a user needs to interact with an add-in for a longer period of time. For example, the add-in may require changes to settings or the completion of many fields. 
+Use an add-in command button to launch a task pane for scenarios where a user needs to interact with an add-in for a longer period of time. For example, the add-in requires changes to settings or the completion of many fields. 
 
 The default width of the vertical task pane is 300 px. The vertical task pane can be resized in both the Outlook Explorer and inspector. The pane can be resized in the same way the to-do pane and list view resize.
 
 
 ![A button that opens a task pane on the Outlook ribbon.](../../images/c8e03da8-9f71-4f9b-813f-1cdea43d433c.png)
 
-The above screenshot shows an example of a vertical task pane. The pane opens with the name of the add-in command in the top left corner. There is also an  **X** button in the upper right corner of the pane so the user can close the add-in when they are finished using it. This pane will not persist across messages. All UI elements rendered in the task pane, aside from the add-in name and the close button, are provided by the add-in.
+This screenshot shows an example of a vertical task pane. The pane opens with the name of the add-in command in the top left corner. Users can use the **X** button in the upper-right corner of the pane to close the add-in when they are finished using it. This pane will not persist across messages. All UI elements rendered in the task pane, aside from the add-in name and the close button, are provided by the add-in.
 
-If a user clicks on another add-in command which opens a task pane, the task pane is replaced with the recently clicked command. If a user clicks on an add-in command button that executes a function, or drop-down menu while the task pane is open, the action will be completed and the task pane will remain open.
+If a user chooses another add-in command that opens a task pane, the task pane is replaced with the recently used command. If a user chooses an add-in command button that executes a function, or drop-down menu while the task pane is open, the action will be completed and the task pane will remain open.
 
 
-### Dropdown menu
+### Drop-down menu
 
-A dropdown menu add-in command defines a static list of buttons that are presented within the drop-down. The buttons within the menu can be any mix of buttons that execute a function or buttons that open a task pane. Submenus are not supported.
+A drop-down menu add-in command defines a static list of buttons. The buttons within the menu can be any mix of buttons that execute a function or buttons that open a task pane. Submenus are not supported.
 
 
 ![A button that drops down a menu on the Outlook ribbon.](../../images/3eff90d6-7822-4fdb-9153-68f754c0c746.png)
@@ -100,10 +99,6 @@ When viewing a meeting as an attendee, add-in commands added to the default tab 
 
 ## Additional resources
 
-
-
-- [Get Started with Outlook add-ins for Office 365](https://dev.outlook.com/MailAppsGettingStarted/GetStarted.aspx)
-    
 - [Define add-in commands in your Outlook add-in manifest](../outlook/manifests/define-add-in-commands.md)
     
 - [Add-in Command Demo Outlook Add-in](https://github.com/jasonjoh/command-demo.aspx)

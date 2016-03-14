@@ -73,31 +73,31 @@ The manifest file specifies the URL of the add-in webpage or web application, th
 
 1. Create an XML file in a local directory. The XML file includes the  **OfficeApp** element and child elements, which are described in the [Office Add-ins XML manifest](../../docs/overview/add-in-manifests.md). For example, create a file named BingSearch.xml that contains the following XML.
     
-```XML
-  <?xml version="1.0" encoding="utf-8"?>
-<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.0" 
-           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-          xsi:type="TaskPaneApp">
-  <Id>1234-5678</Id>
-  <Version>15.0</Version>
-  <ProviderName>Microsoft</ProviderName>
-  <DefaultLocale>en-us</DefaultLocale>
-  <DisplayName DefaultValue="Bing Search">
-  </DisplayName>
-  <Description DefaultValue="Search selected data on Bing">
-  </Description>
-  <IconUrl DefaultValue="http://officeimg.vo.msecnd.net/_layouts/images/general/office_logo.jpg">
-  </IconUrl>
-  <Capabilities>
-    <Capability Name="Project"/>
-  </Capabilities>
-  <DefaultSettings>
-    <SourceLocation DefaultValue="http://m.bing.com">
-    </SourceLocation>
-  </DefaultSettings>
-  <Permissions>ReadWriteDocument</Permissions>
-</OfficeApp>
-```
+ ```XML
+   <?xml version="1.0" encoding="utf-8"?>
+ <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.0" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+           xsi:type="TaskPaneApp">
+   <Id>1234-5678</Id>
+   <Version>15.0</Version>
+   <ProviderName>Microsoft</ProviderName>
+   <DefaultLocale>en-us</DefaultLocale>
+   <DisplayName DefaultValue="Bing Search">
+   </DisplayName>
+   <Description DefaultValue="Search selected data on Bing">
+   </Description>
+   <IconUrl DefaultValue="http://officeimg.vo.msecnd.net/_layouts/images/general/office_logo.jpg">
+   </IconUrl>
+   <Capabilities>
+     <Capability Name="Project"/>
+   </Capabilities>
+   <DefaultSettings>
+     <SourceLocation DefaultValue="http://m.bing.com">
+     </SourceLocation>
+   </DefaultSettings>
+   <Permissions>ReadWriteDocument</Permissions>
+ </OfficeApp>
+ ```
 
 
     Following are the required elements in the add-in manifest:
@@ -121,35 +121,35 @@ The manifest file specifies the URL of the add-in webpage or web application, th
     
 2. (Optional) Add  **Override** elements that have values for other locales. For example, the following manifest provides **Override** elements for French values of **DisplayName**,  **Description**,  **IconUrl**, and  **SourceLocation**.
     
-```XML
-  <?xml version="1.0" encoding="utf-8"?>
-<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.0" 
-           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-          xsi:type="TaskPaneApp">
-  <Id>1234-5678</Id>
-  <Version>15.0</Version>
-  <ProviderName>Microsoft</ProviderName>
-  <DefaultLocale>en-us</DefaultLocale>
-  <DisplayName DefaultValue="Bing Search">
-    <Override Locale="fr-fr" Value="Bing Search"/>
-  </DisplayName>
-  <Description DefaultValue="Search selected data on Bing">
-    <Override Locale="fr-fr" Value="Search selected data on Bing"></Override>
-  </Description>
-  <IconUrl DefaultValue="http://officeimg.vo.msecnd.net/_layouts/images/general/office_logo.jpg">
-    <Override Locale="fr-fr" Value="http://officeimg.vo.msecnd.net/_layouts/images/general/office_logo.jpg"/>
-  </IconUrl>
-  <Capabilities>
-    <Capability Name="Project"/>
-  </Capabilities>
-  <DefaultSettings>
-    <SourceLocation DefaultValue="http://m.bing.com">
-      <Override Locale="fr-fr" Value="http://m.bing.com"/>
-    </SourceLocation>
-  </DefaultSettings>
-  <Permissions>ReadWriteDocument</Permissions>
-</OfficeApp>
-```
+ ```XML
+   <?xml version="1.0" encoding="utf-8"?>
+ <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.0" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+           xsi:type="TaskPaneApp">
+   <Id>1234-5678</Id>
+   <Version>15.0</Version>
+   <ProviderName>Microsoft</ProviderName>
+   <DefaultLocale>en-us</DefaultLocale>
+   <DisplayName DefaultValue="Bing Search">
+     <Override Locale="fr-fr" Value="Bing Search"/>
+   </DisplayName>
+   <Description DefaultValue="Search selected data on Bing">
+     <Override Locale="fr-fr" Value="Search selected data on Bing"></Override>
+   </Description>
+   <IconUrl DefaultValue="http://officeimg.vo.msecnd.net/_layouts/images/general/office_logo.jpg">
+     <Override Locale="fr-fr" Value="http://officeimg.vo.msecnd.net/_layouts/images/general/office_logo.jpg"/>
+   </IconUrl>
+   <Capabilities>
+     <Capability Name="Project"/>
+   </Capabilities>
+   <DefaultSettings>
+     <SourceLocation DefaultValue="http://m.bing.com">
+       <Override Locale="fr-fr" Value="http://m.bing.com"/>
+     </SourceLocation>
+   </DefaultSettings>
+   <Permissions>ReadWriteDocument</Permissions>
+ </OfficeApp>
+ ```
 
 
 ## Installing Project add-ins

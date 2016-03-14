@@ -1,11 +1,5 @@
 
 # Add and remove attachments to an item in a compose form in Outlook
-See JavaScript examples of using asynchronous methods and an Exchange Web Services (EWS) ID from an Outlook add-in to add an attachment to an item a user is composing in Outlook.
-
-
-
-## Adding a file or Outlook item as an attachment
-
 
 You can use the [addFileAttachmentAsync](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html) and [addItemAttachmentAsync](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html) methods to attach a file and an Outlook item respectively to the item that the user is composing. Both are asynchronous methods, which means execution can go on without waiting for the add-attachment action to complete. Depending on the original location and size of the attachment being added, the add-attachment asynchronous call may take a while to complete. If there are tasks that depend on the action to complete, you should carry out those tasks in a callback method. This callback method is optional and is invoked when the uploading of the attachment is complete. The callback method takes an [AsyncResult](http://dev.outlook.com/reference/add-ins/simple-types.html) object as an output parameter that provides any status, error, and returned value from the add-attachment action. If the callback requires any extra parameters, you can specify them in the optional _options.aysncContext_ parameter. _options.asyncContext_ can be of any type that your callback method expects.
 
@@ -24,7 +18,7 @@ You can check for success or error of an asynchronous method call in the callbac
  >**Note**  As a best practice, you should use the attachment ID to remove an attachment only if the same add-in has added that attachment in the same session. In Outlook Web App and OWA for Devices, the attachment ID is valid only within the same session. A session is over when the user closes the add-in, or if the user starts composing in an inline form and subsequently pops out the inline form to continue in a separate window.
 
 
-### Attaching a file
+## Attaching a file
 
 You can attach a file to a message or appointment in a compose form by using the  **addFileAttachmentAsync** method and specifying the URI of the file. If the file is protected, you can include an appropriate identity or authentication token as a URI query string parameter. Exchange will make a call to the URI to get the attachment, and the web service which protects the file will need to use the token as a means of authentication.
 
@@ -74,7 +68,7 @@ function write(message){
 ```
 
 
-### Attaching an Outlook item
+## Attaching an Outlook item
 
 You can attach an Outlook item (for example, email, calendar, or contact item) to a message or appointment in a compose form by specifying the Exchange Web Services (EWS) ID of the item and using the  **addItemAttachmentAsync** method. You can get the EWS ID of an email, calendar, contact or task item in the user's mailbox by using the [mailbox.makeEwsRequestAsync](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.html) method and accessing the EWS operation [FindItem](http://msdn.microsoft.com/en-us/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx). The [item.itemId](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html) property also provides the EWS ID of an existing item in a read form.
 
