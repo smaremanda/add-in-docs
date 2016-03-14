@@ -8,17 +8,16 @@ Outlook activates some types of add-ins if the message or appointment that the u
 
 The following figure shows Outlook add-ins activated in the add-in bar for the message in the Reading Pane. 
 
-
 ![App bar showing activated read mail apps](../../../images/mod_off15_MailAppAppBar.png)
 
 
 ## Specify activation rules in a manifest
 
 
-To have Outlook activate an add-in for specific conditions, specify activation rules in the add-in manifest. There are two  **Rule** elements that you can use:
+To have Outlook activate an add-in for specific conditions, specify activation rules in the add-in manifest by using one of the following **Rule** elements:
 
-- [Rule element (MailApp complexType) (add-ins for Office schema v1.1)](http://msdn.microsoft.com/en-us/library/56dfc32e-2b8c-1724-05be-5595baf38aa3%28Office.15%29.aspx) that specifies an individual rule
-- [Rule element (RuleCollection complexType) (add-ins for Office schema v1.1)](http://msdn.microsoft.com/en-us/library/c6ce9d52-4b53-c6a6-de7e-c64106135c81%28Office.15%29.aspx) that combines multiple rules using logical operations
+- [Rule element (MailApp complexType)](http://msdn.microsoft.com/en-us/library/56dfc32e-2b8c-1724-05be-5595baf38aa3%28Office.15%29.aspx) - Specifies an individual rule.
+- [Rule element (RuleCollection complexType)](http://msdn.microsoft.com/en-us/library/c6ce9d52-4b53-c6a6-de7e-c64106135c81%28Office.15%29.aspx) - Combines multiple rules using logical operations.
     
 
  >**Note**  The [Rule](http://msdn.microsoft.com/en-us/library/56dfc32e-2b8c-1724-05be-5595baf38aa3%28Office.15%29.aspx) element that you use to specify an individual rule is of the abstract [Rule](http://msdn.microsoft.com/en-us/library/bcd7a3a7-9cd4-a270-89e0-5386d1c6df01%28Office.15%29.aspx) complex type. Each of the following types of rules extends this abstract **Rule** complex type. So when you specify an individual rule in a manifest, you must use the [xsi:type](http://www.w3.org/TR/xmlschema-1/) attribute to further define one of the following types of rules. For example, the following rule defines an [ItemIs](http://msdn.microsoft.com/en-us/library/f7dac4a3-1574-9671-1eda-47f092390669%28Office.15%29.aspx) rule: `<Rule xsi:type="ItemIs" ItemType="Message" />`Note: The  **FormType** attribute applies to activation rules in the manifest v1.1 but is not defined in **VersionOverrides** v1.0. So it can't be used when [ItemIs](http://msdn.microsoft.com/en-us/library/f7dac4a3-1574-9671-1eda-47f092390669%28Office.15%29.aspx) is used in the **VersionOverrides** node.
