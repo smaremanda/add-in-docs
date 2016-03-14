@@ -228,8 +228,7 @@ Where the  **id** attribute is a string with a maximum of 125 characters and the
 |**Description**|Required. The description for the supertip. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element in the **LongStrings** element in the **Resources** element.|
 |**Icon**|Required. Contains the  **Image** elements for the button.|
 |**Image**|An image for the button. The  **resid** attribute must be set to the value of the **id** attribute of an **Image** element in the **Images** element in the **Resources** element. The **size** attribute indicates the size in pixels of the image. Three image sizes are required (16, 32, and 80 pixels) while five other sizes are supported (20, 24, 40, 48, and 64 pixels).|
-|**Action**|Required. Specifies the action to perform when the user selects the button. It is defined by the following.|
-|**xsi:type**|This attribute specifies the kind of action performed when the user selects the button. It can be one of the following
+|**Action**|Required. Specifies the action to perform when the user selects the button. It is defined by the following.<br>**xsi:type** This attribute specifies the kind of action performed when the user selects the button. It can be one of the following
 <ul><li><p>"ExecuteFunction"</p></li><li><p>"ShowTaskpane"</p></li></ul>|
 |**FunctionName**|Required element when  **xsi:type** is "ExecuteFunction". Specifies the name of the function to execute. The function is contained in the file specified in the **FunctionFile** element.|
 |**SourceLocation**|Required element when  **xsi:type** is "ShowTaskpane". Specifies the source file location for this action. The **resid** attribute must be set to the value of the **id** attribute of a **Url** element in the **Urls** element in the **Resources** element.|
