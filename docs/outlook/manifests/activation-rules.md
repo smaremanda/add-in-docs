@@ -213,10 +213,7 @@ The following example activates the add-in when the user is composing a message,
 To provide a satisfactory experience with Outlook add-ins, you should adhere to the activation and API usage guidelines. The following table shows general limits for regular expressions and rules but there are specific rules for different hosts. For more information, see [Limits for activation and JavaScript API for Outlook add-ins](../../outlook/limits-for-activation-and-javascript-api-for-outlook-add-ins.md) and [Troubleshoot Outlook add-in activation](../../outlook/troubleshoot-outlook-add-in-activation.md).
 
 
-|
-|
 |**Add-in element**|**Guidelines**|
-|:-----|:-----|
 |manifest size|No larger than 256 KB.|
 |rules|No more than 15 rules.|
 |[ItemHasKnownEntity](http://msdn.microsoft.com/en-us/library/87e10fd2-eab4-c8aa-bec3-dff92d004d39%28Office.15%29.aspx)|An Outlook rich client will apply the rule against the first 1 MB of the body, and not to the rest of the body.|
