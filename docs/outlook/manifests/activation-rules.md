@@ -9,8 +9,6 @@ Outlook activates some types of add-ins if the message or appointment that the u
 The following figure shows Outlook add-ins activated in the add-in bar for the message in the Reading Pane. 
 
 
-**The add-in bar showing 2 Outlook add-ins activated for the message in the Reading Pane read form**
-
 ![App bar showing activated read mail apps](../../../images/mod_off15_MailAppAppBar.png)
 
 
@@ -19,18 +17,13 @@ The following figure shows Outlook add-ins activated in the add-in bar for the m
 
 To have Outlook activate an add-in for specific conditions, specify activation rules in the add-in manifest. There are two  **Rule** elements that you can use:
 
-
 - [Rule element (MailApp complexType) (add-ins for Office schema v1.1)](http://msdn.microsoft.com/en-us/library/56dfc32e-2b8c-1724-05be-5595baf38aa3%28Office.15%29.aspx) that specifies an individual rule
-    
 - [Rule element (RuleCollection complexType) (add-ins for Office schema v1.1)](http://msdn.microsoft.com/en-us/library/c6ce9d52-4b53-c6a6-de7e-c64106135c81%28Office.15%29.aspx) that combines multiple rules using logical operations
     
 
  >**Note**  The [Rule](http://msdn.microsoft.com/en-us/library/56dfc32e-2b8c-1724-05be-5595baf38aa3%28Office.15%29.aspx) element that you use to specify an individual rule is of the abstract [Rule](http://msdn.microsoft.com/en-us/library/bcd7a3a7-9cd4-a270-89e0-5386d1c6df01%28Office.15%29.aspx) complex type. Each of the following types of rules extends this abstract **Rule** complex type. So when you specify an individual rule in a manifest, you must use the [xsi:type](http://www.w3.org/TR/xmlschema-1/) attribute to further define one of the following types of rules. For example, the following rule defines an [ItemIs](http://msdn.microsoft.com/en-us/library/f7dac4a3-1574-9671-1eda-47f092390669%28Office.15%29.aspx) rule: `<Rule xsi:type="ItemIs" ItemType="Message" />`Note: The  **FormType** attribute applies to activation rules in the manifest v1.1 but is not defined in **VersionOverrides** v1.0. So it can't be used when [ItemIs](http://msdn.microsoft.com/en-us/library/f7dac4a3-1574-9671-1eda-47f092390669%28Office.15%29.aspx) is used in the **VersionOverrides** node.
 
-The following table lists the types of rules available. You can find more information following the table and in the specified articles under [Create Outlook add-ins for read forms](../../outlook/read-scenario.md).
-
-
-**Types of rules available in read forms**
+The following table lists the types of rules that are available. You can find more information following the table and in the specified articles under [Create Outlook add-ins for read forms](../../outlook/read-scenario.md).
 
 
 |**Rule name**|**Applicable forms**|**Description**|
@@ -107,17 +100,11 @@ You can specify a rule by using the [ItemHasKnownEntity](http://msdn.microsoft.c
 
 
 -  **Address**
-    
 -  **Contact**
-    
 -  **EmailAddress**
-    
 -  **MeetingSuggestion**
-    
 -  **PhoneNumber**
-    
 -  **TaskSuggestion**
-    
 -  **URL**
     
 These entities are defined as enumerated values in the [KnownEntityType](http://msdn.microsoft.com/en-us/library/432d413b-9fcc-eb50-cfea-0ed10a43bd52%28Office.15%29.aspx) simple type.
@@ -125,8 +112,6 @@ These entities are defined as enumerated values in the [KnownEntityType](http://
 You can optionally include a regular expression in the  **RegularExpression** attribute so that your add-in is only shown when an entity that matches the regular expression in present. To obtain matches to regular expressions specified in **ItemHasKnownEntity** rules, you can use the **getRegExMatches** or **getFilteredEntitiesByName** method for the currently selected Outlook item.
 
 The following example shows a collection of  **Rule** elements that show the add-in when one of the specified well-known entities is present in the message.
-
-
 
 
 ```XML
@@ -229,14 +214,9 @@ To provide a satisfactory experience with Outlook add-ins, you should adhere to 
 
 
 - [Outlook add-ins](../../outlook/outlook-add-ins.md)
-    
 - [Create Outlook add-ins for compose forms](../../outlook/compose-scenario.md)
-    
 - [Limits for activation and JavaScript API for Outlook add-ins](../../outlook/limits-for-activation-and-javascript-api-for-outlook-add-ins.md)
-    
 - [Item Types and Message Classes](http://msdn.microsoft.com/library/15b709cc-7486-b6c7-88a3-4a4d8e0ab292%28Office.15%29.aspx)
-    
 - [Use regular expression activation rules to show an Outlook add-in](../../outlook/use-regular-expressions-to-show-an-outlook-add-in.md)
-    
 - [Match strings in an Outlook item as well-known entities](../../outlook/match-strings-in-an-item-as-well-known-entities.md)
     
