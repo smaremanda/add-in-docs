@@ -6,18 +6,18 @@
     <Item text="Requirements" url="overview/requirements-for-running-office-add-ins" />
   </Item>
   <Item text="Get Started" url="get-started">
-    <Item text="create-an-office-add-in-using-any-editor" url="get-started/create-an-office-add-in-using-any-editor" />
-    <Item text="create-an-office-add-in-with-napa" url="get-started/create-an-office-add-in-with-napa" />
-    <Item text="create-and-debug-office-add-ins-in-visual-studio" url="get-started/create-and-debug-office-add-ins-in-visual-studio" />
+    <Item text="...in Visual Studio" url="get-started/create-and-debug-office-add-ins-in-visual-studio" />
+	<Item text="...using any editor" url="get-started/create-an-office-add-in-using-any-editor" />
+    <Item text="...with Napa" url="get-started/create-an-office-add-in-with-napa" />
   </Item>
   <Item text="Design" url="design/add-in-design">
-    <Item text="ui-elements" url="design/ui-elements">
-      <Item text="interaction-patterns" url="design/ui-elements/interaction-patterns" />
+    <Item text="UI Elements" url="design/ui-elements">
+      <Item text="Interaction Patterns" url="design/ui-elements/interaction-patterns" />
       <Item text="Layout for content add-ins" url="design/ui-elements/layout-for-content-add-ins" FriendlyUrl="design/ui-elementslayout-for-content-add-ins" SEOKeyword="PowerPoint&quot;" />
       <Item text="Layout for task pane add-ins" url="design/ui-elements/layout-for-task-pane-add-ins" FriendlyUrl="design/ui-elementslayout-for-task-pane-add-ins" SEOKeyword="Word" SEODescription="PowerPoint" />
       <Item text="Layouts for Outlook add-ins" url="design/ui-elements/layouts-for-outlook-add-ins" FriendlyUrl="design/ui-elementslayouts-for-outlook-add-ins" SEODescription="&quot;Use these layouts for mail add-ins" Scope="outlook" />
       <Item text="UI elements" url="design/ui-elements/ui-elements" FriendlyUrl="design/ui-elementsui-elements" SEOKeyword="Excel" SEODescription="PowerPoint" />
-      <Item text="using-office-ui-fabric" url="design/ui-elements/using-office-ui-fabric" />
+      <Item text="Using Office UI Fabric" url="design/ui-elements/using-office-ui-fabric" />
     </Item>
 	<Item text="Add-in commands for Excel and Word (Preview)" url="design/add-in-commands-for-excel-and-word-preview" FriendlyUrl="designadd-in-commands-for-excel-and-word-preview" SEOKeyword="Excel&quot;" />
     <Item text="Add-in development best practices" url="design/add-in-development-best-practices" FriendlyUrl="designadd-in-development-best-practices" SEOKeyword="Excel" SEODescription="PowerPoint" />
@@ -38,27 +38,26 @@
 		<Item text="Persist state and settings" url="develop/persisting-add-in-state-and-settings" />
 	</Item>
 	<Item text="Privacy and Security" url="develop/privacy-and-security">
-		<Item text="Address Same Origin Policy Limitations" url="develop/addressing-same-origin-policy-limitations" />
+		<Item text="Address same origin policy limitations" url="develop/addressing-same-origin-policy-limitations" />
 	</Item>
 	<Item text="Localization" url="develop/localization" />
     <Item text="Performance" url="develop/resource-limits-and-performance-optimization">
-		<Item text="tips-and-tricks-for-improving-performance-and-experience-of-Office-add-ins" url="publish/tips-and-tricks-for-improving-performance-and-experience-of-Office-add-ins" /><Item text="tips-and-tricks-for-improving-performance-and-experience-of-Office-add-ins" url="publish/tips-and-tricks-for-improving-performance-and-experience-of-Office-add-ins" />
+		<Item text="Tips and tricks" url="publish/tips-and-tricks-for-improving-performance-and-experience-of-Office-add-ins" /><Item text="tips-and-tricks-for-improving-performance-and-experience-of-Office-add-ins" url="publish/tips-and-tricks-for-improving-performance-and-experience-of-Office-add-ins" />
 	</Item>
   </Item>
 <Item text="Test" url="testing">
     <Item text="Windows 10 and F12 developer tools" url="testing/debug-add-ins-using-f12-developer-tools-on-windows-10" />
-    <Item text="Sideload: Office Online" url="testing/debug-add-ins-in-office-online" FriendlyUrl="testing/debug-add-ins-in-office-online" SEOKeyword="Word&quot;" />
+    <Item text="Side-load: Office Online" url="testing/debug-add-ins-in-office-online" FriendlyUrl="testing/debug-add-ins-in-office-online" SEOKeyword="Word&quot;" />
 	<Item text="Debug: iPad and Mac" url="testing/debug-office-add-ins-on-ipad-and-mac" FriendlyUrl="testing/debug-office-add-ins-on-ipad-and-mac" SEOKeyword="Word" SEODescription="PowerPoint&quot;" />
-    <Item text="Sideload: iPad and Mac" url="testing/sideload-an-office-add-in-on-ipad-and-mac" FriendlyUrl="testing/sideload-an-office-add-in-on-ipad-and-mac" SEOKeyword="Word" SEODescription="PowerPoint&quot;" />
+    <Item text="Side-load: iPad and Mac" url="testing/sideload-an-office-add-in-on-ipad-and-mac" FriendlyUrl="testing/sideload-an-office-add-in-on-ipad-and-mac" SEOKeyword="Word" SEODescription="PowerPoint&quot;" />
 	<Item text="Testing and troubleshooting" url="testing/testing-and-troubleshooting" FriendlyUrl="testing/testing-and-troubleshooting" SEOKeyword="Word" SEODescription="PowerPoint" />
   </Item>
   <Item text="Publish" url="publish">
     <Item text="Create a network shared folder catalog for task pane and content add-ins" url="publish/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins" FriendlyUrl="publishcreate-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins" SEOKeyword="Excel" SEODescription="Word" />
-    <Item text="host-an-office-add-in-on-microsoft-azure" url="publish/host-an-office-add-in-on-microsoft-azure" />
-    <Item text="package-your-add-in-using-napa-or-visual-studio" url="publish/package-your-add-in-using-napa-or-visual-studio" />
+    <Item text="Host an Office Add-in on Microsoft Azure" url="publish/host-an-office-add-in-on-microsoft-azure" />
+    <Item text="Package your add-in using Napa or Visual Studio" url="publish/package-your-add-in-using-napa-or-visual-studio" />
     <Item text="Publish task pane and content add-ins to an add-in catalog" url="publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog" FriendlyUrl="publishpublish-task-pane-and-content-add-ins-to-an-add-in-catalog" SEOKeyword="Excel" SEODescription="Word" />
-    <Item text="publish" url="publish/publish" />
-    <Item text="set-up-an-add-in-catalog-on-office-365" url="publish/set-up-an-add-in-catalog-on-office-365" />
+    <Item text="Set up an add in catalog on Office 365" url="publish/set-up-an-add-in-catalog-on-office-365" />
     <Item text="Set up an add-in catalog on SharePoint" url="publish/set-up-an-add-in-catalog-on-sharepoint" FriendlyUrl="publishset-up-an-add-in-catalog-on-sharepoint" SEOKeyword="Excel" SEODescription="Word" />
     
   </Item>
@@ -123,7 +122,9 @@
     <Item text="Troubleshoot Outlook add-in activation" url="outlook/troubleshoot-outlook-add-in-activation" FriendlyUrl="outlooktroubleshoot-outlook-add-in-activation" SEODescription="Outlook add-in activation is contextual and based on rules in an add-in manifest. Explore reasons an installed add-in can fail to activate in Outlook." Scope="outlook" />
   </Item>
   <Item text="PowerPoint" url="powerpoint/powerpoint-add-ins" Scope="powerpoint">
-    <Item text="office-mix" url="powerpoint/office-mix" Scope="powerpoint">
+<Item text="Use document themes in your PowerPoint add-ins" url="powerpoint/use-document-themes-in-your-powerpoint-add-ins" FriendlyUrl="powerpoint/use-document-themes-in-your-powerpoint-add-ins" Scope="powerpoint" />
+	<Item text="Get the whole document from an add-in for PowerPoint or Word" url="develop/get-the-whole-document-from-an-add-in-for-powerpoint-or-word" FriendlyUrl="develop/get-the-whole-document-from-an-add-in-for-powerpoint-or-word" SEOKeyword="Word&quot;" />   
+  <Item text="Office Mix" url="powerpoint/office-mix" Scope="powerpoint">
       <Item text="Configuring and editing LabsJS labs for Office Mix" url="powerpoint/office-mix/configuring-and-editing-labsjs-labs-for-office-mix" FriendlyUrl="powerpoint/office-mix/configuring-and-editing-labsjs-labs-for-office-mix" SEODescription="Learn how to configure your lab to support viewing and editing." Scope="powerpoint" />
       <Item text="Walkthrough: Creating your first lab for Office Mix" url="powerpoint/office-mix/creating-your-first-lab-for-office-mix" FriendlyUrl="powerpoint/office-mix/creating-your-first-lab-for-office-mix" SEODescription="Create your first lab for Office Mix" Scope="powerpoint" />
       <Item text="Get started with LabsJS for Office Mix" url="powerpoint/office-mix/get-started-with-labsjs-for-office-mix" FriendlyUrl="powerpoint/office-mix/get-started-with-labsjs-for-office-mix" SEODescription="Learn how to set up an Office Add-ins development environment to support the development of Microsoft Office Mix Labs using the Labs.js API." Scope="powerpoint" />
@@ -132,9 +133,7 @@
       <Item text="LabsJS labs for Office Mix examples" url="powerpoint/office-mix/labsjs-labs-for-office-mix-examples" FriendlyUrl="powerpoint/office-mix/labsjs-labs-for-office-mix-examples" SEODescription="Components are the building blocks of a lab; use the components to assemble your labs." Scope="powerpoint" />
       <Item text="Office Mix add-ins" url="powerpoint/office-mix/office-mix-add-ins" FriendlyUrl="powerpoint/office-mix/office-mix-add-ins" SEODescription="&quot;LabsJS allows you to create specialized Office Mix instances" Scope="powerpoint" />
     </Item>
-    <Item text="Use document themes in your PowerPoint add-ins" url="powerpoint/use-document-themes-in-your-powerpoint-add-ins" FriendlyUrl="powerpoint/use-document-themes-in-your-powerpoint-add-ins" Scope="powerpoint" />
-	<Item text="Get the whole document from an add-in for PowerPoint or Word" url="develop/get-the-whole-document-from-an-add-in-for-powerpoint-or-word" FriendlyUrl="develop/get-the-whole-document-from-an-add-in-for-powerpoint-or-word" SEOKeyword="Word&quot;" /> 
- </Item>
+  </Item>
   <Item text="Word" url="word" Scope="word">
     <Item text="Word add-ins programming overview" url="word/word-add-ins-programming-overview" FriendlyUrl="wordword-add-ins-programming-overview" SEODescription="&quot;Learn about proxy objects" Scope="word" />
     <Item text="Word add-ins" url="word/word-add-ins" FriendlyUrl="wordword-add-ins" SEODescription="Use Word Add-ins to extend the functionality of Word and to integrate Word with other applications." Scope="word" />
