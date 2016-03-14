@@ -1,7 +1,5 @@
 
 # Authenticate a user with an identity token for Exchange
-See a code example showing how an authentication object matches the unique identity represented by an identity token with a set of credentials for a service.
-
 
 You can implement a single sign-on (SSO) authentication scheme for an information service that enables customers who are using Outlook add-ins to connect to your service by using their Exchange server credentials. This article shows how to match credentials by using a simple  **Dictionary** object-based user data store.
 
