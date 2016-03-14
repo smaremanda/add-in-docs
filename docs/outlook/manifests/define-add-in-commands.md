@@ -302,6 +302,7 @@ Where the  **id** attribute is a string with a maximum of 125 characters and the
 |**Label**|Required. The text for the menu. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element in the **ShortStrings** element in the **Resources** element.|
 |**SuperTip**|Required. The supertip for the menu, which is defined by the following table.|
 
+|:-----|:-----|
 |**Title**|Required. The text for the supertip. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element in the **ShortStrings** element in the **Resources** element.|
 |**Description**|Required. The description for the supertip. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element in the **LongStrings** element in the **Resources** element.|
 |**Icon**|Required. Contains the  **Image** elements for the menu.|
@@ -368,18 +369,14 @@ The  **Resources** node defines the following resources. Each resource can have 
 
 |**Resource**|**Description**|
 |:-----|:-----|
-|**Images**/ **Image**|Provides the HTTPS URL to an image for an icon. Each icon must have three  **Image** elements, one for each of the three mandatory sizes:
-<ul><li><p>16x16</p></li><li><p>32x32</p></li><li><p>80x80</p></li></ul>The following additional sizes are also supported, but not required:
-<ul><li><p>20x20</p></li><li><p>24x24</p></li><li><p>40x40</p></li><li><p>48x48</p></li><li><p>64x64</p></li></ul>|
+|**Images**/ **Image**|Provides the HTTPS URL to an image for an icon. Each icon must have three  **Image** elements, one for each of the three mandatory sizes:<br><ul><li><p>16x16</p></li><li><p>32x32</p></li><li><p>80x80</p></li></ul>The following additional sizes are also supported, but not required:<ul><li><p>20x20</p></li><li><p>24x24</p></li><li><p>40x40</p></li><li><p>48x48</p></li><li><p>64x64</p></li></ul>|
 |**Urls**/ **Url**|Provides an HTTPS URL location. A URL can be a maximum of 2048 characters. |
 |**ShortStrings**/ **String**|The text for  **Label** and **Title** elements. Each **String** contains a maximum of 125 characters.|
 |**LongStrings**/ **String**|The text for  **Description** attributes. Each **String** contains a maximum of 250 characters.|
 
- >**Note**  When defining resources, keep the following requirements in mind:
+**Note**  When defining resources, keep the following requirements in mind:
 
 The following is an example of the  **Resources** element.
-
-
 
 
 ```XML
