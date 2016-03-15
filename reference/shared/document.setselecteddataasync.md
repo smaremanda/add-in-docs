@@ -247,7 +247,7 @@ function insertPictureAtSelection(base64EncodedImageStr) {
 
 A checkmark (![Check symbol](../../images/mod_off15_checkmark.png)) in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
 
-For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
+For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](../../docs/overview/requirements-for-running-office-add-ins.md).
 
 
 **Supported hosts, by platform**
