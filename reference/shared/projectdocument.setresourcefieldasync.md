@@ -27,7 +27,7 @@ _fieldValue_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;The value for the target field, as  **string**,  **number**,  **boolean**, or  **object**. Required.
     
 _options_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;The following [optional parameter](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters):
+&nbsp;&nbsp;&nbsp;&nbsp;The following [optional parameter](../../docs/develop/asynchronous-programming-in-office-add-ins.md#passing-optional-parameters-to-asynchronous-methods):
    
    
 

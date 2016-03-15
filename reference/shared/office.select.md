@@ -35,7 +35,7 @@ When the function you passed to the  _onError_ parameter executes, it receives a
 
 The  **Office.select** method provides access to a [Binding](../../reference/shared/binding.md) object promise that attempts to return the specified binding when any of its asynchronous methods are invoked.
 
-Supported formats: "bindings# _bindingId_", which returns a  **Binding** object for the binding with the [id](../../reference/shared/binding.id.md) of `bindingId`. For more information, see [Asynchronous programming in Office Add-ins](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_PromisesPattern) and [Bind to regions in a document or spreadsheet](http://msdn.microsoft.com/library/5bf788db-d788-4d91-bcb6-fc3913b40012%28Office.15%29.aspx).
+Supported formats: "bindings# _bindingId_", which returns a  **Binding** object for the binding with the [id](../../reference/shared/binding.id.md) of `bindingId`. For more information, see [Asynchronous programming in Office Add-ins](../../docs/develop/asynchronous-programming-in-office-add-ins.md#asynchronous-programming-using-the-promises-pattern-to-access-data-in-bindings) and [Bind to regions in a document or spreadsheet](http://msdn.microsoft.com/library/5bf788db-d788-4d91-bcb6-fc3913b40012%28Office.15%29.aspx).
 
 
  >**Note** 

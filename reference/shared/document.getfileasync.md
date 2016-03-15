@@ -29,7 +29,7 @@ Office.context.document.getFileAsync(fileType [, options], callback);
 |Word Online|Office.FileType.CompressedOffice.FileType.PdfOffice.FileType.Text|
 |PowerPoint Online|Office.FileType.CompressedOffice.FileType.Pdf|
 |**Changed in** 1.1, see [Support history](#bk_history)|
-| _options_|**object**|Specifies any of the following [optional parameters](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters)||
+| _options_|**object**|Specifies any of the following [optional parameters](../../docs/develop/asynchronous-programming-in-office-add-ins.md#passing-optional-parameters-to-asynchronous-methods)||
 | _sliceSize_|**number**|Specifies the desired slice size (in bytes) up to 4194304 bytes (4MB). If not specified, a default slice size of 4194304 bytes (4MB) will be used. ||
 | _asyncContext_|**array**,  **boolean**,  **null**,  **number**,  **object**, **string**, or  **undefined**|A user-defined item of any type that is returned in the  **AsyncResult** object without being altered.||
 | _callback_|**object**|A function that is invoked when the callback returns, whose only parameter is of type  **AsyncResult**.||

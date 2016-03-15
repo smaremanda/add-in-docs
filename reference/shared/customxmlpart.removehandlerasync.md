@@ -20,7 +20,7 @@ customXmlPart.removeHandlerAsync(eventType, handler [,options], callback);
 |**Name**|**Type**|**Description**|**Support notes**|
 |:-----|:-----|:-----|:-----|
 | _eventType_|[EventType](../../reference/shared/eventtype-enumeration.md)|Specifies the type of event to remove. Required.For a  **CustomXmlPart** object event, the _eventType_ parameter can be specified as **Office.EventType.NodeDeleted**,  **Office.EventType.NodeInserted**,  **Office.EventType.NodeReplaced**, or the corresponding text values of these enumerations.||
-| _options_|**object**|Specifies any of the following [optional parameters](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters)||
+| _options_|**object**|Specifies any of the following [optional parameters](../../docs/develop/asynchronous-programming-in-office-add-ins.md#passing-optional-parameters-to-asynchronous-methods)||
 | _handler_|**string**|Specifies the name of the handler to remove. ||
 | _asyncContext_|**array**,  **boolean**,  **null**,  **number**,  **object**, **string**, or  **undefined**|A user-defined item of any type that is returned in the  **AsyncResult** object without being altered.||
 | _callback_|**object**|A function that is invoked when the callback returns, whose only parameter is of type  **AsyncResult**.||

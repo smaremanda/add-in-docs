@@ -19,7 +19,7 @@ bindingObj.getDataAsync([, options] , callback );
 
 |**Name**|**Type**|**Description**|**Support notes**|
 |:-----|:-----|:-----|:-----|
-| _options_|**object**|Specifies any of the following [optional parameters](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters)||
+| _options_|**object**|Specifies any of the following [optional parameters](../../docs/develop/asynchronous-programming-in-office-add-ins.md#passing-optional-parameters-to-asynchronous-methods)||
 | _coercionType_|**[CoercionType](../../reference/shared/coerciontype-enumeration.md)**|Specifies how to coerce the data being set. ||
 | _valueFormat_|[ValueFormat](../../reference/shared/valueformat-enumeration.md)|Specifies whether values, such as numbers and dates, are returned with their formatting applied.||
 | _filterType_|[FilterType](../../reference/shared/filtertype-enumeration.md)|Specifies if a filter must be applied when the data is retrieved.||
