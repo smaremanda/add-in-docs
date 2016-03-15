@@ -66,7 +66,7 @@ The  **Binding** object is never called directly. It is the abstract parent clas
 
 Support for each API member of the  **Binding** object differs across Office host applications. See the "Support details" section of each member's topic for host support information.
 
-For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
+For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](../../docs/overview/requirements-for-running-office-add-ins.md).
 
 
 |||
