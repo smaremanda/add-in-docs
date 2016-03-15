@@ -1,7 +1,6 @@
 
 # Create a network shared folder catalog for task pane and content add-ins
-Set up a shared folder catalog to publish task pane and content Office Add-ins.
-
+
 
 A shared folder catalog provides a way to publish the manifests for task pane and content Office Add-ins to a network file share. Users can then get add-ins by specifying this file share as a trusted catalog, using the steps in the following procedure.
 

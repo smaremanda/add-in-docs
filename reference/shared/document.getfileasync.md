@@ -27,6 +27,7 @@ Office.context.document.getFileAsync(fileType [, options], callback);
 |PowerPoint on Windows desktop |Office.FileType.CompressedOffice.FileType.Pdf|
 |Word on Windows desktop and iPad|Office.FileType.CompressedOffice.FileType.PdfOffice.FileType.Text|
 |Word Online|Office.FileType.CompressedOffice.FileType.PdfOffice.FileType.Text|
+|PowerPoint Online|Office.FileType.CompressedOffice.FileType.Pdf|
 |**Changed in** 1.1, see [Support history](#bk_history)|
 | _options_|**object**|Specifies any of the following [optional parameters](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters)||
 | _sliceSize_|**number**|Specifies the desired slice size (in bytes) up to 4194304 bytes (4MB). If not specified, a default slice size of 4194304 bytes (4MB) will be used. ||
@@ -200,6 +201,8 @@ For more information about Office host application and server requirements, see 
 
 |**Version**|**Changes**|
 |:-----|:-----|
+|1.1| In PowerPoint Online, added support for **Office.FileType.Pdf** as the _fileType_ parameter.|
+|1.1| In PowerPoint Online, added support for **Office.FileType.Compressed** as the _fileType_ parameter.|
 |1.1| In Word Online, added support for **Office.FileType.Text** as the _fileType_ parameter.|
 |1.1| In Excel Online, added support for **Office.FileType.Compressed** as the _fileType_ parameter.|
 |1.1| In Word Online, added support for **Office.FileType.Compressed** and **Office.FileType.Pdf** as the _fileType_ parameter.|

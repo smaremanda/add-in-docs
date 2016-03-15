@@ -1,7 +1,8 @@
 
 # Get and set item data in a compose form in Outlook
 Learn how to get or set various properties of an item in an Outlook add-in in a compose scenario, including its recipients, subject, body, and appointment location and time.
-
+
+
 
 
 ## Getting and setting item properties for a compose add-in
@@ -21,14 +22,14 @@ Other than accessing item properties in the JavaScript API for Office, you can a
 |:-----|:-----|:-----|:-----|
 |[bcc](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|[Recipients](http://dev.outlook.com/reference/add-ins/Recipients.html)|[Recipients.getAsync](http://dev.outlook.com/reference/add-ins/Recipients.html)|[Recipients.addAsync](http://dev.outlook.com/reference/add-ins/Recipients.html)[Recipients.setAsync](http://dev.outlook.com/reference/add-ins/Recipients.html)|
 |[body](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|[Body](http://dev.outlook.com/reference/add-ins/Body.html)|[Body.getAsync](http://dev.outlook.com/reference/add-ins/Body.html)|[Body.prependAsync](http://dev.outlook.com/reference/add-ins/Body.html)[Body.setAsync](http://dev.outlook.com/reference/add-ins/Body.html)[Body.setSelectedDataAsync](http://dev.outlook.com/reference/add-ins/Body.html)|
-|[cc](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|**Recipients**|**Recipients.getAsync**|**Recipients.addAsync** **Recipients.setAsync**|
+|[cc](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|Recipients|Recipients.getAsync|Recipients.addAsync Recipients.setAsync|
 |[end](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|[Time](http://dev.outlook.com/reference/add-ins/Time.html)|[Time.getAsync](http://dev.outlook.com/reference/add-ins/Time.html)|[Time.setAsync](http://dev.outlook.com/reference/add-ins/Time.html)|
 |[location](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|[Location](http://dev.outlook.com/reference/add-ins/Location.html)|[Location.getAsync](http://dev.outlook.com/reference/add-ins/Location.html)|[Location.setAsync](http://dev.outlook.com/reference/add-ins/Location.html)|
-|[optionalAttendees](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|**Recipients**|**Recipients.getAsync**|**Recipients.addAsync** **Recipients.setAsync**|
-|[requiredAttendees](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|**Recipients**|**Recipients.getAsync**|**Recipients.addAsync** **Recipients.setAsync**|
-|[start](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|**Time**|**Time.getAsync**|**Time.setAsync**|
+|[optionalAttendees](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|Recipients|Recipients.getAsync|Recipients.addAsync Recipients.setAsync|
+|[requiredAttendees](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|Recipients|Recipients.getAsync|Recipients.addAsync Recipients.setAsync|
+|[start](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|Time|Time.getAsync|Time.setAsync|
 |[subject](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|[Subject](http://dev.outlook.com/reference/add-ins/Subject.html)|[Subject.getAsync](http://dev.outlook.com/reference/add-ins/Subject.html)|[Subject.setAsync](http://dev.outlook.com/reference/add-ins/Subject.html)|
-|[to](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|**Recipients**|**Recipients.getAsync**|**Recipients.addAsync** **Recipients.setAsync**|
+|[to](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)|Recipients|Recipients.getAsync|Recipients.addAsync Recipients.setAsync|
 
 
 

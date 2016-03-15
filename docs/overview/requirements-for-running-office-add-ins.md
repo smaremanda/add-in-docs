@@ -1,6 +1,7 @@
 
 # Requirements for running Office Add-ins
-
+
+
 
 This article describes the software and device requirements for running Office Add-ins.
 
@@ -8,7 +9,7 @@ This article describes the software and device requirements for running Office A
 
 To be able to install and run any Office Add-in, you first need to deploy the manifest and webpage files for the UI and code of your add-in to the appropriate server locations.
 
-For all types of add-ins (content, Outlook, and task pane), you need to deploy your add-in's webpage files to a web server, or web hosting service, such as [Microsoft Azure](../publish/host-an-office-add-in-on-microsoft-azure.md). 
+For all types of add-ins (content, Outlook, and task pane add-ins and add-in commands), you need to deploy your add-in's webpage files to a web server, or web hosting service, such as [Microsoft Azure](../publish/host-an-office-add-in-on-microsoft-azure.md). 
 
 
  >**Note**   When you develop and debug an add-in in Visual Studio, Visual Studio deploys and runs your add-in's webpage files locally with IIS Express, and doesn't require an additional web server. Similarly, when you develop and debug with Napa in the browser, it deploys and runs your add-in's webpage files from storage associated with the account you used to sign into Napa.

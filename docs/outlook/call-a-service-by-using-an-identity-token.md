@@ -1,7 +1,5 @@
 
 # Call a service from an Outlook add-in by using an identity token in Exchange
-Learn how to use identity tokens to link the email accounts of your Outlook add-in customers to the information that your web service provides.
-
 
 An identity token provides a unique identifier for each of your customers that you can use to personalize the service that you provide. Your code can ask the Exchange server for an identity token by using an asynchronous method call that returns a string to your Outlook add-in. The string contains a JSON Web Token (JWT) identity token. Your add-in doesn't need to unpack the token. Instead, it passes the token on to your web service so that your service can authenticate the request from the add-in.
 
