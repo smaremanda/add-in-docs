@@ -27,5 +27,5 @@ Specifies any additional domains that your Office Add-in will use to load pages.
 
 ## Remarks
 
-The  **AppDomains** and **AppDomain** elements are used to specify any additional domains other than the one specified in the [SourceLocation](../../reference/manifest/sourcelocation.md) element. For more information, see [Office Add-ins XML manifest](http://msdn.microsoft.com/library/4139ff24-afac-472a-af7d-9d069587ac9b%28Office.15%29.aspx#bk_Preventing_Navigation).
+The  **AppDomains** and **AppDomain** elements are used to specify any additional domains other than the one specified in the [SourceLocation](../../reference/manifest/sourcelocation.md) element. For more information, see [Office Add-ins XML manifest../../docs/overview/add-in-manifests.md).
 

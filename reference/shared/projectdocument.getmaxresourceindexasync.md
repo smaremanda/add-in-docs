@@ -17,7 +17,7 @@ Office.context.document.getMaxResourceIndexAsync([options][, callback]);
 ## Parameters
 
 
-*  _options_ The following [optional parameter](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters):
+*  _options_ The following [optional parameter](../../docs/develop/asynchronous-programming-in-office-add-ins.md#passing-optional-parameters-to-asynchronous-methods):
     
   * asyncContext
 

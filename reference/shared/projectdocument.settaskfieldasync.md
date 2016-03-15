@@ -23,7 +23,7 @@ Office.context.document.setTaskFieldAsync(taskId, fieldId, fieldValue[, options]
     
 -  _fieldValue_The value for the target field, as a  **string**,  **number**,  **boolean**, or  **object**. Required.
     
--  _options_The following [optional parameter](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters):
+-  _options_The following [optional parameter](../../docs/develop/asynchronous-programming-in-office-add-ins.md#passing-optional-parameters-to-asynchronous-methods):
     
 ||
 |:-----|

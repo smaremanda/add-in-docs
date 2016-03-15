@@ -44,7 +44,7 @@ For more information about Office host application and server requirements, see 
 |||
 |:-----|:-----|
 |**Available in requirement sets**|Mailbox|
-|**Minimum permission level**|[ReadWriteItem](http://msdn.microsoft.com/library/5bca69f2-b287-4e19-8f0f-78d896b2a3d3%28Office.15%29.aspx)|
+|**Minimum permission level**|[ReadWriteItem](../../docs/outlook/understanding-outlook-add-in-permissions.md)|
 |**Add-in types**|Outlook|
 |**Library**|Office.js|
 |**Namespace**|Office|

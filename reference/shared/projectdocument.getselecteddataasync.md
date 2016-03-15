@@ -20,7 +20,7 @@ Office.context.document.getSelectedDataAsync(coercionType[, options][, callback]
 |**Name**|**Type**|**Description**|**Support notes**|
 |:-----|:-----|:-----|:-----|
 | _coercionType_|[CoercionType](../../reference/shared/coerciontype-enumeration.md)|The type of data structure to return. Required.<br/>Project 2013 supports only  **Office.CoercionType.Text** or `"text"`.||
-| _options_|**object**|Specifies any of the following [optional parameters](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters).||
+| _options_|**object**|Specifies any of the following [optional parameters](../../docs/develop/asynchronous-programming-in-office-add-ins.md#passing-optional-parameters-to-asynchronous-methods).||
 | _valueFormat_|[ValueFormat](../../reference/shared/valueformat-enumeration.md)|The formatting to use for number or date values.<br/>Project 2013 ignores this parameter and internally sets it to  `unformatted`.||
 | _filterType_|[FilterType](../../reference/shared/filtertype-enumeration.md)|Specifies whether to include only visible data or all data. <br/>Project 2013 ignores this parameter and internally sets it to  `all`.||
 | _asyncContext_|**array**,  **boolean**,  **null**,  **number**,  **object**, **string**, or  **undefined**|A user-defined item of any type that is returned in the  **AsyncResult** object without being altered.||
