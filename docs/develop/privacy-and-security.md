@@ -146,7 +146,7 @@ xsi:type="TaskPaneApp">
 
 ```
 
-For more information about this for task pane and content add-ins , see [Requesting permissions for API use in content and task pane add-ins](http://msdn.microsoft.com/library/da2efadc-4ebf-45fe-be39-397ac1eb1dbd%28Office.15%29.aspx).
+For more information about this for task pane and content add-ins , see [Requesting permissions for API use in content and task pane add-ins](requesting-permissions-for-api-use-in-content-and-task-pane-add-ins.md).
 
 For more information about this for Outlook add-ins, see the following topics:
 

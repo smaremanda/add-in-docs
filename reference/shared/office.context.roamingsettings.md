@@ -38,7 +38,7 @@ For more information about Office host application and server requirements, see 
 |||
 |:-----|:-----|
 |**Available in requirement sets**|Mailbox|
-|**Minimum permission level**|[Restricted](http://msdn.microsoft.com/library/da2efadc-4ebf-45fe-be39-397ac1eb1dbd%28Office.15%29.aspx)|
+|**Minimum permission level**|[Restricted](../../docs/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins.md)|
 |**Add-in types**|Outlook|
 |**Library**|Office.js|
 |**Namespace**|Office|
