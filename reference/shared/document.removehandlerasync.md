@@ -5,7 +5,7 @@ Removes an event handler for a  **Document** object event.
 |||
 |:-----|:-----|
 |**Hosts:**|Excel, PowerPoint, Project, Word|
-|**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|DocumentEvents|
+|**Available in [Requirement set](../../docs/overview/specify-office-hosts-and-api-requirements.md)**|DocumentEvents|
 |**Added in**|1.1|
 
 [![Try out this call in the interactive API Tutorial for Excel](../../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](http://officeapitutorial.azurewebsites.net/Redirect.html?scenario=Selection+Changed)

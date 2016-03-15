@@ -5,7 +5,7 @@ Represents a bound text selection in the document.
 |||
 |:-----|:-----|
 |**Hosts:**|Access, Excel, PowerPoint, Project, Word|
-|**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|TextBindings|
+|**Available in [Requirement set](../../docs/overview/specify-office-hosts-and-api-requirements.md)**|TextBindings|
 |**Added in**|1.0|
 
 ```
