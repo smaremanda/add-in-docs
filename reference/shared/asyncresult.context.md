@@ -40,7 +40,7 @@ The  **Context** object provides access to key objects in the JavaScript API for
 
 |||
 |:-----|:-----|
-|**Minimum permission level**|[Restricted](http://msdn.microsoft.com/library/da2efadc-4ebf-45fe-be39-397ac1eb1dbd%28Office.15%29.aspx)|
+|**Minimum permission level**|[Restricted](../../docs/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins.md)|
 |**Add-in types**|Content, task pane, Outlook|
 |**Library**|Office.js|
 |**Namespace**|Office|
