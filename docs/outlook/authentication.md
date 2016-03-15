@@ -27,9 +27,13 @@ On the server side, things are somewhat more complex. When your server receives 
 
  >**Note**  This is just one suggestion for how to use the identity token. As always, when you're dealing with identity and authentication, you have to make sure that your code meets the security requirements of your organization.
 
-Let's get into the specifics. As an example, we'll use a simple Outlook add-in that sends the identity token and a list of phone numbers found in the message to a web service. 
+Let's get into the specifics. In the following articles, we'll use a simple Outlook add-in that sends the identity token and a list of phone numbers found in the message to a web service. 
 
-
+- [Inside the Exchange identity token](../outlook/inside-the-identity-token.md)
+- [Call a service from an Outlook add-in by using an identity token in Exchange](../outlook/call-a-service-by-using-an-identity-token.md)
+- [Use the Exchange token validation library](../outlook/use-the-token-validation-library.md)
+- [Validate an Exchange identity token](../outlook/)
+- [Authenticate a user with an identity token for Exchange](../outlook/validate-an-identity-token.md)
 
 
 ## Additional resources
