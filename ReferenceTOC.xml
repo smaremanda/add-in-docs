@@ -207,7 +207,7 @@
     <Item text="LabsJS.Labs.Core" url="office-mix/labsjs.labs.core" FriendlyUrl="powerpoint/office-mix/referencelabsjs.labs.core" Scope="powerpoint" />
     <Item text="LabsJS.Labs" url="office-mix/labsjs.labs" FriendlyUrl="powerpoint/office-mix/referencelabsjs.labs" Scope="powerpoint" />
   </Item>
-  <Item text="outlook" url="outlook" scope="Outlook">
+  <Item text="Outlook" url="outlook" scope="Outlook">
 		<Item text="1.1" url="outlook/1.1" Version="V1.1">
 		<Item text="Object Models" Version="V1.1">
 		  <Item text="Office.context" url="outlook/1.1/Office.context" Version="V1.1" />
@@ -230,7 +230,7 @@
 		<Item text="Enumerations" url="outlook/1.1/Office.MailboxEnums" Version="V1.1" />   
     </Item>
 		<Item text="1.2" url="outlook/1.2" Version="V1.2">
-	  <Item text="Object Models" Version="V1.2">
+	  <Item text="Object Models" url="outlook/1.2" Version="V1.2">
 		<Item text="Office" url="outlook/1.2/Office" Version="V1.2" />	
 		<Item text="Office.context" url="outlook/1.2/Office.context" Version="V1.2" />
 		  <Item text="Office.context.mailbox.diagnostics" url="outlook/1.2/Office.context.mailbox.diagnostics" Version="V1.2" />
@@ -239,7 +239,7 @@
 		  <Item text="Office.context.mailbox.userProfile" url="outlook/1.2/Office.context.mailbox.userProfile" Version="V1.2" />
 		  <Item text="Office" url="outlook/1.2/Office" Version="V1.2" />
 		</Item>
-		<Item text="Complex Types" Version="V1.2">
+		<Item text="Complex Types" url="outlook/1.2"  Version="V1.2">
 		  <Item text="Body" url="outlook/1.2/Body" Version="V1.2" />
 		  <Item text="CustomProperties" url="outlook/1.2/CustomProperties" Version="V1.2" />
 		<Item text="Location" url="outlook/1.2/Location" Version="V1.2" />
@@ -253,7 +253,7 @@
 
       <Item text="index" url="outlook/1.2/index" Version="V1.2" />
     </Item>
-		<Item text="Object Models" Version="V1.3">
+		<Item text="Object Models" url="outlook" Version="V1.3">
 		<Item text="Office" url="outlook/Office" Version="V1.3" />
 		<Item text="Office.context" url="outlook/Office.context" Version="V1.3" />
 		  <Item text="Office.context.mailbox.diagnostics" url="outlook/Office.context.mailbox.diagnostics" Version="V1.3" />
@@ -262,7 +262,7 @@
 		  <Item text="Office.context.mailbox.userProfile" url="outlook/Office.context.mailbox.userProfile" Version="V1.3" />
 		  <Item text="Office" url="outlook/Office" Version="V1.3" />
 		</Item>
-		<Item text="Complex Types" Version="V1.3">
+		<Item text="Complex Types" url="outlook"  Version="V1.3">
 		  <Item text="Body" url="outlook/Body" Version="V1.3" />
 		  <Item text="CustomProperties" url="outlook/CustomProperties" Version="V1.3" />
 			<Item text="Event" url="outlook/Event" Version="V1.3" />	
@@ -278,7 +278,7 @@
     <Item text="index" url="outlook/index" Version="V1.3" />	
     <Item text="tutorial-api-requirement-sets" url="outlook/tutorial-api-requirement-sets" Version="V1.3" />
   </Item>
-  <Item text="Shared API" url="shared">
+  <Item text="Shared API" url="shared/">
     <Item text="ActiveView enumeration" url="shared/activeview-enumeration" FriendlyUrl="reference/enumerationsactiveview-enumeration" Scope="powerpoint" />
     <Item text="AsyncResult.asyncContext" url="shared/asyncresult.asynccontext" />
     <Item text="AsyncResult.context" url="shared/asyncresult.context" />
