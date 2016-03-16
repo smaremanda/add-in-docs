@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Menu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SupportedProduct="|Excel|Word|Access|PowerPoint|Outlook|Project|" SupportedVersion="|V1.1|V1.2|V1.3|">
-  <Item text="excel" url="excel" Scope="excel">
-    <Item text="application" url="excel/application" />
-    <Item text="binding" url="excel/binding" />
-    <Item text="bindingcollection" url="excel/bindingcollection" />
-    <Item text="chart" url="excel/chart" />
-    <Item text="chartareaformat" url="excel/chartareaformat" />
-    <Item text="chartaxes" url="excel/chartaxes" />
-    <Item text="chartaxis" url="excel/chartaxis" />
-    <Item text="chartaxisformat" url="excel/chartaxisformat" />
-    <Item text="chartaxistitle" url="excel/chartaxistitle" />
-    <Item text="chartaxistitleformat" url="excel/chartaxistitleformat" />
-    <Item text="chartcollection" url="excel/chartcollection" />
-    <Item text="chartdatalabelformat" url="excel/chartdatalabelformat" />
-    <Item text="chartdatalabels" url="excel/chartdatalabels" />
-    <Item text="chartfill" url="excel/chartfill" />
-    <Item text="chartfont" url="excel/chartfont" />
-    <Item text="chartgridlines" url="excel/chartgridlines" />
-    <Item text="chartgridlinesformat" url="excel/chartgridlinesformat" />
-    <Item text="chartlegend" url="excel/chartlegend" />
-    <Item text="chartlegendformat" url="excel/chartlegendformat" />
-    <Item text="chartlineformat" url="excel/chartlineformat" />
-    <Item text="chartpoint" url="excel/chartpoint" />
-    <Item text="chartpointformat" url="excel/chartpointformat" />
-    <Item text="chartpointscollection" url="excel/chartpointscollection" />
-    <Item text="chartseries" url="excel/chartseries" />
-    <Item text="chartseriescollection" url="excel/chartseriescollection" />
-    <Item text="chartseriesformat" url="excel/chartseriesformat" />
-    <Item text="charttitle" url="excel/charttitle" />
-    <Item text="charttitleformat" url="excel/charttitleformat" />
-    <Item text="loadoption" url="excel/loadoption" />
-    <Item text="nameditem" url="excel/nameditem" />
-    <Item text="nameditemcollection" url="excel/nameditemcollection" />
-    <Item text="range" url="excel/range" />
-    <Item text="rangeborder" url="excel/rangeborder" />
-    <Item text="rangebordercollection" url="excel/rangebordercollection" />
-    <Item text="rangefill" url="excel/rangefill" />
-    <Item text="rangefont" url="excel/rangefont" />
-    <Item text="rangeformat" url="excel/rangeformat" />
-    <Item text="requestcontext" url="excel/requestcontext" />
-    <Item text="table" url="excel/table" />
-    <Item text="tablecollection" url="excel/tablecollection" />
-    <Item text="tablecolumn" url="excel/tablecolumn" />
-    <Item text="tablecolumncollection" url="excel/tablecolumncollection" />
-    <Item text="tablerow" url="excel/tablerow" />
-    <Item text="tablerowcollection" url="excel/tablerowcollection" />
-    <Item text="trackedobjectscollection" url="excel/trackedobjectscollection" />
-    <Item text="workbook" url="excel/workbook" />
-    <Item text="worksheet" url="excel/worksheet" />
-    <Item text="worksheetcollection" url="excel/worksheetcollection" />
+  <Item text="Excel" url="excel" Scope="excel">
+    <Item text="Application" url="excel/application" />
+    <Item text="Binding" url="excel/binding" />
+    <Item text="BindingCollection" url="excel/bindingcollection" />
+    <Item text="Chart" url="excel/chart" />
+    <Item text="ChartAreaFormat" url="excel/chartareaformat" />
+    <Item text="ChartAxes" url="excel/chartaxes" />
+    <Item text="ChartAxis" url="excel/chartaxis" />
+    <Item text="ChartAxisFormat" url="excel/chartaxisformat" />
+    <Item text="ChartAxisTitle" url="excel/chartaxistitle" />
+    <Item text="ChartAxisTitleFormat" url="excel/chartaxistitleformat" />
+    <Item text="ChartCollection" url="excel/chartcollection" />
+    <Item text="ChartDataLabelFormat" url="excel/chartdatalabelformat" />
+    <Item text="ChartDataLabels" url="excel/chartdatalabels" />
+    <Item text="ChartFill" url="excel/chartfill" />
+    <Item text="ChartFont" url="excel/chartfont" />
+    <Item text="ChartGridlines" url="excel/chartgridlines" />
+    <Item text="ChartGridlinesFormat" url="excel/chartgridlinesformat" />
+    <Item text="ChartLegend" url="excel/chartlegend" />
+    <Item text="ChartLegendFormat" url="excel/chartlegendformat" />
+    <Item text="ChartLineFormat" url="excel/chartlineformat" />
+    <Item text="ChartPoint" url="excel/chartpoint" />
+    <Item text="ChartPointFormat" url="excel/chartpointformat" />
+    <Item text="ChartPointsCollection" url="excel/chartpointscollection" />
+    <Item text="ChartSeries" url="excel/chartseries" />
+    <Item text="ChartSeriesCollection" url="excel/chartseriescollection" />
+    <Item text="ChartSeriesFormat" url="excel/chartseriesformat" />
+    <Item text="ChartTitle" url="excel/charttitle" />
+    <Item text="ChartTitleformat" url="excel/charttitleFormat" />
+    <Item text="LoadOption" url="excel/loadoption" />
+    <Item text="NamedItem" url="excel/nameditem" />
+    <Item text="NamedItemCollection" url="excel/nameditemcollection" />
+    <Item text="Range" url="excel/range" />
+    <Item text="RangeBorder" url="excel/rangeborder" />
+    <Item text="RangeBorderCollection" url="excel/rangebordercollection" />
+    <Item text="RangeFill" url="excel/rangefill" />
+    <Item text="RangeFont" url="excel/rangefont" />
+    <Item text="RangeFormat" url="excel/rangeformat" />
+    <Item text="Requestcontext" url="excel/requestcontext" />
+    <Item text="Table" url="excel/table" />
+    <Item text="TableCollection" url="excel/tablecollection" />
+    <Item text="TableColumn" url="excel/tablecolumn" />
+    <Item text="TableColumnCollection" url="excel/tablecolumncollection" />
+    <Item text="TableRow" url="excel/tablerow" />
+    <Item text="TableRowCollection" url="excel/tablerowCollection" />
+    <Item text="TrackedObjectsCollection" url="excel/trackedobjectscollection" />
+    <Item text="Workbook" url="excel/workbook" />
+    <Item text="Worksheet" url="excel/worksheet" />
+    <Item text="WorksheetCollection" url="excel/worksheetcollection" />
   </Item>
-  <Item text="manifest" url="manifest">
+  <Item text="Manifest" url="manifest">
     <Item text="allowsnapshot" url="manifest/allowsnapshot" />
     <Item text="alternateid" url="manifest/alternateid" />
     <Item text="appdomain" url="manifest/appdomain" />
@@ -93,7 +93,7 @@
     <Item text="targetdialects" url="manifest/targetdialects" />
     <Item text="version" url="manifest/version" />
   </Item>
-  <Item text="office-mix" url="office-mix" Scope="powerpoint">
+  <Item text="Office Mix" url="office-mix" Scope="powerpoint">
     <Item text="Labs Classes" url="office-mix/labs-classes" FriendlyUrl="powerpoint/office-mix/referencelabs-classes" Scope="powerpoint" />
     <Item text="Labs Enumerations" url="office-mix/labs-enumerations" FriendlyUrl="powerpoint/office-mix/referencelabs-enumerations" Scope="powerpoint" />
     <Item text="Labs Functions" url="office-mix/labs-functions" FriendlyUrl="powerpoint/office-mix/referencelabs-functions" Scope="powerpoint" />
@@ -208,23 +208,26 @@
     <Item text="LabsJS.Labs" url="office-mix/labsjs.labs" FriendlyUrl="powerpoint/office-mix/referencelabsjs.labs" Scope="powerpoint" />
   </Item>
   <Item text="outlook" url="outlook">
-    <Item text="1.1" url="outlook/1.1" Version="V1.1">
-      <Item text="Body" url="outlook/1.1/Body" Version="V1.1" />
-      <Item text="CustomProperties" url="outlook/1.1/CustomProperties" Version="V1.1" />
-      <Item text="index" url="outlook/1.1/index" Version="V1.1" />
-      <Item text="Location" url="outlook/1.1/Location" Version="V1.1" />
-      <Item text="Office.context" url="outlook/1.1/Office.context" Version="V1.1" />
-      <Item text="Office.context.mailbox.diagnostics" url="outlook/1.1/Office.context.mailbox.diagnostics" Version="V1.1" />
-      <Item text="Office.context.mailbox" url="outlook/1.1/Office.context.mailbox" Version="V1.1" />
-      <Item text="Office.context.mailbox.item" url="outlook/1.1/Office.context.mailbox.item" Version="V1.1" />
-      <Item text="Office.context.mailbox.userProfile" url="outlook/1.1/Office.context.mailbox.userProfile" Version="V1.1" />
-      <Item text="Office" url="outlook/1.1/Office" Version="V1.1" />
-      <Item text="Office.MailboxEnums" url="outlook/1.1/Office.MailboxEnums" Version="V1.1" />
-      <Item text="Recipients" url="outlook/1.1/Recipients" Version="V1.1" />
-      <Item text="RoamingSettings" url="outlook/1.1/RoamingSettings" Version="V1.1" />
-      <Item text="simple-types" url="outlook/1.1/simple-types" Version="V1.1" />
-      <Item text="Subject" url="outlook/1.1/Subject" Version="V1.1" />
-      <Item text="Time" url="outlook/1.1/Time" Version="V1.1" />
+      <Item text="1.1" url="outlook/1.1" Version="V1.1">
+		<Item text="Object Models" Version="V1.1">
+		  <Item text="Office.context" url="outlook/1.1/Office.context" Version="V1.1" />
+		  <Item text="Office.context.mailbox.diagnostics" url="outlook/1.1/Office.context.mailbox.diagnostics" Version="V1.1" />
+		  <Item text="Office.context.mailbox" url="outlook/1.1/Office.context.mailbox" Version="V1.1" />
+		  <Item text="Office.context.mailbox.item" url="outlook/1.1/Office.context.mailbox.item" Version="V1.1" />
+		  <Item text="Office.context.mailbox.userProfile" url="outlook/1.1/Office.context.mailbox.userProfile" Version="V1.1" />
+		  <Item text="Office" url="outlook/1.1/Office" Version="V1.1" />
+		</Item>
+		<Item text="Complex Types" Version="V1.1">
+		  <Item text="Body" url="outlook/1.1/Body" Version="V1.1" />
+		  <Item text="CustomProperties" url="outlook/1.1/CustomProperties" Version="V1.1" />
+		<Item text="Location" url="outlook/1.1/Location" Version="V1.1" />
+		  <Item text="Recipients" url="outlook/1.1/Recipients" Version="V1.1" />
+		  <Item text="RoamingSettings" url="outlook/1.1/RoamingSettings" Version="V1.1" />
+		  <Item text="Subject" url="outlook/1.1/Subject" Version="V1.1" />
+		  <Item text="Time" url="outlook/1.1/Time" Version="V1.1" />
+		</Item>
+		<Item text="Simple Types" url="outlook/1.1/simple-types" Version="V1.1" />
+		<Item text="Enumerations" url="outlook/1.1/Office.MailboxEnums" Version="V1.1" />   
     </Item>
     <Item text="1.2" url="outlook/1.2" Version="V1.2">
       <Item text="Body" url="outlook/1.2/Body" Version="V1.2" />
