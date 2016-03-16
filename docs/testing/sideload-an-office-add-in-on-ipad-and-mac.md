@@ -1,7 +1,8 @@
 
 # Sideload an Office Add-in on iPad and Mac
 Sideload your Office Add-in onto an iPad or Mac to test how it will run in Office for iOS or Office for Mac.
-
+
+
 
 To see how your add-in will run in Office for iOS, you can sideload your add-in's manifest onto an iPad using iTunes. Or sideload your add-in's manifest directly in Office for Mac. This action won't enable you to set breakpoints and debug your add-in's code while it's running, but you can see how it behaves and verify that the UI is usable and rendering appropriately. 
 
@@ -25,6 +26,8 @@ To see how your add-in will run in Office for iOS, you can sideload your add-in'
 - Word for Mac version 15.18 (160109).
     
 - Excel for Mac version 15.19 (160206).
+
+- PowerPoint for Mac version 15.20 (160305).
     
 - The manifest .xml file for the add-in you want to test.
     
@@ -67,6 +70,8 @@ To see how your add-in will run in Office for iOS, you can sideload your add-in'
       - For Word:  `/Users/<username>/Library/Containers/com.microsoft.Word/Data/documents/wef`
     
   - For Excel:  `/Users/<username>/Library/Containers/com.microsoft.Excel/Data/documents/wef`
+  
+  - For PowerPoint: `/Users/<username>/Library/Containers/com.microsoft.PowerPoint/Data/documents/wef`
     
 2. Open the folder in  **Finder** using the command `open .` (including the period or dot). Copy your add-in's manifest file to this folder.
     
