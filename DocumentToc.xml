@@ -5,9 +5,9 @@
 	<Item text="Where are add-ins supported?" url="overview/requirements-for-running-office-add-ins" />	
   </Item>
   <Item text="Get Started" url="get-started">
-    <Item text="...in Visual Studio" url="get-started/create-and-debug-office-add-ins-in-visual-studio" />
-	<Item text="...using any editor" url="get-started/create-an-office-add-in-using-any-editor" />
-    <Item text="...with Napa" url="get-started/create-an-office-add-in-with-napa" />
+    <Item text="Get started in Visual Studio" url="get-started/create-and-debug-office-add-ins-in-visual-studio" />
+	<Item text="Get started using any editor" url="get-started/create-an-office-add-in-using-any-editor" />
+    <Item text="Get started with Napa" url="get-started/create-an-office-add-in-with-napa" />
   </Item>
   <Item text="Design" url="design/add-in-design">
     <Item text="UI Elements" url="design/ui-elements">

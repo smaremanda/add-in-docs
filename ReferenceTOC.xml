@@ -207,8 +207,8 @@
     <Item text="LabsJS.Labs.Core" url="office-mix/labsjs.labs.core" FriendlyUrl="powerpoint/office-mix/referencelabsjs.labs.core" Scope="powerpoint" />
     <Item text="LabsJS.Labs" url="office-mix/labsjs.labs" FriendlyUrl="powerpoint/office-mix/referencelabsjs.labs" Scope="powerpoint" />
   </Item>
-  <Item text="outlook" url="outlook">
-      <Item text="1.1" url="outlook/1.1" Version="V1.1">
+  <Item text="outlook" url="outlook" scope="Outlook">
+		<Item text="1.1" url="outlook/1.1" Version="V1.1">
 		<Item text="Object Models" Version="V1.1">
 		  <Item text="Office.context" url="outlook/1.1/Office.context" Version="V1.1" />
 		  <Item text="Office.context.mailbox.diagnostics" url="outlook/1.1/Office.context.mailbox.diagnostics" Version="V1.1" />
@@ -229,86 +229,97 @@
 		<Item text="Simple Types" url="outlook/1.1/simple-types" Version="V1.1" />
 		<Item text="Enumerations" url="outlook/1.1/Office.MailboxEnums" Version="V1.1" />   
     </Item>
-    <Item text="1.2" url="outlook/1.2" Version="V1.2">
-      <Item text="Body" url="outlook/1.2/Body" Version="V1.2" />
-      <Item text="CustomProperties" url="outlook/1.2/CustomProperties" Version="V1.2" />
+		<Item text="1.2" url="outlook/1.2" Version="V1.2">
+	  <Item text="Object Models" Version="V1.2">
+		<Item text="Office" url="outlook/1.2/Office" Version="V1.2" />	
+		<Item text="Office.context" url="outlook/1.2/Office.context" Version="V1.2" />
+		  <Item text="Office.context.mailbox.diagnostics" url="outlook/1.2/Office.context.mailbox.diagnostics" Version="V1.2" />
+		  <Item text="Office.context.mailbox" url="outlook/1.2/Office.context.mailbox" Version="V1.2" />
+		  <Item text="Office.context.mailbox.item" url="outlook/1.2/Office.context.mailbox.item" Version="V1.2" />
+		  <Item text="Office.context.mailbox.userProfile" url="outlook/1.2/Office.context.mailbox.userProfile" Version="V1.2" />
+		  <Item text="Office" url="outlook/1.2/Office" Version="V1.2" />
+		</Item>
+		<Item text="Complex Types" Version="V1.2">
+		  <Item text="Body" url="outlook/1.2/Body" Version="V1.2" />
+		  <Item text="CustomProperties" url="outlook/1.2/CustomProperties" Version="V1.2" />
+		<Item text="Location" url="outlook/1.2/Location" Version="V1.2" />
+		  <Item text="Recipients" url="outlook/1.2/Recipients" Version="V1.2" />
+		  <Item text="RoamingSettings" url="outlook/1.2/RoamingSettings" Version="V1.2" />
+		  <Item text="Subject" url="outlook/1.2/Subject" Version="V1.2" />
+		  <Item text="Time" url="outlook/1.2/Time" Version="V1.2" />
+		</Item>
+		<Item text="Simple Types" url="outlook/1.2/simple-types" Version="V1.2" />
+		<Item text="Enumerations" url="outlook/1.2/Office.MailboxEnums" Version="V1.2" />   
+
       <Item text="index" url="outlook/1.2/index" Version="V1.2" />
-      <Item text="Location" url="outlook/1.2/Location" Version="V1.2" />
-      <Item text="Office.context" url="outlook/1.2/Office.context" Version="V1.2" />
-      <Item text="Office.context.mailbox.diagnostics" url="outlook/1.2/Office.context.mailbox.diagnostics" Version="V1.2" />
-      <Item text="Office.context.mailbox" url="outlook/1.2/Office.context.mailbox" Version="V1.2" />
-      <Item text="Office.context.mailbox.item" url="outlook/1.2/Office.context.mailbox.item" Version="V1.2" />
-      <Item text="Office.context.mailbox.userProfile" url="outlook/1.2/Office.context.mailbox.userProfile" Version="V1.2" />
-      <Item text="Office" url="outlook/1.2/Office" Version="V1.2" />
-      <Item text="Office.MailboxEnums" url="outlook/1.2/Office.MailboxEnums" Version="V1.2" />
-      <Item text="Recipients" url="outlook/1.2/Recipients" Version="V1.2" />
-      <Item text="RoamingSettings" url="outlook/1.2/RoamingSettings" Version="V1.2" />
-      <Item text="simple-types" url="outlook/1.2/simple-types" Version="V1.2" />
-      <Item text="Subject" url="outlook/1.2/Subject" Version="V1.2" />
-      <Item text="Time" url="outlook/1.2/Time" Version="V1.2" />
     </Item>
-    <Item text="Body" url="outlook/Body" Version="V1.3" />
-    <Item text="CustomProperties" url="outlook/CustomProperties" Version="V1.3" />
-    <Item text="Event" url="outlook/Event" Version="V1.3" />
-    <Item text="index" url="outlook/index" Version="V1.3" />
-    <Item text="Location" url="outlook/Location" Version="V1.3" />
-    <Item text="NotificationMessages" url="outlook/NotificationMessages" Version="V1.3" />
-    <Item text="Office.context" url="outlook/Office.context" Version="V1.3" />
-    <Item text="Office.context.mailbox.diagnostics" url="outlook/Office.context.mailbox.diagnostics" Version="V1.3" />
-    <Item text="Office.context.mailbox" url="outlook/Office.context.mailbox" Version="V1.3" />
-    <Item text="Office.context.mailbox.item" url="outlook/Office.context.mailbox.item" Version="V1.3" />
-    <Item text="Office.context.mailbox.userProfile" url="outlook/Office.context.mailbox.userProfile" Version="V1.3" />
-    <Item text="Office" url="outlook/Office" Version="V1.3" />
-    <Item text="Office.MailboxEnums" url="outlook/Office.MailboxEnums" Version="V1.3" />
-    <Item text="Recipients" url="outlook/Recipients" Version="V1.3" />
-    <Item text="RoamingSettings" url="outlook/RoamingSettings" Version="V1.3" />
-    <Item text="simple-types" url="outlook/simple-types" Version="V1.3" />
-    <Item text="Subject" url="outlook/Subject" Version="V1.3" />
-    <Item text="Time" url="outlook/Time" Version="V1.3" />
+		<Item text="Object Models" Version="V1.3">
+		<Item text="Office" url="outlook/Office" Version="V1.3" />
+		<Item text="Office.context" url="outlook/Office.context" Version="V1.3" />
+		  <Item text="Office.context.mailbox.diagnostics" url="outlook/Office.context.mailbox.diagnostics" Version="V1.3" />
+		  <Item text="Office.context.mailbox" url="outlook/Office.context.mailbox" Version="V1.3" />
+		  <Item text="Office.context.mailbox.item" url="outlook/Office.context.mailbox.item" Version="V1.3" />
+		  <Item text="Office.context.mailbox.userProfile" url="outlook/Office.context.mailbox.userProfile" Version="V1.3" />
+		  <Item text="Office" url="outlook/Office" Version="V1.3" />
+		</Item>
+		<Item text="Complex Types" Version="V1.3">
+		  <Item text="Body" url="outlook/Body" Version="V1.3" />
+		  <Item text="CustomProperties" url="outlook/CustomProperties" Version="V1.3" />
+			<Item text="Event" url="outlook/Event" Version="V1.3" />	
+			<Item text="Location" url="outlook/Location" Version="V1.3" />
+			<Item text="NotificationMessages" url="outlook/NotificationMessages" Version="V1.3" />	
+			<Item text="Recipients" url="outlook/Recipients" Version="V1.3" />
+		  <Item text="RoamingSettings" url="outlook/RoamingSettings" Version="V1.3" />
+		  <Item text="Subject" url="outlook/Subject" Version="V1.3" />
+		  <Item text="Time" url="outlook/Time" Version="V1.3" />
+		</Item>
+		<Item text="Simple Types" url="outlook/1.3/simple-types" Version="V1.3" />
+		<Item text="Enumerations" url="outlook/1.3/Office.MailboxEnums" Version="V1.3" />  
+    <Item text="index" url="outlook/index" Version="V1.3" />	
     <Item text="tutorial-api-requirement-sets" url="outlook/tutorial-api-requirement-sets" Version="V1.3" />
   </Item>
-  <Item text="shared" url="shared">
+  <Item text="Shared API" url="shared">
     <Item text="ActiveView enumeration" url="shared/activeview-enumeration" FriendlyUrl="reference/enumerationsactiveview-enumeration" Scope="powerpoint" />
-    <Item text="asyncresult.asynccontext" url="shared/asyncresult.asynccontext" />
-    <Item text="asyncresult.context" url="shared/asyncresult.context" />
-    <Item text="asyncresult.error" url="shared/asyncresult.error" />
-    <Item text="asyncresult" url="shared/asyncresult" />
-    <Item text="asyncresult.status" url="shared/asyncresult.status" />
-    <Item text="asyncresult.value" url="shared/asyncresult.value" />
+    <Item text="AsyncResult.asyncContext" url="shared/asyncresult.asynccontext" />
+    <Item text="AsyncResult.context" url="shared/asyncresult.context" />
+    <Item text="AsyncResult.error" url="shared/asyncresult.error" />
+    <Item text="AsyncResult" url="shared/asyncresult" />
+    <Item text="AsyncResult.status" url="shared/asyncresult.status" />
+    <Item text="AsyncResult.value" url="shared/asyncresult.value" />
     <Item text="AsyncResultStatus enumeration" url="shared/asyncresultstatus-enumeration" FriendlyUrl="reference/enumerationsasyncresultstatus-enumeration" SEOKeyword="Excel" SEODescription="Word" />
-    <Item text="binding.addhandlerasync" url="shared/binding.addhandlerasync" />
-    <Item text="binding.bindingdatachangedevent" url="shared/binding.bindingdatachangedevent" />
-    <Item text="binding property" url="shared/binding.bindingdatachangedeventargs.binding" FriendlyUrl="reference/common/binding-object/data-changed-event/argsbinding.bindingdatachangedeventargs.binding" SEOKeyword="Excel" SEODescription="Word&quot;" />
+    <Item text="Binding" url="shared/binding" />
+	<Item text="Binding.addHandlerAsync" url="shared/binding.addhandlerasync" />
+    <Item text="Binding.bindingDataChangedEvent" url="shared/binding.bindingdatachangedevent" />
+    <Item text="Binding property" url="shared/binding.bindingdatachangedeventargs.binding" FriendlyUrl="reference/common/binding-object/data-changed-event/argsbinding.bindingdatachangedeventargs.binding" SEOKeyword="Excel" SEODescription="Word&quot;" />
     <Item text="BindingDataChangedEventArgs object" url="shared/binding.bindingdatachangedeventargs" FriendlyUrl="reference/common/binding-object/data-changed-event/argsbinding.bindingdatachangedeventargs" SEOKeyword="Excel" SEODescription="Word&quot;" />
     <Item text="type property" url="shared/binding.bindingdatachangedeventargs.type" FriendlyUrl="reference/common/binding-object/data-changed-event/argsbinding.bindingdatachangedeventargs.type" SEOKeyword="Excel" SEODescription="Word&quot;" />
     <Item text="columnCount property" url="shared/binding.bindingselectionchangedevent.binding" FriendlyUrl="reference/common/binding-object/selection-changed-event-argsbinding.bindingselectionchangedevent.binding" SEOKeyword="Excel" SEODescription="Word&quot;" />
     <Item text="rowCount property" url="shared/binding.bindingselectionchangedevent.columncount" FriendlyUrl="reference/common/binding-object/selection-changed-event-argsbinding.bindingselectionchangedevent.columncount" SEOKeyword="Excel" SEODescription="Word&quot;" />
-    <Item text="bindingSelectionChanged event" url="shared/binding.bindingselectionchangedevent" FriendlyUrl="reference/common/binding-object/selection-changed-eventbinding.bindingselectionchangedevent" SEOKeyword="Excel" SEODescription="Word&quot;" />
+    <Item text="Binding.bindingSelectionChanged event" url="shared/binding.bindingselectionchangedevent" FriendlyUrl="reference/common/binding-object/selection-changed-eventbinding.bindingselectionchangedevent" SEOKeyword="Excel" SEODescription="Word&quot;" />
     <Item text="startColumn property" url="shared/binding.bindingselectionchangedevent.rowcount" FriendlyUrl="reference/common/binding-object/selection-changed-event-argsbinding.bindingselectionchangedevent.rowcount" SEOKeyword="Excel" SEODescription="Word&quot;" />
     <Item text="startRow property" url="shared/binding.bindingselectionchangedevent.startcolumn" FriendlyUrl="reference/common/binding-object/selection-changed-event-argsbinding.bindingselectionchangedevent.startcolumn" SEOKeyword="Excel" SEODescription="Word&quot;" />
     <Item text="type property" url="shared/binding.bindingselectionchangedevent.startrow" FriendlyUrl="reference/common/binding-object/selection-changed-event-argsbinding.bindingselectionchangedevent.startrow" SEOKeyword="Excel" SEODescription="Word&quot;" />
-    <Item text="binding.bindingselectionchangedevent.type" url="shared/binding.bindingselectionchangedevent.type" />
-    <Item text="binding.bindingselectionchangedeventargs" url="shared/binding.bindingselectionchangedeventargs" />
-    <Item text="binding.document" url="shared/binding.document" />
+    <Item text="Binding.bindingSelectionChangedEvent.type" url="shared/binding.bindingselectionchangedevent.type" />
+    <Item text="Binding.bindingSelectionChangedeventargs" url="shared/binding.bindingselectionchangedeventargs" />
     <Item text="getDataAsync method" url="shared/binding.getdataasync" FriendlyUrl="reference/common/binding-objectbinding.getdataasync" SEOKeyword="Excel" SEODescription="Word&quot;" />
-    <Item text="binding" url="shared/binding" />
     <Item text="id property" url="shared/binding.id" FriendlyUrl="reference/common/binding-objectbinding.id" SEOKeyword="Excel" SEODescription="Word&quot;" />
     <Item text="columnCount property" url="shared/binding.matrixbinding.columncount" FriendlyUrl="reference/common/binding-object/matrixbinding-objectbinding.matrixbinding.columncount" SEOKeyword="Excel" SEODescription="PowerPoint" />
-    <Item text="MatrixBinding object" url="shared/binding.matrixbinding.matrixbinding" FriendlyUrl="reference/common/binding-object/matrixbinding-objectbinding.matrixbinding.matrixbinding" SEOKeyword="Word&quot;" />
-    <Item text="binding.matrixbinding.rowcount" url="shared/binding.matrixbinding.rowcount" />
-    <Item text="removeHandlerAsync method" url="shared/binding.removehandlerasync" FriendlyUrl="reference/common/binding-objectbinding.removehandlerasync" SEOKeyword="Excel" SEODescription="Word&quot;" />
-    <Item text="setDataAsync method" url="shared/binding.setdataasync" FriendlyUrl="reference/common/binding-objectbinding.setdataasync" SEOKeyword="Excel" SEODescription="Word&quot;" />
-    <Item text="addColumnsAsync method" url="shared/binding.tablebinding.addcolumnsasync" FriendlyUrl="reference/common/binding-object/tablebinding-objectbinding.tablebinding.addcolumnsasync" SEOKeyword="Word&quot;" />
-    <Item text="addRowsAsync method" url="shared/binding.tablebinding.addrowsasync" FriendlyUrl="reference/common/binding-object/tablebinding-objectbinding.tablebinding.addrowsasync" SEOKeyword="Excel" SEODescription="Word&quot;" />
-    <Item text="binding.tablebinding.clearformatsasync" url="shared/binding.tablebinding.clearformatsasync" />
-    <Item text="binding.tablebinding.columncount" url="shared/binding.tablebinding.columncount" />
-    <Item text="binding.tablebinding.deletealldatavaluesasync" url="shared/binding.tablebinding.deletealldatavaluesasync" />
-    <Item text="binding.tablebinding.hasheaders" url="shared/binding.tablebinding.hasheaders" />
-    <Item text="binding.tablebinding.rowcount" url="shared/binding.tablebinding.rowcount" />
+    <Item text="Binding.document" url="shared/binding.document" />
+	<Item text="MatrixBinding object" url="shared/binding.matrixbinding.matrixbinding" FriendlyUrl="reference/common/binding-object/matrixbinding-objectbinding.matrixbinding.matrixbinding" SEOKeyword="Word&quot;" />
+    <Item text="Binding.matrixbinding.rowcount" url="shared/binding.matrixbinding.rowcount" />
+    <Item text="removeHandlerAsync" url="shared/binding.removehandlerasync" FriendlyUrl="reference/common/binding-objectbinding.removehandlerasync" SEOKeyword="Excel" SEODescription="Word&quot;" />
+    <Item text="Binding.setDataAsync" url="shared/binding.setdataasync" FriendlyUrl="reference/common/binding-objectbinding.setdataasync" SEOKeyword="Excel" SEODescription="Word&quot;" />
+    <Item text="Binding.addColumnsAsync" url="shared/binding.tablebinding.addcolumnsasync" FriendlyUrl="reference/common/binding-object/tablebinding-objectbinding.tablebinding.addcolumnsasync" SEOKeyword="Word&quot;" />
+    <Item text="Binding.addRowsAsync" url="shared/binding.tablebinding.addrowsasync" FriendlyUrl="reference/common/binding-object/tablebinding-objectbinding.tablebinding.addrowsasync" SEOKeyword="Excel" SEODescription="Word&quot;" />
+    <Item text="Binding.tablebinding.clearformatsasync" url="shared/binding.tablebinding.clearformatsasync" />
+    <Item text="Binding.tablebinding.columncount" url="shared/binding.tablebinding.columncount" />
+    <Item text="Binding.tablebinding.deletealldatavaluesasync" url="shared/binding.tablebinding.deletealldatavaluesasync" />
+    <Item text="Binding.tablebinding.hasheaders" url="shared/binding.tablebinding.hasheaders" />
+    <Item text="Binding.tablebinding.rowcount" url="shared/binding.tablebinding.rowcount" />
     <Item text="setFormatsAsync method" url="shared/binding.tablebinding.setformatsasync" FriendlyUrl="reference/common/binding-object/tablebinding-objectbinding.tablebinding.setformatsasync" SEODescription="Sets or updates formatting on specified items and data in the bound table." Scope="excel" />
     <Item text="setTableOptionsAsync method" url="shared/binding.tablebinding.settableoptionsasync" FriendlyUrl="reference/common/binding-object/tablebinding-objectbinding.tablebinding.settableoptionsasync" SEODescription="Updates table formatting options on the bound table." Scope="excel" />
-    <Item text="binding.tablebinding.tablebinding" url="shared/binding.tablebinding.tablebinding" />
-    <Item text="binding.textbinding" url="shared/binding.textbinding" />
+    <Item text="Binding.tablebinding.tablebinding" url="shared/binding.tablebinding.tablebinding" />
+    <Item text="Binding.textbinding" url="shared/binding.textbinding" />
     <Item text="type property" url="shared/binding.type" FriendlyUrl="reference/common/binding-objectbinding.type" SEOKeyword="Excel" SEODescription="Word&quot;" />
     <Item text="addFromNamedItemAsync method" url="shared/bindings.addfromnameditemasync" FriendlyUrl="reference/common/bindings-objectbindings.addfromnameditemasync" SEOKeyword="Excel" SEODescription="Word&quot;" />
     <Item text="addFromPromptAsync method" url="shared/bindings.addfrompromptasync" FriendlyUrl="reference/common/bindings-objectbindings.addfrompromptasync" SEOKeyword="Excel&quot;" />
@@ -365,7 +376,7 @@
     <Item text="DocumentActiveViewChangedEventArgs object" url="shared/document.activeviewchangedeventargs" FriendlyUrl="reference/common/document/activeviewchangedeventargs-object/document.activeviewchangedeventargs" SEODescription="Provides information about the view that raised the ActiveViewChanged event." Scope="powerpoint" />
     <Item text="type property" url="shared/document.activeviewchangedeventargs.type" FriendlyUrl="reference/common/document/activeviewchangedeventargs-object/document.activeviewchangedeventargs.type" SEODescription="Gets an EventType enumeration value that identifies the kind of event that was raised." Scope="powerpoint" />
     <Item text="addHandlerAsync method" url="shared/document.addhandlerasync" FriendlyUrl="reference/common/documentdocument.addhandlerasync" SEOKeyword="PowerPoint" SEODescription="Project" />
-    <Item text="bindings property" url="shared/document.bindings" FriendlyUrl="reference/common/documentdocument.bindings" SEOKeyword="Excel" SEODescription="Word&quot;" />
+    <Item text="Bindings property" url="shared/document.bindings" FriendlyUrl="reference/common/documentdocument.bindings" SEOKeyword="Excel" SEODescription="Word&quot;" />
     <Item text="customXmlParts property" url="shared/document.customxmlparts" FriendlyUrl="reference/common/documentdocument.customxmlparts" SEODescription="Gets an object that represents the custom XML parts in the document." Scope="word" />
     <Item text="getActiveViewAsync method" url="shared/document.getactiveviewasync" FriendlyUrl="reference/common/documentdocument.getactiveviewasync" SEOKeyword="PowerPoint" SEODescription="and Word for iMac&quot;" />
     <Item text="getFileAsync method" url="shared/document.getfileasync" FriendlyUrl="reference/common/documentdocument.getfileasync" SEOKeyword="PowerPoint" SEODescription="Word&quot;" />
