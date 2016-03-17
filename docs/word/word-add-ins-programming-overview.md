@@ -2,8 +2,6 @@
 # Word add-ins Programming Overview
 Learn about proxy objects, the command queue, and how to run a Word Javascript add-in by using Office.js.
 
-_Applies to: Word 2016, Word for iPad, Word for Mac_
-
 Word 2016 introduces a new object model for working with Word objects. This object model is an addition to the existing object model provided by Office.js to create add-ins for Word. This object model is accessed via JavaScript hosted by a web application.
 
 ## Manifest
