@@ -1,11 +1,5 @@
 
 # Insert data in the body when composing an appointment or message in Outlook
-Learn how to insert data in the body of the appointment or message that the user is composing from an Outlook add-in.
-
-
-
-## Inserting data in the body of a compose form
-
 
 You can use the asynchronous methods ([Body.getAsync](https://dev.outlook.com/reference/add-ins/Body.html), [Body.getTypeAsync](https://dev.outlook.com/reference/add-ins/Body.html), [Body.prependAsync](https://dev.outlook.com/reference/add-ins/Body.html), [Body.setAsync](https://dev.outlook.com/reference/add-ins/Body.html) and [Body.setSelectedDataAsync](https://dev.outlook.com/reference/add-ins/Body.html)) to get the body type and insert data in the body of an appointment or message item that the user is composing. These asynchronous methods are available to only compose add-ins. To use these methods, make sure you have set up the add-in manifest appropriately so that Outlook activates your add-in in compose forms, as described in the section [Setting up Outlook add-ins for compose forms](../outlook/compose-scenario.md#mod_off15_CreatingForCompose_SettingUp) of [Create Outlook add-ins for compose forms](../outlook/compose-scenario.md).
 
