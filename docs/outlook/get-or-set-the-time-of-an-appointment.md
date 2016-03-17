@@ -1,9 +1,6 @@
 
 # Get or set the time when composing an appointment in Outlook
 
-## Prerequisites for getting or setting the start or end time in a compose form
-
-
 The JavaScript API for Office provides asynchronous methods ([Time.getAsync](http://dev.outlook.com/reference/add-ins/Time.html) and [Time.setAsync](http://dev.outlook.com/reference/add-ins/Time.html)) to get and set the start or end time of an appointment that the user is composing. These asynchronous methods are available to only compose add-ins. To use these methods, make sure you have set up the add-in manifest appropriately for Outlook to activate the add-in in compose forms, as described in the section [Setting up Outlook add-ins for compose forms](../outlook/compose-scenario.md#mod_off15_CreatingForCompose_SettingUp) of [Create Outlook add-ins for compose forms](../outlook/compose-scenario.md).
 
 The [start](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html) and [end](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html) properties are available for appointments in both compose and read forms. In a read form, you can access the properties directly from the parent object, as in:
