@@ -6,7 +6,7 @@ Asynchronously removes an event handler for the task selection changed event in 
 |||
 |:-----|:-----|
 |**Hosts:**|Project|
-|**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|Selection|
+|**Available in [Requirement set](../../docs/overview/specify-office-hosts-and-api-requirements.md)**|Selection|
 |**Added in**|1.0|
 
 ```js
@@ -18,7 +18,7 @@ Office.context.document.removeHandlerAsync(eventType[, options][, callback]);
 |**Name**|**Type**|**Description**|**Support notes**|
 |:-----|:-----|:-----|:-----|
 |_eventType_|[EventType](../../reference/shared/eventtype-enumeration.md)|<table><tr><th>Enumeration</th><th>Text value</th></tr><tr><td><a href="https://msdn.microsoft.com/en-us/library/office/fp179836.aspx">Office.EventType.ResourceSelectionChanged</a></td><td>resourceSelectionChanged</td></tr><tr><td><a href="https://msdn.microsoft.com/en-us/library/office/fp179816.aspx">Office.EventType.TaskSelectionChanged</a></td><td>taskSelectionChanged</td></tr><tr><td><a href="https://msdn.microsoft.com/en-us/library/office/fp179839.aspx">Office.EventType.ViewSelectionChanged</a></td><td>viewSelectionChanged</td></tr></table>||
-|_options_|**object**|Specifies any of the following [optional parameters](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters).||
+|_options_|**object**|Specifies any of the following [optional parameters](../../docs/develop/asynchronous-programming-in-office-add-ins.md#passing-optional-parameters-to-asynchronous-methods).||
 |_asyncContext_|**array**,  **boolean**,  **null**,  **number**,  **object**, **string**, or  **undefined**|A user-defined item of any type that is returned in the  **AsyncResult** object without being altered.||
 |_callback_|**object**|A function that is invoked when the callback returns, whose only parameter is of type  **AsyncResult**.||
 
@@ -116,7 +116,7 @@ The example assumes your add-in has a reference to the jQuery library and that t
 
 A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
 
-For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
+For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](../../docs/overview/requirements-for-running-office-add-ins.md).
 
 
 ||**Office for Windows desktop**|**Office Online (in browser)**|
@@ -126,7 +126,7 @@ For more information about Office host application and server requirements, see 
 |||
 |:-----|:-----|
 |**Available in requirement sets**|Selection|
-|**Minimum permission level**|[ReadWriteDocument](http://msdn.microsoft.com/library/da2efadc-4ebf-45fe-be39-397ac1eb1dbd%28Office.15%29.aspx)|
+|**Minimum permission level**|[ReadWriteDocument](../../docs/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins.md)|
 |**Add-in types**|Task pane|
 |**Library**|Office.js|
 |**Namespace**|Office|

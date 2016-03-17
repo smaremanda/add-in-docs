@@ -1,12 +1,5 @@
 
 # Create Outlook add-ins for compose forms
-Build Outlook add-ins for the read scenario and find information for available API features. 
-
-
-
-
-## Setting up Outlook add-ins for compose forms
-
 
 Starting with version 1.1 of the schema for Office Add-ins manifests and v1.1 of office.js, you can create compose add-ins, which are Outlook add-ins activated in compose forms. In contrast with read add-ins (Outlook add-ins that are activated in read mode when a user is viewing a message or appointment), compose add-ins are available in the following user scenarios:
 
@@ -24,17 +17,12 @@ Starting with version 1.1 of the schema for Office Add-ins manifests and v1.1 of
     
 - Forwarding or replying to a meeting request or meeting item.
     
-In each of these compose scenarios, any add-in command buttons defined by the add-in are shown. For older add-ins that do not implement add-in commands, users can choose  **Office Add-ins** in the ribbon to open the add-in selection pane, and then choose and start a compose add-in. Figure 1 shows add-in commands in a compose form.
+In each of these compose scenarios, any add-in command buttons defined by the add-in are shown. For older add-ins that do not implement add-in commands, users can choose  **Office Add-ins** in the ribbon to open the add-in selection pane, and then choose and start a compose add-in. The following figure shows add-in commands in a compose form.
 
-
-**Figure 1. An Outlook message compose form with add-in commands**
 
 ![Shows an Outlook compose form with add-in commands.](../../images/583023e6-0534-4f17-9791-b91aa8bff07e.png)
 
-Figure 2 shows the add-in selection pane consisting of 2 compose add-ins that do not implement add-in commands, activated when the user is composing an inline reply in Outlook.
-
-
-**Figure 2. The add-in selection pane showing an Outlook add-in available for the message that is being composed**
+The following figure shows the add-in selection pane consisting of two compose add-ins that do not implement add-in commands, activated when the user is composing an inline reply in Outlook.
 
 ![Templates mail app activated for composed item](../../images/mod_off15_MailApps_TemplatesAppSelectionPane.png)
 
@@ -49,7 +37,7 @@ Compose add-ins are implemented as [Add-in commands for Outlook](../outlook/add-
 
 
 
-- For activating add-ins in compose forms: see Table 1 in [Specify activation rules in a manifest](../outlook/manifests/activation-rules.md#MailAppDefineRules_Manifest).
+- For activating add-ins in compose forms, see Table 1 in [Specify activation rules in a manifest](../outlook/manifests/activation-rules.md#MailAppDefineRules_Manifest).
     
 - [Add and remove attachments to an item in a compose form in Outlook](../outlook/add-and-remove-attachments-to-an-item-in-a-compose-form.md)
     

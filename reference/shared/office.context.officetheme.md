@@ -8,7 +8,7 @@ Provides access to the properties for Office theme colors.
 |||
 |:-----|:-----|
 |**Hosts:**|Excel, Outlook, PowerPoint, Word|
-|**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|Not in a set|
+|**Available in [Requirement set](../../docs/overview/specify-office-hosts-and-api-requirements.md)**|Not in a set|
 |**Added in**|1.3|
 
 
@@ -59,7 +59,7 @@ function applyOfficeTheme(){
 
 |||
 |:-----|:-----|
-|**Minimum permission level**|[Restricted](http://msdn.microsoft.com/library/da2efadc-4ebf-45fe-be39-397ac1eb1dbd%28Office.15%29.aspx)|
+|**Minimum permission level**|[Restricted](../../docs/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins.md)|
 |**Add-in types**|Content, task pane, Outlook|
 |**Library**|Office.js|
 |**Namespace**|Office|

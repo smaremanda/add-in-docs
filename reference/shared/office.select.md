@@ -6,7 +6,7 @@ Creates a promise to return a binding based on the selector string passed in.
 |||
 |:-----|:-----|
 |**Hosts:**|Access, Excel, Word|
-|**Available in [Requirement sets](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|MatrixBindings, PartialTableBindings, TableBindings, TextBindings|
+|**Available in [Requirement sets](../../docs/overview/specify-office-hosts-and-api-requirements.md)**|MatrixBindings, PartialTableBindings, TableBindings, TextBindings|
 |**Last changed in**|1.1|
 
 ```js
@@ -35,7 +35,7 @@ When the function you passed to the  _onError_ parameter executes, it receives a
 
 The  **Office.select** method provides access to a [Binding](../../reference/shared/binding.md) object promise that attempts to return the specified binding when any of its asynchronous methods are invoked.
 
-Supported formats: "bindings# _bindingId_", which returns a  **Binding** object for the binding with the [id](../../reference/shared/binding.id.md) of `bindingId`. For more information, see [Asynchronous programming in Office Add-ins](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_PromisesPattern) and [Bind to regions in a document or spreadsheet](http://msdn.microsoft.com/library/5bf788db-d788-4d91-bcb6-fc3913b40012%28Office.15%29.aspx).
+Supported formats: "bindings# _bindingId_", which returns a  **Binding** object for the binding with the [id](../../reference/shared/binding.id.md) of `bindingId`. For more information, see [Asynchronous programming in Office Add-ins](../../docs/develop/asynchronous-programming-in-office-add-ins.md#asynchronous-programming-using-the-promises-pattern-to-access-data-in-bindings) and [Bind to regions in a document or spreadsheet](http://msdn.microsoft.com/library/5bf788db-d788-4d91-bcb6-fc3913b40012%28Office.15%29.aspx).
 
 
  >**Note** 
@@ -65,7 +65,7 @@ function addBindingDataChangedEventHandler() {
 
 A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
 
-For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
+For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](../../docs/overview/requirements-for-running-office-add-ins.md).
 
 
 
@@ -78,7 +78,7 @@ For more information about Office host application and server requirements, see 
 |||
 |:-----|:-----|
 |**Available in requirement sets**|MatrixBindings, PartialTableBindings, TableBindings, TextBindings|
-|**Minimum permission level**|[ReadDocument (ReadAllDocument for Open Office XML)](http://msdn.microsoft.com/library/da2efadc-4ebf-45fe-be39-397ac1eb1dbd%28Office.15%29.aspx)|
+|**Minimum permission level**|[ReadDocument (ReadAllDocument for Open Office XML)](../../docs/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins.md)|
 |**Add-in types**|Content, task pane|
 |**Library**|Office.js|
 |**Namespace**|Office|

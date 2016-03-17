@@ -5,7 +5,7 @@ Represents custom settings for a task pane or content add-in that are stored in 
 |||
 |:-----|:-----|
 |**Hosts:**|Access, Excel, PowerPoint, Word|
-|**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|Settings|
+|**Available in [Requirement set](../../docs/overview/specify-office-hosts-and-api-requirements.md)**|Settings|
 |**Last changed in**|1.1|
 
 ```
@@ -50,7 +50,7 @@ The  **Settings** object is automatically loaded as part of the [Document](../..
 
 A capital Y in the following matrix indicates that this object is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this object.
 
-For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
+For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](../../docs/overview/requirements-for-running-office-add-ins.md).
 
 
 ||**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|

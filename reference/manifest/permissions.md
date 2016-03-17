@@ -31,5 +31,5 @@ For mail add-ins:
 
 ## Remarks
 
-For more detail, see [Requesting permissions for API use in content and task pane add-ins](http://msdn.microsoft.com/library/da2efadc-4ebf-45fe-be39-397ac1eb1dbd%28Office.15%29.aspx) and [Understanding Outlook add-in permissions](http://msdn.microsoft.com/library/5bca69f2-b287-4e19-8f0f-78d896b2a3d3%28Office.15%29.aspx).
+For more detail, see [Requesting permissions for API use in content and task pane add-ins](../../docs/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins.md) and [Understanding Outlook add-in permissions](../../docs/outlook/understanding-outlook-add-in-permissions.md).
 

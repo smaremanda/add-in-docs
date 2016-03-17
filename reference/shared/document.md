@@ -39,7 +39,7 @@ Office.context.document
 |[getSelectedDataAsync](../../reference/shared/document.getselecteddataasync.md)|Reads the data contained in the current selection of the document.|In 1.1, added support for getting the id, title, and index for the selected range of slides in add-ins for PowerPoint.|
 |[goToByIdAsync](../../reference/shared/document.gotobyidasync.md)|Goes to the specified object or location in the document.|In 1.1, added to support navigation within the document in add-ins for Excel and PowerPoint.|
 |[removeHandlerAsync](../../reference/shared/document.removehandlerasync.md)|Removes an event handler for a  **Document** object event.||
-|[setSelectedDataAsync](../../reference/shared/document.setselecteddataasync.md)|Writes data to the current selection in the document.|In 1.1, added support for [setting formatting on the selected table when writing data in add-ins for Excel](http://msdn.microsoft.com/library/46b05707-b350-41be-b6b8-311799c71a33%28Office.15%29.aspx).|
+|[setSelectedDataAsync](../../reference/shared/document.setselecteddataasync.md)|Writes data to the current selection in the document.|In 1.1, added support for [setting formatting on the selected table when writing data in add-ins for Excel](../../docs/develop/format-tables-in-add-ins-for-excel.md).|
 
 **Events**
 
@@ -87,7 +87,7 @@ function write(message){
 
 Support for each API member of the  **Document** object differs across Office host applications. See the "Support details" section of each member's topic for host support information.
 
-For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
+For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](../../docs/overview/requirements-for-running-office-add-ins.md).
 
 
 |||

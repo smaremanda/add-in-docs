@@ -5,7 +5,7 @@ Asynchronously gets the text value of the data that is contained in the current 
 |||
 |:-----|:-----|
 |**Hosts:**|Project|
-|**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|Selection|
+|**Available in [Requirement set](../../docs/overview/specify-office-hosts-and-api-requirements.md)**|Selection|
 |**Added in**|1.0|
 
 ```
@@ -20,7 +20,7 @@ Office.context.document.getSelectedDataAsync(coercionType[, options][, callback]
 |**Name**|**Type**|**Description**|**Support notes**|
 |:-----|:-----|:-----|:-----|
 | _coercionType_|[CoercionType](../../reference/shared/coerciontype-enumeration.md)|The type of data structure to return. Required.<br/>Project 2013 supports only  **Office.CoercionType.Text** or `"text"`.||
-| _options_|**object**|Specifies any of the following [optional parameters](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters).||
+| _options_|**object**|Specifies any of the following [optional parameters](../../docs/develop/asynchronous-programming-in-office-add-ins.md#passing-optional-parameters-to-asynchronous-methods).||
 | _valueFormat_|[ValueFormat](../../reference/shared/valueformat-enumeration.md)|The formatting to use for number or date values.<br/>Project 2013 ignores this parameter and internally sets it to  `unformatted`.||
 | _filterType_|[FilterType](../../reference/shared/filtertype-enumeration.md)|Specifies whether to include only visible data or all data. <br/>Project 2013 ignores this parameter and internally sets it to  `all`.||
 | _asyncContext_|**array**,  **boolean**,  **null**,  **number**,  **object**, **string**, or  **undefined**|A user-defined item of any type that is returned in the  **AsyncResult** object without being altered.||
@@ -109,7 +109,7 @@ The example assumes your add-in has a reference to the jQuery library and that t
 
 A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
 
-For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
+For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](../../docs/overview/requirements-for-running-office-add-ins.md).
 
 
 ||**Office for Windows desktop**|**Office Online (in browser)**|
@@ -119,7 +119,7 @@ For more information about Office host application and server requirements, see 
 |||
 |:-----|:-----|
 |**Available in requirement sets**|Selection|
-|**Minimum permission level**|[ReadDocument](http://msdn.microsoft.com/library/da2efadc-4ebf-45fe-be39-397ac1eb1dbd%28Office.15%29.aspx)|
+|**Minimum permission level**|[ReadDocument](../../docs/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins.md)|
 |**Add-in types**|Task pane|
 |**Library**|Office.js|
 |**Namespace**|Office|

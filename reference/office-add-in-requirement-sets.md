@@ -1,7 +1,7 @@
 
 # Office add-in requirement sets
 
-Requirement sets are named groups of API members. Office add-ins use requirement sets specified in the manifest or using a runtime check to determine if an Office host supports APIs needed by the add-in. For more information, see [Specify Office hosts and API requirements](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx).
+Requirement sets are named groups of API members. Office add-ins use requirement sets specified in the manifest or using a runtime check to determine if an Office host supports APIs needed by the add-in. For more information, see [Specify Office hosts and API requirements](../../docs/overview/specify-office-hosts-and-api-requirements.md).
 
 
 ## Requirement sets
@@ -20,6 +20,7 @@ The following table lists the names of requirement sets, the methods in each set
 |BindingEvents|1.1|Access&nbsp;Web&nbsp;Apps<br>Excel<br>Excel&nbsp;Online<br>Word|Binding.addHanderAsync<br>Binding.removeHanderAsync|
 |CompressedFile|1.1|PowerPoint<br>Word<br>Word&nbsp;Online<br>Excel&nbsp;Online<br>PowerPoint&nbsp;Online|Supports output to Office Open XML (OOXML) format as a byte array<br> (Office.FileType.Compressed) when using the Document.getFileAsync method.|
 |CustomXmlParts|1.1|Word|CustomXmlNode.getNodesAsync<br>CustomXmlNode.getNodeValueAsync<br>CustomXmlNode.getXmlAsync<br>CustomXmlNode.setNodeValueAsync<br>CustomXmlNode.setXmlAsync<br>CustomXmlPart.addHandlerAsync<br>CustomXmlPart.deleteAsync<br>CustomXmlPart.getNodesAsync<br>CustomXmlPart.getXmlAsync<br>CustomXmlPart.removeHandlerAsync<br>CustomXmlParts.addAsync<br>CustomXmlParts.getByIdAsync<br>CustomXmlParts.getByNamespaceAsync<br>CustomXmlPrefixMappings.addNamespaceAsync<br>CustomXmlPrefixMappings.getNamespaceAsync<br>CustomXmlPrefixMappings.getPrefixAsync|
+|DialogAPI|1.1|Excel<br>PowerPoint<br>Word<br>Outlook|Office.context.ui.displayDialogAsync()<br> Office.context.ui.messageParent()<br>Office.context.ui.close()|
 |DocumentEvents|1.1|Excel<br>Excel&nbsp;Online<br>PowerPoint<br>Word<br>Word&nbsp;Online|Document.addHandlerAsync<br>Document.removeHandlerAsync|
 |File|1.1|PowerPoint<br>Word<br>Word&nbsp;Online|Document.getFileAsync<br>File.closeAsync<br>File.getSliceAsync|
 |HtmlCoercion|1.1|Word|Supports coercion to HTML (Office.CoercionType.Html) when reading and writing data using the Document.getSelectedDataAsync,<br>Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods.|
@@ -41,7 +42,7 @@ The following table lists the names of requirement sets, the methods in each set
 ## Methods that aren't part of a requirement set
 
 
-The following methods in the JavaScript API for Office aren't part of a requirement set. If your add-in requires any of these methods, use the  **Methods** and **Method** elements in the add-in's manifest to declare that they are required, or perform the runtime check using an if statement. For more information, see [Specify Office hosts and API requirements](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx).
+The following methods in the JavaScript API for Office aren't part of a requirement set. If your add-in requires any of these methods, use the  **Methods** and **Method** elements in the add-in's manifest to declare that they are required, or perform the runtime check using an if statement. For more information, see [Specify Office hosts and API requirements](../../docs/overview/specify-office-hosts-and-api-requirements.md).
 
 
 
@@ -68,5 +69,5 @@ The following methods in the JavaScript API for Office aren't part of a requirem
 
 
 
-- [Specify Office hosts and API requirements](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)
+- [Specify Office hosts and API requirements](../../docs/overview/specify-office-hosts-and-api-requirements.md)
     

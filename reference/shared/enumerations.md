@@ -72,7 +72,7 @@ Office.context.document.getSelectedDataAsync("text", {valueFormat:"unformatted",
 |[ResponseType](http://msdn.microsoft.com/library/b3e723ca-4be0-4846-ad97-0eecab4355eb%28Office.15%29.aspx)|Specifies the response to a meeting invitation.|
 |[SelectionMode](selectionmode-enumeration.md)|Specifies whether to select (highlight) the location to navigate to (when using the [Document.goToByIdAsync](document.gotobyidasync.md) method).|
 |[SourceProperty](http://msdn.microsoft.com/library/6a209a7f-57cd-4dc3-869e-07b0f5928b28%28Office.15%29.aspx)|Specifies the source of the data returned by the invoked method.|
-|[Table](table-enumeration.md)|Specifies enumerated values for the  `cells:` property in the _cellFormat_ parameter of [table formatting methods](http://msdn.microsoft.com/library/46b05707-b350-41be-b6b8-311799c71a33%28Office.15%29.aspx).|
+|[Table](table-enumeration.md)|Specifies enumerated values for the  `cells:` property in the _cellFormat_ parameter of [table formatting methods](../../docs/develop/format-tables-in-add-ins-for-excel.md).|
 |[ValueFormat](valueformat-enumeration.md)|Specifies whether values, such as numbers and dates, returned by the invoked method are returned with their formatting applied.|
 
 ## Support details
@@ -80,7 +80,7 @@ Office.context.document.getSelectedDataAsync("text", {valueFormat:"unformatted",
 
 Support for each enumeration differs across Office host applications. See the "Support details" section of each enumerations's topic for host support information.
 
-For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
+For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](../../docs/overview/requirements-for-running-office-add-ins.md).
 
 
 |||

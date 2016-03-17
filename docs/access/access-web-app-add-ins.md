@@ -144,7 +144,7 @@ Download the sample [Office 365: Bind and manipulate data in an Access web app](
 
 
 
-- [Understanding the JavaScript API for add-ins](http://msdn.microsoft.com/en-us/library/01180dae-ca45-40c8-b3dd-fd2a85651c0c%28Office.15%29.aspx)
+- [Understanding the JavaScript API for add-ins](../develop/understanding-the-javascript-api-for-office.md)
 
-- [JavaScript API for Office](http://msdn.microsoft.com/en-us/library/b27e70c3-d87d-4d27-85e0-103996273298%28Office.15%29.aspx)
+- [JavaScript API for Office](../../reference/javascript-api-for-office.md)
 

@@ -5,7 +5,7 @@ Returns the entire document file in slices of up to 4194304 bytes (4MB) or for a
 |||
 |:-----|:-----|
 |**Hosts:**|Excel, PowerPoint, Word|
-|**Available in [Requirement set](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx)**|File|
+|**Available in [Requirement set](../../docs/overview/specify-office-hosts-and-api-requirements.md)**|File|
 |**Last changed in File**|1.1|
 
 ```
@@ -29,7 +29,7 @@ Office.context.document.getFileAsync(fileType [, options], callback);
 |Word Online|Office.FileType.CompressedOffice.FileType.PdfOffice.FileType.Text|
 |PowerPoint Online|Office.FileType.CompressedOffice.FileType.Pdf|
 |**Changed in** 1.1, see [Support history](#bk_history)|
-| _options_|**object**|Specifies any of the following [optional parameters](http://msdn.microsoft.com/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters)||
+| _options_|**object**|Specifies any of the following [optional parameters](../../docs/develop/asynchronous-programming-in-office-add-ins.md#passing-optional-parameters-to-asynchronous-methods)||
 | _sliceSize_|**number**|Specifies the desired slice size (in bytes) up to 4194304 bytes (4MB). If not specified, a default slice size of 4194304 bytes (4MB) will be used. ||
 | _asyncContext_|**array**,  **boolean**,  **null**,  **number**,  **object**, **string**, or  **undefined**|A user-defined item of any type that is returned in the  **AsyncResult** object without being altered.||
 | _callback_|**object**|A function that is invoked when the callback returns, whose only parameter is of type  **AsyncResult**.||
@@ -170,7 +170,7 @@ Office.context.document.getFileAsync(Office.FileType.Pdf,
 
 A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
 
-For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](http://msdn.microsoft.com/library/67340567-bb9a-498c-96d3-3f52f28c16bc%28Office.15%29.aspx).
+For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](../../docs/overview/requirements-for-running-office-add-ins.md).
 
 
 **Supported hosts, by platform**
@@ -185,7 +185,7 @@ For more information about Office host application and server requirements, see 
 |||
 |:-----|:-----|
 |**Available in requirement sets**|File|
-|**Minimum permission level**|[ReadAllDocument](http://msdn.microsoft.com/library/da2efadc-4ebf-45fe-be39-397ac1eb1dbd%28Office.15%29.aspx)|
+|**Minimum permission level**|[ReadAllDocument](../../docs/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins.md)|
 |**Add-in types**|Content, task pane|
 |**Library**|Office.js|
 |**Namespace**|Office|

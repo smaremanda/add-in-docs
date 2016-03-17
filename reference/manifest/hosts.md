@@ -27,5 +27,5 @@ Specifies the type(s) of Office host application your Office Add-in supports.
 
 ## Remarks
 
-For more information about specifying host support, see [Specify Office hosts and API requirements](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx).
+For more information about specifying host support, see [Specify Office hosts and API requirements](../../docs/overview/specify-office-hosts-and-api-requirements.md).
 

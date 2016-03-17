@@ -1,13 +1,6 @@
----
-title: |
-    Tips and Tricks for Improving Performance and Experience of Office
-    Add-ins
-...
+# Tips and Tricks for Improving Performance and Experience of Office Add-ins
 
- 
-
-Top tips for experience:
-========================
+## Top tips for experience
 
 -   Ensure the **user experience** from ‘the very first launch’ to ‘the
     add-in is fully configured’ is easy and intuitive. This is a new
@@ -44,7 +37,7 @@ Top tips for experience:
         usable experiences.  The Office Store will reject add-ins which
         are too hard to set up.
 
- 
+
 
 -   For Word, Excel, PowerPoint and Outlook, use the most
     recent **manifest schema version 1.1** to get the most out of
@@ -91,8 +84,7 @@ Top tips for experience:
 
  
 
-For best business success, alter your **merchandising**:
-========================================================
+##For best business success, alter your **merchandising**
 
 -   Use the **title and short description** to convince as large an
     audience as possible to click on your add-in.  This prevents
@@ -128,8 +120,7 @@ For best business success, alter your **merchandising**:
 
  
 
-Take advantage of our new feature – **developer responses for user reviews**:
-=============================================================================
+## Take advantage of our new feature – **developer responses for user reviews**
 
 -   We understand how important it is for developers to engage directly
     with their customers. With this in mind, we have just released an

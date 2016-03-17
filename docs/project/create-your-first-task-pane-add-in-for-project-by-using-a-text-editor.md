@@ -1137,9 +1137,9 @@ function logMethodError(methodName, errorName, errorMessage, actionMessage) {
 
 - [Task pane add-ins for Project](../project/project-add-ins.md)
     
-- [Understanding the JavaScript API for add-ins](http://msdn.microsoft.com/en-us/library/01180dae-ca45-40c8-b3dd-fd2a85651c0c%28Office.15%29.aspx)
+- [Understanding the JavaScript API for add-ins](../develop/understanding-the-javascript-api-for-office.md)
     
-- [JavaScript API for Office add-ins](http://msdn.microsoft.com/en-us/library/b27e70c3-d87d-4d27-85e0-103996273298%28Office.15%29.aspx)
+- [JavaScript API for Office add-ins](../../reference/javascript-api-for-office.md)
     
 - [Schema reference for Office Add-ins manifests (v1.1)](http://msdn.microsoft.com/library/7e0cadc3-f613-8eb9-57ef-9032cbb97f92%28Office.15%29.aspx)
     
