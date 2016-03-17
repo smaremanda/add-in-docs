@@ -1,7 +1,5 @@
 # ChartTitle object (JavaScript API for Excel)
 
-_Applies to: Excel 2016, Excel Online, Excel for iOS, Office 2016_
-
 Represents a chart title object of a chart.
 
 ## Properties
