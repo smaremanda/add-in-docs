@@ -28,20 +28,11 @@ Following are the prerequisites for creating a Project task pane add-in that rea
 ### Procedure 1. To verify that the ProjectData service is accessible
 
 
-1. To enable your browser to directly show the XML data from a REST query, turn off the feed reading view. For information about how to do this in Internet Explorer, see Procedure 1, step 4 in [Querying OData feeds for Project reporting data](http://msdn.microsoft.com/library/3eafda3b-f006-48be-baa6-961b2ed9fe01%28Office.15%29.aspx).
+1- To enable your browser to directly show the XML data from a REST query, turn off the feed reading view. For information about how to do this in Internet Explorer, see Procedure 1, step 4 in [Querying OData feeds for Project reporting data](http://msdn.microsoft.com/library/3eafda3b-f006-48be-baa6-961b2ed9fe01%28Office.15%29.aspx).
     
-2. Query the  **ProjectData** service by using your browser with the following URL:
+2- Query the  **ProjectData** service by using your browser with the following URL: **http://ServerName /ProjectServerName /_api/ProjectData**. For example, if the Project Web App instance is  `http://MyServer/pwa`, the browser shows the following results:
     
-    ```HTML
-    http://ServerName /ProjectServerName /_api/ProjectData
-    ```
-
-
-    For example, if the Project Web App instance is  `http://MyServer/pwa`, the browser shows the following results:
-    
-
-
-    ```XML
+```xml
      <?xml version="1.0" encoding="utf-8"?>
         <service xml:base="http://myserver/pwa/_api/ProjectData/" 
         xmlns="http://www.w3.org/2007/app" 
@@ -58,13 +49,10 @@ Following are the prerequisites for creating a Project task pane add-in that rea
         </workspace>
         </service>
 ```
-
-
-    You may have to provide your network credentials to see the results. If the browser shows "Error 403, Access Denied," either you do not have logon permission for that Project Web App instance, or there is a network problem that requires administrative help.
+3- You may have to provide your network credentials to see the results. If the browser shows "Error 403, Access Denied," either you do not have logon permission for that Project Web App instance, or there is a network problem that requires administrative help.
     
 
 ## Using Visual Studio to create a task pane add-in for Project
-
 
 Office Developer Tools for Visual Studio includes a template for task pane add-ins for Project 2013. If you create a solution named  **HelloProjectOData**, the solution contains the following two Visual Studio projects:
 
@@ -134,17 +122,9 @@ The following steps show how to add an icon file to the Visual Studio solution:
     Alternately, use your own 32 x 32 icon; or, copy the following image to a file named NewIcon.png, and then add that file to the  `HelloProjectODataWeb\Images` folder:
 ![Icon for the HelloProjectOData app](../../images/pj15_HelloProjectData_NewIcon.jpg)
 
+3. In the HelloProjectOData.xml manifest, add an  **IconUrl** element below the **Description** element, where the value of the icon URL is the relative path to the 32x32 icon file. For example, add the following line: **<IconUrl DefaultValue="~remoteAppUrl/Images/NewIcon.png" />**. The HelloProjectOData.xml manifest file now contains the following (your  **Id** value will be different):
 
-    
-3. In the HelloProjectOData.xml manifest, add an  **IconUrl** element below the **Description** element, where the value of the icon URL is the relative path to the 32x32 icon file. For example, add the following line:
-    
-    ```XML
-    <IconUrl DefaultValue="~remoteAppUrl/Images/NewIcon.png" />
-    ```
-
-    The HelloProjectOData.xml manifest file now contains the following (your  **Id** value will be different):
-
-    ```XML
+```XML
     <?xml version="1.0" encoding="UTF-8"?>
     <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" 
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TaskPaneApp">
@@ -164,16 +144,13 @@ The following steps show how to add an icon file to the Visual Studio solution:
         </DefaultSettings>
         <Permissions>ReadWriteDocument</Permissions>
     </OfficeApp>
-    ```
-
+```
 
 ## Creating the HTML content for the HelloProjectOData add-in
-
 
 The  **HelloProjectOData** add-in is a sample that includes debugging and error output; it is not intended for production use. Before you start coding the HTML content, design the UI and user experience for the add-in, and outline the JavaScript functions that interact with the HTML code. For more information, see[Design guidelines for Office Add-ins](../../docs/design/add-in-design.md). 
 
 The task pane shows the add-in display name at the top, which is the value of the  **DisplayName** element in the manifest. The **body** element in the HelloProjectOData.html file contains the other UI elements, as follows:
-
 
 - A subtitle indicates the general functionality or type of operation, for example,  **ODATA REST QUERY**.
     
@@ -187,8 +164,8 @@ The task pane shows the add-in display name at the top, which is the value of th
     
      >**Note**  In this example, cost and work data for the active project are derived from the published values. If you change values in Project, the  **ProjectData** service does not have the changes until the project is published.
 
-### Procedure 4. To create the HTML content
 
+### Procedure 4. To create the HTML content
 
 1. In the  **head** element of the Home.html file, add any additional **link** elements for CSS files that your add-in uses. The Visual Studio project template includes a link for the App.css file that you can use for custom CSS styles.
     
@@ -200,8 +177,6 @@ The task pane shows the add-in display name at the top, which is the value of th
     
     Following is the updated HTML code for the  **head** element, with the additional line for the SurfaceErrors.js file:
     
-
-
     ```HTML
       <!DOCTYPE html>
     <html>
