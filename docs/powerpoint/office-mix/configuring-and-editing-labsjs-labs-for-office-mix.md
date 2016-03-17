@@ -1,6 +1,7 @@
 
 # Configuring and editing LabsJS labs for Office Mix
-
+
+
 
 Office Mix provides office.js methods to get and set lab configurations. The configuration indicates to Office Mix what type of lab you are creating, as well as what type of data the lab will send back. This information is used to collect and visualize analytics.
 
@@ -13,7 +14,7 @@ The following code shows how to get the lab editor.
 
 
 
-```
+```js
 Labs.editLab((err, labEditor) => {
     if (err) {
         handleError();
@@ -30,7 +31,7 @@ The following code shows how to set and get a configuration. To set a configurat
 
 
 
-```
+```js
 
 ///////  Set the configuration /////
 
@@ -57,7 +58,7 @@ this._labEditor.setConfiguration(configuration, (err, unused) => { })
 
 
 
-```
+```js
 
 ///////  Get the configuration  //////
 
@@ -101,7 +102,7 @@ To  **set** state, use the following code.
 
 
 
-```
+```js
 labInstance.setState(this._labState(), (err, unused) => { 
     // If no error, state has successfully been stored by the host.
 });
@@ -112,7 +113,7 @@ To  **get** state, use the following code.
 
 
 
-```
+```js
 labInstance.getState((err, state) => {
     // If no error, the state parameter contains the set state.
 });
@@ -130,7 +131,9 @@ First, however, you need to familiarize yourself with two core concepts when wor
 An attempt is a try by a user to complete a component instance. For example, in the case of a multiple choice question, an attempt starts when the user begins to work the problem and it ends when a final score is assigned. The Office Mix analytics then aggregate user results for the problem.
 
 
- >**Note**  Attempts can be used for all component types except for the  **DynamicComponent** type.
+ >**Note**  
+ ---
+ Attempts can be used for all component types except for the  **DynamicComponent** type.
 
 You can retrieve the results for all the attempts associated with a given component instance by using the  **getAttempts** method. After retrieving the results, the user can either re-try one of the existing attempts by using the **resume** method, or create a new attempt by using the **createAttempt** method. The following example shows the process.
 
@@ -168,7 +171,7 @@ The following code example shows how to query for a hint.
 
 
 
-```
+```js
 // Take a hint.
 var hints = attempt.getValues("hints");
 hints[0].getValue((err, hint) => {
@@ -183,7 +186,7 @@ hints[0].getValue((err, hint) => {
 Use the  **ActivityComponentInstace** object to track a user's interaction with an activity component. This class provides a **complete** method to indicate that the user has finished interacting with the activity. The method can indicate that the user has completed an assigned task, finished a reading, or any other end point associated with the activity. The following code shows how to use the **complete** method.
 
 
-```
+```js
 attempt.complete((err, unused) => { 
     // Called after the host has stored the completion.
 });
@@ -196,13 +199,13 @@ attempt.complete((err, unused) => {
 Use the  **ChoiceComponentInstance** object to track a user's interaction with a choice component. Choice components are problems that present the user with a list of choices that they then need to select from. There may or may not be a correct answer. The class provides two primary methods: **getSubmissions** and **submit**. The  **getSubmissions** method allows you to retrieve previously stored submissions; the **submit** method allows a new submission to be stored. The following code examples illustrate using the methods.
 
 
-```
+```js
 ///  using getSubmission method  ///
 var submissions = this._attempt.getSubmissions();
 ```
 
 
-```
+```js
 ///  using submit method  ///
 this._attempt.submit(
     new Labs.Components.ChoiceComponentAnswer(submission), 
@@ -219,7 +222,7 @@ this._attempt.submit(
 Use the  **InputComponentInstance** object to track a user's interaction with an input component. The class provides two primary methods: **getSubmission** and **submit**. The  **getSubmissions** method allows you to retrieve previously stored submissions; the **submit** method allows you to store a new submission. The following code snippet illustrates using the **getSubmissions** method.
 
 
-```
+```js
 var submissions = this._attempt.getSubmissions();
 ```
 
@@ -228,7 +231,7 @@ When using the  **submit** method, note that the **InputComponentAnswer** object
 
 
 
-```
+```js
 this._attempt.submit(
     new Labs.Components.InputComponentAnswer(submission), 
     new Labs.Components.InputComponentResult(correct, complete), 
@@ -248,7 +251,7 @@ The  **getComponents** method allows you to retrieve a list of previously create
 
 
 
-```
+```js
 dynamicComponentInstance.getComponents((err, components) => {
     // Upon success, components contains a list of previously created component instances.
 });
@@ -259,7 +262,7 @@ The  **createComponent** method constructs a new component and returns that comp
 
 
 
-```
+```js
 var inputComponentHints = [];
 for (var i = 0; i < data.hints.length; i++) {
     inputComponentHints.push({
@@ -289,7 +292,7 @@ Use the  **close** method to indicate that you have finished using the dynamic c
 
 
 
-```
+```js
 dynamicComponentInstance.close((err, unused) => {
     // Called after the server has processed the close attempt.
 });
