@@ -1,10 +1,5 @@
 
 # Create Outlook add-ins for read forms
-These features include contextual activation based on message class, the existence of an attachment, or string matching by regular expressions or well-known entities, and getting attachments of an item.
-
-
-## Setting up Outlook add-ins for read forms
-
 
 Read add-ins are Outlook add-ins that are activated in the Reading Pane or read inspector in Outlook. Unlike compose add-ins (Outlook add-ins that are activated when a user is creating a message or appointment), read add-ins are available when users:
 
