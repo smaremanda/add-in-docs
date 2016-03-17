@@ -1,8 +1,6 @@
 
 # Match strings in an Outlook item as well-known entities
 
-## What are well-known entities
-
 
 Before sending a message or meeting request item, Exchange Server parses the contents of the item, identifies and stamps certain strings in the subject and body that resemble entities well-known to Exchange, for example, email addresses, phone numbers, and URLs. Messages and meeting requests are delivered by Exchange Server in an Outlook Inbox with well-known entities stamped. 
 
