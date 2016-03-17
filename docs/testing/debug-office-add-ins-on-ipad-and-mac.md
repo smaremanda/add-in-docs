@@ -33,6 +33,7 @@ Weinre is a debugger for web pages, similar to the F12 tools, that is designed t
  Navigate to  `http://<ipaddr>:8080/client` to get the list of clients connected to this server.
 
   ![Shows list of clients connected to Weinre server](../../images/bada7fc7-2186-497c-86a2-8f4379006103.jpg)
+
 ### To start debugging
 
 1. Include the following in the  `<head>` tag of your add-in's web page to reference the Weinre target code.
