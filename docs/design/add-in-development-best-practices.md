@@ -113,7 +113,7 @@ To ensure that your add-in works well in both types of hosts:
 - Ensure that navigation and command elements can transition across Office host and task pane UI.
 - Do not add superfluous buttons to increase the real estate of your add-in.
 
-     >**Note**  Add-ins that take up too much space might not pass [Office Store validation](http://msdn.microsoft.com/library/cd90836a-523e-42f5-ab02-5123cdf9fefe%28Office.15%29.aspx).
+     **Note**  Add-ins that take up too much space might not pass [Office Store validation](http://msdn.microsoft.com/library/cd90836a-523e-42f5-ab02-5123cdf9fefe%28Office.15%29.aspx).
 
 ## Apply UX design principles
 
