@@ -1,11 +1,5 @@
 
 # Overview of Outlook add-ins architecture and features
-Learn about Outlook add-ins architecture and features.
-
-
-
-
-## Architecture
 
 An Outlook add-in consists of an XML manifest and code (JavaScript and HTML). The manifest specifies the name and description of the add-in, as well as how the add-in integrates into Outlook. Using the manifest, developers can place buttons on command surfaces, link off regular expression matches and so on. The manifest also defines the URL that hosts the JavaScript and HTML code for the add-in.
 
@@ -45,9 +39,6 @@ To get started building Outlook add-ins, see [Get Started with Outlook add-ins f
 
 
 ## Additional resources
-
-
-For concepts that are applicable to developing Office Add-ins in general, see the following:
 
 
 - [Design guidelines for Office Add-ins](../../docs/design/add-in-design.md)
