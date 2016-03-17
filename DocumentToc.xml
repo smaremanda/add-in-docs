@@ -56,7 +56,6 @@
     <Item text="Set up an add in catalog on Office 365" url="publish/set-up-an-add-in-catalog-on-office-365" />
     <Item text="Set up an add-in catalog on SharePoint" url="publish/set-up-an-add-in-catalog-on-sharepoint" FriendlyUrl="publishset-up-an-add-in-catalog-on-sharepoint" SEOKeyword="Excel" SEODescription="Word" />
     <Item text="Troubleshoot user errors" url="testing/testing-and-troubleshooting" FriendlyUrl="testing/testing-and-troubleshooting" SEOKeyword="Word" SEODescription="PowerPoint" />
-    <Item text="Tips and tricks" url="publish/tips-and-tricks-for-improving-performance-and-experience-of-Office-add-ins" />
   </Item>
   <Item text="Word" url="word" Scope="word">
     <Item text="Word add-ins programming overview" url="word/word-add-ins-programming-overview" FriendlyUrl="wordword-add-ins-programming-overview" SEODescription="&quot;Learn about proxy objects" Scope="word" />
@@ -110,7 +109,7 @@
 		<Item text="Get or set the location of an appointment" url="outlook/get-or-set-the-location-of-an-appointment" FriendlyUrl="outlook/composeget-or-set-the-location-of-an-appointment" SEODescription="Learn how to get or set the location from an Outlook add-in when the user is composing an appointment in Outlook." Scope="outlook" />
 		<Item text="Get or set the time of an appointment" url="outlook/get-or-set-the-time-of-an-appointment" FriendlyUrl="outlook/composeget-or-set-the-time-of-an-appointment" SEODescription="Learn how to get or set the time of an appointment from an Outlook add-in." Scope="outlook" />
 	</Item>
-	<Item text="Web services" url="outlook/web-services" FriendlyUrl="outlookweb-services" SEODescription="Learn about how to call EWS or other web services from an Outlook add-in for Outlook." Scope="outlook" />
+	<Item text="Call web services" url="outlook/web-services" FriendlyUrl="outlookweb-services" SEODescription="Learn about how to call EWS or other web services from an Outlook add-in for Outlook." Scope="outlook" />
 	<Item text="Authentication" url="outlook/authentication" FriendlyUrl="outlook/authenticationauthentication" SEODescription="Learn how to use Exchange 2013 identity tokens to authenticate your Outlook add-in." Scope="outlook" >
 		<Item text="Inside the identity token" url="outlook/inside-the-identity-token" FriendlyUrl="outlook/authenticationinside-the-identity-token" SEODescription="Find out what's inside an Exchange 2013 identity token." Scope="outlook" />
 		<Item text="Call a service by using an identity token" url="outlook/call-a-service-by-using-an-identity-token" FriendlyUrl="outlook/authenticationcall-a-service-by-using-an-identity-token" SEODescription="Learn how to use identity tokens to link the email accounts of your Outlook add-in customers to the information that your web service provides." Scope="outlook" />
