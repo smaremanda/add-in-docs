@@ -1,7 +1,5 @@
 # RangeBorderCollection object (JavaScript API for Excel)
 
-_Applies to: Excel 2016, Excel Online, Excel for iOS, Office 2016_
-
 Represents the border objects that make up range border.
 
 ## Properties
