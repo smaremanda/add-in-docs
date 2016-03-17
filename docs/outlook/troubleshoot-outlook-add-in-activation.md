@@ -1,14 +1,13 @@
 
 # Troubleshoot Outlook add-in activation
-Outlook add-in activation is contextual and based on rules in an add-in manifest. Explore reasons an installed add-in can fail to activate in Outlook.
-
 
-Outlook add-in activation is contextual and is based on the activation rules in the add-in manifest. When conditions for the currently selected item satisfy the activation rules for the add-in, the host application activates and displays the add-in button in the Outlook user interface (add-in selection pane for compose add-ins, add-in bar for read add-ins). However, if your add-in doesn't activate as you expect, you should look into the following areas for possible reasons.
+
+Outlook add-in activation is contextual and is based on the activation rules in the add-in manifest. When conditions for the currently selected item satisfy the activation rules for the add-in, the host application activates and displays the add-in button in the Outlook UI (add-in selection pane for compose add-ins, add-in bar for read add-ins). However, if your add-in doesn't activate as you expect, you should look into the following areas for possible reasons.
 
 ## Is the user mailbox on a version of Exchange Server that is at least Exchange 2013?
 
 
-First, ensure that the user's email account you're testing with is on a version of Exchange Server that is at least Exchange 2013. If you are using specific features that are released after Exchange 2013, for example, activating compose add-ins which debuts in Exchange 2013 Service Pack 1, then make sure the user's account is on the appropriate version of Exchange.
+First, ensure that the user's email account you're testing with is on a version of Exchange Server that is at least Exchange 2013. If you are using specific features that are released after Exchange 2013, make sure the user's account is on the appropriate version of Exchange.
 
 You can verify the version of Exchange 2013 by using one of the following approaches:
 
@@ -30,23 +29,23 @@ You can verify the version of Exchange 2013 by using one of the following approa
     
       4. Type the following in the Immediate window to display the version of the Exchange Server. The major version of the returned value must be equal to or greater than 15.
     
-          - If there is only one Exchange account in the user's profile:
+        - If there is only one Exchange account in the user's profile:
         
-        ```vba
-          ?Session.ExchangeMailboxServerVersion
-        ```
+              ```vba
+                  ?Session.ExchangeMailboxServerVersion
+                ```
         
-          - If there are multiple Exchange accounts in the same user profile:
+        - If there are multiple Exchange accounts in the same user profile:
         
-            ```vba
-              ?Session.Accounts.Item(emailAddress).ExchangeMailboxServerVersion
-            ```
+                    ```vba
+                      ?Session.Accounts.Item(emailAddress).ExchangeMailboxServerVersion
+                    ```
         
-          _emailAddress_ represents a string that contains the user's primary STMP address. For example, if the user's primary SMTP address is randy@contoso.com, type the following:
+        - _emailAddress_ represents a string that contains the user's primary STMP address. For example, if the user's primary SMTP address is randy@contoso.com, type the following:
         
-        ```vba
-          ?Session.Accounts.Item("randy@contoso.com").ExchangeMailboxServerVersion
-        ```
+                ```vba
+                  ?Session.Accounts.Item("randy@contoso.com").ExchangeMailboxServerVersion
+                ```
 
 
 ## Is the add-in disabled?
@@ -207,27 +206,28 @@ If you use an  **ItemHasRegularExpressionMatch** activation rule, verify whether
     
       - The HTML body of the message or appointment item selected in the Outlook explorer:
     
-    ```vba
-      ?ActiveExplorer.Selection.Item(1).HTMLBody
-    ```
+            ```vba
+              ?ActiveExplorer.Selection.Item(1).HTMLBody
+            ```
 
-      - The plain text body of the message or appointment item selected in the Outlook explorer:
+
+     - The plain text body of the message or appointment item selected in the Outlook explorer:
     
-    ```vba
-      ?ActiveExplorer.Selection.Item(1).Body
-    ```
+                 ```vba
+              ?ActiveExplorer.Selection.Item(1).Body
+            ```
+
 
       - The HTML body of the message or appointment item opened in the current Outlook inspector:
     
-    ```vba
-      ?ActiveInspector.CurrentItem.HTMLBody
-    ```
-
+            ```vba
+              ?ActiveInspector.CurrentItem.HTMLBody
+            ```
       - The plain text body of the message or appointment item opened in the current Outlook inspector:
     
-    ```vba
-      ?ActiveInspector.CurrentItem.Body
-    ```
+            ```vba
+              ?ActiveInspector.CurrentItem.Body
+            ```
 
 If the  **ItemHasRegularExpressionMatch** activation rule specifies **Subject** or **SenderSMTPAddress**, or if you use an  **ItemIs** or **ItemHasAttachment** rule, and you are familiar with or would like to use MAPI, you can use [MFCMAPI](http://mfcmapi.codeplex.com/) to verify the value in Table 2 that your rule relies on.
 
