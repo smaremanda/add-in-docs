@@ -7,7 +7,7 @@ Specifies the resource fields that are available as a parameter for the  **[getR
 |**Hosts:**|Project|
 |**Added in**|1.0|
 
-```
+```js
 ProjectResourceFields={
     Accrual: 0, 
     ActualCost: 1, 
@@ -426,8 +426,7 @@ The  **ProjectResourceFields** enumeration contains the following members.
 ## Remarks
 
 
-A  **ProjectResourceFields** constant can be used as a parameter of the [getResourceFieldAsync method](../../reference/shared/projectdocument.getresourcefieldasync.md).
-
+A  **ProjectResourceFields** constant can be used as a parameter of the [getResourceFieldAsync method](../../reference/shared/projectdocument.getresourcefieldasync.md).<br/><br/>
 For more information about working with fields in Project, see [Available fields reference](http://office.microsoft.com/en-us/project-help/available-fields-reference-HA102749299.aspx?CTT=1). In Project Help, search for  _Available fields_.
 
 
@@ -453,10 +452,6 @@ For more information about Office host application and server requirements, see 
 |**Namespace**|Office|
 
 ## Support history
-
-
-
-****
 
 
 |**Version**|**Changes**|
