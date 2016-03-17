@@ -239,7 +239,7 @@ You’ll start by creating a web app using HTML and JQuery. Then you'll create a
 
 6- Create an XML manifest file to specify where your web app is located and how you want it to appear in Excel. Name the file **QuarterlySalesReportManifest.xml** and paste the following XML into the file.
 
-	```xml
+```xml
 	<?xml version="1.0" encoding="UTF-8"?>
     <!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
     <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TaskPaneApp">
@@ -257,7 +257,7 @@ You’ll start by creating a web app using HTML and JQuery. Then you'll create a
       </DefaultSettings>
       <Permissions>ReadWriteDocument</Permissions>
     </OfficeApp>
-	```
+```
 
 7-  Generate a GUID using an online generator of your choice. Then, replace the value in the **Id** tag shown in the previous step with that GUID.
 
