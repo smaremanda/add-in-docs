@@ -1,7 +1,5 @@
 # RangeFormat object (JavaScript API for Excel)
 
-_Applies to: Excel 2016, Excel Online, Excel for iOS, Office 2016_
-
 A format object encapsulating the range's font, fill, borders, alignment, and other properties.
 
 ## Properties
@@ -12,7 +10,7 @@ A format object encapsulating the range's font, fill, borders, alignment, and ot
 |horizontalAlignment|string|Represents the horizontal alignment for the specified object. Possible values are: General, Left, Center, Right, Fill, Justify, CenterAcrossSelection, Distributed.|
 |rowHeight|double|Gets or sets the height of all rows in the range. If the row heights are not uniform null will be returned.|
 |verticalAlignment|string|Represents the vertical alignment for the specified object. Possible values are: Top, Center, Bottom, Justify, Distributed.|
-|wrapText|bool|Indicates Excel text control is set to wrap text in the object. A null value indicates the entire range doesn’t use a uniform wrap text setting.|
+|wrapText|bool|Indicates Excel text control is set to wrap text in the object. A null value indicates the entire range doesnâ€™t use a uniform wrap text setting.|
 
 _See property access [examples.](#property-access-examples)_
 
