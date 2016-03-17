@@ -6,9 +6,9 @@
 	<Item text="Where are add-ins supported?" url="dev.office.com/add-in-availability" />
   </Item>
   <Item text="Get Started" url="get-started">
-    <Item text="Get started in Visual Studio" url="get-started/create-and-debug-office-add-ins-in-visual-studio" />
-	  <Item text="Get started using any editor" url="get-started/create-an-office-add-in-using-any-editor" />
-    <Item text="Get started with Napa" url="get-started/create-an-office-add-in-with-napa" />
+    <Item text="Use Visual Studio" url="get-started/create-and-debug-office-add-ins-in-visual-studio" />
+	  <Item text="Use any editor" url="get-started/create-an-office-add-in-using-any-editor" />
+    <Item text="Use Napa" url="get-started/create-an-office-add-in-with-napa" />
   </Item>
   <Item text="Design" url="design/add-in-design">
     <Item text="Add-in development best practices" url="design/add-in-development-best-practices" FriendlyUrl="designadd-in-development-best-practices" SEOKeyword="Excel" SEODescription="PowerPoint" />
@@ -82,12 +82,12 @@
     <Item text="Add-in commands for Outlook" url="outlook/add-in-commands-for-outlook" FriendlyUrl="outlookadd-in-commands-for-outlook" SEODescription="Use add-in commands to integrate Outlook add-ins with the Outlook UI." Scope="outlook" />
     <Item text="Contextual Outlook add-ins" url="outlook/contextual-outlook-add-ins" FriendlyUrl="outlookcontextual-outlook-add-ins" SEODescription="Activate an Outlook add-in based on specified text in a message or appointment." Scope="outlook" />
     <Item text="Custom pane Outlook add-ins" url="outlook/custom-pane-outlook-add-ins" FriendlyUrl="outlookcustom-pane-outlook-add-ins" SEODescription="Learn how to define an Outlook add-in that activates based on specific rules." Scope="outlook" />
+	<Item text="APIs" url="outlook/apis" FriendlyUrl="outlook/apis/apis" SEODescription="Learn how to specify the APIs needed for your Outlook add-in." Scope="outlook" />
 	<Item text="Manifests" url="outlook/manifests" Scope="outlook">
       <Item text="Activation rules" url="outlook/manifests/activation-rules" FriendlyUrl="outlook/manifestsactivation-rules" SEODescription="Define activation rules in an Outlook add-in manifest to specify when Outlook displays the add-in." Scope="outlook" />
       <Item text="Define add-in commands" url="outlook/manifests/define-add-in-commands" FriendlyUrl="outlook/manifestsdefine-add-in-commands" SEODescription="Use the �VersionOverrides element in your Outlook add-in manifest to define add-in commands." Scope="outlook" />
       <Item text="Manifests" url="outlook/manifests/manifests" FriendlyUrl="outlook/manifestsmanifests" SEODescription="Create a manifest for an Outlook add-in for read or compose form." Scope="outlook" />
     </Item>
-    <Item text="APIs" url="outlook/apis" FriendlyUrl="outlook/apis/apis" SEODescription="Learn how to specify the APIs needed for your Outlook add-in." Scope="outlook" />
     <Item text="Add and remove attachments to an item in a compose form" url="outlook/add-and-remove-attachments-to-an-item-in-a-compose-form" FriendlyUrl="outlook/composeadd-and-remove-attachments-to-an-item-in-a-compose-form" SEODescription="See JavaScript examples of using asynchronous methods and an Exchange Web Services (EWS) ID from an Outlook add-in to add an attachment to an item a user is composing in Outlook." Scope="outlook"></Item>
 	<Item text="Get and set item data in read or compose forms" url="outlook/item-data" FriendlyUrl="outlook/apis/item-data" SEODescription="&quot;Learn about the ways to get or set data on an appointment or message from an Outlook add-in" Scope="outlook" />
 	<Item text="Get and set add-in metadata" url="outlook/metadata-for-an-outlook-add-in" FriendlyUrl="outlook/apis/metadata-for-an-outlook-add-in" SEODescription="Learn to load and store custom data that only your Outlook add-in can access - through roaming settings and custom properties." Scope="outlook" />
