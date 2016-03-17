@@ -25,6 +25,7 @@ None
 
 ## Method Details
 
+
 ### calculate(calculationType: string)
 Recalculate all currently open workbooks in Excel.
 
@@ -53,6 +54,7 @@ Excel.run(function (ctx) {
 		}
 });
 ```
+
 
 ### load(param: object)
 Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.

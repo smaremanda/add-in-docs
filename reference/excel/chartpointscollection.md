@@ -1,6 +1,6 @@
 # ChartPointsCollection object (JavaScript API for Excel)
 
-_Applies to: Excel 2016, Excel Online, Office 2016_
+_Applies to: Excel 2016, Excel Online, Excel for iOS, Office 2016_
 
 A collection of all the chart points within a series inside a chart.
 
@@ -25,6 +25,7 @@ None
 |[load(param: object)](#loadparam-object)|void|Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.|
 
 ## Method Details
+
 
 ### getItemAt(index: number)
 Retrieve a point based on its position within the series.
@@ -59,7 +60,6 @@ Excel.run(function (ctx) {
 		}
 });
 ```
-
 ### load(param: object)
 Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.
 

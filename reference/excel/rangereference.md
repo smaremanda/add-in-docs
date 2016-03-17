@@ -1,19 +1,20 @@
-# ChartPoint object (JavaScript API for Excel)
+# RangeReference object (JavaScript API for Excel)
 
 _Applies to: Excel 2016, Excel Online, Excel for iOS, Office 2016_
 
-Represents a point of a series in a chart.
+Represents a string reference of the form SheetName!A1:B5, or a global or local named range
 
 ## Properties
 
 | Property	   | Type	|Description
 |:---------------|:--------|:----------|
-|value|object|Returns the value of a chart point. Read-only.|
+|address|string|The worksheet containing the current range.|
+
+_See property access [examples.](#property-access-examples)_
 
 ## Relationships
-| Relationship | Type	|Description|
-|:---------------|:--------|:----------|
-|format|[ChartPointFormat](chartpointformat.md)|Encapsulates the format properties chart point. Read-only.|
+None
+
 
 ## Methods
 

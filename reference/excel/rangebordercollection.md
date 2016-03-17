@@ -1,6 +1,6 @@
 # RangeBorderCollection object (JavaScript API for Excel)
 
-_Applies to: Excel 2016, Excel Online, Office 2016_
+_Applies to: Excel 2016, Excel Online, Excel for iOS, Office 2016_
 
 Represents the border objects that make up range border.
 
@@ -26,6 +26,7 @@ None
 |[load(param: object)](#loadparam-object)|void|Fills the proxy object created in the JavaScript layer with property and object values specified in the parameter.|
 
 ## Method Details
+
 
 ### getItem(index: string)
 Gets a border object using its name. 
@@ -86,6 +87,7 @@ Excel.run(function (ctx) {
 });
 ```
 
+
 ### getItemAt(index: number)
 Gets a border object using its index.
 
@@ -122,6 +124,7 @@ Excel.run(function (ctx) {
 		}
 });
 ```
+
 
 ### load(param: object)
 Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.

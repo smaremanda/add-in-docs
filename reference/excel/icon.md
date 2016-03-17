@@ -1,19 +1,21 @@
-# ChartPoint object (JavaScript API for Excel)
+# Icon object (JavaScript API for Excel)
 
 _Applies to: Excel 2016, Excel Online, Excel for iOS, Office 2016_
 
-Represents a point of a series in a chart.
+Represents a cell icon.
 
 ## Properties
 
 | Property	   | Type	|Description
 |:---------------|:--------|:----------|
-|value|object|Returns the value of a chart point. Read-only.|
+|index|int|Represents the index of the icon in the given set.|
+|set|string|Represents the set that the icon is part of. Possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.|
+
+_See property access [examples.](#property-access-examples)_
 
 ## Relationships
-| Relationship | Type	|Description|
-|:---------------|:--------|:----------|
-|format|[ChartPointFormat](chartpointformat.md)|Encapsulates the format properties chart point. Read-only.|
+None
+
 
 ## Methods
 

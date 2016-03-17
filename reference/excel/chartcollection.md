@@ -1,6 +1,6 @@
 # ChartCollection object (JavaScript API for Excel)
 
-_Applies to: Excel 2016, Excel Online, Office 2016_
+_Applies to: Excel 2016, Excel Online, Excel for iOS, Office 2016_
 
 A collection of all the chart objects on a worksheet.
 
@@ -27,6 +27,7 @@ None
 |[load(param: object)](#loadparam-object)|void|Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.|
 
 ## Method Details
+
 
 ### add(type: string, sourceData: Range, seriesBy: string)
 Creates a new chart.
@@ -65,6 +66,7 @@ Excel.run(function (ctx) {
 		}
 });
 ```
+
 
 ### getItem(name: string)
 Gets a chart using its name. If there are multiple charts with the same name, the first one is returned.
@@ -136,6 +138,7 @@ Excel.run(function (ctx) {
 });
 ```
 
+
 ### getItemAt(index: number)
 Gets a chart based on its position in the collection.
 
@@ -168,6 +171,7 @@ Excel.run(function (ctx) {
 		}
 });
 ```
+
 
 ### load(param: object)
 Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.

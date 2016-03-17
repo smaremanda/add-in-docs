@@ -1,6 +1,6 @@
 # TableRow object (JavaScript API for Excel)
 
-_Applies to: Excel 2016, Excel Online, Office 2016_
+_Applies to: Excel 2016, Excel Online, Excel for iOS, Office 2016_
 
 Represents a row in a table.
 
@@ -26,6 +26,7 @@ None
 |[load(param: object)](#loadparam-object)|void|Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.|
 
 ## Method Details
+
 
 ### delete()
 Deletes the row from the table.
@@ -57,6 +58,7 @@ Excel.run(function (ctx) {
 		}
 });
 ```
+
 
 ### getRange()
 Returns the range object associated with the entire row.
@@ -90,6 +92,7 @@ Excel.run(function (ctx) {
 		}
 });
 ```
+
 
 ### load(param: object)
 Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.

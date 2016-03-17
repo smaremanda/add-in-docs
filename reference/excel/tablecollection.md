@@ -1,6 +1,6 @@
 # TableCollection object (JavaScript API for Excel)
 
-_Applies to: Excel 2016, Excel Online, Office 2016_
+_Applies to: Excel 2016, Excel Online, Excel for iOS, Office 2016_
 
 Represents a collection of all the tables that are part of the workbook.
 
@@ -27,6 +27,7 @@ None
 |[load(param: object)](#loadparam-object)|void|Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.|
 
 ## Method Details
+
 
 ### add(address: string, hasHeaders: bool)
 Creates a new table. The range source address determines the worksheet under which the table will be added. If the table can't be added (e.g., because the address is invalid, or the table would overlap with another table), an error is thrown.
@@ -61,6 +62,7 @@ Excel.run(function (ctx) {
 		}
 });
 ```
+
 ### getItem(key: number or string)
 Gets a table by name or ID.
 
@@ -111,6 +113,7 @@ Excel.run(function (ctx) {
 });
 ```
 
+
 ### getItemAt(index: number)
 Gets a table based on its position in the collection.
 
@@ -142,6 +145,7 @@ Excel.run(function (ctx) {
 		}
 });
 ```
+
 
 ### load(param: object)
 Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.

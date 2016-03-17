@@ -1,6 +1,6 @@
 # NamedItem object (JavaScript API for Excel)
 
-_Applies to: Excel 2016, Excel Online, Office 2016_
+_Applies to: Excel 2016, Excel Online, Excel for iOS, Office 2016_
 
 Represents a defined name for a range of cells or a value. Names can be primitive named objects (as seen in the type below), a range object and a reference to a range. This object can be used to obtain a range object associated with the names.
 
@@ -27,6 +27,7 @@ None
 |[load(param: object)](#loadparam-object)|void|Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.|
 
 ## Method Details
+
 
 ### getRange()
 Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range.
@@ -61,6 +62,7 @@ Excel.run(function (ctx) {
 		}
 });
 ```
+
 
 ### load(param: object)
 Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.
