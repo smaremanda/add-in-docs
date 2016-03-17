@@ -281,21 +281,17 @@ The simplest way to deploy and test your add-in is to copy the files to a networ
 
 7-  Choose **Trusted Add-in Catalogs**.
 
-8-  In the **Catalog Url** box, enter the path to the network share you created in step 3, and then choose **Add Catalog**.
+8-  In the **Catalog Url** box, enter the path to the network share you created in step 3, and then choose **Add Catalog**. Select the **Show in Menu** check box, and then choose **OK**. A message appears to inform you that your settings will be applied the next time you start Office.
 
-      f.  Select the **Show in Menu** check box, and then choose **OK**. A message appears to inform you that your settings will be applied the next time you start Office.
+9-  Now, let's test and run the add-in. On the **Insert tab** in Excel 2016, choose **My Add-ins**.
 
-9-  Test and run the add-in.
+10- In the **Office Add-ins** dialog box, choose **Shared Folder**.
 
-      a-  On the **Insert tab** in Excel 2016, choose **My Add-ins**.
-
-      b-  In the **Office Add-ins** dialog box, choose **Shared Folder**.
-
-      c-  Choose **Quarterly Sales Report Sample**>**Insert**. The add-in opens in a task pane to the right of the current worksheet, as shown in the following figure.
+11-  Choose **Quarterly Sales Report Sample**>**Insert**. The add-in opens in a task pane to the right of the current worksheet, as shown in the following figure.
 
  ![Quarterly Sales Report Add-in](../../images/QuarterlySalesReport_taskpane.PNG)
 
-      d-  Click the **Click me!** button to render the data and the chart inside the worksheet, as shown in the following figure.  To see the chart update dynamically, just change the data in the range.
+12-  Click the **Click me!** button to render the data and the chart inside the worksheet, as shown in the following figure.  To see the chart update dynamically, just change the data in the range.
 
 ![Quarterly Sales Report Add-in](../../images/QuarterlySalesReport_report.PNG)
 
