@@ -1,10 +1,5 @@
 
 # Deploy and install Outlook add-ins for testing
-Learn how to deploy and install an Outlook add-in for testing, as part of the Outlook add-in development cycle. 
-
-
-
-## Deploying an Outlook add-in for testing
 
 
 As part of the process of developing an Outlook add-in, you will probably find yourself iteratively deploying and installing the add-in for testing, which involves the following steps:
@@ -19,12 +14,12 @@ As part of the process of developing an Outlook add-in, you will probably find y
 4. Test the add-in, making appropriate changes to the UI or manifest files, and repeating steps 2 and 3 to test the changes.
     
 
-### Creating a manifest file for the add-in
+## Creating a manifest file for the add-in
 
 Each add-in is described by an XML manifest, a document that gives the server information about the add-in, provides descriptive information about the add-in for the user, and identifies the location of the add-in UI HTML file. You can store the manifest in a local folder or server, as long as the location is accessible by the Exchange server of the mailbox that you are testing with. We'll assume that you store your manifest in a local folder. For information about how to create a manifest file, see [Outlook add-in manifests](../outlook/manifests/manifests.md). 
 
 
-### Deploying an add-in to a web server
+## Deploying an add-in to a web server
 
 You can use HTML and JavaScript to create the add-in UI. The resulting source file is stored on a web server that can be accessed by the Exchange server that hosts the add-in. The source file is identified by the  **SourceLocation** child element in the [DesktopSettings](http://msdn.microsoft.com/en-us/library/da9fd085-b8cc-2be0-d329-2aa1ef5d3f1c%28Office.15%29.aspx) element, [TabletSettings](http://msdn.microsoft.com/en-us/library/5c89cc7c-7ae0-49c9-fdd5-4c52118228f6%28Office.15%29.aspx) element, and/or [PhoneSettings](http://msdn.microsoft.com/en-us/library/13e4eae3-8e8c-fd55-a1c2-3297b485f327%28Office.15%29.aspx) element specified in the add-in manifest file.
 
