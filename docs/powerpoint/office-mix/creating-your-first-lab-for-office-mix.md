@@ -1,7 +1,8 @@
 
 # Walkthrough: Creating your first lab for Office Mix
 Build your first LabsJS lab using a step-by-step walkthrough.
-
+
+
 
 In this walkthrough you'll create a simple LabsJS lab from scratch. Your lab will be a simple true/false quiz that provides just a single question. 
 
@@ -26,7 +27,9 @@ The walkthrough is going to cover four main lab features:
 - Taking (or running) the lab
     
 
- **Note**  The file labhost.html runs on a web server and provides the hosting environment for lab development and testing. This greatly simplifies lab development. See [Get started with LabsJS for Office Mix](get-started-with-labsjs-for-office-mix.md) for information about setting up your development environment.
+ **Note**  
+ ---
+ The file labhost.html runs on a web server and provides the hosting environment for lab development and testing. This greatly simplifies lab development. See [Get started with LabsJS for Office Mix](get-started-with-labsjs-for-office-mix.md) for information about setting up your development environment.<br/><br/>
 
 Finally, you can view the completed JavaScript file (TrueFalse.js) among the files distributed with this SDK. What follows is a walkthrough of the coding process.
 
@@ -35,7 +38,7 @@ Finally, you can view the completed JavaScript file (TrueFalse.js) among the fil
 Labs in this environment are able to run either with our lab host (for development and testing) or with the default runtime host provided by the Office.js host. The opening function, then, uses a simple if/else expression to test which of these hosting contexts applies.
 
 
-```
+```js
 Labs.DefaultHostBuilder = function () {
     if (window.location.href.indexOf("PostMessageLabHost") !== -1) {
         return new Labs.PostMessageLabHost("test", parent, "*");
@@ -52,7 +55,7 @@ Next, create a helper method to create a callback whose job is to either resolve
 
 
 
-```
+```js
 function createCallback(deferred) {
     return function (err, data) {
         if (err) {
@@ -70,7 +73,7 @@ We also create a helper method for retrieving the lab configuration for a given 
 
 
 
-```
+```js
 function getConfiguration(question, answer) {
     var choiceComponent = {
         name: question,
@@ -104,7 +107,7 @@ function getConfiguration(question, answer) {
 A lab is always in one of two states, or modes:  **view** and **edit**. Therefore, we need a way to capture and hold the state and behavior for the quiz; we'll create a class for this purpose.
 
 
-```
+```js
 var TrueFalseQuiz = (function () {
     /**
      * Constructor - takes in the starting mode.
@@ -130,7 +133,7 @@ Additionally, we provide a helper method whose job is to update the UI of the qu
 
 
 
-```
+```js
     TrueFalseQuiz.prototype._showResults = function(correct) {
         $("#submit-button").removeClass("btn-default");
         $("#submit-button").addClass(correct ? "btn-success" : "btn-danger");
@@ -146,7 +149,7 @@ We also need a function for switching between edit and view modes.
 
 
 
-```
+```js
 TrueFalseQuiz.prototype.switchUserMode = function (mode) {
         var self = this;
 
@@ -190,7 +193,7 @@ Our next function updates the configuration for the quiz based on change events 
 
 
 
-```
+```js
     TrueFalseQuiz.prototype._updateConfigurationFromUI = function () {
         var question = $("#question-edit").val();
         var answerIsTrue = $("input:radio[name='answerValue']:checked").val() === "true";
@@ -208,7 +211,7 @@ Next, we update the lab configuration data stored on the server based on the giv
 
 
 
-```
+```js
     TrueFalseQuiz.prototype._updateConfiguration = function (question, answer, serialize, callback) {
         var configuration = getConfiguration(question, answer);
 
@@ -225,7 +228,7 @@ Next we have a function that binds updates made in the lab in edit mode to the c
 
 
 
-```
+```js
     TrueFalseQuiz.prototype._bindToEditUpdates = function () {
         var self = this;
 
@@ -243,7 +246,7 @@ Next we have a function that binds updates made in the lab in edit mode to the c
 
 
 
-```
+```js
     TrueFalseQuiz.prototype._unbindFromEditUpdates = function () {
         $("#question-edit").off("input propertychange paste");
         $('input[name="answerValue"]').off("change");
@@ -255,7 +258,7 @@ Now comes a key part of the section, that is, methods for switching back and for
 
 
 
-```
+```js
     TrueFalseQuiz.prototype._switchToEditMode = function () {
         var self = this;
         var editLabDeferred = $.Deferred();
@@ -307,7 +310,7 @@ And now, switching from edit mode to view mode.
 
 
 
-```
+```js
     TrueFalseQuiz.prototype._switchToViewMode = function () {
         var self = this;
         var takeLabDeferred = $.Deferred();
@@ -413,7 +416,7 @@ Finally, after you're connected to the host and the document is ready, start up 
 
 
 
-```
+```js
 $(document).ready(function () {
     Labs.connect(function (err, connectionResponse) {
         if (err) {
