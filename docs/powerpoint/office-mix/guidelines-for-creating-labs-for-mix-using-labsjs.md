@@ -1,6 +1,7 @@
 
 # Guidelines for creating labs for Mix using LabsJS
-
+
+
 
 The LabsJS library (labs.js) supports writing specialized Office Add-ins (called labs) that integrate with Office Mix. Office Mix then renders the labs using Microsoft PowerPoint. While we call these components "labs," let's be clear that what we're creating are special Office Add-ins that are Office Mix Add-ins.
 
@@ -19,10 +20,12 @@ Because the labs.js library is an abstraction layer on office.js, and therefore 
 
 You can reference the office.js library here:  `<script src="https://sforoffice.microsoft.com/lib/1.1/hosted/office.js" type="text/javascript"></script>`.
 
-The labs.js library is included with the LabsJS SDK. Alternatively, you can reference the labs.js library on a CDN at  `https://az592748.vo.msecnd.net/sdk/LabsJS-1.0.4/labs-1.0.4.js`. Note that the production version of your lab must reference the version stored on the CDN.
+The labs.js library is included with the LabsJS SDK. Alternatively, you can reference the labs.js library on a CDN at  <code>https://az592748.vo.msecnd.net/sdk/LabsJS-1.0.4/labs-1.0.4.js</code>. Note that the production version of your lab must reference the version stored on the CDN.
 
 
- >**Note**  In addition to the JavaScript file (labs-1.0.4.js), we provide a TypeScript definition file of the labs API (labs-1.0.4.d.ts). The definition file was built against TypeScript version 0.9.1.1.
+ >**Note**  
+ ---
+ In addition to the JavaScript file (labs-1.0.4.js), we provide a TypeScript definition file of the labs API (labs-1.0.4.d.ts). The definition file was built against TypeScript version 0.9.1.1.
 
 
 ### Callbacks and error handling
