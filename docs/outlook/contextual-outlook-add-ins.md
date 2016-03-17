@@ -1,7 +1,5 @@
 
 # Contextual Outlook add-ins
-Activate an Outlook add-in based on specified text in a message or appointment.
-
 
 Contextual add-ins are Outlook add-ins that activate based on text in a message or appointment. By using contextual add-ins, a user can initiate tasks related to a message without leaving the message itself, which results in an easier and richer user experience.
 
@@ -26,20 +24,20 @@ To make a contextual add-in, its add-in manifest must specify the entity or regu
 
 ```
 
-Once a contextual add-in is associated with an account, it will automatically start when the user clicks a highlighted entity or regular expression. For more information on regular expressions for Outlook add-ins, see [Use regular expression activation rules to show an Outlook add-in](../outlook/use-regular-expressions-to-show-an-outlook-add-in.md).
+After a contextual add-in is associated with an account, it will automatically start when the user clicks a highlighted entity or regular expression. For more information on regular expressions for Outlook add-ins, see [Use regular expression activation rules to show an Outlook add-in](../outlook/use-regular-expressions-to-show-an-outlook-add-in.md).
 
 There are several restrictions on contextual add-ins:
 
 
 - A contextual add-in can only exist in read add-ins (not compose add-ins).
     
-- The developer cannot specify the color of the highlighted entity.
+- You cannot specify the color of the highlighted entity.
     
 - An entity that is not highlighted will not launch a contextual add-in in a card.
     
 - The dimension of the card is 140-450 pixels (recommended limit 300 pixels) in height and 570 pixels in width.
     
-- The developer cannot specify whether the add-in will display in the card or the add-in bar.
+- You cannot specify whether the add-in will display in the card or the add-in bar.
     
 
 ## How to launch a contextual add-in
@@ -138,8 +136,6 @@ Also, the [Package Tracker](https://store.office.com/package-tracker-WA104162083
 - [Get Started with Outlook add-ins for Office 365](https://dev.outlook.com/MailAppsGettingStarted/GetStarted.aspx)
     
 - [Use regular expression activation rules to show an Outlook add-in](../outlook/use-regular-expressions-to-show-an-outlook-add-in.md)
-    
-- [Understanding the Office Add-ins XML manifest](https://msdn.microsoft.com/en-us/library/office/fp161044%28v=office.15%29.aspx .aspx)
-    
+
 - [Entities object](https://dev.outlook.com/reference/add-ins/simple-types.mdl.aspx#Entities)
     
