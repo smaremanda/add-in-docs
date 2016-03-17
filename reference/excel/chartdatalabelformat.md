@@ -1,7 +1,5 @@
 # ChartDataLabelFormat object (JavaScript API for Excel)
 
-_Applies to: Excel 2016, Excel Online, Excel for iOS, Office 2016_
-
 Encapsulates the format properties for the chart data labels.
 
 ## Properties
