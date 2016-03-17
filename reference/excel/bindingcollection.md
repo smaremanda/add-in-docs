@@ -1,7 +1,5 @@
 # BindingCollection object (JavaScript API for Excel)
 
-_Applies to: Excel 2016, Excel Online, Excel for iOS, Office 2016_
-
 Represents the collection of all the binding objects that are part of the workbook.
 
 ## Properties
