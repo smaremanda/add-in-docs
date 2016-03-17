@@ -11,7 +11,7 @@ Specifies the node type.
 
 
 
-```
+```js
 Office.CustomXMLNodeType
 ```
 
@@ -47,6 +47,8 @@ For more information about Office host application and server requirements, see 
 |:-----|:-----|:-----|:-----|
 |**Word**|Y||Y|
 
+
+
 |||
 |:-----|:-----|
 |**Add-in types**|Task pane|
@@ -54,10 +56,6 @@ For more information about Office host application and server requirements, see 
 |**Namespace**|Office|
 
 ## Support history
-
-
-
-****
 
 
 |**Version**|**Changes**|
