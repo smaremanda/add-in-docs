@@ -1,13 +1,7 @@
 
 # Outlook add-ins
-Create Outlook add-ins in read or compose mode.
-
 
-
-## What is an Outlook add-in?
-
-
-Outlook add-ins (formerly called "apps for Outlook") are integrations built by 3rd parties into Outlook using the new web technologies based platform. Outlook add-ins have 3 key aspects:
+Outlook add-ins are integrations built by third parties into Outlook using the new web technologies based platform. Outlook add-ins have three key aspects:
 
 
 - The same add-in and business logic works across desktop Outlook for Windows and Mac, web (Office 365 and Outlook.com), and mobile.
@@ -80,15 +74,10 @@ To get started building Outlook add-ins, see [Get Started with Outlook add-ins f
 ## Additional Resources
 
 
-[Overview of Outlook add-ins architecture and features](../outlook/overview.md)
-
-[Best practices for developing Office Add-ins](../../docs/design/add-in-development-best-practices.md)
-
-[Design guidelines for Office Add-ins](../../docs/design/add-in-design.md)
-
-[License your Office and SharePoint Add-ins](http://msdn.microsoft.com/library/3e0e8ff6-66d6-44ff-b0c2-59108ebd9181%28Office.15%29.aspx)
-
-[Publish your Office Add-in](../publish/publish.md)
-
-[Submit Office and SharePoint Add-ins and Office 365 web apps to the Office Store](http://msdn.microsoft.com/library/ff075782-1303-4517-91cc-b3d730e9b9ae%28Office.15%29.aspx)
+- [Overview of Outlook add-ins architecture and features](../outlook/overview.md)
+- [Best practices for developing Office Add-ins](../../docs/design/add-in-development-best-practices.md)
+- [Design guidelines for Office Add-ins](../../docs/design/add-in-design.md)
+- [License your Office and SharePoint Add-ins](http://msdn.microsoft.com/library/3e0e8ff6-66d6-44ff-b0c2-59108ebd9181%28Office.15%29.aspx)
+- [Publish your Office Add-in](../publish/publish.md)
+- [Submit Office and SharePoint Add-ins and Office 365 web apps to the Office Store](http://msdn.microsoft.com/library/ff075782-1303-4517-91cc-b3d730e9b9ae%28Office.15%29.aspx)
 
