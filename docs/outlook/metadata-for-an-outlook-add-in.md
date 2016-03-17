@@ -1,13 +1,11 @@
 
 # Get and set add-in metadata for an Outlook add-in
-Learn to load and store custom data that only your Outlook add-in can access - through roaming settings and custom properties.
-
 
-There are two ways to manage custom data in your Outlook add-in:
+You can manage custom data in your Outlook add-in by using either of the following:
 
-- Roaming settings, which manages custom data for a user's mailbox.
+- Roaming settings, which manage custom data for a user's mailbox.
     
-- Custom properties, which manages custom data for an item in a user's mailbox.
+- Custom properties, which manage custom data for an item in a user's mailbox.
     
 Both of these give access to custom data that is only accessible by your Outlook add-in, but each method stores the data separately from the other. That is, the data stored through roaming settings is not accessible by custom properties, and vice versa. The data is stored on the server for that mailbox, and is accessible in subsequent Outlook sessions on all the form factors that the add-in supports. 
 
@@ -196,11 +194,6 @@ function saveCallback() {
 
 ## Additional resources
 
-
-
-- [Outlook add-ins](../outlook/outlook-add-ins.md)
-    
-- [Overview of Outlook add-ins architecture and features](../outlook/overview.md)
     
 - [MAPI Property Overview](http://msdn.microsoft.com/library/02e5b23f-1bdb-4fbf-a27d-e3301a359573%28Office.15%29.aspx)
     
