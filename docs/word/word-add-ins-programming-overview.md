@@ -47,7 +47,7 @@ Your Word add-in executes by passing a function into the Word.run() method. The 
     })();
 ```
 
-Example 1. shows the basic code needed to create a Word add-in. It initializes Office.js and contains a run method for interacting with the Word document.
+The above example shows the basic code needed to create a Word add-in. It initializes Office.js and contains a run method for interacting with the Word document.
 
 ### Proxy objects
 
