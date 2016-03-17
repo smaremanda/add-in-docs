@@ -38,7 +38,7 @@ if (item.somePropertyOrFunction) {
 }
 ```
 
-**Note:** No such checks are necessary for any APIs that are in the requirement set version specified in the manifest.
+> **Note:** No such checks are necessary for any APIs that are in the requirement set version specified in the manifest.
 
 Developers should specify the minimum requirement set that supports the critical set of APIs for their scenario, without which the critical features of the add-in won't work. You specify the requirement set in the manifest in the  **Requirements**, **Sets**, and **Set** elements. For more information, see [Outlook add-in manifests](../outlook/manifests/manifests.md).
 
@@ -56,7 +56,7 @@ Your add-in requires the appropriate permissions to use the APIs that it needs. 
 |Read item|In addition to what is allowed in  _Restricted_, it allows:<ul><li>regular expressions</li><li>Outlook add-in API read access</li><li>getting the item properties and the callback token</li></ul>|
 |Read/write|In addition to what is allowed in  _Read item_, it allows:<ul><li>full Outlook add-in API access except <b>makeEwsRequestAsync</b></li><li>setting the item properties</li></ul>|
 |Read/write mailbox|In addition to what is allowed in  _Read/write_, it allows:<ul><li>creating, reading, writing items and folders</li><li>sending items</li><li>calling [makeEwsRequestAsync](../../reference/outlook/Office.context.mailbox.md#makeewsrequestasyncdata-callback-usercontext)</li></ul>|
-In general, you should specify the minimum permission needed for your add-in. Permissions are declared in the  **Permissions** element in the manifest. For more information, see [Outlook add-in manifests](../outlook/manifests/manifests.md). For information on security issues, see [Privacy, permissions, and security for Outlook add-ins](../outlook/../../docs/develop/privacy-and-security.md)
+In general, you should specify the minimum permission needed for your add-in. Permissions are declared in the  **Permissions** element in the manifest. For more information, see [Outlook add-in manifests](../outlook/manifests/manifests.md). For information about security issues, see [Privacy, permissions, and security for Outlook add-ins](../outlook/../../docs/develop/privacy-and-security.md).
 
 
 ## Additional resources
