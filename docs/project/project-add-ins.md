@@ -99,27 +99,17 @@ The manifest file specifies the URL of the add-in webpage or web application, th
  </OfficeApp>
  ```
 
-
-    Following are the required elements in the add-in manifest:
-    
-      - In the  **OfficeApp** element, the `xsi:type="TaskPaneApp"` attribute specifies that the add-in is a task pane type.
-    
+2. Following are the required elements in the add-in manifest:
+  - In the  **OfficeApp** element, the `xsi:type="TaskPaneApp"` attribute specifies that the add-in is a task pane type.
   - The  **Id** element is a UUID and must be unique.
-    
   - The  **Version** element is the version of the add-in. The **ProviderName** element is the name of the company or developer who provides the add-in. The **DefaultLocale** element specifies the default locale for the strings in the manifest.
-    
   - The  **DisplayName** element is the name that shows in the **Task Pane Add-in** drop-down list in the **VIEW** tab of the ribbon in Project 2013. The value can contain up to 32 characters.
-    
   - The  **Description** element contains the add-in description for the default locale. The value can contain up to 2000 characters.
-    
   - The  **Capabilities** element contains one or more **Capability** child elements that specify the host application.
-    
   - The  **DefaultSettings** element includes the **SourceLocation** element, which specifies the path of an HTML file on a file share or the URL of a webpage that the add-in uses. A task pane add-in ignores the **RequestedHeight** element and the **RequestedWidth** element.
+  - The  **IconUrl** element is optional. It can be an icon on a file share or the URL of an icon in a web application.
     
-
-    The  **IconUrl** element is optional. It can be an icon on a file share or the URL of an icon in a web application.
-    
-2. (Optional) Add  **Override** elements that have values for other locales. For example, the following manifest provides **Override** elements for French values of **DisplayName**,  **Description**,  **IconUrl**, and  **SourceLocation**.
+3. (Optional) Add  **Override** elements that have values for other locales. For example, the following manifest provides **Override** elements for French values of **DisplayName**,  **Description**,  **IconUrl**, and  **SourceLocation**.
     
  ```XML
    <?xml version="1.0" encoding="utf-8"?>
