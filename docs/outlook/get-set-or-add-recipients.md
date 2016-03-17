@@ -1,10 +1,5 @@
 
 # Get, set, or add recipients when composing an appointment or message in Outlook
-Learn how an Outlook add-in can get, set, or add recipients when a user is composing an appointment or message in Outlook.
-
-
-
-## Prerequisites for getting, setting, or adding recipients in a compose form
 
 
 The JavaScript API for Office provides asynchronous methods ([Recipients.getAsync](http://dev.outlook.com/reference/add-ins/Recipients.html), [Recipients.setAsync](http://dev.outlook.com/reference/add-ins/Recipients.html), or [Recipients.addAysnc](http://dev.outlook.com/reference/add-ins/Recipients.html)) to respectively get, set, or add recipients in a compose form of an appointment or message. These asynchronous methods are available to only compose add-ins. To use these methods, make sure you have set up the add-in manifest appropriately for Outlook to activate the add-in in compose forms, as described in the section [Setting up Outlook add-ins for compose forms](../outlook/compose-scenario.md#mod_off15_CreatingForCompose_SettingUp) of [Create Outlook add-ins for compose forms](../outlook/compose-scenario.md).
