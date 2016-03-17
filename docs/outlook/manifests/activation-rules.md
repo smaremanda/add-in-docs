@@ -1,8 +1,6 @@
 
 # Activation rules for Outlook add-ins
 
-## Activation by specified rules
-
 
 Outlook activates some types of add-ins if the message or appointment that the user is reading or composing satisfies the activation rules of the add-in. This is true for all add-ins that use the 1.1 manifest schema and for custom pane addins. The user can then choose the add-in from the Outlook UI to start it for the current item.
 
