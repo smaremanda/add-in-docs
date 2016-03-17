@@ -1,7 +1,5 @@
 
 # Call web services from an Outlook add-in
-Learn about how to call EWS or other web services from an Outlook add-in for Outlook.
-
 
 Your add-in can use Exchange Web Services (EWS) from a computer that is running Exchange Server 2013, a web service that is available on the server that provides the source location for the add-in's UI, or a web service that is available on the Internet. This article provides an example that shows how an Outlook add-in can request information from EWS.
 
@@ -55,12 +53,7 @@ When parsing a SOAP response from a EWS operation, note the following browser-de
     }</t:Value></t:ExtendedProperty>
     ```
 
-
-   
-     Code as in the following would work on a browser like Chrome to get the XML enclosed by the  **ExtendedProperty** tags:
-    
-
-
+ Code as in the following would work on a browser like Chrome to get the XML enclosed by the  **ExtendedProperty** tags:
 
     ```js
     var mailbox = Office.context.mailbox;
@@ -71,9 +64,7 @@ When parsing a SOAP response from a EWS operation, note the following browser-de
 
 
    
-     On Internet Explorer, you must include the  `t:` prefix of the tag name, as shown below:
-    
-
+ On Internet Explorer, you must include the  `t:` prefix of the tag name, as shown below:
 
     ```js
     var mailbox = Office.context.mailbox;
@@ -88,8 +79,7 @@ When parsing a SOAP response from a EWS operation, note the following browser-de
       content = $.parseJSON(value.textContent);
     ```
 
-
-    Other properties such as  **innerHTML** may not work on Internet Explorer for some tags in a EWS response.
+ Other properties such as  **innerHTML** may not work on Internet Explorer for some tags in a EWS response.
     
 
 ## Example
