@@ -1,6 +1,6 @@
 # TableColumnCollection Object (JavaScript API for Excel)
 
-_Applies to: Excel 2016, Office 2016_
+_Applies to: Excel 2016, Excel Online, Excel for iOS, Office 2016_
 
 Represents a collection of all the columns that are part of the table.
 

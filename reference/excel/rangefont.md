@@ -1,6 +1,6 @@
 # RangeFont Object (JavaScript API for Excel)
 
-_Applies to: Excel 2016, Office 2016_
+_Applies to: Excel 2016, Excel Online, Excel for iOS, Office 2016_
 
 This object represents the font attributes (font name, font size, color, etc.) for an object.
 

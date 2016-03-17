@@ -1,6 +1,6 @@
 # Range Object (JavaScript API for Excel)
 
-_Applies to: Excel 2016, Office 2016_
+_Applies to: Excel 2016, Excel Online, Excel for iOS, Office 2016_
 
 Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
 
