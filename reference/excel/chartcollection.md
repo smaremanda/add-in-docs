@@ -22,9 +22,9 @@ None
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[add(type: string, sourceData: Range, seriesBy: string)](#addtype-string-sourcedata-range-seriesby-string)|[Chart](chart.md)|Creates a new chart.|
-|[getItem(name: string)](#getitemname-string)|[Chart](chart.md)|Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned.|
+|[getItem(name: string)](#getitemname-string)|[Chart](chart.md)|Gets a chart using its name. If there are multiple charts with the same name, the first one is returned.|
 |[getItemAt(index: number)](#getitematindex-number)|[Chart](chart.md)|Gets a chart based on its position in the collection.|
-|[load(param: object)](#loadparam-object)|void|Fills the proxy object created in JavaScript layer with property and object values specified in the parameter.|
+|[load(param: object)](#loadparam-object)|void|Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.|
 
 ## Method Details
 
@@ -41,15 +41,15 @@ chartCollectionObject.add(type, sourceData, seriesBy);
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |type|string|Represents the type of a chart.  Possible values are: ColumnClustered, ColumnStacked, ColumnStacked100, BarClustered, BarStacked, BarStacked100, LineStacked, LineStacked100, LineMarkers, LineMarkersStacked, LineMarkersStacked100, PieOfPie, etc.|
-|sourceData|Range|The Range object corresponding to the source data.|
-|seriesBy|string|Optional. Specifies the way columns or rows are used as data series on the chart.  Possible values are: Auto, Columns, Rows|
+|sourceData|Range|The range object that contains the source data.|
+|seriesBy|string|Optional. Specifies the way columns or rows are used as data series on the chart.  Possible values are: Auto, Columns, Rows.|
 
 #### Returns
 [Chart](chart.md)
 
 #### Examples
 
-Add a chart of `chartType` "ColumnClustered" on worksheet "Charts" with `sourceData` from Range "A1:B4" and `seriresBy` is set to be "auto".
+Add a chart of `chartType` "ColumnClustered" on worksheet "Charts" with `sourceData` from Range "A1:B4" and `seriesBy` set to be "auto".
 
 ```js
 Excel.run(function (ctx) { 
@@ -69,7 +69,7 @@ Excel.run(function (ctx) {
 
 
 ### getItem(name: string)
-Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned.
+Gets a chart using its name. If there are multiple charts with the same name, the first one is returned.
 
 #### Syntax
 ```js
@@ -174,7 +174,7 @@ Excel.run(function (ctx) {
 
 
 ### load(param: object)
-Fills the proxy object created in JavaScript layer with property and object values specified in the parameter.
+Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.
 
 #### Syntax
 ```js
@@ -184,7 +184,7 @@ object.load(param);
 #### Parameters
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|param|object|Optional. Accepts parameter and relationship names as delimited string or an array. Or, provide [loadOption](loadoption.md) object.|
+|param|object|Optional. Accepts parameter and relationship names as a delimited string or an array. Or, provide [loadOption](loadoption.md) object.|
 
 #### Returns
 void
@@ -209,7 +209,7 @@ Excel.run(function (ctx) {
 });
 ```
 
-Get the number of charts
+Get the number of charts.
 
 ```js
 Excel.run(function (ctx) { 

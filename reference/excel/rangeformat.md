@@ -12,7 +12,7 @@ A format object encapsulating the range's font, fill, borders, alignment, and ot
 |horizontalAlignment|string|Represents the horizontal alignment for the specified object. Possible values are: General, Left, Center, Right, Fill, Justify, CenterAcrossSelection, Distributed.|
 |rowHeight|double|Gets or sets the height of all rows in the range. If the row heights are not uniform null will be returned.|
 |verticalAlignment|string|Represents the vertical alignment for the specified object. Possible values are: Top, Center, Bottom, Justify, Distributed.|
-|wrapText|bool|Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting|
+|wrapText|bool|Indicates Excel text control is set to wrap text in the object. A null value indicates the entire range doesn’t use a uniform wrap text setting.|
 
 _See property access [examples.](#property-access-examples)_
 
@@ -30,7 +30,7 @@ _See property access [examples.](#property-access-examples)_
 |:---------------|:--------|:----------|
 |[autofitColumns()](#autofitcolumns)|void|Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns.|
 |[autofitRows()](#autofitrows)|void|Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.|
-|[load(param: object)](#loadparam-object)|void|Fills the proxy object created in JavaScript layer with property and object values specified in the parameter.|
+|[load(param: object)](#loadparam-object)|void|Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.|
 
 ## Method Details
 
@@ -64,7 +64,7 @@ None
 void
 
 ### load(param: object)
-Fills the proxy object created in JavaScript layer with property and object values specified in the parameter.
+Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.
 
 #### Syntax
 ```js
@@ -74,13 +74,13 @@ object.load(param);
 #### Parameters
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|param|object|Optional. Accepts parameter and relationship names as delimited string or an array. Or, provide [loadOption](loadoption.md) object.|
+|param|object|Optional. Accepts parameter and relationship names as a delimited string or an array. Or, provide [loadOption](loadoption.md) object.|
 
 #### Returns
 void
 ### Property access examples
 
-Below example selects all of the Range's format properties. 
+This example prints all of the format properties of a range. 
 
 ```js
 Excel.run(function (ctx) { 
@@ -102,7 +102,7 @@ Excel.run(function (ctx) {
 });
 ```
 
-The example below sets font name, fill color and wraps text. 
+The example below sets font name and fill color of a range and wraps text. 
 
 ```js
 Excel.run(function (ctx) { 
@@ -121,7 +121,7 @@ Excel.run(function (ctx) {
 });
 ```
 
-The example below adds grid border around the range.
+The example below adds a grid border around the range.
 
 ```js
 Excel.run(function (ctx) { 

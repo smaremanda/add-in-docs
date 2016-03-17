@@ -12,7 +12,7 @@ Represents an Excel table.
 |name|string|Name of the table.|
 |showHeaders|bool|Indicates whether the header row is visible or not. This value can be set to show or remove the header row.|
 |showTotals|bool|Indicates whether the total row is visible or not. This value can be set to show or remove the total row.|
-|style|string|Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.|
+|style|string|Constant value that represents the Table style. Possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11. A custom, user-defined style present in the workbook can also be specified.|
 
 _See property access [examples.](#property-access-examples)_
 
@@ -34,8 +34,8 @@ _See property access [examples.](#property-access-examples)_
 |[getDataBodyRange()](#getdatabodyrange)|[Range](range.md)|Gets the range object associated with the data body of the table.|
 |[getHeaderRowRange()](#getheaderrowrange)|[Range](range.md)|Gets the range object associated with header row of the table.|
 |[getRange()](#getrange)|[Range](range.md)|Gets the range object associated with the entire table.|
-|[getTotalRowRange()](#gettotalrowrange)|[Range](range.md)|Gets the range object associated with totals row of the table.|
-|[load(param: object)](#loadparam-object)|void|Fills the proxy object created in JavaScript layer with property and object values specified in the parameter.|
+|[getTotalRowRange()](#gettotalrowrange)|[Range](range.md)|Gets the range object associated with the totals row of the table.|
+|[load(param: object)](#loadparam-object)|void|Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.|
 |[reapplyFilters()](#reapplyfilters)|void|Reapplies all the filters currently on the table.|
 
 ## Method Details
@@ -147,7 +147,7 @@ Excel.run(function (ctx) {
 ```
 
 ### getHeaderRowRange()
-Gets the range object associated with header row of the table.
+Gets the range object associated with the header row of the table.
 
 #### Syntax
 ```js
@@ -212,7 +212,7 @@ Excel.run(function (ctx) {
 
 
 ### getTotalRowRange()
-Gets the range object associated with totals row of the table.
+Gets the range object associated with the totals row of the table.
 
 #### Syntax
 ```js
@@ -245,7 +245,7 @@ Excel.run(function (ctx) {
 
 
 ### load(param: object)
-Fills the proxy object created in JavaScript layer with property and object values specified in the parameter.
+Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.
 
 #### Syntax
 ```js
@@ -255,21 +255,7 @@ object.load(param);
 #### Parameters
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|param|object|Optional. Accepts parameter and relationship names as delimited string or an array. Or, provide [loadOption](loadoption.md) object.|
-
-#### Returns
-void
-
-### reapplyFilters()
-Reapplies all the filters currently on the table.
-
-#### Syntax
-```js
-tableObject.reapplyFilters();
-```
-
-#### Parameters
-None
+|param|object|Optional. Accepts parameter and relationship names as a delimited string or an array. Or, provide [loadOption](loadoption.md) object.|
 
 #### Returns
 void

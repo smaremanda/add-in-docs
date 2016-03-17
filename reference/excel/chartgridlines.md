@@ -21,13 +21,13 @@ _See property access [examples.](#property-access-examples)_
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[load(param: object)](#loadparam-object)|void|Fills the proxy object created in JavaScript layer with property and object values specified in the parameter.|
+|[load(param: object)](#loadparam-object)|void|Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.|
 
 ## Method Details
 
 
 ### load(param: object)
-Fills the proxy object created in JavaScript layer with property and object values specified in the parameter.
+Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.
 
 #### Syntax
 ```js
@@ -37,13 +37,13 @@ object.load(param);
 #### Parameters
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|param|object|Optional. Accepts parameter and relationship names as delimited string or an array. Or, provide [loadOption](loadoption.md) object.|
+|param|object|Optional. Accepts parameter and relationship names as a delimited string or an array. Or, provide [loadOption](loadoption.md) object.|
 
 #### Returns
 void
 ### Property access examples
 
-Get the `visible` of Major Gridlines on value axis of Chart1
+Get the `visible` property of the major gridlines on value axis of Chart1.
 
 ```js
 Excel.run(function (ctx) { 
@@ -61,7 +61,7 @@ Excel.run(function (ctx) {
 });
 ```
 
-Set to show major gridlines on valueAxis of Chart1
+Set to show major gridlines on value axis of Chart1.
 
 ```js
 Excel.run(function (ctx) { 

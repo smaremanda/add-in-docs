@@ -28,10 +28,10 @@ _See property access [examples.](#property-access-examples)_
 |:---------------|:--------|:----------|
 |[activate()](#activate)|void|Activate the worksheet in the Excel UI.|
 |[delete()](#delete)|void|Deletes the worksheet from the workbook.|
-|[getCell(row: number, column: number)](#getcellrow-number-column-number)|[Range](range.md)|Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it's stays within the worksheet grid.|
+|[getCell(row: number, column: number)](#getcellrow-number-column-number)|[Range](range.md)|Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range as long as it stays within the worksheet grid.|
 |[getRange(address: string)](#getrangeaddress-string)|[Range](range.md)|Gets the range object specified by the address or name.|
 |[getUsedRange(valuesOnly: bool)](#getusedrangevaluesonly-bool)|[Range](range.md)|The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the worksheet is blank, this function will return the top left cell.|
-|[load(param: object)](#loadparam-object)|void|Fills the proxy object created in JavaScript layer with property and object values specified in the parameter.|
+|[load(param: object)](#loadparam-object)|void|Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.|
 
 ## Method Details
 
@@ -101,7 +101,7 @@ Excel.run(function (ctx) {
 
 
 ### getCell(row: number, column: number)
-Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it's stays within the worksheet grid.
+Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range as long as it stays within the worksheet grid.
 
 #### Syntax
 ```js
@@ -112,7 +112,7 @@ worksheetObject.getCell(row, column);
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |row|number|The row number of the cell to be retrieved. Zero-indexed.|
-|column|number|the column number of the cell to be retrieved. Zero-indexed.|
+|column|number|The column number of the cell to be retrieved. Zero-indexed.|
 
 #### Returns
 [Range](range.md)
@@ -155,7 +155,7 @@ worksheetObject.getRange(address);
 [Range](range.md)
 
 #### Examples
-Below example uses range address to get the range object.
+This example uses range address to get the range object.
 
 ```js
 Excel.run(function (ctx) { 
@@ -175,7 +175,7 @@ Excel.run(function (ctx) {
 });
 ```
 
-Below example uses a named-range to get the range object.
+This example uses a named-range to get the range object.
 
 ```js
 
@@ -232,7 +232,7 @@ Excel.run(function (ctx) {
 
 
 ### load(param: object)
-Fills the proxy object created in JavaScript layer with property and object values specified in the parameter.
+Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.
 
 #### Syntax
 ```js
@@ -242,13 +242,13 @@ object.load(param);
 #### Parameters
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|param|object|Optional. Accepts parameter and relationship names as delimited string or an array. Or, provide [loadOption](loadoption.md) object.|
+|param|object|Optional. Accepts parameter and relationship names as a delimited string or an array. Or, provide [loadOption](loadoption.md) object.|
 
 #### Returns
 void
 ### Property access examples
 
-Get worksheet properties based on sheet name.
+Get worksheet properties based on the sheet name.
 
 ```js
 Excel.run(function (ctx) { 

@@ -27,7 +27,7 @@ Represents the protection of a sheet object.
 
 
 ### load(param: object)
-Fills the proxy object created in JavaScript layer with property and object values specified in the parameter.
+Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.
 
 #### Syntax
 ```js
@@ -37,13 +37,13 @@ object.load(param);
 #### Parameters
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|param|object|Optional. Accepts parameter and relationship names as delimited string or an array. Or, provide [loadOption](loadoption.md) object.|
+|param|object|Optional. Accepts parameter and relationship names as a delimited string or an array. Or, provide [loadOption](loadoption.md) object.|
 
 #### Returns
 void
 
 #### Examples
-Below example loads the protection details for the active worksheet.
+This example loads the protection details for the active worksheet.
 ```js
 Excel.run(function (ctx) {
     var worksheet = ctx.workbook.worksheets.getActiveWorksheet();
