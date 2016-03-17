@@ -18,9 +18,9 @@ The following table lists the names of requirement sets, the methods in each set
 |WordApi|1.1|Word 2016|All elements in the Word namespace except API members that were added to WordApi 1.2 and later, which are listed above.|
 |ActiveView|1.1|PowerPoint<br>PowerPoint&nbsp;Online|Document.getActiveViewAsync|
 |BindingEvents|1.1|Access&nbsp;Web&nbsp;Apps<br>Excel<br>Excel&nbsp;Online<br>Word|Binding.addHanderAsync<br>Binding.removeHanderAsync|
-|CompressedFile|1.1|PowerPoint<br>Word<br>Word&nbsp;Online<br>Excel&nbsp;Online<br>PowerPoint&nbsp;Online|Supports output to Office Open XML (OOXML) format as a byte array<br> (Office.FileType.Compressed) when using the Document.getFileAsync method.|
+|CompressedFile|1.1|PowerPoint<br>Word<br>Word&nbsp;Online<br>Excel&nbsp;Online<br>PowerPoint&nbsp;Online|Supports output to Office Open XML (OOXML) format as a byte array<br>(Office.FileType.Compressed) when using the Document.getFileAsync method.|
 |CustomXmlParts|1.1|Word|CustomXmlNode.getNodesAsync<br>CustomXmlNode.getNodeValueAsync<br>CustomXmlNode.getXmlAsync<br>CustomXmlNode.setNodeValueAsync<br>CustomXmlNode.setXmlAsync<br>CustomXmlPart.addHandlerAsync<br>CustomXmlPart.deleteAsync<br>CustomXmlPart.getNodesAsync<br>CustomXmlPart.getXmlAsync<br>CustomXmlPart.removeHandlerAsync<br>CustomXmlParts.addAsync<br>CustomXmlParts.getByIdAsync<br>CustomXmlParts.getByNamespaceAsync<br>CustomXmlPrefixMappings.addNamespaceAsync<br>CustomXmlPrefixMappings.getNamespaceAsync<br>CustomXmlPrefixMappings.getPrefixAsync|
-|DialogAPI|1.1|Excel<br>PowerPoint<br>Word<br>Outlook|Office.context.ui.displayDialogAsync()<br> Office.context.ui.messageParent()<br>Office.context.ui.close()|
+|DialogAPI|1.1|Excel<br>PowerPoint<br>Word<br>Outlook|Office.context.ui.displayDialogAsync()<br>Office.context.ui.messageParent()<br>Office.context.ui.close()|
 |DocumentEvents|1.1|Excel<br>Excel&nbsp;Online<br>PowerPoint<br>Word<br>Word&nbsp;Online|Document.addHandlerAsync<br>Document.removeHandlerAsync|
 |File|1.1|PowerPoint<br>Word<br>Word&nbsp;Online<br>PowerPoint&nbsp;Online|Document.getFileAsync<br>File.closeAsync<br>File.getSliceAsync|
 |HtmlCoercion|1.1|Word|Supports coercion to HTML (Office.CoercionType.Html) when reading and writing data using the Document.getSelectedDataAsync,<br>Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods.|
