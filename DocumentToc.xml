@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Menu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SupportedProduct="|Excel|Word|Access|PowerPoint|Outlook|Project|" SupportedVersion="|V1.1|V1.2|V1.3|">
-  <Item text="Overview">
+  <Item text="Overview" url="overview">
     <Item text="Add-ins Overview" url="overview/office-add-ins" />
 	<Item text="Where are add-ins supported?" url="overview/requirements-for-running-office-add-ins" />	
   </Item>
   <Item text="Get Started" url="get-started">
     <Item text="Get started in Visual Studio" url="get-started/create-and-debug-office-add-ins-in-visual-studio" />
-	<Item text="Get started using any editor" url="get-started/create-an-office-add-in-using-any-editor" />
+	  <Item text="Get started using any editor" url="get-started/create-an-office-add-in-using-any-editor" />
     <Item text="Get started with Napa" url="get-started/create-an-office-add-in-with-napa" />
   </Item>
   <Item text="Design" url="design/add-in-design">
@@ -24,7 +24,7 @@
   </Item>
   <Item text="Develop" url="develop">
 	<Item text="Add-in development lifecycle" url="design/add-in-development-lifecycle" FriendlyUrl="designadd-in-development-lifecycle" SEOKeyword="Excel" SEODescription="PowerPoint" />
-	<Item text="Manifest Basics">	
+	<Item text="Manifest Basics" url="overview">	
 		<Item text="Add-in Manifests" url="overview/add-in-manifests" />
 		<Item text="Specify Office Hosts" url="overview/specify-office-hosts-and-api-requirements" /> 	
 		<Item text="Create add-in commands in your manifest (Preview)" url="design/create-add-in-commands-in-your-manifest-preview" FriendlyUrl="designcreate-add-in-commands-in-your-manifest-preview" SEOKeyword="Excel" SEODescription="Outlook&quot;" />
@@ -41,24 +41,24 @@
 		<Item text="Address same origin policy limitations" url="develop/addressing-same-origin-policy-limitations" />
 	</Item>
 	<Item text="Localization" url="develop/localization" />
-    <Item text="Performance" url="develop/resource-limits-and-performance-optimization">
-		<Item text="Tips and tricks" url="publish/tips-and-tricks-for-improving-performance-and-experience-of-Office-add-ins" /><Item text="tips-and-tricks-for-improving-performance-and-experience-of-Office-add-ins" url="publish/tips-and-tricks-for-improving-performance-and-experience-of-Office-add-ins" />
+    <Item text="Performance" url="develop/resource-limits-and-performance-optimization" />
+  </Item>
+  <Item text="Test" url="testing">
+    <Item text="Use F12 developer tools on Windows 10" url="testing/debug-add-ins-using-f12-developer-tools-on-windows-10" />
+    <Item text="Side-load on Office Online" url="testing/debug-add-ins-in-office-online" />
+    <Item text="Side-load on iPad and Mac" url="testing/sideload-an-office-add-in-on-ipad-and-mac" />
+    <Item text="Debug on iPad and Mac" url="testing/debug-office-add-ins-on-ipad-and-mac" />
+    
 	</Item>
-  </Item>
-<Item text="Test" url="testing">
-    <Item text="Windows 10 and F12 developer tools" url="testing/debug-add-ins-using-f12-developer-tools-on-windows-10" />
-    <Item text="Side-load: Office Online" url="testing/debug-add-ins-in-office-online" FriendlyUrl="testing/debug-add-ins-in-office-online" SEOKeyword="Word&quot;" />
-	<Item text="Debug: iPad and Mac" url="testing/debug-office-add-ins-on-ipad-and-mac" FriendlyUrl="testing/debug-office-add-ins-on-ipad-and-mac" SEOKeyword="Word" SEODescription="PowerPoint&quot;" />
-    <Item text="Side-load: iPad and Mac" url="testing/sideload-an-office-add-in-on-ipad-and-mac" FriendlyUrl="testing/sideload-an-office-add-in-on-ipad-and-mac" SEOKeyword="Word" SEODescription="PowerPoint&quot;" />
-	<Item text="Testing and troubleshooting" url="testing/testing-and-troubleshooting" FriendlyUrl="testing/testing-and-troubleshooting" SEOKeyword="Word" SEODescription="PowerPoint" />
-  </Item>
-<Item text="Publish" url="publish">
+  <Item text="Publish" url="publish">
     <Item text="Create a network shared folder catalog for task pane and content add-ins" url="publish/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins" FriendlyUrl="publishcreate-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins" SEOKeyword="Excel" SEODescription="Word" />
     <Item text="Host an Office Add-in on Microsoft Azure" url="publish/host-an-office-add-in-on-microsoft-azure" />
     <Item text="Package your add-in using Napa or Visual Studio" url="publish/package-your-add-in-using-napa-or-visual-studio" />
     <Item text="Publish task pane and content add-ins to an add-in catalog" url="publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog" FriendlyUrl="publishpublish-task-pane-and-content-add-ins-to-an-add-in-catalog" SEOKeyword="Excel" SEODescription="Word" />
     <Item text="Set up an add in catalog on Office 365" url="publish/set-up-an-add-in-catalog-on-office-365" />
     <Item text="Set up an add-in catalog on SharePoint" url="publish/set-up-an-add-in-catalog-on-sharepoint" FriendlyUrl="publishset-up-an-add-in-catalog-on-sharepoint" SEOKeyword="Excel" SEODescription="Word" />
+    <Item text="Troubleshoot user errors" url="testing/testing-and-troubleshooting" FriendlyUrl="testing/testing-and-troubleshooting" SEOKeyword="Word" SEODescription="PowerPoint" />
+    <Item text="Tips and tricks" url="publish/tips-and-tricks-for-improving-performance-and-experience-of-Office-add-ins" />
   </Item>
   <Item text="Word" url="word" Scope="word">
     <Item text="Word add-ins programming overview" url="word/word-add-ins-programming-overview" FriendlyUrl="wordword-add-ins-programming-overview" SEODescription="&quot;Learn about proxy objects" Scope="word" />
@@ -76,11 +76,10 @@
     <Item text="Excel Add-in code samples" url="excel/excel-add-in-code-samples" FriendlyUrl="excelexcel-add-in-code-samples" SEODescription="Find samples that show you how to use the JavaScript APIs to create add-ins for Excel 2016." Scope="excel" />
     <Item text="Excel JavaScript API reference" url="excel/excel-add-ins-javascript-api-reference" FriendlyUrl="excelexcel-add-ins-javascript-api-reference" SEODescription="Find JavaScript API reference content for add-ins for Excel 2016." Scope="excel" />
     <Item text="Excel Add-ins" url="excel/excel-add-ins" FriendlyUrl="excelexcel-add-ins" SEODescription="Find information to help you create Excel add-ins in Office 2016 for Windows." Scope="excel" />
-	<Item text="Format tables in add-ins for Excel" url="develop/format-tables-in-add-ins-for-excel" FriendlyUrl="develop/format-tables-in-add-ins-for-excel" SEODescription="Specify formatting for tables in add-ins for Excel." Scope="excel" />
-	<Item text="Read and write data to the active selection in a document or spreadsheet" url="develop/read-and-write-data-to-the-active-selection-in-a-document-or-spreadsheet" FriendlyUrl="develop/read-and-write-data-to-the-active-selection-in-a-document-or-spreadsheet" SEOKeyword="Word&quot;" />	
-	<Item text="Bind to regions in a document or spreadsheet" url="develop/bind-to-regions-in-a-document-or-spreadsheet" FriendlyUrl="develop/bind-to-regions-in-a-document-or-spreadsheet" SEOKeyword="Word&quot;" Scope="excel"/>
-	<Item text="Create a SharePoint Add-in that contains a document template and a task pane add-in" url="develop/create-a-sharepoint-add-in-that-contains-a-document-template-and-a-task-pane-add-in" FriendlyUrl="develop/create-a-sharepoint-add-in-that-contains-a-document-template-and-a-task-pane-add-in" Scope="excel" SEOKeyword="Excel" SEODescription="" />
-  </Item>
+	  <Item text="Format tables in add-ins for Excel" url="develop/format-tables-in-add-ins-for-excel" FriendlyUrl="develop/format-tables-in-add-ins-for-excel" SEODescription="Specify formatting for tables in add-ins for Excel." Scope="excel" />
+	  <Item text="Read and write data to the active selection in a document or spreadsheet" url="develop/read-and-write-data-to-the-active-selection-in-a-document-or-spreadsheet" FriendlyUrl="develop/read-and-write-data-to-the-active-selection-in-a-document-or-spreadsheet" SEOKeyword="Word&quot;" />	
+	  <Item text="Bind to regions in a document or spreadsheet" url="develop/bind-to-regions-in-a-document-or-spreadsheet" FriendlyUrl="develop/bind-to-regions-in-a-document-or-spreadsheet" SEOKeyword="Word&quot;" Scope="excel"/>
+	</Item>
   <Item text="Outlook" url="outlook/outlook-add-ins" FriendlyUrl="outlookoutlook-add-ins" SEODescription="Create Outlook add-ins in read or compose mode." Scope="outlook" >
     <Item text="Overview" url="outlook/overview" FriendlyUrl="outlookoverview" SEODescription="Learn about Outlook add-ins architecture and features." Scope="outlook" />
     <Item text="Add-in commands for Outlook" url="outlook/add-in-commands-for-outlook" FriendlyUrl="outlookadd-in-commands-for-outlook" SEODescription="Use add-in commands to integrate Outlook add-ins with the Outlook UI." Scope="outlook" />
