@@ -1,9 +1,6 @@
 
 # Use regular expression activation rules to show an Outlook add-in
 
-## Support for regular expressions
-
-
 You can specify regular expression rules to have an Outlook add-in activated in read scenarios - when the user views a message or appointment in the Reading Pane or inspector, Outlook evaluates regular expression rules to determine if it should activate your add-in. Outlook does not evaluate these rules when the user is composing an item. There are also other scenarios where Outlook does not activate add-ins, for example, items protected by Information Rights Management (IRM) or in the Junk Email folder. For more information, see [Activation rules for Outlook add-ins](../outlook/manifests/activation-rules.md#MailAppDefineRules_Activation).
 
 You can specify a regular expression as part of an [ItemHasRegularExpressionMatch](http://msdn.microsoft.com/en-us/library/bfb726cd-81b0-a8d5-644f-2ca90a5273fc%28Office.15%29.aspx) rule or [ItemHasKnownEntity](http://msdn.microsoft.com/en-us/library/87e10fd2-eab4-c8aa-bec3-dff92d004d39%28Office.15%29.aspx) rule in the add-in XML manifest. Outlook evaluates regular expressions based on the rules for the JavaScript interpreter used by the browser on the client computer. Outlook supports the same list of special characters that all XML processors also support. The following table lists these special characters. You can use these characters in a regular expression by specifying the escaped sequence for the corresponding character, as described in the following table.
@@ -45,27 +42,25 @@ Pay special attention to the following when you use regular expressions:
     
 - The HTML body of an item is slightly different between an Outlook rich client, and Outlook Web App or OWA for Devices. Define your regular expressions carefully. As an example, consider the following regular expression used in an  **ItemHasRegularExpressionMatch** rule with **BodyAsHTML** as the **PropertyName** attribute value:
     
-```
-  http.*\.contoso\.com
-```
+    ```
+      http.*\.contoso\.com
+    ```
 
 
     A rule with this regular expression would match the string "http-equiv="Content-Type" which exists in the HTML body of an item in an Outlook rich client, as part of the following  **META** tag:
     
 
+    ```HTML
+      <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=us-ascii">
+    ```
 
-```HTML
-  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=us-ascii">
-```
 
-
-    The same rule does not return this match in Outlook Web App and OWA for Devices because the HTML body in these hosts does not include that  **META** tag. This can affect whether the add-in is activated appropriately for the various Outlook clients. In this example, use the following regular expression instead:
+The same rule does not return this match in Outlook Web App and OWA for Devices because the HTML body in these hosts does not include that  **META** tag. This can affect whether the add-in is activated appropriately for the various Outlook clients. In this example, use the following regular expression instead:
     
 
-
-```
-  http://.*\.contoso\.com/
-```
+    ```
+      http://.*\.contoso\.com/
+    ```
 
 - Depending on the host application, type of device, or property that a regular expression is being applied on, there are other best practices and limits for each of the hosts that you should be aware of when designing regular expressions as activation rules. See [Limits for activation and JavaScript API for Outlook add-ins](../outlook/limits-for-activation-and-javascript-api-for-outlook-add-ins.md) for details.
     
