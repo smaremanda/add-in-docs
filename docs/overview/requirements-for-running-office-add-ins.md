@@ -18,7 +18,7 @@ For content and task pane add-ins, in the supported Office host applications - A
 
 To test and run an Outlook add-in, the user's Outlook email account must reside on Exchange 2013 or later, which is available through Office 365, Exchange Online, or through an on-premises installation. The user or administrator installs manifest files for Outlook add-ins on that server.
 
-POP and IMAP email accounts in Outlook don't support Office Add-ins.
+ >**Note**   POP and IMAP email accounts in Outlook don't support Office Add-ins.
 
 
 ## Client support summary
