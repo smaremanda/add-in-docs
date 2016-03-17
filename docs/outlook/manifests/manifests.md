@@ -1,7 +1,7 @@
 
 # Outlook add-in manifests
 
-An Outlook add-in consists of two components: the XML add-in manifest and a web page, supported by the JavaScript library for Office Add-ins (office.js). The manifest describes how the add-in integrates across Outlook clients. There are now 3 versions of the manifest schema, including  **VersionOverrides**. At this time, developers should focus on building an add-in with commands using manifest schema version 1.1 and  **VersionOverrides** 1.0. Here is a sample:
+An Outlook add-in consists of two components: the XML add-in manifest, and a web page, supported by the JavaScript library for Office Add-ins (office.js). The manifest describes how the add-in integrates across Outlook clients. Currently there are three versions of the manifest schema, including  **VersionOverrides**. We recommend that you use manifest schema version 1.1 and  **VersionOverrides** 1.0 to build your add-in. The following is an example.
 
  >**Note**  All URL values in the following sample begin with "YOUR_WEB_SERVER". This value is a placeholder. In an actual valid manifest, these values would contain valid https web URLs.
 
