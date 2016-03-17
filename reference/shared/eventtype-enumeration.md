@@ -7,7 +7,7 @@ Specifies the kind of event that was raised. Returned by the  **type** property 
 |**Hosts:**|Access, Excel, PowerPoint, Project, Word|
 |**Last changed in Selection**|1.1|
 
-```
+```js
 Office.EventType
 ```
 
@@ -32,7 +32,9 @@ Office.EventType
 ## Remarks
 
 
- >**Note**  Add-ins for Project support the  **Office.EventType.ResourceSelectionChanged**,  **Office.EventType.TaskSelectionChanged**, and  **Office.EventType.ViewSelectionChanged** event types.
+ >**Note**  
+ ---
+ Add-ins for Project support the  **Office.EventType.ResourceSelectionChanged**,  **Office.EventType.TaskSelectionChanged**, and  **Office.EventType.ViewSelectionChanged** event types.
 
 
 ## Support details
@@ -61,9 +63,6 @@ For more information about Office host application and server requirements, see 
 
 ## Support history
 
-
-
-****
 
 
 |**Version**|**Changes**|
