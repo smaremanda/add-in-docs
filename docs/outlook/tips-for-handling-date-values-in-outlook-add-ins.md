@@ -1,12 +1,5 @@
 
 # Tips for handling date values in Outlook add-ins
-Explore tips on how Outlook add-ins should handle input and output date values for the various date-related methods in the JavaScript API for Office.
-
-
-
-
-## General JavaScript date-time support
-
 
 The JavaScript API for Office uses the JavaScript [Date](http://www.w3schools.com/jsref/jsref_obj_date.asp) object for most of the storage and retrieval of dates and times. That **Date** object provides methods such as [getUTCDate](http://www.w3schools.com/jsref/jsref_getutcdate.asp), [getUTCHour](http://www.w3schools.com/jsref/jsref_getutchours.asp), [getUTCMinutes](http://www.w3schools.com/jsref/jsref_getutcminutes.asp), and [toUTCString](http://www.w3schools.com/jsref/jsref_toutcstring.asp), which return the requested date or time value according to Universal Coordinated Time (UTC) time.
 
