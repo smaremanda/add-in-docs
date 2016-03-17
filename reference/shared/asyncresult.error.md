@@ -49,8 +49,6 @@ A capital Y in the following matrix indicates that this method is supported in t
 For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](../../docs/overview/requirements-for-running-office-add-ins.md).
 
 
-||
-|:-----|
 |**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|**OWA for Devicess**|**Outlook for Mac**|
 |:-----|:-----|:-----|:-----|:-----|
 |**Access**||Y||||
