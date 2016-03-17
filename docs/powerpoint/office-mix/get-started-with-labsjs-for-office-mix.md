@@ -1,6 +1,7 @@
 
 # Get started with LabsJS for Office Mix
-
+
+
 
 LabsJS content exposes an API (labs.js), samples, documentation, and associated files that you can use to develop interactive Labs, integrate them into Office Mix, and then render them in Microsoft PowerPoint. These labs are, in fact, Office Add-ins that you create using HTML5 and the labs.js JavaScript library.
 
@@ -14,7 +15,7 @@ LabsJS provides documentation, sample labs, and the files required to create and
 
 |**File**|**Description**|
 |:-----|:-----|
-|labs-1.0.4.js|The LabsJS JavaScript API for the development of Office Mix Labs. This file must be included in your project to allow it to integrate with Office Mix. The file is also hosted on a content delivery network (CDN) at  `https://az592748.vo.msecnd.net/sdk/LabsJS-1.0.4/labs-1.0.4.js`. When you publish your app you must link to the file on the CDN.|
+|labs-1.0.4.js|The LabsJS JavaScript API for the development of Office Mix Labs. This file must be included in your project to allow it to integrate with Office Mix. The file is also hosted on a content delivery network (CDN) at  <code>https://az592748.vo.msecnd.net/sdk/LabsJS-1.0.4/labs-1.0.4.js</code>. When you publish your app you must link to the file on the CDN.|
 |labs-1.0.4.d.ts|TypeScript definition file for labs.js. This makes it possible to easily integrate your TypeScript code with labs.js. The definition file also provides a broad overview of all the components contained in labs.js. You can download TypeScript from [http://www.typescriptlang.org/](http://www.typescriptlang.org/). The definition file was built against TypeScript version 0.9.1.1.|
 |History|Release history for the various versions of the labs.js library.|
 |Labshost.html|A web page that allows you to view and debug your lab against Office Mix, outside the context of PowerPoint. To use the page, type in your URL to the main input box and it will load within the frame. Data exchanged between the API and Office Mix when running in PowerPoint or the Office Mix lesson player will show up in the input boxes to the right. The data can also be pre-seeded. Note that the sample Labs in the Samples section show existing Office Mix Add-ins running in the host context.|
@@ -58,7 +59,7 @@ The application manifest is an XML document that describes your LabJS lab. It pr
 
 We include a sample manifest, "SampleManifest.xml". For more information about the manifest schema as well as a link to the schema definition, see [Office Add-ins XML manifest](../../../docs/overview/add-in-manifests.md).
 
-To upload your manifest to your SharePoint site, first navigate to your application catalog, which you'll typically find at the URL  `https://<your site>/sites/AppCatalog`. Then, choose the  **New app** button and follow the steps to upload your application manifest.
+To upload your manifest to your SharePoint site, first navigate to your application catalog, which you'll typically find at the URL <code>https://\<your site\>/sites/AppCatalog</code>. Then, choose the  **New app** button and follow the steps to upload your application manifest.
 
 
 ### Update your PowerPoint 2013 catalog
@@ -77,7 +78,9 @@ To insert your add-in into the catalog, choose the  **Insert** ribbon, then choo
 Now you can take advantage of all the available Office Mix functionality to publish your lesson with your new lab.
 
 
- >**Important**  To view the application, you must log on to your SharePoint catalog with the same browser that you view your lesson from. SharePoint catalogs only allow access from authenticated users, so to see your application you need to log on first. 
+ >**Important**  
+ ---
+ To view the application, you must log on to your SharePoint catalog with the same browser that you view your lesson from. SharePoint catalogs only allow access from authenticated users, so to see your application you need to log on first. 
 
 
 ### Submit your lab to the Office Store
