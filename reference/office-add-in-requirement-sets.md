@@ -22,7 +22,7 @@ The following table lists the names of requirement sets, the methods in each set
 |CustomXmlParts|1.1|Word|CustomXmlNode.getNodesAsync<br>CustomXmlNode.getNodeValueAsync<br>CustomXmlNode.getXmlAsync<br>CustomXmlNode.setNodeValueAsync<br>CustomXmlNode.setXmlAsync<br>CustomXmlPart.addHandlerAsync<br>CustomXmlPart.deleteAsync<br>CustomXmlPart.getNodesAsync<br>CustomXmlPart.getXmlAsync<br>CustomXmlPart.removeHandlerAsync<br>CustomXmlParts.addAsync<br>CustomXmlParts.getByIdAsync<br>CustomXmlParts.getByNamespaceAsync<br>CustomXmlPrefixMappings.addNamespaceAsync<br>CustomXmlPrefixMappings.getNamespaceAsync<br>CustomXmlPrefixMappings.getPrefixAsync|
 |DialogAPI|1.1|Excel<br>PowerPoint<br>Word<br>Outlook|Office.context.ui.displayDialogAsync()<br> Office.context.ui.messageParent()<br>Office.context.ui.close()|
 |DocumentEvents|1.1|Excel<br>Excel&nbsp;Online<br>PowerPoint<br>Word<br>Word&nbsp;Online|Document.addHandlerAsync<br>Document.removeHandlerAsync|
-|File|1.1|PowerPoint<br>Word<br>Word&nbsp;Online|Document.getFileAsync<br>File.closeAsync<br>File.getSliceAsync|
+|File|1.1|PowerPoint<br>Word<br>Word&nbsp;Online<br>PowerPoint&nbsp;Online|Document.getFileAsync<br>File.closeAsync<br>File.getSliceAsync|
 |HtmlCoercion|1.1|Word|Supports coercion to HTML (Office.CoercionType.Html) when reading and writing data using the Document.getSelectedDataAsync,<br>Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods.|
 |ImageCoercion|1.1|Word<br>Word&nbsp;Online|Supports conversion to an image (Office.CoercionType.Image) when writing data using the Document.setSelectedDataAsync method.|
 |Mailbox|1.1|Outlook<br>Outlook&nbsp;Web&nbsp;App<br>OWA&nbsp;for&nbsp;Devices|All API members supported by Outlook add-ins (those members accessed from `Office.context` and `Office.context.mailbox` in your add-in's code).|
@@ -37,7 +37,7 @@ The following table lists the names of requirement sets, the methods in each set
 |TableCoercion|1.1|Access&nbsp;Web&nbsp;Apps<br>Excel<br>Excel&nbsp;Online<br>Word<br>Word&nbsp;Online|Supports coercion to the "table" data structure (Office.CoercionType.Table) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods.|
 |TextBindings|1.1|Excel<br>Excel&nbsp;Online<br>Word|Bindings.addFromNamedItemAsync<br>Bindings.addFromSelectionAsync<br>Bindings.getAllAsync<br>Bindings.getByIdAsync<br>Bindings.releaseByIdAsyncText<br>Binding.getDataAsyncText<br>Binding.setDataAsync|
 |TextCoercion|1.1|Excel<br>Excel&nbsp;Online<br>PowerPoint<br>Project<br>Word<br>Word&nbsp;Online|Supports coercion to text format (Office.CoercionType.Text) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods.|
-|TextFile|1.1|Word|Supports output to text format (Office.FileType.Text) when using the Document.getFileAsync method.|
+|TextFile|1.1|Word<br>Word&nbsp;Online|Supports output to text format (Office.FileType.Text) when using the Document.getFileAsync method.|
 
 ## Methods that aren't part of a requirement set
 
