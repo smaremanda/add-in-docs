@@ -1,10 +1,5 @@
 
 # Validate an Exchange identity token
-Learn how to validate the Exchange 2013 identity token that links the email accounts of your Outlook add-in customers to the information that your web service provides.
-
-
-
-![Related code snippets and sample apps](../../images/mod_icon_links_samples.png)[Outlook-Add-in-JavaScript-ValidateIdentityToken](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-ValidateIdentityToken)
 
 Your Outlook add-in can send you an identity token, but before you trust the request you must validate the token to ensure that it came from the Exchange server that you expect. The examples in this article show you how to validate the Exchange identity token using a validation object written in C#; however, you can use any programming language to do the validation. The steps required to validate the token are described in the [JSON Web Token (JWT) Internet Draft](http://self-issued.info/docs/draft-goland-json-web-token-00.mdl). 
 
