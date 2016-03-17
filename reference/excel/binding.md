@@ -1,7 +1,5 @@
 # Binding object (JavaScript API for Excel)
 
-_Applies to: Excel 2016, Excel Online, Excel for iOS, Office 2016_
-
 Represents an Office.js binding that is defined in the workbook.
 
 ## Properties
