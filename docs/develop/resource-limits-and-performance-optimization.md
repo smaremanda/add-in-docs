@@ -1,6 +1,7 @@
 
 # Resource limits and performance optimization for Office Add-ins
-
+
+
 
 To create the best experience for your users, ensure that your Office Add-in performs within specific limits for CPU core and memory usage, reliability and, for Outlook add-ins, the response time for evaluating regular expressions. These run-time resource usage limits apply to add-ins running on Office clients for Windows and OS X, but not Office Online, Outlook Web App,or OWA for Devices. You can also optimize the performance of your add-ins on desktop and mobile devices by optimizing the use of resources in your add-in design and implementation.
 
@@ -43,7 +44,7 @@ Run-time resource usage limits apply to all types of Office Add-ins. These limit
     Using a group policy or application-specific setting in the Windows registry, administrators can adjust this number of times to retry evaluation in the  **OutlookActivationManagerRetryLimit** setting. For more information, see [Overriding resource usage settings for performance of Office Add-ins](http://msdn.microsoft.com/library/da14ec8c-5075-4035-a951-fc3c2b15c04b%28Office.15%29.aspx).
     
 
-  **Task pane and content add-ins**
+    **Task pane and content add-ins**
     
     If any content or task pane add-in exceeds the preceding thresholds on CPU core or memory usage, or tolerance limit for crashes, the corresponding host application displays a warning for the user. At this point, the user can do one of the following:
     
