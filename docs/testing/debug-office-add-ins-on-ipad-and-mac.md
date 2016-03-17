@@ -41,6 +41,7 @@ Weinre is a debugger for web pages, similar to the F12 tools, that is designed t
 ```HTML
   <script src="http://<ipaddr>:8080/target/target-script-min.js#anonymous"></script>
 ```
+
 2. Launch your add-in on the iPad or Mac.
 
   ![iPad screenshot showing targets, clients, and server properties](../../images/1eacaba2-04cc-488c-8d34-a05cc700d7eb.jpg)
