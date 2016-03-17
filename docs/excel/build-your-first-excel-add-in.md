@@ -273,21 +273,19 @@ The simplest way to deploy and test your add-in is to copy the files to a networ
 
 3-  Copy the manifest (QuarterlySalesReportManifest.xml) to a network share (for example, \\\MyShare\\MyManifests).
 
-4-  Add the share location that contains the manifest as a trusted app catalog in Excel.
+4-  Now, let's add the share location that contains the manifest as a trusted app catalog in Excel. Launch Excel and open a blank spreadsheet.
 
-      a-  Launch Excel and open a blank spreadsheet.
+5-  Choose the **File** tab, and then choose **Options**.
 
-      b-  Choose the **File** tab, and then choose **Options**.
+6-  Choose **Trust Center**, and then choose the **Trust Center Settings** button.
 
-      c-  Choose **Trust Center**, and then choose the **Trust Center Settings** button.
+7-  Choose **Trusted Add-in Catalogs**.
 
-      d-  Choose **Trusted Add-in Catalogs**.
+8-  In the **Catalog Url** box, enter the path to the network share you created in step 3, and then choose **Add Catalog**.
 
-      e-  In the **Catalog Url** box, enter the path to the network share you created in step 3, and then choose **Add Catalog**.
+      f.  Select the **Show in Menu** check box, and then choose **OK**. A message appears to inform you that your settings will be applied the next time you start Office.
 
-      f-  Select the **Show in Menu** check box, and then choose **OK**. A message appears to inform you that your settings will be applied the next time you start Office.
-
-5-  Test and run the add-in.
+9-  Test and run the add-in.
 
       a-  On the **Insert tab** in Excel 2016, choose **My Add-ins**.
 
