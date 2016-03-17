@@ -7,7 +7,7 @@ Specifies how to coerce data returned or set by the invoked method.
 |**Hosts:**|Access, Excel, Outlook, PowerPoint, Project, Word|
 |**Last changed in Mailbox**|1.1|
 
-```
+```js
 Office.CoercionType
 ```
 
@@ -21,13 +21,13 @@ Office.CoercionType
 
 |**Enumeration**|**Value**|**Description**|
 |:-----|:-----|:-----|
-|Office.CoercionType.Html|"html"|Return or set data as HTML.<br>**Note**  Only applies to data in add-ins for Word and Outlook add-ins for Outlook (compose mode).|
-|Office.CoercionType.Matrix|"matrix"|Return or set data as tabular data with no headers. Data is returned or set as an array of arrays containing one-dimensional runs of characters. For example, three rows of  **string** values in two columns would be: ` [["R1C1", "R1C2"], ["R2C1", "R2C2"], ["R3C1", "R3C2"]]`.<br>**Note**  Only applies to data in Excel and Word.|
-|Office.CoercionType.Ooxml|"ooxml"|Return or set data as Office Open XML.<br>**Note**  Only applies to data in Word.|
-|Office.CoercionType.SlideRange|"slideRange"|Return a JSON object that contains an array of the ids, titles, and indexes of the selected slides.For example,  `{"slides":[{"id":257,"title":"Slide 2","index":2},{"id":256,"title":"Slide 1","index":1}]}` for a selection of two slides.<br>**Note**  Only applies to data in PowerPoint when calling the [Document.getSelectedData](../../reference/shared/document.getselecteddataasync.md) method to get the current slide or selected range of slides.|
-|Office.CoercionType.Table|"table"|Return or set data as tabular data with optional headers. Data is returned or set as an array of arrays with optional headers.<br>**Note**  Only applies to data in Access, Excel and Word.|
+|Office.CoercionType.Html|"html"|Return or set data as HTML.<br/><br/> **Note**  Only applies to data in add-ins for Word and Outlook add-ins for Outlook (compose mode).|
+|Office.CoercionType.Matrix|"matrix"|Return or set data as tabular data with no headers. Data is returned or set as an array of arrays containing one-dimensional runs of characters. For example, three rows of  **string** values in two columns would be: ` [["R1C1", "R1C2"], ["R2C1", "R2C2"], ["R3C1", "R3C2"]]`.<br/><br/> **Note**  Only applies to data in Excel and Word.|
+|Office.CoercionType.Ooxml|"ooxml"|Return or set data as Office Open XML.<br/><br/> **Note**  Only applies to data in Word.|
+|Office.CoercionType.SlideRange|"slideRange"|Return a JSON object that contains an array of the ids, titles, and indexes of the selected slides.For example,  `{"slides":[{"id":257,"title":"Slide 2","index":2},{"id":256,"title":"Slide 1","index":1}]}` for a selection of two slides.<br/><br/> **Note**  Only applies to data in PowerPoint when calling the [Document.getSelectedData](../../reference/shared/document.getselecteddataasync.md) method to get the current slide or selected range of slides.|
+|Office.CoercionType.Table|"table"|Return or set data as tabular data with optional headers. Data is returned or set as an array of arrays with optional headers.<br/><br/> **Note**  Only applies to data in Access, Excel and Word.|
 |Office.CoercionType.Text|"text"|Return or set data as text ( **string**).Data is returned or set as a one-dimensional run of characters.|
-|Office.CoercionType.Image|"image"|Data is returned or set as an image stream.<br>**Note**  Only applies to data in Excel, Word and PowerPoint.|
+|Office.CoercionType.Image|"image"|Data is returned or set as an image stream.<br/><br/> **Note**  Only applies to data in Excel, Word and PowerPoint.|
 PowerPoint supports only  **Office.CoercionType.Text**,  **Office.CoercionType.Image**, and  **Office.CoercionType.SlideRange**.
 
 Project supports only  **Office.CoercionType.Text**.
@@ -60,10 +60,6 @@ For more information about Office host application and server requirements, see 
 |**Namespace**|Office|
 
 ## Support history
-
-
-
-****
 
 
 |**Version**|**Changes**|
