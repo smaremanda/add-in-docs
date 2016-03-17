@@ -1,7 +1,8 @@
 
 # Create add-in commands in your manifest for Excel, Word, and PowerPoint (Preview)
 Use  **VersionOverrides** in your manifest to define add-in commands for Excel, Word, and PowerPoint.
-
+
+
 
 Add-in commands provide an easy way to customize the default Office UI with specified UI elements that perform actions. You can use add-in commands to:
 
@@ -15,7 +16,7 @@ Add-in commands provide an easy way to customize the default Office UI with spec
 
   - Show one or more task pane add-ins for users to interact with. Inside your task pane add-in, you can display HTML that uses Office UI Fabric to create a custom UI.
 
-  _or_
+    _or_
 
   - Run JavaScript code, which normally runs without displaying any UI.
 
@@ -271,13 +272,12 @@ The following examples show how to use the  **ExtensionPoint** element with **Pr
 |:-----|:-----|
 |**CustomTab**|Required if you want to add a custom tab to the ribbon (using  **PrimaryCommandSurface**). If you use the  **CustomTab** element, you can't use the **OfficeTab** element. The **id** attribute is required.|
 |**OfficeTab**|Required if you want to extend a default Office ribbon tab (using  **PrimaryCommandSurface**). If you use the  **OfficeTab** element, you can't use the **CustomTab** element.For more tab values to use with the  **id** attribute, see [Tab values for default Office ribbon tabs](#tab-values-for-default-office-ribbon-tabs).|
-|**OfficeMenu**|Required if you're adding add-in commands to a default context menu (using  **ContextMenu**). The  **id** attribute must be set to: **ContextMenuText** for Excel or Word. Displays the item on the context menu when text is selected and then the user right-clicks on the selected text. **ContextMenuCell** for Excel. Displays the  item on the context menu when the user right-clicks on a cell on the spreadsheet.|
+|**OfficeMenu**|Required if you're adding add-in commands to a default context menu (using  **ContextMenu**). The  **id** attribute must be set to: <br/> - **ContextMenuText** for Excel or Word. Displays the item on the context menu when text is selected and then the user right-clicks on the selected text. <br/> - **ContextMenuCell** for Excel. Displays the  item on the context menu when the user right-clicks on a cell on the spreadsheet.|
 |**Group**|A group of user interface extension points on a tab. A group can have up to six controls. The  **id** attribute is required. It's a string with a maximum of 125 characters.|
 |**Label**|Required. The label of the group. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element. The **String** element is a child element of the **ShortStrings** element, which is a child element of the **Resources** element.|
 |**Icon**|Required. Specifies the group's icon to be used on small form factor devices, or when too many buttons are displayed. The  **resid** attribute must be set to the value of the **id** attribute of an **Image** element. The **Image** element is a child element of the **Images** element, which is a child element of the **Resources** element. The **size** attribute gives the size, in pixels, of the image. Three image sizes are required: 16, 32, and 80. Five optional sizes are also supported: 20, 24, 40, 48, and 64.|
 |**Tooltip**|Optional. The tooltip of the group. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element. The **String** element is a child element of the **LongStrings** element, which is a child element of the **Resources** element.|
-|**Control**|Each group requires at least one control. A  **Control** element can be either a **Button** or a **Menu**. Use  **Menu** to specify a drop-down list of button controls. Currently, only buttons and menus are supported.See the [Button controls](#button-controls) and [Menu controls](#menu-controls) sections for more information.
- >**Note**  To make troubleshooting easier, we recommend that a  **Control** element and the related **Resources** child elements be added one at a time.
+|**Control**|Each group requires at least one control. A  **Control** element can be either a **Button** or a **Menu**. Use  **Menu** to specify a drop-down list of button controls. Currently, only buttons and menus are supported.See the [Button controls](#button-controls) and [Menu controls](#menu-controls) sections for more information.<br/>**Note**  To make troubleshooting easier, we recommend that a  **Control** element and the related **Resources** child elements be added one at a time.
 
 |
 
@@ -334,8 +334,8 @@ A button performs a single action when the user selects it. It can either execut
 |:-----|:-----|
 |**Label**|Required. The text for the button. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element. The **String** element is a child element of the **ShortStrings** element, which is a child element of the **Resources** element.|
 |**Tooltip**|Optional. The tooltip for the button. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element. The **String** element is a child element of the **LongStrings** element, which is a child element of the **Resources** element.|
-|**Supertip**|Required. The supertip for this button, which is defined by the following: <br/><br/>-  **Title** - Required. The text for the supertip. The **resid** attribute must be set to the value of the **id** attribute of a **String** element. The **String** element is a child element of the **ShortStrings** element, which is a child element of the **Resources**  element. <br/>-  **Description** - Required. The description for the supertip. The **resid**  attribute must be set to the value of the **id** attribute of a **String** element. The **String** element is a child element  of the **LongStrings** element, which is a child element of the **Resources** element.|
-|**Icon**|Required. Contains the  **Image** elements for the button. Image files must be .png format. <br/><br/> - **Image** - Defines an image to display on the button. The **resid**  attribute must be set to the value of the **id** attribute of an **Image** element. The **Image** element  is a child element of the **Images** element, which is a child element of the **Resources** element. The **size** attribute indicates the size, in pixels, of the image. Three image sizes are required: 16, 32, and 80. Five optional sizes are also supported: 20, 24, 40, 48, and 64.|
+|**Supertip**|Required. The supertip for this button, which is defined by the following: <br/><br/>-  **Title** <br/> Required. The text for the supertip. The **resid** attribute must be set to the value of the **id** attribute of a **String** element. The **String** element is a child element of the **ShortStrings** element, which is a child element of the **Resources**  element. <br/>-  **Description** <br/> Required. The description for the supertip. The **resid**  attribute must be set to the value of the **id** attribute of a **String** element. The **String** element is a child element  of the **LongStrings** element, which is a child element of the **Resources** element.|
+|**Icon**|Required. Contains the  **Image** elements for the button. Image files must be .png format. <br/><br/> - **Image** <br/> Defines an image to display on the button. The **resid**  attribute must be set to the value of the **id** attribute of an **Image** element. The **Image** element  is a child element of the **Images** element, which is a child element of the **Resources** element. The **size** attribute indicates the size, in pixels, of the image. Three image sizes are required: 16, 32, and 80. Five optional sizes are also supported: 20, 24, 40, 48, and 64.|
 |**Action**|Required. Specifies the action to perform when the user selects the button. You can specify one of the following values for the  **xsi:type** attribute: <br/><br/> - **ExecuteFunction**, which runs a JavaScript function located in the file referenced by **FunctionFile**. ExecuteFunction does not display a UI. The FunctionName child element specifies the name of the function to execute. <br/> - **ShowTaskPane**, which shows a task pane add-in. The **SourceLocation** child element specifies the source file location of the task pane add-in to display. The **resid**  attribute must be set to the value of the **id** attribute of a **Url** element in the **Urls** element in the **Resources** element.
 
 ### Menu controls
@@ -415,8 +415,8 @@ A  **Menu** control can be used with either **PrimaryCommandSurface** or **Conte
 |:-----|:-----|
 |**Label**|Required. The text of the root menu item. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element. The **String** element is a child element of the **ShortStrings** element, which is a child element of the **Resources** element.|
 |**Tooltip**|Optional. The tooltip for the menu. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element. The **String** element is a child element of the **LongStrings** element, which is a child element of the **Resources** element.|
-|**Supertip**|Required. The supertip for this menu, which is defined by the following: <br/><br/>-  **Title** - Required. The text for the supertip. The **resid** attribute must be set to the value of the **id** attribute of a **String** element. The **String** element is a child element of the **ShortStrings** element, which is a child element of the **Resources**  element. <br/>-  **Description** - Required. The description for the supertip. The **resid**  attribute must be set to the value of the **id** attribute of a **String** element. The **String** element is a child element  of the **LongStrings** element, which is a child element of the **Resources** element.|
-|**Icon**|Required. Contains the  **Image** elements for the menu. Image files must be .png format. <br/><br/> - **Image** - Defines an image to display on the menu. The **resid**  attribute must be set to the value of the **id** attribute of an **Image** element. The **Image** element  is a child element of the **Images** element, which is a child element of the **Resources** element. The **size** attribute indicates the size, in pixels, of the image. Three image sizes are required: 16, 32, and 80. Five optional sizes are also supported: 20, 24, 40, 48, and 64.|
+|**Supertip**|Required. The supertip for this menu, which is defined by the following: <br/><br/>-  **Title** <br/> Required. The text for the supertip. The **resid** attribute must be set to the value of the **id** attribute of a **String** element. The **String** element is a child element of the **ShortStrings** element, which is a child element of the **Resources**  element. <br/>-  **Description** <br/> Required. The description for the supertip. The **resid**  attribute must be set to the value of the **id** attribute of a **String** element. The **String** element is a child element  of the **LongStrings** element, which is a child element of the **Resources** element.|
+|**Icon**|Required. Contains the  **Image** elements for the menu. Image files must be .png format. <br/><br/> - **Image** <br/> Defines an image to display on the menu. The **resid**  attribute must be set to the value of the **id** attribute of an **Image** element. The **Image** element  is a child element of the **Images** element, which is a child element of the **Resources** element. The **size** attribute indicates the size, in pixels, of the image. Three image sizes are required: 16, 32, and 80. Five optional sizes are also supported: 20, 24, 40, 48, and 64.|
 |**Items**|Required. Contains the  **Item** elements for each submenu item. Each **Item** element contains the same child elements as [Button controls](#button-controls).|
 
 ## Step 7: Add the Resources element
@@ -462,7 +462,7 @@ The following shows an example of how to use the  **Resources** element. Each re
 
 |**Resource**|**Description**|
 |:-----|:-----|
-|**Images**/ **Image**|Provides the HTTPS URL to an image file. Each image must define the three required image sizes: <br/> 16x16<br/>32x32<br/>80x80<br/>The following image sizes are also supported, but not required:<br/>20x20<br/>24x24<br/>40x40<br/>48x48<br/>64x64</p></li></ul>|
+|**Images**/ **Image**|Provides the HTTPS URL to an image file. Each image must define the three required image sizes: <br/>16x16<br/>32x32<br/>80x80<br/>The following image sizes are also supported, but not required:<br/>20x20<br/>24x24<br/>40x40<br/>48x48<br/>64x64</p></li></ul>|
 |**Urls**/ **Url**|Provides an HTTPS URL location. A URL can be a maximum of 2048 characters. |
 |**ShortStrings**/ **String**|The text for  **Label** and **Title** elements. Each **String** contains a maximum of 125 characters.|
 |**LongStrings**/ **String**|The text for  **Tooltip** and **Description** elements. Each **String** contains a maximum of 250 characters.|
