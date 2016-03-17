@@ -1,6 +1,6 @@
-# RangeBorderCollection object (JavaScript API for Excel)
+# RangeBorderCollection Object (JavaScript API for Excel)
 
-_Applies to: Excel 2016, Excel Online, Office 2016_
+_Applies to: Excel 2016, Office 2016_
 
 Represents the border objects that make up range border.
 
@@ -21,14 +21,15 @@ None
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[getItem(index: string)](#getitemindex-string)|[RangeBorder](rangeborder.md)|Gets a border object using its name.|
-|[getItemAt(index: number)](#getitematindex-number)|[RangeBorder](rangeborder.md)|Gets a border object using its index.|
-|[load(param: object)](#loadparam-object)|void|Fills the proxy object created in the JavaScript layer with property and object values specified in the parameter.|
+|[getItem(index: string)](#getitemindex-string)|[RangeBorder](rangeborder.md)|Gets a border object using its name|
+|[getItemAt(index: number)](#getitematindex-number)|[RangeBorder](rangeborder.md)|Gets a border object using its index|
+|[load(param: object)](#loadparam-object)|void|Fills the proxy object created in JavaScript layer with property and object values specified in the parameter.|
 
 ## Method Details
 
+
 ### getItem(index: string)
-Gets a border object using its name. 
+Gets a border object using its name
 
 #### Syntax
 ```js
@@ -38,7 +39,7 @@ rangeBorderCollectionObject.getItem(index);
 #### Parameters
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|index|string|Index value of the border object to be retrieved.  Possible values are: EdgeTop, EdgeBottom, EdgeLeft, EdgeRight, InsideVertical, InsideHorizontal, DiagonalDown, DiagonalUp.|
+|index|string|Index value of the border object to be retrieved.  Possible values are: EdgeTop, EdgeBottom, EdgeLeft, EdgeRight, InsideVertical, InsideHorizontal, DiagonalDown, DiagonalUp|
 
 #### Returns
 [RangeBorder](rangeborder.md)
@@ -86,8 +87,9 @@ Excel.run(function (ctx) {
 });
 ```
 
+
 ### getItemAt(index: number)
-Gets a border object using its index.
+Gets a border object using its index
 
 #### Syntax
 ```js
@@ -123,8 +125,9 @@ Excel.run(function (ctx) {
 });
 ```
 
+
 ### load(param: object)
-Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.
+Fills the proxy object created in JavaScript layer with property and object values specified in the parameter.
 
 #### Syntax
 ```js
@@ -134,7 +137,7 @@ object.load(param);
 #### Parameters
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|param|object|Optional. Accepts parameter and relationship names as a delimited string or an array. Or, provide [loadOption](loadoption.md) object.|
+|param|object|Optional. Accepts parameter and relationship names as delimited string or an array. Or, provide [loadOption](loadoption.md) object.|
 
 #### Returns
 void
@@ -162,7 +165,7 @@ Excel.run(function (ctx) {
 		}
 });
 ```
-The example below adds a grid border around the range.
+The example below adds grid border around the range.
 
 ```js
 Excel.run(function (ctx) { 

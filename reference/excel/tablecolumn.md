@@ -1,6 +1,6 @@
-# TableColumn object (JavaScript API for Excel)
+# TableColumn Object (JavaScript API for Excel)
 
-_Applies to: Excel 2016, Excel Online, Office 2016_
+_Applies to: Excel 2016, Office 2016_
 
 Represents a column in a table.
 
@@ -8,16 +8,17 @@ Represents a column in a table.
 
 | Property	   | Type	|Description
 |:---------------|:--------|:----------|
-|id|int|Returns a unique key that identifies the column in the table. Read-only.|
-|index|int|Returns the index number of the column in the columns collection of the table. Zero-indexed. Read-only.|
+|id|int|Returns a unique key that identifies the column within the table. Read-only.|
+|index|int|Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.|
 |name|string|Returns the name of the table column. Read-only.|
-|values|object[][]|Represents the raw values of the specified range. The data returned could be of type string, number, or boolean. A cell that contains an error returns an error string.|
+|values|object[][]|Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.|
 
 _See property access [examples.](#property-access-examples)_
 
 ## Relationships
-None
-
+| Relationship | Type	|Description|
+|:---------------|:--------|:----------|
+|filter|[Filter](filter.md)|Retrieve the filter applied to the column. Read-only.|
 
 ## Methods
 
@@ -28,9 +29,10 @@ None
 |[getHeaderRowRange()](#getheaderrowrange)|[Range](range.md)|Gets the range object associated with the header row of the column.|
 |[getRange()](#getrange)|[Range](range.md)|Gets the range object associated with the entire column.|
 |[getTotalRowRange()](#gettotalrowrange)|[Range](range.md)|Gets the range object associated with the totals row of the column.|
-|[load(param: object)](#loadparam-object)|void|Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.|
+|[load(param: object)](#loadparam-object)|void|Fills the proxy object created in JavaScript layer with property and object values specified in the parameter.|
 
 ## Method Details
+
 
 ### delete()
 Deletes the column from the table.
@@ -61,6 +63,7 @@ Excel.run(function (ctx) {
 		}
 });
 ```
+
 
 ### getDataBodyRange()
 Gets the range object associated with the data body of the column.
@@ -94,6 +97,7 @@ Excel.run(function (ctx) {
 });
 ```
 
+
 ### getHeaderRowRange()
 Gets the range object associated with the header row of the column.
 
@@ -126,6 +130,7 @@ Excel.run(function (ctx) {
 		}
 });
 ```
+
 ### getRange()
 Gets the range object associated with the entire column.
 
@@ -158,6 +163,7 @@ Excel.run(function (ctx) {
 		}
 });
 ```
+
 
 ### getTotalRowRange()
 Gets the range object associated with the totals row of the column.
@@ -192,8 +198,9 @@ Excel.run(function (ctx) {
 });
 ```
 
+
 ### load(param: object)
-Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.
+Fills the proxy object created in JavaScript layer with property and object values specified in the parameter.
 
 #### Syntax
 ```js
@@ -203,7 +210,7 @@ object.load(param);
 #### Parameters
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|param|object|Optional. Accepts parameter and relationship names as a delimited string or an array. Or, provide [loadOption](loadoption.md) object.|
+|param|object|Optional. Accepts parameter and relationship names as delimited string or an array. Or, provide [loadOption](loadoption.md) object.|
 
 #### Returns
 void

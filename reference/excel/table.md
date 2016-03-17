@@ -1,6 +1,6 @@
-# Table object (JavaScript API for Excel)
+# Table Object (JavaScript API for Excel)
 
-_Applies to: Excel 2016, Excel Online, Office 2016_
+_Applies to: Excel 2016, Office 2016_
 
 Represents an Excel table.
 
@@ -12,7 +12,7 @@ Represents an Excel table.
 |name|string|Name of the table.|
 |showHeaders|bool|Indicates whether the header row is visible or not. This value can be set to show or remove the header row.|
 |showTotals|bool|Indicates whether the total row is visible or not. This value can be set to show or remove the total row.|
-|style|string|Constant value that represents the Table style. Possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11. A custom, user-defined style present in the workbook can also be specified.|
+|style|string|Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.|
 
 _See property access [examples.](#property-access-examples)_
 
@@ -21,19 +21,68 @@ _See property access [examples.](#property-access-examples)_
 |:---------------|:--------|:----------|
 |columns|[TableColumnCollection](tablecolumncollection.md)|Represents a collection of all the columns in the table. Read-only.|
 |rows|[TableRowCollection](tablerowcollection.md)|Represents a collection of all the rows in the table. Read-only.|
+|sort|[TableSort](tablesort.md)|Represents the sorting configuration for the table. Read-only.|
+|worksheet|[Worksheet](worksheet.md)|The worksheet containing the current table. Read-only.|
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
+|[clearFilters()](#clearfilters)|void|Clears all the filters currently applied on the table.|
+|[convertToRange()](#converttorange)|[Range](range.md)|Converts the table into a normal range of cells. All data is preserved.|
 |[delete()](#delete)|void|Deletes the table.|
 |[getDataBodyRange()](#getdatabodyrange)|[Range](range.md)|Gets the range object associated with the data body of the table.|
 |[getHeaderRowRange()](#getheaderrowrange)|[Range](range.md)|Gets the range object associated with header row of the table.|
 |[getRange()](#getrange)|[Range](range.md)|Gets the range object associated with the entire table.|
-|[getTotalRowRange()](#gettotalrowrange)|[Range](range.md)|Gets the range object associated with the totals row of the table.|
-|[load(param: object)](#loadparam-object)|void|Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.|
+|[getTotalRowRange()](#gettotalrowrange)|[Range](range.md)|Gets the range object associated with totals row of the table.|
+|[load(param: object)](#loadparam-object)|void|Fills the proxy object created in JavaScript layer with property and object values specified in the parameter.|
+|[reapplyFilters()](#reapplyfilters)|void|Reapplies all the filters currently on the table.|
 
 ## Method Details
+
+
+### clearFilters()
+Clears all the filters currently applied on the table.
+
+#### Syntax
+```js
+tableObject.clearFilters();
+```
+
+#### Parameters
+None
+
+#### Returns
+void
+
+### convertToRange()
+Converts the table into a normal range of cells. All data is preserved.
+
+#### Syntax
+```js
+tableObject.convertToRange();
+```
+
+#### Parameters
+None
+
+#### Returns
+[Range](range.md)
+
+#### Examples
+```js
+Excel.run(function (ctx) { 
+	var tableName = 'Table1';
+	var table = ctx.workbook.tables.getItem(tableName);
+	table.convertToRange();
+	return ctx.sync(); 
+}).catch(function(error) {
+		console.log("Error: " + error);
+		if (error instanceof OfficeExtension.Error) {
+			console.log("Debug info: " + JSON.stringify(error.debugInfo));
+		}
+});
+```
 
 ### delete()
 Deletes the table.
@@ -63,6 +112,7 @@ Excel.run(function (ctx) {
 		}
 });
 ```
+
 
 ### getDataBodyRange()
 Gets the range object associated with the data body of the table.
@@ -95,8 +145,9 @@ Excel.run(function (ctx) {
 		}
 });
 ```
+
 ### getHeaderRowRange()
-Gets the range object associated with the header row of the table.
+Gets the range object associated with header row of the table.
 
 #### Syntax
 ```js
@@ -126,6 +177,7 @@ Excel.run(function (ctx) {
 		}
 });
 ```
+
 
 ### getRange()
 Gets the range object associated with the entire table.
@@ -158,8 +210,9 @@ Excel.run(function (ctx) {
 });
 ```
 
+
 ### getTotalRowRange()
-Gets the range object associated with the totals row of the table.
+Gets the range object associated with totals row of the table.
 
 #### Syntax
 ```js
@@ -190,8 +243,9 @@ Excel.run(function (ctx) {
 });
 ```
 
+
 ### load(param: object)
-Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.
+Fills the proxy object created in JavaScript layer with property and object values specified in the parameter.
 
 #### Syntax
 ```js
@@ -201,7 +255,21 @@ object.load(param);
 #### Parameters
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|param|object|Optional. Accepts parameter and relationship names as a delimited string or an array. Or, provide [loadOption](loadoption.md) object.|
+|param|object|Optional. Accepts parameter and relationship names as delimited string or an array. Or, provide [loadOption](loadoption.md) object.|
+
+#### Returns
+void
+
+### reapplyFilters()
+Reapplies all the filters currently on the table.
+
+#### Syntax
+```js
+tableObject.reapplyFilters();
+```
+
+#### Parameters
+None
 
 #### Returns
 void

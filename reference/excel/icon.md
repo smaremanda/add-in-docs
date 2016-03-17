@@ -1,17 +1,21 @@
-# ChartPointFormat Object (JavaScript API for Excel)
+# Icon Object (JavaScript API for Excel)
 
 _Applies to: Excel 2016, Office 2016_
 
-Represents formatting object for chart points.
+Represents a cell icon.
 
 ## Properties
 
-None
+| Property	   | Type	|Description
+|:---------------|:--------|:----------|
+|index|int|Represents the index of the icon in the given set.|
+|set|string|Represents the set that the icon is part of. Possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.|
+
+_See property access [examples.](#property-access-examples)_
 
 ## Relationships
-| Relationship | Type	|Description|
-|:---------------|:--------|:----------|
-|fill|[ChartFill](chartfill.md)|Represents the fill format of a chart, which includes background formating information. Read-only.|
+None
+
 
 ## Methods
 

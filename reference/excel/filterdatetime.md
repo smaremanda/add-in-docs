@@ -1,17 +1,21 @@
-# ChartPointFormat Object (JavaScript API for Excel)
+# FilterDatetime Object (JavaScript API for Excel)
 
 _Applies to: Excel 2016, Office 2016_
 
-Represents formatting object for chart points.
+Represents how to filter a date when filtering on values.
 
 ## Properties
 
-None
+| Property	   | Type	|Description
+|:---------------|:--------|:----------|
+|date|string|The date in ISO8601 format used to filter data.|
+|specificity|string|How specific the date should be used to keep data. For example, if the date is 2005-04-02 and the specifity is set to "month", the filter operation will keep all rows with a date in the month of april 2009. Possible values are: Year, Monday, Day, Hour, Minute, Second.|
+
+_See property access [examples.](#property-access-examples)_
 
 ## Relationships
-| Relationship | Type	|Description|
-|:---------------|:--------|:----------|
-|fill|[ChartFill](chartfill.md)|Represents the fill format of a chart, which includes background formating information. Read-only.|
+None
+
 
 ## Methods
 

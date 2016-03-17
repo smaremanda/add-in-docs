@@ -1,17 +1,20 @@
-# ChartPointFormat Object (JavaScript API for Excel)
+# RangeReference Object (JavaScript API for Excel)
 
 _Applies to: Excel 2016, Office 2016_
 
-Represents formatting object for chart points.
+Represents a string reference of the form SheetName!A1:B5, or a global or local named range
 
 ## Properties
 
-None
+| Property	   | Type	|Description
+|:---------------|:--------|:----------|
+|address|string|The worksheet containing the current range.|
+
+_See property access [examples.](#property-access-examples)_
 
 ## Relationships
-| Relationship | Type	|Description|
-|:---------------|:--------|:----------|
-|fill|[ChartFill](chartfill.md)|Represents the fill format of a chart, which includes background formating information. Read-only.|
+None
+
 
 ## Methods
 

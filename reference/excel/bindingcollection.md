@@ -1,6 +1,6 @@
-# BindingCollection object (JavaScript API for Excel)
+# BindingCollection Object (JavaScript API for Excel)
 
-_Applies to: Excel 2016, Excel Online, Office 2016_
+_Applies to: Excel 2016, Office 2016_
 
 Represents the collection of all the binding objects that are part of the workbook.
 
@@ -23,9 +23,10 @@ None
 |:---------------|:--------|:----------|
 |[getItem(id: string)](#getitemid-string)|[Binding](binding.md)|Gets a binding object by ID.|
 |[getItemAt(index: number)](#getitematindex-number)|[Binding](binding.md)|Gets a binding object based on its position in the items array.|
-|[load(param: object)](#loadparam-object)|void|Fills the proxy object created in the JavaScript layer, with property and object values specified in the parameter.|
+|[load(param: object)](#loadparam-object)|void|Fills the proxy object created in JavaScript layer with property and object values specified in the parameter.|
 
 ## Method Details
+
 
 ### getItem(id: string)
 Gets a binding object by ID.
@@ -38,14 +39,14 @@ bindingCollectionObject.getItem(id);
 #### Parameters
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|string|ID of the binding object to be retrieved.|
+|id|string|Id of the binding object to be retrieved.|
 
 #### Returns
 [Binding](binding.md)
 
 #### Examples
 
-Create a table binding to monitor data changes in the table. When data is changed, the background color of the table will change to orange.
+Create a table binding to monitor data changes in the table. When data is changed, the background color of the table will be changed to orange.
 
 ```js
 function addEventHandler() {
@@ -65,16 +66,16 @@ Office.context.document.bindings.addFromNamedItemAsync("Table1", Office.Coercion
 		console.log("Action failed with error: " + asyncResult.error.message);
 	}
 	else {
-		// If successful, add the event handler to the table binding.
+		// If succeeded, then add event handler to the table binding.
 		Office.select("bindings#myBinding").addHandlerAsync(Office.EventType.BindingDataChanged, onBindingDataChanged);
 	}
 });
 }
 	
-// When data in the table is changed, this event is triggered.
+// when data in the table is changed, this event will be triggered.
 function onBindingDataChanged(eventArgs) {
 Excel.run(function (ctx) { 
-	// Highlight the table in orange to indicate data changed.
+	// highlight the table in orange to indicate data has been changed.
 	ctx.workbook.bindings.getItem(eventArgs.binding.id).getTable().getDataBodyRange().format.fill.color = "Orange";
 	return ctx.sync().then(function() {
 			console.log("The value in this table got changed!");
@@ -105,6 +106,7 @@ Excel.run(function (ctx) {
 		}
 });
 ```
+
 
 ### getItemAt(index: number)
 Gets a binding object based on its position in the items array.
@@ -139,8 +141,9 @@ Excel.run(function (ctx) {
 });
 ```
 
+
 ### load(param: object)
-Fills the proxy object created in the JavaScript, layer with property and object values specified in the parameter.
+Fills the proxy object created in JavaScript layer with property and object values specified in the parameter.
 
 #### Syntax
 ```js
@@ -150,11 +153,10 @@ object.load(param);
 #### Parameters
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|param|object|Optional. Accepts parameter and relationship names as a delimited string or an array. Or, accepts a [loadOption](loadoption.md) object.|
+|param|object|Optional. Accepts parameter and relationship names as delimited string or an array. Or, provide [loadOption](loadoption.md) object.|
 
 #### Returns
 void
-
 ### Property access examples
 
 ```js
@@ -175,7 +177,7 @@ Excel.run(function (ctx) {
 		}
 });
 ```
-Get the number of bindings.
+Get the number of bindings
 
 ```js
 Excel.run(function (ctx) { 

@@ -1,17 +1,21 @@
-# ChartPointFormat Object (JavaScript API for Excel)
+# FormatProtection Object (JavaScript API for Excel)
 
 _Applies to: Excel 2016, Office 2016_
 
-Represents formatting object for chart points.
+Represents the format protection of a range object.
 
 ## Properties
 
-None
+| Property	   | Type	|Description
+|:---------------|:--------|:----------|
+|formulaHidden|bool|Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.|
+|locked|bool|Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.|
+
+_See property access [examples.](#property-access-examples)_
 
 ## Relationships
-| Relationship | Type	|Description|
-|:---------------|:--------|:----------|
-|fill|[ChartFill](chartfill.md)|Represents the fill format of a chart, which includes background formating information. Read-only.|
+None
+
 
 ## Methods
 
