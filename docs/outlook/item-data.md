@@ -1,12 +1,5 @@
 
 # Get and set Outlook item data in read or compose forms
-Learn about the ways to get or set data on an appointment or message from an Outlook add-in, taking into account whether the user is viewing or composing that item. You can use item-level properties in the JavaScript API for Office, Exchange Server callback tokens, or Exchange Web Services.
-
-
-
-
-## Properties available in read and compose forms
-
 
 Starting in version 1.1 of the Office Add-ins manifests schema, Outlook can activate add-ins when the user is viewing or composing an item. Depending on whether an add-in is activated in a read or compose form, the properties that are available to the add-in on the item differ as well. For example, the [dateTimeCreated](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html) and [dateTimeModified](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html) properties are defined only for an item that has already been sent (item is subsequently viewed in a read form) but not when the item is being created (in a compose form). Another example is the [bcc](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html) property which is only meaningful when a message is being authored (in a compose form), and is not accessible to the user in a read form.
 
@@ -48,7 +41,7 @@ Table 1 shows the item-level properties in the JavaScript API for Office that ar
 If your Outlook add-in is activated in read forms, you can get an Exchange callback token. This token can be usedin server-side code to access the full item via Exchange Web Services (EWS). By specifying the  **ReadItem** permission in the add-in manifest, you can use the [mailbox.getCallbackTokenAsync](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.html) method to get an Exchange callback token, the [mailbox.ewsUrl](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.html) property to get the URL of the EWS endpoint for the user's mailbox, and [item.itemId](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html) to get the EWS ID for the selected item. You can then pass the callback token, EWS endpoint URL, and the EWS item ID to server-side code to access the [GetItem](http://msdn.microsoft.com/en-us/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) operation, to get more properties of the item.
 
 
-## Accessing Exchange Web Services from a read or compose add-in
+## Accessing EWS from a read or compose add-in
 
 
 You can also use the [mailbox.makeEwsRequestAsync](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.html) method to access the Exchange Web Services (EWS) operations [GetItem](http://msdn.microsoft.com/en-us/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) and [UpdateItem](http://msdn.microsoft.com/en-us/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) directly from the add-in. You can use these operations to get and set many properties of a specified item. This method is available to Outlook add-ins regardless of whether the add-in has been activated in a read or compose form, as long as you specify the **ReadWriteMailbox** permission in the add-in manifest. For more information in using **makeEwsRequestAsync** to access EWS operations, see [Call web services from an Outlook add-in](../outlook/web-services.md).
