@@ -7,7 +7,6 @@ This article describes how to update your JavaScript files (Office.js and app-sp
 
 ## Using the most up-to-date project files
 
-
 If you use Visual Studio to develop your add-in, to use the [newest API members](http://msdn.microsoft.com/en-us/library/802cf4ae-7c18-4e7d-b4d6-ecaa84c569bc%28Office.15%29.aspx) of the JavaScript API for Office and the [v1.1 features of the add-in manifest](../../docs/overview/add-in-manifests.md) (which is validated against offappmanifest-1.1.xsd), you need to download and install the [Visual Studio 2015 and the latest Office Developer Tools](https://www.visualstudio.com/features/office-tools-vs).
 
 If you use a text editor or IDE other than Visual Studio to develop your add-in, you need to update the references to the CDN for Office.js and the version of schema referenced in your add-in's manifest.
@@ -56,7 +55,7 @@ Note that the update process is applied on a  _per-project basis_ - you'll need 
 ```
 
 
->The  `/1/` in front of `office.js` in the CDN URL specifies to use the latest incremental release within version 1 of Office.js.
+>**Note**  The  `/1/` in front of `office.js` in the CDN URL specifies to use the latest incremental release within version 1 of Office.js.
     
 
 ### To update the manifest file in your project to use schema version 1.1
@@ -69,7 +68,7 @@ Note that the update process is applied on a  _per-project basis_ - you'll need 
 ```
 
 
->After updating the version of the add-in manifest schema to 1.1, you will need to remove the  **Capabilities** and **Capability** elements, and replace them with either the [Hosts and Host elements](http://msdn.microsoft.com/library/cff9fbdf-a530-4f6e-91ca-81bcacd90dcd%28Office.15%29.aspx) or the [Requirements and Requirement elements](../../docs/overview/specify-office-hosts-and-api-requirements.md).
+>**Note**  After updating the version of the add-in manifest schema to 1.1, you will need to remove the  **Capabilities** and **Capability** elements, and replace them with either the [Hosts and Host elements](http://msdn.microsoft.com/library/cff9fbdf-a530-4f6e-91ca-81bcacd90dcd%28Office.15%29.aspx) or the [Requirements and Requirement elements](../../docs/overview/specify-office-hosts-and-api-requirements.md).
 
 ## Updating an Office Add-in project created with a text editor or other IDE to use the newest JavaScript API for Office library and version 1.1 add-in manifest schema
 
@@ -78,8 +77,9 @@ For projects created before the release of v1.1 of the JavaScript API for Office
 
 The update process is applied on a  _per-project basis_ - you'll need to repeat the updating process for each add-in project in which you want to use v1.1 of Office.js and add-in manifest schema.
 
+You don't need local copies of the JavaScript API for Office files (Office.js and app-specific .js files) to develop anOffice Add-in (referencing the CDN for Office.js downloads the necessary files at runtime), but if you want a local copy of the library files you can use the [NuGet Command-Line Utility](http://docs.nuget.org/consume/installing-nuget) and the `Install-Package Microsoft.Office.js` command to download them.
 
- > You don't need local copies of the JavaScript API for Office files (Office.js and app-specific .js files) to develop anOffice Add-in (referencing the CDN for Office.js downloads the necessary files at runtime), but if you want a local copy of the library files you can use the [NuGet Command-Line Utility](http://docs.nuget.org/consume/installing-nuget) and the `Install-Package Microsoft.Office.js` command to download them.To get a copy of the XSD (XML Schema Definition) for the v1.1 add-in manifest, see the listing in [Schema map (add-in manifest schema v1.1)](http://msdn.microsoft.com/library/d5f72bff-3446-c64f-02ca-ab10b5648789%28Office.15%29.aspx).
+ > **Note** To get a copy of the XSD (XML Schema Definition) for the v1.1 add-in manifest, see the listing in [Schema map (add-in manifest schema v1.1)](http://msdn.microsoft.com/library/d5f72bff-3446-c64f-02ca-ab10b5648789%28Office.15%29.aspx).
 
 
 ### To update the JavaScript API for Office library files in your project to use the newest release
@@ -106,7 +106,7 @@ The update process is applied on a  _per-project basis_ - you'll need to repeat 
 <OfficeApp xsi:type="ContentApp" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" >
 ```
 
->After you update the version of the add-in manifest schema to 1.1, you will need to remove the  **Capabilities** and **Capability** elements, and replace them with either the [Hosts and Host elements](http://msdn.microsoft.com/library/cff9fbdf-a530-4f6e-91ca-81bcacd90dcd%28Office.15%29.aspx) or the [Requirements and Requirement elements](../../docs/overview/specify-office-hosts-and-api-requirements.md).
+>**Note** After you update the version of the add-in manifest schema to 1.1, you will need to remove the  **Capabilities** and **Capability** elements, and replace them with either the [Hosts and Host elements](http://msdn.microsoft.com/library/cff9fbdf-a530-4f6e-91ca-81bcacd90dcd%28Office.15%29.aspx) or the [Requirements and Requirement elements](../../docs/overview/specify-office-hosts-and-api-requirements.md).
     
 
 ## Additional resources
