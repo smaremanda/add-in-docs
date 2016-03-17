@@ -1,7 +1,5 @@
 # TableCollection object (JavaScript API for Excel)
 
-_Applies to: Excel 2016, Excel Online, Excel for iOS, Office 2016_
-
 Represents a collection of all the tables that are part of the workbook.
 
 ## Properties
