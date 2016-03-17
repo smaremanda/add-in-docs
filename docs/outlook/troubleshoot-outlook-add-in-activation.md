@@ -31,9 +31,9 @@ You can verify the version of Exchange 2013 by using one of the following approa
     
         - If there is only one Exchange account in the user's profile:
         
-              ```vba
+            ```vba
                   ?Session.ExchangeMailboxServerVersion
-                ```
+            ```
         
         - If there are multiple Exchange accounts in the same user profile:
         
