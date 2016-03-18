@@ -2,7 +2,7 @@
 # Create a dictionary task pane add-in
 
 
-This article shows you an example of a task pane add-in and accompanying web service that provides dictionary definitions or thesaurus synonyms for the user's current selection in a Word 2013 or Excel 2013 document. 
+This article shows you an example of a task pane add-in and accompanying web service that provides dictionary definitions or thesaurus synonyms for the user's current selection in a Word 2013 document. 
 
 A dictionary Office Add-in is based on the standard task pane add-in with additional features to support querying and displaying definitions from a dictionary XML web service in additional places in the Office application's UI. 
 
