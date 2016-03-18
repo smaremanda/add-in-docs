@@ -7,7 +7,7 @@ Gets the status of the asynchronous operation.
 |**Hosts:**|Access, Excel, Outlook, PowerPoint, Project, Word|
 |**Last changed in**|1.1|
 
-```
+```js
 var myStatus = asyncResult.status;
 ```
 
@@ -18,9 +18,6 @@ An  **[AsyncResultStatus](../../reference/shared/asyncresultstatus-enumeration.m
 
 
 ## Example
-
-
-
 
 ```js
 function getData() {
@@ -39,9 +36,6 @@ function write(message){
 }
 
 ```
-
-
-
 
 ## Support details
 
@@ -68,11 +62,6 @@ For more information about Office host application and server requirements, see 
 |**Namespace**|Office|
 
 ## Support history
-
-
-
-****
-
 
 |**Version**|**Changes**|
 |:-----|:-----|
