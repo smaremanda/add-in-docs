@@ -1,8 +1,5 @@
 
 # Host an Office Add-in on Microsoft Azure
-Use Visual Studio 2015 and the Microsoft Office Developer Tools to publish to and then host an Office Add-in on Microsoft Azure. 
-
-
 
 The simplest Office Add-in is made up of an XML manifest file and an HTML page. The XML manifest file describes the add-in's characteristics, such as its name, what Office client applications it can run in, and the URL for the add-in's HTML page. The HTML page is contained in an Office Add-in website and users see it and interact with it when they install and run your add-in. For more information about Office Add-ins in general, see [Office Add-ins platform overview](../../docs/overview/office-add-ins.md).
 

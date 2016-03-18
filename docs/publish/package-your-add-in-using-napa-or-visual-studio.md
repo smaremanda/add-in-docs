@@ -1,7 +1,5 @@
 
 # Package your add-in using Napa or Visual Studio to prepare for publishing
-Package your Office Add-in to prepare it for publishing. 
-
 
 Your Office Add-in package contains an XML file that you'll use to publish the add-in. You'll have to publish the web application files of your project separately.
 
