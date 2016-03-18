@@ -1,7 +1,7 @@
 
 # Create an Office add-in using any editor
 
-An Office add-in is a web app that you host within an Office application. In this topic, the Yeoman generator provides project scaffolding and build management, while the  `manifest.xml` file tells the Office application where your add-in is located and how you want it to appear. The Office application takes care of hosting it within Office.
+An Office add-in is a web app that you host within an Office application. This article describes how to use the Yeoman generator to provide project scaffolding and build management. The  `manifest.xml` file tells the Office application where your add-in is located and how you want it to appear. The Office application takes care of hosting it within Office.
 
  >**Note**  The instructions include steps that use the Windows command prompt but are equally applicable for other shell environments. 
 
@@ -86,7 +86,7 @@ The generator will prompt you for the following:
 This creates the structure and basic files for your add-in.
 
 
-## Hosting your Office add-in
+## Hosting your Office Add-in
 
 Office add-ins must be served via HTTPS; the Office application will not load a web app as an add-in if it is HTTP. To develop, debug and host the add-in locally, you need a way to create and serve a web app locally using HTTPS. You could create a self-hosted HTTPS site through gulp (described in the following section) or you could use Azure. 
 
@@ -140,24 +140,24 @@ For our example, we'll create a Hello World add-in. The UI of the add-in is prov
 
 1. In your project folder, go to  _[project folder]/app/home_ (in our example, it's myHelloWorldaddin/app/home), open home.html, and replace the existing code with the following code.
     
-   ```HTML
-     <!DOCTYPE html>  
-   <html> 
-     <head> 
-        <meta charset="UTF-8" /> 
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/> 
-        <link rel="stylesheet" type="text/css" href="program.css" />
-      </head> 
+      ```HTML
+        <!DOCTYPE html>  
+      <html> 
+        <head> 
+           <meta charset="UTF-8" /> 
+           <meta http-equiv="X-UA-Compatible" content="IE=Edge"/> 
+           <link rel="stylesheet" type="text/css" href="program.css" />
+         </head> 
    
-     <body> 
-        <p>Hello World!</p> 
-     </body> 
-   
-    </html> 
-   ```
+        <body> 
+           <p>Hello World!</p> 
+        </body> 
+      
+       </html> 
+      ```
 
 
-       This file provides the minimum set of HTML tags to display the UI of an add-in.
+    This file provides the minimum set of HTML tags to display the UI of an add-in.
     
 2. In the same folder, open the home.css file and add the following CSS code.
     
