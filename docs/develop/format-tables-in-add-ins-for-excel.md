@@ -8,14 +8,16 @@ This article explains the different features of the formatting API and outlines 
 
 - Or, if the workbook already contains bound tables (or your add-in uses one of the "addFrom" methods of the [Bindings](http://msdn.microsoft.com/en-us/library/09979e31-3bfb-45be-adda-0f7cc2db1fe1%28Office.15%29.aspx) object to create bound tables when it is initialized), your add-in can call the **Binding.setDataAsync** method on those bound tables to set formatting.
     
->**Important:** To use these new and updated methods to format tables in Excel add-ins, your add-in project must [use or be updated to use Office.js v1.1 or later](../../docs/develop/update-your-javascript-api-for-office-and-manifest-schema-version.md).
+>**Important:** 
+---
+To use these new and updated methods to format tables in Excel add-ins, your add-in project must [use or be updated to use Office.js v1.1 or later](../../docs/develop/update-your-javascript-api-for-office-and-manifest-schema-version.md).
 
 ## Specifying formatting
 
 To specify the formatting you want to set, you create a JavaScript object literal that contains one or more key-values pairs. You can combine a series of formatting settings in a list within the JavaScript object. For example: 
 
 
-```
+```js
 var myFormat = {fontStyle:"bold", width:"autoFit", borderColor:"purple"};
 ```
 
@@ -39,7 +41,7 @@ For table bindings, you can use the following optional parameters to specify for
 Use the  _tableOptions_ optional parameter to specify default table styles and turn on and off certain table features, such as: **Header Row**,  **Total Row**, and  **Banded Rows**. The value you pass as the  _tableOptions_ parameter is a JavaScript object that contains a list of key-value pairs. For example,
 
 
-```
+```js
 tableOptions: {bandedRows: true, filterButton: false, style:"TableStyleMedium3"};
 ```
 
@@ -49,7 +51,7 @@ tableOptions: {bandedRows: true, filterButton: false, style:"TableStyleMedium3"}
 Use the  _cellFormat_ optional parameter to change cell formatting values, such as width, height, font, background, alignment, and so on. The value you pass as the _cellFormat_ parameter is an array that contains a list of JavaScript objects that specify which cells to target and the formats to apply to them. For example:
 
 
-```
+```js
 cellFormat: 
     [{cells: {row: 1}, format: {fontColor: "yellow"}}, 
         {cells: Office.Table.Headers, format: {fontColor: "yellow"}}, 
@@ -123,7 +125,9 @@ Office.select("bindings#myBinding").setDataAsync(tableData,
     function (asyncResult) {});
 ```
 
- >**Note:** The call to `Office.select("bindings#myBinding")` assumes that a binding named `myBinding` already exists in the worksheet.
+ >**Note:** 
+ ---
+ The call to `Office.select("bindings#myBinding")` assumes that a binding named `myBinding` already exists in the worksheet.
 
 
 ## Updating and clearing formatting
@@ -149,7 +153,7 @@ The [TableBinding.setTableOptionsAsync](http://msdn.microsoft.com/en-us/library/
 
 
 
-```
+```js
 var tableOptions = {bandedRows: true, filterButton: false, style: "TableStyleMedium3"}; 
 
 Office.select("bindings#myBinding").setTableOptionsAsync(tableOptions, function(asyncResult){});
@@ -161,7 +165,7 @@ Office.select("bindings#myBinding").setTableOptionsAsync(tableOptions, function(
 The [TableBinding.clearFormatsAsync](http://msdn.microsoft.com/en-us/library/cc56e9c0-b33c-4d9b-b676-a7e50f757c10%28Office.15%29.aspx) method is for clearing all formatting in the table. It takes the _asyncContext_ optional parameter and an optional callback function:
 
 
-```
+```js
 Office.select("bindings#myBinding").clearFormatsAsync();
 ```
 
@@ -174,7 +178,9 @@ The following tables list the supported key-value pairs you can pass to the  _ce
 For  `format:` values, available settings correspond to a subset of those in the **Format Cells** dialog box (right-click > **Format Cells** or **Format** > **Format Cells** on the **Home** tab of the ribbon). For `tableOptions:` values, settings correspond to those in the **Table Style Options** and **Table Styles** groups on the **Table Tools** |**Design** tab of the ribbon.
 
 
- >**Important**  The methods of the formatting API support only the options and values summarized below. If you specify formatting options or values other than these, the handling behavior is undefined. These undefined handling behaviors aren't necessarily consistent across supported platforms; you shouldn't develop your add-ins based on any of the side effects of these undefined behaviors for any specific platform. However, the undefined handling behaviors shouldn't harm the state and UI of your add-in or the documents they interact with.
+ >**Important**  
+ ---
+ The methods of the formatting API support only the options and values summarized below. If you specify formatting options or values other than these, the handling behavior is undefined. These undefined handling behaviors aren't necessarily consistent across supported platforms; you shouldn't develop your add-ins based on any of the side effects of these undefined behaviors for any specific platform. However, the undefined handling behaviors shouldn't harm the state and UI of your add-in or the documents they interact with.
 
 
 **Alignment**
@@ -182,9 +188,8 @@ For  `format:` values, available settings correspond to a subset of those in the
 
 |**Key**|**Values**|**Notes**|
 |:-----|:-----|:-----|
-| `alignHorizontal:`|"general" | "left" | "center" | "right" | "fill" | "justify" | "center across selection" | "distributed"|When combined with an indent value, only the following combinations are supported:
-<ul><li><p><span class="code">alignHorizontal: "left"</span> and <span class="code">indentLeft: <value></span></p></li><li><p><span class="code">alignHorizontal: "right"</span> and <span class="code">indentRight: <value></span></p></li><li><p><span class="code">alignHorizontal: "distributed"</span> and <span class="code">indentDistributed: <value></span></p></li></ul>|
-| `alignVertical:`|"top" | "center" | "bottom" | "justify" | "distributed"||
+| `alignHorizontal:`|"general" \| "left" \| "center" \| "right" \| "fill" \| "justify" \| "center across selection" \| "distributed"|When combined with an indent value, only the following combinations are supported:<br/><br/><ul><li><code>alignHorizontal: "left"</code> and <code>indentLeft: \<value\></code></li></ul><ul><li><code>alignHorizontal: "right"</code> and <code>indentRight: \<value\></code></li></ul><ul><li><code>alignHorizontal: "distributed"</code> and <code>indentDistributed: \<value\></code></li></ul>|
+| `alignVertical:`|"top" \| "center" \| "bottom" \| "justify" \| "distributed"||
 
 
 
@@ -193,7 +198,7 @@ For  `format:` values, available settings correspond to a subset of those in the
 
 |**Key**|**Values**|**Notes**|
 |:-----|:-----|:-----|
-| `backgroundColor:`|"none" | <All predefined color names> | #RRGGBB|Predefined color names:"black", "blue", "gray", "green", "orange", "pink", "purple", "red", "teal", "turquoise", "violet", "white", "yellow"|
+| `backgroundColor:`|"none" \| \<All predefined color names\> \| #RRGGBB|Predefined color names:<br/><br/>"black", "blue", "gray", "green", "orange", "pink", "purple", "red", "teal", "turquoise", "violet", "white", "yellow"|
 
 
 
@@ -202,37 +207,20 @@ For  `format:` values, available settings correspond to a subset of those in the
 
 |**Key**|**Values**|**Notes**|
 |:-----|:-----|:-----|
-| `borderStyle:`|"none" | <All predefined border style names>|Predefined border style names:"dash dot", "dash dot dot", "dashed", "dotted", "double", "hair", "medium dash dot", "medium dash dot dot", "medium dashed", "medium", "slant dash dot", "thick", "thin"Applies to all borders in the specified range. (Equivalent to specifying border styles using both the  **Outline** and **Inside** presets on the **Border** tab of the **Format Cells** dialog box.) **Note:** Excel 2013 supports rendering all 13 predefined border styles. However, Excel Online doesn't support every border style. The following table describes the rendering used for each border style when you open the spreadsheet in Excel Online.
-
-|**Excel 2013**|**Excel Online**|
-|:-----|:-----|
-|"dash dot"|dashed (1px)|
-|"dash dot dot"|dotted (1px)|
-|"dashed"|dotted (1px)|
-|"dotted"|dashed (1px)|
-|"double"|double (3px)|
-|"hair"|solid (1px)|
-|"medium dash dot"|dashed (2px)|
-|"medium dash dot dot"|dotted (2px)|
-|"medium dashed"|dashed (2px)|
-|"medium"|solid (2px)|
-|"slant dash dot"|dashed (2px)|
-|"thick"|solid (3px)|
-|"thin"|solid (1px)|
-|
-| `borderColor:`|"automatic" | <All predefined color names> | #RRGGBB|Applies to all borders in the specified range.|
-| `borderTopStyle:`|"none" | <All predefined border style names>|Applies to all borders in the specified range.|
-| `borderTopColor:`|"automatic" | <All predefined color names> | #RRGGBB|Applies to all borders in the specified range.|
-| `borderBottomStyle:`|"none" | <All predefined border style names>|Applies to all borders in the specified range.|
-| `borderBottomColor:`|"automatic" | <All predefined color names> | #RRGGBB|Applies to all borders in the specified range.|
-| `borderLeftStyle:`|"none" | <All predefined border style names>|Applies to all borders in the specified range.|
-| `bordeerLeftColor:`|"automatic" | <All predefined color names> | #RRGGBB|Applies to all borders in the specified range.|
-| `borderRightStyle:`|"none" | <All predefined border style names>|Applies to all borders in the specified range.|
-| `borderRightColor:`|"automatic" | <All predefined color names> | #RRGGBB|Applies to all borders in the specified range.|
-| `borderOutlineStyle:`|"none" | <All predefined border style names>|Applies to all borders in the specified range.|
-| `borderOutlineColor:`|"automatic" | <All predefined color names> | #RRGGBB|Applies to all borders in the specified range.|
-| `borderInlineStyle:`|"none" | <All predefined border style names>|Applies to only to inside borders in the specified range. (Equivalent to specifying border styles using only the  **Inside** preset on the **Border** tab of the **Format Cells** dialog box.)|
-| `borderInlineColor:`|"automatic" | <All predefined color names> | #RRGGBB|Applies to only to inside borders in the specified range |
+| `borderStyle:`|"none" \| \<All predefined border style names\>|Predefined border style names:"dash dot", "dash dot dot", "dashed", "dotted", "double", "hair", "medium dash dot", "medium dash dot dot", "medium dashed", "medium", "slant dash dot", "thick", "thin"<br/><br/>Applies to all borders in the specified range. (Equivalent to specifying border styles using both the  **Outline** and **Inside** presets on the **Border** tab of the **Format Cells** dialog box.)<br/><br/> **Note:** Excel 2013 supports rendering all 13 predefined border styles. However, Excel Online doesn't support every border style. The following table describes the rendering used for each border style when you open the spreadsheet in Excel Online.<br/><br/><table><tr><th>Excel 2013</th><th>Excel Online</th></tr><tr><td>"dash dot"</td><td>dashed (1px)</td></tr><tr><td>"dash dot dot"</td><td>dotted (1px)</td></tr><tr><td>"dashed"</td><td>dotted (1px)</td></tr><tr><td>"dotted"</td><td>dashed (1px)</td></tr><tr><td>"double"</td><td>double (3px)</td></tr><tr><td>"hair"</td><td>solid (1px)</td></tr><tr><td>"medium dash dot"</td><td>dashed (2px)</td></tr><tr><td>"medium dash dot dot"</td><td>dotted (2px)</td></tr><tr><td>"medium dashed"</td><td>dashed (2px)</td></tr><tr><td>"medium"</td><td>solid (2px)</td></tr><tr><td>"slant dash dot"</td><td>dashed (2px)</td></tr><tr><td>"thick"</td><td>solid (3px)</td></tr><tr><td>"thin"</td><td>solid (1px)</td></tr></table>|
+| `borderColor:`|"automatic" \| \<All predefined color names\> \| #RRGGBB|Applies to all borders in the specified range.|
+| `borderTopStyle:`|"none" \| \<All predefined border style names\>|Applies to all borders in the specified range.|
+| `borderTopColor:`|"automatic" \| \<All predefined color names\> \| #RRGGBB|Applies to all borders in the specified range.|
+| `borderBottomStyle:`|"none" \| \<All predefined border style names\>|Applies to all borders in the specified range.|
+| `borderBottomColor:`|"automatic" \| \<All predefined color names\> \| #RRGGBB|Applies to all borders in the specified range.|
+| `borderLeftStyle:`|"none" \| \<All predefined border style names\>|Applies to all borders in the specified range.|
+| `bordeerLeftColor:`|"automatic" \| \<All predefined color names\> \| #RRGGBB|Applies to all borders in the specified range.|
+| `borderRightStyle:`|"none" \| \<All predefined border style names\>|Applies to all borders in the specified range.|
+| `borderRightColor:`|"automatic" \| \<All predefined color names\> \| #RRGGBB|Applies to all borders in the specified range.|
+| `borderOutlineStyle:`|"none" \| \<All predefined border style names\>|Applies to all borders in the specified range.|
+| `borderOutlineColor:`|"automatic" \| \<All predefined color names\> \| #RRGGBB|Applies to all borders in the specified range.|
+| `borderInlineStyle:`|"none" \| \<All predefined border style names\>|Applies to only to inside borders in the specified range. (Equivalent to specifying border styles using only the  **Inside** preset on the **Border** tab of the **Format Cells** dialog box.)|
+| `borderInlineColor:`|"automatic" \| \<All predefined color names\> \| #RRGGBB|Applies to only to inside borders in the specified range |
 
 
 
@@ -241,8 +229,8 @@ For  `format:` values, available settings correspond to a subset of those in the
 
 |**Key**|**Values**|
 |:-----|:-----|
-| `width:`|"auto fit" |  **Number**|
-| `height:`|"auto fit" |  **Number**|
+| `width:`|"auto fit" \|  **Number**|
+| `height:`|"auto fit" \|  **Number**|
 | `wrapping:`|**Boolean**|
 
 
@@ -252,15 +240,12 @@ For  `format:` values, available settings correspond to a subset of those in the
 
 |**Key**|**Values**|**Notes**|
 |:-----|:-----|:-----|
-| `fontFamily:`|<All available font names>|When you set a font in Excel Online, if the font isn't available in the browser, the API will attempt to fall back to the following fonts in this order: Segoe UI, Thonburi, Arial, Verdana, and Microsoft Sans Serif fonts. If none of these fonts are available, the browser's default font is used.|
-| `fontStyle:`|"regular" | "italic" | "bold" | "bold italic"|
- >**Note**  At the time of this publication, setting  `fontStyle:` to "italic" and then subsequently setting "bold" (or vice versa) behaves as a union of these two settings. That is, if, for example, you first set "italic" and then later set "bold", the result will be "bold italic". To set either italic or bold _only_ on a range that was previously set to bold or italic, you must first set `fontStyle:"regular"` to clear the previous formatting.
-
-|
+| `fontFamily:`|\<All available font names\>|When you set a font in Excel Online, if the font isn't available in the browser, the API will attempt to fall back to the following fonts in this order: Segoe UI, Thonburi, Arial, Verdana, and Microsoft Sans Serif fonts. If none of these fonts are available, the browser's default font is used.|
+| `fontStyle:`|"regular" \| "italic" \| "bold" \| "bold italic"|**Note**: At the time of this publication, setting  `fontStyle:` to "italic" and then subsequently setting "bold" (or vice versa) behaves as a union of these two settings. That is, if, for example, you first set "italic" and then later set "bold", the result will be "bold italic". To set either italic or bold _only_ on a range that was previously set to bold or italic, you must first set `fontStyle:"regular"` to clear the previous formatting.|
 | `fontSize:`|**Number**||
-| `fontUnderlineStyle:`|"none" | "single" | "double" | "single accounting" | "double accounting"||
-| `fontColor:`|"automatic" | <All predefined color names> | #RRGGBB||
-| `fontDirection:`|"context" | "left-to-right" | "right-to-left"|Excel Online doesn't currently support displaying text in the right-to-left direction. However, if your add-in sets  `fontDirection:` to "right-to-left" when it's running in Excel Online, that formatting setting is saved in the workbook file and displays correctly when the workbook is opened in Desktop Excel.|
+| `fontUnderlineStyle:`|"none" \| "single" \| "double" \| "single accounting" \| "double accounting"||
+| `fontColor:`|"automatic" \| \<All predefined color names\> \| #RRGGBB||
+| `fontDirection:`|"context" \| "left-to-right" \| "right-to-left"|Excel Online doesn't currently support displaying text in the right-to-left direction. However, if your add-in sets  `fontDirection:` to "right-to-left" when it's running in Excel Online, that formatting setting is saved in the workbook file and displays correctly when the workbook is opened in Desktop Excel.|
 | `fontStrikethrough:`|**Boolean**||
 | `fontSuperscript:`|**Boolean**||
 | `fontSubScript:`|**Boolean**||
@@ -273,12 +258,9 @@ For  `format:` values, available settings correspond to a subset of those in the
 
 |**Key**|**Values**|**Notes**|
 |:-----|:-----|:-----|
-| `indentLeft:`|**Number**|When combined with an alignment value, only the following combination is supported:
-<ul><li><p><span class="code">alignHorizontal: "left"</span> and <span class="code">indentLeft: <value></span></p></li></ul>|
-| `indentRight:`|**Number**|When combined with an alignment value, only the following combination is supported:
-<ul><li><p><span class="code">alignHorizontal: "right"</span> and <span class="code">indentRight: <value></span></p></li></ul>|
-| `indentDistributed:`|**Number**|When combined with an alignment value, only the following combination is supported:
-<ul><li><p><span class="code">alignHorizontal: "distributed"</span> and <span class="code">indentDistributed: <value></span></p></li></ul>|
+| `indentLeft:`|**Number**|When combined with an alignment value, only the following combination is supported:<br/><br/><ul><li><code>alignHorizontal: "left"</code> and <code>indentLeft: \<value\></code></li></ul>|
+| `indentRight:`|**Number**|When combined with an alignment value, only the following combination is supported:<br/><br/><ul><li><code>alignHorizontal: "right"</code> and <code>indentRight: \<value\></code></li></ul>|
+| `indentDistributed:`|**Number**|When combined with an alignment value, only the following combination is supported:<br/><br/><ul><li><code>alignHorizontal: "distributed"</code> and <code>indentDistributed: \<value\></code></li></ul>|
 
 
 
@@ -287,7 +269,7 @@ For  `format:` values, available settings correspond to a subset of those in the
 
 |**Key**|**Values**|**Notes**|
 |:-----|:-----|:-----|
-| `numberFormat:`|**String**|To specify number formatting, use a custom number format string. For example, to specify two decimal places with a comma as the thousands separator, you'd specify:  `numberFormat:"#,###.00"`These are the same custom format strings you can [create with the Custom format category on the Number tab in the Format Cells dialog box](http://office.microsoft.com/en-us/excel-help/create-or-delete-a-custom-number-format-HA102749035.aspx?CTT=1). **Tip:** You can see what a format string looks like for a standard category in the **Format Cells** dialog box in Excel with the following steps:<br/><ol><li><p>Select a standard format category, for example <span class="ui">Currency</span>, from the <span class="ui">Category</span> list.</p></li><li><p>Set the format's options in the right side of the dialog box.</p></li><li><p>Select the <span class="ui">Custom</span> category to view the format string at the top of the <span class="ui">Type</span> list.</p></li></ol>|
+| `numberFormat:`|**String**|To specify number formatting, use a custom number format string. For example, to specify two decimal places with a comma as the thousands separator, you'd specify: <br/><br/> `numberFormat:"#,###.00"`<br/><br/>These are the same custom format strings you can [create with the Custom format category on the Number tab in the Format Cells dialog box](http://office.microsoft.com/en-us/excel-help/create-or-delete-a-custom-number-format-HA102749035.aspx?CTT=1).<br/><br/> **Tip:** You can see what a format string looks like for a standard category in the **Format Cells** dialog box in Excel with the following steps:<br/><br/><ol><li>Select a standard format category, for example <span class="ui">Currency</span>, from the <b>Category</b> list.</li><li>Set the format's options in the right side of the dialog box.</li><li>Select the <b>Custom</b> category to view the format string at the top of the <b>Type</b> list.</li></ol>|
 
 
 
@@ -296,7 +278,7 @@ For  `format:` values, available settings correspond to a subset of those in the
 
 |**Key**|**Values**|**Notes**|
 |:-----|:-----|:-----|
-| `style:`|"none" | <All predefined table style names>|Predefined table style names:"TableStyleLight1", "TableStyleLight2", "TableStyleLight3", "TableStyleLight4", "TableStyleLight5", "TableStyleLight6", "TableStyleLight7", "TableStyleLight8", "TableStyleLight9", "TableStyleLight10", "TableStyleLight11", "TableStyleLight12", "TableStyleLight13", "TableStyleLight14", "TableStyleLight15", "TableStyleLight16", "TableStyleLight17", "TableStyleLight18", "TableStyleLight19", "TableStyleLight20", "TableStyleLight21", "TableStyleMedium1", "TableStyleMedium2", "TableStyleMedium3", "TableStyleMedium4", "TableStyleMedium5", "TableStyleMedium6", "TableStyleMedium7", "TableStyleMedium8", "TableStyleMedium9", "TableStyleMedium10", "TableStyleMedium11", "TableStyleMedium12", "TableStyleMedium13", "TableStyleMedium14", "TableStyleMedium15", "TableStyleMedium16", "TableStyleMedium17", "TableStyleMedium18", "TableStyleMedium19", "TableStyleMedium20", "TableStyleMedium21", "TableStyleMedium22", "TableStyleMedium23", "TableStyleMedium24", "TableStyleMedium25", "TableStyleMedium26", "TableStyleMedium27", "TableStyleMedium28", "TableStyleDark1", "TableStyleDark2", "TableStyleDark3", "TableStyleDark4", "TableStyleDark5", "TableStyleDark6", "TableStyleDark7", "TableStyleDark8", "TableStyleDark9", "TableStyleDark10", "TableStyleDark11"To see what a table style looks like, insert a table in Excel, on the  **Table Tools** |**Design** tab, choose the **Quick Styles** drop-down, and then select a predefined style. The tooltip for the style will correspond to one of the values in the list above.|
+| `style:`|"none" \| \<All predefined table style names\>|Predefined table style names:<br/><br/>"TableStyleLight1", "TableStyleLight2", "TableStyleLight3", "TableStyleLight4", "TableStyleLight5", "TableStyleLight6", "TableStyleLight7", "TableStyleLight8", "TableStyleLight9", "TableStyleLight10", "TableStyleLight11", "TableStyleLight12", "TableStyleLight13", "TableStyleLight14", "TableStyleLight15", "TableStyleLight16", "TableStyleLight17", "TableStyleLight18", "TableStyleLight19", "TableStyleLight20", "TableStyleLight21", "TableStyleMedium1", "TableStyleMedium2", "TableStyleMedium3", "TableStyleMedium4", "TableStyleMedium5", "TableStyleMedium6", "TableStyleMedium7", "TableStyleMedium8", "TableStyleMedium9", "TableStyleMedium10", "TableStyleMedium11", "TableStyleMedium12", "TableStyleMedium13", "TableStyleMedium14", "TableStyleMedium15", "TableStyleMedium16", "TableStyleMedium17", "TableStyleMedium18", "TableStyleMedium19", "TableStyleMedium20", "TableStyleMedium21", "TableStyleMedium22", "TableStyleMedium23", "TableStyleMedium24", "TableStyleMedium25", "TableStyleMedium26", "TableStyleMedium27", "TableStyleMedium28", "TableStyleDark1", "TableStyleDark2", "TableStyleDark3", "TableStyleDark4", "TableStyleDark5", "TableStyleDark6", "TableStyleDark7", "TableStyleDark8", "TableStyleDark9", "TableStyleDark10", "TableStyleDark11"<br/><br/>To see what a table style looks like, insert a table in Excel, on the  **Table Tools** \|**Design** tab, choose the **Quick Styles** drop-down, and then select a predefined style. The tooltip for the style will correspond to one of the values in the list above.|
 | `headerRow:`|**Boolean**||
 | `firstColumn:`|**Boolean**||
 | `filterButton:`|**Boolean**||
