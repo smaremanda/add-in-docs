@@ -12,7 +12,7 @@ Gets the Office theme control foreground color.
 |**Available in [Requirement set](../../docs/overview/specify-office-hosts-and-api-requirements.md)**|Not in a set|
 |**Added in**|1.3|
 
-```
+```js
 var controlForegroundColor = Office.context.officeTheme.controlForegroundColor;
 ```
 
@@ -45,6 +45,8 @@ For more information about Office host application and server requirements, see 
 |**PowerPoint**|Y||||
 |**Word**|Y||||
 
+
+
 |||
 |:-----|:-----|
 |**Minimum permission level**|[Restricted](../../docs/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins.md)|
@@ -54,9 +56,6 @@ For more information about Office host application and server requirements, see 
 
 ## Support history
 
-
-
-****
 
 
 |**Version**|**Changes**|
