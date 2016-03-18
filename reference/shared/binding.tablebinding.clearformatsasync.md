@@ -8,7 +8,7 @@ Clears formatting on the bound table.
 |**Available in [Requirement set](../../docs/overview/specify-office-hosts-and-api-requirements.md)**|Not in a set|
 |**Added in**|1.1|
 
-```
+```js
 bindingObj.clearFormatsAsync([,options] , callback);
 ```
 
@@ -48,7 +48,7 @@ See [How to: Format tables in add-ins for Excel](../../docs/develop/format-table
 The following example shows how to clear the formatting of the bound table with an ID of "myBinding":
 
 
-```
+```js
 Office.select(bindings#myBinding).clearFormatsAsync();
 ```
 
