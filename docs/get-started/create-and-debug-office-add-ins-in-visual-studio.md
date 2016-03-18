@@ -183,7 +183,7 @@ The following table describes the properties of the project.
 |**Project File**|Specifies the name of the file containing build, configuration, and other information about the project.|
 |**Project Folder**|The location of the project file.|
 
-### Use an existing document to debug the add-in (Content and task pane add-ins only)
+### Use an existing document to debug the add-in (content and task pane add-ins only)
 
 
 You can add documents to the add-in project. If you have a document that contains test data that you want to use with your add-in, Visual Studio opens that document for you when you start the project.
