@@ -1,11 +1,5 @@
 
 # Bind to regions in a document or spreadsheet
-This article describes how to create bindings to regions of documents and spreadsheets, and then read and write data to those bindings. It also describes how to create and remove event handlers for changes to data or the user's selection in a binding. 
-
-
-
-
-## Binding to regions in a document or spreadsheet
 
 Binding-based data access enables content and task pane add-ins to consistently access a particular region of a document or spreadsheet through an identifier. The add-in first needs to establish the binding by calling one of the methods that associates a portion of the document with a unique identifier: [addFromPromptAsync](http://msdn.microsoft.com/en-us/library/9dc03608-b08b-4700-8be1-3c86ae236799%28Office.15%29.aspx), [addFromSelectionAsync](http://msdn.microsoft.com/en-us/library/edc99214-e63e-43f2-9392-97ead42fc155%28Office.15%29.aspx), or [addFromNamedItemAsync](http://msdn.microsoft.com/en-us/library/afbadac7-60c7-47cb-9477-6e9466ded44c%28Office.15%29.aspx). After the binding is established, the add-in can use the provided identifier to access the data contained in the associated region of the document or spreadsheet. Creating bindings provides the following value to your add-in:
 
