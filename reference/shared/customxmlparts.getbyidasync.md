@@ -8,7 +8,7 @@ Asynchronously gets a custom XML part by its ID.
 |**Available in [Requirement set](../../docs/overview/specify-office-hosts-and-api-requirements.md)**|CustomXmlParts|
 |**Added in**|1.1|
 
-```
+```js
 Office.context.document.customXmlParts.getByIdAsync(id [, options], callback);
 ```
 
@@ -42,7 +42,9 @@ In the callback function passed to the  **getByIdAsync** method, you can use the
 ## Remarks
 
 
- >**Important**  When you specify the  _id_ parameter, you must include opening and closing braces around the GUID of the custom XML part. Failure to do so will raise a JavaScript error.
+ >**Important**  
+ ---
+ When you specify the  _id_ parameter, you must include opening and closing braces around the GUID of the custom XML part. Failure to do so will raise a JavaScript error.
 
 
 
@@ -91,11 +93,6 @@ For more information about Office host application and server requirements, see 
 |**Namespace**|Office|
 
 ## Support history
-
-
-
-****
-
 
 |**Version**|**Changes**|
 |:-----|:-----|
