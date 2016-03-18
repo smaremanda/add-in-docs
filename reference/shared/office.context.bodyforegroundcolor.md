@@ -13,7 +13,7 @@ Gets the Office theme body foreground color.
 
 
 
-```
+```js
 var bodyForegroundColor = Office.context.officeTheme.bodyForegroundColor;
 ```
 
