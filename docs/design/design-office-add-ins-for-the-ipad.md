@@ -1,9 +1,6 @@
 
 # Design Office Add-ins for the iPad
 
-Make your Office Add-ins available in Office for iPad.
-
-
 
 Office Add-ins provide users with additional functionality within the context of an Office host. To make your Office Add-ins available in Office for iPad, apply the following guidelines:
 
