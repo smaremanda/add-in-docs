@@ -1,7 +1,5 @@
 
 # Office Add-ins development lifecycle
-Plan the end-to-end process for developing task pane, content, and Outlook add-ins to extend Office applications.
-
 
 
 Some useful tools for developing an Office add-in are [Visual Studio and the Microsoft Developer Tools](https://www.visualstudio.com/features/office-tools-vs) or [Napa Office 365 Development Tools](https://www.napacloudapp.com/getting-Started.aspx). For more details, see [Requirements for running Office Add-ins](../../docs/overview/requirements-for-running-office-add-ins.md). 
