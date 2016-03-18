@@ -1,6 +1,7 @@
 # Office Mix add-ins
 
-
+
+
 
 Microsoft Office Mix is a platform for creating Office Add-ins that you embed in PowerPoint to enable audio-visual components to your PowerPoint presentations. LabsJS, on the other hand, is a technology that allows you to create specialized Office Mix instances, called labs, that you can then insert into your Office Mix. These labs extend Office Mix functionality so that you can create fully interactive educational components like simulations, demonstrations, and quizzes.
 
@@ -18,7 +19,7 @@ LabsJS extends the concept of Office Mix. Whereas an Office Mix turns a PowerPoi
 These labs are in fact add-ins that are written in JavaScript using the labs.js API ([LabsJS JavaScript API reference](../../../reference/office-mix/labsjs-javascript-api-reference.md)). Labs.js serves as an abstraction layer on top of the office.js library. In a nutshell, labs.js enables creating these labs and inserting them into Office Mix instances; the Mixes, then, are rendered in PowerPoint.
 
 
-## So let's have a look
+## Take a look
 
 You've already been introduced to the [Office Mix Gallery](https://mix.office.com/Gallery), but pay particular attention to three of the Office Mix examples that contain and run LabsJS labs. You should review these examples to get a sense of the potential of labs. Note where PowerPoint ends and Office Mix technology begins, and then where LabsJS functionality starts up and allows you to interact with the Mix, in the following:
 
