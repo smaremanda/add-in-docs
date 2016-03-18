@@ -44,6 +44,8 @@
   <Item text="Test" url="testing">
     <Item text="Use F12 developer tools on Windows 10" url="testing/debug-add-ins-using-f12-developer-tools-on-windows-10" />
     <Item text="Debug in Office Online" url="testing/debug-add-ins-in-office-online" />
+	<Item text="Sideload Office Add-ins for testing" url="testing/sideload-office-add-ins-for-testing"/>
+	<Item text="Sideload Outlook Add-ins for testing" url="testing/sideload-outlook-add-ins-for-testing"/>
     <Item text="Sideload on iPad and Mac" url="testing/sideload-an-office-add-in-on-ipad-and-mac" />
     <Item text="Debug on iPad and Mac" url="testing/debug-office-add-ins-on-ipad-and-mac" />
     
