@@ -24,7 +24,6 @@ Office.context.document.addHandlerAsync(eventType, handler  [, options], callbac
 |:-----|:-----|:-----|:-----|
 | _eventType_|[EventType](../../reference/shared/eventtype-enumeration.md)|For a  **Document** object event, the _eventType_ parameter can be specified as **Office.EventType.DocumentSelectionChanged**, or the corresponding text value of this enumeration.||
 | _handler_|**object**|The event handler function to add, whose only parameter is of type [DocumentSelectionChangedEventArgs](../../reference/shared/document.selectionchangedeventargs.md). Required.||
-|||||
 | _options_|**object**|Specifies any of the following [optional parameters](../../docs/develop/asynchronous-programming-in-office-add-ins.md#passing-optional-parameters-to-asynchronous-methods):||
 | _asyncContext_|**array**,  **boolean**,  **null**,  **number**,  **object**, **string**, or  **undefined**|A user-defined item of any type that is returned in the  **AsyncResult** object without being altered.||
 | _callback_|**object**|A function that is invoked when the callback returns, whose only parameter is of type  **AsyncResult**.||
@@ -101,9 +100,6 @@ For more information about Office host application and server requirements, see 
 
 ## Support history
 
-
-
-****
 
 
 |**Version**|**Changes**|
