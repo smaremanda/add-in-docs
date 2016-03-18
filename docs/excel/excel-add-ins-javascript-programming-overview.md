@@ -1,6 +1,6 @@
-# Excel add-ins JavaScript programming overview
+# Excel JavaScript API programming overview
 
-This article covers the fundamentals of using the JavaScript APIs to build add-ins in Excel 2016. For detailed specifications of the Excel JavaScript APIs, read the [reference](excel-add-ins-javascript-api-reference.md) page.
+This article covers the fundamentals of using the Excel JavaScript API to build add-ins for Excel 2016. For more details about the Excel JavaScript API, see the [reference](excel-add-ins-javascript-api-reference.md) page.
 
 ## The basics
 
