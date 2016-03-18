@@ -1,7 +1,5 @@
 # Excel add-ins JavaScript programming overview
 
-_Applies to: Excel 2016, Office 2016_
-
 This article covers the fundamentals of using the JavaScript APIs to build add-ins in Excel 2016. For detailed specifications of the Excel JavaScript APIs, read the [reference](excel-add-ins-javascript-api-reference.md) page.
 
 ## The basics
@@ -11,7 +9,7 @@ Let's begin with a brief introduction to the key concepts that are fundamental t
 
 #### RequestContext
 
-The RequestContext object facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, request context is required to get access to Excel and related objects such as worksheets, tables, etc. from the add-in. A request context is created as shown below.
+The RequestContext object facilitates requests to the Excel application. Because the Office Add-in and the Excel application run in two different processes, request context is required to get access to Excel and related objects such as worksheets and tables, from the add-in. A request context is created as shown.
 
 ```js
 var ctx = new Excel.RequestContext();
@@ -209,9 +207,13 @@ Example: A Range can consist of one of more cells. In cases where the individual
 Blank values in update requests are treated as instruction to clear or reset the respective property. Blank value is represented by two double quotation marks with no space in-between. `""`
 
 Example:
+
 * For `values`, the range value is cleared out. This is the same as clearing the contents in the application.
+
 * For `numberFormat`, the number format is set to `General`.
+
 * For `formula` and `formulaLocale`, the formula values are cleared.
+
 
 For read operations, expect to receive blank values if the contents of the cells are blanks. If the cell contains no data or value, then the API returns a blank value. Blank value is represented by two double quotation marks with no space in-between. `""`.
 
