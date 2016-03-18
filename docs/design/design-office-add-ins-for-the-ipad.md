@@ -2,46 +2,46 @@
 # Design Office Add-ins for the iPad
 
 
-Office Add-ins provide users with additional functionality within the context of an Office host. To make your Office Add-ins available in Office for iPad, apply the following guidelines:
-
-- Make sure that your add-in meets the design guidelines below and complies with the requirements for add-ins that are available in the Office Store. For more information, see:
-
-  - [Validation policies for apps and add-ins submitted to the Office Store (version 1.9)](http://msdn.microsoft.com/library/cd90836a-523e-42f5-ab02-5123cdf9fefe%28Office.15%29.aspx) (policies 3.4, 4.12, 10.8)
-
-  - [Design guidelines for Office Add-ins](../../docs/design/add-in-design.md)
-
-  - [Best practices for developing Office Add-ins](http://msdn.microsoft.com/library/d455b76b-4d76-493d-a681-6b02ba1f38a8%28Office.15%29.aspx)
-
-  - [Designing for iOS](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/)
-
-- Use version 1.1 of the JavaScript API for Office. For more information, see [Update the version of your JavaScript API for Office and manifest schema files](../../docs/develop/update-your-javascript-api-for-office-and-manifest-schema-version.md). To learn about changes in the API, see [What's changed in the JavaScript API for Office](../../reference/what's-changed-in-the-javascript-api-for-office.md).
-
-- Make your Office Add-in free on the iPad. Only free Office Add-ins are allowed on the iPad. You can sell the same add-in on other platforms, such as Windows or Office 365. Why make a free Office Add-in? A free add-in allows you to reach more users.
-
-- Do not include commerce in your add-in. This policy means that you cannot:
-
-  - Offer trials.
-
-  - Include UI elements or links to paid versions of the add-in.
-
-  - Include UI elements or links to online stores that sell any additional content, apps, or add-ins.
-
-  - Include UI elements or store links in your Privacy Policy or Terms of Use pages.
+The following table lists the tasks to perform to design an Office Add-in to run in Office for iPad.
 
 
- >**Note**  Any violations to this policy will result in Microsoft immediately disabling your add-in on the iPad.
+|**Task**|**Description**|**Resources**|
+|:-----|:-----|:-----|
+|Update your add-in to support Office.js version 1.1.|Update the JavaScript files (Office.js and app-specific .js files) and the add-in manifest validation file used in your Office Add-in project to version 1.1.|[What's changed in the JavaScript API for Office](http://msdn.microsoft.com/library/802cf4ae-7c18-4e7d-b4d6-ecaa84c569bc%28Office.15%29.aspx)|
+|Apply UI design best practices.|Integrate your add-in UI seamlessly with the iOS experience.|[Designing for iOS](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/)|
+|Apply add-in design best practices.|Ensure that your add-in provides clear value, is engaging, and performs consistently.|[Best practices for developing Office Add-ins](http://msdn.microsoft.com/library/013e1486-4482-42c1-bcda-edf8de06e771%28Office.15%29.aspx)|
+|Optimize your add-in for touch.|Make your UI responsive to touch inputs in addition to mouse and keyboard.|[Apply UX design principles](https://msdn.microsoft.com/EN-US/library/mt590883.aspx#Anchor_3)|
+|Make your add-in free.|Office on iPad is a channel through which you can reach more users and promote your services. These new users have the potential to become your customers.|[Validation policy 10.8](http://msdn.microsoft.com/library/cd90836a-523e-42f5-ab02-5123cdf9fefe%28Office.15%29.aspx)|
+|Make your add-in commerce free.|Your add-in must be free of in-app purchases, trial offers, UI that aims to upsell to paid or links to any online stores where users can purchase or acquire other content, apps, or add-ins.Your Privacy Policy and Terms of Use pages must also be free of any commerce UI or Store links.|[Validation policy 3.4](http://msdn.microsoft.com/library/cd90836a-523e-42f5-ab02-5123cdf9fefe%28Office.15%29.aspx)|
+|Resubmit your add-in to the Office Store.|In the Seller Dashboard, select the  **Make this add-in available in the Office Add-in Catalog on iPad** check box, and provide your Apple developer ID in the Apple ID box. Review the[Office Store Application Provider Agreement](https://sellerdashboard.microsoft.com/Assets/Content/Agreements/en-US/Office_Store_Seller_Agreement_20120927.md) to make sure you understand agreement.|[Submit Office and SharePoint Add-ins and Office 365 web apps to the Office Store](http://msdn.microsoft.com/library/ff075782-1303-4517-91cc-b3d730e9b9ae%28Office.15%29.aspx)|
+Your add-in can remain as-is for Office applications that are running on other platforms. You can also serve a different UI based on the browser/device that your add-in is running on. To detect whether your add-in is running on an iPad, you can use the following APIs: 
 
- You can share more information about the add-in or services within the add-in. You can also charge for and include commerce in your add-ins that run on other platforms. To do this, display different UIs -- depending on which browser or device runs your add-in -- by using the following properties:
+- var isTouchEnabled = [Office.context.touchEnabled](http://msdn.microsoft.com/library/fd73f94b-7e4a-422c-afdb-fef6fba43766%28Office.15%29.aspx)
+    
+- var allowCommerce = [Office.context.commerceAllowed](http://msdn.microsoft.com/library/fd3812ac-14c3-485f-8991-d12fcc99c450%28Office.15%29.aspx)
+    
 
-  - [Context.touchEnabled property (JavaScript API for Office)](http://msdn.microsoft.com/library/fd73f94b-7e4a-422c-afdb-fef6fba43766%28Office.15%29.aspx) - Detects whether the host application your add-in runs on is touch enabled.
+## Best practices for developing Office Add-ins for iOS and Mac
 
-  - [Context.commerceAllowed property (JavaScript API for Office)](http://msdn.microsoft.com/library/fd3812ac-14c3-485f-8991-d12fcc99c450%28Office.15%29.aspx) - Determines whether your add-in runs on a platform that restricts commerce transactions.
+Apply the following best practices for developing add-ins that run on iOS:
 
-When you've verified that your add-in meets these requirements, republish it to the Office Store. For more information, see [Submit Office and SharePoint Add-ins and Office 365 web apps to the Office Store](http://msdn.microsoft.com/library/ff075782-1303-4517-91cc-b3d730e9b9ae%28Office.15%29.aspx) and [Update your app or add-in](http://msdn.microsoft.com/library/7313d32b-5345-4039-ac5d-a1ba0aef890b%28Office.15%29.aspx). In the Seller Dashboard, select the option to make your add-in available on the iPad, agree to the updated store policy, and provide your Apple Developer ID. Also, read and understand the [Office Store Application Provider Agreement](https://sellerdashboard.microsoft.com/Assets/Content/Agreements/en-US/Office_Store_Seller_Agreement_20120927.md).
+
+-  **Use Visual Studio to develop your add-in.**
+    
+    If you develop your add-in with Visual Studio, you can [set breakpoints and debug its code](http://msdn.microsoft.com/library/05a9287f-b39e-4d48-b3e6-b777f148b810%28Office.15%29.aspx#Test) in an Office host application running on Windows, before sideloading your add-in on the iPad or Mac. Because an add-in that runs in Office for iOS or Office for Mac supports the same APIs as an add-in running in Office for Windows, your add-in's code should run the same way on both platforms.
+    
+-  **Specify API requirements in your add-in's manifest or with runtime checks.**
+    
+    When you specify API requirements in your add-in's manifest, Office will determine if the host application supports those API members. If the API members are available in the host, then your add-in will be available in that host application. Alternatively, you can perform a runtime check to determine if a method is available in the host before using it in your add-in. Runtime checks ensure that your add-in is always available in the host, and provides additional functionality if the methods are available. For more information, see [Specify Office hosts and API requirements](http://msdn.microsoft.com/library/6b6702f2-b0a5-46ab-a356-8dda897ca8ae%28Office.15%29.aspx).
+    
+For general add-in development best practices, see [Best practices for developing Office Add-ins](http://msdn.microsoft.com/library/013e1486-4482-42c1-bcda-edf8de06e771%28Office.15%29.aspx).
+
 
 ## Additional resources
+<a name="bk_addresources"> </a>
 
 
-
-- [Debug Office Add-ins on iPad and Mac](../testing/debug-office-add-ins-on-ipad-and-mac.md)
-
+- [Sideload an Office Add-in on iPad and Mac](http://msdn.microsoft.com/library/25770786-cc5e-45dd-bc15-b8410a4276b0%28Office.15%29.aspx)
+    
+- [Debug Office Add-ins on iPad and Mac](http://msdn.microsoft.com/library/6f397d8d-4a75-4ead-b4c4-536c67ba2408%28Office.15%29.aspx)
+    
