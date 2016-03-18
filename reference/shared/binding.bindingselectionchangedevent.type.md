@@ -7,7 +7,7 @@ Gets an  **EventType** enumeration value that identifies the kind of event that 
 |**Hosts:**|Access, Excel, Word|
 |**Last changed in**|1.1|
 
-```
+```js
 var myEvent = eventArgsObj.type;
 ```
 
@@ -43,12 +43,6 @@ For more information about Office host application and server requirements, see 
 |**Namespace**|Office|
 
 ## Support history
-
-
-
-
-
-****
 
 
 |**Version**|**Changes**|
