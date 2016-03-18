@@ -228,5 +228,5 @@ Your feedback is important to us.
 ## Additional resources
 
 * [Office Add-ins](https://msdn.microsoft.com/en-us/library/office/jj220060.aspx)
-* [Get started with Office Add-ins](../../docs/add-ins/get-started)
+* [Get started with Office Add-ins](../../../docs/add-ins/get-started)
 * [Word add-ins on GitHub](https://github.com/OfficeDev?utf8=%E2%9C%93&query=Word)
