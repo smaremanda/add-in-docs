@@ -7,7 +7,7 @@ Gets an object that represents the document the add-in in interacting with.
 |**Hosts:**|Access, Excel, PowerPoint, Project, Word|
 |**Last changed in**|1.1|
 
-```
+```js
 var _document = Office.context.document;
 ```
 
@@ -27,7 +27,7 @@ Your add-in can use the  **document** property to access API for interacting wit
 
 
 
-```
+```js
 // Extension initialization code.
 var _document;
 
