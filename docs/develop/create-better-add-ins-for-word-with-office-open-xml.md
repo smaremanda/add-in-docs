@@ -1,7 +1,5 @@
 
 # Create better add-ins for Word with Office Open XML
-Use Office Open XML to insert rich content via Word add-ins. Edit the Office Open XML to simplify the markup and minimize the payload.
-
 
  **Provided by:** Stephanie Krieger, Microsoft Corporation | Juan Balmori Labra, Microsoft Corporation
 
