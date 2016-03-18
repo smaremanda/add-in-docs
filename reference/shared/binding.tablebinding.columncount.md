@@ -8,7 +8,7 @@ Gets the number of columns in the table, as an integer value.
 |**Available in [Requirement set](../../docs/overview/specify-office-hosts-and-api-requirements.md)**|TableBindings|
 |**Last changed in**|1.1|
 
-```
+```js
 var colCount = bindingObj.columnCount;
 ```
 
