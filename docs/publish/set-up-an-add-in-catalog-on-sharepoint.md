@@ -1,7 +1,5 @@
 
 # Set up an add-in catalog on SharePoint
-Set up an add-in catalog on SharePoint for publishing task pane and content add-ins.
-
 
 An add-in catalog is a document library on SharePoint where manifest files for task pane and content Office Add-ins, as well as SharePoint Add-ins, can be published. For Office Add-ins, an administrator uploads a [manifest file](http://msdn.microsoft.com/en-us/library/4139ff24-afac-472a-af7d-9d069587ac9b%28Office.15%29.aspx) to the add-in catalog. When an administrator registers an add-in catalog as a trusted catalog (by setting group policy, or from the **Trusted Add-ins Catalog** page of the **Options** dialog box, choosing **File** > **Options** > **Trust Center** > **Trust Center Settings** > **Trusted Add-in Catalogs**), users can insert the add-in from the insertion UI in an Office client application.
 
