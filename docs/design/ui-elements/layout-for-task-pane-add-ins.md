@@ -1,6 +1,5 @@
 #Layout for task pane add-ins
 
-Learn more about [supported hosts and other requirements](https://msdn.microsoft.com/EN-US/library/office/dn833104.aspx).
 
 Create a consistent look and feel for task pane add-ins by using the recommended design layout. The recommended layout for a task pane add-in includes the following elements: 
 

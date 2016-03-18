@@ -1,7 +1,5 @@
 #Office Add-in UI elements
 
-Learn more about [supported hosts and other requirements](https://msdn.microsoft.com/EN-US/library/office/dn833104.aspx).
-
 You can use two types of UI elements in your Office Add-ins: 
 
 - Add-in commands 

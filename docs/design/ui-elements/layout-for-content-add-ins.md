@@ -1,7 +1,5 @@
 #Layout for content add-ins
 
-Learn more about [supported hosts and other requirements](https://msdn.microsoft.com/EN-US/library/office/dn833104.aspx).
-
 Create a consistent look and feel for your content add-ins by using the recommended design layout. The recommended layout for a content add-in includes the following elements: 
 
 - Command bar (optional) - Includes icons or navigation for users, and can overlay the add-in content. The maximum height is 80 pixels.

@@ -1,7 +1,5 @@
 #Layouts for mail add-ins
 
-Learn more about [supported hosts and other requirements](https://msdn.microsoft.com/EN-US/library/office/dn833104.aspx).
-
 You can use any of the following layouts for mail add-ins:
 
 - Task pane
