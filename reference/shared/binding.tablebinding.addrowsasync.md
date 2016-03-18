@@ -8,7 +8,7 @@ Adds rows and values to a table.
 |**Available in [Requirement set](../../docs/overview/specify-office-hosts-and-api-requirements.md)**|TableBindings|
 |**Last changed in**|1.1|
 
-```
+```js
 bindingObj.addRowsAsync(rows, [,options], callback);
 ```
 
