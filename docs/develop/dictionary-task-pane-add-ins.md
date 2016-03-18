@@ -1,7 +1,6 @@
 
 # Create a dictionary task pane add-in
-Learn about how to create a task pane add-in that provides dictionary or thesaurus lookups in Word 2013 or Excel 2013.
-
+
 
 This article shows you an example of a task pane add-in and accompanying web service that provides dictionary definitions or thesaurus synonyms for the user's current selection in a Word 2013 or Excel 2013 document. 
 
