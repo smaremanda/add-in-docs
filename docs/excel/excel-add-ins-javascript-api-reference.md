@@ -1,8 +1,6 @@
-# Excel add-ins JavaScript API reference
+# Excel JavaScript API reference
 
-_Applies to: Excel 2016, Office 2016_
-
-The links below show the high level Excel objects available in the APIs. Each object page link contains a description of the properties, relationships, and methods available on the object. Explore the links below to learn more.
+You can use the Excel JavaScript API to build add-ins for Excel 2016. The following list shows the high-level Excel objects that are available in the API. Each object page link contains a description of the properties, relationships, and methods that are available on the object. Explore the links to learn more.
 
 * [Workbook](../../reference/excel/workbook.md): The top-level object that contains related workbook objects such as worksheets, tables, ranges, etc. It also can be used to list related references.
 * [Worksheet](../../reference/excel/worksheet.md): A member of the Worksheets collection. The Worksheets collection contains all the Worksheet objects in a workbook.
@@ -27,5 +25,4 @@ The links below show the high level Excel objects available in the APIs. Each ob
 *  [Excel add-ins programming overview](excel-add-ins-javascript-programming-overview.md)
 *  [Build your first Excel add-in](build-your-first-excel-add-in.md)
 *  [Snippet Explorer for Excel](http://officesnippetexplorer.azurewebsites.net/#/snippets/excel)
-*  [Excel add-ins code samples](excel-add-in-code-samples.md)
 
