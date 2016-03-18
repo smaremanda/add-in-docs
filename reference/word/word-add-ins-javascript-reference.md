@@ -36,6 +36,6 @@ Your feedback is important to us.
 
 * [Word add-ins programming guide](../../docs/word/word-add-ins-programming-overview.md)
 * [Office Add-ins](https://msdn.microsoft.com/en-us/library/office/jj220060.aspx)
-* [Get started with Office Add-ins](../../docs/word/getting-started/addins)
+* [Get started with Office Add-ins](../../docs/get-started/create-and-debug-office-add-ins-in-visual-studio.md)
 * [Word add-ins on GitHub](https://github.com/OfficeDev?utf8=%E2%9C%93&query=Word)
 * [Snippet Explorer for Word](http://officesnippetexplorer.azurewebsites.net/#/snippets/word)
