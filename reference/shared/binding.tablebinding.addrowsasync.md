@@ -27,10 +27,11 @@ _options_<br/>
     
 ||
 |:-----|
-|<dl class="authored" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><dt><span class="parameter" sdata="paramReference">asyncContext</span></dt><dd><p>Type: <span class="keyword">array</span>, <span class="keyword">Boolean</span>, <span class="keyword">null</span>, <span class="keyword">number</span>, <b>object</b> , <span class="keyword">string</span>, or <span class="keyword">undefined</span></p><p>A user-defined item of any type that is returned in the <b>AsyncResult</b>  object without being altered. Optional.</p></dd></dl>|
--  _callback_   - Type:  **object**
+|_asyncContext_
+&nbsp;&nbsp;&nbsp;&nbsp;Type: **array**, **Boolean**, **null**, **number**, **object**, **string**, or **undefined**<br />&nbsp;&nbsp;&nbsp;&nbsp;A user-defined item of any type that is returned in the **AsyncResult**  object without being altered. Optional.|
+&nbsp;&nbsp;&nbsp;&nbsp;_callback_<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type:  **object**
     
-    A function that is invoked when the callback returns, whose only parameter is of type [AsyncResult](../../reference/shared/asyncresult.md). Optional.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A function that is invoked when the callback returns, whose only parameter is of type [AsyncResult](../../reference/shared/asyncresult.md). Optional.
     
 
 
