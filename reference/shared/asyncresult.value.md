@@ -7,7 +7,7 @@ Gets the payload or content of this asynchronous operation, if any.
 |**Hosts:**|Access, Excel, Outlook, PowerPoint, Project, Word|
 |**Last changed in**|1.1|
 
-```
+```js
 var dataValue = asyncResult.value;
 ```
 
@@ -17,7 +17,9 @@ var dataValue = asyncResult.value;
 Returns the value of the request at the time the asynchronous call was made. 
 
 
- >**Note**  What the  **value** property returns for a particular "Async" method varies depending on the purpose and context of that method. To determine what is returned by the **value** property for an "Async" method, refer to the "Callback value" section of the method's topic. For a complete listing of the "Async" methods, see the Remarks section of the [AsyncResult](../../reference/shared/asyncresult.md) object topic.
+ >**Note**
+ ---
+ What the  **value** property returns for a particular "Async" method varies depending on the purpose and context of that method. To determine what is returned by the **value** property for an "Async" method, refer to the "Callback value" section of the method's topic. For a complete listing of the "Async" methods, see the Remarks section of the [AsyncResult](../../reference/shared/asyncresult.md) object topic.
 
 
 ## Remarks
@@ -76,9 +78,6 @@ For more information about Office host application and server requirements, see 
 
 ## Support history
 
-
-
-****
 
 
 |**Version**|**Changes**|
