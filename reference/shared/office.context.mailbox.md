@@ -8,7 +8,7 @@ Gets the  **mailbox** object that provides access to API members specifically fo
 |**Available in [Requirement set](../../docs/overview/specify-office-hosts-and-api-requirements.md)**|Mailbox|
 |**Last changed in**|1.0|
 
-```
+```js
 var outlookOm = Office.context.mailbox;
 ```
 
@@ -23,7 +23,7 @@ The [mailbox](http://msdn.microsoft.com/library/a3880d3b-8a09-4cf9-9274-f2682cb3
 The following line of code access the [item](http://msdn.microsoft.com/library/ad288df1-3ca2-474c-bea4-c51f46e6fc43%28Office.15%29.aspx) object of the JavaScript API for Office.
 
 
-```
+```js
 // Access the Item object.
 var item = Office.context.mailbox.item;
 
@@ -53,10 +53,6 @@ For more information about Office host application and server requirements, see 
 |**Namespace**|Office|
 
 ## Support history
-
-
-
-****
 
 
 |**Version**|**Changes**|
