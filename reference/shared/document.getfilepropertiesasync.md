@@ -11,7 +11,7 @@ Gets file properties of the current document.
 [![Try out this call in the interactive API Tutorial for Excel](../../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](http://officeapitutorial.azurewebsites.net/Redirect.html?scenario=Get+File+Location)
 
 
-```
+```js
 Office.context.document.getFilePropertiesAsync([, options], callback);
 ```
 
@@ -51,9 +51,9 @@ In this release of the API, you can only get the file's URL with the  **url** pr
 To read the URL of the current file, you need to write a callback function that returns the URL. The following example shows how to:
 
 
--  **Pass an anonymous callback function** that returns the value of the file's URL to the _callback_ parameter of the **getFilePropertiesAsync** method.
+ - **Pass an anonymous callback function** that returns the value of the file's URL to the _callback_ parameter of the **getFilePropertiesAsync** method.
     
--  **Display the value** on the add-in's page.
+ - **Display the value** on the add-in's page.
     
 
 ```js
@@ -102,10 +102,6 @@ For more information about Office host application and server requirements, see 
 ## Support history
 
 
-
-
-
-****
 
 
 |**Version**|**Changes**|
