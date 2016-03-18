@@ -13,7 +13,7 @@ Provides access to the properties for Office theme colors.
 
 
 
-```
+```js
 Office.context.officeTheme
 ```
 
@@ -65,10 +65,6 @@ function applyOfficeTheme(){
 |**Namespace**|Office|
 
 ## Support history
-
-
-
-****
 
 
 |**Version**|**Changes**|
