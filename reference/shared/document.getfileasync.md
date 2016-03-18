@@ -8,7 +8,7 @@ Returns the entire document file in slices of up to 4194304 bytes (4MB) or for a
 |**Available in [Requirement set](../../docs/overview/specify-office-hosts-and-api-requirements.md)**|File|
 |**Last changed in File**|1.1|
 
-```
+```js
 Office.context.document.getFileAsync(fileType [, options], callback);
 ```
 
@@ -19,16 +19,7 @@ Office.context.document.getFileAsync(fileType [, options], callback);
 
 |**Name**|**Type**|**Description**|**Support notes**|
 |:-----|:-----|:-----|:-----|
-| _fileType_|[FileType](../../reference/shared/filetype-enumeration.md)|Specifies the format in which the file will be returned. Required.
-
-|**Host**|**Supported fileType**|
-|:-----|:-----|
-|Excel Online| Office.FileType.Compressed|
-|PowerPoint on Windows desktop |Office.FileType.CompressedOffice.FileType.Pdf|
-|Word on Windows desktop and iPad|Office.FileType.CompressedOffice.FileType.PdfOffice.FileType.Text|
-|Word Online|Office.FileType.CompressedOffice.FileType.PdfOffice.FileType.Text|
-|PowerPoint Online|Office.FileType.CompressedOffice.FileType.Pdf|
-|**Changed in** 1.1, see [Support history](#bk_history)|
+| _fileType_|[FileType](../../reference/shared/filetype-enumeration.md)|Specifies the format in which the file will be returned. Required.<br/><table><tr><th>Host</th><th>Supported fileType</th></tr><tr><td>Excel Online</td><td>Office.FileType.Compressed</td></tr><tr><td>PowerPoint on Windows desktop</td><td>Office.FileType.CompressedOffice.FileType.Pdf</td></tr><tr><td>Word on Windows desktop and iPad</td><td>Office.FileType.CompressedOffice.FileType.PdfOffice.FileType.Text</td></tr><tr><td>Word Online</td><td>Office.FileType.CompressedOffice.FileType.PdfOffice.FileType.Text</td></tr><tr><td>PowerPoint Online</td><td>Office.FileType.CompressedOffice.FileType.Pdf</td></tr></table>|**Changed in** 1.1, see [Support history](#bk_history)|
 | _options_|**object**|Specifies any of the following [optional parameters](../../docs/develop/asynchronous-programming-in-office-add-ins.md#passing-optional-parameters-to-asynchronous-methods)||
 | _sliceSize_|**number**|Specifies the desired slice size (in bytes) up to 4194304 bytes (4MB). If not specified, a default slice size of 4194304 bytes (4MB) will be used. ||
 | _asyncContext_|**array**,  **boolean**,  **null**,  **number**,  **object**, **string**, or  **undefined**|A user-defined item of any type that is returned in the  **AsyncResult** object without being altered.||
@@ -191,12 +182,6 @@ For more information about Office host application and server requirements, see 
 |**Namespace**|Office|
 
 ## Support history
-
-
-
-
-
-****
 
 
 |**Version**|**Changes**|
