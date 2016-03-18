@@ -7,7 +7,7 @@ Gets an  **Error** object that provides a description of the error, if any error
 |**Hosts:**|Access, Excel, Outlook, PowerPoint, Project, Word|
 |**Last changed in**|1.1|
 
-```
+```js
 var errorObj = asyncResult.error;
 ```
 
@@ -49,8 +49,8 @@ A capital Y in the following matrix indicates that this method is supported in t
 For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](../../docs/overview/requirements-for-running-office-add-ins.md).
 
 
-|**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|**OWA for Devicess**|**Outlook for Mac**|
-|:-----|:-----|:-----|:-----|:-----|
+| |**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|**OWA for Devicess**|**Outlook for Mac**|
+|:-----|:-----|:-----|:-----|:-----|:-----|
 |**Access**||Y||||
 |**Excel**|Y|Y|Y|||
 |**Outlook**|Y|Y||Y|Y|
@@ -67,9 +67,6 @@ For more information about Office host application and server requirements, see 
 
 ## Support history
 
-
-
-****
 
 
 |**Version**|**Changes**|
