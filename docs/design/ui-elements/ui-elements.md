@@ -19,7 +19,7 @@ Excel, PowerPoint, and Word have predefined entry points for task pane and conte
 ##Custom HTML-based UI
 Add-ins can embed custom HTML-based UI within Office clients. The containers that are available to display the UI vary based on the type of add-in. For example, task pane add-ins display custom HTML-based UI in the right pane of the document; content add-ins display the custom UI directly within Office documents.
 
-Regardless of the type of add-in you create, you can use common building blocks to create custom HTML-based UI. We recommend that you use [Office UI Fabric](http://dev.office.com/fabric) for these UI elements so that your add-in integrates with the Office look and feel. You are also welcome to use your own UI elements to express your own brand.
+Regardless of the type of add-in you create, you can use common building blocks to create custom HTML-based UI. We recommend that you use [Office UI Fabric](https://github.com/OfficeDev/Office-UI-Fabric) for these UI elements so that your add-in integrates with the Office look and feel. You are also welcome to use your own UI elements to express your own brand.
 
 Office UI Fabric provides the following UI elements:
 
