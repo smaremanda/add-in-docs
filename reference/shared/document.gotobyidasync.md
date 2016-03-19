@@ -11,7 +11,7 @@ Goes to the specified object or location in the document.
 [![Try out this call in the interactive API Tutorial for Excel](../../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](http://officeapitutorial.azurewebsites.net/Redirect.html?scenario=Navigate+to+Binding)
 
 
-```
+```js
 Office.context.document.goToByIdAsync(id, goToType, [,options], callback);
 ```
 
@@ -25,7 +25,7 @@ Office.context.document.goToByIdAsync(id, goToType, [,options], callback);
 | _id_|**string** or **number**|The identifier of the object or location to go to. Required.||
 | _goToType_|[GoToType](../../reference/shared/gototype-enumeration.md)|The type of the location to go to. Required.||
 | _options_|**object**|Specifies any of the following [optional parameters](../../docs/develop/asynchronous-programming-in-office-add-ins.md#passing-optional-parameters-to-asynchronous-methods)||
-| _selectionMode_|[SelectionMode](../../reference/shared/selectionmode-enumeration.md)|Specifies whether the location specified by the  _id_ parameter is selected (highlighted).|**In Excel:** **Office.SelectionMode.Selected** selects all content in the binding, or named item. **Office.SelectionMode.None** for text bindings, moves the cursor to the beginning of the text; for matrix bindings, table bindings, and named items, selects the first data cell (not first cell in header row for tables). **In PowerPoint:** **Office.SelectionMode.Selected** selects the slide title or first textbox on the slide. **Office.SelectionMode.None** Doesn't select anything. **In Word:** **Office.SelectionMode.Selected** selects all content in the binding. **Office.SelectionMode.None** for text bindings, moves the cursor to the beginning of the text; for matrix bindings and table bindings, selects the first data cell (not first cell in header row for tables).|
+| _selectionMode_|[SelectionMode](../../reference/shared/selectionmode-enumeration.md)|Specifies whether the location specified by the  _id_ parameter is selected (highlighted).|**In Excel:**<br/> **Office.SelectionMode.Selected** selects all content in the binding, or named item. <br/>**Office.SelectionMode.None** for text bindings, moves the cursor to the beginning of the text; for matrix bindings, table bindings, and named items, selects the first data cell (not first cell in header row for tables).<br/><br/> **In PowerPoint:**<br/> **Office.SelectionMode.Selected** selects the slide title or first textbox on the slide.<br/> **Office.SelectionMode.None** Doesn't select anything.<br/><br/> **In Word:**<br/> **Office.SelectionMode.Selected** selects all content in the binding. <br/>**Office.SelectionMode.None** for text bindings, moves the cursor to the beginning of the text; for matrix bindings and table bindings, selects the first data cell (not first cell in header row for tables).|
 | _asyncContext_|**array**,  **boolean**,  **null**,  **number**,  **object**, **string**, or  **undefined**|A user-defined item of any type that is returned in the  **AsyncResult** object without being altered.||
 | _callback_|**object**|A function that is invoked when the callback returns, whose only parameter is of type  **AsyncResult**.||
 
@@ -227,9 +227,6 @@ For more information about Office host application and server requirements, see 
 
 ## Support history
 
-
-
-****
 
 
 |**Version**|**Changes**|
