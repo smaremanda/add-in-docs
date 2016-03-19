@@ -40,7 +40,7 @@ For the  **getTaskAsync** method, the returned [AsyncResult](../../reference/sha
 |[asyncContext](../../reference/shared/asyncresult.asynccontext.md)|The data passed in the optional  _asyncContext_ parameter, if the parameter was used.|
 |[error](../../reference/shared/asyncresult.error.md)|Information about the error, if the  **status** property equals **failed**.|
 |[status](../../reference/shared/asyncresult.status.md)|The  **succeeded** or **failed** status of the asynchronous call.|
-|[value](../../reference/shared/asyncresult.value.md)|Contains the following properties:<br/><br/><div>* **taskName** - The name of the task.<br/>* **wssTaskId** - The ID of the task in the synchronized SharePoint task list. If the project is not synchronized with a SharePoint task list, the value is **0**.<br/>* **resourceNames** - The comma-separated list of the names of resources that are assigned to the task.</div>|
+|[value](../../reference/shared/asyncresult.value.md)|Contains the following properties:<br/><br/><ul><li><b>taskName</b> - The name of the task.</li><li><b>wssTaskId</b> - The ID of the task in the synchronized SharePoint task list. If the project is not synchronized with a SharePoint task list, the value is <b>0</b>.</li><li><b>resourceNames</b> - The comma-separated list of the names of resources that are assigned to the task.</li></ul>|
 
 ## Remarks
 
