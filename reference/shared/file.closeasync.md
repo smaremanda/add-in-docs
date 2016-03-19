@@ -8,7 +8,7 @@ Closes the document file.
 |**Available in [Requirement set](../../docs/overview/specify-office-hosts-and-api-requirements.md)**|File|
 |**Added in**|1.1|
 
-```
+```js
 File.closeAsync(callback);
 ```
 
@@ -16,9 +16,9 @@ File.closeAsync(callback);
 ## Parameters
 
 
--  _callback_ Type:  **object**
-    
-    A function that is invoked when the callback returns, whose only parameter is of type [AsyncResult](../../reference/shared/asyncresult.md). Optional.
+_callback_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Type:  **object**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;A function that is invoked when the callback returns, whose only parameter is of type [AsyncResult](../../reference/shared/asyncresult.md). Optional.
     
 
 ## Callback Value
@@ -63,9 +63,6 @@ For more information about Office host application and server requirements, see 
 
 ## Support history
 
-
-
-****
 
 
 |**Version**|**Changes**|
