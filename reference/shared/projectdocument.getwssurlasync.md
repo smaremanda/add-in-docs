@@ -36,7 +36,7 @@ For the  **getWSSUrlAsync** method, the returned [AsyncResult](../../reference/s
 |[asyncContext](../../reference/shared/asyncresult.asynccontext.md)|The data passed in the optional  _asyncContext_ parameter, if the parameter was used.|
 |[error](../../reference/shared/asyncresult.error.md)|Information about the error, if the  **status** property equals **failed**.|
 |[status](../../reference/shared/asyncresult.status.md)|The  **succeeded** or **failed** status of the asynchronous call.|
-|[value](../../reference/shared/asyncresult.value.md)|Contains the following properties:<br/><br/><div>* The **listName** property is the name of the synchronized SharePoint task list.<br/>* The **serverUrl** property is the URL of the synchronized SharePoint task list.</div>|
+|[value](../../reference/shared/asyncresult.value.md)|Contains the following properties:<br/><br/><ul><li>The <b>listName</b> property is the name of the synchronized SharePoint task list.</li><li>The <b>serverUrl</b> property is the URL of the synchronized SharePoint task list.</li></ul>|
 
 ## Remarks
 
