@@ -8,7 +8,7 @@ Returns the specified slice.
 |**Available in [Requirement set](../../docs/overview/specify-office-hosts-and-api-requirements.md)**|File|
 |**Added in**|1.0|
 
-```
+```js
 File.getSliceAsync(sliceIndex, callback);
 ```
 
@@ -16,13 +16,13 @@ File.getSliceAsync(sliceIndex, callback);
 ## Parameters
 
 
--  _sliceIndex_ Type:  **number**
+_sliceIndex_ <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Type:  **number**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Specifies the zero-based index of the slice to be retrieved. Required.<br/><br/>
     
-    Specifies the zero-based index of the slice to be retrieved. Required.
-    
--  _callback_ Type:  **object**
-    
-    A function that is invoked when the callback returns, whose only parameter is of type [AsyncResult](../../reference/shared/asyncresult.md). Optional.
+_callback_ <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Type:  **object**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;A function that is invoked when the callback returns, whose only parameter is of type [AsyncResult](../../reference/shared/asyncresult.md). Optional.
     
 
 ## Callback Value
@@ -62,9 +62,6 @@ For more information about Office host application and server requirements, see 
 
 ## Support history
 
-
-
-****
 
 
 |**Version**|**Changes**|
