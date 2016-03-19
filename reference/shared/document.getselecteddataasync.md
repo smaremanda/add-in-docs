@@ -11,7 +11,7 @@ Reads the data contained in the current selection in the document.
 [![Try out this call in the interactive API Tutorial for Excel](../../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](http://officeapitutorial.azurewebsites.net/Redirect.html?scenario=Write+and+Read+Text&amp;task=writeSelectedDataText)
 
 
-```
+```js
 Office.context.document.getSelectedDataAsync(coercionType [, options], callback); 
 ```
 
@@ -22,7 +22,7 @@ Office.context.document.getSelectedDataAsync(coercionType [, options], callback)
 
 |**Name**|**Type**|**Description**|**Support notes**|
 |:-----|:-----|:-----|:-----|
-| _coercionType_|[CoercionType](../../reference/shared/coerciontype-enumeration.md)<br/><table><tr><td><b>Host support</b></td><td><tr><td><b>Office.CoercionType.Text</b> (string)</td><td>Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online only</td></tr><tr><td><b>Office.CoercionType.Matrix</b> (array of arrays)</td><td>Excel, Word, and Word Online only</td></tr><tr><td><b>Office.CoercionType.Table</b> ([TableData](../../reference/shared/tabledata.md) object)</td><td>Access, Excel, Word, and Word Online only</td></tr><tr><td><b>Office.CoercionType.Html</b></td><td>Word only.</td></tr><tr><td><b>Office.CoercionType.Ooxml</b> (Office Open XML)</td><td>Word and Word Online only</td></tr><tr><td><b>Office.CoercionType.SlideRange</b></td><td>PowerPoint, and PowerPoint Online only</td></tr></table>|The type of data structure to return. Required.||
+| _coercionType_|[CoercionType](../../reference/shared/coerciontype-enumeration.md)<br/><table><tr><td></td><td><b>Host support</b></td></tr><tr><td><b>Office.CoercionType.Text</b> (string)</td><td>Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online only</td></tr><tr><td><b>Office.CoercionType.Matrix</b> (array of arrays)</td><td>Excel, Word, and Word Online only</td></tr><tr><td><b>Office.CoercionType.Table</b> ([TableData](../../reference/shared/tabledata.md) object)</td><td>Access, Excel, Word, and Word Online only</td></tr><tr><td><b>Office.CoercionType.Html</b></td><td>Word only.</td></tr><tr><td><b>Office.CoercionType.Ooxml</b> (Office Open XML)</td><td>Word and Word Online only</td></tr><tr><td><b>Office.CoercionType.SlideRange</b></td><td>PowerPoint, and PowerPoint Online only</td></tr></table>|The type of data structure to return. Required.||
 | _options_|**object**<br/><table><tr><td><i>valueFormat</i></td><td><b>[ValueFormat](../../reference/shared/valueformat-enumeration.md)</b></td><td>Specifies whether to return the result with its number or date values formatted or unformatted.</td><td></td></tr><tr><td><i>filterType</i></td><td>[FilterType](../../reference/shared/filtertype-enumeration.md)</td><td>Specifies whether to apply filtering when the data is retrieved. Optional.</td><td>This parameter is ignored in Word documents.</td></tr><tr><td><i>asyncContext</i></td><td><b>array</b>,  <b>boolean</b>,  <b>null</b>,  <b>number</b>,  <b>object</b>,  <b>string</b>, or <b>undefined</b></td><td>A user-defined item of any type that is returned in the  <b>AsyncResult</b> object without being altered.</td><td></td></tr></table>|Specifies any of the following [optional parameters](../../docs/develop/asynchronous-programming-in-office-add-ins.md#passing-optional-parameters-to-asynchronous-methods)||
 | _callback_|**object**|A function that is invoked when the callback returns, whose only parameter is of type  **AsyncResult**.||
 
@@ -55,17 +55,11 @@ Use the  _coercionType_ parameter of the **getSelectedDataAsync** method to spec
 
 |**Specified  _coercionType_**|**Data returned**|**Office host application support**|
 |:-----|:-----|:-----|
-|**Office.CoercionType.Text** or `"text"`|A string.|Word, Excel, PowerPoint, and Project.
- >**Note**  In Excel, even when a subset of a cell is selected, the entire cell contents are returned.
-
-|
+|**Office.CoercionType.Text** or `"text"`|A string.|Word, Excel, PowerPoint, and Project.<br/><br/> **Note**: In Excel, even when a subset of a cell is selected, the entire cell contents are returned.|
 |**Office.CoercionType.Matrix** or `"matrix"`|An array of arrays. For example,  ` [['a','b'], ['c','d']]` for a selection of two rows in two columns.|Word and Excel.|
 |**Office.CoercionType.Table** or `"table"`|A [TableData](../../reference/shared/tabledata.md) object for reading a table with headers.|Word and Excel.|
 |**Office.CoercionType.Html** or `"html"`|In HTML format.|Word only.|
-|**Office.CoercionType.Ooxml** or `"ooxml"`|In Open Office XML (OpenXML) format.|Word only.
- >**Tip**  When developing your add-in's code, you can use the  `"ooxml"` _coercionType_ of the **getSelectedDataAsync** method to see how the content you select in a Word document is defined as OpenXML tags. Then, use those tags in the data parameter of the [Document.setSelectedDataAsync](../../reference/shared/document.setselecteddataasync.md) method to write content with that formatting or structure to a document. For example, you can [insert an image into a document](http://blogs.msdn.com/b/officeapps/archive/2012/10/26/inserting-images-with-apps-for-office.aspx) as OpenXML.
-
-|
+|**Office.CoercionType.Ooxml** or `"ooxml"`|In Open Office XML (OpenXML) format.|Word only.<br/><br/> **Tip**: When developing your add-in's code, you can use the  `"ooxml"` _coercionType_ of the **getSelectedDataAsync** method to see how the content you select in a Word document is defined as OpenXML tags. Then, use those tags in the data parameter of the [Document.setSelectedDataAsync](../../reference/shared/document.setselecteddataasync.md) method to write content with that formatting or structure to a document. For example, you can [insert an image into a document](http://blogs.msdn.com/b/officeapps/archive/2012/10/26/inserting-images-with-apps-for-office.aspx) as OpenXML.|
 |**Office.CoercionType.SlideRange** or "slideRange"|A JSON object that contains an array named "slides" that contains the ids, titles, and indexes of the selected slides.  **Note:** To select more than one slide, the user must be editing the presentation in **Normal**,  **Outline View**, or  **Slide Sorter** view. Also, this method isn't supported in **Master Views**.For example,  `{"slides":[{"id":257,"title":"Slide 2","index":2},{"id":256,"title":"Slide 1","index":1}]}` for a selection of two slides.|PowerPoint only.|
 If the data structure of the selection doesn't match the specified  _coercionType_, the  **getSelectedDataAsync** method will attempt to coerce the data into that type or structure. If the selection can't be coerced into the **Office.CoercionType** you specified, the **AsyncResult.status** property returns `"failed"`.
 
@@ -137,11 +131,6 @@ For more information about Office host application and server requirements, see 
 
 ## Support history
 
-
-
-
-
-****
 
 
 |**Version**|**Changes**|
