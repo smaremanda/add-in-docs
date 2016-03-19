@@ -7,7 +7,7 @@ Gets an object that represents the saved custom settings of the content or task 
 |**Hosts:**|Access, Excel, PowerPoint, Word|
 |**Last changed in**|1.1|
 
-```
+```js
 var _settings = Office.context.document.settings;
 ```
 
@@ -44,12 +44,6 @@ For more information about Office host application and server requirements, see 
 |**Namespace**|Office|
 
 ## Support history
-
-
-
-
-
-****
 
 
 |**Version**|**Changes**|
