@@ -8,7 +8,7 @@ Occurs when the task selection changes in the active project.
 |**Available in [Requirement set](../../docs/overview/specify-office-hosts-and-api-requirements.md)**|Selection|
 |**Added in**|1.0|
 
-```
+```js
 Office.EventType.TaskSelectionChanged
 ```
 
@@ -98,13 +98,9 @@ For more information about Office host application and server requirements, see 
 
 
 
-****
-
-
 |**Version**|**Changes**|
 |:-----|:-----|
-|1.0|
-<ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>Introduced</p></li></ul>|
+|1.0|<ul><li>Introduced</li></ul>|
 
 ## See also
 
