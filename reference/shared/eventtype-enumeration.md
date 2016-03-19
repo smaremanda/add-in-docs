@@ -32,9 +32,7 @@ Office.EventType
 ## Remarks
 
 
- >**Note**  
- ---
- Add-ins for Project support the  **Office.EventType.ResourceSelectionChanged**,  **Office.EventType.TaskSelectionChanged**, and  **Office.EventType.ViewSelectionChanged** event types.
+ >**Note**:  Add-ins for Project support the  **Office.EventType.ResourceSelectionChanged**,  **Office.EventType.TaskSelectionChanged**, and  **Office.EventType.ViewSelectionChanged** event types.
 
 
 ## Support details
