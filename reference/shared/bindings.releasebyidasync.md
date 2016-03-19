@@ -8,7 +8,7 @@ Removes the specified binding.
 |**Available in [Requirement set](../../docs/overview/specify-office-hosts-and-api-requirements.md)**|MatrixBindings, TableBindings, TextBindings|
 |**Last changed**|1.1|
 
-```
+```js
 bindingsObj.releaseByIdAsync(id [, options], callback);
 ```
 
@@ -70,10 +70,8 @@ A capital Y in the following matrix indicates that this method is supported in t
 For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](../../docs/overview/requirements-for-running-office-add-ins.md).
 
 
-||
-|:-----|
-|**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|
-|:-----|:-----|:-----|
+||**Office for Windows desktop**|**Office Online (in browser)**|**Office for iPad**|
+|:-----|:-----|:-----|:-----|
 |**Access**||Y||
 |**Excel**|Y|Y|Y|
 |**Word**|Y||Y|
