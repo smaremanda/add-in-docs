@@ -22,25 +22,8 @@ Office.context.document.getSelectedDataAsync(coercionType [, options], callback)
 
 |**Name**|**Type**|**Description**|**Support notes**|
 |:-----|:-----|:-----|:-----|
-| _coercionType_|[CoercionType](../../reference/shared/coerciontype-enumeration.md)
-||
-|:-----|
-|**Host support**|
-|:-----|
-|**Office.CoercionType.Text** (string)|Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online only|
-|**Office.CoercionType.Matrix** (array of arrays)|Excel, Word, and Word Online only|
-|**Office.CoercionType.Table** ([TableData](../../reference/shared/tabledata.md) object)|Access, Excel, Word, and Word Online only|
-|**Office.CoercionType.Html**|Word only.|
-|**Office.CoercionType.Ooxml** (Office Open XML)|Word and Word Online only|
-|**Office.CoercionType.SlideRange**|PowerPoint, and PowerPoint Online only|
-|The type of data structure to return. Required.||
-| _options_|**object**
-|||||
-|:-----|:-----|:-----|:-----|
-| _valueFormat_|**[ValueFormat](../../reference/shared/valueformat-enumeration.md)**|Specifies whether to return the result with its number or date values formatted or unformatted. ||
-| _filterType_|[FilterType](../../reference/shared/filtertype-enumeration.md)|Specifies whether to apply filtering when the data is retrieved. Optional.|This parameter is ignored in Word documents.|
-| _asyncContext_|**array**,  **boolean**,  **null**,  **number**,  **object**, **string**, or  **undefined**|A user-defined item of any type that is returned in the  **AsyncResult** object without being altered.||
-|Specifies any of the following [optional parameters](../../docs/develop/asynchronous-programming-in-office-add-ins.md#passing-optional-parameters-to-asynchronous-methods)||
+| _coercionType_|[CoercionType](../../reference/shared/coerciontype-enumeration.md)<br/><table><tr><td><b>Host support</b></td><td><tr><td><b>Office.CoercionType.Text</b> (string)</td><td>Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online only</td></tr><tr><td><b>Office.CoercionType.Matrix</b> (array of arrays)</td><td>Excel, Word, and Word Online only</td></tr><tr><td><b>Office.CoercionType.Table</b> ([TableData](../../reference/shared/tabledata.md) object)</td><td>Access, Excel, Word, and Word Online only</td></tr><tr><td><b>Office.CoercionType.Html</b></td><td>Word only.</td></tr><tr><td><b>Office.CoercionType.Ooxml</b> (Office Open XML)</td><td>Word and Word Online only</td></tr><tr><td><b>Office.CoercionType.SlideRange</b></td><td>PowerPoint, and PowerPoint Online only</td></tr></table>|The type of data structure to return. Required.||
+| _options_|**object**<br/><table><tr><td><i>valueFormat</i></td><td><b>[ValueFormat](../../reference/shared/valueformat-enumeration.md)</b></td><td>Specifies whether to return the result with its number or date values formatted or unformatted.</td><td></td></tr><tr><td><i>filterType</i></td><td>[FilterType](../../reference/shared/filtertype-enumeration.md)</td><td>Specifies whether to apply filtering when the data is retrieved. Optional.</td><td>This parameter is ignored in Word documents.</td></tr><tr><td><i>asyncContext</i></td><td><b>array</b>,  <b>boolean</b>,  <b>null</b>,  <b>number</b>,  <b>object</b>,  <b>string</b>, or <b>undefined</b></td><td>A user-defined item of any type that is returned in the  <b>AsyncResult</b> object without being altered.</td><td></td></tr></table>|Specifies any of the following [optional parameters](../../docs/develop/asynchronous-programming-in-office-add-ins.md#passing-optional-parameters-to-asynchronous-methods)||
 | _callback_|**object**|A function that is invoked when the callback returns, whose only parameter is of type  **AsyncResult**.||
 
 ## Callback Value
