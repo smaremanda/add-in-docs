@@ -56,9 +56,6 @@ For more information about Office host application and server requirements, see 
 
 
 
-****
-
-
 |**Version**|**Changes**|
 |:-----|:-----|
 |1.1|Added support for Excel and Word in Office for iPad|
