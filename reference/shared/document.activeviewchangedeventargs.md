@@ -7,9 +7,6 @@ Provides information about the view that raised the [ActiveViewChanged](../../re
 |**Hosts:**|PowerPoint|
 |**Introduced in**|1.1|
 
-```
-
-```
 
 
 ## Members
