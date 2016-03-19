@@ -9,7 +9,7 @@ Sets or creates the specified setting.
 |**Available in [Requirement set](../../docs/overview/specify-office-hosts-and-api-requirements.md)**|Settings|
 |**Last changed in**|1.1|
 
-[![Try out this call in the interactive API Tutorial for Excel](../../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](http://officeapitutorial.azurewebsites.net/Redirect.html?scenario=Persist+Settings&amp;amp;task=setSettings" target="_blank")
+[![Try out this call in the interactive API Tutorial for Excel](../../images/819b84bf-151c-4a12-80c3-d6f8d7c03251.png)](http://officeapitutorial.azurewebsites.net/Redirect.html?scenario=Update+a+Row+in+a+Table)
 
 
 ```js
@@ -38,9 +38,7 @@ _value_<br/>
 The  **set** method creates a new setting of the specified name if it does not already exist, or sets an existing setting of the specified name in the in-memory copy of the settings property bag. After you call the [Settings.saveAsync](../../reference/shared/settings.saveasync.md) method, the value is stored in the document as the serialized JSON representation of its data type. A maximum of 2MB is available for the settings of each add-in.
 
 
->**Important**
----
-Be aware that the  **Settings.set** method affects only the in-memory copy of the settings property bag. To make sure that additions or changes to settings will be available to your add-in the next time the document is opened, at some point after calling the **Settings.set** method and before the add-in is closed, you must call the **Settings.saveAsync** method to persist settings in the document.
+ >**Important**:  Be aware that the  **Settings.set** method affects only the in-memory copy of the settings property bag. To make sure that additions or changes to settings will be available to your add-in the next time the document is opened, at some point after calling the **Settings.set** method and before the add-in is closed, you must call the **Settings.saveAsync** method to persist settings in the document.
 
 
 ## Example
