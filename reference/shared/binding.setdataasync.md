@@ -227,16 +227,10 @@ For more information about Office host application and server requirements, see 
 
 
 
-
-
-****
-
-
 |**Version**|**Changes**|
 |:-----|:-----|
 |1.1|Added support for Excel and Word in Office for iPad.|
-|1.1|
-<ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>In add-ins for Access, added support for writing table data.</p></li><li><p>In add-ins for Excel, added support for <a href="http://msdn.microsoft.com/library/46b05707-b350-41be-b6b8-311799c71a33(Office.15).aspx" target="_blank">setting formatting when writing data to a table binding</a> using the <span class="parameter" sdata="paramReference">tableOptions</span> and <span class="parameter" sdata="paramReference">cellFormat</span> optional parameters. </p></li></ul>|
+|1.1|<ul><li>In add-ins for Access, added support for writing table data.</li><li>In add-ins for Excel, added support for <a href="http://msdn.microsoft.com/library/46b05707-b350-41be-b6b8-311799c71a33(Office.15).aspx" target="_blank">setting formatting when writing data to a table binding</a> using the <span class="parameter" sdata="paramReference">tableOptions</span> and <span class="parameter" sdata="paramReference">cellFormat</span> optional parameters.</li></ul>|
 |1.0|Introduced|
 
 ## See also
