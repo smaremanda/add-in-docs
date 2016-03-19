@@ -10,38 +10,25 @@ Asynchronously gets the maximum index of the collection of tasks in the current 
 |**Available in [Requirement set](../../docs/overview/specify-office-hosts-and-api-requirements.md)**|Selection|
 |**Added in**|1.1|
 
-```
+```js
 Office.context.document.getMaxTaskIndexAsync([options][, callback]);
 ```
 
 
 ## Parameters
 
+_options_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;The following **[optional parameter](../../docs/develop/asynchronous-programming-in-office-add-ins.md#passing-optional-parameters-to-asynchronous-methods):**<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;_asyncContext_<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type: **array**, **boolean**, **null**, **number**, **object**, **string**, or **undefined**<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A user-defined item of any type that is returned in the [AsyncResult](../../reference/shared/asyncresult.md) object without being altered. Optional.<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For example, you can pass the _asyncContext_ argument by using the format `{asyncContext: 'Some text'}` or `{asyncContext: <object>}`.|
 
-* _options_ The following [optional parameter](../../docs/develop/asynchronous-programming-in-office-add-ins.md#passing-optional-parameters-to-asynchronous-methods):
-    
-  * asyncContext
-
-    Type: **array, boolean, null, number, object, string, or undefined**
-
-    A user-defined item of any type that is returned in the [AsyncResult](../../reference/shared/asyncresult.md) object without being altered. Optional.
-
-    For example, you can pass the _asyncContext_ argument by using the format `{asyncContext: 'Some text'}` or `{asyncContext: <object>}`.
-* _callback_
-    
-    _Type_:  **function**
-    
-    A function that is invoked when the method call returns, where the only parameter is of type [AsyncResult](../../reference/shared/asyncresult.md). Optional.
-    
+_callback_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Type: **function**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;A function that is invoked when the method call returns, where the only parameter is of type [AsyncResult](../../reference/shared/asyncresult.md). Optional.   
 
 ## Callback Value
 
 When the  _callback_ function executes, it receives an [AsyncResult](../../reference/shared/asyncresult.md) object that you can access from the parameter in the callback function.
 
 For the  **getMaxTaskIndexAsync** method, the returned [AsyncResult](../../reference/shared/asyncresult.md) object contains following properties:
-
-
-****
 
 
 |**Name**|**Description**|
@@ -167,8 +154,6 @@ For more information about Office host application and server requirements, see 
 ## Support history
 
 
-
-****
 
 
 |**Version**|**Changes**|
