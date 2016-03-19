@@ -8,7 +8,7 @@ Represents an instance of an add-in, which provides access to the top-level obje
 |**Hosts:**|Access, Excel, Outlook, PowerPoint, Project, Word|
 |**Last changed in**|1.1|
 
-```
+```js
 Office
 ```
 
@@ -73,7 +73,6 @@ For more information about Office host application and server requirements, see 
 |**Version**|**Changes**|
 |:-----|:-----|
 |1.1|Added support for Excel, PowerPoint, and Word in Office for iPad.|
-|1.1|
-<ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>For <a href="6c4b2c16-d4fb-4ecf-b72c-1e33b205daaf.htm">context</a>, added support for getting the runtime context in content add-ins for Access.</p></li><li><p>For <a href="23aeb136-da1f-4127-a798-99dc27bc4dae.htm">select</a>, added support for selecting table bindings in content add-ins for Access.</p></li><li><p>For <a href="9a4d5c7d-fcc4-4e8f-bef2-f2a8d8b4ae00.htm">useShortNamespace</a>, added support for content add-ins for Access.</p></li><li><p>For <a href="727adf79-a0b5-48d2-99c7-6642c2c334fc.htm">initialize</a>, added support for initialization in content add-ins for Access.</p></li></ul>|
+|1.1|<ul><li>For <a href="6c4b2c16-d4fb-4ecf-b72c-1e33b205daaf.htm">context</a>, added support for getting the runtime context in content add-ins for Access.</p></li><li><p>For <a href="23aeb136-da1f-4127-a798-99dc27bc4dae.htm">select</a>, added support for selecting table bindings in content add-ins for Access.</li><li>For <a href="9a4d5c7d-fcc4-4e8f-bef2-f2a8d8b4ae00.htm">useShortNamespace</a>, added support for content add-ins for Access.</li><li>For <a href="727adf79-a0b5-48d2-99c7-6642c2c334fc.htm">initialize</a>, added support for initialization in content add-ins for Access.</li></ul>|
 |1.0|Introduced|
 
