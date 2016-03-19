@@ -8,7 +8,7 @@ Deletes all non-header rows and their values in the table, shifting appropriatel
 |**Available in [Requirement set](../../docs/overview/specify-office-hosts-and-api-requirements.md)**|TableBindings|
 |**Last changed in**|1.1|
 
-```
+```js
 _bindingObj.deleteAllDataValuesAsync([options], callback);
 ```
 
@@ -87,10 +87,6 @@ For more information about Office host application and server requirements, see 
 |**Namespace**|Office|
 
 ## Support history
-
-
-
-****
 
 
 |**Version**|**Changes**|
