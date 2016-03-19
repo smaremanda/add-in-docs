@@ -69,8 +69,8 @@ Additionally, the following application-specific actions apply when writing data
     
   - If  _data_ is HTML, the specified HTML is inserted.
     
-     >**Important**<br/>
-     ****
+     >**Important**
+---
      If any of the HTML you insert is invalid, Word won't raise an error. Word will insert as much of the HTML as it can and omits any invalid data.
   - If  _data_ is Office Open XML, the specified XML is inserted.
     
@@ -108,6 +108,7 @@ In addition to the behaviors described for Excel above, the following limits app
     
 - The number of  _formatting groups_ passed to the _cellFormat_ parameter can't exceed 100. A single formatting group consists of a set of formatting applied to a specified range of cells. For example, the following call passes two formatting groups to _cellFormat_.
     
+
 ```js
   Office.context.document.setSelectedDataAsync(
     {cellFormat:[{cells: {row: 1}, format: {fontColor: "yellow"}}, 
