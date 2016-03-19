@@ -25,14 +25,14 @@ _options_<br/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;Specifies the following [optional parameters](../../docs/develop/asynchronous-programming-in-office-add-ins.md#passing-optional-parameters-to-asynchronous-methods).
     
-||
-|:-----|
-|_asyncContext_
-&nbsp;&nbsp;&nbsp;&nbsp;Type: **array**, **Boolean**, **null**, **number**, **object**, **string**, or **undefined**<br />&nbsp;&nbsp;&nbsp;&nbsp;A user-defined item of any type that is returned in the **AsyncResult**  object without being altered. Optional.|
-&nbsp;&nbsp;&nbsp;&nbsp;_callback_<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type:  **object**
+&nbsp;&nbsp;&nbsp;&nbsp;_asyncContext_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type: **array, boolean, null, number, object, string, or undefined**<br/><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A user-defined item of any type that is returned in the [AsyncResult](../../reference/shared/asyncresult.md) object without being altered. Optional.<br/><br/>
+
+_callback_<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type:  **object**
     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A function that is invoked when the callback returns, whose only parameter is of type [AsyncResult](../../reference/shared/asyncresult.md). Optional.
-    
+&nbsp;&nbsp;&nbsp;&nbsp;A function that is invoked when the callback returns, whose only parameter is of type [AsyncResult](../../reference/shared/asyncresult.md). Optional.
+
 
 
 |**Name**|**Type**|**Description**|**Support notes**|
