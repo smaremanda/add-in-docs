@@ -15,17 +15,9 @@ The Office namespace provides shared interfaces that are used by add-ins in all 
 
 ### Namespaces
 
-<dl>
+[context](Office.context.md): Provides shared interfaces from the Office add-ins API's context namespace for use in the Outlook add-in API.
 
-<dt>[context](Office.context.md)</dt>
-
-<dd class="ms-font-m">Provides shared interfaces from the Office add-ins API's context namespace for use in the Outlook add-in API.</dd>
-
-<dt>[MailboxEnums](Office.MailboxEnums.md)</dt>
-
-<dd class="ms-font-m">Includes the ItemType, EntityType, AttachmentType, RecipientType, ResponseType, and ItemNotificationMessageType enumerations.</dd>
-
-</dl>
+[MailboxEnums](Office.MailboxEnums.md): Includes the ItemType, EntityType, AttachmentType, RecipientType, ResponseType, and ItemNotificationMessageType enumerations.
 
 ### Members
 
