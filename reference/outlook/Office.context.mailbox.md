@@ -16,21 +16,11 @@ Provides access to the Outlook Add-in object model for Microsoft Outlook and Mic
 
 ### Namespaces
 
-<dl>
+[diagnostics](Office.context.mailbox.diagnostics.md): Provides diagnostic information to an Outlook add-in.
 
-<dt>[diagnostics](Office.context.mailbox.diagnostics.md)</dt>
+[item](Office.context.mailbox.item.md): Provides methods and properties for accessing a message or appointment in an Outlook add-in.
 
-<dd class="ms-font-m">Provides diagnostic information to an Outlook add-in.</dd>
-
-<dt>[item](Office.context.mailbox.item.md)</dt>
-
-<dd class="ms-font-m">Provides methods and properties for accessing a message or appointment in an Outlook add-in.</dd>
-
-<dt>[userProfile](Office.context.mailbox.userProfile.md)</dt>
-
-<dd class="ms-font-m">Provides information about the user in an Outlook add-in.</dd>
-
-</dl>
+[userProfile](Office.context.mailbox.userProfile.md): Provides information about the user in an Outlook add-in.</dd>
 
 ### Members
 
