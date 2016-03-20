@@ -2,8 +2,6 @@
 
 # Event
 
-## Event
-
 The `event` object is passed as a parameter to add-in functions invoked by UI-less command buttons. The object allows the add-in to identify which button was clicked and to signal the host that it has completed its processing.
 
 For example, consider a button defined in an add-in manifest as follows:

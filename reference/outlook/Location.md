@@ -2,8 +2,6 @@
 
 # Location
 
-## Location
-
 Provides methods to get and set the location of a meeting in an Outlook add-in.
 
 ##### Requirements

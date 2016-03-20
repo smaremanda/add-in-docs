@@ -2,8 +2,6 @@
 
 # Recipients
 
-## Recipients
-
 ##### Requirements
 
 |Requirement| Value|

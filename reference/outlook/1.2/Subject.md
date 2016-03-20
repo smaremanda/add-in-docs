@@ -2,8 +2,6 @@
 
 # Subject
 
-## Subject
-
 Provides methods to get and set the subject of an appointment or message in an Outlook add-in.
 
 ##### Requirements
