@@ -209,52 +209,92 @@
     <Item text="LabsJS.Labs" url="office-mix/labsjs.labs" FriendlyUrl="powerpoint/office-mix/referencelabsjs.labs" Scope="powerpoint" />
   </Item>
   </Item>
-  <Item text="Outlook" url="outlook" scope="Outlook">
-		<Item text="1.1" url="outlook/1.1" Version="V1.1">
-		<Item text="Object Models" url="outlook/1.1" Version="V1.1">
-		  <Item text="Office.context" url="outlook/1.1/Office.context" Version="V1.1" />
-		  <Item text="Office.context.mailbox.diagnostics" url="outlook/1.1/Office.context.mailbox.diagnostics" Version="V1.1" />
-		  <Item text="Office.context.mailbox" url="outlook/1.1/Office.context.mailbox" Version="V1.1" />
-		  <Item text="Office.context.mailbox.item" url="outlook/1.1/Office.context.mailbox.item" Version="V1.1" />
-		  <Item text="Office.context.mailbox.userProfile" url="outlook/1.1/Office.context.mailbox.userProfile" Version="V1.1" />
-		  <Item text="Office" url="outlook/1.1/Office" Version="V1.1" />
-		</Item>
-		<Item text="Complex Types" url="outlook/1.1" Version="V1.1">
-		  <Item text="Body" url="outlook/1.1/Body" Version="V1.1" />
-		  <Item text="CustomProperties" url="outlook/1.1/CustomProperties" Version="V1.1" />
-		<Item text="Location" url="outlook/1.1/Location" Version="V1.1" />
-		  <Item text="Recipients" url="outlook/1.1/Recipients" Version="V1.1" />
-		  <Item text="RoamingSettings" url="outlook/1.1/RoamingSettings" Version="V1.1" />
-		  <Item text="Subject" url="outlook/1.1/Subject" Version="V1.1" />
-		  <Item text="Time" url="outlook/1.1/Time" Version="V1.1" />
-		</Item>
-		<Item text="Simple Types" url="outlook/1.1/simple-types" Version="V1.1" />
-		<Item text="Enumerations" url="outlook/1.1/Office.MailboxEnums" Version="V1.1" />   
+  <Item text="Outlook" url="outlook/index" scope="Outlook">
+		<Item text="1.1" url="outlook/1.1/index" Version="V1.1">
+		  <Item text="Object Models" url="outlook/1.1" Version="V1.1">
+		    <Item text="Office.context" url="outlook/1.1/Office.context" Version="V1.1" />
+		    <Item text="Office.context.mailbox.diagnostics" url="outlook/1.1/Office.context.mailbox.diagnostics" Version="V1.1" />
+		    <Item text="Office.context.mailbox" url="outlook/1.1/Office.context.mailbox" Version="V1.1" />
+		    <Item text="Office.context.mailbox.item" url="outlook/1.1/Office.context.mailbox.item" Version="V1.1" />
+		    <Item text="Office.context.mailbox.userProfile" url="outlook/1.1/Office.context.mailbox.userProfile" Version="V1.1" />
+		    <Item text="Office" url="outlook/1.1/Office" Version="V1.1" />
+		  </Item>
+		  <Item text="Complex Types" url="outlook/1.1" Version="V1.1">
+		    <Item text="Body" url="outlook/1.1/Body" Version="V1.1" />
+		    <Item text="CustomProperties" url="outlook/1.1/CustomProperties" Version="V1.1" />
+		    <Item text="Location" url="outlook/1.1/Location" Version="V1.1" />
+		    <Item text="Recipients" url="outlook/1.1/Recipients" Version="V1.1" />
+		    <Item text="RoamingSettings" url="outlook/1.1/RoamingSettings" Version="V1.1" />
+		    <Item text="Subject" url="outlook/1.1/Subject" Version="V1.1" />
+		    <Item text="Time" url="outlook/1.1/Time" Version="V1.1" />
+		  </Item>
+		  <Item text="Simple Types" url="outlook/simple-types" Version="V1.1">
+        <Item text="AsyncResult" url="outlook/simple-types#asyncresult" Version="V1.1" />
+        <Item text="AttachmentDetails" url="outlook/simple-types#attachmentdetails" Version="V1.1" />
+        <Item text="Contact" url="outlook/simple-types#contact" Version="V1.1" />
+        <Item text="EmailAddressDetails" url="outlook/simple-types#emailaddressdetails" Version="V1.1" />
+        <Item text="EmailUser" url="outlook/simple-types#emailuser" Version="V1.1" />
+        <Item text="Entities" url="outlook/simple-types#entities" Version="V1.1" />
+        <Item text="LocalClientTime" url="outlook/simple-types#localclienttime" Version="V1.1" />
+        <Item text="MeetingSuggestion" url="outlook/simple-types#contact" Version="V1.1" />
+        <Item text="PhoneNumber" url="outlook/simple-types#phonenumber" Version="V1.1" />
+        <Item text="TaskSuggestion" url="outlook/simple-types#tasksuggestion" Version="V1.1" />
     </Item>
-		<Item text="1.2" url="outlook/1.2" Version="V1.2">
-	  <Item text="Object Models" url="outlook/1.2" Version="V1.2">
-		<Item text="Office" url="outlook/1.2/Office" Version="V1.2" />	
-		<Item text="Office.context" url="outlook/1.2/Office.context" Version="V1.2" />
-		  <Item text="Office.context.mailbox.diagnostics" url="outlook/1.2/Office.context.mailbox.diagnostics" Version="V1.2" />
-		  <Item text="Office.context.mailbox" url="outlook/1.2/Office.context.mailbox" Version="V1.2" />
-		  <Item text="Office.context.mailbox.item" url="outlook/1.2/Office.context.mailbox.item" Version="V1.2" />
-		  <Item text="Office.context.mailbox.userProfile" url="outlook/1.2/Office.context.mailbox.userProfile" Version="V1.2" />
-		  <Item text="Office" url="outlook/1.2/Office" Version="V1.2" />
-		</Item>
-		<Item text="Complex Types" url="outlook/1.2"  Version="V1.2">
-		  <Item text="Body" url="outlook/1.2/Body" Version="V1.2" />
-		  <Item text="CustomProperties" url="outlook/1.2/CustomProperties" Version="V1.2" />
-		<Item text="Location" url="outlook/1.2/Location" Version="V1.2" />
-		  <Item text="Recipients" url="outlook/1.2/Recipients" Version="V1.2" />
-		  <Item text="RoamingSettings" url="outlook/1.2/RoamingSettings" Version="V1.2" />
-		  <Item text="Subject" url="outlook/1.2/Subject" Version="V1.2" />
-		  <Item text="Time" url="outlook/1.2/Time" Version="V1.2" />
-		</Item>
-		<Item text="Simple Types" url="outlook/1.2/simple-types" Version="V1.2" />
-		<Item text="Enumerations" url="outlook/1.2/Office.MailboxEnums" Version="V1.2" />   
-
-      <Item text="index" url="outlook/1.2/index" Version="V1.2" />
+		  <Item text="Enumerations" url="outlook/Office.MailboxEnums" Version="V1.1">  
+      <Item text="Office.AsyncResultStatus" url="outlook/Office#asyncresultstatus-string" Version="V1.1" />
+      <Item text="Office.CoercionType" url="outlook/Office#coerciontype-string" Version="V1.1" />
+      <Item text="Office.MailboxEnums.AttachmentType" url="outlook/Office.MailboxEnums#attachmenttype-string" Version="V1.1" />
+      <Item text="Office.MailboxEnums.EntityType" url="outlook/Office.MailboxEnums#entitytype-string" Version="V1.1" />
+      <Item text="Office.MailboxEnums.ItemType" url="outlook/Office.MailboxEnums#itemtype-string" Version="V1.1" />
+      <Item text="Office.MailboxEnums.RecipientType" url="outlook/Office.MailboxEnums#recipienttype-string" Version="V1.1" />
+      <Item text="Office.MailboxEnums.ResponseType" url="outlook/Office.MailboxEnums#responsetype-string" Version="V1.1" />
+      <Item text="Office.MailboxEnums.SourceProperty" url="outlook/Office#sourceproperty-string" Version="V1.1" />
+    </Item>   
+   </Item>
+		<Item text="1.2" url="outlook/1.2/index" Version="V1.2">
+	    <Item text="Object Models" url="outlook/1.2" Version="V1.2">
+		  <Item text="Office" url="outlook/1.2/Office" Version="V1.2" />	
+		  <Item text="Office.context" url="outlook/1.2/Office.context" Version="V1.2" />
+		    <Item text="Office.context.mailbox.diagnostics" url="outlook/1.2/Office.context.mailbox.diagnostics" Version="V1.2" />
+		    <Item text="Office.context.mailbox" url="outlook/1.2/Office.context.mailbox" Version="V1.2" />
+		    <Item text="Office.context.mailbox.item" url="outlook/1.2/Office.context.mailbox.item" Version="V1.2" />
+		    <Item text="Office.context.mailbox.userProfile" url="outlook/1.2/Office.context.mailbox.userProfile" Version="V1.2" />
+		    <Item text="Office" url="outlook/1.2/Office" Version="V1.2" />
+		  </Item>
+		  <Item text="Complex Types" url="outlook/1.2"  Version="V1.2">
+		    <Item text="Body" url="outlook/1.2/Body" Version="V1.2" />
+		    <Item text="CustomProperties" url="outlook/1.2/CustomProperties" Version="V1.2" />
+		  <Item text="Location" url="outlook/1.2/Location" Version="V1.2" />
+		    <Item text="Recipients" url="outlook/1.2/Recipients" Version="V1.2" />
+		    <Item text="RoamingSettings" url="outlook/1.2/RoamingSettings" Version="V1.2" />
+		    <Item text="Subject" url="outlook/1.2/Subject" Version="V1.2" />
+		    <Item text="Time" url="outlook/1.2/Time" Version="V1.2" />
+		  </Item>
+		  <Item text="Simple Types" url="outlook/simple-types" Version="V1.2">
+        <Item text="AsyncResult" url="outlook/simple-types#asyncresult" Version="V1.2" />
+        <Item text="AttachmentDetails" url="outlook/simple-types#attachmentdetails" Version="V1.2" />
+        <Item text="Contact" url="outlook/simple-types#contact" Version="V1.2" />
+        <Item text="EmailAddressDetails" url="outlook/simple-types#emailaddressdetails" Version="V1.2" />
+        <Item text="EmailUser" url="outlook/simple-types#emailuser" Version="V1.2" />
+        <Item text="Entities" url="outlook/simple-types#entities" Version="V1.2" />
+        <Item text="LocalClientTime" url="outlook/simple-types#localclienttime" Version="V1.2" />
+        <Item text="MeetingSuggestion" url="outlook/simple-types#contact" Version="V1.2" />
+        <Item text="PhoneNumber" url="outlook/simple-types#phonenumber" Version="V1.2" />
+        <Item text="TaskSuggestion" url="outlook/simple-types#tasksuggestion" Version="V1.2" />
     </Item>
+		  <Item text="Enumerations" url="outlook/Office.MailboxEnums" Version="V1.2">  
+      <Item text="Office.AsyncResultStatus" url="outlook/Office#asyncresultstatus-string" Version="V1.2" />
+      <Item text="Office.CoercionType" url="outlook/Office#coerciontype-string" Version="V1.2" />
+      <Item text="Office.MailboxEnums.AttachmentType" url="outlook/Office.MailboxEnums#attachmenttype-string" Version="V1.2" />
+      <Item text="Office.MailboxEnums.EntityType" url="outlook/Office.MailboxEnums#entitytype-string" Version="V1.2" />
+      <Item text="Office.MailboxEnums.ItemType" url="outlook/Office.MailboxEnums#itemtype-string" Version="V1.2" />
+      <Item text="Office.MailboxEnums.RecipientType" url="outlook/Office.MailboxEnums#recipienttype-string" Version="V1.2" />
+      <Item text="Office.MailboxEnums.ResponseType" url="outlook/Office.MailboxEnums#responsetype-string" Version="V1.2" />
+      <Item text="Office.MailboxEnums.SourceProperty" url="outlook/Office#sourceproperty-string" Version="V1.2" />
+    </Item> 
+    </Item>
+    
+    <!-- V1.3 or latest. This doesn't have a url with the version number-->
 		<Item text="Object Models" url="outlook" Version="V1.3">
 		<Item text="Office" url="outlook/Office" Version="V1.3" />
 		<Item text="Office.context" url="outlook/Office.context" Version="V1.3" />
@@ -275,10 +315,31 @@
 		  <Item text="Subject" url="outlook/Subject" Version="V1.3" />
 		  <Item text="Time" url="outlook/Time" Version="V1.3" />
 		</Item>
-		<Item text="Simple Types" url="outlook/1.3/simple-types" Version="V1.3" />
-		<Item text="Enumerations" url="outlook/1.3/Office.MailboxEnums" Version="V1.3" />  
-    <Item text="index" url="outlook/index" Version="V1.3" />	
-    <Item text="tutorial-api-requirement-sets" url="outlook/tutorial-api-requirement-sets" Version="V1.3" />
+		<Item text="Simple Types" url="outlook/simple-types" Version="V1.3">
+        <Item text="AsyncResult" url="outlook/simple-types#asyncresult" Version="V1.3" />
+        <Item text="AttachmentDetails" url="outlook/simple-types#attachmentdetails" Version="V1.3" />
+        <Item text="Contact" url="outlook/simple-types#contact" Version="V1.3" />
+        <Item text="EmailAddressDetails" url="outlook/simple-types#emailaddressdetails" Version="V1.3" />
+        <Item text="EmailUser" url="outlook/simple-types#emailuser" Version="V1.3" />
+        <Item text="Entities" url="outlook/simple-types#entities" Version="V1.3" />
+        <Item text="LocalClientTime" url="outlook/simple-types#localclienttime" Version="V1.3" />
+        <Item text="MeetingSuggestion" url="outlook/simple-types#contact" Version="V1.3" />
+        <Item text="NotificationMessageDetails" url="outlook/simple-types#meetingsuggestion" Version="V1.3" />
+        <Item text="PhoneNumber" url="outlook/simple-types#phonenumber" Version="V1.3" />
+        <Item text="TaskSuggestion" url="outlook/simple-types#tasksuggestion" Version="V1.3" />
+    </Item>
+		<Item text="Enumerations" url="outlook/Office.MailboxEnums" Version="V1.3">  
+      <Item text="Office.AsyncResultStatus" url="outlook/Office#asyncresultstatus-string" Version="V1.3" />
+      <Item text="Office.CoercionType" url="outlook/Office#coerciontype-string" Version="V1.3" />
+      <Item text="Office.MailboxEnums.AttachmentType" url="outlook/Office.MailboxEnums#attachmenttype-string" Version="V1.3" />
+      <Item text="Office.MailboxEnums.EntityType" url="outlook/Office.MailboxEnums#entitytype-string" Version="V1.3" />
+      <Item text="Office.MailboxEnums.ItemNotification" url="outlook/Office.MailboxEnums#itemnotificationmessagetype-string" Version="V1.3" />
+      <Item text="Office.MailboxEnums.ItemType" url="outlook/Office.MailboxEnums#itemtype-string" Version="V1.3" />
+      <Item text="Office.MailboxEnums.RecipientType" url="outlook/Office.MailboxEnums#recipienttype-string" Version="V1.3" />
+      <Item text="Office.MailboxEnums.ResponseType" url="outlook/Office.MailboxEnums#responsetype-string" Version="V1.3" />
+      <Item text="Office.MailboxEnums.SourceProperty" url="outlook/Office#sourceproperty-string" Version="V1.3" />
+    </Item>
+    <Item text="Understanding API requirement sets" url="outlook/tutorial-api-requirement-sets" Version="V1.3" />
   </Item>
   <Item text="Shared API" url="shared/shared-api">
     <Item text="Enumerations" url="shared/enumerations" FriendlyUrl="reference/enumerationsenumerations">
@@ -503,7 +564,7 @@
     <Item text="event.completed" url="shared/event.completed" FriendlyUrl="reference/common/officeevent.completed" Scope="outlook" />
     <Item text="event.source.id" url="shared/event.source.id" FriendlyUrl="reference/common/officeevent.source.id" Scope="outlook" />
   </Item>
-  <Item text="word" url="word/word-add-ins-javascript-reference" Scope="word">
+  <Item text="Word" url="word/word-add-ins-javascript-reference" Scope="word">
     <Item text="body" url="word/body" />
     <Item text="breakType" url="word/breaktype" FriendlyUrl="word/referencebreaktype" Scope="word" />
     <Item text="contentControl" url="word/contentcontrol" FriendlyUrl="word/referencecontentcontrol" Scope="word" />
@@ -522,9 +583,8 @@
     <Item text="section" url="word/section" FriendlyUrl="word/referencesection" Scope="word" />
     <Item text="sectionCollection" url="word/sectioncollection" FriendlyUrl="word/referencesectioncollection" Scope="word" />
   </Item>
-    
-  <Item text="javascript-api-for-office-error-codes" url="javascript-api-for-office-error-codes" />
-  <Item text="javascript-api-for-office" url="javascript-api-for-office" />
-  <Item text="office-add-in-requirement-sets" url="office-add-in-requirement-sets" />
-  <Item text="what's-changed-in-the-javascript-api-for-office" url="what's-changed-in-the-javascript-api-for-office" />
+  <Item text="JavaScript API for Office error codes" url="javascript-api-for-office-error-codes" />
+  <Item text="JavaScript API for Office" url="javascript-api-for-office" />
+  <Item text="Office Add-in Requirement Sets" url="office-add-in-requirement-sets" />
+  <Item text="What's changed in the JavaScript API for Office" url="what's-changed-in-the-javascript-api-for-office" />
 </Menu>
