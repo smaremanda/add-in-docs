@@ -32,7 +32,7 @@
 		<Item text="Update API and manifest version" url="develop/update-your-javascript-api-for-office-and-manifest-schema-version" />
 	</Item>	
 	<Item text="Office JavaScript API" url="develop/understanding-the-javascript-api-for-office">
-		<Item text="Support for content and task pane add-ins" url="develop/support-for-content-and-task-pane-add-ins.md">
+		<Item text="Support for content and task pane add-ins" url="develop/support-for-content-and-task-pane-add-ins.md" />
 		<Item text="Reference Office.js" url="develop/referencing-the-javascript-api-for-office-library-from-its-cdn" />
 		<Item text="Load Office.js" url="develop/loading-the-dom-and-runtime-environment" />
 		<Item text="Asynchronous programming in Office Add-ins" url="develop/asynchronous-programming-in-office-add-ins" />
