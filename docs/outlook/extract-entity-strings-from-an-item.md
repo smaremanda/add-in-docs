@@ -206,7 +206,7 @@ The remaining sections describe how this sample (default_entities.js file) extra
 ## Extracting entities upon initialization
 
 
-Upon the [Office.initialize](http://msdn.microsoft.com/en-us/library/727adf79-a0b5-48d2-99c7-6642c2c334fc%28Office.15%29.aspx) event, the entities add-in calls the [getEntities](../../reference/outlook/Office.context.mailbox.item.md) method of the current item. The **getEntities** method returns the global variable `_MyEntities` an array of instances of supported entities. The following is the related JavaScript code.
+Upon the [Office.initialize](../../reference/shared/office.initialize.md) event, the entities add-in calls the [getEntities](../../reference/outlook/Office.context.mailbox.item.md) method of the current item. The **getEntities** method returns the global variable `_MyEntities` an array of instances of supported entities. The following is the related JavaScript code.
 
 
 ```

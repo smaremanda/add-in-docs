@@ -18,7 +18,7 @@ In Outlook, a user can create a message in text, HTML, or Rich Text Format (RTF)
 
 2.  If your data to insert is HTML and  **getTypeAsync** returns a text type for that item, reorganize your data as text and insert it with **Office.MailboxEnums.BodyType.Text** as _coercionType_. If you simply insert the HTML data with a text coercion type, the host would display the HTML tags as text. If you attempt to insert the HTML data with  **Office.MailboxEnums.BodyType.Html** as _coercionType_, you will get an error.
 
-In addition to  _coercionType_, as with most asynchronous methods in the JavaScript API for Office,  **getTypeAsync**,  **prependAsync** and **setSelectedDataAsync** take other optional input parameters. For more information about specifying these optional input parameters, see [passing optional parameters to asynchronous methods](http://msdn.microsoft.com/en-us/library/7fe6bb42-3178-4d96-85f5-af5caea7b950%28Office.15%29.aspx#AsyncProgramming_OptionalParameters) in [Asynchronous programming in Office Add-ins](../../docs/develop/asynchronous-programming-in-office-add-ins.md).
+In addition to  _coercionType_, as with most asynchronous methods in the JavaScript API for Office,  **getTypeAsync**,  **prependAsync** and **setSelectedDataAsync** take other optional input parameters. For more information about specifying these optional input parameters, see [passing optional parameters to asynchronous methods](../../docs/develop/asynchronous-programming-in-office-add-ins.md#AsyncProgramming_OptionalParameters) in [Asynchronous programming in Office Add-ins](../../docs/develop/asynchronous-programming-in-office-add-ins.md).
 
 
 ## To insert data at the current cursor position
@@ -26,7 +26,7 @@ In addition to  _coercionType_, as with most asynchronous methods in the JavaScr
 
 This section shows a code sample that uses  **getTypeAsync** to verify the body type of the item that is being composed, and then uses **setSelectedDataAsync** to insert data in the current cursor location.
 
-You can pass a callback method and optional input parameters to  **getTypeAsync**, and get any status and results in the  _asyncResult_ output parameter. If the method succeeds, you can get the type of the item body in the [AsyncResult.value](http://msdn.microsoft.com/en-us/library/453a4b43-0fdc-4ea9-967a-c033fab31507%28Office.15%29.aspx) property, which is either "text" or "html".
+You can pass a callback method and optional input parameters to  **getTypeAsync**, and get any status and results in the  _asyncResult_ output parameter. If the method succeeds, you can get the type of the item body in the [AsyncResult.value](../../reference/shared/asyncresult.status.md) property, which is either "text" or "html".
 
 You must pass a data string as an input parameter to  **setSelectedDataAsync**. Depending on the type of the item body, you can specify this data string in text or HTML format accordingly. As mentioned above, you can optionally specify the type of the data to be inserted in the  _coercionType_ parameter. In addition, you can provide a callback method and any of its parameters as optional input parameters.
 

@@ -33,7 +33,7 @@ Office.context.document
 |**Name**|**Description**|**Support notes**|
 |:-----|:-----|:-----|
 |[addHandlerAsync](../../reference/shared/document.addhandlerasync.md)|Adds an event handler for a  **Document** object event.||
-|[getActiveViewAsync](../../reference/shared/document.getactiveviewasync.md)|Returns the current view of the presentation.|In 1.1, added to support [add-ins for PowerPoint](http://msdn.microsoft.com/library/1ada03a0-4dd5-43d0-bf45-cbe0ee4629b0%28Office.15%29.aspx).|
+|[getActiveViewAsync](../../reference/shared/document.getactiveviewasync.md)|Returns the current view of the presentation.|In 1.1, added to support [add-ins for PowerPoint](../../docs/powerpoint/powerpoint-add-ins.md).|
 |[getFileAsync](../../reference/shared/document.getfileasync.md)|Returns the entire document file in slices of up to 4194304 bytes (4MB).|In 1.1, added support getting file as PDF in add-ins for PowerPoint and Word.|
 |[getFilePropertiesAsync](../../reference/shared/document.getfilepropertiesasync.md)|Gets file properties of the current document.In this release, can get only the URL of the document.|In 1.1, added to get the document's URL in add-ins for Excel, Word, and PowerPoint.|
 |[getSelectedDataAsync](../../reference/shared/document.getselecteddataasync.md)|Reads the data contained in the current selection of the document.|In 1.1, added support for getting the id, title, and index for the selected range of slides in add-ins for PowerPoint.|

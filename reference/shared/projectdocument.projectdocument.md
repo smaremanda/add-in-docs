@@ -126,6 +126,6 @@ For more information about Office host application and server requirements, see 
 #### Other resources
 
 
-[Task pane add-ins for Project](http://msdn.microsoft.com/library/74e80cc5-8095-4d42-886b-47a0820e9e09%28Office.15%29.aspx)
+[Task pane add-ins for Project](../../docs/project/project-add-ins.md)
 [Document object](../../reference/shared/document.md)
 

@@ -4,49 +4,49 @@ The JavaScript API for Office includes objects, methods, properties, events, and
 
 Learn more about [supported hosts and other requirements](../docs/overview/requirements-for-running-office-add-ins.md).
 
-The  **Microsoft.Office.WebExtension** namespace (which by default is referenced using the alias [Office](http://msdn.microsoft.com/library/c490b13d-ee52-4291-af5d-f4a5a11d3af0%28Office.15%29.aspx) in code) contains objects you can use to write script that interacts with content in Office documents, worksheets, presentations, mail items, and projects from your Office Add-ins.
+The  **Microsoft.Office.WebExtension** namespace (which by default is referenced using the alias [Office](../reference/shared/office.md) in code) contains objects you can use to write script that interacts with content in Office documents, worksheets, presentations, mail items, and projects from your Office Add-ins.
 ## JavaScript API for Office objects
 
 
 |**Object**|**Supported add-in type**|**Supported host applications**|
 |:-----|:-----|:-----|
-|[AsyncResult](http://msdn.microsoft.com/library/540c114f-0398-425c-baf3-7363f2f6bc47%28Office.15%29.aspx)|Content add-in, Outlook add-in, Task pane add-in|Access, Excel, Outlook, PowerPoint, Project, Word|
+|[AsyncResult](../reference/shared/asyncresult-object.md)|Content add-in, Outlook add-in, Task pane add-in|Access, Excel, Outlook, PowerPoint, Project, Word|
 |[AttachmentDetails](../reference/outlook/simple-types.md)|Outlook add-in|Outlook|
-|[Binding](http://msdn.microsoft.com/library/42882642-d22b-47d2-a8d3-3aa8c6a4435e%28Office.15%29.aspx)|Content add-in, Task pane add-in|Access, Excel, Word|
-|[Bindings](http://msdn.microsoft.com/library/09979e31-3bfb-45be-adda-0f7cc2db1fe1%28Office.15%29.aspx)|Content add-in, Task pane add-in|Access, Excel, Word|
+|[Binding](../reference/shared/binding.md)|Content add-in, Task pane add-in|Access, Excel, Word|
+|[Bindings](../reference/shared/bindings.bindings.md)|Content add-in, Task pane add-in|Access, Excel, Word|
 |[Body](../reference/outlook/Body.md)|Outlook add-in|Outlook|
 |[Contact](../reference/outlook/simple-types.md)|Outlook add-in|Outlook|
-|[Context](http://msdn.microsoft.com/library/662883d5-b86f-4bdc-99f0-9ee9129ed16c%28Office.15%29.aspx)|Content add-in, Outlook add-in, Task pane add-in |Access, Excel, Outlook, PowerPoint, Project, Word|
+|[Context](../reference/shared/office.context.md)|Content add-in, Outlook add-in, Task pane add-in |Access, Excel, Outlook, PowerPoint, Project, Word|
 |[CustomProperties](../reference/outlook/CustomProperties.md)|Outlook add-in|Outlook|
-|[CustomXmlNode](http://msdn.microsoft.com/library/dc1518de-47fa-4108-aab7-04a022724b04%28Office.15%29.aspx)|Task pane add-in|Word|
-|[CustomXmlPart](http://msdn.microsoft.com/library/83f0e668-8236-4f2f-a20f-b173a9e3f65f%28Office.15%29.aspx)|Task pane add-in |Word|
-|[CustomXmlParts](http://msdn.microsoft.com/library/ba40cd4c-29bb-4f31-875d-6f1382fd1ee8%28Office.15%29.aspx)|Task pane add-in |Word|
-|[CustomXmlPrefixMappings](http://msdn.microsoft.com/library/18b9aa8c-83e7-4c2f-8530-6a0ac8ce5535%28Office.15%29.aspx)|Task pane add-in |Word|
+|[CustomXmlNode](../reference/shared/customxmlnode.customxmlnode.md)|Task pane add-in|Word|
+|[CustomXmlPart](../reference/shared/customxmlpart.customxmlpart.md)|Task pane add-in |Word|
+|[CustomXmlParts](../reference/shared/customxmlparts.customxmlparts.md)|Task pane add-in |Word|
+|[CustomXmlPrefixMappings](../reference/shared/customxmlprefixmappings.customxmlprefixmappings.md)|Task pane add-in |Word|
 |[Diagnostics](http://msdn.microsoft.com/library/8ad6a159-ed07-4b82-8897-a80fd208551b%28Office.15%29.aspx)|Outlook add-in|Outlook|
-|[Document](http://msdn.microsoft.com/library/f8859516-cc1f-4b20-a8f3-cee37a983e70%28Office.15%29.aspx)|Content add-in, Task pane add-in|Access, Excel, PowerPoint, Project, Word|
+|[Document](../reference/shared/document.md)|Content add-in, Task pane add-in|Access, Excel, PowerPoint, Project, Word|
 |[EmailAddressDetails](../reference/outlook/simple-types.md)|Outlook add-in|Outlook|
 |[EmailUser](../reference/outlook/simple-types.md)|Outlook add-in|Outlook|
 |[Entities](../reference/outlook/simple-types.md)|Outlook add-in|Outlook|
-|[Error](http://msdn.microsoft.com/library/36d1d048-b888-4bb5-9321-d340bcbc86f4%28Office.15%29.aspx)|Content add-in, Outlook add-in, Task pane add-in|Access, Excel, Outlook, PowerPoint, Project, Word|
-|[File](http://msdn.microsoft.com/library/04923ddf-8efa-459f-aed5-d8c06385ca50%28Office.15%29.aspx)|Task pane add-in|PowerPoint, Word|
+|[Error](../reference/shared/error.md)|Content add-in, Outlook add-in, Task pane add-in|Access, Excel, Outlook, PowerPoint, Project, Word|
+|[File](../reference/shared/file.md)|Task pane add-in|PowerPoint, Word|
 |[Item](../reference/outlook/Office.context.mailbox.item.md)|Outlook add-in|Outlook|
 |[Location](../reference/outlook/Location.md)|Outlook add-in|Outlook|
 |[Mailbox](../reference/outlook/Office.context.mailbox.md)|Outlook add-in|Outlook|
 |[MeetingSuggestion](../reference/outlook/simple-types.md)|Outlook add-in|Outlook|
-|[MatrixBinding](http://msdn.microsoft.com/library/35e8568e-9129-4c00-b30f-d8c3b2555f1e%28Office.15%29.aspx)|Content add-in, Task pane add-in|Excel, Word|
+|[MatrixBinding](../reference/shared/binding.matrixbinding.matrixbinding.md)|Content add-in, Task pane add-in|Excel, Word|
 |[MeetingSuggestion](../reference/outlook/simple-types.md)|Outlook add-in|Outlook|
-|[Office](http://msdn.microsoft.com/library/c490b13d-ee52-4291-af5d-f4a5a11d3af0%28Office.15%29.aspx)|Content add-in, Outlook add-in, Task pane add-in|Access, Excel, Outlook, PowerPoint, Project, Word|
+|[Office](../reference/shared/office.md)|Content add-in, Outlook add-in, Task pane add-in|Access, Excel, Outlook, PowerPoint, Project, Word|
 |[PhoneNumber](../reference/outlook/simple-types.md)|Outlook add-in|Outlook|
-|[ProjectDocument](http://msdn.microsoft.com/library/1908af4f-93b9-4859-87e3-06942014fae1%28Office.15%29.aspx)|Task pane add-in |Project|
+|[ProjectDocument](../reference/shared/projectdocument.projectdocument.md)|Task pane add-in |Project|
 |[Recipients](../reference/outlook/Recipients.md)|Outlook add-in|Outlook|
 |[RoamingSettings](../reference/outlook/RoamingSettings.md)|Outlook add-in|Outlook|
-|[Settings](http://msdn.microsoft.com/library/ad733387-a58c-4514-8fc2-53e64fad468d%28Office.15%29.aspx)|Content add-in, Task pane add-in|Access, Excel, PowerPoint, Word|
-|[Slice](http://msdn.microsoft.com/library/011b5647-639b-4b06-8625-ba9de01bed4b%28Office.15%29.aspx)|Task pane add-in|PowerPoint, Word, Word Online|
+|[Settings](../reference/shared/settings.md)|Content add-in, Task pane add-in|Access, Excel, PowerPoint, Word|
+|[Slice](../reference/shared/slice.md)|Task pane add-in|PowerPoint, Word, Word Online|
 |[Subject](../reference/outlook/Subject.md)|Outlook add-in|Outlook|
-|[TableBinding](http://msdn.microsoft.com/library/1508795b-1c70-456c-b3bf-666d40cf8f50%28Office.15%29.aspx)|Content add-in, Task pane add-in|Access, Excel, Word|
-|[TableData](http://msdn.microsoft.com/library/2183ea52-5a40-4048-b9a4-7cd66bb0ad5d%28Office.15%29.aspx)|Content add-in, Task pane add-in|Access, Excel, Word|
+|[TableBinding](../reference/shared/binding.tablebinding.tablebinding.md)|Content add-in, Task pane add-in|Access, Excel, Word|
+|[TableData](../reference/shared/tabledata.tabledata.md)|Content add-in, Task pane add-in|Access, Excel, Word|
 |[TaskSuggestion](../reference/outlook/simple-types.md)|Outlook add-in|Outlook|
-|[TextBinding](http://msdn.microsoft.com/library/6b71b21d-f64d-425c-99d9-c62b2a9969be%28Office.15%29.aspx)|Content add-in, Task pane add-in|Excel, Word|
+|[TextBinding](../reference/shared/binding.textbinding.md)|Content add-in, Task pane add-in|Excel, Word|
 |[Time](../reference/outlook/Time.md)|Outlook add-in|Outlook|
 |[UserProfile](../reference/outlook/Office.context.mailbox.userProfile.md)|Outlook add-in|Outlook|
 
@@ -57,7 +57,7 @@ The  **Microsoft.Office.WebExtension** namespace (which by default is referenced
 
 |**Parent topic**|**Supported add-in type**|**Supported host applications**|
 |:-----|:-----|:-----|
-|[Enumerations](http://msdn.microsoft.com/library/eee5e332-6d83-4b58-974d-3abe002f4359%28Office.15%29.aspx)|See child enumeration topics for details.|See Requirements in enumeration topic for details.|
+|[Enumerations](../reference/shared/enumerations.md)|See child enumeration topics for details.|See Requirements in enumeration topic for details.|
 
 ## View APIs by add-in type support
 
@@ -65,8 +65,8 @@ To view the JavaScript API for Office organized by the subsets of the API that s
 
 |**API **|**Description**|
 |:-----|:-----|
-|[Shared API](http://msdn.microsoft.com/library/4f21922c-bf0d-4617-9071-9c99413f4977%28Office.15%29.aspx)|The subset of the API that you can use in all three types of Office Add-ins: content, task pane, and Outlook add-ins.|
-|[Document API](http://msdn.microsoft.com/library/1bad7bff-2161-46c6-b536-eb4a0608b7ac%28Office.15%29.aspx)|The subset of the API that you can use in the two types of Office Add-ins associated with documents: content and task pane add-ins.|
+|[Shared API](../reference/shared/shared-api.md)|The subset of the API that you can use in all three types of Office Add-ins: content, task pane, and Outlook add-ins.|
+|[Document API](../reference/shared/document-api.md)|The subset of the API that you can use in the two types of Office Add-ins associated with documents: content and task pane add-ins.|
 |[Mailbox API](../reference/outlook/index.md)|The subset of the API that you can use in Outlook add-ins.|
 
 ## Supported host applications

@@ -70,7 +70,7 @@ The example assumes your add-in has a reference to the jQuery library and that t
 })();
 ```
 
-For an example that shows how to use a  **TaskSelectionChanged** event handler in a Project add-in, see [Create your first task pane add-in for Project 2013 by using a text editor](http://msdn.microsoft.com/library/f6ab544a-a841-4f1b-b0c4-5001b33bba01%28Office.15%29.aspx).
+For an example that shows how to use a  **TaskSelectionChanged** event handler in a Project add-in, see [Create your first task pane add-in for Project 2013 by using a text editor](../../docs/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor.md).
 
 
 ## Support details
@@ -109,7 +109,7 @@ For more information about Office host application and server requirements, see 
 #### Other resources
 
 
-[Create your first task pane add-in for Project 2013 by using a text editor](http://msdn.microsoft.com/library/f6ab544a-a841-4f1b-b0c4-5001b33bba01%28Office.15%29.aspx)
+[Create your first task pane add-in for Project 2013 by using a text editor](../../docs/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor.md)
 [EventType enumeration](../../reference/shared/eventtype-enumeration.md)
 [ProjectDocument.addHandlerAsync method](../../reference/shared/projectdocument.addhandlerasync.md)
 [ProjectDocument.removeHandlerAsync method](../../reference/shared/projectdocument.removehandlerasync.md)

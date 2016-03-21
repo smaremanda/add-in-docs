@@ -139,7 +139,7 @@ To ensure that your add-in works well in both types of hosts:
 
 
 
-- Use the [Context.touchEnabled](http://msdn.microsoft.com/library/fd73f94b-7e4a-422c-afdb-fef6fba43766%28Office.15%29.aspx) property to detect whether the host application your add-in runs on is touch enabled.
+- Use the [Context.touchEnabled](../../reference/shared/office.context.touchenabled.md) property to detect whether the host application your add-in runs on is touch enabled.
 
      >**Note**  This property is not supported in Outlook.
 - Ensure that all controls are appropriately sized for touch interaction. For example, buttons have adequate touch targets, and input boxes are large enough for users to enter input.

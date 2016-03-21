@@ -10,7 +10,7 @@ Find API and schema reference information for Office Add-ins.
 
 - [What's changed in the JavaScript API for Office](../reference/what's-changed-in-the-javascript-api-for-office.md)
     
-- [JavaScript API for Office](http://msdn.microsoft.com/library/b27e70c3-d87d-4d27-85e0-103996273298%28Office.15%29.aspx)
+- [JavaScript API for Office](../reference/javascript-api-for-office.md)
     
 - [JavaScript API for Office error codes](../reference/javascript-api-for-office-error-codes.md)
     

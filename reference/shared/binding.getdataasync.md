@@ -176,4 +176,4 @@ For more information about Office host application and server requirements, see 
 #### Other resources
 
 
-[Bind to regions in a document or spreadsheet](http://msdn.microsoft.com/library/5bf788db-d788-4d91-bcb6-fc3913b40012%28Office.15%29.aspx)
+[Bind to regions in a document or spreadsheet](../../docs/develop/bind-to-regions-in-a-document-or-spreadsheet.md)

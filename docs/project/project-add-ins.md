@@ -203,7 +203,7 @@ You can distribute add-ins through a file share, an add-in catalog in a SharePoi
     
 - [Office Add-ins XML manifest](../../docs/overview/add-in-manifests.md)
     
-- [JavaScript API for Office](http://msdn.microsoft.com/library/b27e70c3-d87d-4d27-85e0-103996273298%28Office.15%29.aspx)
+- [JavaScript API for Office](../../reference/javascript-api-for-office.md)
     
 - [Create your first task pane add-in for Project 2013 by using a text editor](../project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor.md)
     

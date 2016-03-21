@@ -15,13 +15,13 @@ This article focuses on how to use the JavaScript API for Office to persist add-
 ## Persisting add-in state and settings with the JavaScript API for Office
 
 
-The JavaScript API for Office provides the [Settings](http://msdn.microsoft.com/en-us/library/ad733387-a58c-4514-8fc2-53e64fad468d%28Office.15%29.aspx), [RoamingSettings](../../reference/outlook/RoamingSettings.md), and [CustomProperties](../../reference/outlook/CustomProperties.md) objects for saving add-in state across sessions as described in the following table. In all cases, the saved settings values are associated with the [Id](http://msdn.microsoft.com/en-us/library/67c4344a-935c-09d6-1282-55ee61a2838b%28Office.15%29.aspx) of the add-in that created them.
+The JavaScript API for Office provides the [Settings](../../reference/shared/settings.md), [RoamingSettings](../../reference/outlook/RoamingSettings.md), and [CustomProperties](../../reference/outlook/CustomProperties.md) objects for saving add-in state across sessions as described in the following table. In all cases, the saved settings values are associated with the [Id](http://msdn.microsoft.com/en-us/library/67c4344a-935c-09d6-1282-55ee61a2838b%28Office.15%29.aspx) of the add-in that created them.
 
 
 
 |**Object**|**Add-in type support**|**Storage location**|**Office host support**|
 |:-----|:-----|:-----|:-----|
-|[Settings](http://msdn.microsoft.com/en-us/library/ad733387-a58c-4514-8fc2-53e64fad468d%28Office.15%29.aspx)|content and task pane|The document, spreadsheet, or presentation the add-in is working with.Content and task pane add-in settings are available to the add-in that created them from the document where they are saved. **Important:** Don't store passwords and other sensitive personally identifiable information (PII) with the **Settings** object. The data saved isn't visible to end users, but it is stored as part of the document, which is accessible by reading the document's file format directly. You should limit your add-in's use of PII and store any PII required by your add-in only on the server hosting your add-in as a user-secured resource.|Word, Excel, or PowerPoint **Note:** Task pane add-ins for Project 2013 don't support the **Settings** API for storing add-in state or settings. However, for add-ins running in Project (as well as other Office host applications) you can use techniques such as browser cookies or web storage. For more information on these techniques, see the [Excel-Add-in-JavaScript-PersistCustomSettings](https://github.com/OfficeDev/Excel-Add-in-JavaScript-PersistCustomSettings). |
+|[Settings](../../reference/shared/settings.md)|content and task pane|The document, spreadsheet, or presentation the add-in is working with.Content and task pane add-in settings are available to the add-in that created them from the document where they are saved. **Important:** Don't store passwords and other sensitive personally identifiable information (PII) with the **Settings** object. The data saved isn't visible to end users, but it is stored as part of the document, which is accessible by reading the document's file format directly. You should limit your add-in's use of PII and store any PII required by your add-in only on the server hosting your add-in as a user-secured resource.|Word, Excel, or PowerPoint **Note:** Task pane add-ins for Project 2013 don't support the **Settings** API for storing add-in state or settings. However, for add-ins running in Project (as well as other Office host applications) you can use techniques such as browser cookies or web storage. For more information on these techniques, see the [Excel-Add-in-JavaScript-PersistCustomSettings](https://github.com/OfficeDev/Excel-Add-in-JavaScript-PersistCustomSettings). |
 |[RoamingSettings](../../reference/outlook/RoamingSettings.md)|Outlook|The user's Exchange server mailbox where the add-in is installed.Because these settings are stored in the user's server mailbox, they can "roam" with the user and are available to the add-in when it is running in the context of any supported client host application or browser accessing that user's mailbox. Outlook add-in roaming settings are available only to the add-in that created them, and only from the mailbox where the add-in is installed.|Outlook|
 |[CustomProperties](../../reference/outlook/CustomProperties.md)|Outlook|The message, appointment, or meeting request item the add-in is working with. Outlook add-in item custom properties are available only to the add-in that created them, and only from the item where they are saved.|Outlook|
 
@@ -52,16 +52,16 @@ After the settings property bag is saved during the previous add-in session, it 
 ## How to save add-in state and settings per document for content and task pane add-ins
 
 
-To persist state or custom settings of a content or task pane add-in for Word, Excel, or PowerPoint, you use the [Settings](http://msdn.microsoft.com/en-us/library/ad733387-a58c-4514-8fc2-53e64fad468d%28Office.15%29.aspx) object and its methods. The property bag created with the methods of the **Settings** object are available only to the instance of the content or task pane add-in that created it, and only from the document in which it is saved.
+To persist state or custom settings of a content or task pane add-in for Word, Excel, or PowerPoint, you use the [Settings](../../reference/shared/settings.md) object and its methods. The property bag created with the methods of the **Settings** object are available only to the instance of the content or task pane add-in that created it, and only from the document in which it is saved.
 
-The  **Settings** object is automatically loaded as part of the [Document](http://msdn.microsoft.com/en-us/library/f8859516-cc1f-4b20-a8f3-cee37a983e70%28Office.15%29.aspx) object, and is available when the task pane or content add-in is activated. After the **Document** object is instantiated, you can access the **Settings** object with the [settings](http://msdn.microsoft.com/en-us/library/77ba7daf-419f-44b6-8747-7fd5618b7053%28Office.15%29.aspx) property of the **Document** object. During the lifetime of the session, you can just use the **Settings.get**,  **Settings.set**, and  **Settings.remove** methods to read, write, or remove persisted settings and add-in state from the in-memory copy of the property bag.
+The  **Settings** object is automatically loaded as part of the [Document](../../reference/shared/document.document.md) object, and is available when the task pane or content add-in is activated. After the **Document** object is instantiated, you can access the **Settings** object with the [settings](../../reference/shared/document.settings.md) property of the **Document** object. During the lifetime of the session, you can just use the **Settings.get**,  **Settings.set**, and  **Settings.remove** methods to read, write, or remove persisted settings and add-in state from the in-memory copy of the property bag.
 
-Because the set and remove methods operate against only the in-memory copy of the settings property bag, to save new or changed settings back to the document the add-in is associated with you must call the [Settings.saveAsync](http://msdn.microsoft.com/en-us/library/7147c221-937c-477c-98a6-f59d6200c27b%28Office.15%29.aspx) method.
+Because the set and remove methods operate against only the in-memory copy of the settings property bag, to save new or changed settings back to the document the add-in is associated with you must call the [Settings.saveAsync](../../reference/shared/settings.saveasync.md) method.
 
 
 ### Creating or updating a setting value
 
-The following code example shows how to use the [Settings.set](http://msdn.microsoft.com/en-us/library/4e2c9758-953e-41e8-aca6-d8daf764a584%28Office.15%29.aspx) method to create a setting called `'themeColor'` with a value `'green'`. The first parameter of the set method is the case-sensitive  _name_ (Id) of the setting to set or create. The second parameter is the _value_ of the setting.
+The following code example shows how to use the [Settings.set](../../reference/shared/settings.set.md) method to create a setting called `'themeColor'` with a value `'green'`. The first parameter of the set method is the case-sensitive  _name_ (Id) of the setting to set or create. The second parameter is the _value_ of the setting.
 
 
 ```
@@ -73,7 +73,7 @@ Office.context.document.settings.set('themeColor', 'green');
 
 ### Getting the value of a setting
 
-The following example shows how use the [Settings.get](http://msdn.microsoft.com/en-us/library/aeac06dd-994e-4235-b208-1bd117395296%28Office.15%29.aspx) method to get the value of a setting called "themeColor". The only parameter of the **get** method is the case-sensitive _name_ of the setting.
+The following example shows how use the [Settings.get](../../reference/shared/settings.get.md) method to get the value of a setting called "themeColor". The only parameter of the **get** method is the case-sensitive _name_ of the setting.
 
 
 ```js
@@ -90,7 +90,7 @@ function write(message){
 
 ### Removing a setting
 
-The following example shows how to use the [Settings.remove](http://msdn.microsoft.com/en-us/library/a92446bf-de65-45bd-8412-36ea8e77c5a2%28Office.15%29.aspx) method to remove a setting with the name "themeColor". The only parameter of the **remove** method is the case-sensitive _name_ of the setting.
+The following example shows how to use the [Settings.remove](../../reference/shared/settings.removehandlerasync.md) method to remove a setting with the name "themeColor". The only parameter of the **remove** method is the case-sensitive _name_ of the setting.
 
 
 ```
@@ -102,7 +102,7 @@ Nothing will happen if the setting does not exist. Use the  **Settings.saveAsync
 
 ### Saving your settings
 
-To save any additions, changes, or deletions your add-in made to the in-memory copy of the settings property bag during the current session, you must call the [Settings.saveAsync](http://msdn.microsoft.com/en-us/library/7147c221-937c-477c-98a6-f59d6200c27b%28Office.15%29.aspx) method to store them in the document. The only parameter of the **saveAsync** method is _callback_, which is a callback function with a single parameter. 
+To save any additions, changes, or deletions your add-in made to the in-memory copy of the settings property bag during the current session, you must call the [Settings.saveAsync](../../reference/shared/settings.saveasync.md) method to store them in the document. The only parameter of the **saveAsync** method is _callback_, which is a callback function with a single parameter. 
 
 
 ```js
@@ -131,7 +131,7 @@ An Outlook add-in can use the [RoamingSettings](../../reference/outlook/RoamingS
 ### Loading roaming settings
 
 
-An Outlook add-in typically loads roaming settings in the [Office.initialize](http://msdn.microsoft.com/en-us/library/727adf79-a0b5-48d2-99c7-6642c2c334fc%28Office.15%29.aspx) event handler. The following JavaScript code example shows how to load existing roaming settings.
+An Outlook add-in typically loads roaming settings in the [Office.initialize](../../reference/shared/office.initialize.md) event handler. The following JavaScript code example shows how to load existing roaming settings.
 
 
 ```

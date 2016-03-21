@@ -134,7 +134,7 @@ When a supported Office application starts, it reads the XML manifests for the a
     
 3. The correspondng browser control,  **iframe**, or WebKit runtime host process loads the HTML body, and calls the event handler for the  **onload** event.
     
-4. The Office Add-ins framework calls the event handler for the [initialize](http://msdn.microsoft.com/library/727adf79-a0b5-48d2-99c7-6642c2c334fc%28Office.15%29.aspx) event of the [Office](http://msdn.microsoft.com/library/c490b13d-ee52-4291-af5d-f4a5a11d3af0%28Office.15%29.aspx) object.
+4. The Office Add-ins framework calls the event handler for the [initialize](../../reference/shared/office.initialize.md) event of the [Office](../../reference/shared/office.md) object.
     
 5. When the HTML body finishes loading and the add-in finishes initializing, the main function of the add-in can proceed.
     

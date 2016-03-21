@@ -19,8 +19,8 @@ To use SSO in your add-in, the code does this:
     
 On the server side, things are somewhat more complex. When your server receives a request from an Outlook add-in, the process works like this:
 
-* The server validates the token. You can use our [managed token validation library](http://msdn.microsoft.com/en-us/library/f7f4813a-3b2d-47bb-bf93-71b64620a56b%28Office.15%29.aspx), or you can [create your own library](http://msdn.microsoft.com/en-us/library/8503a3e8-458a-4a4e-9e95-65cd7bb1954d%28Office.15%29.aspx) for your service.
-* The server looks up the unique identifier from the token to see whether it's associated with a known identity. Your service must [implement a method that matches the identifier](http://msdn.microsoft.com/en-us/library/bb28ca39-1780-4162-a899-7be5825beb8e%28Office.15%29.aspx) with known users of your service.
+* The server validates the token. You can use our [managed token validation library](../../docs/outlook/use-the-token-validation-library.md), or you can [create your own library](../../docs/outlook/validate-an-identity-token.md) for your service.
+* The server looks up the unique identifier from the token to see whether it's associated with a known identity. Your service must [implement a method that matches the identifier](../../docs/outlook/authenticate-a-user-with-an-identity-token.md) with known users of your service.
 * If the unique identifier matches an identifier previously stored with a set of credentials on the server, your server can respond with the requested information without requiring your customer to log on to your service.
 * If the unique identifier is unknown, the server sends a response asking the user to log on with credentials for the server.
 * If the credentials match a known identity on the server, you can map that identity to the unique identifier in the token so that the next time a request comes in, your server can respond without requiring an additional logon step.
