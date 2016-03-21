@@ -51,9 +51,5 @@ Weinre is a debugger for web pages, similar to the F12 tools, that is designed t
 
 ## Additional resources
 
-
-
-- [Make your Office Add-in available for iPad](8ddc78f6-5746-412e-9921-182fc159e5e2.md)
-    
 - [Sideload an Office Add-in on iPad and Mac](../testing/sideload-an-office-add-in-on-ipad-and-mac.md)
     
