@@ -8,7 +8,7 @@ These code examples require your project to [reference Office.js v1.1 library or
 
 ## Detect the presentation's active view and handle the ActiveViewChanged event
 
-The  `getFileView` function calls the [Document.getActiveViewAsync](http://msdn.microsoft.com/library/6b53c90a-df57-4851-98d1-fae2b54f6ad6%28Office.15%29.aspx) method to return whether the presentation's current view is "edit" (any of the views in which you can edit slides, such as **Normal** or **Outline View**) or "read" ( **Slide Show** or **Reading View**) view.
+The  `getFileView` function calls the [Document.getActiveViewAsync](../../reference/shared/document.getactiveviewasync.md) method to return whether the presentation's current view is "edit" (any of the views in which you can edit slides, such as **Normal** or **Outline View**) or "read" ( **Slide Show** or **Reading View**) view.
 
 
 ```js
@@ -25,7 +25,7 @@ function getFileView() {
 }
 ```
 
-The  `registerActiveViewChanged` function calls the [addHandlerAsync](http://msdn.microsoft.com/library/8b2ec6c4-0983-4f5e-abd9-16f15b4fc87b%28Office.15%29.aspx) method to register a handler for the [Document.ActiveViewChanged](http://msdn.microsoft.com/library/f86afe63-bf70-43dd-b224-3bc53b5e991f%28Office.15%29.aspx) event. After executing this function, when you change the view of the presentation, the `app.showNotification` notification will display the active view mode ("read" or "edit").
+The  `registerActiveViewChanged` function calls the [addHandlerAsync](../../reference/shared/document.addhandlerasync.md) method to register a handler for the [Document.ActiveViewChanged](../../reference/shared/document.activeviewchanged.md) event. After executing this function, when you change the view of the presentation, the `app.showNotification` notification will display the active view mode ("read" or "edit").
 
 
 
@@ -51,7 +51,7 @@ function registerActiveViewChanged() {
 
 ## Get the URL of the presentation
 
-The  `getFileUrl` function calls the [Document.getFileProperties](http://msdn.microsoft.com/library/2533a563-95ae-4d52-b2d5-a6783e4ef5b4%28Office.15%29.aspx) method to get the URL of the presentation file.
+The  `getFileUrl` function calls the [Document.getFileProperties](../../reference/shared/document.getfilepropertiesasync.md) method to get the URL of the presentation file.
 
 
 ```js
@@ -72,7 +72,7 @@ function getFileUrl() {
 
 ## Navigate to a particular slide in the presentation
 
-The  `getSelectedRange` function calls the [Document.getSelectedDataAsync](http://msdn.microsoft.com/library/f85ad02c-64f0-4b73-87f6-7f521b3afd69%28Office.15%29.aspx) method to get a JSON object returned by `asyncResult.value`, which contains an array named "slides" that contains the ids, titles, and indexes of selected range of slides (or just the current slide). It also saves the id of the first slide in the selected range to a global variable.
+The  `getSelectedRange` function calls the [Document.getSelectedDataAsync](../../reference/shared/document.getselecteddataasync.md) method to get a JSON object returned by `asyncResult.value`, which contains an array named "slides" that contains the ids, titles, and indexes of selected range of slides (or just the current slide). It also saves the id of the first slide in the selected range to a global variable.
 
 
 ```js
@@ -92,7 +92,7 @@ function getSelectedRange() {
 }
 ```
 
-The  `goToFirstSlide` function calls the [Document.goToByIdAsync](http://msdn.microsoft.com/library/35dda81c-235e-4eab-8a77-9acb3b73a380%28Office.15%29.aspx) method to go to the id of the first slide stored by the `getSelectedRange` function above.
+The  `goToFirstSlide` function calls the [Document.goToByIdAsync](../../reference/shared/document.gotobyidasync.md) method to go to the id of the first slide stored by the `getSelectedRange` function above.
 
 
 

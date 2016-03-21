@@ -42,5 +42,5 @@ Provides a way to specify the value of a setting for an additional locale.
 
 
 
-- [Localization for Office Add-ins](http://msdn.microsoft.com/library/5a1a1cd7-b716-4597-b51f-fa70357d0833%28Office.15%29.aspx#off15wecon_LocalesManifest)
+- [Localization for Office Add-ins](../../docs/develop/localization.md#off15wecon_LocalesManifest)
     

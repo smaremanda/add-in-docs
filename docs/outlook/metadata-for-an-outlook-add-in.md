@@ -35,7 +35,7 @@ The data in a  **RoamingSettings** object is stored as a serialized JavaScript O
 ### Loading roaming settings
 
 
-A mail add-in typically loads roaming settings in the [Office.initialize](http://msdn.microsoft.com/en-us/library/727adf79-a0b5-48d2-99c7-6642c2c334fc%28Office.15%29.aspx) event handler. The following JavaScript code example shows how to load existing roaming settings and get the values of 2 settings, "customerName" and "customerBalance":
+A mail add-in typically loads roaming settings in the [Office.initialize](../../reference/shared/office.initialize.md) event handler. The following JavaScript code example shows how to load existing roaming settings and get the values of 2 settings, "customerName" and "customerBalance":
 
 
 ```js
@@ -131,7 +131,7 @@ The following example shows a simplified set of methods for an Outlook add-in th
 This example includes the following methods:
 
 
-- [Office.initialize](http://msdn.microsoft.com/en-us/library/727adf79-a0b5-48d2-99c7-6642c2c334fc%28Office.15%29.aspx) -- Initializes the add-in and loads the custom property bag from the Exchange server.
+- [Office.initialize](../../reference/shared/office.initialize.md) -- Initializes the add-in and loads the custom property bag from the Exchange server.
     
 -  **customPropsCallback** -- Gets the custom property bag that is returned from the server and saves it for later use.
     

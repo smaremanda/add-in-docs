@@ -5,7 +5,7 @@
 
 The LabsJS library (labs.js) supports writing specialized Office Add-ins (called labs) that integrate with Office Mix. Office Mix then renders the labs using Microsoft PowerPoint. While we call these components "labs," let's be clear that what we're creating are special Office Add-ins that are Office Mix Add-ins.
 
-The LabsJS content helps you implementing the labs.js JavaScript API by providing guidance and examples. This library is built on top of the [JavaScript API for Office](http://msdn.microsoft.com/library/b27e70c3-d87d-4d27-85e0-103996273298%28Office.15%29.aspx) (Office.js) and provides an abstraction layer that is optimized for add-ins embedded in Office Mix.
+The LabsJS content helps you implementing the labs.js JavaScript API by providing guidance and examples. This library is built on top of the [JavaScript API for Office](../../../reference/javascript-api-for-office.md) (Office.js) and provides an abstraction layer that is optimized for add-ins embedded in Office Mix.
 
 
 ## General guidelines

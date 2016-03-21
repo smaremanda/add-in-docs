@@ -67,5 +67,5 @@ For more information about Office host application and server requirements, see 
 |1.1|Added support for Word Online.|
 |1.1|Added support for Excel, PowerPoint, and Word in Office for iPad.|
 |1.1|Added support for add-ins for Access.|
-|1.1|Added support for [compose mode Outlook add-ins](http://msdn.microsoft.com/library/e4126e58-4ddc-4891-9f19-aa6c1a258027%28Office.15%29.aspx).|
+|1.1|Added support for [compose mode Outlook add-ins](../../docs/outlook/compose-scenario.md).|
 |1.0|Introduced|

@@ -152,9 +152,9 @@ None.
 
 
 
-- [Activate a mail add-in in Outlook for a specific message class](http://msdn.microsoft.com/library/f464a152-2dff-4fb3-bf98-c1a3639c3e80%28Office.15%29.aspx) and [Activation rules for Outlook add-ins](http://msdn.microsoft.com/library/b3fd6d69-b968-461d-a40e-6063f4febfe6%28Office.15%29.aspx#MailAppDefineRules_ItemIs)
+- [Activate a mail add-in in Outlook for a specific message class](http://msdn.microsoft.com/library/f464a152-2dff-4fb3-bf98-c1a3639c3e80%28Office.15%29.aspx) and [Activation rules for Outlook add-ins](../../docs/outlook/manifests/activation-rules.md#MailAppDefineRules_ItemIs)
     
-- [Match strings in an Outlook item as well-known entities](http://msdn.microsoft.com/library/a6b0904b-afe9-4882-9136-3d8cfd57fcf8%28Office.15%29.aspx)
+- [Match strings in an Outlook item as well-known entities](../../docs/outlook/match-strings-in-an-item-as-well-known-entities.md)
     
-- [Use regular expression activation rules to show an Outlook add-in](http://msdn.microsoft.com/library/93504f92-896f-4c80-9205-ba0b125f4290%28Office.15%29.aspx)
+- [Use regular expression activation rules to show an Outlook add-in](../../docs/outlook/use-regular-expressions-to-show-an-outlook-add-in.md)
     
