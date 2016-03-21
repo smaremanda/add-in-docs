@@ -40,7 +40,7 @@ In the callback function passed to the  **goToByIdAsync** method, you can use th
 
 ## Remarks
 
-See [How to: Format tables in add-ins for Excel](../../docs/develop/format-tables-in-add-ins-for-excel.md) for more information.
+See [How to: Format tables in add-ins for Excel](../../docs/excel/format-tables-in-add-ins-for-excel.md) for more information.
 
 
 ## Example

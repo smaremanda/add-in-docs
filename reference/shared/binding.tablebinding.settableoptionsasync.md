@@ -44,7 +44,7 @@ In the callback function passed to the  **goToByIdAsync** method, you can use th
 The following example shows how to:
 
 
--  **Create an object literal** that specifies the [table formatting options](../../docs/develop/format-tables-in-add-ins-for-excel.md) to update on the bound table.
+-  **Create an object literal** that specifies the [table formatting options](../../docs/excel/format-tables-in-add-ins-for-excel.md) to update on the bound table.
     
 -  **Call setTableOptions** on a previously bound table (with an **id** of `myBinding`) passing the object with formatting settin as the  _tableOptions_ parameter.
     

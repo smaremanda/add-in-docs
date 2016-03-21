@@ -36,5 +36,5 @@ Defines settings for a task pane add-in that implements additional dictionary su
 
 
 
-- [Create a dictionary task pane add-in](../../docs/develop/dictionary-task-pane-add-ins.md)
+- [Create a dictionary task pane add-in](../../docs/word/dictionary-task-pane-add-ins.md)
     

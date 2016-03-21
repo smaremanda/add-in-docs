@@ -78,6 +78,6 @@ For more information about Office host application and server requirements, see 
 |**Version**|**Changes**|
 |:-----|:-----|
 |1.1|Added support for Excel and Word in Office for iPad.|
-|1.1|Added support for [setting formatting when inserting tables](../../docs/develop/format-tables-in-add-ins-for-excel.md) in Excel.|
+|1.1|Added support for [setting formatting when inserting tables](../../docs/excel/format-tables-in-add-ins-for-excel.md) in Excel.|
 |1.1|Added support for add-ins for Access.|
 |1.0|Introduced|

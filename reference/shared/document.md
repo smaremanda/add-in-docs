@@ -39,7 +39,7 @@ Office.context.document
 |[getSelectedDataAsync](../../reference/shared/document.getselecteddataasync.md)|Reads the data contained in the current selection of the document.|In 1.1, added support for getting the id, title, and index for the selected range of slides in add-ins for PowerPoint.|
 |[goToByIdAsync](../../reference/shared/document.gotobyidasync.md)|Goes to the specified object or location in the document.|In 1.1, added to support navigation within the document in add-ins for Excel and PowerPoint.|
 |[removeHandlerAsync](../../reference/shared/document.removehandlerasync.md)|Removes an event handler for a  **Document** object event.||
-|[setSelectedDataAsync](../../reference/shared/document.setselecteddataasync.md)|Writes data to the current selection in the document.|In 1.1, added support for [setting formatting on the selected table when writing data in add-ins for Excel](../../docs/develop/format-tables-in-add-ins-for-excel.md).|
+|[setSelectedDataAsync](../../reference/shared/document.setselecteddataasync.md)|Writes data to the current selection in the document.|In 1.1, added support for [setting formatting on the selected table when writing data in add-ins for Excel](../../docs/excel/format-tables-in-add-ins-for-excel.md).|
 
 **Events**
 

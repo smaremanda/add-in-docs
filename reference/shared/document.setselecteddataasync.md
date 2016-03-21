@@ -278,6 +278,6 @@ For more information about Office host application and server requirements, see 
 |1.1|In Word Online, added support for writing  _data_ as an **array** of arrays (matrix) and **TableData** (table).|
 |1.1|In Excel, PowerPoint and Word in Office for iPad, added the same level of support as Excel, PowerPoint and Word on Windows desktop.|
 |1.1|In Word Online, added support for writing  _data_ as **string** (text).|
-|1.1|Added support for [setting formatting when inserting tables](../../docs/develop/format-tables-in-add-ins-for-excel.md) with add-ins for Excel by using the _tableOptions_ and _cellFormat_ optional parameters.|
+|1.1|Added support for [setting formatting when inserting tables](../../docs/excel/format-tables-in-add-ins-for-excel.md) with add-ins for Excel by using the _tableOptions_ and _cellFormat_ optional parameters.|
 |1.1|Added support for writing table data in add-ins for Access.|
 |1.0|Introduced|

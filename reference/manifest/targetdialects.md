@@ -24,5 +24,5 @@ Defines the dialect(s) supported by this dictionary.
 
 
 
-- [Create a dictionary task pane add-in](../../docs/develop/dictionary-task-pane-add-ins.md)
+- [Create a dictionary task pane add-in](../../docs/word/dictionary-task-pane-add-ins.md)
     

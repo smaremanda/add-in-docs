@@ -29,8 +29,8 @@ bindingObj.setDataAsync(data [, options] ,callback);
 | _rows_|**Office.TableRange.ThisRow**|Specifies the pre-defined string "thisRow" to set data in the currently selected row. |**Added in:** v1.1.Only for table bindings in content add-ins for Access.|
 | _startColumn_|**number**|Specifies the zero-based starting column for a subset of the data. |Only for table or matrix bindings. If omitted, data is set starting in the first column.|
 | _startRow_|**number**|Specifies the zero-based starting row for a subset of the data in the binding. |Only for table or matrix bindings. If omitted, data is set starting in the first row.|
-| _tableOptions_|**object**|For the inserted table, a list of key-value pairs that specify [table formatting options](../../docs/develop/format-tables-in-add-ins-for-excel.md), such as header row, total row, and banded rows. |**Added in:** v1.1. **Supported in:** Excel.|
-| _cellFormat_|**object**|For the inserted table, a list of key-value pairs that specify a range of columns, rows, or cells and the [cell formatting](../../docs/develop/format-tables-in-add-ins-for-excel.md) to apply to that range.|**Added in** v1.1. **Supported in:** Excel, Excel Online.|
+| _tableOptions_|**object**|For the inserted table, a list of key-value pairs that specify [table formatting options](../../docs/excel/format-tables-in-add-ins-for-excel.md), such as header row, total row, and banded rows. |**Added in:** v1.1. **Supported in:** Excel.|
+| _cellFormat_|**object**|For the inserted table, a list of key-value pairs that specify a range of columns, rows, or cells and the [cell formatting](../../docs/excel/format-tables-in-add-ins-for-excel.md) to apply to that range.|**Added in** v1.1. **Supported in:** Excel, Excel Online.|
 | _asyncContext_|**array**,  **boolean**,  **null**,  **number**,  **object**, **string**, or  **undefined**|A user-defined item of any type that is returned in the  **AsyncResult** object without being altered.||
 | _callback_|**object**|A function that is invoked when the callback returns, whose only parameter is of type  **AsyncResult**.||
 

@@ -61,7 +61,7 @@ Passing in different object types for the  _data_ parameter will have different 
 
 The anonymous function passed into the [setSelectedDataAsync](http://msdn.microsoft.com/en-us/library/998f38dc-83bd-4659-a759-4758c632a6ef%28Office.15%29.aspx) method as the _callback_ parameter is executed when the asynchronous call is completed. When you write data to the selection by using the **setSelectedDataAsync** method, the _asyncResult_ parameter of the callback provides access only to the status of the call, and to the [Error](http://msdn.microsoft.com/en-us/library/36d1d048-b888-4bb5-9321-d340bcbc86f4%28Office.15%29.aspx) object if the call fails.
 
- **Note:** Starting with the release of the Excel 2013 SP1 and the corresponding build of Excel Online, you can now [set formatting when writing a table to the current selection](../../docs/develop/format-tables-in-add-ins-for-excel.md).
+ **Note:** Starting with the release of the Excel 2013 SP1 and the corresponding build of Excel Online, you can now [set formatting when writing a table to the current selection](../../docs/excel/format-tables-in-add-ins-for-excel.md).
 
 
 ### Detect changes in the selection

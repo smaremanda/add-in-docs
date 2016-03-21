@@ -29,5 +29,5 @@ Specify the value in the BCP 47 language tag format, such as  `"en-US"`.
 
 
 
-- [Create a dictionary task pane add-in](../../docs/develop/dictionary-task-pane-add-ins.md)
+- [Create a dictionary task pane add-in](../../docs/word/dictionary-task-pane-add-ins.md)
     

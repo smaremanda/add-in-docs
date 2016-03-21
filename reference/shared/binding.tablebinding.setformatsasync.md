@@ -159,7 +159,7 @@ Office.select("bindings#myBinding).setFormatsAsync(
 
 ```
 
-For more details and examples, see [How to format tables in add-ins for Excel](../../docs/develop/format-tables-in-add-ins-for-excel.md).
+For more details and examples, see [How to format tables in add-ins for Excel](../../docs/excel/format-tables-in-add-ins-for-excel.md).
 
 
 ## Support details
