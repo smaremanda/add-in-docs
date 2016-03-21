@@ -94,8 +94,5 @@ To see how your add-in will run in Office for iOS, you can sideload your add-in'
 ## Additional resources
 
 
-
-- [Make your Office Add-in available for iPad](8ddc78f6-5746-412e-9921-182fc159e5e2.md)
-    
 - [Debug Office Add-ins on iPad and Mac](../testing/debug-office-add-ins-on-ipad-and-mac.md)
     
