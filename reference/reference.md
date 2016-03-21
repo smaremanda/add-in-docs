@@ -14,7 +14,6 @@ Find API and schema reference information for Office Add-ins.
     
 - [JavaScript API for Office error codes](../reference/javascript-api-for-office-error-codes.md)
     
-- [Schema reference for Office Add-ins manifest (v1.1)](schema-reference-for-office-add-ins-manifests-v1.1.md)
     
 
 ## Additional resources
