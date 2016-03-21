@@ -1,18 +1,10 @@
-# Word add-ins
+# Build your first Word add-in
 
 _Applies to: Word 2016, Word for iPad, Word for Mac_
 
-Welcome to the Word add-in JavaScript API documentation. The Word JavaScript API is a part of the Office add-in programming model for extending Microsoft Office applications. The add-in programming model uses web applications to host your extension to Word. You can now extend Word with any web platform or language that you prefer.
+The Word JavaScript API is a part of the Office add-in programming model for extending Office applications. The add-in programming model uses web applications to host your extension to Word. You can now extend Word with any web platform or language that you prefer.
 
-## API overview
-
-Before we start going into the specifics of the JavaScript API for Word, it is important to know that this new Word add-in object model is different than the model for Word in Office 2013. The Office 2013 add-in model was not typed and provided a generic API for extending Office clients. While the previous model is still applicable to Word 2016, we also suggest that you start using the new Word object model. We suggest that you read the [platform overview](../../docs/overview/office-add-ins.md) if you aren't familiar with the add-in platform.
-
-The new JavaScript APIs for Word change the way that you can interact with objects like documents and paragraphs. Rather than providing individual asynchronous APIs for retrieving and updating each of these objects, the new APIs provide “proxy” JavaScript objects that correspond to the real objects running in Word.  You can directly interact with these proxy objects by synchronously reading and writing their properties and calling synchronous methods to perform operations on them.  These interactions with proxy objects aren’t immediately realized in the running script, so we provide a method on the context named **sync()**. The context.sync method synchronizes the state between your running JavaScript and the real objects in Office by executing instructions queued in your script and by retrieving properties of loaded Word objects for use in your script.
-
-## Create your first Word add-in
-
-A Word add-in runs inside Word and can interact with the contents of the document using the new Word JavaScript APIs available in Word 2016. Under the hood, there are two parts to create an add-in: 1) a web application that you can host anywhere, and 2) the [add-in manifest](../../docs/overview/add-in-manifests.md) that Word uses to discover where your web application is hosted (the manifest provides more than this, read more in the [programming overview](word-add-ins-programming-overview.md)).
+A Word add-in runs inside Word and can interact with the contents of the document using the Word JavaScript API that is available in Word 2016. Under the hood, there are two parts to create an add-in: 1) a web application that you can host anywhere, and 2) the [add-in manifest](../../docs/overview/add-in-manifests.md) that Word uses to discover where your web application is hosted (the manifest provides more than this, read more in the [programming overview](word-add-ins-programming-overview.md)).
 
 >**Word add-in = manifest.xml + web app**
 
