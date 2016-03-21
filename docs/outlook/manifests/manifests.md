@@ -758,7 +758,7 @@ App domains are also necessary to enable cookie sharing between the pop-out wind
 
 ## Permissions
 
-The  **Permissions** element contains the required permissions for the add-in. In general, you should specify the minimum necessary permission that your add-in needs, depending on the exact methods that you plan to use. For example, a mail add-in that activates in compose forms and only reads but does not write to item properties like [item.requiredAttendees](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html), and does not call [mailbox.makeEwsRequestAsync](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.html) to access any Exchange Web Services operations should specify **ReadItem** permission. For details on the available permissions, see [Understanding Outlook add-in permissions](../../outlook/understanding-outlook-add-in-permissions.md).
+The  **Permissions** element contains the required permissions for the add-in. In general, you should specify the minimum necessary permission that your add-in needs, depending on the exact methods that you plan to use. For example, a mail add-in that activates in compose forms and only reads but does not write to item properties like [item.requiredAttendees](../../../reference/outlook/Office.context.mailbox.item.md), and does not call [mailbox.makeEwsRequestAsync](../../../reference/outlook/Office.context.mailbox.md) to access any Exchange Web Services operations should specify **ReadItem** permission. For details on the available permissions, see [Understanding Outlook add-in permissions](../../outlook/understanding-outlook-add-in-permissions.md).
 
 
 **Four-tier permissions model for mail add-ins**
