@@ -405,13 +405,13 @@
       <Item text="getDataAsync " url="shared/binding.getdataasync" FriendlyUrl="reference/common/binding-objectbinding.getdataasync"   />
       <Item text="id " url="shared/binding.id" FriendlyUrl="reference/common/binding-objectbinding.id"   />
       <Item text="type " url="shared/binding.type" FriendlyUrl="reference/common/binding-objectbinding.type"  SEODescription="" />
-      <Item text="MatrixBinding" url="shared/binding.matrixbinding.matrixbinding">
+      <Item text="MatrixBinding" url="shared/binding.matrixbinding">
         <Item text="rowcount" url="shared/binding.matrixbinding.rowcount" />
         <Item text="columnCount " url="shared/binding.matrixbinding.columncount" FriendlyUrl="reference/common/binding-object/matrixbinding-objectbinding.matrixbinding.columncount"   />
       </Item>
       <Item text="removeHandlerAsync" url="shared/binding.removehandlerasync" FriendlyUrl="reference/common/binding-objectbinding.removehandlerasync"   />
       <Item text="setDataAsync" url="shared/binding.setdataasync" FriendlyUrl="reference/common/binding-objectbinding.setdataasync"   />
-      <Item text="TableBinding" url="shared/binding.tablebinding.tablebinding">
+      <Item text="TableBinding" url="shared/binding.tablebinding">
         <Item text="addColumnsAsync" url="shared/binding.tablebinding.addcolumnsasync" FriendlyUrl="reference/common/binding-object/tablebinding-objectbinding.tablebinding.addcolumnsasync"  />
         <Item text="addRowsAsync" url="shared/binding.tablebinding.addrowsasync" FriendlyUrl="reference/common/binding-object/tablebinding-objectbinding.tablebinding.addrowsasync"   />
         <Item text="clearFormatsAsync" url="shared/binding.tablebinding.clearformatsasync" />

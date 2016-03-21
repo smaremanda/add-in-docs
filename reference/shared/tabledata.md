@@ -1,6 +1,6 @@
 
 # TableData object
-Represents the data in a table or a [TableBinding](../../reference/shared/binding.tablebinding.tablebinding.md).
+Represents the data in a table or a [TableBinding](../../reference/shared/binding.tablebinding.md).
 
 |||
 |:-----|:-----|

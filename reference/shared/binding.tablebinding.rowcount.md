@@ -15,7 +15,7 @@ var rowCount = bindingObj.rowCount;
 
 ## Return Value
 
-The number of rows in the specified [TableBinding](../../reference/shared/binding.tablebinding.tablebinding.md) object.
+The number of rows in the specified [TableBinding](../../reference/shared/binding.tablebinding.md) object.
 
 
 ## Remarks

@@ -22,8 +22,8 @@ Office.context.document.bindings.getByIdAsync(id);
 
 |**Name**|**Description**|
 |:-----|:-----|
-|[MatrixBinding](../../reference/shared/binding.matrixbinding.matrixbinding.md)|Represents a binding in two dimensions of rows and columns.|
-|[TableBinding](../../reference/shared/binding.tablebinding.tablebinding.md)|Represents a binding in two dimensions of rows and columns, optionally with headers.|
+|[MatrixBinding](../../reference/shared/binding.matrixbinding.md)|Represents a binding in two dimensions of rows and columns.|
+|[TableBinding](../../reference/shared/binding.tablebinding.md)|Represents a binding in two dimensions of rows and columns, optionally with headers.|
 |[TextBinding](../../reference/shared/binding.textbinding.md)|Represents a bound text selection in the document.|
 
 **Properties**
@@ -58,7 +58,7 @@ Office.context.document.bindings.getByIdAsync(id);
 
 The  **Binding** object exposes the functionality possessed by all bindings regardless of type.
 
-The  **Binding** object is never called directly. It is the abstract parent class of the objects that represent each type of binding: [MatrixBinding](../../reference/shared/binding.matrixbinding.matrixbinding.md), [TableBinding](../../reference/shared/binding.tablebinding.tablebinding.md), or [TextBinding](../../reference/shared/binding.textbinding.md). All three of these objects inherit the  **getDataAsync** and **setDataAsync** methods from the **Binding** object that enable to you interact with the data in the binding. They also inherit the **id** and **type** properties for querying those property values. Additionally, the **MatrixBinding** and **TableBinding** objects expose additional methods for matrix- and table-specific features, such as counting the number of rows and columns.
+The  **Binding** object is never called directly. It is the abstract parent class of the objects that represent each type of binding: [MatrixBinding](../../reference/shared/binding.matrixbinding.md), [TableBinding](../../reference/shared/binding.tablebinding.md), or [TextBinding](../../reference/shared/binding.textbinding.md). All three of these objects inherit the  **getDataAsync** and **setDataAsync** methods from the **Binding** object that enable to you interact with the data in the binding. They also inherit the **id** and **type** properties for querying those property values. Additionally, the **MatrixBinding** and **TableBinding** objects expose additional methods for matrix- and table-specific features, such as counting the number of rows and columns.
 
 
 ## Support details

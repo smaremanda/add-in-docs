@@ -61,7 +61,7 @@ If an optional parameter is omitted, the following default value is used (when a
 | _startColumn_|The first column.|
 | _rowCount_|All rows.|
 | _columnCount_|All columns.|
-When called from a [MatrixBinding](../../reference/shared/binding.matrixbinding.matrixbinding.md) or [TableBinding](../../reference/shared/binding.tablebinding.tablebinding.md), the  **getDataAsync** method will return a subset of the bound values if the optional _startRow_,  _startColumn_,  _rowCount_, and  _columnCount_ parameters are specified (and they specify a contiguous and valid range).
+When called from a [MatrixBinding](../../reference/shared/binding.matrixbinding.md) or [TableBinding](../../reference/shared/binding.tablebinding.md), the  **getDataAsync** method will return a subset of the bound values if the optional _startRow_,  _startColumn_,  _rowCount_, and  _columnCount_ parameters are specified (and they specify a contiguous and valid range).
 
 
 ## Example
