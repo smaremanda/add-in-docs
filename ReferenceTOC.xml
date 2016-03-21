@@ -93,8 +93,6 @@
     <Item text="Worksheet" url="excel/worksheet" />
     <Item text="WorksheetCollection" url="excel/worksheetcollection" />
   </Item>
-  
-  </Item>
   <Item text="Outlook" url="outlook/index" scope="Outlook">
 		<Item text="1.1" url="outlook/1.1/index" Version="V1.1">
 		  <Item text="Object Models" url="outlook/1.1" Version="V1.1">
@@ -339,7 +337,8 @@
     <Item text="LabsJS.Labs.Core.GetActions" url="office-mix/labsjs.labs.core.getactions" FriendlyUrl="powerpoint/office-mix/referencelabsjs.labs.core.getactions" Scope="powerpoint" />
     <Item text="LabsJS.Labs.Core" url="office-mix/labsjs.labs.core" FriendlyUrl="powerpoint/office-mix/referencelabsjs.labs.core" Scope="powerpoint" />
     <Item text="LabsJS.Labs" url="office-mix/labsjs.labs" FriendlyUrl="powerpoint/office-mix/referencelabsjs.labs" Scope="powerpoint" />
-  </Item> 
+  </Item>
+  </Item>
   <Item text="Word" url="word/word-add-ins-javascript-reference" Scope="word">
     <Item text="body" url="word/body" />
     <Item text="breakType" url="word/breaktype" FriendlyUrl="word/referencebreaktype" Scope="word" />
@@ -359,8 +358,7 @@
     <Item text="section" url="word/section" FriendlyUrl="word/referencesection" Scope="word" />
     <Item text="sectionCollection" url="word/sectioncollection" FriendlyUrl="word/referencesectioncollection" Scope="word" />
   </Item>
-    
-  </Item><Item text="Shared API" url="shared/shared-api">
+  <Item text="Shared API" url="shared/shared-api">
     <Item text="JavaScript API for Office" url="javascript-api-for-office" />
 	<Item text="What's changed in the JavaScript API for Office" url="what's-changed-in-the-javascript-api-for-office" />
 	<Item text="Office Add-in Requirement Sets" url="office-add-in-requirement-sets" />
