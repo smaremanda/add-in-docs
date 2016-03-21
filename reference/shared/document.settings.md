@@ -15,7 +15,7 @@ var _settings = Office.context.document.settings;
 
 ## Return Value
 
-A [Settings](../../reference/shared/doucment.settings.md) object.
+A [Settings](../../reference/shared/document.settings.md) object.
 
 
 ## Support details

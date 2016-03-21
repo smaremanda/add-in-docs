@@ -23,7 +23,7 @@ The Document API subset of the JavaScript API for Office includes objects, metho
 |[File](../../reference/shared/file.md)|Represents the document file associated with an Office Add-in.|<ul><li>PowerPoint</li><li>Word</li></ul>|
 |[MatrixBinding](../../reference/shared/binding.matrixbinding.md)|Represents a binding in two dimensions of rows and columns. |<ul><li>Excel</li><li>Word</li></ul>|
 |[ProjectDocument](../../reference/shared/projectdocument.projectdocument.md)|An abstract class that represents the project document (the active project) with which the Office Add-in interacts.|<ul><li>Project</li></ul>|
-|[Settings](../../reference/shared/doucment.settings.md)|Represents custom settings for a task pane or content add-in that are stored in the host document as name/value pairs.|<ul><li>Access</li><li>Excel</li><li>PowerPoint</li><li>Word</li></ul>|
+|[Settings](../../reference/shared/document.settings.md)|Represents custom settings for a task pane or content add-in that are stored in the host document as name/value pairs.|<ul><li>Access</li><li>Excel</li><li>PowerPoint</li><li>Word</li></ul>|
 |[Slice](../../reference/shared/slice.md)|Represents a slice of a document file.|<ul><li>PowerPoint</li><li>Word</li></ul>|
 |[TableBinding](../../reference/shared/binding.tablebinding.md)|Represents a binding in two dimensions of rows and columns, optionally with headers.|<ul><li>Access</li><li>Excel</li><li>Word</li></ul>|
 |[TableData](../../reference/shared/tabledata.md)|Represents the data in a table or a  **TableBinding**.|<ul><li>Access</li><li>Excel</li><li>Word</li></ul>|
