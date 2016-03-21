@@ -27,7 +27,7 @@ You can categorize the primary [Office JavaScript API](http://msdn.microsoft.com
 
  >**Important**  Some of the API members aren't supported across all Office applications that can host content and task pane add-ins. To determine which members are supported, see any of the following:
 
-For a summary of Office JavaScript API support across Office host applications, see[Understanding the JavaScript API for Office](http://msdn.microsoft.com/library/01180dae-ca45-40c8-b3dd-fd2a85651c0c%28Office.15%29.aspx).
+For a summary of Office JavaScript API support across Office host applications, see [Understanding the JavaScript API for Office](http://msdn.microsoft.com/library/01180dae-ca45-40c8-b3dd-fd2a85651c0c%28Office.15%29.aspx).
 
 
 ## Reading and writing to an active selection
