@@ -2,8 +2,6 @@
 
 # Body
 
-## Body
-
 The `body` object provides methods for adding and updating the content of the message or appointment. It is returned in the `body` property of the selected item.
 
 ##### Requirements

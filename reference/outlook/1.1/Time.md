@@ -2,8 +2,6 @@
 
 # Time
 
-## Time
-
 The `Time` object is returned as the [`start`](Office.context.mailbox.item.md#start-datetime) or [`end`](Office.context.mailbox.item.md#end-datetime) property of an appointment in compose mode.
 
 ##### Requirements

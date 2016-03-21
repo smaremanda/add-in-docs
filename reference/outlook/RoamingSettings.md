@@ -2,8 +2,6 @@
 
 # RoamingSettings
 
-## RoamingSettings
-
 The settings created by using the methods of the `RoamingSettings` object are saved per add-in and per user. That is, they are available only to the add-in that created them, and only from the user's mail box in which they are saved.
 
 > While the Outlook Add-in API limits access to these settings to only the add-in that created them, these settings should not be considered secure storage. They can be accessed by Exchange Web Services or Extended MAPI. They should not be used to store sensitive information such as user credentials or security tokens.
