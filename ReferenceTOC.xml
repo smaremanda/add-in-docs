@@ -51,46 +51,46 @@
     <Item text="WorksheetCollection" url="excel/worksheetcollection" />
   </Item>
   <Item text="Manifest" url="manifest">
-    <Item text="allowsnapshot" url="manifest/allowsnapshot" />
-    <Item text="alternateid" url="manifest/alternateid" />
+    <Item text="allowsnapshot" url="manifest/allowsnapshot" scope="excel, powerpoint" />
+    <Item text="alternateid" url="manifest/alternateid" scope="excel, word, powerpoint, access, project" />
     <Item text="appdomain" url="manifest/appdomain" />
     <Item text="appdomains" url="manifest/appdomains" />
     <Item text="citationtext" url="manifest/citationtext" />
     <Item text="defaultlocale" url="manifest/defaultlocale" />
     <Item text="defaultsettings" url="manifest/defaultsettings" />
     <Item text="description" url="manifest/description" />
-    <Item text="desktopsettings" url="manifest/desktopsettings" />
-    <Item text="dictionary" url="manifest/dictionary" />
-    <Item text="dictionaryhomepage" url="manifest/dictionaryhomepage" />
-    <Item text="dictionaryname" url="manifest/dictionaryname" />
-    <Item text="disableentityhighlighting" url="manifest/disableentityhighlighting" />
+    <Item text="desktopsettings" url="manifest/desktopsettings" scope="outlook" />
+    <Item text="dictionary" url="manifest/dictionary" scope="excel, word, powerpoint, project"/>
+    <Item text="dictionaryhomepage" url="manifest/dictionaryhomepage" scope="excel, word, powerpoint, project" />
+    <Item text="dictionaryname" url="manifest/dictionaryname" scope="excel, word, powerpoint, project"/>
+    <Item text="disableentityhighlighting" url="manifest/disableentityhighlighting" scope="outlook" />
     <Item text="displayname" url="manifest/displayname" />
-    <Item text="form" url="manifest/form" />
-    <Item text="formsettings" url="manifest/formsettings" />
+    <Item text="form" url="manifest/form" scope="outlook" />
+    <Item text="formsettings" url="manifest/formsettings" scope="outlook" />
     <Item text="highresolutioniconurl" url="manifest/highresolutioniconurl" />
     <Item text="host" url="manifest/host" />
     <Item text="hosts" url="manifest/hosts" />
     <Item text="iconurl" url="manifest/iconurl" />
     <Item text="id" url="manifest/id" />
-    <Item text="" url="manifest/" />
-    <Item text="s" url="manifest/s" />
+    <Item text="method" url="manifest/method" scope="excel, word, powerpoint, access, project" />
+    <Item text="methods" url="manifest/methods" scope="excel, word, powerpoint, access, project" />
     <Item text="officeapp" url="manifest/officeapp" />
     <Item text="override" url="manifest/override" />
     <Item text="permissions" url="manifest/permissions" />
     <Item text="phonesettings" url="manifest/phonesettings" />
     <Item text="providername" url="manifest/providername" />
-    <Item text="queryuri" url="manifest/queryuri" />
-    <Item text="requestedheight" url="manifest/requestedheight" />
-    <Item text="requestedwidth" url="manifest/requestedwidth" />
+    <Item text="queryuri" url="manifest/queryuri" scope="excel, word, powerpoint, access, project" />
+    <Item text="requestedheight" url="manifest/requestedheight" scope="excel, powerpoint, access"/>
+    <Item text="requestedwidth" url="manifest/requestedwidth" scope="excel, powerpoint, access" />
     <Item text="requirements" url="manifest/requirements" />
-    <Item text="rule" url="manifest/rule" />
+    <Item text="rule" url="manifest/rule" scope="outlook"/>
     <Item text="set" url="manifest/set" />
     <Item text="sets" url="manifest/sets" />
     <Item text="sourcelocation" url="manifest/sourcelocation" />
     <Item text="supporturl" url="manifest/supporturl" />
-    <Item text="tabletsettings" url="manifest/tabletsettings" />
-    <Item text="targetdialect" url="manifest/targetdialect" />
-    <Item text="targetdialects" url="manifest/targetdialects" />
+    <Item text="tabletsettings" url="manifest/tabletsettings" scope="outlook" />
+    <Item text="targetdialect" url="manifest/targetdialect" scope="excel, word, powerpoint, project" />
+    <Item text="targetdialects" url="manifest/targetdialects" scope="excel, word, powerpoint, project" />
     <Item text="version" url="manifest/version" />
   </Item>
   <Item text="PowerPoint" url="office-mix" Scope="powerpoint">
@@ -342,23 +342,23 @@
   <Item text="Shared API" url="shared/shared-api">
     <Item text="Enumerations" url="shared/enumerations" FriendlyUrl="reference/enumerationsenumerations">
       <Item text="ActiveView enumeration" url="shared/activeview-enumeration" FriendlyUrl="reference/enumerationsactiveview-enumeration" Scope="powerpoint" />
-      <Item text="AsyncResultStatus enumeration" url="shared/asyncresultstatus-enumeration" FriendlyUrl="reference/enumerationsasyncresultstatus-enumeration" />
-      <Item text="BindingType enumeration" url="shared/bindingtype-enumeration" FriendlyUrl="reference/enumerationsbindingtype-enumeration" />
+      <Item text="AsyncResultStatus enumeration" url="shared/asyncresultstatus-enumeration" FriendlyUrl="reference/enumerationsasyncresultstatus-enumeration" Scope="Access, Excel, Word" />
+      <Item text="BindingType enumeration" url="shared/bindingtype-enumeration" FriendlyUrl="reference/enumerationsbindingtype-enumeration" Scope="Access, Excel, Word"/>
       <Item text="CoercionType enumeration" url="shared/coerciontype-enumeration" FriendlyUrl="reference/enumerationscoerciontype-enumeration" />
-      <Item text="CustomXMLNodeType enumeration" url="shared/customxmlnodetype-enumeration" FriendlyUrl="reference/enumerationscustomxmlnodetype-enumeration" />
-      <Item text="DocumentMode enumeration" url="shared/documentmode-enumeration" FriendlyUrl="reference/enumerationsdocumentmode-enumeration"  SEODescription="Word" />
-      <Item text="EventType enumeration" url="shared/eventtype-enumeration" FriendlyUrl="reference/enumerationseventtype-enumeration"   />
-      <Item text="FileType enumeration" url="shared/filetype-enumeration" FriendlyUrl="reference/enumerationsfiletype-enumeration"  />
-      <Item text="FilterType enumeration" url="shared/filtertype-enumeration" FriendlyUrl="reference/enumerationsfiltertype-enumeration" SEOKeyword="Project"  />
-      <Item text="GoToType enumeration" url="shared/gototype-enumeration" FriendlyUrl="reference/enumerationsgototype-enumeration"   />
-      <Item text="InitializationReason enumeration" url="shared/initializationreason-enumeration" FriendlyUrl="reference/enumerationsinitializationreason-enumeration" SEOKeyword="Project"  />
+      <Item text="CustomXMLNodeType enumeration" url="shared/customxmlnodetype-enumeration" FriendlyUrl="reference/enumerationscustomxmlnodetype-enumeration" Scope="Word" />
+      <Item text="DocumentMode enumeration" url="shared/documentmode-enumeration" FriendlyUrl="reference/enumerationsdocumentmode-enumeration"  Scope="Excel, PowerPoint, Project, Word" />
+      <Item text="EventType enumeration" url="shared/eventtype-enumeration" FriendlyUrl="reference/enumerationseventtype-enumeration" Scope="Excel, PowerPoint, Project, Word"   />
+      <Item text="FileType enumeration" url="shared/filetype-enumeration" FriendlyUrl="reference/enumerationsfiletype-enumeration"  Scope="PowerPoint, Word"/>
+      <Item text="FilterType enumeration" url="shared/filtertype-enumeration" FriendlyUrl="reference/enumerationsfiltertype-enumeration" Scope="Excel, Project, Word" />
+      <Item text="GoToType enumeration" url="shared/gototype-enumeration" FriendlyUrl="reference/enumerationsgototype-enumeration" Scope="Excel, PowerPoint, Word"  />
+      <Item text="InitializationReason enumeration" url="shared/initializationreason-enumeration" FriendlyUrl="reference/enumerationsinitializationreason-enumeration" Scope="Excel, Project, Word"  />
       <Item text="ProjectProjectFields enumeration" url="shared/projectprojectfields-enumeration" FriendlyUrl="reference/enumerationsprojectprojectfields-enumeration" Scope="project" />
       <Item text="ProjectResourceFields enumeration" url="shared/projectresourcefields-enumeration" FriendlyUrl="reference/enumerationsprojectresourcefields-enumeration" Scope="project" />
       <Item text="ProjectTaskFields enumeration" url="shared/projecttaskfields-enumeration" FriendlyUrl="reference/enumerationsprojecttaskfields-enumeration" Scope="project" />
       <Item text="ProjectViewTypes enumeration" url="shared/projectviewtypes-enumeration" FriendlyUrl="reference/enumerationsprojectviewtypes-enumeration" Scope="project" />
       <Item text="SelectionMode enumeration" url="shared/selectionmode-enumeration" FriendlyUrl="reference/enumerationsselectionmode-enumeration" Scope="project" />
-      <Item text="Table enumeration" url="shared/table-enumeration" SEODescription="Specifies enumerated values for the  cells:   in the cellFormat parameter of table formatting s." Scope="excel" />
-      <Item text="ValueFormat enumeration" url="shared/valueformat-enumeration"  />
+      <Item text="Table enumeration" url="shared/table-enumeration" Scope="excel" />
+      <Item text="ValueFormat enumeration" url="shared/valueformat-enumeration" Scope="Excel, Project, Word" />
       </Item>
     <Item text="AsyncResult" url="shared/asyncresult" >
       <Item text="AsyncResult.asyncContext" url="shared/asyncresult.asynccontext" />
@@ -382,7 +382,7 @@
       <Item text="office.context.mailbox" url="shared/office.context.mailbox" />
       <Item text="office.context.roamingsettings" url="shared/office.context.roamingsettings" />
     </Item>
-    <Item text="Binding" url="shared/binding">
+    <Item text="Binding" url="shared/binding" scope="access, excel, word">
 	    <Item text="Binding.addHandlerAsync" url="shared/binding.addhandlerasync" />
       <Item text="Binding.bindingDataChanged event" url="shared/binding.bindingdatachangedevent" />
       
@@ -424,7 +424,7 @@
       </Item>
       <Item text="TextBinding" url="shared/binding.textbinding" />
     </Item>
-    <Item text="Bindings" url="shared/bindings.bindings">
+    <Item text="Bindings" url="shared/bindings.bindings" scope="access, excel, word">
       <Item text="addFromNamedItemAsync " url="shared/bindings.addfromnameditemasync" />
       <Item text="addFromPromptAsync " url="shared/bindings.addfrompromptasync"  />
       <Item text="addFromSelectionAsync " url="shared/bindings.addfromselectionasync" />
@@ -475,7 +475,7 @@
       <Item text="getNamespaceAsync " url="shared/customxmlprefixmappings.getnamespaceasync" FriendlyUrl="reference/common/customxmlprefixmappings-objectcustomxmlprefixmappings.getnamespaceasync" SEODescription="Asynchronously gets the namespace mapped to the specified prefix." Scope="word" />
       <Item text="getPrefixAsync " url="shared/customxmlprefixmappings.getprefixasync" FriendlyUrl="reference/common/customxmlprefixmappings-objectcustomxmlprefixmappings.getprefixasync" SEODescription="Asynchronously gets the prefix for the specified namespace." Scope="word" />
     </Item>
-    <Item text="Document" url="shared/document-api">
+    <Item text="Document" url="shared/document-api" scope="access, excel, powerpoint, project, word">
       <Item text="document" url="shared/document" />
       <Item text="ActiveViewChanged event" url="shared/document.activeviewchanged" FriendlyUrl="reference/common/document/activeviewchangeddocument.activeviewchanged" SEODescription="Occurs when the user changes the current view of the document." Scope="powerpoint" />
       <!--<Item text="DocumentActiveViewChangedEventArgs object" url="shared/document.activeviewchangedeventargs" FriendlyUrl="reference/common/document/activeviewchangedeventargs-object/document.activeviewchangedeventargs" SEODescription="Provides information about the view that raised the ActiveViewChanged event." Scope="powerpoint" />
@@ -539,7 +539,7 @@
       <Item text="TaskSelectionChanged event" url="shared/projectdocument.taskselectionchanged.event" FriendlyUrl="reference/common/projectdocumentprojectdocument.taskselectionchanged.event" Scope="project" />
       <Item text="ViewSelectionChanged event" url="shared/projectdocument.viewselectionchanged.event" FriendlyUrl="reference/common/projectdocumentprojectdocument.viewselectionchanged.event" Scope="project" />
     </Item>
-    <Item text="Settings " url="shared/document.settings">
+    <Item text="Settings " url="shared/document.settings" scope="Access, Excel, PowerPoint, Word">
       <Item text="addHandlerAsync " url="shared/settings.addhandlerasync" FriendlyUrl="reference/common/settingssettings.addhandlerasync" Scope="excel" />
       <Item text="get " url="shared/settings.get" FriendlyUrl="reference/common/settingssettings.get"   />
       <Item text="refreshAsync " url="shared/settings.refreshasync" FriendlyUrl="reference/common/settingssettings.refreshasync"   />
@@ -552,12 +552,12 @@
       <Item text="settings " url="shared/settings.settingschangedeventargs.setting" FriendlyUrl="reference/common/settings/settingschanged-event/args/settings.settingschangedeventargs.setting"  />
       <Item text="type " url="shared/settings.settingschangedeventargs.type" FriendlyUrl="reference/office.js/settings/settingschanged-event/args/settings.settingschangedeventargs.type" />
   </Item>
-    <Item text="Slice" url="shared/slice">
+    <Item text="Slice" url="shared/slice" scope="powerpoint, word">
     <Item text="data " url="shared/slice.data" />
     <Item text="index " url="shared/slice.index" /> 
     <Item text="size " url="shared/slice.size" />
     </Item>
-    <Item text="TableData" url="shared/tabledata" >
+    <Item text="TableData" url="shared/tabledata" scope="excel, word" >
       <Item text="headers " url="shared/tabledata.headers" /> 
       <Item text="rows " url="shared/tabledata.rows" />
     </Item>
