@@ -9,7 +9,11 @@ The new Word add-in JavaScript API uses the same manifest format as is used for 
 
 You have a few options for publishing Word add-in manifests. Read about how you can [publish your Office add-in](https://msdn.microsoft.com/EN-US/library/office/fp123515.aspx) to a network share, to an app catalog, or to the Office store.
 
-## Understanding the JavaScript API for Word
+## Word JavaScript API overview
+
+The Word 2016 add-in object model is different than the model for Word in Office 2013. The Office 2013 add-in model is not typed and provides a generic API for extending Office clients. This model is still applicable to Word 2016; however, we recommend that you start using the new Word object model. 
+
+The new Word JavaScript API changes the way that you can interact with objects like documents and paragraphs. Rather than providing individual asynchronous APIs for retrieving and updating each of these objects, the new APIs provide “proxy” JavaScript objects that correspond to the real objects running in Word. You can directly interact with these proxy objects by synchronously reading and writing their properties and calling synchronous methods to perform operations on them. These interactions with proxy objects aren’t immediately realized in the running script, so we provide a method on the context named sync(). The context.sync method synchronizes the state between your running JavaScript and the real objects in Office by executing instructions queued in your script and by retrieving properties of loaded Word objects for use in your script.
 
 The JavaScript API for Word is loaded by Office.js. It provides a set of JavaScript proxy objects that are used to queue a set of commands that interact with the contents of a Word document. These commands are run as a batch. The results of the batch are actions taken on the Word document, like inserting content, and synchronizing the Word objects with the JavaScript proxy objects.
 
