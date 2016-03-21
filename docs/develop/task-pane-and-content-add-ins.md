@@ -5,9 +5,7 @@ You can use the Office JavaScript API to create task pane or content add-ins for
 
 ## Office JavaScript API support for content and task pane add-ins
 
-This section describes the subset of the [Office JavaScript API](http://msdn.microsoft.com/library/b27e70c3-d87d-4d27-85e0-103996273298%28Office.15%29.aspx) that you can call from content and task pane add-ins. 
-
-You can categorize the primary objects and methods supported by content and task pane add-ins as follows:
+You can categorize the primary [Office JavaScript API](http://msdn.microsoft.com/library/b27e70c3-d87d-4d27-85e0-103996273298%28Office.15%29.aspx) objects and methods supported by content and task pane add-ins as follows:
 
 
 1. **Common objects shared with other Office Add-ins.** These objects include [Office](http://msdn.microsoft.com/en-us/library/c490b13d-ee52-4291-af5d-f4a5a11d3af0%28Office.15%29.aspx), [Context](http://msdn.microsoft.com/library/662883d5-b86f-4bdc-99f0-9ee9129ed16c%28Office.15%29.aspx), and [AsyncResult](http://msdn.microsoft.com/library/540c114f-0398-425c-baf3-7363f2f6bc47%28Office.15%29.aspx). The  **Office** object is the root object of the JavaScript API for Office. The **Context** object represents the add-in's runtime environment. Both **Office** and **Context** are the fundamental objects for any Office Add-in. The **AsyncResult** object represents the results of an asynchronous operation, such as the data returned to the **getSelectedDataAsync** method, which reads what a user has selected in a document.
@@ -18,13 +16,13 @@ A content or task pane add-in can access the  **Document** object only after the
     
 3.  **Objects for working with specific features.** To work with specific features of the API, use the following objects and methods:
     
-- The methods of the [Bindings](http://msdn.microsoft.com/library/09979e31-3bfb-45be-adda-0f7cc2db1fe1%28Office.15%29.aspx) object to create or get bindings, and the methods and properties of the [Binding](http://msdn.microsoft.com/library/42882642-d22b-47d2-a8d3-3aa8c6a4435e%28Office.15%29.aspx) object to work with data.
--     
-- The [CustomXmlParts](http://msdn.microsoft.com/library/ba40cd4c-29bb-4f31-875d-6f1382fd1ee8%28Office.15%29.aspx), [CustomXmlPart](http://msdn.microsoft.com/library/83f0e668-8236-4f2f-a20f-b173a9e3f65f%28Office.15%29.aspx) and associated objects to create and manipulate custom XML parts in Word documents.
--     
-- The [File](http://msdn.microsoft.com/library/04923ddf-8efa-459f-aed5-d8c06385ca50%28Office.15%29.aspx) and[Slice](http://msdn.microsoft.com/library/011b5647-639b-4b06-8625-ba9de01bed4b%28Office.15%29.aspx) objects to create a copy of the entire document, break it into chunks or "slices", and then read or transmit the data in those slices.
--     
-- The [Settings](http://msdn.microsoft.com/library/ad733387-a58c-4514-8fc2-53e64fad468d%28Office.15%29.aspx) object to save custom data, such as user preferences, and add-in state.
+    - The methods of the [Bindings](http://msdn.microsoft.com/library/09979e31-3bfb-45be-adda-0f7cc2db1fe1%28Office.15%29.aspx) object to create or get bindings, and the methods and properties of the [Binding](http://msdn.microsoft.com/library/42882642-d22b-47d2-a8d3-3aa8c6a4435e%28Office.15%29.aspx) object to work with data.
+    
+    - The [CustomXmlParts](http://msdn.microsoft.com/library/ba40cd4c-29bb-4f31-875d-6f1382fd1ee8%28Office.15%29.aspx), [CustomXmlPart](http://msdn.microsoft.com/library/83f0e668-8236-4f2f-a20f-b173a9e3f65f%28Office.15%29.aspx) and associated objects to create and manipulate custom XML parts in Word documents.
+    
+    - The [File](http://msdn.microsoft.com/library/04923ddf-8efa-459f-aed5-d8c06385ca50%28Office.15%29.aspx) and [Slice](http://msdn.microsoft.com/library/011b5647-639b-4b06-8625-ba9de01bed4b%28Office.15%29.aspx) objects to create a copy of the entire document, break it into chunks or "slices", and then read or transmit the data in those slices.
+    
+    - The [Settings](http://msdn.microsoft.com/library/ad733387-a58c-4514-8fc2-53e64fad468d%28Office.15%29.aspx) object to save custom data, such as user preferences, and add-in state.
     
 
  >**Important**  Some of the API members aren't supported across all Office applications that can host content and task pane add-ins. To determine which members are supported, see any of the following:
@@ -92,7 +90,7 @@ For more details and examples, see [Bind to regions in a document or spreadsheet
 
 If your task pane add-in runs in PowerPoint or Word, you can use the [Document.getFileAsync](http://msdn.microsoft.com/en-us/library/78047418-89c4-4c7d-9427-4735b8559518%28Office.15%29.aspx), [File.getSliceAsync](http://msdn.microsoft.com/en-us/library/5a8a5cc2-e883-42cd-92ab-d63e10c4c707%28Office.15%29.aspx), and [File.closeAsync](http://msdn.microsoft.com/en-us/library/1ad5cebf-6feb-43ff-8b19-97d91132ab2b%28Office.15%29.aspx) methods to get an entire presentation or document.
 
-When you call  **Document.getFileAsync**, you get a copy of the document in a [File](http://msdn.microsoft.com/en-us/library/04923ddf-8efa-459f-aed5-d8c06385ca50%28Office.15%29.aspx) object. The **File** object provides access to the document in "chunks" represented as [Slice](http://msdn.microsoft.com/en-us/library/011b5647-639b-4b06-8625-ba9de01bed4b%28Office.15%29.aspx) objects. When you call **getFileAsync**, you can specify the file type (text or compressed Open Office XML format), and size of the slices (up to 4MB). To access the contents of the  **File** object, you then call **File.getSliceAsync** which returns the raw data in the[Slice.data](http://msdn.microsoft.com/en-us/library/95a68949-6009-49ae-a531-2df77687b85d%28Office.15%29.aspx) property. If you specified compressed format, you will get the file data as a byte array. If you are transmitting the file to a web service, you can transform the compressed raw data to a base64-encoded string before submission. Finally, when you are finished getting slices of the file, use the **File.closeAsync** method to close the document.
+When you call  **Document.getFileAsync**, you get a copy of the document in a [File](http://msdn.microsoft.com/en-us/library/04923ddf-8efa-459f-aed5-d8c06385ca50%28Office.15%29.aspx) object. The **File** object provides access to the document in "chunks" represented as [Slice](http://msdn.microsoft.com/en-us/library/011b5647-639b-4b06-8625-ba9de01bed4b%28Office.15%29.aspx) objects. When you call **getFileAsync**, you can specify the file type (text or compressed Open Office XML format), and size of the slices (up to 4MB). To access the contents of the  **File** object, you then call **File.getSliceAsync** which returns the raw data in the [Slice.data](http://msdn.microsoft.com/en-us/library/95a68949-6009-49ae-a531-2df77687b85d%28Office.15%29.aspx) property. If you specified compressed format, you will get the file data as a byte array. If you are transmitting the file to a web service, you can transform the compressed raw data to a base64-encoded string before submission. Finally, when you are finished getting slices of the file, use the **File.closeAsync** method to close the document.
 
 For more details, see how to [get the whole document from an add-in for PowerPoint or Word](http://msdn.microsoft.com/en-us/library/47a4ab14-0f1e-4cc8-8814-fa7e97362360%28Office.15%29.aspx). 
 
