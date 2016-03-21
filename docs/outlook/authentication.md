@@ -31,8 +31,8 @@ Let's get into the specifics. In the following articles, we'll use a simple Outl
 
 - [Inside the Exchange identity token](../outlook/inside-the-identity-token.md)
 - [Call a service from an Outlook add-in by using an identity token in Exchange](../outlook/call-a-service-by-using-an-identity-token.md)
-- [Use the Exchange token validation library](../outlook/use-the-token-validation-library.md)
-- [Validate an Exchange identity token](../outlook/)
+- [Use the Exchange token validation library](../outlvalidate-an-identity-token.md ook/use-the-token-validation-library.md)
+- [Validate an Exchange identity token](../outlook/validate-an-identity-token.md )
 - [Authenticate a user with an identity token for Exchange](../outlook/validate-an-identity-token.md)
 
 
