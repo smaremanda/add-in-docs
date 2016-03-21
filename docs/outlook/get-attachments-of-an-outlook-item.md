@@ -6,11 +6,11 @@ An Outlook add-in cannot pass the attachments of a selected item directly to the
 To send attachment information to the remote service, you use the following properties and function:
 
 
-- [Office.context.mailbox.ewsUrl](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.html) property -- Provides the URL of Exchange Web Services (EWS) on the Exchange server that hosts the mailbox. Your service uses this URL to call the [ExchangeService.GetAttachments](http://msdn.microsoft.com/en-us/library/office/dn600509%28v=exchg.80%29.aspx)[EWS Managed API](http://msdn.microsoft.com/library/c2267733-6f4f-49e5-9614-1e4a24c3af1a%28Office.15%29.aspx) method or the [GetAttachment](http://msdn.microsoft.com/en-us/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) EWS operation.
+- [Office.context.mailbox.ewsUrl](../../reference/outlook/Office.context.mailbox.md) property -- Provides the URL of Exchange Web Services (EWS) on the Exchange server that hosts the mailbox. Your service uses this URL to call the [ExchangeService.GetAttachments](http://msdn.microsoft.com/en-us/library/office/dn600509%28v=exchg.80%29.aspx)[EWS Managed API](http://msdn.microsoft.com/library/c2267733-6f4f-49e5-9614-1e4a24c3af1a%28Office.15%29.aspx) method or the [GetAttachment](http://msdn.microsoft.com/en-us/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) EWS operation.
     
-- [Office.context.mailbox.item.attachments](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html) property -- Gets an array of [AttachmentDetails](https://dev.outlook.com/reference/add-ins/simple-types.html) objects, one for each attachment to the item.
+- [Office.context.mailbox.item.attachments](../../reference/outlook/Office.context.mailbox.item.md) property -- Gets an array of [AttachmentDetails](../../reference/outlook/simple-types.md) objects, one for each attachment to the item.
     
-- [Office.context.mailbox.getCallbackTokenAsync](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.html) function -- Makes an asynchronous call to the Exchange server that hosts the mailbox to get a callback token that the server sends back to the Exchange server to authenticate a request for an attachment.
+- [Office.context.mailbox.getCallbackTokenAsync](../../reference/outlook/Office.context.mailbox.md) function -- Makes an asynchronous call to the Exchange server that hosts the mailbox to get a callback token that the server sends back to the Exchange server to authenticate a request for an attachment.
     
 
 ## Using the attachments API
@@ -47,7 +47,7 @@ You can use an [ItemHasAttachment](http://msdn.microsoft.com/en-us/library/031db
 ### Get a callback token
 
 
-The [Office.context.mailbox](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.html) object provides the **getCallbackTokenAsync** function to get a token that the remote server can use to authenticate with the Exchange server. The following code shows a function in an add-in that starts the asynchronous request to get the callback token, and the callback function that gets the response. The callback token is stored in the service request object that is defined in the next section.
+The [Office.context.mailbox](../../reference/outlook/Office.context.mailbox.md) object provides the **getCallbackTokenAsync** function to get a token that the remote server can use to authenticate with the Exchange server. The following code shows a function in an add-in that starts the asynchronous request to get the callback token, and the callback function that gets the response. The callback token is stored in the service request object that is defined in the next section.
 
 
 ```

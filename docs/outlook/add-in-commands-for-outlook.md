@@ -13,7 +13,7 @@ Add-in commands are declared in the add-in manifest in the  **VersionOverrides**
 
 The  **VersionOverrides** manifest entries specify many things for the add-in, such as the host, types of controls to add to the ribbon, the text, the icons, and any associated functions. For more information, see [Define add-in commands in your Outlook add-in manifest](../outlook/manifests/define-add-in-commands.md). 
 
-When an add-in needs to provide status updates, such as progress indicators or error messages, it must do so through the [notification APIs](http://dev.outlook.com/reference/add-ins/NotificationMessages.html). The processing for the notifications must also be defined in a separate HTML file that is specified in the  **FunctionFile** node of the manifest.
+When an add-in needs to provide status updates, such as progress indicators or error messages, it must do so through the [notification APIs](../../reference/outlook/NotificationMessages.md). The processing for the notifications must also be defined in a separate.md file that is specified in the  **FunctionFile** node of the manifest.
 
 Developers should define icons for all needed sizes so that the add-in commands will adjust smoothly along with the ribbon. The icon sizes are 80 x 80 pixels, 32 x 32 pixels, and 16 x 16 pixels.
 

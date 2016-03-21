@@ -145,11 +145,11 @@ The following  **ItemHasKnownEntity** rule activates the add-in whenever there i
 You can obtain matches to a regular expression by using the following methods on the current item:
 
 
-- [getRegExMatches](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html) returns matches in the current item for all regular expressions specified in **ItemHasRegularExpressionMatch** and **ItemHasKnownEntity** rules of the add-in.
+- [getRegExMatches](../../reference/outlook/Office.context.mailbox.item.md) returns matches in the current item for all regular expressions specified in **ItemHasRegularExpressionMatch** and **ItemHasKnownEntity** rules of the add-in.
     
-- [getRegExMatchesByName](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html) returns matches in the current item for the identified regular expression specified in an **ItemHasRegularExpressionMatch** rule of the add-in.
+- [getRegExMatchesByName](../../reference/outlook/Office.context.mailbox.item.md) returns matches in the current item for the identified regular expression specified in an **ItemHasRegularExpressionMatch** rule of the add-in.
     
-- [getFilteredEntitiesByName](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html) returns entire instances of entities that contain matches for the identified regular expression specified in an **ItemHasKnownEntity** rule of the add-in.
+- [getFilteredEntitiesByName](../../reference/outlook/Office.context.mailbox.item.md) returns entire instances of entities that contain matches for the identified regular expression specified in an **ItemHasKnownEntity** rule of the add-in.
     
 When the regular expressions are evaluated, the matches are returned to your add-in in an array object. For  **getRegExMatches**, that object has the identifier of the name of the regular expression. 
 

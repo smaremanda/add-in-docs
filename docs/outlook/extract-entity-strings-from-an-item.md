@@ -206,7 +206,7 @@ The remaining sections describe how this sample (default_entities.js file) extra
 ## Extracting entities upon initialization
 
 
-Upon the [Office.initialize](http://msdn.microsoft.com/en-us/library/727adf79-a0b5-48d2-99c7-6642c2c334fc%28Office.15%29.aspx) event, the entities add-in calls the [getEntities](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html) method of the current item. The **getEntities** method returns the global variable `_MyEntities` an array of instances of supported entities. The following is the related JavaScript code.
+Upon the [Office.initialize](http://msdn.microsoft.com/en-us/library/727adf79-a0b5-48d2-99c7-6642c2c334fc%28Office.15%29.aspx) event, the entities add-in calls the [getEntities](../../reference/outlook/Office.context.mailbox.item.md) method of the current item. The **getEntities** method returns the global variable `_MyEntities` an array of instances of supported entities. The following is the related JavaScript code.
 
 
 ```
@@ -235,7 +235,7 @@ Office.initialize = function () {
 ## Extracting addresses
 
 
-When the user clicks the  **Get Addresses** button, the `myGetAddresses` event handler obtains an array of addresses from the [addresses](http://dev.outlook.com/reference/add-ins/simple-types.html) property of the `_MyEntities` object, if any address was extracted. Each extracted address is stored as a string in the array. `myGetAddresses` forms a local HTML string in `htmlText` to display the list of extracted addresses. The following is the related JavaScript code.
+When the user clicks the  **Get Addresses** button, the `myGetAddresses` event handler obtains an array of addresses from the [addresses](../../reference/outlook/simple-types.md) property of the `_MyEntities` object, if any address was extracted. Each extracted address is stored as a string in the array. `myGetAddresses` forms a local HTML string in .mdText` to display the list of extracted addresses. The following is the related JavaScript code.
 
 
 ```js
@@ -259,22 +259,22 @@ function myGetAddresses()
 ## Extracting contact information
 
 
-When the user clicks the  **Get Contact Information** button, the `myGetContacts` event handler obtains an array of contacts together with their information from the [contacts](http://dev.outlook.com/reference/add-ins/simple-types.html) property of the `_MyEntities` object, if any was extracted. Each extracted contact is stored as a [Contact](http://dev.outlook.com/reference/add-ins/simple-types.html) object in the array. `myGetContacts` obtains further data about each contact. Note that the context determines whether Outlook can extract a contact from an item - a signature at the end of an email message, or at least some of the following information would have to exist in the vicinity of the contact:
+When the user clicks the  **Get Contact Information** button, the `myGetContacts` event handler obtains an array of contacts together with their information from the [contacts](../../reference/outlook/simple-types.md) property of the `_MyEntities` object, if any was extracted. Each extracted contact is stored as a [Contact](../../reference/outlook/simple-types.md) object in the array. `myGetContacts` obtains further data about each contact. Note that the context determines whether Outlook can extract a contact from an item - a signature at the end of an email message, or at least some of the following information would have to exist in the vicinity of the contact:
 
 
-- The string representing the contact's name from the [Contact.personName](http://dev.outlook.com/reference/add-ins/simple-types.html) property.
+- The string representing the contact's name from the [Contact.personName](../../reference/outlook/simple-types.md) property.
     
-- The string representing the company name associated with the contact from the [Contact.businessName](http://dev.outlook.com/reference/add-ins/simple-types.html) property.
+- The string representing the company name associated with the contact from the [Contact.businessName](../../reference/outlook/simple-types.md) property.
     
-- The array of telephone numbers associated with the contact from the [Contact.phoneNumbers](http://dev.outlook.com/reference/add-ins/simple-types.html) property. Each telephone number is represented by a [PhoneNumber](http://dev.outlook.com/reference/add-ins/simple-types.html) object.
+- The array of telephone numbers associated with the contact from the [Contact.phoneNumbers](../../reference/outlook/simple-types.md) property. Each telephone number is represented by a [PhoneNumber](../../reference/outlook/simple-types.md) object.
     
-- For each  **PhoneNumber** member in the telephone numbers array, the string representing the telephone number from the [PhoneNumber.phoneString](http://dev.outlook.com/reference/add-ins/simple-types.html) property.
+- For each  **PhoneNumber** member in the telephone numbers array, the string representing the telephone number from the [PhoneNumber.phoneString](../../reference/outlook/simple-types.md) property.
     
-- The array of URLs associated with the contact from the [Contact.urls](http://dev.outlook.com/reference/add-ins/simple-types.html) property. Each URL is represented as a string in an array member.
+- The array of URLs associated with the contact from the [Contact.urls](../../reference/outlook/simple-types.md) property. Each URL is represented as a string in an array member.
     
-- The array of email addresses associated with the contact from the [Contact.emailAddresses](http://dev.outlook.com/reference/add-ins/simple-types.html) property. Each email address is represented as a string in an array member.
+- The array of email addresses associated with the contact from the [Contact.emailAddresses](../../reference/outlook/simple-types.md) property. Each email address is represented as a string in an array member.
     
-- The array of postal addresses associated with the contact from the [Contact.addresses](http://dev.outlook.com/reference/add-ins/simple-types.html) property. Each postal address is represented as a string in an array member.
+- The array of postal addresses associated with the contact from the [Contact.addresses](../../reference/outlook/simple-types.md) property. Each postal address is represented as a string in an array member.
     
  `myGetContacts` forms a local HTML string in `htmlText` to display the data for each contact. The following is the related JavaScript code.
 
@@ -347,7 +347,7 @@ function myGetContacts()
 ## Extracting email addresses
 
 
-When the user clicks the  **Get Email Addresses** button, the `myGetEmailAddresses` event handler obtains an array of SMTP email addresses from the [emailAddresses](http://dev.outlook.com/reference/add-ins/simple-types.html) property of the `_MyEntities` object, if any was extracted. Each extracted email address is stored as a string in the array. `myGetEmailAddresses` forms a local HTML string in `htmlText` to display the list of extracted email addresses. The following is the related JavaScript code.
+When the user clicks the  **Get Email Addresses** button, the `myGetEmailAddresses` event handler obtains an array of SMTP email addresses from the [emailAddresses](../../reference/outlook/simple-types.md) property of the `_MyEntities` object, if any was extracted. Each extracted email address is stored as a string in the array. `myGetEmailAddresses` forms a local HTML string in `htmlText` to display the list of extracted email addresses. The following is the related JavaScript code.
 
 
 ```js
@@ -374,29 +374,29 @@ function myGetEmailAddresses()
 ## Extracting meeting suggestions
 
 
-When the user clicks the  **Get Meeting Suggestions** button, the `myGetMeetingSuggestions` event handler obtains an array of meeting suggestions from the [meetingSuggestions](http://dev.outlook.com/reference/add-ins/simple-types.html) property of the `_MyEntities` object, if any was extracted.
+When the user clicks the  **Get Meeting Suggestions** button, the `myGetMeetingSuggestions` event handler obtains an array of meeting suggestions from the [meetingSuggestions](../../reference/outlook/simple-types.md) property of the `_MyEntities` object, if any was extracted.
 
 
  >**Note**  Only messages but not appointments support the  **MeetingSuggestion** entity type.
 
-Each extracted meeting suggestion is stored as a [MeetingSuggestion](http://dev.outlook.com/reference/add-ins/simple-types.html) object in the array. `myGetMeetingSuggestions` obtains further data about each meeting suggestion:
+Each extracted meeting suggestion is stored as a [MeetingSuggestion](../../reference/outlook/simple-types.md) object in the array. `myGetMeetingSuggestions` obtains further data about each meeting suggestion:
 
 
-- The string that was identified as a meeting suggestion from the [MeetingSuggestion.meetingString](http://dev.outlook.com/reference/add-ins/simple-types.html) property.
+- The string that was identified as a meeting suggestion from the [MeetingSuggestion.meetingString](../../reference/outlook/simple-types.md) property.
     
-- The array of meeting attendees from the [MeetingSuggestion.attendees](http://dev.outlook.com/reference/add-ins/simple-types.html) property. Each attendee is represented by an [EmailUser](http://dev.outlook.com/reference/add-ins/simple-types.html) object.
+- The array of meeting attendees from the [MeetingSuggestion.attendees](../../reference/outlook/simple-types.md) property. Each attendee is represented by an [EmailUser](../../reference/outlook/simple-types.md) object.
     
-- For each attendee, the name from the [EmailUser.displayName](http://dev.outlook.com/reference/add-ins/simple-types.html) property.
+- For each attendee, the name from the [EmailUser.displayName](../../reference/outlook/simple-types.md) property.
     
-- For each attendee, the SMTP address from the [EmailUser.emailAddress](http://dev.outlook.com/reference/add-ins/simple-types.html) property.
+- For each attendee, the SMTP address from the [EmailUser.emailAddress](../../reference/outlook/simple-types.md) property.
     
-- The string representing the location of the meeting suggestion from the [MeetingSuggestion.location](http://dev.outlook.com/reference/add-ins/simple-types.html) property.
+- The string representing the location of the meeting suggestion from the [MeetingSuggestion.location](../../reference/outlook/simple-types.md) property.
     
-- The string representing the subject of the meeting suggestion from the [MeetingSuggestion.subject](http://dev.outlook.com/reference/add-ins/simple-types.html) property.
+- The string representing the subject of the meeting suggestion from the [MeetingSuggestion.subject](../../reference/outlook/simple-types.md) property.
     
-- The string representing the start time of the meeting suggestion from the [MeetingSuggestion.start](http://dev.outlook.com/reference/add-ins/simple-types.html) property.
+- The string representing the start time of the meeting suggestion from the [MeetingSuggestion.start](../../reference/outlook/simple-types.md) property.
     
-- The string representing the end time of the meeting suggestion from the [MeetingSuggestion.end](http://dev.outlook.com/reference/add-ins/simple-types.html) property.
+- The string representing the end time of the meeting suggestion from the [MeetingSuggestion.end](../../reference/outlook/simple-types.md) property.
     
  `myGetMeetingSuggestions` forms a local HTML string in `htmlText` to display the data for each of the meeting suggestions. The following is the related JavaScript code.
 
@@ -470,14 +470,14 @@ function myGetMeetingSuggestions()
 ## Extracting phone numbers
 
 
-When the user clicks the  **Get Phone Numbers** button, the `myGetPhoneNumbers` event handler obtains an array of phone numbers from the [phoneNumbers](http://dev.outlook.com/reference/add-ins/simple-types.html) property of the `_MyEntities` object, if any was extracted. Each extracted phone number is stored as a [PhoneNumber](http://dev.outlook.com/reference/add-ins/simple-types.html) object in the array. `myGetPhoneNumbers` obtains further data about each phone number:
+When the user clicks the  **Get Phone Numbers** button, the `myGetPhoneNumbers` event handler obtains an array of phone numbers from the [phoneNumbers](../../reference/outlook/simple-types.md) property of the `_MyEntities` object, if any was extracted. Each extracted phone number is stored as a [PhoneNumber](../../reference/outlook/simple-types.md) object in the array. `myGetPhoneNumbers` obtains further data about each phone number:
 
 
-- The string representing the kind of phone number, for example, home phone number, from the [PhoneNumber.type](http://dev.outlook.com/reference/add-ins/simple-types.html) property.
+- The string representing the kind of phone number, for example, home phone number, from the [PhoneNumber.type](../../reference/outlook/simple-types.md) property.
     
-- The string representing the actual phone number from the [PhoneNumber.phoneString](http://dev.outlook.com/reference/add-ins/simple-types.html) property.
+- The string representing the actual phone number from the [PhoneNumber.phoneString](../../reference/outlook/simple-types.md) property.
     
-- The string that was originally identified as the phone number from the [PhoneNumber.originalPhoneString](http://dev.outlook.com/reference/add-ins/simple-types.html) property.
+- The string that was originally identified as the phone number from the [PhoneNumber.originalPhoneString](../../reference/outlook/simple-types.md) property.
     
  `myGetPhoneNumbers` forms a local HTML string in `htmlText` to display the data for each of the phone numbers. The following is the related JavaScript code.
 
@@ -521,16 +521,16 @@ function myGetPhoneNumbers()
 ## Extracting task suggestions
 
 
-When the user clicks the  **Get Task Suggestions** button, the `myGetTaskSuggestions` event handler obtains an array of task suggestions from the [taskSuggestions](http://dev.outlook.com/reference/add-ins/simple-types.html) property of the `_MyEntities` object, if any was extracted. Each extracted task suggestion is stored as a [TaskSuggestion](http://dev.outlook.com/reference/add-ins/simple-types.html) object in the array. `myGetTaskSuggestions` obtains further data about each task suggestion:
+When the user clicks the  **Get Task Suggestions** button, the `myGetTaskSuggestions` event handler obtains an array of task suggestions from the [taskSuggestions](../../reference/outlook/simple-types.md) property of the `_MyEntities` object, if any was extracted. Each extracted task suggestion is stored as a [TaskSuggestion](../../reference/outlook/simple-types.md) object in the array. `myGetTaskSuggestions` obtains further data about each task suggestion:
 
 
-- The string that was originally identified a task suggestion from the [TaskSuggestion.taskString](http://dev.outlook.com/reference/add-ins/simple-types.html) property.
+- The string that was originally identified a task suggestion from the [TaskSuggestion.taskString](../../reference/outlook/simple-types.md) property.
     
-- The array of task assignees from the [TaskSuggestion.assignees](http://dev.outlook.com/reference/add-ins/simple-types.html) property. Each assignee is represented by an [EmailUser](http://dev.outlook.com/reference/add-ins/simple-types.html) object.
+- The array of task assignees from the [TaskSuggestion.assignees](../../reference/outlook/simple-types.md) property. Each assignee is represented by an [EmailUser](../../reference/outlook/simple-types.md) object.
     
-- For each assignee, the name from the [EmailUser.displayName](http://dev.outlook.com/reference/add-ins/simple-types.html) property.
+- For each assignee, the name from the [EmailUser.displayName](../../reference/outlook/simple-types.md) property.
     
-- For each assignee, the SMTP address from the [EmailUser.emailAddress](http://dev.outlook.com/reference/add-ins/simple-types.html) property.
+- For each assignee, the SMTP address from the [EmailUser.emailAddress](../../reference/outlook/simple-types.md) property.
     
  `myGetTaskSuggestions` forms a local HTML string in `htmlText` to display the data for each task suggestion. The following is the related JavaScript code.
 
@@ -586,7 +586,7 @@ function myGetTaskSuggestions()
 ## Extracting URLs
 
 
-When the user clicks the  **Get URLs** button, the `myGetUrls` event handler obtains an array of URLs from the [urls](http://dev.outlook.com/reference/add-ins/simple-types.html) property of the `_MyEntities` object, if any was extracted. Each extracted URL is stored as a string in the array. `myGetUrls` forms a local HTML string in `htmlText` to display the list of extracted URLs.
+When the user clicks the  **Get URLs** button, the `myGetUrls` event handler obtains an array of URLs from the [urls](../../reference/outlook/simple-types.md) property of the `_MyEntities` object, if any was extracted. Each extracted URL is stored as a string in the array. `myGetUrls` forms a local HTML string in `htmlText` to display the list of extracted URLs.
 
 
 ```js
@@ -849,5 +849,5 @@ function myGetUrls()
     
 - [Match strings in an Outlook item as well-known entities](../outlook/match-strings-in-an-item-as-well-known-entities.md)
     
-- [item.getEntities method](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)
+- [item.getEntities method](../../reference/outlook/Office.context.mailbox.item.md)
     

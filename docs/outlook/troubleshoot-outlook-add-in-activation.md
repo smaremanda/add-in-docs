@@ -16,7 +16,7 @@ You can verify the version of Exchange 2013 by using one of the following approa
     
 - If you are testing the add-in on Outlook Web App or OWA for Devices, in a script debugger (for example, the JScript Debugger that comes with Internet Explorer), look for the  **src** attribute of the **script** tag that specifies the location from which scripts are loaded. The path should contain a substring **owa/15.0.516.x/owa2/...**, where  **15.0.516.x** represents the version of the Exchange Server, such as **15.0.516.2**.
     
-- Alternatively, you can use the [Office.context.mailbox.diagnostics.hostVersion](https://dev.outlook.com/reference/add-ins/Office.context.mailbox.diagnostics.html) property to verify the version. On Outlook Web App and OWA for Devices, this property returns the version of the Exchange Server.
+- Alternatively, you can use the [Office.context.mailbox.diagnostics.hostVersion](../../reference/outlook/Office.context.mailbox.diagnostics.md) property to verify the version. On Outlook Web App and OWA for Devices, this property returns the version of the Exchange Server.
     
 - If you can test the add-in on Outlook, you can use the following simple debugging technique that uses the Outlook object model and Visual Basic Editor:
     

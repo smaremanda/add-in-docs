@@ -1,9 +1,9 @@
 
 # Get or set the time when composing an appointment in Outlook
 
-The JavaScript API for Office provides asynchronous methods ([Time.getAsync](http://dev.outlook.com/reference/add-ins/Time.html) and [Time.setAsync](http://dev.outlook.com/reference/add-ins/Time.html)) to get and set the start or end time of an appointment that the user is composing. These asynchronous methods are available to only compose add-ins. To use these methods, make sure you have set up the add-in manifest appropriately for Outlook to activate the add-in in compose forms, as described in the section [Setting up Outlook add-ins for compose forms](../outlook/compose-scenario.md#mod_off15_CreatingForCompose_SettingUp) of [Create Outlook add-ins for compose forms](../outlook/compose-scenario.md).
+The JavaScript API for Office provides asynchronous methods ([Time.getAsync](../../reference/outlook/Time.md) and [Time.setAsync](../../reference/outlook/Time.md)) to get and set the start or end time of an appointment that the user is composing. These asynchronous methods are available to only compose add-ins. To use these methods, make sure you have set up the add-in manifest appropriately for Outlook to activate the add-in in compose forms, as described in the section [Setting up Outlook add-ins for compose forms](../outlook/compose-scenario.md#mod_off15_CreatingForCompose_SettingUp) of [Create Outlook add-ins for compose forms](../outlook/compose-scenario.md).
 
-The [start](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html) and [end](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html) properties are available for appointments in both compose and read forms. In a read form, you can access the properties directly from the parent object, as in:
+The [start](../../reference/outlook/Office.context.mailbox.item.md) and [end](../../reference/outlook/Office.context.mailbox.item.md) properties are available for appointments in both compose and read forms. In a read form, you can access the properties directly from the parent object, as in:
 
 
 
@@ -53,7 +53,7 @@ This section shows a code sample that gets the start time of the appointment tha
 
 ```
 
-To use  **item.start.getAsync** or **item.end.getAsync**, provide a callback method that checks for the status and result of the asynchronous call. You can provide any necessary arguments to the callback method through the  _asyncContext_ optional parameter. You can obtain status, results and any error using the output parameter _asyncResult_ of the callback. If the asynchronous call is successful, you can get the start time as a **Date** object in UTC format using the [AsyncResult.value](http://dev.outlook.com/reference/add-ins/simple-types.html) property.
+To use  **item.start.getAsync** or **item.end.getAsync**, provide a callback method that checks for the status and result of the asynchronous call. You can provide any necessary arguments to the callback method through the  _asyncContext_ optional parameter. You can obtain status, results and any error using the output parameter _asyncResult_ of the callback. If the asynchronous call is successful, you can get the start time as a **Date** object in UTC format using the [AsyncResult.value](../../reference/outlook/simple-types.md) property.
 
 
 
@@ -101,7 +101,7 @@ This section shows a code sample that sets the start time of the appointment or 
 
 Similar to the previous example, this code sample assumes a rule in the add-in manifest that activates the add-in in a compose form for an appointment.
 
-To use  **item.start.setAsync** or **item.end.setAsync**, specify a  **Date** value in UTC in the _dateTime_ parameter. If you get a date based on an input by the user on the client, you can use [mailbox.convertToUtcClientTime](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.html) to convert the value to a **Date** object in UTC. You can provide an optional callback method and any arguments for the callback method in the _asyncContext_ parameter. You should check the status, result and any error message in the _asyncResult_ output parameter of the callback. If the asynchronous call is successful, **setAsync** inserts the specified start or end time string as plain text, overwriting any existing start or end time for that item.
+To use  **item.start.setAsync** or **item.end.setAsync**, specify a  **Date** value in UTC in the _dateTime_ parameter. If you get a date based on an input by the user on the client, you can use [mailbox.convertToUtcClientTime](../../reference/outlook/Office.context.mailbox.md) to convert the value to a **Date** object in UTC. You can provide an optional callback method and any arguments for the callback method in the _asyncContext_ parameter. You should check the status, result and any error message in the _asyncResult_ output parameter of the callback. If the asynchronous call is successful, **setAsync** inserts the specified start or end time string as plain text, overwriting any existing start or end time for that item.
 
 
 

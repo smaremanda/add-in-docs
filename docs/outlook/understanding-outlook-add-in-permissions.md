@@ -31,55 +31,55 @@ The  **Restricted** permission is the most basic level of permission. Specify **
     
 - Access the members in the following list that pertain to the information of the user or item. Attempting to access members in this list will return  **null** and result in an error message which states that Outlook requires the mail add-in to have elevated permission.
     
-      - [item.addFileAttachmentAsync](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)
+      - [item.addFileAttachmentAsync](../../reference/outlook/Office.context.mailbox.item.md)
     
-  - [item.addItemAttachmentAsync](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)
+  - [item.addItemAttachmentAsync](../../reference/outlook/Office.context.mailbox.item.md)
     
-  - [item.attachments](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)
+  - [item.attachments](../../reference/outlook/Office.context.mailbox.item.md)
     
-  - [item.bcc](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)
+  - [item.bcc](../../reference/outlook/Office.context.mailbox.item.md)
     
-  - [item.body](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)
+  - [item.body](../../reference/outlook/Office.context.mailbox.item.md)
     
-  - [item.cc](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)
+  - [item.cc](../../reference/outlook/Office.context.mailbox.item.md)
     
-  - [item.from](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)
+  - [item.from](../../reference/outlook/Office.context.mailbox.item.md)
     
-  - [item.getRegExMatches](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)
+  - [item.getRegExMatches](../../reference/outlook/Office.context.mailbox.item.md)
     
-  - [item.getRegExMatchesByName](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)
+  - [item.getRegExMatchesByName](../../reference/outlook/Office.context.mailbox.item.md)
     
-  - [item.optionalAttendees](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)
+  - [item.optionalAttendees](../../reference/outlook/Office.context.mailbox.item.md)
     
-  - [item.organizer](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)
+  - [item.organizer](../../reference/outlook/Office.context.mailbox.item.md)
     
-  - [item.removeAttachmentAsync](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)
+  - [item.removeAttachmentAsync](../../reference/outlook/Office.context.mailbox.item.md)
     
-  - [item.requiredAttendees](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)
+  - [item.requiredAttendees](../../reference/outlook/Office.context.mailbox.item.md)
     
-  - [item.resources](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)
+  - [item.resources](../../reference/outlook/Office.context.mailbox.item.md)
     
-  - [item.sender](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)
+  - [item.sender](../../reference/outlook/Office.context.mailbox.item.md)
     
-  - [item.to](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)
+  - [item.to](../../reference/outlook/Office.context.mailbox.item.md)
     
-  - [mailbox.getCallbackTokenAsync](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.html)
+  - [mailbox.getCallbackTokenAsync](../../reference/outlook/Office.context.mailbox.md)
     
-  - [mailbox.getUserIdentityTokenAsync](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.html)
+  - [mailbox.getUserIdentityTokenAsync](../../reference/outlook/Office.context.mailbox.md)
     
-  - [mailbox.makeEwsRequestAsync](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.html)
+  - [mailbox.makeEwsRequestAsync](../../reference/outlook/Office.context.mailbox.md)
     
-  - [mailbox.userProfile](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.userProfile.html)
+  - [mailbox.userProfile](../../reference/outlook/Office.context.mailbox.userProfile.md)
     
-  - [Body](http://dev.outlook.com/reference/add-ins/Body.html) and all its child members
+  - [Body](../../reference/outlook/Body.md) and all its child members
     
-  - [Location](http://dev.outlook.com/reference/add-ins/Location.html) and all its child members
+  - [Location](../../reference/outlook/Location.md) and all its child members
     
-  - [Recipients](http://dev.outlook.com/reference/add-ins/Recipients.html) and all its child members
+  - [Recipients](../../reference/outlook/Recipients.md) and all its child members
     
-  - [Subject](http://dev.outlook.com/reference/add-ins/Subject.html) and all its child members
+  - [Subject](../../reference/outlook/Subject.md) and all its child members
     
-  - [Time](http://dev.outlook.com/reference/add-ins/Time.html) and all its child members
+  - [Time](../../reference/outlook/Time.md) and all its child members
     
 
 ## ReadItem permission
@@ -91,7 +91,7 @@ The  **ReadItem** permission is the next level of permission in the permissions 
 ### Can do
 
 
-- [Read all the properties](../outlook/item-data.md) of the current item in a read or [compose form](../outlook/get-and-set-item-data-in-a-compose-form.md), for example, [item.to](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html) in a read form and [item.to.getAsync](http://dev.outlook.com/reference/add-ins/Recipients.html) in a compose form.
+- [Read all the properties](../outlook/item-data.md) of the current item in a read or [compose form](../outlook/get-and-set-item-data-in-a-compose-form.md), for example, [item.to](../../reference/outlook/Office.context.mailbox.item.md) in a read form and [item.to.getAsync](../../reference/outlook/Recipients.md) in a compose form.
     
 - [Get a callback token to get item attachments](../outlook/get-attachments-of-an-outlook-item.md) or the full item.
     
@@ -127,45 +127,45 @@ The  **ReadItem** permission is the next level of permission in the permissions 
 Access  **mailbox.makeEWSRequestAsync** or the following write methods:
 
 
-- [item.addFileAttachmentAsync](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)
+- [item.addFileAttachmentAsync](../../reference/outlook/Office.context.mailbox.item.md)
     
-- [item.addItemAttachmentAsync](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)
+- [item.addItemAttachmentAsync](../../reference/outlook/Office.context.mailbox.item.md)
     
-- [item.bcc.addAsync](https://dev.outlook.com/reference/add-ins/Recipients.html)
+- [item.bcc.addAsync](../../reference/outlook/Recipients.md)
     
-- [item.bcc.setAsync](https://dev.outlook.com/reference/add-ins/Recipients.html)
+- [item.bcc.setAsync](../../reference/outlook/Recipients.md)
     
-- [item.body.prependAsync](http://dev.outlook.com/reference/add-ins/Body.html)
+- [item.body.prependAsync](../../reference/outlook/Body.md)
     
-- [item.body.setAsync](http://dev.outlook.com/reference/add-ins/Body.html)
+- [item.body.setAsync](../../reference/outlook/Body.md)
     
-- [item.body.setSelectedDataAsync](http://dev.outlook.com/reference/add-ins/Body.html)
+- [item.body.setSelectedDataAsync](../../reference/outlook/Body.md)
     
-- [item.cc.addAsync](https://dev.outlook.com/reference/add-ins/Recipients.html)
+- [item.cc.addAsync](../../reference/outlook/Recipients.md)
     
-- [item.cc.setAsync](https://dev.outlook.com/reference/add-ins/Recipients.html)
+- [item.cc.setAsync](../../reference/outlook/Recipients.md)
     
-- [item.end.setAsync](http://dev.outlook.com/reference/add-ins/Time.html)
+- [item.end.setAsync](../../reference/outlook/Time.md)
     
-- [item.location.setAsync](http://dev.outlook.com/reference/add-ins/Location.html)
+- [item.location.setAsync](../../reference/outlook/Location.md)
     
-- [item.optionalAttendees.addAsync](http://dev.outlook.com/reference/add-ins/Recipients.html)
+- [item.optionalAttendees.addAsync](../../reference/outlook/Recipients.md)
     
-- [item.optionalAttendees.setAsync](http://dev.outlook.com/reference/add-ins/Recipients.html)
+- [item.optionalAttendees.setAsync](../../reference/outlook/Recipients.md)
     
-- [item.removeAttachmentAsync](http://dev.outlook.com/reference/add-ins/Office.context.mailbox.item.html)
+- [item.removeAttachmentAsync](../../reference/outlook/Office.context.mailbox.item.md)
     
-- [item.requiredAttendees.addAsync](http://dev.outlook.com/reference/add-ins/Recipients.html)
+- [item.requiredAttendees.addAsync](../../reference/outlook/Recipients.md)
     
-- [item.requiredAttendees.setAsync](http://dev.outlook.com/reference/add-ins/Recipients.html)
+- [item.requiredAttendees.setAsync](../../reference/outlook/Recipients.md)
     
-- [item.start.setAsync](http://dev.outlook.com/reference/add-ins/Time.html)
+- [item.start.setAsync](../../reference/outlook/Time.md)
     
-- [item.subject.setAsync](http://dev.outlook.com/reference/add-ins/Subject.html)
+- [item.subject.setAsync](../../reference/outlook/Subject.md)
     
-- [item.to.addAsync](http://dev.outlook.com/reference/add-ins/Recipients.html)
+- [item.to.addAsync](../../reference/outlook/Recipients.md)
     
-- [item.to.setAsync](http://dev.outlook.com/reference/add-ins/Recipients.html)
+- [item.to.setAsync](../../reference/outlook/Recipients.md)
     
 
 ## ReadWriteItem permission
