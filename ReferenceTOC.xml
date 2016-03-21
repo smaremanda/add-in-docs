@@ -346,12 +346,12 @@
       <Item text="BindingType enumeration" url="shared/bindingtype-enumeration" FriendlyUrl="reference/enumerationsbindingtype-enumeration" />
       <Item text="CoercionType enumeration" url="shared/coerciontype-enumeration" FriendlyUrl="reference/enumerationscoerciontype-enumeration" />
       <Item text="CustomXMLNodeType enumeration" url="shared/customxmlnodetype-enumeration" FriendlyUrl="reference/enumerationscustomxmlnodetype-enumeration" />
-      <Item text="DocumentMode enumeration" url="shared/documentmode-enumeration" FriendlyUrl="reference/enumerationsdocumentmode-enumeration" SEOKeyword="Excel" SEODescription="Word" />
-      <Item text="EventType enumeration" url="shared/eventtype-enumeration" FriendlyUrl="reference/enumerationseventtype-enumeration" SEOKeyword="Excel" SEODescription="PowerPoint" />
-      <Item text="FileType enumeration" url="shared/filetype-enumeration" FriendlyUrl="reference/enumerationsfiletype-enumeration" SEOKeyword="Word&quot;" />
-      <Item text="FilterType enumeration" url="shared/filtertype-enumeration" FriendlyUrl="reference/enumerationsfiltertype-enumeration" SEOKeyword="Project" SEODescription="Word&quot;" />
-      <Item text="GoToType enumeration" url="shared/gototype-enumeration" FriendlyUrl="reference/enumerationsgototype-enumeration" SEOKeyword="PowerPoint" SEODescription="Word&quot;" />
-      <Item text="InitializationReason enumeration" url="shared/initializationreason-enumeration" FriendlyUrl="reference/enumerationsinitializationreason-enumeration" SEOKeyword="Project" SEODescription="Word&quot;" />
+      <Item text="DocumentMode enumeration" url="shared/documentmode-enumeration" FriendlyUrl="reference/enumerationsdocumentmode-enumeration"  SEODescription="Word" />
+      <Item text="EventType enumeration" url="shared/eventtype-enumeration" FriendlyUrl="reference/enumerationseventtype-enumeration"   />
+      <Item text="FileType enumeration" url="shared/filetype-enumeration" FriendlyUrl="reference/enumerationsfiletype-enumeration"  />
+      <Item text="FilterType enumeration" url="shared/filtertype-enumeration" FriendlyUrl="reference/enumerationsfiltertype-enumeration" SEOKeyword="Project"  />
+      <Item text="GoToType enumeration" url="shared/gototype-enumeration" FriendlyUrl="reference/enumerationsgototype-enumeration"   />
+      <Item text="InitializationReason enumeration" url="shared/initializationreason-enumeration" FriendlyUrl="reference/enumerationsinitializationreason-enumeration" SEOKeyword="Project"  />
       <Item text="ProjectProjectFields enumeration" url="shared/projectprojectfields-enumeration" FriendlyUrl="reference/enumerationsprojectprojectfields-enumeration" Scope="project" />
       <Item text="ProjectResourceFields enumeration" url="shared/projectresourcefields-enumeration" FriendlyUrl="reference/enumerationsprojectresourcefields-enumeration" Scope="project" />
       <Item text="ProjectTaskFields enumeration" url="shared/projecttaskfields-enumeration" FriendlyUrl="reference/enumerationsprojecttaskfields-enumeration" Scope="project" />
@@ -368,10 +368,10 @@
       <Item text="AsyncResult.value" url="shared/asyncresult.value" />
     </Item>
     <Item text="Context " url="shared/office.context" FriendlyUrl="reference/common/officeoffice.context" >
-      <Item text="office.context.commerceAllowed " url="shared/office.context.commerceallowed" FriendlyUrl="reference/common/contextoffice.context.commerceallowed" SEOKeyword="Word&quot;" />
+      <Item text="office.context.commerceAllowed " url="shared/office.context.commerceallowed" FriendlyUrl="reference/common/contextoffice.context.commerceallowed"  />
       <Item text="office.context.contentLanguage" url="shared/office.context.contentlanguage" />
       <Item text="office.context.displaylanguage" url="shared/office.context.displaylanguage" />
-      <Item text="touchEnabled " url="shared/office.context.touchenabled" FriendlyUrl="reference/common/contextoffice.context.touchenabled" SEOKeyword="Word&quot;" />
+      <Item text="touchEnabled " url="shared/office.context.touchenabled" FriendlyUrl="reference/common/contextoffice.context.touchenabled"  />
       <Item text="office.context.officetheme" url="shared/office.context.officetheme" />
     
       <Item text="bodyBackgroundColor " url="shared/office.context.bodybackgroundcolor" FriendlyUrl="reference/common/contextoffice.context.bodybackgroundcolor" SEOKeyword="OL" SEODescription="PP" />
@@ -383,53 +383,55 @@
       <Item text="office.context.roamingsettings" url="shared/office.context.roamingsettings" />
     </Item>
     <Item text="Binding" url="shared/binding">
-	    <Item text="binding.addHandlerAsync" url="shared/binding.addhandlerasync" />
-      <Item text="binding.bindingDataChangedEvent" url="shared/binding.bindingdatachangedevent" />
+	    <Item text="Binding.addHandlerAsync" url="shared/binding.addhandlerasync" />
+      <Item text="Binding.bindingDataChanged event" url="shared/binding.bindingdatachangedevent" />
       
-      <!--<Item text="bindingDataChangedEventArgs object" url="shared/binding.bindingdatachangedeventargs" FriendlyUrl="reference/common/binding-object/data-changed-event/argsbinding.bindingdatachangedeventargs" SEOKeyword="Excel" SEODescription="Word&quot;" />
-        <Item text="type " url="shared/binding.bindingdatachangedeventargs.type" FriendlyUrl="reference/common/binding-object/data-changed-event/argsbinding.bindingdatachangedeventargs.type" SEOKeyword="Excel" SEODescription="Word&quot;" />
-        <Item text="binding " url="shared/binding.bindingdatachangedeventargs.binding" FriendlyUrl="reference/common/binding-object/data-changed-event/argsbinding.bindingdatachangedeventargs.binding" SEOKeyword="Excel" SEODescription="Word&quot;" />
+      <!--<Item text="bindingDataChangedEventArgs object" url="shared/binding.bindingdatachangedeventargs" FriendlyUrl="reference/common/binding-object/data-changed-event/argsbinding.bindingdatachangedeventargs"   />
+        <Item text="type " url="shared/binding.bindingdatachangedeventargs.type" FriendlyUrl="reference/common/binding-object/data-changed-event/argsbinding.bindingdatachangedeventargs.type"   />
+        <Item text="binding " url="shared/binding.bindingdatachangedeventargs.binding" FriendlyUrl="reference/common/binding-object/data-changed-event/argsbinding.bindingdatachangedeventargs.binding"   />
+      <Item text="bindingselectionchangedevent.binding " url="shared/binding.bindingselectionchangedevent.binding" FriendlyUrl="reference/common/binding-object/selection-changed-event-argsbinding.bindingselectionchangedevent.binding"   />
       -->
-      <Item text="columnCount " url="shared/binding.bindingselectionchangedevent.binding" FriendlyUrl="reference/common/binding-object/selection-changed-event-argsbinding.bindingselectionchangedevent.binding" SEOKeyword="Excel" SEODescription="Word&quot;" />
-      <Item text="rowCount " url="shared/binding.bindingselectionchangedevent.columncount" FriendlyUrl="reference/common/binding-object/selection-changed-event-argsbinding.bindingselectionchangedevent.columncount" SEOKeyword="Excel" SEODescription="Word&quot;" />
-      <Item text="binding.bindingSelectionChanged event" url="shared/binding.bindingselectionchangedevent" FriendlyUrl="reference/common/binding-object/selection-changed-eventbinding.bindingselectionchangedevent" SEOKeyword="Excel" SEODescription="Word&quot;" />
-      <Item text="startColumn " url="shared/binding.bindingselectionchangedevent.rowcount" FriendlyUrl="reference/common/binding-object/selection-changed-event-argsbinding.bindingselectionchangedevent.rowcount" SEOKeyword="Excel" SEODescription="Word&quot;" />
-      <Item text="startRow " url="shared/binding.bindingselectionchangedevent.startcolumn" FriendlyUrl="reference/common/binding-object/selection-changed-event-argsbinding.bindingselectionchangedevent.startcolumn" SEOKeyword="Excel" SEODescription="Word&quot;" />
-      <Item text="type " url="shared/binding.bindingselectionchangedevent.startrow" FriendlyUrl="reference/common/binding-object/selection-changed-event-argsbinding.bindingselectionchangedevent.startrow" SEOKeyword="Excel" SEODescription="Word&quot;" />
-      <Item text="binding.bindingSelectionChangedEvent.type" url="shared/binding.bindingselectionchangedevent.type" />
       
+      <Item text="Binding.bindingSelectionChanged event" url="shared/binding.bindingselectionchangedevent" FriendlyUrl="reference/common/binding-object/selection-changed-eventbinding.bindingselectionchangedevent">
+        <Item text="columnCount " url="shared/binding.bindingselectionchangedevent.columncount" FriendlyUrl="reference/common/binding-object/selection-changed-event-argsbinding.bindingselectionchangedevent.columncount"   />
+        <Item text="rowCount " url="shared/binding.bindingselectionchangedevent.rowcount" FriendlyUrl="reference/common/binding-object/selection-changed-event-argsbinding.bindingselectionchangedevent.rowcount"   />
+        <Item text="startColumn " url="shared/binding.bindingselectionchangedevent.startcolumn" FriendlyUrl="reference/common/binding-object/selection-changed-event-argsbinding.bindingselectionchangedevent.startcolumn"   />
+        <Item text="startRow " url="shared/binding.bindingselectionchangedevent.startrow" FriendlyUrl="reference/common/binding-object/selection-changed-event-argsbinding.bindingselectionchangedevent.startrow"   />
+      </Item>
       <!--<Item text="binding.bindingSelectionChangedeventargs" url="shared/binding.bindingselectionchangedeventargs" />
-      
+        <Item text="type" url="shared/binding.bindingselectionchangedevent.type" />
       -->
-      <Item text="getDataAsync " url="shared/binding.getdataasync" FriendlyUrl="reference/common/binding-objectbinding.getdataasync" SEOKeyword="Excel" SEODescription="Word&quot;" />
-      <Item text="id " url="shared/binding.id" FriendlyUrl="reference/common/binding-objectbinding.id" SEOKeyword="Excel" SEODescription="Word&quot;" />
-      <Item text="columnCount " url="shared/binding.matrixbinding.columncount" FriendlyUrl="reference/common/binding-object/matrixbinding-objectbinding.matrixbinding.columncount" SEOKeyword="Excel" SEODescription="PowerPoint" />
-      <Item text="Binding.document" url="shared/binding.document" />
-	  <Item text="MatrixBinding object" url="shared/binding.matrixbinding.matrixbinding" FriendlyUrl="reference/common/binding-object/matrixbinding-objectbinding.matrixbinding.matrixbinding" SEOKeyword="Word&quot;" />
-      <Item text="Binding.matrixbinding.rowcount" url="shared/binding.matrixbinding.rowcount" />
-      <Item text="removeHandlerAsync" url="shared/binding.removehandlerasync" FriendlyUrl="reference/common/binding-objectbinding.removehandlerasync" SEOKeyword="Excel" SEODescription="Word&quot;" />
-      <Item text="Binding.setDataAsync" url="shared/binding.setdataasync" FriendlyUrl="reference/common/binding-objectbinding.setdataasync" SEOKeyword="Excel" SEODescription="Word&quot;" />
-      <Item text="Binding.addColumnsAsync" url="shared/binding.tablebinding.addcolumnsasync" FriendlyUrl="reference/common/binding-object/tablebinding-objectbinding.tablebinding.addcolumnsasync" SEOKeyword="Word&quot;" />
-      <Item text="Binding.addRowsAsync" url="shared/binding.tablebinding.addrowsasync" FriendlyUrl="reference/common/binding-object/tablebinding-objectbinding.tablebinding.addrowsasync" SEOKeyword="Excel" SEODescription="Word&quot;" />
-      <Item text="Binding.tablebinding.clearformatsasync" url="shared/binding.tablebinding.clearformatsasync" />
-      <Item text="Binding.tablebinding.columncount" url="shared/binding.tablebinding.columncount" />
-      <Item text="Binding.tablebinding.deletealldatavaluesasync" url="shared/binding.tablebinding.deletealldatavaluesasync" />
-      <Item text="Binding.tablebinding.hasheaders" url="shared/binding.tablebinding.hasheaders" />
-      <Item text="Binding.tablebinding.rowcount" url="shared/binding.tablebinding.rowcount" />
-      <Item text="setFormatsAsync " url="shared/binding.tablebinding.setformatsasync" FriendlyUrl="reference/common/binding-object/tablebinding-objectbinding.tablebinding.setformatsasync" SEODescription="Sets or updates formatting on specified items and data in the bound table." Scope="excel" />
-      <Item text="setTableOptionsAsync " url="shared/binding.tablebinding.settableoptionsasync" FriendlyUrl="reference/common/binding-object/tablebinding-objectbinding.tablebinding.settableoptionsasync" SEODescription="Updates table formatting options on the bound table." Scope="excel" />
-      <Item text="Binding.tablebinding.tablebinding" url="shared/binding.tablebinding.tablebinding" />
-      <Item text="Binding.textbinding" url="shared/binding.textbinding" />
-      <Item text="type " url="shared/binding.type" FriendlyUrl="reference/common/binding-objectbinding.type" SEOKeyword="Excel" SEODescription="" />
+      <Item text="document" url="shared/binding.document" />
+      <Item text="getDataAsync " url="shared/binding.getdataasync" FriendlyUrl="reference/common/binding-objectbinding.getdataasync"   />
+      <Item text="id " url="shared/binding.id" FriendlyUrl="reference/common/binding-objectbinding.id"   />
+      <Item text="type " url="shared/binding.type" FriendlyUrl="reference/common/binding-objectbinding.type"  SEODescription="" />
+      <Item text="MatrixBinding" url="shared/binding.matrixbinding.matrixbinding">
+        <Item text="rowcount" url="shared/binding.matrixbinding.rowcount" />
+        <Item text="columnCount " url="shared/binding.matrixbinding.columncount" FriendlyUrl="reference/common/binding-object/matrixbinding-objectbinding.matrixbinding.columncount"   />
+      </Item>
+      <Item text="removeHandlerAsync" url="shared/binding.removehandlerasync" FriendlyUrl="reference/common/binding-objectbinding.removehandlerasync"   />
+      <Item text="setDataAsync" url="shared/binding.setdataasync" FriendlyUrl="reference/common/binding-objectbinding.setdataasync"   />
+      <Item text="TableBinding" url="shared/binding.tablebinding.tablebinding">
+        <Item text="addColumnsAsync" url="shared/binding.tablebinding.addcolumnsasync" FriendlyUrl="reference/common/binding-object/tablebinding-objectbinding.tablebinding.addcolumnsasync"  />
+        <Item text="addRowsAsync" url="shared/binding.tablebinding.addrowsasync" FriendlyUrl="reference/common/binding-object/tablebinding-objectbinding.tablebinding.addrowsasync"   />
+        <Item text="clearFormatsAsync" url="shared/binding.tablebinding.clearformatsasync" />
+        <Item text="columnCount" url="shared/binding.tablebinding.columncount" />
+        <Item text="deleteAllDataValuesAsync" url="shared/binding.tablebinding.deletealldatavaluesasync" />
+        <Item text="hasHeaders" url="shared/binding.tablebinding.hasheaders" />
+        <Item text="rowCount" url="shared/binding.tablebinding.rowcount" />
+        <Item text="setFormatsAsync " url="shared/binding.tablebinding.setformatsasync" FriendlyUrl="reference/common/binding-object/tablebinding-objectbinding.tablebinding.setformatsasync" SEODescription="Sets or updates formatting on specified items and data in the bound table." Scope="excel" />
+        <Item text="setTableOptionsAsync " url="shared/binding.tablebinding.settableoptionsasync" FriendlyUrl="reference/common/binding-object/tablebinding-objectbinding.tablebinding.settableoptionsasync" SEODescription="Updates table formatting options on the bound table." Scope="excel" />
+      </Item>
+      <Item text="TextBinding" url="shared/binding.textbinding" />
     </Item>
     <Item text="Bindings" url="shared/bindings.bindings">
       <Item text="addFromNamedItemAsync " url="shared/bindings.addfromnameditemasync" />
       <Item text="addFromPromptAsync " url="shared/bindings.addfrompromptasync"  />
       <Item text="addFromSelectionAsync " url="shared/bindings.addfromselectionasync" />
-      <Item text="document " url="shared/bindings.document" FriendlyUrl="reference/common/bindings-objectbindings.document" SEOKeyword="Excel" SEODescription="Word&quot;" />
-      <Item text="getAllAsync " url="shared/bindings.getallasync" FriendlyUrl="reference/common/bindings-objectbindings.getallasync" SEOKeyword="Excel" SEODescription="Word&quot;" />
-      <Item text="getByIdAsync " url="shared/bindings.getbyidasync" FriendlyUrl="reference/common/bindings-objectbindings.getbyidasync" SEOKeyword="Excel" SEODescription="Word&quot;" />
-      <Item text="releaseByIdAsync " url="shared/bindings.releasebyidasync" FriendlyUrl="reference/common/bindings-objectbindings.releasebyidasync" SEOKeyword="Excel" SEODescription="Word&quot;" />
+      <Item text="document " url="shared/bindings.document" FriendlyUrl="reference/common/bindings-objectbindings.document"   />
+      <Item text="getAllAsync " url="shared/bindings.getallasync" FriendlyUrl="reference/common/bindings-objectbindings.getallasync"   />
+      <Item text="getByIdAsync " url="shared/bindings.getbyidasync" FriendlyUrl="reference/common/bindings-objectbindings.getbyidasync"   />
+      <Item text="releaseByIdAsync " url="shared/bindings.releasebyidasync" FriendlyUrl="reference/common/bindings-objectbindings.releasebyidasync"   />
     </Item>
     <Item text="CustomXmlNode" url="shared/customxmlnode.customxmlnode" FriendlyUrl="reference/common/customxmlnode-objectcustomxmlnode.customxmlnode" SEOKeyword="JavaScript API for Office" Scope="word" >
       <Item text="baseName " url="shared/customxmlnode.basename" FriendlyUrl="reference/common/customxmlnode-objectcustomxmlnode.basename" SEOKeyword="JavaScript API for Office" Scope="word" />
@@ -480,12 +482,12 @@
       <Item text="activeView " url="shared/document.activeviewchangedeventargs.activeview" FriendlyUrl="reference/common/document/activeviewchangedeventargs-object/document.activeviewchangedeventargs.activeview" SEODescription="&quot;Gets an  **ActiveView** enumeration value that identifies the state of the active view of the document" Scope="powerpoint" />
       <Item text="type " url="shared/document.activeviewchangedeventargs.type" FriendlyUrl="reference/common/document/activeviewchangedeventargs-object/document.activeviewchangedeventargs.type" SEODescription="Gets an EventType enumeration value that identifies the kind of event that was raised." Scope="powerpoint" />
       -->
-      <Item text="addHandlerAsync " url="shared/document.addhandlerasync" FriendlyUrl="reference/common/documentdocument.addhandlerasync" SEOKeyword="PowerPoint" SEODescription="Project" />
-      <Item text="bindings " url="shared/document.bindings" FriendlyUrl="reference/common/documentdocument.bindings" SEOKeyword="Excel" SEODescription="Word&quot;" />
+      <Item text="addHandlerAsync " url="shared/document.addhandlerasync" FriendlyUrl="reference/common/documentdocument.addhandlerasync"  />
+      <Item text="bindings " url="shared/document.bindings" FriendlyUrl="reference/common/documentdocument.bindings"   />
       <Item text="customXmlParts " url="shared/document.customxmlparts" FriendlyUrl="reference/common/documentdocument.customxmlparts" SEODescription="Gets an object that represents the custom XML parts in the document." Scope="word" />
-      <Item text="getActiveViewAsync " url="shared/document.getactiveviewasync" FriendlyUrl="reference/common/documentdocument.getactiveviewasync" SEOKeyword="PowerPoint" SEODescription="and Word for iMac&quot;" />
-      <Item text="getFileAsync " url="shared/document.getfileasync" FriendlyUrl="reference/common/documentdocument.getfileasync" SEOKeyword="PowerPoint" SEODescription="Word&quot;" />
-      <Item text="getFilePropertiesAsync " url="shared/document.getfilepropertiesasync" FriendlyUrl="reference/common/documentdocument.getfilepropertiesasync" SEOKeyword="PowerPoint" SEODescription="Word&quot;" />
+      <Item text="getActiveViewAsync " url="shared/document.getactiveviewasync" FriendlyUrl="reference/common/documentdocument.getactiveviewasync" />
+      <Item text="getFileAsync " url="shared/document.getfileasync" FriendlyUrl="reference/common/documentdocument.getfileasync"   />
+      <Item text="getFilePropertiesAsync " url="shared/document.getfilepropertiesasync" FriendlyUrl="reference/common/documentdocument.getfilepropertiesasync"   />
       <Item text="getselecteddataasync" url="shared/document.getselecteddataasync" />
       <Item text="goToByIdAsync " url="shared/document.gotobyidasync"  />
       <Item text="mode " url="shared/document.mode" />
@@ -504,16 +506,16 @@
       <Item text="error.name" url="shared/error.name" />
     </Item>
     <Item text="File" url="shared/file" >
-      <Item text="closeAsync " url="shared/file.closeasync" FriendlyUrl="reference/common/filefile.closeasync" SEOKeyword="Word&quot;" />
-      <Item text="getSliceAsync " url="shared/file.getsliceasync" FriendlyUrl="reference/common/filefile.getsliceasync" SEOKeyword="Word&quot;" />
-      <Item text="size " url="shared/file.size" FriendlyUrl="reference/common/filefile.size" SEOKeyword="Word&quot;" />
-      <Item text="sliceCount " url="shared/file.slicecount" FriendlyUrl="reference/common/filefile.slicecount" SEOKeyword="Word&quot;" />
+      <Item text="closeAsync " url="shared/file.closeasync" FriendlyUrl="reference/common/filefile.closeasync"  />
+      <Item text="getSliceAsync " url="shared/file.getsliceasync" FriendlyUrl="reference/common/filefile.getsliceasync"  />
+      <Item text="size " url="shared/file.size" FriendlyUrl="reference/common/filefile.size"  />
+      <Item text="sliceCount " url="shared/file.slicecount" FriendlyUrl="reference/common/filefile.slicecount"  />
     </Item>
     <Item text="Office" url="shared/office">
       <Item text="cast.item " url="shared/office.cast.item" Scope="outlook" />
       <Item text="initialize event" url="shared/office.initialize" />
-      <Item text="select " url="shared/office.select" FriendlyUrl="reference/common/officeoffice.select" SEOKeyword="Excel" SEODescription="Word&quot;" />
-      <Item text="useShortNamespace " url="shared/office.useshortnamespace" FriendlyUrl="reference/common/officeoffice.useshortnamespace" SEOKeyword="Excel" SEODescription="Outlook" />
+      <Item text="select " url="shared/office.select" FriendlyUrl="reference/common/officeoffice.select"   />
+      <Item text="useShortNamespace " url="shared/office.useshortnamespace" FriendlyUrl="reference/common/officeoffice.useshortnamespace" />
     </Item>
     <Item text="ProjectDocument" url="shared/projectdocument.projectdocument" FriendlyUrl="reference/common/projectdocumentprojectdocument.projectdocument" Scope="project">
       <Item text="addHandlerAsync " url="shared/projectdocument.addhandlerasync" FriendlyUrl="reference/common/projectdocumentprojectdocument.addhandlerasync" Scope="project" />
@@ -539,12 +541,12 @@
     </Item>
     <Item text="Settings " url="shared/document.settings">
       <Item text="addHandlerAsync " url="shared/settings.addhandlerasync" FriendlyUrl="reference/common/settingssettings.addhandlerasync" Scope="excel" />
-      <Item text="get " url="shared/settings.get" FriendlyUrl="reference/common/settingssettings.get" SEOKeyword="Excel" SEODescription="PowerPoint" />
-      <Item text="refreshAsync " url="shared/settings.refreshasync" FriendlyUrl="reference/common/settingssettings.refreshasync" SEOKeyword="Excel" SEODescription="PowerPoint" />
-      <Item text="removeHandlerAsync " url="shared/settings.remove" FriendlyUrl="reference/common/settingssettings.remove" SEOKeyword="Excel" SEODescription="PowerPoint" />
-      <Item text="remove " url="shared/settings.removehandlerasync" FriendlyUrl="reference/common/settingssettings.removehandlerasync" SEOKeyword="Excel" SEODescription="PowerPoint&quot;" />
-      <Item text="saveAsync " url="shared/settings.saveasync" FriendlyUrl="reference/common/settingssettings.saveasync" SEOKeyword="Excel" SEODescription="PowerPoint" />
-      <Item text="set " url="shared/settings.set" FriendlyUrl="reference/common/settingssettings.set" SEOKeyword="Excel" SEODescription="PowerPoint" />
+      <Item text="get " url="shared/settings.get" FriendlyUrl="reference/common/settingssettings.get"   />
+      <Item text="refreshAsync " url="shared/settings.refreshasync" FriendlyUrl="reference/common/settingssettings.refreshasync"   />
+      <Item text="removeHandlerAsync " url="shared/settings.remove" FriendlyUrl="reference/common/settingssettings.remove"   />
+      <Item text="remove " url="shared/settings.removehandlerasync" FriendlyUrl="reference/common/settingssettings.removehandlerasync" />
+      <Item text="saveAsync " url="shared/settings.saveasync" FriendlyUrl="reference/common/settingssettings.saveasync"   />
+      <Item text="set " url="shared/settings.set" FriendlyUrl="reference/common/settingssettings.set"   />
       <Item text="settingsChanged event" url="shared/settings.settingschangedevent" FriendlyUrl="reference/common/settings/settingschanged-eventsettings.settingschangedevent" />
       <Item text="settings.settingschangedeventargs" url="shared/settings.settingschangedeventargs" />
       <Item text="settings " url="shared/settings.settingschangedeventargs.setting" FriendlyUrl="reference/common/settings/settingschanged-event/args/settings.settingschangedeventargs.setting"  />
