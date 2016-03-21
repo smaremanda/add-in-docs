@@ -15,7 +15,7 @@ Table 1 shows the item-level properties in the JavaScript API for Office that ar
 |Appointments and messages|[dateTimeModified](../../reference/outlook/Office.context.mailbox.item.md)|JavaScript  **Date** object|Property not available|
 |Appointments and messages|[itemClass](../../reference/outlook/Office.context.mailbox.item.md)|String|Property not available|
 |Appointments and messages|[itemId](../../reference/outlook/Office.context.mailbox.item.md)|String|Property not available|
-|Appointments and messages|[itemType](../../reference/outlook/Office.context.mailbox.item.md)|String in [ItemType](http://dev.outlook.com/reference/add-ins/Office.MailboxEnums.html) enumeration|Property not available|
+|Appointments and messages|[itemType](../../reference/outlook/Office.context.mailbox.item.md)|String in [ItemType](../../reference/outlook/Office.MailboxEnums.md) enumeration|Property not available|
 |Appointments and messages|[attachments](../../reference/outlook/Office.context.mailbox.item.md)|[AttachmentDetails](../../reference/outlook/simple-types.md)|Property not available|
 |Appointments and messages|[body](../../reference/outlook/Office.context.mailbox.item.md)|[Body](../../reference/outlook/Body.md)|[Body](../../reference/outlook/Body.md)|
 |Appointments|[end](../../reference/outlook/Office.context.mailbox.item.md)|JavaScript  **Date** object|[Time](../../reference/outlook/Time.md)|
