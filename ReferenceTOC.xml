@@ -331,16 +331,6 @@
     <Item text="Labs.Timeline" url="office-mix/labs.timeline" FriendlyUrl="powerpoint/office-mix/referencelabs.timeline" Scope="powerpoint" />
     <Item text="Labs.ValueHolder" url="office-mix/labs.valueholder" FriendlyUrl="powerpoint/office-mix/referencelabs.valueholder" Scope="powerpoint" />
     <Item text="labsjs-javascript-api-reference" url="office-mix/labsjs-javascript-api-reference" />
-<<<<<<< HEAD
-    <Item text="LabsJS.Labs.CommandType" url="office-mix/labsjs.labs.commandtype" FriendlyUrl="powerpoint/office-mix/referencelabsjs.labs.commandtype" Scope="powerpoint" />
-    <Item text="LabsJS.Labs.Components" url="office-mix/labsjs.labs.components" FriendlyUrl="powerpoint/office-mix/referencelabsjs.labs.components" Scope="powerpoint" />
-    <Item text="LabsJS.Labs.Core.Actions" url="office-mix/labsjs.labs.core.actions" FriendlyUrl="powerpoint/office-mix/referencelabsjs.labs.core.actions" SEODescription="Provides an overview of the LabJS.Labs.Core.Actions JavaScript API." Scope="powerpoint" />
-    <Item text="LabsJS.Labs.Core.GetActions" url="office-mix/labsjs.labs.core.getactions" FriendlyUrl="powerpoint/office-mix/referencelabsjs.labs.core.getactions" Scope="powerpoint" />
-    <Item text="LabsJS.Labs.Core" url="office-mix/labsjs.labs.core" FriendlyUrl="powerpoint/office-mix/referencelabsjs.labs.core" Scope="powerpoint" />
-    <Item text="LabsJS.Labs" url="office-mix/labsjs.labs" FriendlyUrl="powerpoint/office-mix/referencelabsjs.labs" Scope="powerpoint" />
-  </Item> 
-  <Item text="Word" url="word/word-add-ins-javascript-reference" Scope="word">
-=======
     <Item text="LabsJS.Labs.CommandType" url="office-mix/labsjs.labs.commandtype" FriendlyUrl="powerpoint/office-mix/referencelabsjs.labs.commandtype" Scope="powerpoint" />
     <Item text="LabsJS.Labs.Components" url="office-mix/labsjs.labs.components" FriendlyUrl="powerpoint/office-mix/referencelabsjs.labs.components" Scope="powerpoint" />
     <Item text="LabsJS.Labs.Core.Actions" url="office-mix/labsjs.labs.core.actions" FriendlyUrl="powerpoint/office-mix/referencelabsjs.labs.core.actions" SEODescription="Provides an overview of the LabJS.Labs.Core.Actions JavaScript API." Scope="powerpoint" />
@@ -350,7 +340,6 @@
   </Item>
   </Item>
   <Item text="Word" url="word/word-add-ins-javascript-reference" Scope="word">
->>>>>>> origin/master
     <Item text="body" url="word/body" />
     <Item text="breakType" url="word/breaktype" FriendlyUrl="word/referencebreaktype" Scope="word" />
     <Item text="contentControl" url="word/contentcontrol" FriendlyUrl="word/referencecontentcontrol" Scope="word" />
