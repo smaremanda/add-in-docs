@@ -22,7 +22,7 @@ There are three different types of bindings that you specify with the  _bindingT
 |:-----|:-----|:-----|
 |Text binding|Binds to a region of the document that can be represented as text.|In Word, most contiguous selections are valid, while in Excel only single cell selections can be the target of a text binding. In Excel, only plain text is supported. In Word, three formats are supported: plain text, HTML, and Open XML for Office.|
 |Matrix binding|Binds to a fixed region of a document that contains tabular data without headers.Data in a matrix binding is written or read as a two dimensional  **Array**, which in JavaScript is implemented as an array of arrays. For example, two rows of  **string** values in two columns can be written or read as ` [['a', 'b'], ['c', 'd']]`, and a single column of three rows can be written or read as  `[['a'], ['b'], ['c']]`.|In Excel, any contiguous selection of cells can be used to establish a matrix binding. In Word, only tables support matrix binding.|
-|Table binding|Binds to a region of a document that contains a table with headers.Data in a table binding is written or read as a [TableData](../../reference/shared/tabledata.tabledata.md) object. The **TableData** object exposes the data through the **headers** and **rows** properties.|Any Excel or Word table can be the basis for a table binding. After you establish a table binding, each new row or column a user adds to the table is automatically included in the binding. |
+|Table binding|Binds to a region of a document that contains a table with headers.Data in a table binding is written or read as a [TableData](../../reference/shared/tabledata.md) object. The **TableData** object exposes the data through the **headers** and **rows** properties.|Any Excel or Word table can be the basis for a table binding. After you establish a table binding, each new row or column a user adds to the table is automatically included in the binding. |
 After a binding is created by using one of the three "addFrom" methods of the  **Bindings** object, you can work with the binding's data and properties by using the methods of the corresponding object: [MatrixBinding](../../reference/shared/binding.matrixbinding.md), [TableBinding](../../reference/shared/binding.tablebinding.md), or [TextBinding](../../reference/shared/binding.textbinding.md). All three of these objects inherit the [getDataAsync](../../reference/shared/binding.getdataasync.md) and [setDataAsync](../../reference/shared/binding.setdataasync.md) methods of the **Binding** object that enable you to interact with the bound data.
 
 
@@ -54,7 +54,7 @@ In this example, the specified binding type is text. This means that a [TextBind
 
 The second optional parameter is an object that specifies the ID of the new binding being created. If an ID is not specified, one is generated automatically.
 
-The anonymous function that is passed into the function as the final  _callback_ parameter is executed when the creation of the binding is complete. The function is called with a single parameter, _asyncResult_, which provides access to an [AsyncResult](../../reference/shared/asyncresult-object.md) object that provides the status of the call. The [AsyncResult.value](../../reference/shared/asyncresult.status.md) property contains a reference to a [Binding](../../reference/shared/binding.md) object of the type that is specified for the newly created binding. You can use this **Binding** object to get and set data.
+The anonymous function that is passed into the function as the final  _callback_ parameter is executed when the creation of the binding is complete. The function is called with a single parameter, _asyncResult_, which provides access to an [AsyncResult](../../reference/shared/asyncresult.md) object that provides the status of the call. The [AsyncResult.value](../../reference/shared/asyncresult.status.md) property contains a reference to a [Binding](../../reference/shared/binding.md) object of the type that is specified for the newly created binding. You can use this **Binding** object to get and set data.
 
 
 ### Add a binding from a prompt
@@ -84,7 +84,7 @@ In this example, the specified binding type is text. This means that a [TextBind
 
 The second parameter is an object that contains the ID of the new binding being created. If an ID is not specified, one is generated automatically.
 
-The anonymous function passed into the function as the third  _callback_ parameter is executed when the creation of the binding is complete. When the callback function executes, the [AsyncResult](../../reference/shared/asyncresult-object.md) object contains the status of the call and the newly created binding.
+The anonymous function passed into the function as the third  _callback_ parameter is executed when the creation of the binding is complete. When the callback function executes, the [AsyncResult](../../reference/shared/asyncresult.md) object contains the status of the call and the newly created binding.
 
 Figure 1 shows the built-in range selection prompt in Excel.
 
@@ -327,7 +327,7 @@ The anonymous function that is passed into the function is a callback that is ex
 ### Detect changes to data or the selection in a binding
 
 
-The following example shows how to attach an event handler to the [DataChanged](../../reference/shared/binding.datachangedevent.md) event of a binding with an id of "MyBinding".
+The following example shows how to attach an event handler to the [DataChanged](../../reference/shared/binding.bindingdatachangedevent.md) event of a binding with an id of "MyBinding".
 
 
 ```js

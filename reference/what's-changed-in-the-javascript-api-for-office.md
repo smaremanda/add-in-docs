@@ -25,7 +25,7 @@ To view all API members including those that are unchanged from previous updates
 |[Location](../reference/outlook/Location.md)|Added to enable setting the location of an appointment in compose mode Outlook add-ins.|1.1|
 |[Office](../reference/shared/office.md)|Updated the select method to support getting bindings in content add-ins for Access.|1.1|
 |[Recipients](../reference/outlook/Recipients.md)|Added to enable getting and setting the recipients of a message or appointment in compose mode.|1.1|
-|[Settings](../reference/shared/settings.md)|Updated to support creating custom settings in content add-ins for Access.|1.1|
+|[Settings](../reference/shared/document.settings.md)|Updated to support creating custom settings in content add-ins for Access.|1.1|
 |[Subject](../reference/outlook/Subject.md)|Added to enable getting and setting the subject of a message or appointment in compose mode Outlook add-ins.|1.1|
 |[Time](../reference/outlook/Time.md)|Added to enable getting and setting the start and end time of an appointment in compose mode Outlook add-ins.|1.1|
 

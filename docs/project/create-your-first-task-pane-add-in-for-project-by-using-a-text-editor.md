@@ -163,7 +163,7 @@ function getApplicationDisplayLanguage() {
     
 3. Add JavaScript functions that call asynchronous functions in Office.js and Project-15.js to get selected data:
     
-      - For example,  **getSelectedDataAsync** is a general function in Office.js that gets unformatted text for the selected data. For more information, see [AsyncResult object](../../reference/shared/asyncresult-object.md).
+      - For example,  **getSelectedDataAsync** is a general function in Office.js that gets unformatted text for the selected data. For more information, see [AsyncResult object](../../reference/shared/asyncresult.md).
     
   - The  **getSelectedTaskAsync** function in Project-15.js gets the GUID of the selected task. Similarly, the **getSelectedResourceAsync** function gets the GUID of the selected resource. If you call those functions when a task or a resource is not selected, the functions show an undefined error.
     
