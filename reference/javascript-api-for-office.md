@@ -10,7 +10,7 @@ The  **Microsoft.Office.WebExtension** namespace (which by default is referenced
 
 |**Object**|**Supported add-in type**|**Supported host applications**|
 |:-----|:-----|:-----|
-|[AsyncResult](../reference/shared/asyncresult-object.md)|Content add-in, Outlook add-in, Task pane add-in|Access, Excel, Outlook, PowerPoint, Project, Word|
+|[AsyncResult](../reference/shared/asyncresult.md)|Content add-in, Outlook add-in, Task pane add-in|Access, Excel, Outlook, PowerPoint, Project, Word|
 |[AttachmentDetails](../reference/outlook/simple-types.md)|Outlook add-in|Outlook|
 |[Binding](../reference/shared/binding.md)|Content add-in, Task pane add-in|Access, Excel, Word|
 |[Bindings](../reference/shared/bindings.bindings.md)|Content add-in, Task pane add-in|Access, Excel, Word|
@@ -33,18 +33,18 @@ The  **Microsoft.Office.WebExtension** namespace (which by default is referenced
 |[Location](../reference/outlook/Location.md)|Outlook add-in|Outlook|
 |[Mailbox](../reference/outlook/Office.context.mailbox.md)|Outlook add-in|Outlook|
 |[MeetingSuggestion](../reference/outlook/simple-types.md)|Outlook add-in|Outlook|
-|[MatrixBinding](../reference/shared/binding.matrixbinding.matrixbinding.md)|Content add-in, Task pane add-in|Excel, Word|
+|[MatrixBinding](../reference/shared/binding.matrixbinding.md)|Content add-in, Task pane add-in|Excel, Word|
 |[MeetingSuggestion](../reference/outlook/simple-types.md)|Outlook add-in|Outlook|
 |[Office](../reference/shared/office.md)|Content add-in, Outlook add-in, Task pane add-in|Access, Excel, Outlook, PowerPoint, Project, Word|
 |[PhoneNumber](../reference/outlook/simple-types.md)|Outlook add-in|Outlook|
 |[ProjectDocument](../reference/shared/projectdocument.projectdocument.md)|Task pane add-in |Project|
 |[Recipients](../reference/outlook/Recipients.md)|Outlook add-in|Outlook|
 |[RoamingSettings](../reference/outlook/RoamingSettings.md)|Outlook add-in|Outlook|
-|[Settings](../reference/shared/settings.md)|Content add-in, Task pane add-in|Access, Excel, PowerPoint, Word|
+|[Settings](../reference/shared/document.settings.md)|Content add-in, Task pane add-in|Access, Excel, PowerPoint, Word|
 |[Slice](../reference/shared/slice.md)|Task pane add-in|PowerPoint, Word, Word Online|
 |[Subject](../reference/outlook/Subject.md)|Outlook add-in|Outlook|
-|[TableBinding](../reference/shared/binding.tablebinding.tablebinding.md)|Content add-in, Task pane add-in|Access, Excel, Word|
-|[TableData](../reference/shared/tabledata.tabledata.md)|Content add-in, Task pane add-in|Access, Excel, Word|
+|[TableBinding](../reference/shared/binding.tablebinding.md)|Content add-in, Task pane add-in|Access, Excel, Word|
+|[TableData](../reference/shared/tabledata.md)|Content add-in, Task pane add-in|Access, Excel, Word|
 |[TaskSuggestion](../reference/outlook/simple-types.md)|Outlook add-in|Outlook|
 |[TextBinding](../reference/shared/binding.textbinding.md)|Content add-in, Task pane add-in|Excel, Word|
 |[Time](../reference/outlook/Time.md)|Outlook add-in|Outlook|

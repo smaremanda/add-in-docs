@@ -97,7 +97,7 @@ Office.context.document.setSelectedDataAsync(
 
 #### Applying optional parameters
 
-In this release, only the  **Document.setSelectedDataAsync** and **TableBinding.setDataAsync** methods support writing data and setting formatting for tables in the same call using the _tableOptions_ and _cellFormat_ optional parameters. In the following examples, the `tableData` value passed to the first parameter of each method (the _data_ parameter) must be a [TableData](../../reference/shared/tabledata.tabledata.md) object that contains the definition of the table and data to be written.
+In this release, only the  **Document.setSelectedDataAsync** and **TableBinding.setDataAsync** methods support writing data and setting formatting for tables in the same call using the _tableOptions_ and _cellFormat_ optional parameters. In the following examples, the `tableData` value passed to the first parameter of each method (the _data_ parameter) must be a [TableData](../../reference/shared/tabledata.md) object that contains the definition of the table and data to be written.
 
  **Document.setSelectedDataAsync example**
 
